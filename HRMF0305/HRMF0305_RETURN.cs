@@ -189,7 +189,7 @@ namespace HRMF0305
 
         private void ibtnSAVE_ButtonClick(object pSender, EventArgs pEventArgs)
         {
-            Set_Update_Approve();
+            Set_Update_Approve(); 
         }
 
         private void ibtCANCEL_ButtonClick(object pSender, EventArgs pEventArgs)

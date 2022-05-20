@@ -81,11 +81,6 @@
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle46 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle47 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle48 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle49 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle50 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle51 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle52 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle53 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement1 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement2 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement3 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
@@ -110,6 +105,7 @@
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement22 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement23 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement24 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement25 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement24 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement47 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement48 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
@@ -179,6 +175,9 @@
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement46 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement91 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement92 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement47 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement93 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement94 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement1 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement2 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement3 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
@@ -202,6 +201,7 @@
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement21 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement22 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement23 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement24 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement80 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement81 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement82 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
@@ -218,6 +218,7 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement93 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement94 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement95 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement96 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement78 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement79 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement80 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -241,7 +242,7 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement98 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement99 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement100 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement96 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement101 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement97 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement98 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement99 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
@@ -265,6 +266,8 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement117 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement118 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement119 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement120 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement121 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement11 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISDataUtil.OraConnectionInfo oraConnectionInfo1 = new InfoSummit.Win.ControlAdv.ISDataUtil.OraConnectionInfo();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement4 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
@@ -296,6 +299,11 @@
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle6 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle7 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle8 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle49 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle50 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle51 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle52 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle53 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle54 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle55 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle56 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
@@ -345,11 +353,6 @@
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle100 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle101 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle102 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle103 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle104 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle105 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle106 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement25 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement26 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement27 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement28 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
@@ -373,6 +376,7 @@
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement46 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement47 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement48 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement49 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement1 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement1 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement2 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
@@ -442,7 +446,6 @@
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement23 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement45 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement46 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
-            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement24 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement25 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement26 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement27 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
@@ -465,6 +468,7 @@
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement44 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement45 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement46 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement47 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement1 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement2 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement3 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
@@ -613,8 +617,6 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement56 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement13 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement22 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement120 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement121 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement122 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement123 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement124 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
@@ -622,6 +624,8 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement126 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement127 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement128 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement129 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement130 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement8 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement9 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement1 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
@@ -728,13 +732,13 @@
             gridBaseStyle2,
             gridBaseStyle3,
             gridBaseStyle4});
-            this.igrHEALTH_INSUR.BaseGrid.ColCount = 23;
+            this.igrHEALTH_INSUR.BaseGrid.ColCount = 24;
             this.igrHEALTH_INSUR.BaseGrid.ColHiddenEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridColHidden[] {
             new Syncfusion.Windows.Forms.Grid.GridColHidden(6),
             new Syncfusion.Windows.Forms.Grid.GridColHidden(8),
             new Syncfusion.Windows.Forms.Grid.GridColHidden(9),
             new Syncfusion.Windows.Forms.Grid.GridColHidden(11),
-            new Syncfusion.Windows.Forms.Grid.GridColHidden(23)});
+            new Syncfusion.Windows.Forms.Grid.GridColHidden(24)});
             this.igrHEALTH_INSUR.BaseGrid.ColWidthEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridColWidth[] {
             new Syncfusion.Windows.Forms.Grid.GridColWidth(0, 30),
             new Syncfusion.Windows.Forms.Grid.GridColWidth(1, 80),
@@ -754,12 +758,13 @@
             new Syncfusion.Windows.Forms.Grid.GridColWidth(15, 100),
             new Syncfusion.Windows.Forms.Grid.GridColWidth(16, 60),
             new Syncfusion.Windows.Forms.Grid.GridColWidth(17, 60),
-            new Syncfusion.Windows.Forms.Grid.GridColWidth(18, 80),
-            new Syncfusion.Windows.Forms.Grid.GridColWidth(19, 100),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(18, 60),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(19, 80),
             new Syncfusion.Windows.Forms.Grid.GridColWidth(20, 100),
-            new Syncfusion.Windows.Forms.Grid.GridColWidth(21, 150),
-            new Syncfusion.Windows.Forms.Grid.GridColWidth(22, 120),
-            new Syncfusion.Windows.Forms.Grid.GridColWidth(23, 65)});
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(21, 100),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(22, 150),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(23, 120),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(24, 65)});
             this.igrHEALTH_INSUR.BaseGrid.CoveredRanges.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeInfo[] {
             Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 0, 1, 0),
             Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 1, 1, 1),
@@ -784,7 +789,8 @@
             Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 21, 1, 21),
             Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 22, 1, 22),
             Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 23, 1, 23),
-            Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 10, 1, 10)});
+            Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 10, 1, 10),
+            Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 24, 1, 24)});
             this.igrHEALTH_INSUR.BaseGrid.DefaultGridBorderStyle = Syncfusion.Windows.Forms.Grid.GridBorderStyle.Solid;
             this.igrHEALTH_INSUR.BaseGrid.DefaultRowHeight = 19;
             this.igrHEALTH_INSUR.BaseGrid.EnterKeyBehavior = Syncfusion.Windows.Forms.Grid.GridDirectionType.None;
@@ -979,7 +985,7 @@
             gridRangeStyle11.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
             gridRangeStyle11.StyleInfo.ReadOnly = true;
             gridRangeStyle11.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle12.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(16, 17);
+            gridRangeStyle12.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(16, 18);
             gridRangeStyle12.StyleInfo.CellType = "CheckBox";
             gridRangeStyle12.StyleInfo.CellValueType = typeof(string);
             gridRangeStyle12.StyleInfo.CheckBoxOptions.CheckedValue = "Y";
@@ -995,7 +1001,7 @@
             gridRangeStyle12.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
             gridRangeStyle12.StyleInfo.ReadOnly = false;
             gridRangeStyle12.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle13.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(18);
+            gridRangeStyle13.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(19);
             gridRangeStyle13.StyleInfo.CellType = "Currency";
             gridRangeStyle13.StyleInfo.CellValueType = typeof(decimal);
             gridRangeStyle13.StyleInfo.Clickable = true;
@@ -1014,7 +1020,7 @@
             gridRangeStyle13.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
             gridRangeStyle13.StyleInfo.ReadOnly = false;
             gridRangeStyle13.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle14.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(19, 20);
+            gridRangeStyle14.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(20, 21);
             gridRangeStyle14.StyleInfo.CellType = "ComboBox";
             gridRangeStyle14.StyleInfo.CellValueType = typeof(System.DateTime);
             gridRangeStyle14.StyleInfo.Clickable = true;
@@ -1030,7 +1036,7 @@
             gridRangeStyle14.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
             gridRangeStyle14.StyleInfo.ReadOnly = false;
             gridRangeStyle14.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle15.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(21, 23);
+            gridRangeStyle15.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(22, 24);
             gridRangeStyle15.StyleInfo.CellType = "TextBox";
             gridRangeStyle15.StyleInfo.CellValueType = typeof(string);
             gridRangeStyle15.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -1078,49 +1084,39 @@
             gridRangeStyle31.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 16);
             gridRangeStyle31.StyleInfo.Text = "요양보험경감";
             gridRangeStyle32.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 17);
-            gridRangeStyle32.StyleInfo.Text = "국외근로";
+            gridRangeStyle32.StyleInfo.Text = "요양보험제외";
             gridRangeStyle33.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 18);
-            gridRangeStyle33.StyleInfo.Text = "국외근로자 경감율(%)";
+            gridRangeStyle33.StyleInfo.Text = "국외근로";
             gridRangeStyle34.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 19);
-            gridRangeStyle34.StyleInfo.Text = "취득일자";
+            gridRangeStyle34.StyleInfo.Text = "국외근로자 경감율(%)";
             gridRangeStyle35.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 20);
-            gridRangeStyle35.StyleInfo.Text = "상실일자";
-            gridRangeStyle36.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 21, 1, 21);
-            gridRangeStyle36.StyleInfo.Text = "보험번호";
-            gridRangeStyle37.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 22);
-            gridRangeStyle37.StyleInfo.Text = "비고";
+            gridRangeStyle35.StyleInfo.Text = "취득일자";
+            gridRangeStyle36.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 21);
+            gridRangeStyle36.StyleInfo.Text = "상실일자";
+            gridRangeStyle37.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 22, 1, 22);
+            gridRangeStyle37.StyleInfo.Text = "보험번호";
             gridRangeStyle38.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 23);
-            gridRangeStyle38.StyleInfo.Text = "보험구분";
-            gridRangeStyle39.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 7);
-            gridRangeStyle39.StyleInfo.Text = "퇴사일자";
-            gridRangeStyle40.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 8);
-            gridRangeStyle40.StyleInfo.Text = "Person ID";
-            gridRangeStyle41.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 9);
-            gridRangeStyle41.StyleInfo.Text = "Corp ID";
-            gridRangeStyle42.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 10);
-            gridRangeStyle42.StyleInfo.Text = "";
-            gridRangeStyle43.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 12);
-            gridRangeStyle43.StyleInfo.Text = "INSUR_AMOUNT";
-            gridRangeStyle44.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 13);
-            gridRangeStyle44.StyleInfo.Text = "CHARGE_AMOUNT";
-            gridRangeStyle45.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 14);
-            gridRangeStyle45.StyleInfo.Text = "CARE_CHARGE_AMOUNT";
-            gridRangeStyle46.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 15);
-            gridRangeStyle46.StyleInfo.Text = "TOTAL_INSUR_AMOUNT";
-            gridRangeStyle47.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 16);
-            gridRangeStyle47.StyleInfo.Text = "CARE_INSUR_REDUCE_YN";
-            gridRangeStyle48.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 17);
-            gridRangeStyle48.StyleInfo.Text = "OVERSEAS_YN";
-            gridRangeStyle49.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 18);
-            gridRangeStyle49.StyleInfo.Text = "OVERSEAS_RATE";
-            gridRangeStyle50.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 19);
-            gridRangeStyle50.StyleInfo.Text = "GET_DATE";
-            gridRangeStyle51.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 20);
-            gridRangeStyle51.StyleInfo.Text = "LOSS_DATE";
-            gridRangeStyle52.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 22);
-            gridRangeStyle52.StyleInfo.Text = "DESCRIPTION";
-            gridRangeStyle53.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 23);
-            gridRangeStyle53.StyleInfo.Text = "INSUR_TYPE";
+            gridRangeStyle38.StyleInfo.Text = "비고";
+            gridRangeStyle39.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 24);
+            gridRangeStyle39.StyleInfo.Text = "보험구분";
+            gridRangeStyle40.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 7);
+            gridRangeStyle40.StyleInfo.Text = "퇴사일자";
+            gridRangeStyle41.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 8);
+            gridRangeStyle41.StyleInfo.Text = "Person ID";
+            gridRangeStyle42.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 9);
+            gridRangeStyle42.StyleInfo.Text = "Corp ID";
+            gridRangeStyle43.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 10);
+            gridRangeStyle43.StyleInfo.Text = "";
+            gridRangeStyle44.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(1, 12, 1, 19);
+            gridRangeStyle44.StyleInfo.Text = "";
+            gridRangeStyle45.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 20);
+            gridRangeStyle45.StyleInfo.Text = "GET_DATE";
+            gridRangeStyle46.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 21);
+            gridRangeStyle46.StyleInfo.Text = "LOSS_DATE";
+            gridRangeStyle47.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 23);
+            gridRangeStyle47.StyleInfo.Text = "DESCRIPTION";
+            gridRangeStyle48.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 24);
+            gridRangeStyle48.StyleInfo.Text = "INSUR_TYPE";
             this.igrHEALTH_INSUR.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
             gridRangeStyle1,
             gridRangeStyle2,
@@ -1169,12 +1165,7 @@
             gridRangeStyle45,
             gridRangeStyle46,
             gridRangeStyle47,
-            gridRangeStyle48,
-            gridRangeStyle49,
-            gridRangeStyle50,
-            gridRangeStyle51,
-            gridRangeStyle52,
-            gridRangeStyle53});
+            gridRangeStyle48});
             this.igrHEALTH_INSUR.BaseGrid.RefreshCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridRefreshCurrentCellBehavior.RefreshRow;
             this.igrHEALTH_INSUR.BaseGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.igrHEALTH_INSUR.BaseGrid.RowCount = 1;
@@ -1187,7 +1178,7 @@
             this.igrHEALTH_INSUR.BaseGrid.TabIndex = 0;
             this.igrHEALTH_INSUR.BaseGrid.ThemesEnabled = true;
             this.igrHEALTH_INSUR.BaseGrid.UseRightToLeftCompatibleTextBox = true;
-            this.igrHEALTH_INSUR.ColCount = 23;
+            this.igrHEALTH_INSUR.ColCount = 24;
             this.igrHEALTH_INSUR.ColHeaderCount = 2;
             isGridAdvExRangeElement1.Bottom = 1;
             isGridAdvExRangeElement1.Left = 0;
@@ -1285,6 +1276,10 @@
             isGridAdvExRangeElement24.Left = 10;
             isGridAdvExRangeElement24.Right = 10;
             isGridAdvExRangeElement24.Top = 0;
+            isGridAdvExRangeElement25.Bottom = 1;
+            isGridAdvExRangeElement25.Left = 24;
+            isGridAdvExRangeElement25.Right = 24;
+            isGridAdvExRangeElement25.Top = 0;
             this.igrHEALTH_INSUR.ColHeaderMergeElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement[] {
             isGridAdvExRangeElement1,
             isGridAdvExRangeElement2,
@@ -1309,7 +1304,8 @@
             isGridAdvExRangeElement21,
             isGridAdvExRangeElement22,
             isGridAdvExRangeElement23,
-            isGridAdvExRangeElement24});
+            isGridAdvExRangeElement24,
+            isGridAdvExRangeElement25});
             this.igrHEALTH_INSUR.DataAdapter = this.idaHEALTH_INSUR;
             this.igrHEALTH_INSUR.FrozenColCount = 2;
             isGridAdvExColElement24.ColumnType = "TextEdit";
@@ -1672,7 +1668,7 @@
             isGridAdvExColElement35.DataType = "System.Decimal";
             isGridAdvExColElement35.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement35.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement69.Default = "INSUR_AMOUNT";
+            isGridAdvExTLHeaderElement69.Default = "";
             isGridAdvExTLHeaderElement69.TL1_KR = null;
             isGridAdvExTLHeaderElement69.TL2_CN = null;
             isGridAdvExTLHeaderElement69.TL3_VN = null;
@@ -1687,7 +1683,7 @@
             isGridAdvExColElement35.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement69,
             isGridAdvExTLHeaderElement70});
-            isGridAdvExColElement35.HeaderPrompt = "INSUR_AMOUNT";
+            isGridAdvExColElement35.HeaderPrompt = "";
             isGridAdvExColElement35.Insertable = 1;
             isGridAdvExColElement35.MergeCell = 0;
             isGridAdvExColElement35.Nullable = 0;
@@ -1704,7 +1700,7 @@
             isGridAdvExColElement36.DataType = "System.Decimal";
             isGridAdvExColElement36.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement36.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement71.Default = "CHARGE_AMOUNT";
+            isGridAdvExTLHeaderElement71.Default = "";
             isGridAdvExTLHeaderElement71.TL1_KR = null;
             isGridAdvExTLHeaderElement71.TL2_CN = null;
             isGridAdvExTLHeaderElement71.TL3_VN = null;
@@ -1719,7 +1715,7 @@
             isGridAdvExColElement36.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement71,
             isGridAdvExTLHeaderElement72});
-            isGridAdvExColElement36.HeaderPrompt = "CHARGE_AMOUNT";
+            isGridAdvExColElement36.HeaderPrompt = "";
             isGridAdvExColElement36.Insertable = 0;
             isGridAdvExColElement36.MergeCell = 0;
             isGridAdvExColElement36.Nullable = 1;
@@ -1736,7 +1732,7 @@
             isGridAdvExColElement37.DataType = "System.Decimal";
             isGridAdvExColElement37.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement37.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement73.Default = "CARE_CHARGE_AMOUNT";
+            isGridAdvExTLHeaderElement73.Default = "";
             isGridAdvExTLHeaderElement73.TL1_KR = null;
             isGridAdvExTLHeaderElement73.TL2_CN = null;
             isGridAdvExTLHeaderElement73.TL3_VN = null;
@@ -1751,7 +1747,7 @@
             isGridAdvExColElement37.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement73,
             isGridAdvExTLHeaderElement74});
-            isGridAdvExColElement37.HeaderPrompt = "CARE_CHARGE_AMOUNT";
+            isGridAdvExColElement37.HeaderPrompt = "";
             isGridAdvExColElement37.Insertable = 0;
             isGridAdvExColElement37.MergeCell = 0;
             isGridAdvExColElement37.Nullable = 1;
@@ -1768,7 +1764,7 @@
             isGridAdvExColElement38.DataType = "System.Decimal";
             isGridAdvExColElement38.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement38.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement75.Default = "TOTAL_INSUR_AMOUNT";
+            isGridAdvExTLHeaderElement75.Default = "";
             isGridAdvExTLHeaderElement75.TL1_KR = null;
             isGridAdvExTLHeaderElement75.TL2_CN = null;
             isGridAdvExTLHeaderElement75.TL3_VN = null;
@@ -1783,7 +1779,7 @@
             isGridAdvExColElement38.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement75,
             isGridAdvExTLHeaderElement76});
-            isGridAdvExColElement38.HeaderPrompt = "TOTAL_INSUR_AMOUNT";
+            isGridAdvExColElement38.HeaderPrompt = "";
             isGridAdvExColElement38.Insertable = 0;
             isGridAdvExColElement38.MergeCell = 0;
             isGridAdvExColElement38.Nullable = 1;
@@ -1801,7 +1797,7 @@
             isGridAdvExColElement39.DataType = "System.String";
             isGridAdvExColElement39.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement39.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement77.Default = "CARE_INSUR_REDUCE_YN";
+            isGridAdvExTLHeaderElement77.Default = "";
             isGridAdvExTLHeaderElement77.TL1_KR = null;
             isGridAdvExTLHeaderElement77.TL2_CN = null;
             isGridAdvExTLHeaderElement77.TL3_VN = null;
@@ -1816,7 +1812,7 @@
             isGridAdvExColElement39.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement77,
             isGridAdvExTLHeaderElement78});
-            isGridAdvExColElement39.HeaderPrompt = "CARE_INSUR_REDUCE_YN";
+            isGridAdvExColElement39.HeaderPrompt = "";
             isGridAdvExColElement39.Insertable = 1;
             isGridAdvExColElement39.MergeCell = 0;
             isGridAdvExColElement39.Nullable = 1;
@@ -1830,19 +1826,19 @@
             isGridAdvExColElement39.Width = 60;
             isGridAdvExColElement40.CheckedString = "Y";
             isGridAdvExColElement40.ColumnType = "CheckBox";
-            isGridAdvExColElement40.DataColumn = "OVERSEAS_YN";
+            isGridAdvExColElement40.DataColumn = "CARE_INSUR_EXCEPT_YN";
             isGridAdvExColElement40.DataOrdinal = 16;
             isGridAdvExColElement40.DataType = "System.String";
             isGridAdvExColElement40.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement40.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement79.Default = "OVERSEAS_YN";
+            isGridAdvExTLHeaderElement79.Default = "";
             isGridAdvExTLHeaderElement79.TL1_KR = null;
             isGridAdvExTLHeaderElement79.TL2_CN = null;
             isGridAdvExTLHeaderElement79.TL3_VN = null;
             isGridAdvExTLHeaderElement79.TL4_JP = null;
             isGridAdvExTLHeaderElement79.TL5_XAA = null;
-            isGridAdvExTLHeaderElement80.Default = "Outside YN";
-            isGridAdvExTLHeaderElement80.TL1_KR = "국외근로";
+            isGridAdvExTLHeaderElement80.Default = "Care Insur Except";
+            isGridAdvExTLHeaderElement80.TL1_KR = "요양보험제외";
             isGridAdvExTLHeaderElement80.TL2_CN = null;
             isGridAdvExTLHeaderElement80.TL3_VN = null;
             isGridAdvExTLHeaderElement80.TL4_JP = null;
@@ -1850,7 +1846,7 @@
             isGridAdvExColElement40.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement79,
             isGridAdvExTLHeaderElement80});
-            isGridAdvExColElement40.HeaderPrompt = "OVERSEAS_YN";
+            isGridAdvExColElement40.HeaderPrompt = "";
             isGridAdvExColElement40.Insertable = 1;
             isGridAdvExColElement40.MergeCell = 0;
             isGridAdvExColElement40.Nullable = 1;
@@ -1862,20 +1858,21 @@
             isGridAdvExColElement40.Updatable = 1;
             isGridAdvExColElement40.Visible = 1;
             isGridAdvExColElement40.Width = 60;
-            isGridAdvExColElement41.ColumnType = "NumberEdit";
-            isGridAdvExColElement41.DataColumn = "OVERSEAS_RATE";
+            isGridAdvExColElement41.CheckedString = "Y";
+            isGridAdvExColElement41.ColumnType = "CheckBox";
+            isGridAdvExColElement41.DataColumn = "OVERSEAS_YN";
             isGridAdvExColElement41.DataOrdinal = 17;
-            isGridAdvExColElement41.DataType = "System.Decimal";
+            isGridAdvExColElement41.DataType = "System.String";
             isGridAdvExColElement41.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement41.DecimalDigits = 4;
-            isGridAdvExTLHeaderElement81.Default = "OVERSEAS_RATE";
+            isGridAdvExColElement41.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement81.Default = "";
             isGridAdvExTLHeaderElement81.TL1_KR = null;
             isGridAdvExTLHeaderElement81.TL2_CN = null;
             isGridAdvExTLHeaderElement81.TL3_VN = null;
             isGridAdvExTLHeaderElement81.TL4_JP = null;
             isGridAdvExTLHeaderElement81.TL5_XAA = null;
-            isGridAdvExTLHeaderElement82.Default = "Outside Rate(%)";
-            isGridAdvExTLHeaderElement82.TL1_KR = "국외근로자 경감율(%)";
+            isGridAdvExTLHeaderElement82.Default = "Outside YN";
+            isGridAdvExTLHeaderElement82.TL1_KR = "국외근로";
             isGridAdvExTLHeaderElement82.TL2_CN = null;
             isGridAdvExTLHeaderElement82.TL3_VN = null;
             isGridAdvExTLHeaderElement82.TL4_JP = null;
@@ -1883,7 +1880,7 @@
             isGridAdvExColElement41.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement81,
             isGridAdvExTLHeaderElement82});
-            isGridAdvExColElement41.HeaderPrompt = "OVERSEAS_RATE";
+            isGridAdvExColElement41.HeaderPrompt = "";
             isGridAdvExColElement41.Insertable = 1;
             isGridAdvExColElement41.MergeCell = 0;
             isGridAdvExColElement41.Nullable = 1;
@@ -1891,23 +1888,24 @@
             isGridAdvExColElement41.ReadOnly = 0;
             isGridAdvExColElement41.Symbol = "";
             isGridAdvExColElement41.SymbolPosition = "";
+            isGridAdvExColElement41.UncheckedString = "N";
             isGridAdvExColElement41.Updatable = 1;
             isGridAdvExColElement41.Visible = 1;
-            isGridAdvExColElement41.Width = 80;
-            isGridAdvExColElement42.ColumnType = "DateTimeEdit";
-            isGridAdvExColElement42.DataColumn = "GET_DATE";
+            isGridAdvExColElement41.Width = 60;
+            isGridAdvExColElement42.ColumnType = "NumberEdit";
+            isGridAdvExColElement42.DataColumn = "OVERSEAS_RATE";
             isGridAdvExColElement42.DataOrdinal = 18;
-            isGridAdvExColElement42.DataType = "System.DateTime";
+            isGridAdvExColElement42.DataType = "System.Decimal";
             isGridAdvExColElement42.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement42.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement83.Default = "GET_DATE";
+            isGridAdvExColElement42.DecimalDigits = 4;
+            isGridAdvExTLHeaderElement83.Default = "";
             isGridAdvExTLHeaderElement83.TL1_KR = null;
             isGridAdvExTLHeaderElement83.TL2_CN = null;
             isGridAdvExTLHeaderElement83.TL3_VN = null;
             isGridAdvExTLHeaderElement83.TL4_JP = null;
             isGridAdvExTLHeaderElement83.TL5_XAA = null;
-            isGridAdvExTLHeaderElement84.Default = "Get Date";
-            isGridAdvExTLHeaderElement84.TL1_KR = "취득일자";
+            isGridAdvExTLHeaderElement84.Default = "Outside Rate(%)";
+            isGridAdvExTLHeaderElement84.TL1_KR = "국외근로자 경감율(%)";
             isGridAdvExTLHeaderElement84.TL2_CN = null;
             isGridAdvExTLHeaderElement84.TL3_VN = null;
             isGridAdvExTLHeaderElement84.TL4_JP = null;
@@ -1915,7 +1913,7 @@
             isGridAdvExColElement42.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement83,
             isGridAdvExTLHeaderElement84});
-            isGridAdvExColElement42.HeaderPrompt = "GET_DATE";
+            isGridAdvExColElement42.HeaderPrompt = "";
             isGridAdvExColElement42.Insertable = 1;
             isGridAdvExColElement42.MergeCell = 0;
             isGridAdvExColElement42.Nullable = 1;
@@ -1925,21 +1923,21 @@
             isGridAdvExColElement42.SymbolPosition = "";
             isGridAdvExColElement42.Updatable = 1;
             isGridAdvExColElement42.Visible = 1;
-            isGridAdvExColElement42.Width = 100;
+            isGridAdvExColElement42.Width = 80;
             isGridAdvExColElement43.ColumnType = "DateTimeEdit";
-            isGridAdvExColElement43.DataColumn = "LOSS_DATE";
+            isGridAdvExColElement43.DataColumn = "GET_DATE";
             isGridAdvExColElement43.DataOrdinal = 19;
             isGridAdvExColElement43.DataType = "System.DateTime";
             isGridAdvExColElement43.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement43.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement85.Default = "LOSS_DATE";
+            isGridAdvExTLHeaderElement85.Default = "GET_DATE";
             isGridAdvExTLHeaderElement85.TL1_KR = null;
             isGridAdvExTLHeaderElement85.TL2_CN = null;
             isGridAdvExTLHeaderElement85.TL3_VN = null;
             isGridAdvExTLHeaderElement85.TL4_JP = null;
             isGridAdvExTLHeaderElement85.TL5_XAA = null;
-            isGridAdvExTLHeaderElement86.Default = "Loss Date";
-            isGridAdvExTLHeaderElement86.TL1_KR = "상실일자";
+            isGridAdvExTLHeaderElement86.Default = "Get Date";
+            isGridAdvExTLHeaderElement86.TL1_KR = "취득일자";
             isGridAdvExTLHeaderElement86.TL2_CN = null;
             isGridAdvExTLHeaderElement86.TL3_VN = null;
             isGridAdvExTLHeaderElement86.TL4_JP = null;
@@ -1947,7 +1945,7 @@
             isGridAdvExColElement43.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement85,
             isGridAdvExTLHeaderElement86});
-            isGridAdvExColElement43.HeaderPrompt = "LOSS_DATE";
+            isGridAdvExColElement43.HeaderPrompt = "GET_DATE";
             isGridAdvExColElement43.Insertable = 1;
             isGridAdvExColElement43.MergeCell = 0;
             isGridAdvExColElement43.Nullable = 1;
@@ -1958,20 +1956,20 @@
             isGridAdvExColElement43.Updatable = 1;
             isGridAdvExColElement43.Visible = 1;
             isGridAdvExColElement43.Width = 100;
-            isGridAdvExColElement44.ColumnType = "TextEdit";
-            isGridAdvExColElement44.DataColumn = "INSUR_NO";
+            isGridAdvExColElement44.ColumnType = "DateTimeEdit";
+            isGridAdvExColElement44.DataColumn = "LOSS_DATE";
             isGridAdvExColElement44.DataOrdinal = 20;
-            isGridAdvExColElement44.DataType = "System.String";
+            isGridAdvExColElement44.DataType = "System.DateTime";
             isGridAdvExColElement44.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement44.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement87.Default = "Insur No";
-            isGridAdvExTLHeaderElement87.TL1_KR = "보험번호";
+            isGridAdvExTLHeaderElement87.Default = "LOSS_DATE";
+            isGridAdvExTLHeaderElement87.TL1_KR = null;
             isGridAdvExTLHeaderElement87.TL2_CN = null;
             isGridAdvExTLHeaderElement87.TL3_VN = null;
             isGridAdvExTLHeaderElement87.TL4_JP = null;
             isGridAdvExTLHeaderElement87.TL5_XAA = null;
-            isGridAdvExTLHeaderElement88.Default = "Insurance Num";
-            isGridAdvExTLHeaderElement88.TL1_KR = "보험번호";
+            isGridAdvExTLHeaderElement88.Default = "Loss Date";
+            isGridAdvExTLHeaderElement88.TL1_KR = "상실일자";
             isGridAdvExTLHeaderElement88.TL2_CN = null;
             isGridAdvExTLHeaderElement88.TL3_VN = null;
             isGridAdvExTLHeaderElement88.TL4_JP = null;
@@ -1979,7 +1977,7 @@
             isGridAdvExColElement44.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement87,
             isGridAdvExTLHeaderElement88});
-            isGridAdvExColElement44.HeaderPrompt = "Insur No";
+            isGridAdvExColElement44.HeaderPrompt = "LOSS_DATE";
             isGridAdvExColElement44.Insertable = 1;
             isGridAdvExColElement44.MergeCell = 0;
             isGridAdvExColElement44.Nullable = 1;
@@ -1989,21 +1987,21 @@
             isGridAdvExColElement44.SymbolPosition = "";
             isGridAdvExColElement44.Updatable = 1;
             isGridAdvExColElement44.Visible = 1;
-            isGridAdvExColElement44.Width = 150;
+            isGridAdvExColElement44.Width = 100;
             isGridAdvExColElement45.ColumnType = "TextEdit";
-            isGridAdvExColElement45.DataColumn = "DESCRIPTION";
+            isGridAdvExColElement45.DataColumn = "INSUR_NO";
             isGridAdvExColElement45.DataOrdinal = 21;
             isGridAdvExColElement45.DataType = "System.String";
             isGridAdvExColElement45.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement45.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement89.Default = "DESCRIPTION";
-            isGridAdvExTLHeaderElement89.TL1_KR = null;
+            isGridAdvExTLHeaderElement89.Default = "Insur No";
+            isGridAdvExTLHeaderElement89.TL1_KR = "보험번호";
             isGridAdvExTLHeaderElement89.TL2_CN = null;
             isGridAdvExTLHeaderElement89.TL3_VN = null;
             isGridAdvExTLHeaderElement89.TL4_JP = null;
             isGridAdvExTLHeaderElement89.TL5_XAA = null;
-            isGridAdvExTLHeaderElement90.Default = "Description";
-            isGridAdvExTLHeaderElement90.TL1_KR = "비고";
+            isGridAdvExTLHeaderElement90.Default = "Insurance Num";
+            isGridAdvExTLHeaderElement90.TL1_KR = "보험번호";
             isGridAdvExTLHeaderElement90.TL2_CN = null;
             isGridAdvExTLHeaderElement90.TL3_VN = null;
             isGridAdvExTLHeaderElement90.TL4_JP = null;
@@ -2011,7 +2009,7 @@
             isGridAdvExColElement45.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement89,
             isGridAdvExTLHeaderElement90});
-            isGridAdvExColElement45.HeaderPrompt = "DESCRIPTION";
+            isGridAdvExColElement45.HeaderPrompt = "Insur No";
             isGridAdvExColElement45.Insertable = 1;
             isGridAdvExColElement45.MergeCell = 0;
             isGridAdvExColElement45.Nullable = 1;
@@ -2021,21 +2019,21 @@
             isGridAdvExColElement45.SymbolPosition = "";
             isGridAdvExColElement45.Updatable = 1;
             isGridAdvExColElement45.Visible = 1;
-            isGridAdvExColElement45.Width = 120;
+            isGridAdvExColElement45.Width = 150;
             isGridAdvExColElement46.ColumnType = "TextEdit";
-            isGridAdvExColElement46.DataColumn = "INSUR_TYPE";
+            isGridAdvExColElement46.DataColumn = "DESCRIPTION";
             isGridAdvExColElement46.DataOrdinal = 22;
             isGridAdvExColElement46.DataType = "System.String";
             isGridAdvExColElement46.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement46.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement91.Default = "INSUR_TYPE";
+            isGridAdvExTLHeaderElement91.Default = "DESCRIPTION";
             isGridAdvExTLHeaderElement91.TL1_KR = null;
             isGridAdvExTLHeaderElement91.TL2_CN = null;
             isGridAdvExTLHeaderElement91.TL3_VN = null;
             isGridAdvExTLHeaderElement91.TL4_JP = null;
             isGridAdvExTLHeaderElement91.TL5_XAA = null;
-            isGridAdvExTLHeaderElement92.Default = "Insur Type";
-            isGridAdvExTLHeaderElement92.TL1_KR = "보험구분";
+            isGridAdvExTLHeaderElement92.Default = "Description";
+            isGridAdvExTLHeaderElement92.TL1_KR = "비고";
             isGridAdvExTLHeaderElement92.TL2_CN = null;
             isGridAdvExTLHeaderElement92.TL3_VN = null;
             isGridAdvExTLHeaderElement92.TL4_JP = null;
@@ -2043,17 +2041,49 @@
             isGridAdvExColElement46.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement91,
             isGridAdvExTLHeaderElement92});
-            isGridAdvExColElement46.HeaderPrompt = "INSUR_TYPE";
-            isGridAdvExColElement46.Insertable = 0;
+            isGridAdvExColElement46.HeaderPrompt = "DESCRIPTION";
+            isGridAdvExColElement46.Insertable = 1;
             isGridAdvExColElement46.MergeCell = 0;
             isGridAdvExColElement46.Nullable = 1;
             isGridAdvExColElement46.Ordinal = 22;
             isGridAdvExColElement46.ReadOnly = 0;
             isGridAdvExColElement46.Symbol = "";
             isGridAdvExColElement46.SymbolPosition = "";
-            isGridAdvExColElement46.Updatable = 0;
-            isGridAdvExColElement46.Visible = 0;
-            isGridAdvExColElement46.Width = 65;
+            isGridAdvExColElement46.Updatable = 1;
+            isGridAdvExColElement46.Visible = 1;
+            isGridAdvExColElement46.Width = 120;
+            isGridAdvExColElement47.ColumnType = "TextEdit";
+            isGridAdvExColElement47.DataColumn = "INSUR_TYPE";
+            isGridAdvExColElement47.DataOrdinal = 23;
+            isGridAdvExColElement47.DataType = "System.String";
+            isGridAdvExColElement47.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement47.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement93.Default = "INSUR_TYPE";
+            isGridAdvExTLHeaderElement93.TL1_KR = null;
+            isGridAdvExTLHeaderElement93.TL2_CN = null;
+            isGridAdvExTLHeaderElement93.TL3_VN = null;
+            isGridAdvExTLHeaderElement93.TL4_JP = null;
+            isGridAdvExTLHeaderElement93.TL5_XAA = null;
+            isGridAdvExTLHeaderElement94.Default = "Insur Type";
+            isGridAdvExTLHeaderElement94.TL1_KR = "보험구분";
+            isGridAdvExTLHeaderElement94.TL2_CN = null;
+            isGridAdvExTLHeaderElement94.TL3_VN = null;
+            isGridAdvExTLHeaderElement94.TL4_JP = null;
+            isGridAdvExTLHeaderElement94.TL5_XAA = null;
+            isGridAdvExColElement47.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement93,
+            isGridAdvExTLHeaderElement94});
+            isGridAdvExColElement47.HeaderPrompt = "INSUR_TYPE";
+            isGridAdvExColElement47.Insertable = 0;
+            isGridAdvExColElement47.MergeCell = 0;
+            isGridAdvExColElement47.Nullable = 1;
+            isGridAdvExColElement47.Ordinal = 23;
+            isGridAdvExColElement47.ReadOnly = 0;
+            isGridAdvExColElement47.Symbol = "";
+            isGridAdvExColElement47.SymbolPosition = "";
+            isGridAdvExColElement47.Updatable = 0;
+            isGridAdvExColElement47.Visible = 0;
+            isGridAdvExColElement47.Width = 65;
             this.igrHEALTH_INSUR.GridAdvExColElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExColElement[] {
             isGridAdvExColElement24,
             isGridAdvExColElement25,
@@ -2077,7 +2107,8 @@
             isGridAdvExColElement43,
             isGridAdvExColElement44,
             isGridAdvExColElement45,
-            isGridAdvExColElement46});
+            isGridAdvExColElement46,
+            isGridAdvExColElement47});
             this.igrHEALTH_INSUR.Location = new System.Drawing.Point(1, 23);
             this.igrHEALTH_INSUR.Name = "igrHEALTH_INSUR";
             this.igrHEALTH_INSUR.Size = new System.Drawing.Size(944, 425);
@@ -2173,40 +2204,45 @@
             isOraBindingElement16.MemberValue = "CARE_INSUR_REDUCE_YN";
             isOraBindingElement16.Ordinal = 16;
             isOraBindingElement17.LastValue = null;
-            isOraBindingElement17.MappingColumn = "OVERSEAS_YN";
+            isOraBindingElement17.MappingColumn = "CARE_INSUR_EXCEPT_YN";
             isOraBindingElement17.MemberControl = this.igrHEALTH_INSUR;
-            isOraBindingElement17.MemberValue = "OVERSEAS_YN";
+            isOraBindingElement17.MemberValue = "CARE_INSUR_EXCEPT_YN";
             isOraBindingElement17.Ordinal = 17;
             isOraBindingElement18.LastValue = null;
-            isOraBindingElement18.MappingColumn = "OVERSEAS_RATE";
+            isOraBindingElement18.MappingColumn = "OVERSEAS_YN";
             isOraBindingElement18.MemberControl = this.igrHEALTH_INSUR;
-            isOraBindingElement18.MemberValue = "OVERSEAS_RATE";
+            isOraBindingElement18.MemberValue = "OVERSEAS_YN";
             isOraBindingElement18.Ordinal = 18;
             isOraBindingElement19.LastValue = null;
-            isOraBindingElement19.MappingColumn = "GET_DATE";
+            isOraBindingElement19.MappingColumn = "OVERSEAS_RATE";
             isOraBindingElement19.MemberControl = this.igrHEALTH_INSUR;
-            isOraBindingElement19.MemberValue = "GET_DATE";
+            isOraBindingElement19.MemberValue = "OVERSEAS_RATE";
             isOraBindingElement19.Ordinal = 19;
             isOraBindingElement20.LastValue = null;
-            isOraBindingElement20.MappingColumn = "LOSS_DATE";
+            isOraBindingElement20.MappingColumn = "GET_DATE";
             isOraBindingElement20.MemberControl = this.igrHEALTH_INSUR;
-            isOraBindingElement20.MemberValue = "LOSS_DATE";
+            isOraBindingElement20.MemberValue = "GET_DATE";
             isOraBindingElement20.Ordinal = 20;
             isOraBindingElement21.LastValue = null;
-            isOraBindingElement21.MappingColumn = "INSUR_NO";
+            isOraBindingElement21.MappingColumn = "LOSS_DATE";
             isOraBindingElement21.MemberControl = this.igrHEALTH_INSUR;
-            isOraBindingElement21.MemberValue = "INSUR_NO";
+            isOraBindingElement21.MemberValue = "LOSS_DATE";
             isOraBindingElement21.Ordinal = 21;
             isOraBindingElement22.LastValue = null;
-            isOraBindingElement22.MappingColumn = "DESCRIPTION";
+            isOraBindingElement22.MappingColumn = "INSUR_NO";
             isOraBindingElement22.MemberControl = this.igrHEALTH_INSUR;
-            isOraBindingElement22.MemberValue = "DESCRIPTION";
+            isOraBindingElement22.MemberValue = "INSUR_NO";
             isOraBindingElement22.Ordinal = 22;
             isOraBindingElement23.LastValue = null;
-            isOraBindingElement23.MappingColumn = "INSUR_TYPE";
+            isOraBindingElement23.MappingColumn = "DESCRIPTION";
             isOraBindingElement23.MemberControl = this.igrHEALTH_INSUR;
-            isOraBindingElement23.MemberValue = "INSUR_TYPE";
+            isOraBindingElement23.MemberValue = "DESCRIPTION";
             isOraBindingElement23.Ordinal = 23;
+            isOraBindingElement24.LastValue = null;
+            isOraBindingElement24.MappingColumn = "INSUR_TYPE";
+            isOraBindingElement24.MemberControl = this.igrHEALTH_INSUR;
+            isOraBindingElement24.MemberValue = "INSUR_TYPE";
+            isOraBindingElement24.Ordinal = 24;
             this.idaHEALTH_INSUR.BindingElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraBindingElement[] {
             isOraBindingElement1,
             isOraBindingElement2,
@@ -2230,7 +2266,8 @@
             isOraBindingElement20,
             isOraBindingElement21,
             isOraBindingElement22,
-            isOraBindingElement23});
+            isOraBindingElement23,
+            isOraBindingElement24});
             this.idaHEALTH_INSUR.CancelMember.Cancel = false;
             this.idaHEALTH_INSUR.CancelMember.Member = null;
             this.idaHEALTH_INSUR.CancelMember.Prompt = null;
@@ -2384,6 +2421,14 @@
             isOraParamElement95.ParamName = "P_USER_ID";
             isOraParamElement95.Size = 22;
             isOraParamElement95.SourceColumn = "";
+            isOraParamElement96.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement96.MemberControl = null;
+            isOraParamElement96.MemberValue = null;
+            isOraParamElement96.OraDbTypeString = "VARCHAR2";
+            isOraParamElement96.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement96.ParamName = "P_CARE_INSUR_EXCEPT_YN";
+            isOraParamElement96.Size = 3;
+            isOraParamElement96.SourceColumn = "CARE_INSUR_EXCEPT_YN";
             this.idaHEALTH_INSUR.InsertParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
             isOraParamElement80,
             isOraParamElement81,
@@ -2400,7 +2445,8 @@
             isOraParamElement92,
             isOraParamElement93,
             isOraParamElement94,
-            isOraParamElement95});
+            isOraParamElement95,
+            isOraParamElement96});
             this.idaHEALTH_INSUR.MasterAdapter = null;
             this.idaHEALTH_INSUR.MoveFocus = true;
             this.idaHEALTH_INSUR.OraConnection = this.isOraConnection1;
@@ -2544,7 +2590,7 @@
             isOraColElement85.LastValue = null;
             isOraColElement85.MemberControl = null;
             isOraColElement85.MemberValue = null;
-            isOraColElement85.Nullable = 0;
+            isOraColElement85.Nullable = 1;
             isOraColElement85.Ordinal = 7;
             isOraColElement85.RelationKeyColumn = null;
             isOraColElement85.ReturnParameter = null;
@@ -2562,7 +2608,7 @@
             isOraColElement86.LastValue = null;
             isOraColElement86.MemberControl = null;
             isOraColElement86.MemberValue = null;
-            isOraColElement86.Nullable = 0;
+            isOraColElement86.Nullable = 1;
             isOraColElement86.Ordinal = 8;
             isOraColElement86.RelationKeyColumn = null;
             isOraColElement86.ReturnParameter = null;
@@ -2699,10 +2745,10 @@
             isOraColElement93.TL5_XAA = null;
             isOraColElement93.Visible = null;
             isOraColElement93.Width = null;
-            isOraColElement94.DataColumn = "OVERSEAS_YN";
+            isOraColElement94.DataColumn = "CARE_INSUR_EXCEPT_YN";
             isOraColElement94.DataOrdinal = 16;
             isOraColElement94.DataType = "System.String";
-            isOraColElement94.HeaderPrompt = "OVERSEAS_YN";
+            isOraColElement94.HeaderPrompt = "CARE_INSUR_EXCEPT_YN";
             isOraColElement94.LastValue = null;
             isOraColElement94.MemberControl = null;
             isOraColElement94.MemberValue = null;
@@ -2717,10 +2763,10 @@
             isOraColElement94.TL5_XAA = null;
             isOraColElement94.Visible = null;
             isOraColElement94.Width = null;
-            isOraColElement95.DataColumn = "OVERSEAS_RATE";
+            isOraColElement95.DataColumn = "OVERSEAS_YN";
             isOraColElement95.DataOrdinal = 17;
-            isOraColElement95.DataType = "System.Decimal";
-            isOraColElement95.HeaderPrompt = "OVERSEAS_RATE";
+            isOraColElement95.DataType = "System.String";
+            isOraColElement95.HeaderPrompt = "OVERSEAS_YN";
             isOraColElement95.LastValue = null;
             isOraColElement95.MemberControl = null;
             isOraColElement95.MemberValue = null;
@@ -2735,10 +2781,10 @@
             isOraColElement95.TL5_XAA = null;
             isOraColElement95.Visible = null;
             isOraColElement95.Width = null;
-            isOraColElement96.DataColumn = "GET_DATE";
+            isOraColElement96.DataColumn = "OVERSEAS_RATE";
             isOraColElement96.DataOrdinal = 18;
-            isOraColElement96.DataType = "System.DateTime";
-            isOraColElement96.HeaderPrompt = "GET_DATE";
+            isOraColElement96.DataType = "System.Decimal";
+            isOraColElement96.HeaderPrompt = "OVERSEAS_RATE";
             isOraColElement96.LastValue = null;
             isOraColElement96.MemberControl = null;
             isOraColElement96.MemberValue = null;
@@ -2753,10 +2799,10 @@
             isOraColElement96.TL5_XAA = null;
             isOraColElement96.Visible = null;
             isOraColElement96.Width = null;
-            isOraColElement97.DataColumn = "LOSS_DATE";
+            isOraColElement97.DataColumn = "GET_DATE";
             isOraColElement97.DataOrdinal = 19;
             isOraColElement97.DataType = "System.DateTime";
-            isOraColElement97.HeaderPrompt = "LOSS_DATE";
+            isOraColElement97.HeaderPrompt = "GET_DATE";
             isOraColElement97.LastValue = null;
             isOraColElement97.MemberControl = null;
             isOraColElement97.MemberValue = null;
@@ -2771,10 +2817,10 @@
             isOraColElement97.TL5_XAA = null;
             isOraColElement97.Visible = null;
             isOraColElement97.Width = null;
-            isOraColElement98.DataColumn = "INSUR_NO";
+            isOraColElement98.DataColumn = "LOSS_DATE";
             isOraColElement98.DataOrdinal = 20;
-            isOraColElement98.DataType = "System.String";
-            isOraColElement98.HeaderPrompt = "INSUR_NO";
+            isOraColElement98.DataType = "System.DateTime";
+            isOraColElement98.HeaderPrompt = "LOSS_DATE";
             isOraColElement98.LastValue = null;
             isOraColElement98.MemberControl = null;
             isOraColElement98.MemberValue = null;
@@ -2789,10 +2835,10 @@
             isOraColElement98.TL5_XAA = null;
             isOraColElement98.Visible = null;
             isOraColElement98.Width = null;
-            isOraColElement99.DataColumn = "DESCRIPTION";
+            isOraColElement99.DataColumn = "INSUR_NO";
             isOraColElement99.DataOrdinal = 21;
             isOraColElement99.DataType = "System.String";
-            isOraColElement99.HeaderPrompt = "DESCRIPTION";
+            isOraColElement99.HeaderPrompt = "INSUR_NO";
             isOraColElement99.LastValue = null;
             isOraColElement99.MemberControl = null;
             isOraColElement99.MemberValue = null;
@@ -2807,10 +2853,10 @@
             isOraColElement99.TL5_XAA = null;
             isOraColElement99.Visible = null;
             isOraColElement99.Width = null;
-            isOraColElement100.DataColumn = "INSUR_TYPE";
+            isOraColElement100.DataColumn = "DESCRIPTION";
             isOraColElement100.DataOrdinal = 22;
             isOraColElement100.DataType = "System.String";
-            isOraColElement100.HeaderPrompt = "INSUR_TYPE";
+            isOraColElement100.HeaderPrompt = "DESCRIPTION";
             isOraColElement100.LastValue = null;
             isOraColElement100.MemberControl = null;
             isOraColElement100.MemberValue = null;
@@ -2825,6 +2871,24 @@
             isOraColElement100.TL5_XAA = null;
             isOraColElement100.Visible = null;
             isOraColElement100.Width = null;
+            isOraColElement101.DataColumn = "INSUR_TYPE";
+            isOraColElement101.DataOrdinal = 23;
+            isOraColElement101.DataType = "System.String";
+            isOraColElement101.HeaderPrompt = "INSUR_TYPE";
+            isOraColElement101.LastValue = null;
+            isOraColElement101.MemberControl = null;
+            isOraColElement101.MemberValue = null;
+            isOraColElement101.Nullable = 1;
+            isOraColElement101.Ordinal = 23;
+            isOraColElement101.RelationKeyColumn = null;
+            isOraColElement101.ReturnParameter = null;
+            isOraColElement101.TL1_KR = null;
+            isOraColElement101.TL2_CN = null;
+            isOraColElement101.TL3_VN = null;
+            isOraColElement101.TL4_JP = null;
+            isOraColElement101.TL5_XAA = null;
+            isOraColElement101.Visible = null;
+            isOraColElement101.Width = null;
             this.idaHEALTH_INSUR.SelectColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
             isOraColElement78,
             isOraColElement79,
@@ -2848,211 +2912,219 @@
             isOraColElement97,
             isOraColElement98,
             isOraColElement99,
-            isOraColElement100});
-            isOraParamElement96.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement96.MemberControl = null;
-            isOraParamElement96.MemberValue = null;
-            isOraParamElement96.OraDbTypeString = "REF CURSOR";
-            isOraParamElement96.OraType = System.Data.OracleClient.OracleType.Cursor;
-            isOraParamElement96.ParamName = "P_CURSOR";
-            isOraParamElement96.Size = 0;
-            isOraParamElement96.SourceColumn = null;
-            isOraParamElement97.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement97.MemberControl = this.CORP_ID_0;
-            isOraParamElement97.MemberValue = "EditValue";
-            isOraParamElement97.OraDbTypeString = "NUMBER";
-            isOraParamElement97.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement97.ParamName = "W_CORP_ID";
-            isOraParamElement97.Size = 22;
+            isOraColElement100,
+            isOraColElement101});
+            isOraParamElement97.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement97.MemberControl = null;
+            isOraParamElement97.MemberValue = null;
+            isOraParamElement97.OraDbTypeString = "REF CURSOR";
+            isOraParamElement97.OraType = System.Data.OracleClient.OracleType.Cursor;
+            isOraParamElement97.ParamName = "P_CURSOR";
+            isOraParamElement97.Size = 0;
             isOraParamElement97.SourceColumn = null;
             isOraParamElement98.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement98.MemberControl = this.INSUR_YYYYMM_0;
+            isOraParamElement98.MemberControl = this.CORP_ID_0;
             isOraParamElement98.MemberValue = "EditValue";
-            isOraParamElement98.OraDbTypeString = "VARCHAR2";
-            isOraParamElement98.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement98.ParamName = "W_INSUR_YYYYMM";
-            isOraParamElement98.Size = 0;
+            isOraParamElement98.OraDbTypeString = "NUMBER";
+            isOraParamElement98.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement98.ParamName = "W_CORP_ID";
+            isOraParamElement98.Size = 22;
             isOraParamElement98.SourceColumn = null;
             isOraParamElement99.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement99.MemberControl = this.INSUR_TYPE_M;
+            isOraParamElement99.MemberControl = this.INSUR_YYYYMM_0;
             isOraParamElement99.MemberValue = "EditValue";
             isOraParamElement99.OraDbTypeString = "VARCHAR2";
             isOraParamElement99.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement99.ParamName = "W_INSUR_TYPE";
-            isOraParamElement99.Size = 2;
+            isOraParamElement99.ParamName = "W_INSUR_YYYYMM";
+            isOraParamElement99.Size = 0;
             isOraParamElement99.SourceColumn = null;
             isOraParamElement100.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement100.MemberControl = this.DEPT_ID_0;
+            isOraParamElement100.MemberControl = this.INSUR_TYPE_M;
             isOraParamElement100.MemberValue = "EditValue";
-            isOraParamElement100.OraDbTypeString = "NUMBER";
-            isOraParamElement100.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement100.ParamName = "W_DEPT_ID";
-            isOraParamElement100.Size = 22;
+            isOraParamElement100.OraDbTypeString = "VARCHAR2";
+            isOraParamElement100.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement100.ParamName = "W_INSUR_TYPE";
+            isOraParamElement100.Size = 2;
             isOraParamElement100.SourceColumn = null;
             isOraParamElement101.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement101.MemberControl = this.PERSON_ID_0;
+            isOraParamElement101.MemberControl = this.DEPT_ID_0;
             isOraParamElement101.MemberValue = "EditValue";
             isOraParamElement101.OraDbTypeString = "NUMBER";
             isOraParamElement101.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement101.ParamName = "W_PERSON_ID";
+            isOraParamElement101.ParamName = "W_DEPT_ID";
             isOraParamElement101.Size = 22;
             isOraParamElement101.SourceColumn = null;
             isOraParamElement102.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement102.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement102.MemberValue = "SOB_ID";
+            isOraParamElement102.MemberControl = this.PERSON_ID_0;
+            isOraParamElement102.MemberValue = "EditValue";
             isOraParamElement102.OraDbTypeString = "NUMBER";
             isOraParamElement102.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement102.ParamName = "W_SOB_ID";
+            isOraParamElement102.ParamName = "W_PERSON_ID";
             isOraParamElement102.Size = 22;
             isOraParamElement102.SourceColumn = null;
             isOraParamElement103.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement103.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement103.MemberValue = "ORG_ID";
+            isOraParamElement103.MemberValue = "SOB_ID";
             isOraParamElement103.OraDbTypeString = "NUMBER";
             isOraParamElement103.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement103.ParamName = "W_ORG_ID";
+            isOraParamElement103.ParamName = "W_SOB_ID";
             isOraParamElement103.Size = 22;
             isOraParamElement103.SourceColumn = null;
+            isOraParamElement104.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement104.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement104.MemberValue = "ORG_ID";
+            isOraParamElement104.OraDbTypeString = "NUMBER";
+            isOraParamElement104.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement104.ParamName = "W_ORG_ID";
+            isOraParamElement104.Size = 22;
+            isOraParamElement104.SourceColumn = null;
             this.idaHEALTH_INSUR.SelectParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement96,
             isOraParamElement97,
             isOraParamElement98,
             isOraParamElement99,
             isOraParamElement100,
             isOraParamElement101,
             isOraParamElement102,
-            isOraParamElement103});
-            isOraParamElement104.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement104.MemberControl = null;
-            isOraParamElement104.MemberValue = null;
-            isOraParamElement104.OraDbTypeString = "NUMBER";
-            isOraParamElement104.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement104.ParamName = "W_PERSON_ID";
-            isOraParamElement104.Size = 22;
-            isOraParamElement104.SourceColumn = "PERSON_ID";
-            isOraParamElement104.Where = 1;
+            isOraParamElement103,
+            isOraParamElement104});
             isOraParamElement105.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement105.MemberControl = null;
             isOraParamElement105.MemberValue = null;
             isOraParamElement105.OraDbTypeString = "NUMBER";
             isOraParamElement105.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement105.ParamName = "P_CORP_ID";
+            isOraParamElement105.ParamName = "W_PERSON_ID";
             isOraParamElement105.Size = 22;
-            isOraParamElement105.SourceColumn = "CORP_ID";
+            isOraParamElement105.SourceColumn = "PERSON_ID";
+            isOraParamElement105.Where = 1;
             isOraParamElement106.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement106.MemberControl = this.INSUR_TYPE_M;
-            isOraParamElement106.MemberValue = "EditValue";
-            isOraParamElement106.OraDbTypeString = "VARCHAR2";
-            isOraParamElement106.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement106.ParamName = "P_INSUR_TYPE";
-            isOraParamElement106.Size = 2;
-            isOraParamElement106.SourceColumn = "";
+            isOraParamElement106.MemberControl = null;
+            isOraParamElement106.MemberValue = null;
+            isOraParamElement106.OraDbTypeString = "NUMBER";
+            isOraParamElement106.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement106.ParamName = "P_CORP_ID";
+            isOraParamElement106.Size = 22;
+            isOraParamElement106.SourceColumn = "CORP_ID";
             isOraParamElement107.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement107.MemberControl = null;
-            isOraParamElement107.MemberValue = null;
+            isOraParamElement107.MemberControl = this.INSUR_TYPE_M;
+            isOraParamElement107.MemberValue = "EditValue";
             isOraParamElement107.OraDbTypeString = "VARCHAR2";
             isOraParamElement107.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement107.ParamName = "P_INSUR_YN";
-            isOraParamElement107.Size = 1;
-            isOraParamElement107.SourceColumn = "INSUR_YN";
+            isOraParamElement107.ParamName = "P_INSUR_TYPE";
+            isOraParamElement107.Size = 2;
+            isOraParamElement107.SourceColumn = "";
             isOraParamElement108.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement108.MemberControl = null;
             isOraParamElement108.MemberValue = null;
             isOraParamElement108.OraDbTypeString = "VARCHAR2";
             isOraParamElement108.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement108.ParamName = "P_INSUR_GRADE_STEP";
-            isOraParamElement108.Size = 5;
-            isOraParamElement108.SourceColumn = "INSUR_GRADE_STEP";
+            isOraParamElement108.ParamName = "P_INSUR_YN";
+            isOraParamElement108.Size = 1;
+            isOraParamElement108.SourceColumn = "INSUR_YN";
             isOraParamElement109.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement109.MemberControl = null;
             isOraParamElement109.MemberValue = null;
-            isOraParamElement109.OraDbTypeString = "NUMBER";
-            isOraParamElement109.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement109.ParamName = "P_INSUR_AMOUNT";
-            isOraParamElement109.Size = 22;
-            isOraParamElement109.SourceColumn = "INSUR_AMOUNT";
+            isOraParamElement109.OraDbTypeString = "VARCHAR2";
+            isOraParamElement109.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement109.ParamName = "P_INSUR_GRADE_STEP";
+            isOraParamElement109.Size = 5;
+            isOraParamElement109.SourceColumn = "INSUR_GRADE_STEP";
             isOraParamElement110.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement110.MemberControl = null;
             isOraParamElement110.MemberValue = null;
-            isOraParamElement110.OraDbTypeString = "VARCHAR2";
-            isOraParamElement110.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement110.ParamName = "P_CARE_INSUR_REDUCE_YN";
-            isOraParamElement110.Size = 2;
-            isOraParamElement110.SourceColumn = "CARE_INSUR_REDUCE_YN";
+            isOraParamElement110.OraDbTypeString = "NUMBER";
+            isOraParamElement110.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement110.ParamName = "P_INSUR_AMOUNT";
+            isOraParamElement110.Size = 22;
+            isOraParamElement110.SourceColumn = "INSUR_AMOUNT";
             isOraParamElement111.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement111.MemberControl = null;
             isOraParamElement111.MemberValue = null;
             isOraParamElement111.OraDbTypeString = "VARCHAR2";
             isOraParamElement111.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement111.ParamName = "P_OVERSEAS_YN";
+            isOraParamElement111.ParamName = "P_CARE_INSUR_REDUCE_YN";
             isOraParamElement111.Size = 2;
-            isOraParamElement111.SourceColumn = "OVERSEAS_YN";
+            isOraParamElement111.SourceColumn = "CARE_INSUR_REDUCE_YN";
             isOraParamElement112.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement112.MemberControl = null;
             isOraParamElement112.MemberValue = null;
-            isOraParamElement112.OraDbTypeString = "NUMBER";
-            isOraParamElement112.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement112.ParamName = "P_OVERSEAS_RATE";
-            isOraParamElement112.Size = 22;
-            isOraParamElement112.SourceColumn = "OVERSEAS_RATE";
+            isOraParamElement112.OraDbTypeString = "VARCHAR2";
+            isOraParamElement112.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement112.ParamName = "P_OVERSEAS_YN";
+            isOraParamElement112.Size = 2;
+            isOraParamElement112.SourceColumn = "OVERSEAS_YN";
             isOraParamElement113.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement113.MemberControl = null;
             isOraParamElement113.MemberValue = null;
-            isOraParamElement113.OraDbTypeString = "DATE";
-            isOraParamElement113.OraType = System.Data.OracleClient.OracleType.DateTime;
-            isOraParamElement113.ParamName = "P_GET_DATE";
-            isOraParamElement113.Size = 0;
-            isOraParamElement113.SourceColumn = "GET_DATE";
+            isOraParamElement113.OraDbTypeString = "NUMBER";
+            isOraParamElement113.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement113.ParamName = "P_OVERSEAS_RATE";
+            isOraParamElement113.Size = 22;
+            isOraParamElement113.SourceColumn = "OVERSEAS_RATE";
             isOraParamElement114.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement114.MemberControl = null;
             isOraParamElement114.MemberValue = null;
             isOraParamElement114.OraDbTypeString = "DATE";
             isOraParamElement114.OraType = System.Data.OracleClient.OracleType.DateTime;
-            isOraParamElement114.ParamName = "P_LOSS_DATE";
+            isOraParamElement114.ParamName = "P_GET_DATE";
             isOraParamElement114.Size = 0;
-            isOraParamElement114.SourceColumn = "LOSS_DATE";
+            isOraParamElement114.SourceColumn = "GET_DATE";
             isOraParamElement115.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement115.MemberControl = null;
             isOraParamElement115.MemberValue = null;
-            isOraParamElement115.OraDbTypeString = "VARCHAR2";
-            isOraParamElement115.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement115.ParamName = "P_INSUR_NO";
-            isOraParamElement115.Size = 50;
-            isOraParamElement115.SourceColumn = "INSUR_NO";
+            isOraParamElement115.OraDbTypeString = "DATE";
+            isOraParamElement115.OraType = System.Data.OracleClient.OracleType.DateTime;
+            isOraParamElement115.ParamName = "P_LOSS_DATE";
+            isOraParamElement115.Size = 0;
+            isOraParamElement115.SourceColumn = "LOSS_DATE";
             isOraParamElement116.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement116.MemberControl = null;
             isOraParamElement116.MemberValue = null;
             isOraParamElement116.OraDbTypeString = "VARCHAR2";
             isOraParamElement116.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement116.ParamName = "P_DESCRIPTION";
-            isOraParamElement116.Size = 100;
-            isOraParamElement116.SourceColumn = "DESCRIPTION";
+            isOraParamElement116.ParamName = "P_INSUR_NO";
+            isOraParamElement116.Size = 50;
+            isOraParamElement116.SourceColumn = "INSUR_NO";
             isOraParamElement117.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement117.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement117.MemberValue = "SOB_ID";
-            isOraParamElement117.OraDbTypeString = "NUMBER";
-            isOraParamElement117.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement117.ParamName = "P_SOB_ID";
-            isOraParamElement117.Size = 22;
-            isOraParamElement117.SourceColumn = "";
+            isOraParamElement117.MemberControl = null;
+            isOraParamElement117.MemberValue = null;
+            isOraParamElement117.OraDbTypeString = "VARCHAR2";
+            isOraParamElement117.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement117.ParamName = "P_DESCRIPTION";
+            isOraParamElement117.Size = 100;
+            isOraParamElement117.SourceColumn = "DESCRIPTION";
             isOraParamElement118.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement118.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement118.MemberValue = "ORG_ID";
+            isOraParamElement118.MemberValue = "SOB_ID";
             isOraParamElement118.OraDbTypeString = "NUMBER";
             isOraParamElement118.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement118.ParamName = "P_ORG_ID";
+            isOraParamElement118.ParamName = "P_SOB_ID";
             isOraParamElement118.Size = 22;
             isOraParamElement118.SourceColumn = "";
             isOraParamElement119.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement119.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement119.MemberValue = "USER_ID";
+            isOraParamElement119.MemberValue = "ORG_ID";
             isOraParamElement119.OraDbTypeString = "NUMBER";
             isOraParamElement119.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement119.ParamName = "P_USER_ID";
+            isOraParamElement119.ParamName = "P_ORG_ID";
             isOraParamElement119.Size = 22;
             isOraParamElement119.SourceColumn = "";
+            isOraParamElement120.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement120.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement120.MemberValue = "USER_ID";
+            isOraParamElement120.OraDbTypeString = "NUMBER";
+            isOraParamElement120.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement120.ParamName = "P_USER_ID";
+            isOraParamElement120.Size = 22;
+            isOraParamElement120.SourceColumn = "";
+            isOraParamElement121.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement121.MemberControl = null;
+            isOraParamElement121.MemberValue = null;
+            isOraParamElement121.OraDbTypeString = "VARCHAR2";
+            isOraParamElement121.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement121.ParamName = "P_CARE_INSUR_EXCEPT_YN";
+            isOraParamElement121.Size = 3;
+            isOraParamElement121.SourceColumn = "CARE_INSUR_EXCEPT_YN";
             this.idaHEALTH_INSUR.UpdateParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement104,
             isOraParamElement105,
             isOraParamElement106,
             isOraParamElement107,
@@ -3067,7 +3139,9 @@
             isOraParamElement116,
             isOraParamElement117,
             isOraParamElement118,
-            isOraParamElement119});
+            isOraParamElement119,
+            isOraParamElement120,
+            isOraParamElement121});
             this.idaHEALTH_INSUR.WizardOwner = "";
             this.idaHEALTH_INSUR.WizardProcedure = "";
             this.idaHEALTH_INSUR.WizardTableName = "";
@@ -3123,10 +3197,10 @@
             // 
             this.isOraConnection1.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.isOraConnection1.OraConnectionInfo = oraConnectionInfo1;
-            this.isOraConnection1.OraHost = "58.151.251.160";
-            this.isOraConnection1.OraPassword = "infoflex!";
+            this.isOraConnection1.OraHost = "146.56.184.66";
+            this.isOraConnection1.OraPassword = "infoflex";
             this.isOraConnection1.OraPort = "1521";
-            this.isOraConnection1.OraServiceName = "NFKPROD";
+            this.isOraConnection1.OraServiceName = "KJK_icn1rm.sub12300429060.kjkvcn.oraclevcn.com";
             this.isOraConnection1.OraUserId = "APPS";
             // 
             // CORP_ID_0
@@ -3771,7 +3845,65 @@
             this.igrPENSION_INSUR.BaseGrid.Properties.GridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.igrPENSION_INSUR.BaseGrid.Properties.MarkColHeader = false;
             this.igrPENSION_INSUR.BaseGrid.Properties.MarkRowHeader = false;
-            gridRangeStyle54.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle49.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle49.StyleInfo.Font.Bold = false;
+            gridRangeStyle49.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle49.StyleInfo.Font.Italic = false;
+            gridRangeStyle49.StyleInfo.Font.Size = 9F;
+            gridRangeStyle49.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle49.StyleInfo.Font.Underline = false;
+            gridRangeStyle49.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle50.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle50.StyleInfo.Font.Bold = false;
+            gridRangeStyle50.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle50.StyleInfo.Font.Italic = false;
+            gridRangeStyle50.StyleInfo.Font.Size = 9F;
+            gridRangeStyle50.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle50.StyleInfo.Font.Underline = false;
+            gridRangeStyle50.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle51.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle51.StyleInfo.Font.Bold = false;
+            gridRangeStyle51.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle51.StyleInfo.Font.Italic = false;
+            gridRangeStyle51.StyleInfo.Font.Size = 9F;
+            gridRangeStyle51.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle51.StyleInfo.Font.Underline = false;
+            gridRangeStyle51.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle52.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(1);
+            gridRangeStyle52.StyleInfo.CellType = "TextBox";
+            gridRangeStyle52.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle52.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle52.StyleInfo.Clickable = true;
+            gridRangeStyle52.StyleInfo.Font.Bold = false;
+            gridRangeStyle52.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle52.StyleInfo.Font.Italic = false;
+            gridRangeStyle52.StyleInfo.Font.Size = 9F;
+            gridRangeStyle52.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle52.StyleInfo.Font.Underline = false;
+            gridRangeStyle52.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle52.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle52.StyleInfo.ReadOnly = false;
+            gridRangeStyle52.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle53.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(2, 3);
+            gridRangeStyle53.StyleInfo.CellType = "TextBox";
+            gridRangeStyle53.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle53.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle53.StyleInfo.Clickable = false;
+            gridRangeStyle53.StyleInfo.Font.Bold = false;
+            gridRangeStyle53.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle53.StyleInfo.Font.Italic = false;
+            gridRangeStyle53.StyleInfo.Font.Size = 9F;
+            gridRangeStyle53.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle53.StyleInfo.Font.Underline = false;
+            gridRangeStyle53.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle53.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle53.StyleInfo.ReadOnly = true;
+            gridRangeStyle53.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle54.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(4);
+            gridRangeStyle54.StyleInfo.CellType = "TextBox";
+            gridRangeStyle54.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle54.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle54.StyleInfo.Clickable = true;
             gridRangeStyle54.StyleInfo.Font.Bold = false;
             gridRangeStyle54.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle54.StyleInfo.Font.Italic = false;
@@ -3779,7 +3911,14 @@
             gridRangeStyle54.StyleInfo.Font.Strikeout = false;
             gridRangeStyle54.StyleInfo.Font.Underline = false;
             gridRangeStyle54.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle55.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle54.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle54.StyleInfo.ReadOnly = false;
+            gridRangeStyle54.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle55.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(5);
+            gridRangeStyle55.StyleInfo.CellType = "ComboBox";
+            gridRangeStyle55.StyleInfo.CellValueType = typeof(System.DateTime);
+            gridRangeStyle55.StyleInfo.Clickable = true;
+            gridRangeStyle55.StyleInfo.CultureInfo = new System.Globalization.CultureInfo("");
             gridRangeStyle55.StyleInfo.Font.Bold = false;
             gridRangeStyle55.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle55.StyleInfo.Font.Italic = false;
@@ -3787,11 +3926,15 @@
             gridRangeStyle55.StyleInfo.Font.Strikeout = false;
             gridRangeStyle55.StyleInfo.Font.Underline = false;
             gridRangeStyle55.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle56.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(1);
-            gridRangeStyle56.StyleInfo.CellType = "TextBox";
-            gridRangeStyle56.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle56.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            gridRangeStyle56.StyleInfo.Clickable = true;
+            gridRangeStyle55.StyleInfo.Format = "yyyy-MM-dd";
+            gridRangeStyle55.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle55.StyleInfo.ReadOnly = false;
+            gridRangeStyle55.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle56.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(6, 7);
+            gridRangeStyle56.StyleInfo.CellType = "ComboBox";
+            gridRangeStyle56.StyleInfo.CellValueType = typeof(System.DateTime);
+            gridRangeStyle56.StyleInfo.Clickable = false;
+            gridRangeStyle56.StyleInfo.CultureInfo = new System.Globalization.CultureInfo("");
             gridRangeStyle56.StyleInfo.Font.Bold = false;
             gridRangeStyle56.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle56.StyleInfo.Font.Italic = false;
@@ -3799,14 +3942,19 @@
             gridRangeStyle56.StyleInfo.Font.Strikeout = false;
             gridRangeStyle56.StyleInfo.Font.Underline = false;
             gridRangeStyle56.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle56.StyleInfo.Format = "yyyy-MM-dd";
             gridRangeStyle56.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
-            gridRangeStyle56.StyleInfo.ReadOnly = false;
+            gridRangeStyle56.StyleInfo.ReadOnly = true;
             gridRangeStyle56.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle57.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(2, 3);
-            gridRangeStyle57.StyleInfo.CellType = "TextBox";
-            gridRangeStyle57.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle57.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle57.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(8, 9);
+            gridRangeStyle57.StyleInfo.CellType = "Currency";
+            gridRangeStyle57.StyleInfo.CellValueType = typeof(decimal);
             gridRangeStyle57.StyleInfo.Clickable = false;
+            gridRangeStyle57.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
+            gridRangeStyle57.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
+            gridRangeStyle57.StyleInfo.CurrencyEdit.CurrencySymbol = "";
+            gridRangeStyle57.StyleInfo.CurrencyEdit.NullString = "";
+            gridRangeStyle57.StyleInfo.CurrencyEdit.NullValue = null;
             gridRangeStyle57.StyleInfo.Font.Bold = false;
             gridRangeStyle57.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle57.StyleInfo.Font.Italic = false;
@@ -3814,13 +3962,14 @@
             gridRangeStyle57.StyleInfo.Font.Strikeout = false;
             gridRangeStyle57.StyleInfo.Font.Underline = false;
             gridRangeStyle57.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle57.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle57.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
             gridRangeStyle57.StyleInfo.ReadOnly = true;
             gridRangeStyle57.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle58.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(4);
-            gridRangeStyle58.StyleInfo.CellType = "TextBox";
+            gridRangeStyle58.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(10);
+            gridRangeStyle58.StyleInfo.CellType = "CheckBox";
             gridRangeStyle58.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle58.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle58.StyleInfo.CheckBoxOptions.CheckedValue = "Y";
+            gridRangeStyle58.StyleInfo.CheckBoxOptions.UncheckedValue = "N";
             gridRangeStyle58.StyleInfo.Clickable = true;
             gridRangeStyle58.StyleInfo.Font.Bold = false;
             gridRangeStyle58.StyleInfo.Font.Facename = "굴림";
@@ -3829,14 +3978,14 @@
             gridRangeStyle58.StyleInfo.Font.Strikeout = false;
             gridRangeStyle58.StyleInfo.Font.Underline = false;
             gridRangeStyle58.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle58.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle58.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
             gridRangeStyle58.StyleInfo.ReadOnly = false;
             gridRangeStyle58.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle59.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(5);
-            gridRangeStyle59.StyleInfo.CellType = "ComboBox";
-            gridRangeStyle59.StyleInfo.CellValueType = typeof(System.DateTime);
+            gridRangeStyle59.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(11);
+            gridRangeStyle59.StyleInfo.CellType = "TextBox";
+            gridRangeStyle59.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle59.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             gridRangeStyle59.StyleInfo.Clickable = true;
-            gridRangeStyle59.StyleInfo.CultureInfo = new System.Globalization.CultureInfo("");
             gridRangeStyle59.StyleInfo.Font.Bold = false;
             gridRangeStyle59.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle59.StyleInfo.Font.Italic = false;
@@ -3844,15 +3993,22 @@
             gridRangeStyle59.StyleInfo.Font.Strikeout = false;
             gridRangeStyle59.StyleInfo.Font.Underline = false;
             gridRangeStyle59.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle59.StyleInfo.Format = "yyyy-MM-dd";
             gridRangeStyle59.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
             gridRangeStyle59.StyleInfo.ReadOnly = false;
             gridRangeStyle59.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle60.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(6, 7);
-            gridRangeStyle60.StyleInfo.CellType = "ComboBox";
-            gridRangeStyle60.StyleInfo.CellValueType = typeof(System.DateTime);
-            gridRangeStyle60.StyleInfo.Clickable = false;
-            gridRangeStyle60.StyleInfo.CultureInfo = new System.Globalization.CultureInfo("");
+            gridRangeStyle60.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(12);
+            gridRangeStyle60.StyleInfo.CellType = "Currency";
+            gridRangeStyle60.StyleInfo.CellValueType = typeof(decimal);
+            gridRangeStyle60.StyleInfo.Clickable = true;
+            gridRangeStyle60.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
+            gridRangeStyle60.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
+            gridRangeStyle60.StyleInfo.CurrencyEdit.CurrencySymbol = "";
+            gridRangeStyle60.StyleInfo.CurrencyEdit.NullString = "0";
+            gridRangeStyle60.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             gridRangeStyle60.StyleInfo.Font.Bold = false;
             gridRangeStyle60.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle60.StyleInfo.Font.Italic = false;
@@ -3860,11 +4016,10 @@
             gridRangeStyle60.StyleInfo.Font.Strikeout = false;
             gridRangeStyle60.StyleInfo.Font.Underline = false;
             gridRangeStyle60.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle60.StyleInfo.Format = "yyyy-MM-dd";
-            gridRangeStyle60.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
-            gridRangeStyle60.StyleInfo.ReadOnly = true;
+            gridRangeStyle60.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
+            gridRangeStyle60.StyleInfo.ReadOnly = false;
             gridRangeStyle60.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle61.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(8, 9);
+            gridRangeStyle61.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(13);
             gridRangeStyle61.StyleInfo.CellType = "Currency";
             gridRangeStyle61.StyleInfo.CellValueType = typeof(decimal);
             gridRangeStyle61.StyleInfo.Clickable = false;
@@ -3883,12 +4038,15 @@
             gridRangeStyle61.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
             gridRangeStyle61.StyleInfo.ReadOnly = true;
             gridRangeStyle61.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle62.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(10);
-            gridRangeStyle62.StyleInfo.CellType = "CheckBox";
-            gridRangeStyle62.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle62.StyleInfo.CheckBoxOptions.CheckedValue = "Y";
-            gridRangeStyle62.StyleInfo.CheckBoxOptions.UncheckedValue = "N";
+            gridRangeStyle62.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(14, 15);
+            gridRangeStyle62.StyleInfo.CellType = "Currency";
+            gridRangeStyle62.StyleInfo.CellValueType = typeof(decimal);
             gridRangeStyle62.StyleInfo.Clickable = true;
+            gridRangeStyle62.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
+            gridRangeStyle62.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
+            gridRangeStyle62.StyleInfo.CurrencyEdit.CurrencySymbol = "";
+            gridRangeStyle62.StyleInfo.CurrencyEdit.NullString = "";
+            gridRangeStyle62.StyleInfo.CurrencyEdit.NullValue = null;
             gridRangeStyle62.StyleInfo.Font.Bold = false;
             gridRangeStyle62.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle62.StyleInfo.Font.Italic = false;
@@ -3896,13 +4054,14 @@
             gridRangeStyle62.StyleInfo.Font.Strikeout = false;
             gridRangeStyle62.StyleInfo.Font.Underline = false;
             gridRangeStyle62.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle62.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
+            gridRangeStyle62.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
             gridRangeStyle62.StyleInfo.ReadOnly = false;
             gridRangeStyle62.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle63.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(11);
-            gridRangeStyle63.StyleInfo.CellType = "TextBox";
+            gridRangeStyle63.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(16, 17);
+            gridRangeStyle63.StyleInfo.CellType = "CheckBox";
             gridRangeStyle63.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle63.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle63.StyleInfo.CheckBoxOptions.CheckedValue = "Y";
+            gridRangeStyle63.StyleInfo.CheckBoxOptions.UncheckedValue = "N";
             gridRangeStyle63.StyleInfo.Clickable = true;
             gridRangeStyle63.StyleInfo.Font.Bold = false;
             gridRangeStyle63.StyleInfo.Font.Facename = "굴림";
@@ -3911,22 +4070,18 @@
             gridRangeStyle63.StyleInfo.Font.Strikeout = false;
             gridRangeStyle63.StyleInfo.Font.Underline = false;
             gridRangeStyle63.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle63.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle63.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
             gridRangeStyle63.StyleInfo.ReadOnly = false;
             gridRangeStyle63.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle64.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(12);
+            gridRangeStyle64.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(18);
             gridRangeStyle64.StyleInfo.CellType = "Currency";
             gridRangeStyle64.StyleInfo.CellValueType = typeof(decimal);
             gridRangeStyle64.StyleInfo.Clickable = true;
-            gridRangeStyle64.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
+            gridRangeStyle64.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 4;
             gridRangeStyle64.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
             gridRangeStyle64.StyleInfo.CurrencyEdit.CurrencySymbol = "";
-            gridRangeStyle64.StyleInfo.CurrencyEdit.NullString = "0";
-            gridRangeStyle64.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
+            gridRangeStyle64.StyleInfo.CurrencyEdit.NullString = "";
+            gridRangeStyle64.StyleInfo.CurrencyEdit.NullValue = null;
             gridRangeStyle64.StyleInfo.Font.Bold = false;
             gridRangeStyle64.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle64.StyleInfo.Font.Italic = false;
@@ -3937,15 +4092,11 @@
             gridRangeStyle64.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
             gridRangeStyle64.StyleInfo.ReadOnly = false;
             gridRangeStyle64.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle65.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(13);
-            gridRangeStyle65.StyleInfo.CellType = "Currency";
-            gridRangeStyle65.StyleInfo.CellValueType = typeof(decimal);
-            gridRangeStyle65.StyleInfo.Clickable = false;
-            gridRangeStyle65.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
-            gridRangeStyle65.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
-            gridRangeStyle65.StyleInfo.CurrencyEdit.CurrencySymbol = "";
-            gridRangeStyle65.StyleInfo.CurrencyEdit.NullString = "";
-            gridRangeStyle65.StyleInfo.CurrencyEdit.NullValue = null;
+            gridRangeStyle65.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(19, 20);
+            gridRangeStyle65.StyleInfo.CellType = "ComboBox";
+            gridRangeStyle65.StyleInfo.CellValueType = typeof(System.DateTime);
+            gridRangeStyle65.StyleInfo.Clickable = true;
+            gridRangeStyle65.StyleInfo.CultureInfo = new System.Globalization.CultureInfo("");
             gridRangeStyle65.StyleInfo.Font.Bold = false;
             gridRangeStyle65.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle65.StyleInfo.Font.Italic = false;
@@ -3953,18 +4104,15 @@
             gridRangeStyle65.StyleInfo.Font.Strikeout = false;
             gridRangeStyle65.StyleInfo.Font.Underline = false;
             gridRangeStyle65.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle65.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
-            gridRangeStyle65.StyleInfo.ReadOnly = true;
+            gridRangeStyle65.StyleInfo.Format = "yyyy-MM-dd";
+            gridRangeStyle65.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle65.StyleInfo.ReadOnly = false;
             gridRangeStyle65.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle66.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(14, 15);
-            gridRangeStyle66.StyleInfo.CellType = "Currency";
-            gridRangeStyle66.StyleInfo.CellValueType = typeof(decimal);
+            gridRangeStyle66.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(21, 23);
+            gridRangeStyle66.StyleInfo.CellType = "TextBox";
+            gridRangeStyle66.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle66.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             gridRangeStyle66.StyleInfo.Clickable = true;
-            gridRangeStyle66.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
-            gridRangeStyle66.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
-            gridRangeStyle66.StyleInfo.CurrencyEdit.CurrencySymbol = "";
-            gridRangeStyle66.StyleInfo.CurrencyEdit.NullString = "";
-            gridRangeStyle66.StyleInfo.CurrencyEdit.NullValue = null;
             gridRangeStyle66.StyleInfo.Font.Bold = false;
             gridRangeStyle66.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle66.StyleInfo.Font.Italic = false;
@@ -3972,148 +4120,87 @@
             gridRangeStyle66.StyleInfo.Font.Strikeout = false;
             gridRangeStyle66.StyleInfo.Font.Underline = false;
             gridRangeStyle66.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle66.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
+            gridRangeStyle66.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
             gridRangeStyle66.StyleInfo.ReadOnly = false;
             gridRangeStyle66.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle67.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(16, 17);
-            gridRangeStyle67.StyleInfo.CellType = "CheckBox";
-            gridRangeStyle67.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle67.StyleInfo.CheckBoxOptions.CheckedValue = "Y";
-            gridRangeStyle67.StyleInfo.CheckBoxOptions.UncheckedValue = "N";
-            gridRangeStyle67.StyleInfo.Clickable = true;
-            gridRangeStyle67.StyleInfo.Font.Bold = false;
-            gridRangeStyle67.StyleInfo.Font.Facename = "굴림";
-            gridRangeStyle67.StyleInfo.Font.Italic = false;
-            gridRangeStyle67.StyleInfo.Font.Size = 9F;
-            gridRangeStyle67.StyleInfo.Font.Strikeout = false;
-            gridRangeStyle67.StyleInfo.Font.Underline = false;
-            gridRangeStyle67.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle67.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
-            gridRangeStyle67.StyleInfo.ReadOnly = false;
-            gridRangeStyle67.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle68.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(18);
-            gridRangeStyle68.StyleInfo.CellType = "Currency";
-            gridRangeStyle68.StyleInfo.CellValueType = typeof(decimal);
-            gridRangeStyle68.StyleInfo.Clickable = true;
-            gridRangeStyle68.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 4;
-            gridRangeStyle68.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
-            gridRangeStyle68.StyleInfo.CurrencyEdit.CurrencySymbol = "";
-            gridRangeStyle68.StyleInfo.CurrencyEdit.NullString = "";
-            gridRangeStyle68.StyleInfo.CurrencyEdit.NullValue = null;
-            gridRangeStyle68.StyleInfo.Font.Bold = false;
-            gridRangeStyle68.StyleInfo.Font.Facename = "굴림";
-            gridRangeStyle68.StyleInfo.Font.Italic = false;
-            gridRangeStyle68.StyleInfo.Font.Size = 9F;
-            gridRangeStyle68.StyleInfo.Font.Strikeout = false;
-            gridRangeStyle68.StyleInfo.Font.Underline = false;
-            gridRangeStyle68.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle68.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
-            gridRangeStyle68.StyleInfo.ReadOnly = false;
-            gridRangeStyle68.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle69.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(19, 20);
-            gridRangeStyle69.StyleInfo.CellType = "ComboBox";
-            gridRangeStyle69.StyleInfo.CellValueType = typeof(System.DateTime);
-            gridRangeStyle69.StyleInfo.Clickable = true;
-            gridRangeStyle69.StyleInfo.CultureInfo = new System.Globalization.CultureInfo("");
-            gridRangeStyle69.StyleInfo.Font.Bold = false;
-            gridRangeStyle69.StyleInfo.Font.Facename = "굴림";
-            gridRangeStyle69.StyleInfo.Font.Italic = false;
-            gridRangeStyle69.StyleInfo.Font.Size = 9F;
-            gridRangeStyle69.StyleInfo.Font.Strikeout = false;
-            gridRangeStyle69.StyleInfo.Font.Underline = false;
-            gridRangeStyle69.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle69.StyleInfo.Format = "yyyy-MM-dd";
-            gridRangeStyle69.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
-            gridRangeStyle69.StyleInfo.ReadOnly = false;
-            gridRangeStyle69.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle70.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(21, 23);
-            gridRangeStyle70.StyleInfo.CellType = "TextBox";
-            gridRangeStyle70.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle70.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            gridRangeStyle70.StyleInfo.Clickable = true;
-            gridRangeStyle70.StyleInfo.Font.Bold = false;
-            gridRangeStyle70.StyleInfo.Font.Facename = "굴림";
-            gridRangeStyle70.StyleInfo.Font.Italic = false;
-            gridRangeStyle70.StyleInfo.Font.Size = 9F;
-            gridRangeStyle70.StyleInfo.Font.Strikeout = false;
-            gridRangeStyle70.StyleInfo.Font.Underline = false;
-            gridRangeStyle70.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle70.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
-            gridRangeStyle70.StyleInfo.ReadOnly = false;
-            gridRangeStyle70.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle71.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 1, 1, 1);
-            gridRangeStyle71.StyleInfo.Text = "사원번호";
-            gridRangeStyle72.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 2, 1, 2);
-            gridRangeStyle72.StyleInfo.Text = "성명";
-            gridRangeStyle73.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 3, 1, 3);
-            gridRangeStyle73.StyleInfo.Text = "부서";
-            gridRangeStyle74.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 4, 1, 4);
-            gridRangeStyle74.StyleInfo.Text = "직위";
-            gridRangeStyle75.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 5, 1, 5);
-            gridRangeStyle75.StyleInfo.Text = "그룹입사일";
-            gridRangeStyle76.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 6, 1, 6);
-            gridRangeStyle76.StyleInfo.Text = "입사일자";
-            gridRangeStyle77.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 7);
-            gridRangeStyle77.StyleInfo.Text = "퇴사일";
-            gridRangeStyle78.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 8);
-            gridRangeStyle78.StyleInfo.Text = "사번";
-            gridRangeStyle79.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 9);
-            gridRangeStyle79.StyleInfo.Text = "업체id";
-            gridRangeStyle80.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 10, 1, 10);
-            gridRangeStyle80.StyleInfo.Text = "공제";
-            gridRangeStyle81.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 11, 1, 11);
-            gridRangeStyle81.StyleInfo.Text = "등급";
-            gridRangeStyle82.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 12);
-            gridRangeStyle82.StyleInfo.Text = "소득월액";
-            gridRangeStyle83.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 13);
-            gridRangeStyle83.StyleInfo.Text = "보험액";
-            gridRangeStyle84.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 14, 0, 15);
-            gridRangeStyle84.StyleInfo.Text = "";
-            gridRangeStyle85.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 16);
-            gridRangeStyle85.StyleInfo.Text = "요양보험경감";
-            gridRangeStyle86.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 17);
-            gridRangeStyle86.StyleInfo.Text = "국외근로";
-            gridRangeStyle87.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 18);
-            gridRangeStyle87.StyleInfo.Text = "국외근로자 경감율(%)";
-            gridRangeStyle88.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 19);
-            gridRangeStyle88.StyleInfo.Text = "취득일자";
-            gridRangeStyle89.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 20);
-            gridRangeStyle89.StyleInfo.Text = "상실일자";
-            gridRangeStyle90.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 21, 1, 21);
-            gridRangeStyle90.StyleInfo.Text = "보험번호";
-            gridRangeStyle91.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 22);
-            gridRangeStyle91.StyleInfo.Text = "비고";
-            gridRangeStyle92.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 23);
-            gridRangeStyle92.StyleInfo.Text = "보험구분";
-            gridRangeStyle93.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 7);
-            gridRangeStyle93.StyleInfo.Text = "퇴사일자";
-            gridRangeStyle94.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 8);
-            gridRangeStyle94.StyleInfo.Text = "Person ID";
-            gridRangeStyle95.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 9);
-            gridRangeStyle95.StyleInfo.Text = "Corp ID";
-            gridRangeStyle96.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 12);
-            gridRangeStyle96.StyleInfo.Text = "INSUR_AMOUNT";
-            gridRangeStyle97.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 13);
-            gridRangeStyle97.StyleInfo.Text = "CHARGE_AMOUNT";
-            gridRangeStyle98.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 14);
-            gridRangeStyle98.StyleInfo.Text = "CARE_CHARGE_AMOUNT";
-            gridRangeStyle99.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 15);
-            gridRangeStyle99.StyleInfo.Text = "TOTAL_INSUR_AMOUNT";
-            gridRangeStyle100.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 16);
-            gridRangeStyle100.StyleInfo.Text = "CARE_INSUR_REDUCE_YN";
-            gridRangeStyle101.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 17);
-            gridRangeStyle101.StyleInfo.Text = "OVERSEAS_YN";
-            gridRangeStyle102.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 18);
-            gridRangeStyle102.StyleInfo.Text = "OVERSEAS_RATE";
-            gridRangeStyle103.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 19);
-            gridRangeStyle103.StyleInfo.Text = "GET_DATE";
-            gridRangeStyle104.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 20);
-            gridRangeStyle104.StyleInfo.Text = "LOSS_DATE";
-            gridRangeStyle105.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 22);
-            gridRangeStyle105.StyleInfo.Text = "DESCRIPTION";
-            gridRangeStyle106.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 23);
-            gridRangeStyle106.StyleInfo.Text = "INSUR_TYPE";
+            gridRangeStyle67.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 1, 1, 1);
+            gridRangeStyle67.StyleInfo.Text = "사원번호";
+            gridRangeStyle68.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 2, 1, 2);
+            gridRangeStyle68.StyleInfo.Text = "성명";
+            gridRangeStyle69.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 3, 1, 3);
+            gridRangeStyle69.StyleInfo.Text = "부서";
+            gridRangeStyle70.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 4, 1, 4);
+            gridRangeStyle70.StyleInfo.Text = "직위";
+            gridRangeStyle71.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 5, 1, 5);
+            gridRangeStyle71.StyleInfo.Text = "그룹입사일";
+            gridRangeStyle72.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 6, 1, 6);
+            gridRangeStyle72.StyleInfo.Text = "입사일자";
+            gridRangeStyle73.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 7);
+            gridRangeStyle73.StyleInfo.Text = "퇴사일";
+            gridRangeStyle74.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 8);
+            gridRangeStyle74.StyleInfo.Text = "사번";
+            gridRangeStyle75.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 9);
+            gridRangeStyle75.StyleInfo.Text = "업체id";
+            gridRangeStyle76.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 10, 1, 10);
+            gridRangeStyle76.StyleInfo.Text = "공제";
+            gridRangeStyle77.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 11, 1, 11);
+            gridRangeStyle77.StyleInfo.Text = "등급";
+            gridRangeStyle78.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 12);
+            gridRangeStyle78.StyleInfo.Text = "소득월액";
+            gridRangeStyle79.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 13);
+            gridRangeStyle79.StyleInfo.Text = "보험액";
+            gridRangeStyle80.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 14, 0, 15);
+            gridRangeStyle80.StyleInfo.Text = "";
+            gridRangeStyle81.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 16);
+            gridRangeStyle81.StyleInfo.Text = "요양보험경감";
+            gridRangeStyle82.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 17);
+            gridRangeStyle82.StyleInfo.Text = "국외근로";
+            gridRangeStyle83.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 18);
+            gridRangeStyle83.StyleInfo.Text = "국외근로자 경감율(%)";
+            gridRangeStyle84.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 19);
+            gridRangeStyle84.StyleInfo.Text = "취득일자";
+            gridRangeStyle85.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 20);
+            gridRangeStyle85.StyleInfo.Text = "상실일자";
+            gridRangeStyle86.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 21, 1, 21);
+            gridRangeStyle86.StyleInfo.Text = "보험번호";
+            gridRangeStyle87.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 22);
+            gridRangeStyle87.StyleInfo.Text = "비고";
+            gridRangeStyle88.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 23);
+            gridRangeStyle88.StyleInfo.Text = "보험구분";
+            gridRangeStyle89.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 7);
+            gridRangeStyle89.StyleInfo.Text = "퇴사일자";
+            gridRangeStyle90.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 8);
+            gridRangeStyle90.StyleInfo.Text = "Person ID";
+            gridRangeStyle91.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 9);
+            gridRangeStyle91.StyleInfo.Text = "Corp ID";
+            gridRangeStyle92.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 12);
+            gridRangeStyle92.StyleInfo.Text = "INSUR_AMOUNT";
+            gridRangeStyle93.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 13);
+            gridRangeStyle93.StyleInfo.Text = "CHARGE_AMOUNT";
+            gridRangeStyle94.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 14);
+            gridRangeStyle94.StyleInfo.Text = "CARE_CHARGE_AMOUNT";
+            gridRangeStyle95.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 15);
+            gridRangeStyle95.StyleInfo.Text = "TOTAL_INSUR_AMOUNT";
+            gridRangeStyle96.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 16);
+            gridRangeStyle96.StyleInfo.Text = "CARE_INSUR_REDUCE_YN";
+            gridRangeStyle97.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 17);
+            gridRangeStyle97.StyleInfo.Text = "OVERSEAS_YN";
+            gridRangeStyle98.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 18);
+            gridRangeStyle98.StyleInfo.Text = "OVERSEAS_RATE";
+            gridRangeStyle99.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 19);
+            gridRangeStyle99.StyleInfo.Text = "GET_DATE";
+            gridRangeStyle100.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 20);
+            gridRangeStyle100.StyleInfo.Text = "LOSS_DATE";
+            gridRangeStyle101.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 22);
+            gridRangeStyle101.StyleInfo.Text = "DESCRIPTION";
+            gridRangeStyle102.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 23);
+            gridRangeStyle102.StyleInfo.Text = "INSUR_TYPE";
             this.igrPENSION_INSUR.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
+            gridRangeStyle49,
+            gridRangeStyle50,
+            gridRangeStyle51,
+            gridRangeStyle52,
+            gridRangeStyle53,
             gridRangeStyle54,
             gridRangeStyle55,
             gridRangeStyle56,
@@ -4162,11 +4249,7 @@
             gridRangeStyle99,
             gridRangeStyle100,
             gridRangeStyle101,
-            gridRangeStyle102,
-            gridRangeStyle103,
-            gridRangeStyle104,
-            gridRangeStyle105,
-            gridRangeStyle106});
+            gridRangeStyle102});
             this.igrPENSION_INSUR.BaseGrid.RefreshCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridRefreshCurrentCellBehavior.RefreshRow;
             this.igrPENSION_INSUR.BaseGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.igrPENSION_INSUR.BaseGrid.RowCount = 1;
@@ -4181,104 +4264,103 @@
             this.igrPENSION_INSUR.BaseGrid.UseRightToLeftCompatibleTextBox = true;
             this.igrPENSION_INSUR.ColCount = 23;
             this.igrPENSION_INSUR.ColHeaderCount = 2;
-            isGridAdvExRangeElement25.Bottom = 1;
-            isGridAdvExRangeElement25.Left = 0;
-            isGridAdvExRangeElement25.Right = 0;
-            isGridAdvExRangeElement25.Top = 0;
             isGridAdvExRangeElement26.Bottom = 1;
-            isGridAdvExRangeElement26.Left = 1;
-            isGridAdvExRangeElement26.Right = 1;
+            isGridAdvExRangeElement26.Left = 0;
+            isGridAdvExRangeElement26.Right = 0;
             isGridAdvExRangeElement26.Top = 0;
             isGridAdvExRangeElement27.Bottom = 1;
-            isGridAdvExRangeElement27.Left = 2;
-            isGridAdvExRangeElement27.Right = 2;
+            isGridAdvExRangeElement27.Left = 1;
+            isGridAdvExRangeElement27.Right = 1;
             isGridAdvExRangeElement27.Top = 0;
             isGridAdvExRangeElement28.Bottom = 1;
-            isGridAdvExRangeElement28.Left = 3;
-            isGridAdvExRangeElement28.Right = 3;
+            isGridAdvExRangeElement28.Left = 2;
+            isGridAdvExRangeElement28.Right = 2;
             isGridAdvExRangeElement28.Top = 0;
             isGridAdvExRangeElement29.Bottom = 1;
-            isGridAdvExRangeElement29.Left = 4;
-            isGridAdvExRangeElement29.Right = 4;
+            isGridAdvExRangeElement29.Left = 3;
+            isGridAdvExRangeElement29.Right = 3;
             isGridAdvExRangeElement29.Top = 0;
             isGridAdvExRangeElement30.Bottom = 1;
-            isGridAdvExRangeElement30.Left = 5;
-            isGridAdvExRangeElement30.Right = 5;
+            isGridAdvExRangeElement30.Left = 4;
+            isGridAdvExRangeElement30.Right = 4;
             isGridAdvExRangeElement30.Top = 0;
             isGridAdvExRangeElement31.Bottom = 1;
-            isGridAdvExRangeElement31.Left = 6;
-            isGridAdvExRangeElement31.Right = 6;
+            isGridAdvExRangeElement31.Left = 5;
+            isGridAdvExRangeElement31.Right = 5;
             isGridAdvExRangeElement31.Top = 0;
             isGridAdvExRangeElement32.Bottom = 1;
-            isGridAdvExRangeElement32.Left = 7;
-            isGridAdvExRangeElement32.Right = 7;
+            isGridAdvExRangeElement32.Left = 6;
+            isGridAdvExRangeElement32.Right = 6;
             isGridAdvExRangeElement32.Top = 0;
             isGridAdvExRangeElement33.Bottom = 1;
-            isGridAdvExRangeElement33.Left = 8;
-            isGridAdvExRangeElement33.Right = 8;
+            isGridAdvExRangeElement33.Left = 7;
+            isGridAdvExRangeElement33.Right = 7;
             isGridAdvExRangeElement33.Top = 0;
             isGridAdvExRangeElement34.Bottom = 1;
-            isGridAdvExRangeElement34.Left = 9;
-            isGridAdvExRangeElement34.Right = 9;
+            isGridAdvExRangeElement34.Left = 8;
+            isGridAdvExRangeElement34.Right = 8;
             isGridAdvExRangeElement34.Top = 0;
             isGridAdvExRangeElement35.Bottom = 1;
-            isGridAdvExRangeElement35.Left = 15;
-            isGridAdvExRangeElement35.Right = 15;
+            isGridAdvExRangeElement35.Left = 9;
+            isGridAdvExRangeElement35.Right = 9;
             isGridAdvExRangeElement35.Top = 0;
             isGridAdvExRangeElement36.Bottom = 1;
-            isGridAdvExRangeElement36.Left = 16;
-            isGridAdvExRangeElement36.Right = 16;
+            isGridAdvExRangeElement36.Left = 15;
+            isGridAdvExRangeElement36.Right = 15;
             isGridAdvExRangeElement36.Top = 0;
             isGridAdvExRangeElement37.Bottom = 1;
-            isGridAdvExRangeElement37.Left = 17;
-            isGridAdvExRangeElement37.Right = 17;
+            isGridAdvExRangeElement37.Left = 16;
+            isGridAdvExRangeElement37.Right = 16;
             isGridAdvExRangeElement37.Top = 0;
             isGridAdvExRangeElement38.Bottom = 1;
-            isGridAdvExRangeElement38.Left = 18;
-            isGridAdvExRangeElement38.Right = 18;
+            isGridAdvExRangeElement38.Left = 17;
+            isGridAdvExRangeElement38.Right = 17;
             isGridAdvExRangeElement38.Top = 0;
             isGridAdvExRangeElement39.Bottom = 1;
-            isGridAdvExRangeElement39.Left = 19;
-            isGridAdvExRangeElement39.Right = 19;
+            isGridAdvExRangeElement39.Left = 18;
+            isGridAdvExRangeElement39.Right = 18;
             isGridAdvExRangeElement39.Top = 0;
             isGridAdvExRangeElement40.Bottom = 1;
-            isGridAdvExRangeElement40.Left = 20;
-            isGridAdvExRangeElement40.Right = 20;
+            isGridAdvExRangeElement40.Left = 19;
+            isGridAdvExRangeElement40.Right = 19;
             isGridAdvExRangeElement40.Top = 0;
             isGridAdvExRangeElement41.Bottom = 1;
-            isGridAdvExRangeElement41.Left = 14;
-            isGridAdvExRangeElement41.Right = 14;
+            isGridAdvExRangeElement41.Left = 20;
+            isGridAdvExRangeElement41.Right = 20;
             isGridAdvExRangeElement41.Top = 0;
             isGridAdvExRangeElement42.Bottom = 1;
-            isGridAdvExRangeElement42.Left = 10;
-            isGridAdvExRangeElement42.Right = 10;
+            isGridAdvExRangeElement42.Left = 14;
+            isGridAdvExRangeElement42.Right = 14;
             isGridAdvExRangeElement42.Top = 0;
             isGridAdvExRangeElement43.Bottom = 1;
-            isGridAdvExRangeElement43.Left = 11;
-            isGridAdvExRangeElement43.Right = 11;
+            isGridAdvExRangeElement43.Left = 10;
+            isGridAdvExRangeElement43.Right = 10;
             isGridAdvExRangeElement43.Top = 0;
             isGridAdvExRangeElement44.Bottom = 1;
-            isGridAdvExRangeElement44.Left = 12;
-            isGridAdvExRangeElement44.Right = 12;
+            isGridAdvExRangeElement44.Left = 11;
+            isGridAdvExRangeElement44.Right = 11;
             isGridAdvExRangeElement44.Top = 0;
             isGridAdvExRangeElement45.Bottom = 1;
-            isGridAdvExRangeElement45.Left = 13;
-            isGridAdvExRangeElement45.Right = 13;
+            isGridAdvExRangeElement45.Left = 12;
+            isGridAdvExRangeElement45.Right = 12;
             isGridAdvExRangeElement45.Top = 0;
             isGridAdvExRangeElement46.Bottom = 1;
-            isGridAdvExRangeElement46.Left = 21;
-            isGridAdvExRangeElement46.Right = 21;
+            isGridAdvExRangeElement46.Left = 13;
+            isGridAdvExRangeElement46.Right = 13;
             isGridAdvExRangeElement46.Top = 0;
             isGridAdvExRangeElement47.Bottom = 1;
-            isGridAdvExRangeElement47.Left = 22;
-            isGridAdvExRangeElement47.Right = 22;
+            isGridAdvExRangeElement47.Left = 21;
+            isGridAdvExRangeElement47.Right = 21;
             isGridAdvExRangeElement47.Top = 0;
             isGridAdvExRangeElement48.Bottom = 1;
-            isGridAdvExRangeElement48.Left = 23;
-            isGridAdvExRangeElement48.Right = 23;
+            isGridAdvExRangeElement48.Left = 22;
+            isGridAdvExRangeElement48.Right = 22;
             isGridAdvExRangeElement48.Top = 0;
+            isGridAdvExRangeElement49.Bottom = 1;
+            isGridAdvExRangeElement49.Left = 23;
+            isGridAdvExRangeElement49.Right = 23;
+            isGridAdvExRangeElement49.Top = 0;
             this.igrPENSION_INSUR.ColHeaderMergeElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement[] {
-            isGridAdvExRangeElement25,
             isGridAdvExRangeElement26,
             isGridAdvExRangeElement27,
             isGridAdvExRangeElement28,
@@ -4301,7 +4383,8 @@
             isGridAdvExRangeElement45,
             isGridAdvExRangeElement46,
             isGridAdvExRangeElement47,
-            isGridAdvExRangeElement48});
+            isGridAdvExRangeElement48,
+            isGridAdvExRangeElement49});
             this.igrPENSION_INSUR.DataAdapter = this.idaPENSION_INSUR;
             this.igrPENSION_INSUR.FrozenColCount = 2;
             isGridAdvExColElement1.ColumnType = "TextEdit";
@@ -5080,123 +5163,122 @@
             // 
             // idaPENSION_INSUR
             // 
-            isOraBindingElement24.LastValue = null;
-            isOraBindingElement24.MappingColumn = "PERSON_NUM";
-            isOraBindingElement24.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement24.MemberValue = "PERSON_NUM";
-            isOraBindingElement24.Ordinal = 1;
             isOraBindingElement25.LastValue = null;
-            isOraBindingElement25.MappingColumn = "NAME";
+            isOraBindingElement25.MappingColumn = "PERSON_NUM";
             isOraBindingElement25.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement25.MemberValue = "NAME";
-            isOraBindingElement25.Ordinal = 2;
+            isOraBindingElement25.MemberValue = "PERSON_NUM";
+            isOraBindingElement25.Ordinal = 1;
             isOraBindingElement26.LastValue = null;
-            isOraBindingElement26.MappingColumn = "DEPT_NAME";
+            isOraBindingElement26.MappingColumn = "NAME";
             isOraBindingElement26.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement26.MemberValue = "DEPT_NAME";
-            isOraBindingElement26.Ordinal = 3;
+            isOraBindingElement26.MemberValue = "NAME";
+            isOraBindingElement26.Ordinal = 2;
             isOraBindingElement27.LastValue = null;
-            isOraBindingElement27.MappingColumn = "POST_NAME";
+            isOraBindingElement27.MappingColumn = "DEPT_NAME";
             isOraBindingElement27.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement27.MemberValue = "POST_NAME";
-            isOraBindingElement27.Ordinal = 4;
+            isOraBindingElement27.MemberValue = "DEPT_NAME";
+            isOraBindingElement27.Ordinal = 3;
             isOraBindingElement28.LastValue = null;
-            isOraBindingElement28.MappingColumn = "ORI_JOIN_DATE";
+            isOraBindingElement28.MappingColumn = "POST_NAME";
             isOraBindingElement28.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement28.MemberValue = "ORI_JOIN_DATE";
-            isOraBindingElement28.Ordinal = 5;
+            isOraBindingElement28.MemberValue = "POST_NAME";
+            isOraBindingElement28.Ordinal = 4;
             isOraBindingElement29.LastValue = null;
-            isOraBindingElement29.MappingColumn = "JOIN_DATE";
+            isOraBindingElement29.MappingColumn = "ORI_JOIN_DATE";
             isOraBindingElement29.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement29.MemberValue = "JOIN_DATE";
-            isOraBindingElement29.Ordinal = 6;
+            isOraBindingElement29.MemberValue = "ORI_JOIN_DATE";
+            isOraBindingElement29.Ordinal = 5;
             isOraBindingElement30.LastValue = null;
-            isOraBindingElement30.MappingColumn = "RETIRE_DATE";
+            isOraBindingElement30.MappingColumn = "JOIN_DATE";
             isOraBindingElement30.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement30.MemberValue = "RETIRE_DATE";
-            isOraBindingElement30.Ordinal = 7;
+            isOraBindingElement30.MemberValue = "JOIN_DATE";
+            isOraBindingElement30.Ordinal = 6;
             isOraBindingElement31.LastValue = null;
-            isOraBindingElement31.MappingColumn = "PERSON_ID";
+            isOraBindingElement31.MappingColumn = "RETIRE_DATE";
             isOraBindingElement31.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement31.MemberValue = "PERSON_ID";
-            isOraBindingElement31.Ordinal = 8;
+            isOraBindingElement31.MemberValue = "RETIRE_DATE";
+            isOraBindingElement31.Ordinal = 7;
             isOraBindingElement32.LastValue = null;
-            isOraBindingElement32.MappingColumn = "CORP_ID";
+            isOraBindingElement32.MappingColumn = "PERSON_ID";
             isOraBindingElement32.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement32.MemberValue = "CORP_ID";
-            isOraBindingElement32.Ordinal = 9;
+            isOraBindingElement32.MemberValue = "PERSON_ID";
+            isOraBindingElement32.Ordinal = 8;
             isOraBindingElement33.LastValue = null;
-            isOraBindingElement33.MappingColumn = "INSUR_YN";
+            isOraBindingElement33.MappingColumn = "CORP_ID";
             isOraBindingElement33.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement33.MemberValue = "INSUR_YN";
-            isOraBindingElement33.Ordinal = 10;
+            isOraBindingElement33.MemberValue = "CORP_ID";
+            isOraBindingElement33.Ordinal = 9;
             isOraBindingElement34.LastValue = null;
-            isOraBindingElement34.MappingColumn = "INSUR_GRADE_STEP";
+            isOraBindingElement34.MappingColumn = "INSUR_YN";
             isOraBindingElement34.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement34.MemberValue = "INSUR_GRADE_STEP";
-            isOraBindingElement34.Ordinal = 11;
+            isOraBindingElement34.MemberValue = "INSUR_YN";
+            isOraBindingElement34.Ordinal = 10;
             isOraBindingElement35.LastValue = null;
-            isOraBindingElement35.MappingColumn = "INSUR_AMOUNT";
+            isOraBindingElement35.MappingColumn = "INSUR_GRADE_STEP";
             isOraBindingElement35.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement35.MemberValue = "INSUR_AMOUNT";
-            isOraBindingElement35.Ordinal = 12;
+            isOraBindingElement35.MemberValue = "INSUR_GRADE_STEP";
+            isOraBindingElement35.Ordinal = 11;
             isOraBindingElement36.LastValue = null;
-            isOraBindingElement36.MappingColumn = "CHARGE_AMOUNT";
+            isOraBindingElement36.MappingColumn = "INSUR_AMOUNT";
             isOraBindingElement36.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement36.MemberValue = "CHARGE_AMOUNT";
-            isOraBindingElement36.Ordinal = 13;
+            isOraBindingElement36.MemberValue = "INSUR_AMOUNT";
+            isOraBindingElement36.Ordinal = 12;
             isOraBindingElement37.LastValue = null;
-            isOraBindingElement37.MappingColumn = "CARE_CHARGE_AMOUNT";
+            isOraBindingElement37.MappingColumn = "CHARGE_AMOUNT";
             isOraBindingElement37.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement37.MemberValue = "CARE_CHARGE_AMOUNT";
-            isOraBindingElement37.Ordinal = 14;
+            isOraBindingElement37.MemberValue = "CHARGE_AMOUNT";
+            isOraBindingElement37.Ordinal = 13;
             isOraBindingElement38.LastValue = null;
-            isOraBindingElement38.MappingColumn = "TOTAL_INSUR_AMOUNT";
+            isOraBindingElement38.MappingColumn = "CARE_CHARGE_AMOUNT";
             isOraBindingElement38.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement38.MemberValue = "TOTAL_INSUR_AMOUNT";
-            isOraBindingElement38.Ordinal = 15;
+            isOraBindingElement38.MemberValue = "CARE_CHARGE_AMOUNT";
+            isOraBindingElement38.Ordinal = 14;
             isOraBindingElement39.LastValue = null;
-            isOraBindingElement39.MappingColumn = "CARE_INSUR_REDUCE_YN";
+            isOraBindingElement39.MappingColumn = "TOTAL_INSUR_AMOUNT";
             isOraBindingElement39.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement39.MemberValue = "CARE_INSUR_REDUCE_YN";
-            isOraBindingElement39.Ordinal = 16;
+            isOraBindingElement39.MemberValue = "TOTAL_INSUR_AMOUNT";
+            isOraBindingElement39.Ordinal = 15;
             isOraBindingElement40.LastValue = null;
-            isOraBindingElement40.MappingColumn = "OVERSEAS_YN";
+            isOraBindingElement40.MappingColumn = "CARE_INSUR_REDUCE_YN";
             isOraBindingElement40.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement40.MemberValue = "OVERSEAS_YN";
-            isOraBindingElement40.Ordinal = 17;
+            isOraBindingElement40.MemberValue = "CARE_INSUR_REDUCE_YN";
+            isOraBindingElement40.Ordinal = 16;
             isOraBindingElement41.LastValue = null;
-            isOraBindingElement41.MappingColumn = "OVERSEAS_RATE";
+            isOraBindingElement41.MappingColumn = "OVERSEAS_YN";
             isOraBindingElement41.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement41.MemberValue = "OVERSEAS_RATE";
-            isOraBindingElement41.Ordinal = 18;
+            isOraBindingElement41.MemberValue = "OVERSEAS_YN";
+            isOraBindingElement41.Ordinal = 17;
             isOraBindingElement42.LastValue = null;
-            isOraBindingElement42.MappingColumn = "GET_DATE";
+            isOraBindingElement42.MappingColumn = "OVERSEAS_RATE";
             isOraBindingElement42.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement42.MemberValue = "GET_DATE";
-            isOraBindingElement42.Ordinal = 19;
+            isOraBindingElement42.MemberValue = "OVERSEAS_RATE";
+            isOraBindingElement42.Ordinal = 18;
             isOraBindingElement43.LastValue = null;
-            isOraBindingElement43.MappingColumn = "LOSS_DATE";
+            isOraBindingElement43.MappingColumn = "GET_DATE";
             isOraBindingElement43.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement43.MemberValue = "LOSS_DATE";
-            isOraBindingElement43.Ordinal = 20;
+            isOraBindingElement43.MemberValue = "GET_DATE";
+            isOraBindingElement43.Ordinal = 19;
             isOraBindingElement44.LastValue = null;
-            isOraBindingElement44.MappingColumn = "INSUR_NO";
+            isOraBindingElement44.MappingColumn = "LOSS_DATE";
             isOraBindingElement44.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement44.MemberValue = "INSUR_NO";
-            isOraBindingElement44.Ordinal = 21;
+            isOraBindingElement44.MemberValue = "LOSS_DATE";
+            isOraBindingElement44.Ordinal = 20;
             isOraBindingElement45.LastValue = null;
-            isOraBindingElement45.MappingColumn = "DESCRIPTION";
+            isOraBindingElement45.MappingColumn = "INSUR_NO";
             isOraBindingElement45.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement45.MemberValue = "DESCRIPTION";
-            isOraBindingElement45.Ordinal = 22;
+            isOraBindingElement45.MemberValue = "INSUR_NO";
+            isOraBindingElement45.Ordinal = 21;
             isOraBindingElement46.LastValue = null;
-            isOraBindingElement46.MappingColumn = "INSUR_TYPE";
+            isOraBindingElement46.MappingColumn = "DESCRIPTION";
             isOraBindingElement46.MemberControl = this.igrPENSION_INSUR;
-            isOraBindingElement46.MemberValue = "INSUR_TYPE";
-            isOraBindingElement46.Ordinal = 23;
+            isOraBindingElement46.MemberValue = "DESCRIPTION";
+            isOraBindingElement46.Ordinal = 22;
+            isOraBindingElement47.LastValue = null;
+            isOraBindingElement47.MappingColumn = "INSUR_TYPE";
+            isOraBindingElement47.MemberControl = this.igrPENSION_INSUR;
+            isOraBindingElement47.MemberValue = "INSUR_TYPE";
+            isOraBindingElement47.Ordinal = 23;
             this.idaPENSION_INSUR.BindingElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraBindingElement[] {
-            isOraBindingElement24,
             isOraBindingElement25,
             isOraBindingElement26,
             isOraBindingElement27,
@@ -5218,7 +5300,8 @@
             isOraBindingElement43,
             isOraBindingElement44,
             isOraBindingElement45,
-            isOraBindingElement46});
+            isOraBindingElement46,
+            isOraBindingElement47});
             this.idaPENSION_INSUR.CancelMember.Cancel = false;
             this.idaPENSION_INSUR.CancelMember.Member = null;
             this.idaPENSION_INSUR.CancelMember.Prompt = null;
@@ -7804,30 +7887,12 @@
             // 
             // idcDEFAULT_CORP
             // 
-            isOraParamElement120.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement120.MemberControl = null;
-            isOraParamElement120.MemberValue = null;
-            isOraParamElement120.OraDbTypeString = "VARCHAR2";
-            isOraParamElement120.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement120.ParamName = "W_DEPT_CONTROL_YN";
-            isOraParamElement120.Size = 1;
-            isOraParamElement120.SourceColumn = null;
-            isOraParamElement120.TestValue = "Y";
-            isOraParamElement121.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement121.MemberControl = null;
-            isOraParamElement121.MemberValue = null;
-            isOraParamElement121.OraDbTypeString = "VARCHAR2";
-            isOraParamElement121.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement121.ParamName = "W_DUTY_CONTROL_YN";
-            isOraParamElement121.Size = 1;
-            isOraParamElement121.SourceColumn = null;
-            isOraParamElement121.TestValue = "Y";
             isOraParamElement122.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement122.MemberControl = null;
             isOraParamElement122.MemberValue = null;
             isOraParamElement122.OraDbTypeString = "VARCHAR2";
             isOraParamElement122.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement122.ParamName = "W_PAY_CONTROL_YN";
+            isOraParamElement122.ParamName = "W_DEPT_CONTROL_YN";
             isOraParamElement122.Size = 1;
             isOraParamElement122.SourceColumn = null;
             isOraParamElement122.TestValue = "Y";
@@ -7836,59 +7901,77 @@
             isOraParamElement123.MemberValue = null;
             isOraParamElement123.OraDbTypeString = "VARCHAR2";
             isOraParamElement123.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement123.ParamName = "W_ENABLED_FLAG_YN";
+            isOraParamElement123.ParamName = "W_DUTY_CONTROL_YN";
             isOraParamElement123.Size = 1;
             isOraParamElement123.SourceColumn = null;
+            isOraParamElement123.TestValue = "Y";
             isOraParamElement124.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement124.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement124.MemberValue = "SOB_ID";
-            isOraParamElement124.OraDbTypeString = "NUMBER";
-            isOraParamElement124.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement124.ParamName = "W_SOB_ID";
-            isOraParamElement124.Size = 22;
+            isOraParamElement124.MemberControl = null;
+            isOraParamElement124.MemberValue = null;
+            isOraParamElement124.OraDbTypeString = "VARCHAR2";
+            isOraParamElement124.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement124.ParamName = "W_PAY_CONTROL_YN";
+            isOraParamElement124.Size = 1;
             isOraParamElement124.SourceColumn = null;
+            isOraParamElement124.TestValue = "Y";
             isOraParamElement125.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement125.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement125.MemberValue = "ORG_ID";
-            isOraParamElement125.OraDbTypeString = "NUMBER";
-            isOraParamElement125.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement125.ParamName = "W_ORG_ID";
-            isOraParamElement125.Size = 22;
+            isOraParamElement125.MemberControl = null;
+            isOraParamElement125.MemberValue = null;
+            isOraParamElement125.OraDbTypeString = "VARCHAR2";
+            isOraParamElement125.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement125.ParamName = "W_ENABLED_FLAG_YN";
+            isOraParamElement125.Size = 1;
             isOraParamElement125.SourceColumn = null;
-            isOraParamElement126.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement126.MemberControl = null;
-            isOraParamElement126.MemberValue = null;
+            isOraParamElement126.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement126.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement126.MemberValue = "SOB_ID";
             isOraParamElement126.OraDbTypeString = "NUMBER";
             isOraParamElement126.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement126.ParamName = "O_CORP_ID";
+            isOraParamElement126.ParamName = "W_SOB_ID";
             isOraParamElement126.Size = 22;
             isOraParamElement126.SourceColumn = null;
-            isOraParamElement127.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement127.MemberControl = null;
-            isOraParamElement127.MemberValue = null;
-            isOraParamElement127.OraDbTypeString = "VARCHAR2";
-            isOraParamElement127.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement127.ParamName = "O_CORP_NAME";
-            isOraParamElement127.Size = 70;
+            isOraParamElement127.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement127.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement127.MemberValue = "ORG_ID";
+            isOraParamElement127.OraDbTypeString = "NUMBER";
+            isOraParamElement127.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement127.ParamName = "W_ORG_ID";
+            isOraParamElement127.Size = 22;
             isOraParamElement127.SourceColumn = null;
             isOraParamElement128.Direction = System.Data.ParameterDirection.Output;
             isOraParamElement128.MemberControl = null;
             isOraParamElement128.MemberValue = null;
             isOraParamElement128.OraDbTypeString = "NUMBER";
             isOraParamElement128.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement128.ParamName = "O_DEPT_CONTROL_LEVEL";
+            isOraParamElement128.ParamName = "O_CORP_ID";
             isOraParamElement128.Size = 22;
             isOraParamElement128.SourceColumn = null;
+            isOraParamElement129.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement129.MemberControl = null;
+            isOraParamElement129.MemberValue = null;
+            isOraParamElement129.OraDbTypeString = "VARCHAR2";
+            isOraParamElement129.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement129.ParamName = "O_CORP_NAME";
+            isOraParamElement129.Size = 70;
+            isOraParamElement129.SourceColumn = null;
+            isOraParamElement130.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement130.MemberControl = null;
+            isOraParamElement130.MemberValue = null;
+            isOraParamElement130.OraDbTypeString = "NUMBER";
+            isOraParamElement130.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement130.ParamName = "O_DEPT_CONTROL_LEVEL";
+            isOraParamElement130.Size = 22;
+            isOraParamElement130.SourceColumn = null;
             this.idcDEFAULT_CORP.CommandParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement120,
-            isOraParamElement121,
             isOraParamElement122,
             isOraParamElement123,
             isOraParamElement124,
             isOraParamElement125,
             isOraParamElement126,
             isOraParamElement127,
-            isOraParamElement128});
+            isOraParamElement128,
+            isOraParamElement129,
+            isOraParamElement130});
             this.idcDEFAULT_CORP.DataTransaction = null;
             this.idcDEFAULT_CORP.OraConnection = this.isOraConnection1;
             this.idcDEFAULT_CORP.OraOwner = "APPS";

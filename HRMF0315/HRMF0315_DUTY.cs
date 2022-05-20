@@ -91,6 +91,7 @@ namespace HRMF0315
 
         private void ibtCREATE_ButtonClick(object pSender, EventArgs pEventArgs)
         {
+            string sStatus = "F";
             string sMessage = null;
             if (iString.ISNull(DUTY_YEAR.EditValue) == string.Empty)
             {
@@ -111,11 +112,49 @@ namespace HRMF0315
             if (iString.ISNull(EXECUTE_TYPE.EditValue) == "HOLIDAY")
             {
                 idcHOLIDAY_DUTY.ExecuteNonQuery();
-                sMessage = idcHOLIDAY_DUTY.GetCommandParamValue("O_MESSAGE").ToString();
+                sStatus = iString.ISNull(idcHOLIDAY_DUTY.GetCommandParamValue("O_STATUS"));
+                sMessage = iString.ISNull(idcHOLIDAY_DUTY.GetCommandParamValue("O_MESSAGE"));
+                if(idcHOLIDAY_DUTY.ExcuteError)
+                {
+                    MessageBoxAdv.Show(idcHOLIDAY_DUTY.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else if (sStatus.Equals("F"))
+                {
+                    if (sMessage != string.Empty)
+                    {
+                        MessageBoxAdv.Show(sMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    return;
+                }
+                if(sMessage != string.Empty)
+                {
+                    MessageBoxAdv.Show(sMessage, "Infomation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else if (iString.ISNull(EXECUTE_TYPE.EditValue) == "PAYMENT")
             {
-                
+                idcHOLIDAY_PAYMENT.ExecuteNonQuery();
+                sStatus = iString.ISNull(idcHOLIDAY_PAYMENT.GetCommandParamValue("O_STATUS"));
+                sMessage = iString.ISNull(idcHOLIDAY_PAYMENT.GetCommandParamValue("O_MESSAGE"));
+                if (idcHOLIDAY_PAYMENT.ExcuteError)
+                {
+                    MessageBoxAdv.Show(idcHOLIDAY_PAYMENT.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else if (sStatus.Equals("F"))
+                {
+                    if (sMessage != string.Empty)
+                    {
+                        MessageBoxAdv.Show(sMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    return;
+                }
+                if (sMessage != string.Empty)
+                {
+                    MessageBoxAdv.Show(sMessage, "Infomation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
             }
             else if (iString.ISNull(EXECUTE_TYPE.EditValue) == "TRANSFER")
             {

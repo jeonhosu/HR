@@ -40,11 +40,10 @@
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="InfoSummitWinControlAdv, Version=13.4.31.5, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\dllCommon_2008\InfoSummitWinControlAdv.dll</HintPath>
+      <HintPath>C:\dllCommon_2008\InfoSummitWinControlAdv.dll</HintPath>
     </Reference>
-    <Reference Include="ISCommonUtil, Version=12.1.10.4, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\dllCommon_2008\ISCommonUtil.dll</HintPath>
+    <Reference Include="ISCommonUtil">
+      <HintPath>C:\dllCommon_2008\ISCommonUtil.dll</HintPath>
     </Reference>
     <Reference Include="Syncfusion.Chart.Base, Version=11.103.0.21, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -104,9 +103,8 @@
     <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="XLPrint, Version=1.0.10.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\dllCommon\XLPrint.dll</HintPath>
+    <Reference Include="XLPrint">
+      <HintPath>C:\dllCommon_2008\XLPrint.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

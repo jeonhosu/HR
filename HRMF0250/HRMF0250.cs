@@ -44,7 +44,7 @@ namespace HRMF0250
             this.MdiParent = pMainForm;
             isAppInterfaceAdv1.AppInterface = pAppInterface;
 
-            W_CERTI_TYPE.EditValue = pJOB_NO;
+            W_CERTI_TYPE_NAME.EditValue = pJOB_NO;
         }
 
         #endregion;
@@ -53,8 +53,18 @@ namespace HRMF0250
 
         private void SEARCH_DB()
         {
-            IDA_APPROVED_CERTI.Cancel();
-            IDA_APPROVED_CERTI.Fill();
+            IDA_CERTIFICATE_REQ.OraSelectData.AcceptChanges();
+            IDA_CERTIFICATE_REQ.Refillable = true;
+            IGR_APPROVED_CERTI.LastConfirmChanges();
+
+            IDA_CERTIFICATE_REQ.SetSelectParamValue("W_SOB_ID", -1);
+            IDA_CERTIFICATE_REQ.Fill();
+
+            CHECK.CheckedState = ISUtil.Enum.CheckedState.Unchecked;
+
+            IDA_CERTIFICATE_REQ.Cancel();
+            IDA_CERTIFICATE_REQ.SetSelectParamValue("W_SOB_ID", isAppInterfaceAdv1.AppInterface.SOB_ID);
+            IDA_CERTIFICATE_REQ.Fill();
         }
 
         #endregion;
@@ -71,25 +81,25 @@ namespace HRMF0250
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.AddOver)
                 {
-                    Default_Setting();
-                    IDA_APPROVED_CERTI.AddOver();
+                    IDA_CERTIFICATE_REQ.AddOver();
+                    Default_Setting(); 
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.AddUnder)
                 {
+                    IDA_CERTIFICATE_REQ.AddUnder();
                     Default_Setting();
-                    IDA_APPROVED_CERTI.AddUnder();
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Update)
                 {
-                    IDA_APPROVED_CERTI.Update();
+                    IDA_CERTIFICATE_REQ.Update();
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Cancel)
                 {
-                    IDA_APPROVED_CERTI.Cancel();
+                    IDA_CERTIFICATE_REQ.Cancel();
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Delete)
                 {
-                    IDA_APPROVED_CERTI.Delete();
+                    IDA_CERTIFICATE_REQ.Delete();
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Export)
                 {
@@ -144,36 +154,31 @@ namespace HRMF0250
         
         private void HRMF0250_Load(object sender, EventArgs e)
         {
-            IDA_APPROVED_CERTI.FillSchema();
+            IDA_CERTIFICATE_REQ.FillSchema();
         }
 
         private void HRMF0250_Shown(object sender, EventArgs e)
         {
             //DEFAULT Date SETTING
-            iSTART_DATE_0.EditValue = iDate.ISMonth_1st(DateTime.Today);
-            iEND_DATE_0.EditValue = iDate.ISMonth_Last(DateTime.Today);
+            W_START_DATE.EditValue = iDate.ISMonth_1st(DateTime.Today);
+            W_END_DATE.EditValue = iDate.ISMonth_Last(DateTime.Today);
             
             // LOOKUP DEFAULT VALUE SETTING - CORP
-            idcDEFAULT_CORP.SetCommandParamValue("W_PAY_CONTROL_YN", "Y");
-            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "N");
-            idcDEFAULT_CORP.ExecuteNonQuery();
+            IDC_DEFAULT_CORP.SetCommandParamValue("W_PAY_CONTROL_YN", "Y");
+            IDC_DEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "Y");
+            IDC_DEFAULT_CORP.ExecuteNonQuery();
 
-            W_CORP_NAME_0.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
-            W_CORP_ID_0.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_ID");
+            W_CORP_NAME.EditValue = IDC_DEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
+            W_CORP_ID.EditValue = IDC_DEFAULT_CORP.GetCommandParamValue("O_CORP_ID");
             APPROVED_CANCEL.CheckedState = ISUtil.Enum.CheckedState.Checked;
             V_APPROVE_STATUS.EditValue = "N";
 
-            W_CORP_NAME_0.BringToFront();
+            W_CORP_NAME.BringToFront();
 
-        }
-        private void IGR_OPERATION_CAPA_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void IGR_OPERATION_CAPA_CurrentCellChanged(object pSender, ISGridAdvExChangedEventArgs e)
-        {       
-
+            IDC_CERT_SEARCH_TYPE.SetCommandParamValue("W_GROUP_CODE", "CERT_SEARCH_TYPE");
+            IDC_CERT_SEARCH_TYPE.ExecuteNonQuery();
+            W_SEARCH_TYPE.EditValue = IDC_CERT_SEARCH_TYPE.GetCommandParamValue("O_CODE");
+            W_SEARCH_TYPE_NAME.EditValue = IDC_CERT_SEARCH_TYPE.GetCommandParamValue("O_CODE_NAME");  
         }
 
         #region ----- Form Event ------
@@ -186,62 +191,177 @@ namespace HRMF0250
                 IGR_APPROVED_CERTI.SetCellValue(r, IGR_APPROVED_CERTI.GetColumnToIndex("SELECT_YN"), CHECK.CheckBoxString);
             }
             IGR_APPROVED_CERTI.LastConfirmChanges();
-            IDA_APPROVED_CERTI.OraSelectData.AcceptChanges();
-            IDA_APPROVED_CERTI.Refillable = true;
+            IDA_CERTIFICATE_REQ.OraSelectData.AcceptChanges();
+            IDA_CERTIFICATE_REQ.Refillable = true;
         }
 
         #endregion
 
         private void Default_Setting()
         {
-            IGR_APPROVED_CERTI.SetCellValue("PRINT_DATE", DateTime.Today );
+            IGR_APPROVED_CERTI.SetCellValue("SELECT_YN", "Y");
+            IGR_APPROVED_CERTI.SetCellValue("REQ_DATE", DateTime.Today ); 
+            IGR_APPROVED_CERTI.SetCellValue("PRINT_COUNT", 1);
+            IGR_APPROVED_CERTI.CurrentCellMoveTo(IGR_APPROVED_CERTI.GetColumnToIndex("REQ_DATE"));
+            IGR_APPROVED_CERTI.CurrentCellActivate(IGR_APPROVED_CERTI.GetColumnToIndex("REQ_DATE"));
+            IGR_APPROVED_CERTI.Focus();
         }
 
         private void Set_BTN_STATE()
         {
             string mAPPROVE_STATE = iConv.ISNull(V_APPROVE_STATUS.EditValue);
             int mIDX_SELECT_YN = IGR_APPROVED_CERTI.GetColumnToIndex("SELECT_YN");
-            int mIDX_NAME = IGR_APPROVED_CERTI.GetColumnToIndex("NAME");
-            int mIDX_CERT_TYPE = IGR_APPROVED_CERTI.GetColumnToIndex("CERT_TYPE_NAME");
-            int mIDX_PERPOSE = IGR_APPROVED_CERTI.GetColumnToIndex("CERT_PRINT_PERPOSE");
-            int mIDX_DESCRIPTION = IGR_APPROVED_CERTI.GetColumnToIndex("DESCRIPTION");
+            ////int mIDX_NAME = IGR_APPROVED_CERTI.GetColumnToIndex("NAME");
+            ////int mIDX_CERT_TYPE = IGR_APPROVED_CERTI.GetColumnToIndex("CERT_TYPE_NAME");
+            ////int mIDX_REMARK = IGR_APPROVED_CERTI.GetColumnToIndex("REMARK");
+            ////int mIDX_SEND_ORG = IGR_APPROVED_CERTI.GetColumnToIndex("SEND_ORG");
+            ////int mIDX_DESCRIPTION = IGR_APPROVED_CERTI.GetColumnToIndex("DESCRIPTION");
 
             if (mAPPROVE_STATE == String.Empty || mAPPROVE_STATE == "A")
             {
-                ibt_OK.Enabled = false;
-                ibt_CANCEL.Enabled = false;
+                BTN_REQ_OK.Enabled = false;
+                BTN_REQ_CANCEL.Enabled = false;
 
                 IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SELECT_YN].Updatable = 0;
-                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_NAME].Updatable = 0;
-                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_CERT_TYPE].Updatable = 0;
-                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_PERPOSE].Updatable = 0;
-                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_DESCRIPTION].Updatable = 0;
+                //    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_NAME].Updatable = 0;
+                //    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_CERT_TYPE].Updatable = 0;
+                //    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_REMARK].Updatable = 0;
+                //    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SEND_ORG].Updatable = 0;
+                //    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_DESCRIPTION].Updatable = 0;
             }
             else
             {
                 if (mAPPROVE_STATE == "N")
                 {
-                    ibt_OK.Enabled = true;
-                    ibt_CANCEL.Enabled = false;
+                    BTN_REQ_OK.Enabled = true;
+                    BTN_REQ_CANCEL.Enabled = false;
 
-                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_NAME].Updatable = 1;
-                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_CERT_TYPE].Updatable = 1;
-                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_PERPOSE].Updatable = 1;
-                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_DESCRIPTION].Updatable = 1;
+                    //IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_NAME].Updatable = 1;
+                    //        IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_CERT_TYPE].Updatable = 1;
+                    //        IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_REMARK].Updatable = 1;
+                    //        IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SEND_ORG].Updatable = 1;
+                    //        IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_DESCRIPTION].Updatable = 1;
                 }
                 else
                 {
-                    ibt_OK.Enabled = false;
-                    ibt_CANCEL.Enabled = true;
+                    BTN_REQ_OK.Enabled = false;
+                    BTN_REQ_CANCEL.Enabled = true;
 
-                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_NAME].Updatable = 0;
-                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_CERT_TYPE].Updatable = 0;
-                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_PERPOSE].Updatable = 0;
-                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_DESCRIPTION].Updatable = 0;
+                    //        IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_NAME].Updatable = 0;
+                    //        IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_CERT_TYPE].Updatable = 0;
+                    //        IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_REMARK].Updatable = 0;
+                    //        IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SEND_ORG].Updatable = 0;
+                    //        IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_DESCRIPTION].Updatable = 0;
                 }
                 IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SELECT_YN].Updatable = 1;
             }
             SEARCH_DB();
+        }
+
+        private void Init_Grid(int pIDX_Row)
+        {
+            int mIDX_APPROVE_STATE = IGR_APPROVED_CERTI.GetColumnToIndex("APPROVE_STATE");
+            int mIDX_SELECT_YN = IGR_APPROVED_CERTI.GetColumnToIndex("SELECT_YN");
+            int mIDX_NAME = IGR_APPROVED_CERTI.GetColumnToIndex("NAME");
+            int mIDX_CERT_TYPE = IGR_APPROVED_CERTI.GetColumnToIndex("CERT_TYPE");
+            int mIDX_CERT_TYPE_NAME = IGR_APPROVED_CERTI.GetColumnToIndex("CERT_TYPE_NAME");
+            int mIDX_TASK_DESC = IGR_APPROVED_CERTI.GetColumnToIndex("TASK_DESC");
+            int mIDX_REMARK = IGR_APPROVED_CERTI.GetColumnToIndex("REMARK");
+            int mIDX_SEND_ORG = IGR_APPROVED_CERTI.GetColumnToIndex("SEND_ORG");
+            int mIDX_DESCRIPTION = IGR_APPROVED_CERTI.GetColumnToIndex("DESCRIPTION"); 
+            int mIDX_YEAR_YYYY = IGR_APPROVED_CERTI.GetColumnToIndex("YEAR_YYYY");
+            int mIDX_MONTH_FR = IGR_APPROVED_CERTI.GetColumnToIndex("MONTH_FR");
+            int mIDX_MONTH_TO = IGR_APPROVED_CERTI.GetColumnToIndex("MONTH_TO");
+            int mIDX_SAVING_INFO_FLAG = IGR_APPROVED_CERTI.GetColumnToIndex("SAVING_INFO_FLAG");
+            int mIDX_HOUSE_LEASE_INFO_FLAG = IGR_APPROVED_CERTI.GetColumnToIndex("HOUSE_LEASE_INFO_FLAG");
+
+            string mAPPROVE_STATE = iConv.ISNull(IGR_APPROVED_CERTI.GetCellValue(pIDX_Row, mIDX_APPROVE_STATE), "N");
+            if (mAPPROVE_STATE == "N" || mAPPROVE_STATE == "R")
+            {
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SELECT_YN].Updatable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_NAME].Updatable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_CERT_TYPE_NAME].Updatable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_TASK_DESC].Updatable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_REMARK].Updatable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SEND_ORG].Updatable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_DESCRIPTION].Updatable = 1;
+                 
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SELECT_YN].Insertable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_NAME].Insertable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_CERT_TYPE_NAME].Insertable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_TASK_DESC].Insertable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_REMARK].Insertable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SEND_ORG].Insertable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_DESCRIPTION].Insertable = 1;
+
+                if (iConv.ISNull(IGR_APPROVED_CERTI.GetCellValue(pIDX_Row, mIDX_CERT_TYPE), "N").StartsWith("2"))
+                {
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_YEAR_YYYY].Updatable = 1;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_FR].Updatable = 1;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_TO].Updatable = 1;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SAVING_INFO_FLAG].Updatable = 1;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_HOUSE_LEASE_INFO_FLAG].Updatable = 1;
+
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_YEAR_YYYY].Insertable = 1;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_FR].Insertable = 1;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_TO].Insertable = 1;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SAVING_INFO_FLAG].Insertable = 1;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_HOUSE_LEASE_INFO_FLAG].Insertable = 1;
+                } 
+                else
+                {
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_YEAR_YYYY].Updatable = 0;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_FR].Updatable = 0;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_TO].Updatable = 0;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SAVING_INFO_FLAG].Updatable = 0;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_HOUSE_LEASE_INFO_FLAG].Updatable = 0;
+
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_YEAR_YYYY].Insertable = 0;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_FR].Insertable = 0;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_TO].Insertable = 0;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SAVING_INFO_FLAG].Insertable = 0;
+                    IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_HOUSE_LEASE_INFO_FLAG].Insertable = 0;
+                }
+            }
+            else
+            {
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SELECT_YN].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_NAME].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_CERT_TYPE_NAME].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_TASK_DESC].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_REMARK].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SEND_ORG].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_DESCRIPTION].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_YEAR_YYYY].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_FR].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_TO].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SAVING_INFO_FLAG].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_HOUSE_LEASE_INFO_FLAG].Updatable = 0;
+
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SELECT_YN].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_NAME].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_CERT_TYPE_NAME].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_TASK_DESC].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_REMARK].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SEND_ORG].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_DESCRIPTION].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_YEAR_YYYY].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_FR].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_TO].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SAVING_INFO_FLAG].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_HOUSE_LEASE_INFO_FLAG].Insertable = 0;
+            } 
+             
+            IGR_APPROVED_CERTI.ResetDraw = true;
+        }
+
+        private void APPROVED_ALL_Click(object sender, EventArgs e)
+        {
+            ISRadioButtonAdv iStatus = sender as ISRadioButtonAdv;
+            V_APPROVE_STATUS.EditValue = iStatus.RadioCheckedString;
+
+            Set_BTN_STATE();
+
         }
 
         private void Set_Update_Approve(object pApproved_Flag)
@@ -252,92 +372,131 @@ namespace HRMF0250
             }
 
             Application.UseWaitCursor = true;
-            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
             Application.DoEvents();
 
             int vIDX_SELECT_FLAG = IGR_APPROVED_CERTI.GetColumnToIndex("SELECT_YN");
-            int vIDX_DUTY_PERIOD_ID = IGR_APPROVED_CERTI.GetColumnToIndex("CERT_PRINT_ID");
+            int vIDX_PRINT_REQ_NUM = IGR_APPROVED_CERTI.GetColumnToIndex("PRINT_REQ_NUM");
             string vSTATUS = "F";
             string vMESSAGE = null;
+
+            IDA_CERTIFICATE_REQ.OraSelectData.AcceptChanges();
+            IDA_CERTIFICATE_REQ.Refillable = true;
+            IGR_APPROVED_CERTI.LastConfirmChanges();
+             
             for (int i = 0; i < IGR_APPROVED_CERTI.RowCount; i++)
             {
                 if (iConv.ISNull(IGR_APPROVED_CERTI.GetCellValue(i, vIDX_SELECT_FLAG), "N") == "Y")
                 {
+                    string vPRINT_REQ_NUM = iConv.ISNull(IGR_APPROVED_CERTI.GetCellValue(i, vIDX_PRINT_REQ_NUM));
 
-                    idcAPPROVED.SetCommandParamValue("W_CERT_PRINT_ID", IGR_APPROVED_CERTI.GetCellValue(i, vIDX_DUTY_PERIOD_ID));
-                    idcAPPROVED.SetCommandParamValue("W_APPROVE_STATUS", pApproved_Flag);
-                    idcAPPROVED.ExecuteNonQuery();
-                    vSTATUS = iConv.ISNull(idcAPPROVED.GetCommandParamValue("O_STATUS"));
-                    vMESSAGE = iConv.ISNull(idcAPPROVED.GetCommandParamValue("O_MESSAGE"));
-                    if (idcAPPROVED.ExcuteError || vSTATUS == "F")
-                    {
-                        Application.UseWaitCursor = false;
-                        this.Cursor = System.Windows.Forms.Cursors.Default;
-                        Application.DoEvents();
-                        if (vMESSAGE != string.Empty)
+                    if (!string.IsNullOrEmpty(vPRINT_REQ_NUM))
+                    { 
+                        IDC_SET_UPDATE_REQUEST.SetCommandParamValue("W_APPROVE_STATUS", pApproved_Flag);
+                        IDC_SET_UPDATE_REQUEST.SetCommandParamValue("W_PRINT_REQ_NUM", vPRINT_REQ_NUM);
+                        IDC_SET_UPDATE_REQUEST.ExecuteNonQuery();
+                        vSTATUS = iConv.ISNull(IDC_SET_UPDATE_REQUEST.GetCommandParamValue("O_STATUS"));
+                        vMESSAGE = iConv.ISNull(IDC_SET_UPDATE_REQUEST.GetCommandParamValue("O_MESSAGE"));
+                        if (IDC_SET_UPDATE_REQUEST.ExcuteError)
                         {
-                            MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            Application.UseWaitCursor = false;
+                            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+                            Application.DoEvents();
+                            MessageBoxAdv.Show(IDC_SET_UPDATE_REQUEST.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
                         }
-                        return;
+                        else if(vSTATUS == "F")
+                        {
+                            Application.UseWaitCursor = false;
+                            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+                            Application.DoEvents();
+                            if (vMESSAGE != string.Empty)
+                            {
+                                MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            return;
+                        }
                     }
                 }
             }
-
-            // eMail 전송.
+             
             Application.UseWaitCursor = false;
-            this.Cursor = System.Windows.Forms.Cursors.Default;
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
             Application.DoEvents();
 
             SEARCH_DB();
         }
+
         #region ----- Lookup Event ------
 
-        private void ILA_CERTIFICATE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
-        {
-            ILD_CERTIFICATE_W.SetLookupParamValue("W_GROUP_CODE", "CERT_TYPE");
-            ILD_CERTIFICATE_W.SetLookupParamValue("W_WHERE", "HC.VALUE3 = 'Y'");
-            ILD_CERTIFICATE_W.SetLookupParamValue("W_ENABLED_FLAG", "Y");
-        }
-
-        private void ILA_CERTIFICATE_PrePopupShow_1(object pSender, ISLookupPopupShowEventArgs e)
-        {
-            ILD_CERTIFICATE.SetLookupParamValue("W_GROUP_CODE", "CERT_TYPE");
-            ILD_CERTIFICATE.SetLookupParamValue("W_WHERE", "HC.VALUE3 = 'Y'");
-            ILD_CERTIFICATE.SetLookupParamValue("W_ENABLED_FLAG", "Y");
-        }
         private void ILA_SEARCH_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
-            ILD_SEARCH_TYPE.SetLookupParamValue("W_GROUP_CODE", "SEARCH_TYPE");
+            ILD_SEARCH_TYPE.SetLookupParamValue("W_GROUP_CODE", "CERT_SEARCH_TYPE");
             ILD_SEARCH_TYPE.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
         }
 
-        #endregion
-
-
-
         private void ibt_OK_ButtonClick(object pSender, EventArgs pEventArgs)
         {
+            IDA_CERTIFICATE_REQ.Update();
+
             Set_Update_Approve("A");
         }
 
         private void ibt_CANCEL_ButtonClick(object pSender, EventArgs pEventArgs)
-        {
+        {            
             Set_Update_Approve("N");
-        }
-
-        private void APPROVED_ALL_Click(object sender, EventArgs e)
-        {
-            ISRadioButtonAdv iStatus = sender as ISRadioButtonAdv;
-            V_APPROVE_STATUS.EditValue = iStatus.RadioCheckedString;
-
-            Set_BTN_STATE();
-            
         }
 
         private void ILA_CERT_REMARK_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
-            ILD_CERT_REMARK.SetLookupParamValue("W_GROUP_CODE", "CERT_SEND");
-            ILD_CERT_REMARK.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
+            ILD_COMMON.SetLookupParamValue("W_GROUP_CODE", "CERT_SEND");
+            ILD_COMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
         }
+
+        private void ILA_CERTIFICATE_W_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+
+        }
+
+        private void ILA_CERTIFICATE_SelectedRowData(object pSender)
+        {
+            int mIDX_YEAR_YYYY = IGR_APPROVED_CERTI.GetColumnToIndex("YEAR_YYYY");
+            int mIDX_MONTH_FR = IGR_APPROVED_CERTI.GetColumnToIndex("MONTH_FR");
+            int mIDX_MONTH_TO = IGR_APPROVED_CERTI.GetColumnToIndex("MONTH_TO");
+            int mIDX_SAVING_INFO_FLAG = IGR_APPROVED_CERTI.GetColumnToIndex("SAVING_INFO_FLAG");
+            int mIDX_HOUSE_LEASE_INFO_FLAG = IGR_APPROVED_CERTI.GetColumnToIndex("HOUSE_LEASE_INFO_FLAG");
+
+            if (iConv.ISNull(IGR_APPROVED_CERTI.GetCellValue("CERT_TYPE"), "N").StartsWith("2"))
+            {
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_YEAR_YYYY].Updatable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_FR].Updatable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_TO].Updatable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SAVING_INFO_FLAG].Updatable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_HOUSE_LEASE_INFO_FLAG].Updatable = 1;
+
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_YEAR_YYYY].Insertable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_FR].Insertable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_TO].Insertable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SAVING_INFO_FLAG].Insertable = 1;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_HOUSE_LEASE_INFO_FLAG].Insertable = 1;
+            }
+            else
+            {
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_YEAR_YYYY].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_FR].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_TO].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SAVING_INFO_FLAG].Updatable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_HOUSE_LEASE_INFO_FLAG].Updatable = 0;
+
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_YEAR_YYYY].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_FR].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_MONTH_TO].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SAVING_INFO_FLAG].Insertable = 0;
+                IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_HOUSE_LEASE_INFO_FLAG].Insertable = 0;
+            }
+        }
+
+        #endregion
+
     }
 }

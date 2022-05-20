@@ -142,10 +142,10 @@
     <value>856, 54</value>
   </metadata>
   <metadata name="ilaWORK_TYPE_0.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>142, 91</value>
+    <value>17, 93</value>
   </metadata>
   <metadata name="ildCOMMON.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 91</value>
+    <value>1057, 54</value>
   </metadata>
   <metadata name="ilaCORP_0.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>502, 54</value>
@@ -154,49 +154,49 @@
     <value>404, 54</value>
   </metadata>
   <metadata name="ilaPERSON_0.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>413, 91</value>
+    <value>288, 93</value>
   </metadata>
   <metadata name="ildPERSON_0.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>288, 91</value>
+    <value>163, 93</value>
   </metadata>
   <metadata name="idaWORKCALENDAR.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 54</value>
   </metadata>
   <metadata name="ILA_WORK_TYPE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>537, 91</value>
+    <value>412, 93</value>
   </metadata>
-  <metadata name="ilaDUTY.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>691, 91</value>
+  <metadata name="ILA_DUTY.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>663, 93</value>
   </metadata>
   <metadata name="ilaHOLY_TYPE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>787, 91</value>
+    <value>785, 97</value>
   </metadata>
   <metadata name="ilaC_HOLY_TYPE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>815, 130</value>
+    <value>815, 132</value>
   </metadata>
   <metadata name="ilaC_HOLY_TYPE1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>957, 130</value>
+    <value>957, 132</value>
   </metadata>
   <metadata name="IDA_NOT_CREATE_CALENDAR.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>185, 54</value>
   </metadata>
   <metadata name="ILA_CORP_1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 130</value>
+    <value>17, 132</value>
   </metadata>
   <metadata name="ILA_DEPT_1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>274, 130</value>
+    <value>274, 132</value>
   </metadata>
   <metadata name="ILA_WORK_TYPE_1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>390, 130</value>
+    <value>390, 132</value>
   </metadata>
   <metadata name="ILA_PERSON_1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>681, 130</value>
+    <value>681, 132</value>
   </metadata>
   <metadata name="ILD_PERSON_1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>546, 130</value>
+    <value>546, 132</value>
   </metadata>
   <metadata name="ILA_YYYYMM_1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>136, 130</value>
+    <value>136, 132</value>
   </metadata>
   <metadata name="isMessageAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>330, 17</value>
@@ -211,6 +211,9 @@
     <value>779, 17</value>
   </metadata>
   <metadata name="idcWORK_IO_TIME.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>916, 91</value>
+    <value>1038, 93</value>
+  </metadata>
+  <metadata name="IDC_GET_DUTY_HOLY_TYPE_P.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 171</value>
   </metadata>
 </root>

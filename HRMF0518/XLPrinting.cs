@@ -359,7 +359,7 @@ namespace HRMF0518
 
         private void SetArray(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, out int[] pGridColumn)
         {
-            pGridColumn = new int[84];
+            pGridColumn = new int[83];
 
             pGridColumn[0] = pGrid.GetColumnToIndex("DEPT_NAME");                   //부서
             pGridColumn[1] = pGrid.GetColumnToIndex("POST_NAME");                   //직위
@@ -374,71 +374,73 @@ namespace HRMF0518
             pGridColumn[10] = pGrid.GetColumnToIndex("GENERAL_HOURLY_PAY_AMOUNT");  //통상시급
 
             pGridColumn[11] = pGrid.GetColumnToIndex("PAY_DAY");                    //급여일수
-            pGridColumn[12] = pGrid.GetColumnToIndex("A01");                        //기본급
+            pGridColumn[12] = pGrid.GetColumnToIndex("BASE_A01");                        //기본급
             pGridColumn[13] = pGrid.GetColumnToIndex("LATE_TIME");                  //지각/조퇴
-            pGridColumn[14] = pGrid.GetColumnToIndex("A07");                        //기타수당
+            pGridColumn[14] = pGrid.GetColumnToIndex("A17");                        //지각외출조퇴 근태공제
             pGridColumn[15] = pGrid.GetColumnToIndex("OVER_TIME");                  //연장시간
-            pGridColumn[16] = pGrid.GetColumnToIndex("A29");                        //심야수당
+            pGridColumn[16] = pGrid.GetColumnToIndex("A12");                        //연장근로수당 + 연장수당
 
             pGridColumn[17] = pGrid.GetColumnToIndex("HOLY_1_TIME");                //휴일근로시간
             pGridColumn[18] = pGrid.GetColumnToIndex("A14");                        //휴일근로금액
             pGridColumn[19] = pGrid.GetColumnToIndex("HOLY_0_TIME");                //휴일연장
-            pGridColumn[20] = pGrid.GetColumnToIndex("A20");                        //휴일연장금액
+            pGridColumn[20] = pGrid.GetColumnToIndex("A13");                        //휴일연장금액
             pGridColumn[21] = pGrid.GetColumnToIndex("NIGHT_BONUS");                //야간할증시간
-            pGridColumn[22] = pGrid.GetColumnToIndex("PRODUCTION_SUM");           //촉진장려금
+            pGridColumn[22] = pGrid.GetColumnToIndex("A20");                       //심야수당
 
-            pGridColumn[23] = pGrid.GetColumnToIndex("A02");                        //법정제수당
-            pGridColumn[24] = pGrid.GetColumnToIndex("A30");                        //휴근수당
-            pGridColumn[25] = pGrid.GetColumnToIndex("A38");                        //유급수당
-            pGridColumn[26] = pGrid.GetColumnToIndex("A06");                        //자격수당
-            pGridColumn[27] = pGrid.GetColumnToIndex("AMOUNT1");              //연장근로수당 + 심야수당
-            pGridColumn[28] = pGrid.GetColumnToIndex("A34");                        //기타수당2
-            pGridColumn[29] = pGrid.GetColumnToIndex("A24");                        //년차수당
-            pGridColumn[30] = pGrid.GetColumnToIndex("A09");                        //상여금
-            pGridColumn[31] = pGrid.GetColumnToIndex("A08");                        //어학수당
-            pGridColumn[32] = pGrid.GetColumnToIndex("A28");                        //만근수당
-            pGridColumn[33] = pGrid.GetColumnToIndex("A27");                        //철야수당
-            pGridColumn[34] = pGrid.GetColumnToIndex("A04");                        //주휴수당
-            pGridColumn[35] = pGrid.GetColumnToIndex("A17");                        //근태공제
-            pGridColumn[36] = pGrid.GetColumnToIndex("A03");                        //급여소급분
-            pGridColumn[37] = pGrid.GetColumnToIndex("A33");                        //국외근로수당
-            pGridColumn[38] = pGrid.GetColumnToIndex("A13");                        //야간근무 
-            pGridColumn[39] = pGrid.GetColumnToIndex("A08");                       //어학수당
-            pGridColumn[81] = pGrid.GetColumnToIndex("A35");                       //우수사원수당
-            pGridColumn[82] = pGrid.GetColumnToIndex("A36");                       //출장복지비
-            pGridColumn[83] = pGrid.GetColumnToIndex("A05");                       //출장복지비
+            pGridColumn[23] = pGrid.GetColumnToIndex("A02");                        //연장수당(관리직) 연장근로계산금액에 들어감
+            pGridColumn[24] = pGrid.GetColumnToIndex("A04");                        //특별수당
+            pGridColumn[25] = pGrid.GetColumnToIndex("A05");                        //직책수당
+            pGridColumn[26] = pGrid.GetColumnToIndex("A22");                        //기타수당2 생산
+            pGridColumn[27] = pGrid.GetColumnToIndex("ETC_SUM");                    //그외수당 
+            pGridColumn[28] = pGrid.GetColumnToIndex("A33");                        //기타수당2 관리
+            pGridColumn[29] = pGrid.GetColumnToIndex("A15");                        //당직비
+            pGridColumn[30] = pGrid.GetColumnToIndex("A24");                        //연차수당
+            pGridColumn[31] = pGrid.GetColumnToIndex("A25");                        //차량보조
+            pGridColumn[32] = pGrid.GetColumnToIndex("A09");                        //상여금
+            pGridColumn[33] = pGrid.GetColumnToIndex("A11");                        //급여소급분
+            pGridColumn[34] = pGrid.GetColumnToIndex("A07");                        //기타수당
+            pGridColumn[35] = pGrid.GetColumnToIndex("A31");                        //기타수당.포상금.
+            pGridColumn[36] = pGrid.GetColumnToIndex("A10");                        // X
+            pGridColumn[37] = pGrid.GetColumnToIndex("A03");                        //X
+            pGridColumn[38] = pGrid.GetColumnToIndex("A06");                        // X
+            pGridColumn[39] = pGrid.GetColumnToIndex("A08");                       //X
+            pGridColumn[81] = pGrid.GetColumnToIndex("A24");                       //X
+            pGridColumn[82] = pGrid.GetColumnToIndex("A16");                       //X
             pGridColumn[40] = pGrid.GetColumnToIndex("TOT_SUPPLY_AMOUNT");          //지급총합계
 
-            pGridColumn[41] = pGrid.GetColumnToIndex("D01");                        //소득세
-            pGridColumn[42] = pGrid.GetColumnToIndex("D02");                        //주민세            
-            pGridColumn[43] = pGrid.GetColumnToIndex("D03");                        //국민연금
-            pGridColumn[44] = pGrid.GetColumnToIndex("D04");                        //고용보험
-            pGridColumn[45] = pGrid.GetColumnToIndex("AMOUNT5");               //건강보험
-            pGridColumn[46] = pGrid.GetColumnToIndex("D21");                        //장기요양보험  //원금상환
-            pGridColumn[47] = pGrid.GetColumnToIndex("D07");                        //건강보험정산액  
-            pGridColumn[48] = pGrid.GetColumnToIndex("D08");                        //요양보험정산액
-            pGridColumn[49] = pGrid.GetColumnToIndex("D22");                        //가불금  //이자납입
-            pGridColumn[50] = pGrid.GetColumnToIndex("D10");                        //전월정산액 
-            pGridColumn[51] = pGrid.GetColumnToIndex("D11");                        //피복비
-            pGridColumn[52] = pGrid.GetColumnToIndex("D12");                        //사원증발급비
-            pGridColumn[53] = pGrid.GetColumnToIndex("D13");                        //개인신용보험
-            pGridColumn[54] = pGrid.GetColumnToIndex("ETC_DED_TOTAL");       //기타공제
-            pGridColumn[55] = pGrid.GetColumnToIndex("D32");                        //정산소득세  //학자금
-            pGridColumn[56] = pGrid.GetColumnToIndex("D16");                        //정산주민세 //
-            pGridColumn[57] = pGrid.GetColumnToIndex("D17");                        //정산농특세
-            pGridColumn[58] = pGrid.GetColumnToIndex("D18");                        // 
-            pGridColumn[59] = pGrid.GetColumnToIndex("D19");                        //가압류공제 
-            pGridColumn[60] = pGrid.GetColumnToIndex("D20");                        // 
+            pGridColumn[41] = pGrid.GetColumnToIndex("D01");                        //소득세 //
+            pGridColumn[42] = pGrid.GetColumnToIndex("D02");                        //주민세           // 
+            pGridColumn[43] = pGrid.GetColumnToIndex("D03");                        //국민연금//
+            pGridColumn[44] = pGrid.GetColumnToIndex("D04");                        //고용보험//
+            pGridColumn[45] = pGrid.GetColumnToIndex("D05");                        //건강보험//
+            pGridColumn[46] = pGrid.GetColumnToIndex("D14");                        //기타공제//
+            pGridColumn[47] = pGrid.GetColumnToIndex("D07");                        //건강보험정산액  //
+            pGridColumn[48] = pGrid.GetColumnToIndex("D08");                        //요양보험정산액//
+            pGridColumn[49] = pGrid.GetColumnToIndex("D22");                        //이자납입
 
-            pGridColumn[61] = pGrid.GetColumnToIndex("D06");                        // 
-            pGridColumn[62] = pGrid.GetColumnToIndex("D22");                        // 보험정산액
-            pGridColumn[63] = pGrid.GetColumnToIndex("D23");                        // 
-            pGridColumn[64] = pGrid.GetColumnToIndex("D24");                        // 
-            pGridColumn[65] = pGrid.GetColumnToIndex("AMOUNT2");                        //정산소득세
-            pGridColumn[66] = pGrid.GetColumnToIndex("AMOUNT4");                        //정산주민세
-            pGridColumn[67] = pGrid.GetColumnToIndex("D27");                        //연말정산농특세
-            pGridColumn[68] = pGrid.GetColumnToIndex("D29");                        //상조회비 //식비공제
-            pGridColumn[69] = pGrid.GetColumnToIndex("D28");                        //  
+            pGridColumn[50] = pGrid.GetColumnToIndex("D10");                        //전월정산액 //
+            pGridColumn[51] = pGrid.GetColumnToIndex("D11");                        //건강보험 연말정산
+            pGridColumn[52] = pGrid.GetColumnToIndex("D12");                        //작업복//
+            pGridColumn[53] = pGrid.GetColumnToIndex("D13");                        //건강검진//
+
+            pGridColumn[54] = pGrid.GetColumnToIndex("D15");                        //정산소득세//
+
+            pGridColumn[55] = pGrid.GetColumnToIndex("D32");                        //학자금공제
+            pGridColumn[56] = pGrid.GetColumnToIndex("D16");                        //정산주민세 //
+            pGridColumn[57] = pGrid.GetColumnToIndex("D17");                        //정산농특세//
+            pGridColumn[58] = pGrid.GetColumnToIndex("D28");                        // 경조금//
+            pGridColumn[59] = pGrid.GetColumnToIndex("D19");                        //건강보험 퇴직정산 // 
+            pGridColumn[60] = pGrid.GetColumnToIndex("D20");                        // 산재보험
+
+            pGridColumn[61] = pGrid.GetColumnToIndex("D06");                        // 장기요양보험 // 
+            pGridColumn[62] = pGrid.GetColumnToIndex("D23");                        // 가압류//
+            pGridColumn[63] = pGrid.GetColumnToIndex("D09");                             //국민연금소급분 
+            pGridColumn[64] = pGrid.GetColumnToIndex("");                             // 
+            pGridColumn[65] = pGrid.GetColumnToIndex("D25");                        // 연말소득세
+            pGridColumn[66] = pGrid.GetColumnToIndex("D26");                        // 연말주민세
+            pGridColumn[67] = pGrid.GetColumnToIndex("D27");                        // 연말농특세 
+            pGridColumn[68] = pGrid.GetColumnToIndex("D29");                        // 식대공제
+            pGridColumn[69] = pGrid.GetColumnToIndex(" ");                            //  
 
             pGridColumn[70] = pGrid.GetColumnToIndex("TOT_DED_AMOUNT");             //총공제액 
             pGridColumn[71] = pGrid.GetColumnToIndex("REAL_AMOUNT");                //실지급액
@@ -645,14 +647,17 @@ namespace HRMF0518
         {
             int vXLine = pPrintingLine; //엑셀에 내용이 표시되는 행 번호
 
-            object vGetValue = null;  
-
+            object vGetValue = null;
+            object vGetValue_2 = null;
             string vConvertString = string.Empty;
             decimal vConvertDecimal = 0m;
-
+            decimal vConvertDecimal2 = 0m;
+            
+            decimal vTEMP_AMT = 0m;
             string vSUMMARY_FLAG = "N";
 
-            bool IsConvert = false;  
+            bool IsConvert = false;
+            bool IsConvert2 = false;
             try
             {
                 vSUMMARY_FLAG = iConv.ISNull(pGrid.GetCellValue(pRow, pGridColumn[80]));
@@ -680,22 +685,6 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine, 2, vConvertString);
 
-                //[사번] 
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[2]);
-                IsConvert = IsConvertString(vGetValue, out vConvertString);
-                if (IsConvert == true)
-                {
-
-                }
-                else
-                {
-                    vConvertString = string.Empty; 
-                }
-                if (vSUMMARY_FLAG == "N")
-                {
-                    mPrinting.XLSetCell(vXLine, 5, vConvertString);
-                }
-
                 //[직위] 
                 vGetValue = pGrid.GetCellValue(pRow, pGridColumn[1]);
                 IsConvert = IsConvertString(vGetValue, out vConvertString);
@@ -712,6 +701,39 @@ namespace HRMF0518
                     mPrinting.XLSetCell(vXLine + 1, 2, vConvertString);
                 }
 
+                //[입사일자] 
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[5]);
+                IsConvert = IsConvertString(vGetValue, out vConvertString);
+                if (IsConvert == true)
+                {
+
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                if (vSUMMARY_FLAG == "N")
+                {
+                    mPrinting.XLSetCell(vXLine + 2, 2, vConvertString);
+                }
+
+                //[사번] 
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[2]);
+                IsConvert = IsConvertString(vGetValue, out vConvertString);
+                if (IsConvert == true)
+                {
+
+                }
+                else
+                {
+                    vConvertString = string.Empty; 
+                }
+                if (vSUMMARY_FLAG == "N")
+                {
+                    mPrinting.XLSetCell(vXLine, 5, vConvertString);
+                }
+
+                
                 //[성명] 
                 vGetValue = pGrid.GetCellValue(pRow, pGridColumn[3]);
                 IsConvert = IsConvertString(vGetValue, out vConvertString);
@@ -729,25 +751,9 @@ namespace HRMF0518
                 }
                 else
                 {
-                    mPrinting.XLCellMerge(vXLine + 2, 2, vXLine + 3, 7, true);
+                    mPrinting.XLCellMerge(vXLine + 2, 2, vXLine + 4, 7, true);
                     mPrinting.XLSetCell(vXLine + 2, 2, vConvertString);
                 }
-
-                //[입사일자] 
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[5]);
-                IsConvert = IsConvertString(vGetValue, out vConvertString);
-                if (IsConvert == true)
-                {
-
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                if (vSUMMARY_FLAG == "N")
-                {
-                    mPrinting.XLSetCell(vXLine + 2, 2, vConvertString);
-                }                
 
                 //[급여구분] 
                 vGetValue = pGrid.GetCellValue(pRow, pGridColumn[4]);
@@ -792,58 +798,6 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine, 8, vConvertString);
 
-                //[정상근무]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[11]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine, 11, vConvertString);
-
-                //[근무(공가)]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[73]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine, 14, vConvertString);
-
-                //[미근무]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[74]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine, 17, vConvertString);
-
-                //[주차]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[75]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine, 20, vConvertString);
-
                 //[연장시간]
                 vGetValue = pGrid.GetCellValue(pRow, pGridColumn[15]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
@@ -856,58 +810,6 @@ namespace HRMF0518
                     vConvertString = string.Empty;
                 }
                 mPrinting.XLSetCell(vXLine + 1, 8, vConvertString);
-
-                //[야간시간]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[21]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:###,###,###.##}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 1, 11, vConvertString);
-
-                //[휴일근로-토]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[17]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:###,###.##}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 1, 14, vConvertString);
-
-                //[휴일근로-일]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[19]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:###,###.##}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 1, 17, vConvertString);
-
-                //[미주차]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[76]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 1, 20, vConvertString);
 
                 //[유휴]
                 vGetValue = pGrid.GetCellValue(pRow, pGridColumn[77]);
@@ -922,6 +824,32 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine + 2, 8, vConvertString);
 
+                //[정상근무]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[11]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 11, vConvertString);
+
+                //[야간시간]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[21]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###,###.##}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 1, 11, vConvertString);
+
                 //[무휴]
                 vGetValue = pGrid.GetCellValue(pRow, pGridColumn[78]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
@@ -934,6 +862,32 @@ namespace HRMF0518
                     vConvertString = string.Empty;
                 }
                 mPrinting.XLSetCell(vXLine + 2, 11, vConvertString);
+
+                //[근무(공가)]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[73]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 14, vConvertString);
+
+                //[휴일근로-토]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[17]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###.##}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 1, 14, vConvertString);
 
                 //[근태공제]
                 vGetValue = pGrid.GetCellValue(pRow, pGridColumn[13]);
@@ -948,6 +902,58 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine + 2, 14, vConvertString);
 
+                //[미근무]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[74]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 17, vConvertString);
+
+                //[휴일근로-일]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[19]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###.##}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 1, 17, vConvertString);
+
+                //[주차]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[75]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 20, vConvertString);
+
+                //[미주차]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[76]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 1, 20, vConvertString);
+
                 //[통상시급]
                 vGetValue = pGrid.GetCellValue(pRow, pGridColumn[10]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
@@ -961,7 +967,7 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine + 2, 20, vConvertString);
                  
-                ////////////////////////////////////////////////////////////////////////////////지급항목
+                ////////////////////////////////////////////////////////////////////////////////지급항목 
                 //[기본급]
                 vGetValue = pGrid.GetCellValue(pRow, pGridColumn[12]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
@@ -975,21 +981,39 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine, 23, vConvertString);
 
-                ////[심야수당]
-                //vGetValue = pGrid.GetCellValue(pRow, pGridColumn[16]);
-                //IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                //if (IsConvert == true)
-                //{
-                //    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                //}
-                //else
-                //{
-                //    vConvertString = string.Empty;
-                //}
-                //mPrinting.XLSetCell(vXLine + 1, 23, vConvertString);
+                //휴일근로+휴일연장 수당 / 관리직 연장수당
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[18]);
+                vGetValue_2 = pGrid.GetCellValue(pRow, pGridColumn[20]);
+                 
+                vTEMP_AMT = iConv.ISDecimaltoZero(vGetValue) + iConv.ISDecimaltoZero(vGetValue_2);
+                IsConvert = IsConvertNumber(vTEMP_AMT, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vTEMP_AMT);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 1, 23, vConvertString);
 
                 //[기타수당]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[14]);
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[26]);
+                vGetValue_2 = pGrid.GetCellValue(pRow, pGridColumn[28]);
+                vTEMP_AMT = iConv.ISDecimaltoZero(vGetValue) + iConv.ISDecimaltoZero(vGetValue_2);
+                IsConvert = IsConvertNumber(vTEMP_AMT, out vConvertDecimal); 
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vTEMP_AMT);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 2, 23, vConvertString);
+
+                //[상여금]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[32]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
                 {
@@ -999,23 +1023,11 @@ namespace HRMF0518
                 {
                     vConvertString = string.Empty;
                 }
-                mPrinting.XLSetCell(vXLine + 2, 23, vConvertString);
+                mPrinting.XLSetCell(vXLine + 3, 23, vConvertString);
 
-                ////[자차보조금] => 기타수당포함.
-                //vGetValue = pGrid.GetCellValue(pRow, pGridColumn[25]);
-                //IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                //if (IsConvert == true)
-                //{
-                //    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                //}
-                //else
-                //{
-                //    vConvertString = string.Empty;
-                //}
-                //mPrinting.XLSetCell(vXLine + 3, 23, vConvertString);
-
-                //[법정제수당]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[23]);
+                ////////////27
+                //[차량보조]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[31]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
                 {
@@ -1027,8 +1039,8 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine, 27, vConvertString);
 
-                //[촉진장려금]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[22]);
+                //[당직비]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[29]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
                 {
@@ -1038,10 +1050,10 @@ namespace HRMF0518
                 {
                     vConvertString = string.Empty;
                 }
-                mPrinting.XLSetCell(vXLine , 35, vConvertString);
+                mPrinting.XLSetCell(vXLine+1, 27, vConvertString);
 
-                //[기타수당2]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[28]);
+                //[연차수당]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[30]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
                 {
@@ -1053,7 +1065,7 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine + 2, 27, vConvertString);
 
-                //[만근수당]=> 기타수당에 포함
+                //[기타수당(포상금)]
                 vGetValue = pGrid.GetCellValue(pRow, pGridColumn[35]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
@@ -1066,21 +1078,9 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine + 3, 27, vConvertString);
 
-                ////[유급수당]
-                //vGetValue = pGrid.GetCellValue(pRow, pGridColumn[25]);
-                //IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                //if (IsConvert == true)
-                //{
-                //    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                //}
-                //else
-                //{
-                //    vConvertString = string.Empty;
-                //}
-                //mPrinting.XLSetCell(vXLine, 31, vConvertString);
-
-                //[휴일연장금액]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[20]);  //35
+                ////// 31
+                //[연장수당]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[16]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
                 {
@@ -1090,10 +1090,24 @@ namespace HRMF0518
                 {
                     vConvertString = string.Empty;
                 }
-                mPrinting.XLSetCell(vXLine + 1, 35, vConvertString);
+                mPrinting.XLSetCell(vXLine , 31, vConvertString);
 
-                //[연차수당]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[29]);
+                
+                //[기타수당2]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[34]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine+1, 31, vConvertString);
+
+                //[근태공제]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[14]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
                 {
@@ -1104,9 +1118,10 @@ namespace HRMF0518
                     vConvertString = string.Empty;
                 }
                 mPrinting.XLSetCell(vXLine + 2, 31, vConvertString);
-
-                //[어학수당
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[31]);
+                
+                
+                //[심야수당]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[22]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
                 {
@@ -1116,9 +1131,9 @@ namespace HRMF0518
                 {
                     vConvertString = string.Empty;
                 }
-                mPrinting.XLSetCell(vXLine + 2, 39, vConvertString);
+                mPrinting.XLSetCell(vXLine, 35, vConvertString);
 
-                //[휴근수당]
+                //[특별수당]
                 vGetValue = pGrid.GetCellValue(pRow, pGridColumn[24]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
@@ -1129,102 +1144,10 @@ namespace HRMF0518
                 {
                     vConvertString = string.Empty;
                 }
-                mPrinting.XLSetCell(vXLine, 31, vConvertString);
+                mPrinting.XLSetCell(vXLine+1, 35, vConvertString);
 
-                //[휴일근로금액]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[18]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 1, 31, vConvertString);
-
-                //[상여금]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[30]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine , 39, vConvertString);
-
-                ////[통신비]=>기타수당포함
-                //vGetValue = pGrid.GetCellValue(pRow, pGridColumn[30]);
-                //IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                //if (IsConvert == true)
-                //{
-                //    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                //}
-                //else
-                //{
-                //    vConvertString = string.Empty;
-                //}
-                //mPrinting.XLSetCell(vXLine + 2, 35, vConvertString);
-
-                ////[철야수당]=>기타수당포함
-                //vGetValue = pGrid.GetCellValue(pRow, pGridColumn[33]);
-                //IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                //if (IsConvert == true)
-                //{
-                //    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                //}
-                //else
-                //{
-                //    vConvertString = string.Empty;
-                //}
-                //mPrinting.XLSetCell(vXLine + 3, 35, vConvertString);
-
-                //[평일연장 (연장 + 심야)]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[27]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine+1, 23, vConvertString);
-
-                //[자격수당]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[26]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 1, 39, vConvertString);
-
-            
-                //[야간근무]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[38]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 1, 27, vConvertString);
-
-                //[직무수당]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[36]);
+                //[급여소급분]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[33]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
                 {
@@ -1236,8 +1159,8 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine + 2, 35, vConvertString);
 
-                //[국외근로수당]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[37]);
+                //[그외수당]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[27]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
                 {
@@ -1247,165 +1170,9 @@ namespace HRMF0518
                 {
                     vConvertString = string.Empty;
                 }
-                mPrinting.XLSetCell(vXLine + 3, 23, vConvertString);
-
-                //[우수사원수당]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[81]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 3, 31, vConvertString);
-
-                //[출장복지비]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[82]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 3, 35, vConvertString);
-
-                //[직무수당]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[83]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 3, 39, vConvertString);
-
+                mPrinting.XLSetCell(vXLine + 4, 35, vConvertString);
 
                 ///////////////////////////////////////////////////////////////////공제항목//
-                //[소득세]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[41]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine, 43, vConvertString);
-
-                //[고용보험]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[44]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 1, 43, vConvertString);
-
-                //[학자금]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[55]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 2, 43, vConvertString);
-
-                //[보험정산액]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[62]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 3, 43, vConvertString);
-
-                //[연말정산소득세]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[65]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 2, 47, vConvertString);
-
-                //[주민세]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[42]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine, 47, vConvertString);
-
-                //[원금상환]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[46]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 1, 47, vConvertString);
-
-                //[전월정산액]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[50]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 3, 47, vConvertString);
-
-                //[연말정산주민세]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[66]);
-                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                if (IsConvert == true)
-                {
-                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                }
-                else
-                {
-                    vConvertString = string.Empty;
-                }
-                mPrinting.XLSetCell(vXLine + 2, 51, vConvertString);
 
                 //[국민연금]
                 vGetValue = pGrid.GetCellValue(pRow, pGridColumn[43]);
@@ -1418,10 +1185,208 @@ namespace HRMF0518
                 {
                     vConvertString = string.Empty;
                 }
+                mPrinting.XLSetCell(vXLine, 39, vConvertString);
+
+                //[건강보험퇴직]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[59]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 1, 39, vConvertString);
+
+                //[건강검진]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[53]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 2, 39, vConvertString);
+
+                //[연말정산지방소득세]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[66]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 3, 39, vConvertString);
+
+                //[연말정산지방소득세]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[65]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 4, 39, vConvertString);
+
+                //[건강보험]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[45]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 43, vConvertString);
+
+                //[건강보험연말]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[51]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 1, 43, vConvertString);
+
+                //[장기요양보험]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[61]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 2, 43, vConvertString);
+
+                //[기타공제]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[46]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 3, 43, vConvertString);
+
+                //[가압류]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[62]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 4, 43, vConvertString);
+
+                //[고용보험]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[44]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 47, vConvertString);
+
+
+                //[식대공제]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[68]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 1, 47, vConvertString);
+
+                //[장기요양보험정산]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[48]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 2, 47, vConvertString);
+
+
+                //[중도정산]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[56]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 3, 47, vConvertString);
+
+                //[중도정산]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[54]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 4, 47, vConvertString);
+
+
+                //[국민연금소급분]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[63]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
                 mPrinting.XLSetCell(vXLine, 51, vConvertString);
 
-                //[이자납입]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[49]);
+                //[경조금]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[58]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
                 {
@@ -1433,6 +1398,32 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine + 1, 51, vConvertString);
 
+
+                //[소득세]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[41]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 2, 51, vConvertString);
+
+                //[학자금공제]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[55]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 3, 51, vConvertString);
                 ////[건강연말정산]
                 //vGetValue = pGrid.GetCellValue(pRow, pGridColumn[47]);
                 //IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
@@ -1459,8 +1450,8 @@ namespace HRMF0518
                 //}
                 //mPrinting.XLSetCell(vXLine + 3, 51, vConvertString);
 
-                //[건강보험]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[45]);
+                //[건강보험정산]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[47]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
                 {
@@ -1472,8 +1463,8 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine, 55, vConvertString);
 
-                //[식비공제]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[68]);
+                //[작업복]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[52]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
                 {
@@ -1485,22 +1476,8 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine + 1, 55, vConvertString);
                                 
-
-                ////[요양보험정산액]
-                //vGetValue = pGrid.GetCellValue(pRow, pGridColumn[48]);
-                //IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
-                //if (IsConvert == true)
-                //{
-                //    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
-                //}
-                //else
-                //{
-                //    vConvertString = string.Empty;
-                //}
-                //mPrinting.XLSetCell(vXLine + 2, 55, vConvertString);
-
-                //[기타공제]
-                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[54]);
+                //[지방소득세]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[42]);
                 IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
                 if (IsConvert == true)
                 {
@@ -1512,6 +1489,18 @@ namespace HRMF0518
                 }
                 mPrinting.XLSetCell(vXLine + 2, 55, vConvertString);
 
+                //[전월정산액]
+                vGetValue = pGrid.GetCellValue(pRow, pGridColumn[50]);
+                IsConvert = IsConvertNumber(vGetValue, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#,###,###,###,###,###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine + 3, 55, vConvertString);
                 //합계
                 //[총지급액]
                 vGetValue = pGrid.GetCellValue(pRow, pGridColumn[40]);
@@ -1573,10 +1562,10 @@ namespace HRMF0518
                 else
                 {
                     //2.BACK COLOR 변경.
-                    mPrinting.XLCellColorBrush(mCurrentRow, 2, mCurrentRow + 3, mCopy_EndCol - 1, System.Drawing.Color.LightBlue);
+                    mPrinting.XLCellColorBrush(mCurrentRow, 2, mCurrentRow + 4, mCopy_EndCol - 1, System.Drawing.Color.LightBlue);
                 }
 
-                vXLine = vXLine + 4;
+                vXLine = vXLine + 5;
                 //--------------------------------------------------------------------------------------------------
             }
             catch (System.Exception ex)
@@ -1606,11 +1595,11 @@ namespace HRMF0518
             mCopy_EndRow = 45;
 
             //mDefaultEndPageRow = 1;
-            mDefaultPageRow = 12;    // 페이지 증가후 PageCount 기본값.
-            mPrintingLastRow = 40;  //최종 인쇄 라인.
+            mDefaultPageRow = 13;    // 페이지 증가후 PageCount 기본값.
+            mPrintingLastRow = 38;  //최종 인쇄 라인.
             //m1stPrintingLastRow = 40;
 
-            mCurrentRow = 12;
+            mCurrentRow = 13;
             mCopyLineSUM = 1;
 
             int vTotalRow = 0;
@@ -1635,7 +1624,7 @@ namespace HRMF0518
                 {
                     //배열 정의.
                     SetArray(pGrid, out mGridColumn);
-                    vPageRowCount = mCurrentRow - 4;  
+                    vPageRowCount = mCurrentRow - 5;  
 
                     for (int vRow = 0; vRow < vTotalRow; vRow++)
                     {
@@ -1662,12 +1651,12 @@ namespace HRMF0518
                             XlAllLineClear(pCorporationName);
                             mCopyLineSUM = CopyAndPaste(mPrinting, mCopyLineSUM, vDEPT_NAME);
                             //아직인쇄 전 이므로 페이지ROW에 +4를 해줌.
-                            mCurrentRow = mCurrentRow + (mCopy_EndRow - (vPageRowCount + 4)) + mDefaultPageRow;  // 여러장 인쇄시 해당 페이지의 시작되는 위치.
-                            vPageRowCount = mDefaultPageRow - 4;
+                            mCurrentRow = mCurrentRow + (mCopy_EndRow - (vPageRowCount + 5)) + mDefaultPageRow;  // 여러장 인쇄시 해당 페이지의 시작되는 위치.
+                            vPageRowCount = mDefaultPageRow - 5;
                         }
 
                         mCurrentRow = XlLine(pGrid, vRow, mCurrentRow, mGridColumn);
-                        vPageRowCount = vPageRowCount + 4;
+                        vPageRowCount = vPageRowCount + 5;
                         if (iConv.ISNull(pGrid.GetCellValue(vRow, mGridColumn[80])) == "T")
                         {
 
@@ -1694,8 +1683,8 @@ namespace HRMF0518
                             if (mIsNewPage == true)
                             {
                                 //인쇄 후 이므로 현재 페이지ROW에 -4를 해줌.
-                                mCurrentRow = mCurrentRow + (mCopy_EndRow - vPageRowCount - 4) + mDefaultPageRow;  // 여러장 인쇄시 해당 페이지의 시작되는 위치.
-                                vPageRowCount = mDefaultPageRow - 4;
+                                mCurrentRow = mCurrentRow + (mCopy_EndRow - vPageRowCount - 5) + mDefaultPageRow;  // 여러장 인쇄시 해당 페이지의 시작되는 위치.
+                                vPageRowCount = mDefaultPageRow - 5;
                             }
                         } 
                     }

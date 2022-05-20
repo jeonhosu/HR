@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement42 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement51 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement1 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement2 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement31 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
@@ -200,10 +200,10 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement154 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement155 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement156 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement41 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement32 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement4 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement5 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement50 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement40 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement12 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement13 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement50 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement51 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement52 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -224,8 +224,8 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement65 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement66 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISDataUtil.OraConnectionInfo oraConnectionInfo1 = new InfoSummit.Win.ControlAdv.ISDataUtil.OraConnectionInfo();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement17 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement18 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement25 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement26 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement76 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement77 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement78 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -239,13 +239,13 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement86 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement87 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement88 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement11 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement2 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement12 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement14 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement31 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement13 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement24 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement19 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement8 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement20 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement22 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement39 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement21 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement32 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement89 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement90 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement91 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -259,11 +259,11 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement99 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement100 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement101 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement27 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement34 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement22 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement25 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement23 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement35 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement42 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement30 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement33 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement31 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle1 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle2 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle3 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
@@ -377,11 +377,11 @@
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement31 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement32 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement32 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement20 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement28 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement23 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement27 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement14 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement15 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement19 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement6 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement7 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement63 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement64 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement65 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -395,11 +395,11 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement73 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement74 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement75 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement9 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement10 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement21 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement16 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement26 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement17 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement18 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement29 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement24 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement34 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement102 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement103 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement104 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -410,9 +410,22 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement78 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement79 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement80 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement8 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement38 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement37 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement16 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement46 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement45 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement29 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement30 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement31 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement32 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement33 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement34 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement35 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement36 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement37 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement38 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement39 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement40 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement41 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle5 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle6 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle7 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
@@ -687,19 +700,6 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement58 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement59 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement60 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement29 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement30 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement31 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement32 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement33 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement34 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement35 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement36 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement37 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement38 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement39 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement40 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement41 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement42 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement43 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement44 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -717,7 +717,7 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement73 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement74 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement75 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement39 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement47 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement107 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement108 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement109 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -734,15 +734,34 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement150 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement159 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement160 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement40 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement48 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement44 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement11 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement36 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement28 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement29 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement30 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement33 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement35 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement37 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement38 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement41 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement43 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement9 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement6 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement49 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement3 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement4 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement1 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement2 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement5 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement7 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement10 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement161 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement162 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement163 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement164 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement165 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement166 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement167 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement168 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement169 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement170 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             this.ADDR1 = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.isAppInterfaceAdv1 = new InfoSummit.Win.ControlAdv.ISAppInterfaceAdv(this.components);
             this.IDA_CORP_MASTER = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
@@ -786,9 +805,9 @@
             this.ZIP_CODE = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.W_CORP_ID_0 = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.W_ENABLED_FLAG = new InfoSummit.Win.ControlAdv.ISCheckBoxAdv();
+            this.ILA_TAX_OFFICE = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
             this.igrHRM_OPERATING_UNIT_G = new InfoSummit.Win.ControlAdv.ISGridAdvEx();
             this.IDA_OPERATING_UNIT = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
-            this.ILA_TAX_OFFICE = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
             this.ILA_BANK = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
             this.ILD_BANK = new InfoSummit.Win.ControlAdv.ISLookupData(this.components);
             this.ILA_BANK_ACCOUNT = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
@@ -802,6 +821,7 @@
             this.ildADDRESS2 = new InfoSummit.Win.ControlAdv.ISLookupData(this.components);
             this.igbCONTROL = new InfoSummit.Win.ControlAdv.ISGroupBox();
             this.igbCORP = new InfoSummit.Win.ControlAdv.ISGroupBox();
+            this.BTN_CO_STAMP = new InfoSummit.Win.ControlAdv.ISButton();
             this.CB_DUTY_CONTROL_YN = new InfoSummit.Win.ControlAdv.ISCheckBoxAdv();
             this.CB_DEPT_CONTROL_YN = new InfoSummit.Win.ControlAdv.ISCheckBoxAdv();
             this.CB_DEFAULT_FLAG = new InfoSummit.Win.ControlAdv.ISCheckBoxAdv();
@@ -810,6 +830,15 @@
             this.igrTAX_GROUP = new InfoSummit.Win.ControlAdv.ISGroupBox();
             this.isMessageAdapter1 = new InfoSummit.Win.ControlAdv.ISMessageAdapter(this.components);
             this.IGB_CORP = new InfoSummit.Win.ControlAdv.ISGroupBox();
+            this.isCheckBoxAdv1 = new InfoSummit.Win.ControlAdv.ISCheckBoxAdv();
+            this.isButton1 = new InfoSummit.Win.ControlAdv.ISButton();
+            this.isButton2 = new InfoSummit.Win.ControlAdv.ISButton();
+            this.isButton3 = new InfoSummit.Win.ControlAdv.ISButton();
+            this.isButton4 = new InfoSummit.Win.ControlAdv.ISButton();
+            this.isButton5 = new InfoSummit.Win.ControlAdv.ISButton();
+            this.isButton6 = new InfoSummit.Win.ControlAdv.ISButton();
+            this.isCheckBoxAdv2 = new InfoSummit.Win.ControlAdv.ISCheckBoxAdv();
+            this.idcFTP_INFO = new InfoSummit.Win.ControlAdv.ISDataCommand(this.components);
             this.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_BIZ_UNIT_TYPE.PropSourceDataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ilaCORP_CATEGORY.PropSourceDataTable)).BeginInit();
@@ -817,8 +846,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.IGR_CORP_LIST.BaseGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ilaRETIRE_IRP_TYPE.PropSourceDataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_VENDOR.PropSourceDataTable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.igrHRM_OPERATING_UNIT_G.BaseGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_TAX_OFFICE.PropSourceDataTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.igrHRM_OPERATING_UNIT_G.BaseGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_BANK.PropSourceDataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_BANK_ACCOUNT.PropSourceDataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_CORP_W.PropSourceDataTable)).BeginInit();
@@ -848,7 +877,7 @@
             this.ADDR1.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.ADDR1.DoubleValue = 0D;
             this.ADDR1.EditValue = "";
-            this.ADDR1.Location = new System.Drawing.Point(215, 190);
+            this.ADDR1.Location = new System.Drawing.Point(215, 181);
             this.ADDR1.LookupAdapter = null;
             this.ADDR1.Name = "ADDR1";
             this.ADDR1.Nullable = true;
@@ -863,18 +892,18 @@
             0,
             0});
             this.ADDR1.PromptText = "Addr1";
-            isLanguageElement42.Default = "Addr1";
-            isLanguageElement42.SiteName = null;
-            isLanguageElement42.TL1_KR = "주소";
-            isLanguageElement42.TL2_CN = "";
-            isLanguageElement42.TL3_VN = "";
-            isLanguageElement42.TL4_JP = "";
-            isLanguageElement42.TL5_XAA = "";
+            isLanguageElement51.Default = "Addr1";
+            isLanguageElement51.SiteName = null;
+            isLanguageElement51.TL1_KR = "주소";
+            isLanguageElement51.TL2_CN = "";
+            isLanguageElement51.TL3_VN = "";
+            isLanguageElement51.TL4_JP = "";
+            isLanguageElement51.TL5_XAA = "";
             this.ADDR1.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement42});
+            isLanguageElement51});
             this.ADDR1.PromptVisible = false;
             this.ADDR1.PromptWidth = 70;
-            this.ADDR1.Size = new System.Drawing.Size(245, 21);
+            this.ADDR1.Size = new System.Drawing.Size(274, 21);
             this.ADDR1.TabIndex = 19;
             this.ADDR1.TextValue = "";
             this.ADDR1.KeyDown += new InfoSummit.Win.ControlAdv.ISEditAdv.KeyDownEventHandler(this.iedADDR1_KeyDown);
@@ -2643,18 +2672,26 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
-            this.ClientSize = new System.Drawing.Size(958, 578);
+            this.ClientSize = new System.Drawing.Size(974, 578);
+            this.Controls.Add(this.isButton3);
+            this.Controls.Add(this.isButton4);
+            this.Controls.Add(this.isButton1);
+            this.Controls.Add(this.isButton2);
+            this.Controls.Add(this.isButton5);
             this.Controls.Add(this.IGB_CORP);
+            this.Controls.Add(this.isButton6);
             this.Controls.Add(this.igrTAX_GROUP);
+            this.Controls.Add(this.isCheckBoxAdv2);
             this.Controls.Add(this.igbCORP);
             this.Controls.Add(this.igbCONTROL);
+            this.Controls.Add(this.isCheckBoxAdv1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "HRMF0102";
             this.Padding = new System.Windows.Forms.Padding(2);
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "업체정보";
             this.Load += new System.EventHandler(this.HRMF0102_Load);
-            this.ADDR2.Location = new System.Drawing.Point(460, 190);
+            this.ADDR2.Location = new System.Drawing.Point(489, 181);
             this.ADDR2.LookupAdapter = null;
             this.ADDR2.Name = "ADDR2";
             this.ADDR2.Nullable = true;
@@ -2669,15 +2706,15 @@
             0,
             0});
             this.ADDR2.PromptText = "Addr2";
-            isLanguageElement41.Default = "Addr2";
-            isLanguageElement41.SiteName = null;
-            isLanguageElement41.TL1_KR = "나머지 주소";
-            isLanguageElement41.TL2_CN = "";
-            isLanguageElement41.TL3_VN = "";
-            isLanguageElement41.TL4_JP = "";
-            isLanguageElement41.TL5_XAA = "";
+            isLanguageElement50.Default = "Addr2";
+            isLanguageElement50.SiteName = null;
+            isLanguageElement50.TL1_KR = "나머지 주소";
+            isLanguageElement50.TL2_CN = "";
+            isLanguageElement50.TL3_VN = "";
+            isLanguageElement50.TL4_JP = "";
+            isLanguageElement50.TL5_XAA = "";
             this.ADDR2.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement41});
+            isLanguageElement50});
             this.ADDR2.PromptVisible = false;
             this.ADDR2.PromptWidth = 70;
             this.ADDR2.Size = new System.Drawing.Size(210, 21);
@@ -2700,7 +2737,7 @@
             this.BENEFIT_RATE.DoubleValue = 0D;
             this.BENEFIT_RATE.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
             this.BENEFIT_RATE.EditValue = null;
-            this.BENEFIT_RATE.Location = new System.Drawing.Point(8, 311);
+            this.BENEFIT_RATE.Location = new System.Drawing.Point(8, 293);
             this.BENEFIT_RATE.LookupAdapter = null;
             this.BENEFIT_RATE.Name = "BENEFIT_RATE";
             this.BENEFIT_RATE.Nullable = true;
@@ -2716,17 +2753,17 @@
             0,
             0});
             this.BENEFIT_RATE.PromptText = "Benefit Rate(%)";
-            isLanguageElement32.Default = "Benefit Rate(%)";
-            isLanguageElement32.SiteName = null;
-            isLanguageElement32.TL1_KR = "기업이윤(%)";
-            isLanguageElement32.TL2_CN = "";
-            isLanguageElement32.TL3_VN = "";
-            isLanguageElement32.TL4_JP = "";
-            isLanguageElement32.TL5_XAA = "";
+            isLanguageElement40.Default = "Benefit Rate(%)";
+            isLanguageElement40.SiteName = null;
+            isLanguageElement40.TL1_KR = "기업이윤(%)";
+            isLanguageElement40.TL2_CN = "";
+            isLanguageElement40.TL3_VN = "";
+            isLanguageElement40.TL4_JP = "";
+            isLanguageElement40.TL5_XAA = "";
             this.BENEFIT_RATE.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement32});
+            isLanguageElement40});
             this.BENEFIT_RATE.PromptWidth = 120;
-            this.BENEFIT_RATE.Size = new System.Drawing.Size(269, 21);
+            this.BENEFIT_RATE.Size = new System.Drawing.Size(295, 21);
             this.BENEFIT_RATE.TabIndex = 33;
             this.BENEFIT_RATE.TextValue = "";
             // 
@@ -2746,7 +2783,7 @@
             this.BIZ_UNIT_TYPE.DoubleValue = 0D;
             this.BIZ_UNIT_TYPE.EditValue = "";
             this.BIZ_UNIT_TYPE.Insertable = false;
-            this.BIZ_UNIT_TYPE.Location = new System.Drawing.Point(610, 28);
+            this.BIZ_UNIT_TYPE.Location = new System.Drawing.Point(639, 27);
             this.BIZ_UNIT_TYPE.LookupAdapter = null;
             this.BIZ_UNIT_TYPE.Name = "BIZ_UNIT_TYPE";
             this.BIZ_UNIT_TYPE.NumberValue = new decimal(new int[] {
@@ -2760,15 +2797,15 @@
             0,
             0});
             this.BIZ_UNIT_TYPE.PromptText = "Corp Type";
-            isLanguageElement4.Default = "Corp Type";
-            isLanguageElement4.SiteName = null;
-            isLanguageElement4.TL1_KR = "업체타입";
-            isLanguageElement4.TL2_CN = "";
-            isLanguageElement4.TL3_VN = "";
-            isLanguageElement4.TL4_JP = "";
-            isLanguageElement4.TL5_XAA = "";
+            isLanguageElement12.Default = "Corp Type";
+            isLanguageElement12.SiteName = null;
+            isLanguageElement12.TL1_KR = "업체타입";
+            isLanguageElement12.TL2_CN = "";
+            isLanguageElement12.TL3_VN = "";
+            isLanguageElement12.TL4_JP = "";
+            isLanguageElement12.TL5_XAA = "";
             this.BIZ_UNIT_TYPE.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement4});
+            isLanguageElement12});
             this.BIZ_UNIT_TYPE.PromptVisible = false;
             this.BIZ_UNIT_TYPE.PromptWidth = 70;
             this.BIZ_UNIT_TYPE.ReadOnly = true;
@@ -2793,7 +2830,7 @@
             this.BIZ_UNIT_TYPE_NAME.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.BIZ_UNIT_TYPE_NAME.DoubleValue = 0D;
             this.BIZ_UNIT_TYPE_NAME.EditValue = "";
-            this.BIZ_UNIT_TYPE_NAME.Location = new System.Drawing.Point(340, 28);
+            this.BIZ_UNIT_TYPE_NAME.Location = new System.Drawing.Point(359, 27);
             this.BIZ_UNIT_TYPE_NAME.LookupAdapter = this.ILA_BIZ_UNIT_TYPE;
             this.BIZ_UNIT_TYPE_NAME.Name = "BIZ_UNIT_TYPE_NAME";
             this.BIZ_UNIT_TYPE_NAME.Nullable = true;
@@ -2808,17 +2845,17 @@
             0,
             0});
             this.BIZ_UNIT_TYPE_NAME.PromptText = "Biz. Unit Type";
-            isLanguageElement5.Default = "Biz. Unit Type";
-            isLanguageElement5.SiteName = null;
-            isLanguageElement5.TL1_KR = "사업자단위 구분";
-            isLanguageElement5.TL2_CN = "";
-            isLanguageElement5.TL3_VN = "";
-            isLanguageElement5.TL4_JP = "";
-            isLanguageElement5.TL5_XAA = "";
+            isLanguageElement13.Default = "Biz. Unit Type";
+            isLanguageElement13.SiteName = null;
+            isLanguageElement13.TL1_KR = "사업자단위 구분";
+            isLanguageElement13.TL2_CN = "";
+            isLanguageElement13.TL3_VN = "";
+            isLanguageElement13.TL4_JP = "";
+            isLanguageElement13.TL5_XAA = "";
             this.BIZ_UNIT_TYPE_NAME.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement5});
+            isLanguageElement13});
             this.BIZ_UNIT_TYPE_NAME.PromptWidth = 120;
-            this.BIZ_UNIT_TYPE_NAME.Size = new System.Drawing.Size(270, 21);
+            this.BIZ_UNIT_TYPE_NAME.Size = new System.Drawing.Size(280, 21);
             this.BIZ_UNIT_TYPE_NAME.TabIndex = 1;
             this.BIZ_UNIT_TYPE_NAME.TextValue = "";
             // 
@@ -3168,7 +3205,7 @@
             this.CORP_CATEGORY.DoubleValue = 0D;
             this.CORP_CATEGORY.EditValue = "";
             this.CORP_CATEGORY.Insertable = false;
-            this.CORP_CATEGORY.Location = new System.Drawing.Point(278, 97);
+            this.CORP_CATEGORY.Location = new System.Drawing.Point(303, 93);
             this.CORP_CATEGORY.LookupAdapter = null;
             this.CORP_CATEGORY.Name = "CORP_CATEGORY";
             this.CORP_CATEGORY.NumberValue = new decimal(new int[] {
@@ -3182,15 +3219,15 @@
             0,
             0});
             this.CORP_CATEGORY.PromptText = "Category";
-            isLanguageElement17.Default = "Category";
-            isLanguageElement17.SiteName = null;
-            isLanguageElement17.TL1_KR = "법인구분";
-            isLanguageElement17.TL2_CN = "";
-            isLanguageElement17.TL3_VN = "";
-            isLanguageElement17.TL4_JP = "";
-            isLanguageElement17.TL5_XAA = "";
+            isLanguageElement25.Default = "Category";
+            isLanguageElement25.SiteName = null;
+            isLanguageElement25.TL1_KR = "법인구분";
+            isLanguageElement25.TL2_CN = "";
+            isLanguageElement25.TL3_VN = "";
+            isLanguageElement25.TL4_JP = "";
+            isLanguageElement25.TL5_XAA = "";
             this.CORP_CATEGORY.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement17});
+            isLanguageElement25});
             this.CORP_CATEGORY.PromptVisible = false;
             this.CORP_CATEGORY.PromptWidth = 70;
             this.CORP_CATEGORY.ReadOnly = true;
@@ -3215,7 +3252,7 @@
             this.CORP_CATEGORY_NAME.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.CORP_CATEGORY_NAME.DoubleValue = 0D;
             this.CORP_CATEGORY_NAME.EditValue = "";
-            this.CORP_CATEGORY_NAME.Location = new System.Drawing.Point(8, 97);
+            this.CORP_CATEGORY_NAME.Location = new System.Drawing.Point(8, 93);
             this.CORP_CATEGORY_NAME.LookupAdapter = this.ilaCORP_CATEGORY;
             this.CORP_CATEGORY_NAME.Name = "CORP_CATEGORY_NAME";
             this.CORP_CATEGORY_NAME.NumberValue = new decimal(new int[] {
@@ -3229,17 +3266,17 @@
             0,
             0});
             this.CORP_CATEGORY_NAME.PromptText = "Category";
-            isLanguageElement18.Default = "Category";
-            isLanguageElement18.SiteName = null;
-            isLanguageElement18.TL1_KR = "법인구분";
-            isLanguageElement18.TL2_CN = "";
-            isLanguageElement18.TL3_VN = "";
-            isLanguageElement18.TL4_JP = "";
-            isLanguageElement18.TL5_XAA = "";
+            isLanguageElement26.Default = "Category";
+            isLanguageElement26.SiteName = null;
+            isLanguageElement26.TL1_KR = "법인구분";
+            isLanguageElement26.TL2_CN = "";
+            isLanguageElement26.TL3_VN = "";
+            isLanguageElement26.TL4_JP = "";
+            isLanguageElement26.TL5_XAA = "";
             this.CORP_CATEGORY_NAME.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement18});
+            isLanguageElement26});
             this.CORP_CATEGORY_NAME.PromptWidth = 120;
-            this.CORP_CATEGORY_NAME.Size = new System.Drawing.Size(270, 21);
+            this.CORP_CATEGORY_NAME.Size = new System.Drawing.Size(295, 21);
             this.CORP_CATEGORY_NAME.TabIndex = 6;
             this.CORP_CATEGORY_NAME.TextValue = "";
             // 
@@ -3516,7 +3553,7 @@
             this.CORP_CODE.DoubleValue = 0D;
             this.CORP_CODE.EditValue = "";
             this.CORP_CODE.Insertable = false;
-            this.CORP_CODE.Location = new System.Drawing.Point(8, 28);
+            this.CORP_CODE.Location = new System.Drawing.Point(8, 27);
             this.CORP_CODE.LookupAdapter = null;
             this.CORP_CODE.Name = "CORP_CODE";
             this.CORP_CODE.Nullable = true;
@@ -3531,18 +3568,18 @@
             0,
             0});
             this.CORP_CODE.PromptText = "Corporation Code";
-            isLanguageElement11.Default = "Corporation Code";
-            isLanguageElement11.SiteName = null;
-            isLanguageElement11.TL1_KR = "업체코드";
-            isLanguageElement11.TL2_CN = "";
-            isLanguageElement11.TL3_VN = "";
-            isLanguageElement11.TL4_JP = "";
-            isLanguageElement11.TL5_XAA = "";
+            isLanguageElement19.Default = "Corporation Code";
+            isLanguageElement19.SiteName = null;
+            isLanguageElement19.TL1_KR = "업체코드";
+            isLanguageElement19.TL2_CN = "";
+            isLanguageElement19.TL3_VN = "";
+            isLanguageElement19.TL4_JP = "";
+            isLanguageElement19.TL5_XAA = "";
             this.CORP_CODE.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement11});
+            isLanguageElement19});
             this.CORP_CODE.PromptWidth = 120;
             this.CORP_CODE.ReadOnly = true;
-            this.CORP_CODE.Size = new System.Drawing.Size(325, 21);
+            this.CORP_CODE.Size = new System.Drawing.Size(350, 21);
             this.CORP_CODE.TabIndex = 0;
             this.CORP_CODE.TextValue = "";
             this.CORP_CODE.Updatable = false;
@@ -3564,7 +3601,7 @@
             this.CORP_ID.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
             this.CORP_ID.EditValue = null;
             this.CORP_ID.Insertable = false;
-            this.CORP_ID.Location = new System.Drawing.Point(205, 28);
+            this.CORP_ID.Location = new System.Drawing.Point(205, 27);
             this.CORP_ID.LookupAdapter = null;
             this.CORP_ID.Name = "CORP_ID";
             this.CORP_ID.Nullable = true;
@@ -3579,15 +3616,15 @@
             0,
             0});
             this.CORP_ID.PromptText = "Corp";
-            isLanguageElement2.Default = "Corp";
-            isLanguageElement2.SiteName = null;
-            isLanguageElement2.TL1_KR = "업체ID";
-            isLanguageElement2.TL2_CN = "";
-            isLanguageElement2.TL3_VN = "";
-            isLanguageElement2.TL4_JP = "";
-            isLanguageElement2.TL5_XAA = "";
+            isLanguageElement8.Default = "Corp";
+            isLanguageElement8.SiteName = null;
+            isLanguageElement8.TL1_KR = "업체ID";
+            isLanguageElement8.TL2_CN = "";
+            isLanguageElement8.TL3_VN = "";
+            isLanguageElement8.TL4_JP = "";
+            isLanguageElement8.TL5_XAA = "";
             this.CORP_ID.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement2});
+            isLanguageElement8});
             this.CORP_ID.PromptVisible = false;
             this.CORP_ID.PromptWidth = 70;
             this.CORP_ID.ReadOnly = true;
@@ -3613,7 +3650,7 @@
             this.CORP_NAME.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.CORP_NAME.DoubleValue = 0D;
             this.CORP_NAME.EditValue = "";
-            this.CORP_NAME.Location = new System.Drawing.Point(8, 51);
+            this.CORP_NAME.Location = new System.Drawing.Point(8, 49);
             this.CORP_NAME.LookupAdapter = null;
             this.CORP_NAME.Name = "CORP_NAME";
             this.CORP_NAME.NumberValue = new decimal(new int[] {
@@ -3627,17 +3664,17 @@
             0,
             0});
             this.CORP_NAME.PromptText = "Corporation";
-            isLanguageElement12.Default = "Corporation";
-            isLanguageElement12.SiteName = null;
-            isLanguageElement12.TL1_KR = "업체명";
-            isLanguageElement12.TL2_CN = "";
-            isLanguageElement12.TL3_VN = "";
-            isLanguageElement12.TL4_JP = "";
-            isLanguageElement12.TL5_XAA = "";
+            isLanguageElement20.Default = "Corporation";
+            isLanguageElement20.SiteName = null;
+            isLanguageElement20.TL1_KR = "업체명";
+            isLanguageElement20.TL2_CN = "";
+            isLanguageElement20.TL3_VN = "";
+            isLanguageElement20.TL4_JP = "";
+            isLanguageElement20.TL5_XAA = "";
             this.CORP_NAME.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement12});
+            isLanguageElement20});
             this.CORP_NAME.PromptWidth = 120;
-            this.CORP_NAME.Size = new System.Drawing.Size(325, 21);
+            this.CORP_NAME.Size = new System.Drawing.Size(350, 21);
             this.CORP_NAME.TabIndex = 2;
             this.CORP_NAME.TextValue = "";
             // 
@@ -3656,7 +3693,7 @@
             this.CORP_NAME_S.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.CORP_NAME_S.DoubleValue = 0D;
             this.CORP_NAME_S.EditValue = "";
-            this.CORP_NAME_S.Location = new System.Drawing.Point(340, 51);
+            this.CORP_NAME_S.Location = new System.Drawing.Point(359, 49);
             this.CORP_NAME_S.LookupAdapter = null;
             this.CORP_NAME_S.Name = "CORP_NAME_S";
             this.CORP_NAME_S.NumberValue = new decimal(new int[] {
@@ -3670,17 +3707,17 @@
             0,
             0});
             this.CORP_NAME_S.PromptText = "Corporation(Short)";
-            isLanguageElement14.Default = "Corporation(Short)";
-            isLanguageElement14.SiteName = null;
-            isLanguageElement14.TL1_KR = "업체명(약호)";
-            isLanguageElement14.TL2_CN = "";
-            isLanguageElement14.TL3_VN = "";
-            isLanguageElement14.TL4_JP = "";
-            isLanguageElement14.TL5_XAA = "";
+            isLanguageElement22.Default = "Corporation(Short)";
+            isLanguageElement22.SiteName = null;
+            isLanguageElement22.TL1_KR = "업체명(약호)";
+            isLanguageElement22.TL2_CN = "";
+            isLanguageElement22.TL3_VN = "";
+            isLanguageElement22.TL4_JP = "";
+            isLanguageElement22.TL5_XAA = "";
             this.CORP_NAME_S.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement14});
+            isLanguageElement22});
             this.CORP_NAME_S.PromptWidth = 120;
-            this.CORP_NAME_S.Size = new System.Drawing.Size(330, 21);
+            this.CORP_NAME_S.Size = new System.Drawing.Size(340, 21);
             this.CORP_NAME_S.TabIndex = 3;
             this.CORP_NAME_S.TextValue = "";
             // 
@@ -3700,7 +3737,7 @@
             this.CORP_SORT_NUM.DoubleValue = 0D;
             this.CORP_SORT_NUM.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
             this.CORP_SORT_NUM.EditValue = null;
-            this.CORP_SORT_NUM.Location = new System.Drawing.Point(8, 213);
+            this.CORP_SORT_NUM.Location = new System.Drawing.Point(8, 203);
             this.CORP_SORT_NUM.LookupAdapter = null;
             this.CORP_SORT_NUM.Name = "CORP_SORT_NUM";
             this.CORP_SORT_NUM.Nullable = true;
@@ -3715,17 +3752,17 @@
             0,
             0});
             this.CORP_SORT_NUM.PromptText = "Sort Num";
-            isLanguageElement31.Default = "Sort Num";
-            isLanguageElement31.SiteName = null;
-            isLanguageElement31.TL1_KR = "정렬 순서";
-            isLanguageElement31.TL2_CN = "";
-            isLanguageElement31.TL3_VN = "";
-            isLanguageElement31.TL4_JP = "";
-            isLanguageElement31.TL5_XAA = "";
+            isLanguageElement39.Default = "Sort Num";
+            isLanguageElement39.SiteName = null;
+            isLanguageElement39.TL1_KR = "정렬 순서";
+            isLanguageElement39.TL2_CN = "";
+            isLanguageElement39.TL3_VN = "";
+            isLanguageElement39.TL4_JP = "";
+            isLanguageElement39.TL5_XAA = "";
             this.CORP_SORT_NUM.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement31});
+            isLanguageElement39});
             this.CORP_SORT_NUM.PromptWidth = 120;
-            this.CORP_SORT_NUM.Size = new System.Drawing.Size(180, 21);
+            this.CORP_SORT_NUM.Size = new System.Drawing.Size(207, 21);
             this.CORP_SORT_NUM.TabIndex = 21;
             this.CORP_SORT_NUM.TextValue = "";
             // 
@@ -3745,7 +3782,7 @@
             this.CORP_TYPE.DoubleValue = 0D;
             this.CORP_TYPE.EditValue = "";
             this.CORP_TYPE.Insertable = false;
-            this.CORP_TYPE.Location = new System.Drawing.Point(610, 97);
+            this.CORP_TYPE.Location = new System.Drawing.Point(639, 93);
             this.CORP_TYPE.LookupAdapter = null;
             this.CORP_TYPE.Name = "CORP_TYPE";
             this.CORP_TYPE.NumberValue = new decimal(new int[] {
@@ -3759,15 +3796,15 @@
             0,
             0});
             this.CORP_TYPE.PromptText = "Corp Type";
-            isLanguageElement13.Default = "Corp Type";
-            isLanguageElement13.SiteName = null;
-            isLanguageElement13.TL1_KR = "업체타입";
-            isLanguageElement13.TL2_CN = "";
-            isLanguageElement13.TL3_VN = "";
-            isLanguageElement13.TL4_JP = "";
-            isLanguageElement13.TL5_XAA = "";
+            isLanguageElement21.Default = "Corp Type";
+            isLanguageElement21.SiteName = null;
+            isLanguageElement21.TL1_KR = "업체타입";
+            isLanguageElement21.TL2_CN = "";
+            isLanguageElement21.TL3_VN = "";
+            isLanguageElement21.TL4_JP = "";
+            isLanguageElement21.TL5_XAA = "";
             this.CORP_TYPE.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement13});
+            isLanguageElement21});
             this.CORP_TYPE.PromptVisible = false;
             this.CORP_TYPE.PromptWidth = 70;
             this.CORP_TYPE.ReadOnly = true;
@@ -3792,7 +3829,7 @@
             this.CORP_TYPE_NAME.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.CORP_TYPE_NAME.DoubleValue = 0D;
             this.CORP_TYPE_NAME.EditValue = "";
-            this.CORP_TYPE_NAME.Location = new System.Drawing.Point(340, 97);
+            this.CORP_TYPE_NAME.Location = new System.Drawing.Point(359, 93);
             this.CORP_TYPE_NAME.LookupAdapter = this.ilaCORP_TYPE;
             this.CORP_TYPE_NAME.Name = "CORP_TYPE_NAME";
             this.CORP_TYPE_NAME.NumberValue = new decimal(new int[] {
@@ -3806,17 +3843,17 @@
             0,
             0});
             this.CORP_TYPE_NAME.PromptText = "Corporation Type";
-            isLanguageElement24.Default = "Corporation Type";
-            isLanguageElement24.SiteName = null;
-            isLanguageElement24.TL1_KR = "업체타입";
-            isLanguageElement24.TL2_CN = "";
-            isLanguageElement24.TL3_VN = "";
-            isLanguageElement24.TL4_JP = "";
-            isLanguageElement24.TL5_XAA = "";
+            isLanguageElement32.Default = "Corporation Type";
+            isLanguageElement32.SiteName = null;
+            isLanguageElement32.TL1_KR = "업체타입";
+            isLanguageElement32.TL2_CN = "";
+            isLanguageElement32.TL3_VN = "";
+            isLanguageElement32.TL4_JP = "";
+            isLanguageElement32.TL5_XAA = "";
             this.CORP_TYPE_NAME.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement24});
+            isLanguageElement32});
             this.CORP_TYPE_NAME.PromptWidth = 120;
-            this.CORP_TYPE_NAME.Size = new System.Drawing.Size(270, 21);
+            this.CORP_TYPE_NAME.Size = new System.Drawing.Size(280, 21);
             this.CORP_TYPE_NAME.TabIndex = 7;
             this.CORP_TYPE_NAME.TextValue = "";
             // 
@@ -4089,11 +4126,11 @@
             0});
             this.EFFECTIVE_DATE_FR.DataAdapter = this.IDA_CORP_MASTER;
             this.EFFECTIVE_DATE_FR.DataColumn = "EFFECTIVE_DATE_FR";
-            this.EFFECTIVE_DATE_FR.DateTimeValue = new System.DateTime(2020, 3, 2, 0, 0, 0, 0);
+            this.EFFECTIVE_DATE_FR.DateTimeValue = new System.DateTime(2022, 5, 15, 0, 0, 0, 0);
             this.EFFECTIVE_DATE_FR.DoubleValue = 0D;
             this.EFFECTIVE_DATE_FR.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.DateTimeEdit;
             this.EFFECTIVE_DATE_FR.EditValue = null;
-            this.EFFECTIVE_DATE_FR.Location = new System.Drawing.Point(8, 237);
+            this.EFFECTIVE_DATE_FR.Location = new System.Drawing.Point(8, 225);
             this.EFFECTIVE_DATE_FR.LookupAdapter = null;
             this.EFFECTIVE_DATE_FR.Name = "EFFECTIVE_DATE_FR";
             this.EFFECTIVE_DATE_FR.Nullable = true;
@@ -4108,17 +4145,17 @@
             0,
             0});
             this.EFFECTIVE_DATE_FR.PromptText = "Effective Date Fr";
-            isLanguageElement27.Default = "Effective Date Fr";
-            isLanguageElement27.SiteName = null;
-            isLanguageElement27.TL1_KR = "시작일자";
-            isLanguageElement27.TL2_CN = "";
-            isLanguageElement27.TL3_VN = "";
-            isLanguageElement27.TL4_JP = "";
-            isLanguageElement27.TL5_XAA = "";
+            isLanguageElement35.Default = "Effective Date Fr";
+            isLanguageElement35.SiteName = null;
+            isLanguageElement35.TL1_KR = "시작일자";
+            isLanguageElement35.TL2_CN = "";
+            isLanguageElement35.TL3_VN = "";
+            isLanguageElement35.TL4_JP = "";
+            isLanguageElement35.TL5_XAA = "";
             this.EFFECTIVE_DATE_FR.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement27});
+            isLanguageElement35});
             this.EFFECTIVE_DATE_FR.PromptWidth = 120;
-            this.EFFECTIVE_DATE_FR.Size = new System.Drawing.Size(240, 21);
+            this.EFFECTIVE_DATE_FR.Size = new System.Drawing.Size(295, 21);
             this.EFFECTIVE_DATE_FR.TabIndex = 26;
             this.EFFECTIVE_DATE_FR.TextValue = "";
             // 
@@ -4134,11 +4171,11 @@
             0});
             this.EFFECTIVE_DATE_TO.DataAdapter = this.IDA_CORP_MASTER;
             this.EFFECTIVE_DATE_TO.DataColumn = "EFFECTIVE_DATE_TO";
-            this.EFFECTIVE_DATE_TO.DateTimeValue = new System.DateTime(2020, 3, 2, 0, 0, 0, 0);
+            this.EFFECTIVE_DATE_TO.DateTimeValue = new System.DateTime(2022, 5, 15, 0, 0, 0, 0);
             this.EFFECTIVE_DATE_TO.DoubleValue = 0D;
             this.EFFECTIVE_DATE_TO.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.DateTimeEdit;
             this.EFFECTIVE_DATE_TO.EditValue = null;
-            this.EFFECTIVE_DATE_TO.Location = new System.Drawing.Point(254, 237);
+            this.EFFECTIVE_DATE_TO.Location = new System.Drawing.Point(303, 225);
             this.EFFECTIVE_DATE_TO.LookupAdapter = null;
             this.EFFECTIVE_DATE_TO.Name = "EFFECTIVE_DATE_TO";
             this.EFFECTIVE_DATE_TO.Nullable = true;
@@ -4153,17 +4190,17 @@
             0,
             0});
             this.EFFECTIVE_DATE_TO.PromptText = "Effective Date To";
-            isLanguageElement34.Default = "Effective Date To";
-            isLanguageElement34.SiteName = null;
-            isLanguageElement34.TL1_KR = "종료일자";
-            isLanguageElement34.TL2_CN = "";
-            isLanguageElement34.TL3_VN = "";
-            isLanguageElement34.TL4_JP = "";
-            isLanguageElement34.TL5_XAA = "";
+            isLanguageElement42.Default = "Effective Date To";
+            isLanguageElement42.SiteName = null;
+            isLanguageElement42.TL1_KR = "종료일자";
+            isLanguageElement42.TL2_CN = "";
+            isLanguageElement42.TL3_VN = "";
+            isLanguageElement42.TL4_JP = "";
+            isLanguageElement42.TL5_XAA = "";
             this.EFFECTIVE_DATE_TO.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement34});
+            isLanguageElement42});
             this.EFFECTIVE_DATE_TO.PromptWidth = 120;
-            this.EFFECTIVE_DATE_TO.Size = new System.Drawing.Size(240, 21);
+            this.EFFECTIVE_DATE_TO.Size = new System.Drawing.Size(275, 21);
             this.EFFECTIVE_DATE_TO.TabIndex = 27;
             this.EFFECTIVE_DATE_TO.TabStop = false;
             this.EFFECTIVE_DATE_TO.TextValue = "";
@@ -4183,7 +4220,7 @@
             this.EMAIL.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.EMAIL.DoubleValue = 0D;
             this.EMAIL.EditValue = "";
-            this.EMAIL.Location = new System.Drawing.Point(8, 167);
+            this.EMAIL.Location = new System.Drawing.Point(8, 159);
             this.EMAIL.LookupAdapter = null;
             this.EMAIL.Name = "EMAIL";
             this.EMAIL.Nullable = true;
@@ -4198,17 +4235,17 @@
             0,
             0});
             this.EMAIL.PromptText = "Email";
-            isLanguageElement22.Default = "Email";
-            isLanguageElement22.SiteName = null;
-            isLanguageElement22.TL1_KR = "이메일";
-            isLanguageElement22.TL2_CN = "";
-            isLanguageElement22.TL3_VN = "";
-            isLanguageElement22.TL4_JP = "";
-            isLanguageElement22.TL5_XAA = "";
+            isLanguageElement30.Default = "Email";
+            isLanguageElement30.SiteName = null;
+            isLanguageElement30.TL1_KR = "이메일";
+            isLanguageElement30.TL2_CN = "";
+            isLanguageElement30.TL3_VN = "";
+            isLanguageElement30.TL4_JP = "";
+            isLanguageElement30.TL5_XAA = "";
             this.EMAIL.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement22});
+            isLanguageElement30});
             this.EMAIL.PromptWidth = 120;
-            this.EMAIL.Size = new System.Drawing.Size(325, 21);
+            this.EMAIL.Size = new System.Drawing.Size(350, 21);
             this.EMAIL.TabIndex = 14;
             this.EMAIL.TextValue = "";
             // 
@@ -4227,7 +4264,7 @@
             this.FAX_NUMBER.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.FAX_NUMBER.DoubleValue = 0D;
             this.FAX_NUMBER.EditValue = "";
-            this.FAX_NUMBER.Location = new System.Drawing.Point(340, 143);
+            this.FAX_NUMBER.Location = new System.Drawing.Point(359, 137);
             this.FAX_NUMBER.LookupAdapter = null;
             this.FAX_NUMBER.Name = "FAX_NUMBER";
             this.FAX_NUMBER.Nullable = true;
@@ -4242,17 +4279,17 @@
             0,
             0});
             this.FAX_NUMBER.PromptText = "Fax Num";
-            isLanguageElement25.Default = "Fax Num";
-            isLanguageElement25.SiteName = null;
-            isLanguageElement25.TL1_KR = "팩스번호";
-            isLanguageElement25.TL2_CN = "";
-            isLanguageElement25.TL3_VN = "";
-            isLanguageElement25.TL4_JP = "";
-            isLanguageElement25.TL5_XAA = "";
+            isLanguageElement33.Default = "Fax Num";
+            isLanguageElement33.SiteName = null;
+            isLanguageElement33.TL1_KR = "팩스번호";
+            isLanguageElement33.TL2_CN = "";
+            isLanguageElement33.TL3_VN = "";
+            isLanguageElement33.TL4_JP = "";
+            isLanguageElement33.TL5_XAA = "";
             this.FAX_NUMBER.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement25});
+            isLanguageElement33});
             this.FAX_NUMBER.PromptWidth = 120;
-            this.FAX_NUMBER.Size = new System.Drawing.Size(330, 21);
+            this.FAX_NUMBER.Size = new System.Drawing.Size(340, 21);
             this.FAX_NUMBER.TabIndex = 10;
             this.FAX_NUMBER.TextValue = "";
             // 
@@ -4271,7 +4308,7 @@
             this.HOMEPAGE_URL.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.HOMEPAGE_URL.DoubleValue = 0D;
             this.HOMEPAGE_URL.EditValue = "";
-            this.HOMEPAGE_URL.Location = new System.Drawing.Point(340, 167);
+            this.HOMEPAGE_URL.Location = new System.Drawing.Point(359, 159);
             this.HOMEPAGE_URL.LookupAdapter = null;
             this.HOMEPAGE_URL.Name = "HOMEPAGE_URL";
             this.HOMEPAGE_URL.Nullable = true;
@@ -4286,17 +4323,17 @@
             0,
             0});
             this.HOMEPAGE_URL.PromptText = "HomePage";
-            isLanguageElement23.Default = "HomePage";
-            isLanguageElement23.SiteName = null;
-            isLanguageElement23.TL1_KR = "홈페이지";
-            isLanguageElement23.TL2_CN = "";
-            isLanguageElement23.TL3_VN = "";
-            isLanguageElement23.TL4_JP = "";
-            isLanguageElement23.TL5_XAA = "";
+            isLanguageElement31.Default = "HomePage";
+            isLanguageElement31.SiteName = null;
+            isLanguageElement31.TL1_KR = "홈페이지";
+            isLanguageElement31.TL2_CN = "";
+            isLanguageElement31.TL3_VN = "";
+            isLanguageElement31.TL4_JP = "";
+            isLanguageElement31.TL5_XAA = "";
             this.HOMEPAGE_URL.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement23});
+            isLanguageElement31});
             this.HOMEPAGE_URL.PromptWidth = 120;
-            this.HOMEPAGE_URL.Size = new System.Drawing.Size(330, 21);
+            this.HOMEPAGE_URL.Size = new System.Drawing.Size(340, 21);
             this.HOMEPAGE_URL.TabIndex = 15;
             this.HOMEPAGE_URL.TextValue = "";
             // 
@@ -4759,7 +4796,7 @@
             this.IGR_CORP_LIST.BaseGrid.RowHeightEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridRowHeight[] {
             new Syncfusion.Windows.Forms.Grid.GridRowHeight(0, 22)});
             this.IGR_CORP_LIST.BaseGrid.SerializeCellsBehavior = Syncfusion.Windows.Forms.Grid.GridSerializeCellsBehavior.SerializeAsRangeStylesIntoCode;
-            this.IGR_CORP_LIST.BaseGrid.Size = new System.Drawing.Size(255, 311);
+            this.IGR_CORP_LIST.BaseGrid.Size = new System.Drawing.Size(255, 293);
             this.IGR_CORP_LIST.BaseGrid.SmartSizeBox = false;
             this.IGR_CORP_LIST.BaseGrid.TabIndex = 0;
             this.IGR_CORP_LIST.BaseGrid.ThemesEnabled = true;
@@ -5602,7 +5639,7 @@
             isGridAdvExColElement32});
             this.IGR_CORP_LIST.Location = new System.Drawing.Point(0, 23);
             this.IGR_CORP_LIST.Name = "IGR_CORP_LIST";
-            this.IGR_CORP_LIST.Size = new System.Drawing.Size(258, 314);
+            this.IGR_CORP_LIST.Size = new System.Drawing.Size(258, 296);
             this.IGR_CORP_LIST.TabIndex = 0;
             this.IGR_CORP_LIST.Text = "isGridAdvEx1";
             // 
@@ -5621,7 +5658,7 @@
             this.LEGAL_NUMBER.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.LEGAL_NUMBER.DoubleValue = 0D;
             this.LEGAL_NUMBER.EditValue = "";
-            this.LEGAL_NUMBER.Location = new System.Drawing.Point(340, 74);
+            this.LEGAL_NUMBER.Location = new System.Drawing.Point(359, 71);
             this.LEGAL_NUMBER.LookupAdapter = null;
             this.LEGAL_NUMBER.Name = "LEGAL_NUMBER";
             this.LEGAL_NUMBER.NumberValue = new decimal(new int[] {
@@ -5635,17 +5672,17 @@
             0,
             0});
             this.LEGAL_NUMBER.PromptText = "Legal Num";
-            isLanguageElement20.Default = "Legal Num";
-            isLanguageElement20.SiteName = null;
-            isLanguageElement20.TL1_KR = "법인번호";
-            isLanguageElement20.TL2_CN = "";
-            isLanguageElement20.TL3_VN = "";
-            isLanguageElement20.TL4_JP = "";
-            isLanguageElement20.TL5_XAA = "";
+            isLanguageElement28.Default = "Legal Num";
+            isLanguageElement28.SiteName = null;
+            isLanguageElement28.TL1_KR = "법인번호";
+            isLanguageElement28.TL2_CN = "";
+            isLanguageElement28.TL3_VN = "";
+            isLanguageElement28.TL4_JP = "";
+            isLanguageElement28.TL5_XAA = "";
             this.LEGAL_NUMBER.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement20});
+            isLanguageElement28});
             this.LEGAL_NUMBER.PromptWidth = 120;
-            this.LEGAL_NUMBER.Size = new System.Drawing.Size(330, 21);
+            this.LEGAL_NUMBER.Size = new System.Drawing.Size(340, 21);
             this.LEGAL_NUMBER.TabIndex = 5;
             this.LEGAL_NUMBER.TextValue = "";
             // 
@@ -5664,7 +5701,7 @@
             this.PERSON_CHARGE_NAME.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.PERSON_CHARGE_NAME.DoubleValue = 0D;
             this.PERSON_CHARGE_NAME.EditValue = "";
-            this.PERSON_CHARGE_NAME.Location = new System.Drawing.Point(8, 120);
+            this.PERSON_CHARGE_NAME.Location = new System.Drawing.Point(8, 115);
             this.PERSON_CHARGE_NAME.LookupAdapter = null;
             this.PERSON_CHARGE_NAME.Name = "PERSON_CHARGE_NAME";
             this.PERSON_CHARGE_NAME.Nullable = true;
@@ -5679,17 +5716,17 @@
             0,
             0});
             this.PERSON_CHARGE_NAME.PromptText = "Person in Charge";
-            isLanguageElement15.Default = "Person in Charge";
-            isLanguageElement15.SiteName = null;
-            isLanguageElement15.TL1_KR = "담당자";
-            isLanguageElement15.TL2_CN = "";
-            isLanguageElement15.TL3_VN = "";
-            isLanguageElement15.TL4_JP = "";
-            isLanguageElement15.TL5_XAA = "";
+            isLanguageElement23.Default = "Person in Charge";
+            isLanguageElement23.SiteName = null;
+            isLanguageElement23.TL1_KR = "담당자";
+            isLanguageElement23.TL2_CN = "";
+            isLanguageElement23.TL3_VN = "";
+            isLanguageElement23.TL4_JP = "";
+            isLanguageElement23.TL5_XAA = "";
             this.PERSON_CHARGE_NAME.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement15});
+            isLanguageElement23});
             this.PERSON_CHARGE_NAME.PromptWidth = 120;
-            this.PERSON_CHARGE_NAME.Size = new System.Drawing.Size(325, 21);
+            this.PERSON_CHARGE_NAME.Size = new System.Drawing.Size(350, 21);
             this.PERSON_CHARGE_NAME.TabIndex = 8;
             this.PERSON_CHARGE_NAME.TextValue = "";
             // 
@@ -5708,7 +5745,7 @@
             this.PRESIDENT_NAME.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.PRESIDENT_NAME.DoubleValue = 0D;
             this.PRESIDENT_NAME.EditValue = "";
-            this.PRESIDENT_NAME.Location = new System.Drawing.Point(8, 74);
+            this.PRESIDENT_NAME.Location = new System.Drawing.Point(8, 71);
             this.PRESIDENT_NAME.LookupAdapter = null;
             this.PRESIDENT_NAME.Name = "PRESIDENT_NAME";
             this.PRESIDENT_NAME.NumberValue = new decimal(new int[] {
@@ -5722,17 +5759,17 @@
             0,
             0});
             this.PRESIDENT_NAME.PromptText = "President Name";
-            isLanguageElement19.Default = "President Name";
-            isLanguageElement19.SiteName = null;
-            isLanguageElement19.TL1_KR = "대표자";
-            isLanguageElement19.TL2_CN = "";
-            isLanguageElement19.TL3_VN = "";
-            isLanguageElement19.TL4_JP = "";
-            isLanguageElement19.TL5_XAA = "";
+            isLanguageElement27.Default = "President Name";
+            isLanguageElement27.SiteName = null;
+            isLanguageElement27.TL1_KR = "대표자";
+            isLanguageElement27.TL2_CN = "";
+            isLanguageElement27.TL3_VN = "";
+            isLanguageElement27.TL4_JP = "";
+            isLanguageElement27.TL5_XAA = "";
             this.PRESIDENT_NAME.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement19});
+            isLanguageElement27});
             this.PRESIDENT_NAME.PromptWidth = 120;
-            this.PRESIDENT_NAME.Size = new System.Drawing.Size(325, 21);
+            this.PRESIDENT_NAME.Size = new System.Drawing.Size(350, 21);
             this.PRESIDENT_NAME.TabIndex = 4;
             this.PRESIDENT_NAME.TextValue = "";
             // 
@@ -5752,7 +5789,7 @@
             this.RETIRE_IRP_TYPE.DoubleValue = 0D;
             this.RETIRE_IRP_TYPE.EditValue = "";
             this.RETIRE_IRP_TYPE.Insertable = false;
-            this.RETIRE_IRP_TYPE.Location = new System.Drawing.Point(278, 264);
+            this.RETIRE_IRP_TYPE.Location = new System.Drawing.Point(303, 249);
             this.RETIRE_IRP_TYPE.LookupAdapter = null;
             this.RETIRE_IRP_TYPE.Name = "RETIRE_IRP_TYPE";
             this.RETIRE_IRP_TYPE.NumberValue = new decimal(new int[] {
@@ -5766,15 +5803,15 @@
             0,
             0});
             this.RETIRE_IRP_TYPE.PromptText = "Category";
-            isLanguageElement6.Default = "Category";
-            isLanguageElement6.SiteName = null;
-            isLanguageElement6.TL1_KR = "법인구분";
-            isLanguageElement6.TL2_CN = "";
-            isLanguageElement6.TL3_VN = "";
-            isLanguageElement6.TL4_JP = "";
-            isLanguageElement6.TL5_XAA = "";
+            isLanguageElement14.Default = "Category";
+            isLanguageElement14.SiteName = null;
+            isLanguageElement14.TL1_KR = "법인구분";
+            isLanguageElement14.TL2_CN = "";
+            isLanguageElement14.TL3_VN = "";
+            isLanguageElement14.TL4_JP = "";
+            isLanguageElement14.TL5_XAA = "";
             this.RETIRE_IRP_TYPE.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement6});
+            isLanguageElement14});
             this.RETIRE_IRP_TYPE.PromptVisible = false;
             this.RETIRE_IRP_TYPE.PromptWidth = 70;
             this.RETIRE_IRP_TYPE.ReadOnly = true;
@@ -5799,7 +5836,7 @@
             this.RETIRE_IRP_TYPE_NAME.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.RETIRE_IRP_TYPE_NAME.DoubleValue = 0D;
             this.RETIRE_IRP_TYPE_NAME.EditValue = "";
-            this.RETIRE_IRP_TYPE_NAME.Location = new System.Drawing.Point(8, 264);
+            this.RETIRE_IRP_TYPE_NAME.Location = new System.Drawing.Point(8, 249);
             this.RETIRE_IRP_TYPE_NAME.LookupAdapter = this.ilaRETIRE_IRP_TYPE;
             this.RETIRE_IRP_TYPE_NAME.Name = "RETIRE_IRP_TYPE_NAME";
             this.RETIRE_IRP_TYPE_NAME.Nullable = true;
@@ -5814,17 +5851,17 @@
             0,
             0});
             this.RETIRE_IRP_TYPE_NAME.PromptText = "Retire IRP Type";
-            isLanguageElement7.Default = "Retire IRP Type";
-            isLanguageElement7.SiteName = null;
-            isLanguageElement7.TL1_KR = "퇴직연금 구분";
-            isLanguageElement7.TL2_CN = "";
-            isLanguageElement7.TL3_VN = "";
-            isLanguageElement7.TL4_JP = "";
-            isLanguageElement7.TL5_XAA = "";
+            isLanguageElement15.Default = "Retire IRP Type";
+            isLanguageElement15.SiteName = null;
+            isLanguageElement15.TL1_KR = "퇴직연금 구분";
+            isLanguageElement15.TL2_CN = "";
+            isLanguageElement15.TL3_VN = "";
+            isLanguageElement15.TL4_JP = "";
+            isLanguageElement15.TL5_XAA = "";
             this.RETIRE_IRP_TYPE_NAME.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement7});
+            isLanguageElement15});
             this.RETIRE_IRP_TYPE_NAME.PromptWidth = 120;
-            this.RETIRE_IRP_TYPE_NAME.Size = new System.Drawing.Size(270, 21);
+            this.RETIRE_IRP_TYPE_NAME.Size = new System.Drawing.Size(295, 21);
             this.RETIRE_IRP_TYPE_NAME.TabIndex = 29;
             this.RETIRE_IRP_TYPE_NAME.TextValue = "";
             // 
@@ -6100,7 +6137,7 @@
             this.RETIREMENT_PENSION_ACCOUNT.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.RETIREMENT_PENSION_ACCOUNT.DoubleValue = 0D;
             this.RETIREMENT_PENSION_ACCOUNT.EditValue = "";
-            this.RETIREMENT_PENSION_ACCOUNT.Location = new System.Drawing.Point(278, 287);
+            this.RETIREMENT_PENSION_ACCOUNT.Location = new System.Drawing.Point(307, 271);
             this.RETIREMENT_PENSION_ACCOUNT.LookupAdapter = null;
             this.RETIREMENT_PENSION_ACCOUNT.Name = "RETIREMENT_PENSION_ACCOUNT";
             this.RETIREMENT_PENSION_ACCOUNT.Nullable = true;
@@ -6115,17 +6152,17 @@
             0,
             0});
             this.RETIREMENT_PENSION_ACCOUNT.PromptText = "퇴직연금 계좌번호";
-            isLanguageElement9.Default = "Pension Account";
-            isLanguageElement9.SiteName = null;
-            isLanguageElement9.TL1_KR = "퇴직연금 계좌번호";
-            isLanguageElement9.TL2_CN = "";
-            isLanguageElement9.TL3_VN = "";
-            isLanguageElement9.TL4_JP = "";
-            isLanguageElement9.TL5_XAA = "";
+            isLanguageElement17.Default = "Pension Account";
+            isLanguageElement17.SiteName = null;
+            isLanguageElement17.TL1_KR = "퇴직연금 계좌번호";
+            isLanguageElement17.TL2_CN = "";
+            isLanguageElement17.TL3_VN = "";
+            isLanguageElement17.TL4_JP = "";
+            isLanguageElement17.TL5_XAA = "";
             this.RETIREMENT_PENSION_ACCOUNT.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement9});
+            isLanguageElement17});
             this.RETIREMENT_PENSION_ACCOUNT.PromptWidth = 120;
-            this.RETIREMENT_PENSION_ACCOUNT.Size = new System.Drawing.Size(392, 21);
+            this.RETIREMENT_PENSION_ACCOUNT.Size = new System.Drawing.Size(332, 21);
             this.RETIREMENT_PENSION_ACCOUNT.TabIndex = 32;
             this.RETIREMENT_PENSION_ACCOUNT.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
             this.RETIREMENT_PENSION_ACCOUNT.TextValue = "";
@@ -6145,7 +6182,7 @@
             this.RETIREMENT_PENSION_BANK.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.RETIREMENT_PENSION_BANK.DoubleValue = 0D;
             this.RETIREMENT_PENSION_BANK.EditValue = "";
-            this.RETIREMENT_PENSION_BANK.Location = new System.Drawing.Point(8, 287);
+            this.RETIREMENT_PENSION_BANK.Location = new System.Drawing.Point(8, 271);
             this.RETIREMENT_PENSION_BANK.LookupAdapter = null;
             this.RETIREMENT_PENSION_BANK.Name = "RETIREMENT_PENSION_BANK";
             this.RETIREMENT_PENSION_BANK.Nullable = true;
@@ -6160,17 +6197,17 @@
             0,
             0});
             this.RETIREMENT_PENSION_BANK.PromptText = "Pension Bank Desc";
-            isLanguageElement10.Default = "Pension Bank Desc";
-            isLanguageElement10.SiteName = null;
-            isLanguageElement10.TL1_KR = "퇴직연금 은행명";
-            isLanguageElement10.TL2_CN = "";
-            isLanguageElement10.TL3_VN = "";
-            isLanguageElement10.TL4_JP = "";
-            isLanguageElement10.TL5_XAA = "";
+            isLanguageElement18.Default = "Pension Bank Desc";
+            isLanguageElement18.SiteName = null;
+            isLanguageElement18.TL1_KR = "퇴직연금 은행명";
+            isLanguageElement18.TL2_CN = "";
+            isLanguageElement18.TL3_VN = "";
+            isLanguageElement18.TL4_JP = "";
+            isLanguageElement18.TL5_XAA = "";
             this.RETIREMENT_PENSION_BANK.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement10});
+            isLanguageElement18});
             this.RETIREMENT_PENSION_BANK.PromptWidth = 120;
-            this.RETIREMENT_PENSION_BANK.Size = new System.Drawing.Size(270, 21);
+            this.RETIREMENT_PENSION_BANK.Size = new System.Drawing.Size(295, 21);
             this.RETIREMENT_PENSION_BANK.TabIndex = 31;
             this.RETIREMENT_PENSION_BANK.TextValue = "";
             // 
@@ -6189,7 +6226,7 @@
             this.TEL_NUMBER.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.TEL_NUMBER.DoubleValue = 0D;
             this.TEL_NUMBER.EditValue = "";
-            this.TEL_NUMBER.Location = new System.Drawing.Point(8, 143);
+            this.TEL_NUMBER.Location = new System.Drawing.Point(8, 137);
             this.TEL_NUMBER.LookupAdapter = null;
             this.TEL_NUMBER.Name = "TEL_NUMBER";
             this.TEL_NUMBER.Nullable = true;
@@ -6204,17 +6241,17 @@
             0,
             0});
             this.TEL_NUMBER.PromptText = "Tel Num";
-            isLanguageElement21.Default = "Tel Num";
-            isLanguageElement21.SiteName = null;
-            isLanguageElement21.TL1_KR = "전화번호";
-            isLanguageElement21.TL2_CN = "";
-            isLanguageElement21.TL3_VN = "";
-            isLanguageElement21.TL4_JP = "";
-            isLanguageElement21.TL5_XAA = "";
+            isLanguageElement29.Default = "Tel Num";
+            isLanguageElement29.SiteName = null;
+            isLanguageElement29.TL1_KR = "전화번호";
+            isLanguageElement29.TL2_CN = "";
+            isLanguageElement29.TL3_VN = "";
+            isLanguageElement29.TL4_JP = "";
+            isLanguageElement29.TL5_XAA = "";
             this.TEL_NUMBER.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement21});
+            isLanguageElement29});
             this.TEL_NUMBER.PromptWidth = 120;
-            this.TEL_NUMBER.Size = new System.Drawing.Size(325, 21);
+            this.TEL_NUMBER.Size = new System.Drawing.Size(350, 21);
             this.TEL_NUMBER.TabIndex = 9;
             this.TEL_NUMBER.TextValue = "";
             // 
@@ -6235,7 +6272,7 @@
             this.VENDOR_ID.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
             this.VENDOR_ID.EditValue = null;
             this.VENDOR_ID.Insertable = false;
-            this.VENDOR_ID.Location = new System.Drawing.Point(583, 311);
+            this.VENDOR_ID.Location = new System.Drawing.Point(538, 293);
             this.VENDOR_ID.LookupAdapter = null;
             this.VENDOR_ID.Name = "VENDOR_ID";
             this.VENDOR_ID.Nullable = true;
@@ -6250,15 +6287,15 @@
             0,
             0});
             this.VENDOR_ID.PromptText = "Category";
-            isLanguageElement16.Default = "Category";
-            isLanguageElement16.SiteName = null;
-            isLanguageElement16.TL1_KR = "법인구분";
-            isLanguageElement16.TL2_CN = "";
-            isLanguageElement16.TL3_VN = "";
-            isLanguageElement16.TL4_JP = "";
-            isLanguageElement16.TL5_XAA = "";
+            isLanguageElement24.Default = "Category";
+            isLanguageElement24.SiteName = null;
+            isLanguageElement24.TL1_KR = "법인구분";
+            isLanguageElement24.TL2_CN = "";
+            isLanguageElement24.TL3_VN = "";
+            isLanguageElement24.TL4_JP = "";
+            isLanguageElement24.TL5_XAA = "";
             this.VENDOR_ID.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement16});
+            isLanguageElement24});
             this.VENDOR_ID.PromptVisible = false;
             this.VENDOR_ID.PromptWidth = 70;
             this.VENDOR_ID.ReadOnly = true;
@@ -6284,7 +6321,7 @@
             this.VENDOR_NAME.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.VENDOR_NAME.DoubleValue = 0D;
             this.VENDOR_NAME.EditValue = "";
-            this.VENDOR_NAME.Location = new System.Drawing.Point(278, 311);
+            this.VENDOR_NAME.Location = new System.Drawing.Point(307, 293);
             this.VENDOR_NAME.LookupAdapter = this.ILA_VENDOR;
             this.VENDOR_NAME.Name = "VENDOR_NAME";
             this.VENDOR_NAME.Nullable = true;
@@ -6299,17 +6336,17 @@
             0,
             0});
             this.VENDOR_NAME.PromptText = "(FI)Vendor";
-            isLanguageElement26.Default = "(FI)Vendor";
-            isLanguageElement26.SiteName = null;
-            isLanguageElement26.TL1_KR = "(회계)거래처";
-            isLanguageElement26.TL2_CN = "";
-            isLanguageElement26.TL3_VN = "";
-            isLanguageElement26.TL4_JP = "";
-            isLanguageElement26.TL5_XAA = "";
+            isLanguageElement34.Default = "(FI)Vendor";
+            isLanguageElement34.SiteName = null;
+            isLanguageElement34.TL1_KR = "(회계)거래처";
+            isLanguageElement34.TL2_CN = "";
+            isLanguageElement34.TL3_VN = "";
+            isLanguageElement34.TL4_JP = "";
+            isLanguageElement34.TL5_XAA = "";
             this.VENDOR_NAME.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement26});
+            isLanguageElement34});
             this.VENDOR_NAME.PromptWidth = 120;
-            this.VENDOR_NAME.Size = new System.Drawing.Size(392, 21);
+            this.VENDOR_NAME.Size = new System.Drawing.Size(332, 21);
             this.VENDOR_NAME.TabIndex = 34;
             this.VENDOR_NAME.TextValue = "";
             // 
@@ -6489,7 +6526,7 @@
             this.ZIP_CODE.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
             this.ZIP_CODE.DoubleValue = 0D;
             this.ZIP_CODE.EditValue = "";
-            this.ZIP_CODE.Location = new System.Drawing.Point(8, 190);
+            this.ZIP_CODE.Location = new System.Drawing.Point(8, 181);
             this.ZIP_CODE.LookupAdapter = null;
             this.ZIP_CODE.Name = "ZIP_CODE";
             this.ZIP_CODE.Nullable = true;
@@ -6504,15 +6541,15 @@
             0,
             0});
             this.ZIP_CODE.PromptText = "Zip Code";
-            isLanguageElement8.Default = "Zip Code";
-            isLanguageElement8.SiteName = null;
-            isLanguageElement8.TL1_KR = "우편번호";
-            isLanguageElement8.TL2_CN = "";
-            isLanguageElement8.TL3_VN = "";
-            isLanguageElement8.TL4_JP = "";
-            isLanguageElement8.TL5_XAA = "";
+            isLanguageElement16.Default = "Zip Code";
+            isLanguageElement16.SiteName = null;
+            isLanguageElement16.TL1_KR = "우편번호";
+            isLanguageElement16.TL2_CN = "";
+            isLanguageElement16.TL3_VN = "";
+            isLanguageElement16.TL4_JP = "";
+            isLanguageElement16.TL5_XAA = "";
             this.ZIP_CODE.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement8});
+            isLanguageElement16});
             this.ZIP_CODE.PromptWidth = 120;
             this.ZIP_CODE.Size = new System.Drawing.Size(207, 21);
             this.ZIP_CODE.TabIndex = 17;
@@ -6553,15 +6590,15 @@
             0});
             this.W_CORP_ID_0.PromptAlignHoriz = InfoSummit.Win.ControlAdv.ISUtil.Enum.AlignHoriz.Center;
             this.W_CORP_ID_0.PromptText = "Corp Id";
-            isLanguageElement38.Default = "Corp Id";
-            isLanguageElement38.SiteName = null;
-            isLanguageElement38.TL1_KR = "업체ID";
-            isLanguageElement38.TL2_CN = "";
-            isLanguageElement38.TL3_VN = "";
-            isLanguageElement38.TL4_JP = "";
-            isLanguageElement38.TL5_XAA = "";
+            isLanguageElement46.Default = "Corp Id";
+            isLanguageElement46.SiteName = null;
+            isLanguageElement46.TL1_KR = "업체ID";
+            isLanguageElement46.TL2_CN = "";
+            isLanguageElement46.TL3_VN = "";
+            isLanguageElement46.TL4_JP = "";
+            isLanguageElement46.TL5_XAA = "";
             this.W_CORP_ID_0.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement38});
+            isLanguageElement46});
             this.W_CORP_ID_0.PromptVisible = false;
             this.W_CORP_ID_0.PromptWidth = 70;
             this.W_CORP_ID_0.ReadOnly = true;
@@ -6584,18 +6621,275 @@
             this.W_ENABLED_FLAG.Location = new System.Drawing.Point(784, 30);
             this.W_ENABLED_FLAG.Name = "W_ENABLED_FLAG";
             this.W_ENABLED_FLAG.PromptText = "Enabled Flag";
-            isLanguageElement37.Default = "Enabled Flag";
-            isLanguageElement37.SiteName = null;
-            isLanguageElement37.TL1_KR = "사용여부";
-            isLanguageElement37.TL2_CN = "";
-            isLanguageElement37.TL3_VN = "";
-            isLanguageElement37.TL4_JP = "";
-            isLanguageElement37.TL5_XAA = "";
+            isLanguageElement45.Default = "Enabled Flag";
+            isLanguageElement45.SiteName = null;
+            isLanguageElement45.TL1_KR = "사용여부";
+            isLanguageElement45.TL2_CN = "";
+            isLanguageElement45.TL3_VN = "";
+            isLanguageElement45.TL4_JP = "";
+            isLanguageElement45.TL5_XAA = "";
             this.W_ENABLED_FLAG.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement37});
-            this.W_ENABLED_FLAG.Size = new System.Drawing.Size(132, 21);
+            isLanguageElement45});
+            this.W_ENABLED_FLAG.Size = new System.Drawing.Size(148, 21);
             this.W_ENABLED_FLAG.TabIndex = 189;
             this.W_ENABLED_FLAG.UncheckedString = "N";
+            // 
+            // ILA_TAX_OFFICE
+            // 
+            this.ILA_TAX_OFFICE.DisplayCaption = "Corp Type Search";
+            isOraColElement29.DataColumn = "CODE_NAME";
+            isOraColElement29.DataOrdinal = 0;
+            isOraColElement29.DataType = "System.String";
+            isOraColElement29.HeaderPrompt = "Tax offiece Name";
+            isOraColElement29.LastValue = null;
+            isOraColElement29.MemberControl = this.igrHRM_OPERATING_UNIT_G;
+            isOraColElement29.MemberValue = "TAX_OFFICE_NAME";
+            isOraColElement29.Nullable = null;
+            isOraColElement29.Ordinal = 0;
+            isOraColElement29.RelationKeyColumn = null;
+            isOraColElement29.ReturnParameter = null;
+            isOraColElement29.TL1_KR = "세무서명";
+            isOraColElement29.TL2_CN = null;
+            isOraColElement29.TL3_VN = null;
+            isOraColElement29.TL4_JP = null;
+            isOraColElement29.TL5_XAA = null;
+            isOraColElement29.Visible = 1;
+            isOraColElement29.Width = 200;
+            isOraColElement30.DataColumn = "CODE";
+            isOraColElement30.DataOrdinal = 1;
+            isOraColElement30.DataType = "System.String";
+            isOraColElement30.HeaderPrompt = "Code";
+            isOraColElement30.LastValue = null;
+            isOraColElement30.MemberControl = this.igrHRM_OPERATING_UNIT_G;
+            isOraColElement30.MemberValue = "TAX_OFFICE_CODE";
+            isOraColElement30.Nullable = null;
+            isOraColElement30.Ordinal = 1;
+            isOraColElement30.RelationKeyColumn = null;
+            isOraColElement30.ReturnParameter = null;
+            isOraColElement30.TL1_KR = "코드";
+            isOraColElement30.TL2_CN = null;
+            isOraColElement30.TL3_VN = null;
+            isOraColElement30.TL4_JP = null;
+            isOraColElement30.TL5_XAA = null;
+            isOraColElement30.Visible = 1;
+            isOraColElement30.Width = 100;
+            isOraColElement31.DataColumn = "COMMON_ID";
+            isOraColElement31.DataOrdinal = 2;
+            isOraColElement31.DataType = "System.Decimal";
+            isOraColElement31.HeaderPrompt = "ID";
+            isOraColElement31.LastValue = null;
+            isOraColElement31.MemberControl = null;
+            isOraColElement31.MemberValue = null;
+            isOraColElement31.Nullable = null;
+            isOraColElement31.Ordinal = 2;
+            isOraColElement31.RelationKeyColumn = null;
+            isOraColElement31.ReturnParameter = null;
+            isOraColElement31.TL1_KR = "공통코드 ID";
+            isOraColElement31.TL2_CN = null;
+            isOraColElement31.TL3_VN = null;
+            isOraColElement31.TL4_JP = null;
+            isOraColElement31.TL5_XAA = null;
+            isOraColElement31.Visible = 0;
+            isOraColElement31.Width = 28;
+            isOraColElement32.DataColumn = "VALUE1";
+            isOraColElement32.DataOrdinal = 3;
+            isOraColElement32.DataType = "System.String";
+            isOraColElement32.HeaderPrompt = "VALUE1";
+            isOraColElement32.LastValue = null;
+            isOraColElement32.MemberControl = null;
+            isOraColElement32.MemberValue = null;
+            isOraColElement32.Nullable = null;
+            isOraColElement32.Ordinal = 3;
+            isOraColElement32.RelationKeyColumn = null;
+            isOraColElement32.ReturnParameter = null;
+            isOraColElement32.TL1_KR = null;
+            isOraColElement32.TL2_CN = null;
+            isOraColElement32.TL3_VN = null;
+            isOraColElement32.TL4_JP = null;
+            isOraColElement32.TL5_XAA = null;
+            isOraColElement32.Visible = 0;
+            isOraColElement32.Width = 65;
+            isOraColElement33.DataColumn = "VALUE2";
+            isOraColElement33.DataOrdinal = 4;
+            isOraColElement33.DataType = "System.String";
+            isOraColElement33.HeaderPrompt = "VALUE2";
+            isOraColElement33.LastValue = null;
+            isOraColElement33.MemberControl = null;
+            isOraColElement33.MemberValue = null;
+            isOraColElement33.Nullable = null;
+            isOraColElement33.Ordinal = 4;
+            isOraColElement33.RelationKeyColumn = null;
+            isOraColElement33.ReturnParameter = null;
+            isOraColElement33.TL1_KR = null;
+            isOraColElement33.TL2_CN = null;
+            isOraColElement33.TL3_VN = null;
+            isOraColElement33.TL4_JP = null;
+            isOraColElement33.TL5_XAA = null;
+            isOraColElement33.Visible = 0;
+            isOraColElement33.Width = 65;
+            isOraColElement34.DataColumn = "VALUE3";
+            isOraColElement34.DataOrdinal = 5;
+            isOraColElement34.DataType = "System.String";
+            isOraColElement34.HeaderPrompt = "VALUE3";
+            isOraColElement34.LastValue = null;
+            isOraColElement34.MemberControl = null;
+            isOraColElement34.MemberValue = null;
+            isOraColElement34.Nullable = null;
+            isOraColElement34.Ordinal = 5;
+            isOraColElement34.RelationKeyColumn = null;
+            isOraColElement34.ReturnParameter = null;
+            isOraColElement34.TL1_KR = null;
+            isOraColElement34.TL2_CN = null;
+            isOraColElement34.TL3_VN = null;
+            isOraColElement34.TL4_JP = null;
+            isOraColElement34.TL5_XAA = null;
+            isOraColElement34.Visible = 0;
+            isOraColElement34.Width = 65;
+            isOraColElement35.DataColumn = "VALUE4";
+            isOraColElement35.DataOrdinal = 6;
+            isOraColElement35.DataType = "System.String";
+            isOraColElement35.HeaderPrompt = "VALUE4";
+            isOraColElement35.LastValue = null;
+            isOraColElement35.MemberControl = null;
+            isOraColElement35.MemberValue = null;
+            isOraColElement35.Nullable = null;
+            isOraColElement35.Ordinal = 6;
+            isOraColElement35.RelationKeyColumn = null;
+            isOraColElement35.ReturnParameter = null;
+            isOraColElement35.TL1_KR = null;
+            isOraColElement35.TL2_CN = null;
+            isOraColElement35.TL3_VN = null;
+            isOraColElement35.TL4_JP = null;
+            isOraColElement35.TL5_XAA = null;
+            isOraColElement35.Visible = 0;
+            isOraColElement35.Width = 65;
+            isOraColElement36.DataColumn = "VALUE5";
+            isOraColElement36.DataOrdinal = 7;
+            isOraColElement36.DataType = "System.String";
+            isOraColElement36.HeaderPrompt = "VALUE5";
+            isOraColElement36.LastValue = null;
+            isOraColElement36.MemberControl = null;
+            isOraColElement36.MemberValue = null;
+            isOraColElement36.Nullable = null;
+            isOraColElement36.Ordinal = 7;
+            isOraColElement36.RelationKeyColumn = null;
+            isOraColElement36.ReturnParameter = null;
+            isOraColElement36.TL1_KR = null;
+            isOraColElement36.TL2_CN = null;
+            isOraColElement36.TL3_VN = null;
+            isOraColElement36.TL4_JP = null;
+            isOraColElement36.TL5_XAA = null;
+            isOraColElement36.Visible = 0;
+            isOraColElement36.Width = 65;
+            isOraColElement37.DataColumn = "VALUE6";
+            isOraColElement37.DataOrdinal = 8;
+            isOraColElement37.DataType = "System.String";
+            isOraColElement37.HeaderPrompt = "VALUE6";
+            isOraColElement37.LastValue = null;
+            isOraColElement37.MemberControl = null;
+            isOraColElement37.MemberValue = null;
+            isOraColElement37.Nullable = null;
+            isOraColElement37.Ordinal = 8;
+            isOraColElement37.RelationKeyColumn = null;
+            isOraColElement37.ReturnParameter = null;
+            isOraColElement37.TL1_KR = null;
+            isOraColElement37.TL2_CN = null;
+            isOraColElement37.TL3_VN = null;
+            isOraColElement37.TL4_JP = null;
+            isOraColElement37.TL5_XAA = null;
+            isOraColElement37.Visible = 0;
+            isOraColElement37.Width = 65;
+            isOraColElement38.DataColumn = "VALUE7";
+            isOraColElement38.DataOrdinal = 9;
+            isOraColElement38.DataType = "System.String";
+            isOraColElement38.HeaderPrompt = "VALUE7";
+            isOraColElement38.LastValue = null;
+            isOraColElement38.MemberControl = null;
+            isOraColElement38.MemberValue = null;
+            isOraColElement38.Nullable = null;
+            isOraColElement38.Ordinal = 9;
+            isOraColElement38.RelationKeyColumn = null;
+            isOraColElement38.ReturnParameter = null;
+            isOraColElement38.TL1_KR = null;
+            isOraColElement38.TL2_CN = null;
+            isOraColElement38.TL3_VN = null;
+            isOraColElement38.TL4_JP = null;
+            isOraColElement38.TL5_XAA = null;
+            isOraColElement38.Visible = 0;
+            isOraColElement38.Width = 65;
+            isOraColElement39.DataColumn = "VALUE8";
+            isOraColElement39.DataOrdinal = 10;
+            isOraColElement39.DataType = "System.String";
+            isOraColElement39.HeaderPrompt = "VALUE8";
+            isOraColElement39.LastValue = null;
+            isOraColElement39.MemberControl = null;
+            isOraColElement39.MemberValue = null;
+            isOraColElement39.Nullable = null;
+            isOraColElement39.Ordinal = 10;
+            isOraColElement39.RelationKeyColumn = null;
+            isOraColElement39.ReturnParameter = null;
+            isOraColElement39.TL1_KR = null;
+            isOraColElement39.TL2_CN = null;
+            isOraColElement39.TL3_VN = null;
+            isOraColElement39.TL4_JP = null;
+            isOraColElement39.TL5_XAA = null;
+            isOraColElement39.Visible = 0;
+            isOraColElement39.Width = 65;
+            isOraColElement40.DataColumn = "VALUE9";
+            isOraColElement40.DataOrdinal = 11;
+            isOraColElement40.DataType = "System.String";
+            isOraColElement40.HeaderPrompt = "VALUE9";
+            isOraColElement40.LastValue = null;
+            isOraColElement40.MemberControl = null;
+            isOraColElement40.MemberValue = null;
+            isOraColElement40.Nullable = null;
+            isOraColElement40.Ordinal = 11;
+            isOraColElement40.RelationKeyColumn = null;
+            isOraColElement40.ReturnParameter = null;
+            isOraColElement40.TL1_KR = null;
+            isOraColElement40.TL2_CN = null;
+            isOraColElement40.TL3_VN = null;
+            isOraColElement40.TL4_JP = null;
+            isOraColElement40.TL5_XAA = null;
+            isOraColElement40.Visible = 0;
+            isOraColElement40.Width = 65;
+            isOraColElement41.DataColumn = "VALUE10";
+            isOraColElement41.DataOrdinal = 12;
+            isOraColElement41.DataType = "System.String";
+            isOraColElement41.HeaderPrompt = "VALUE10";
+            isOraColElement41.LastValue = null;
+            isOraColElement41.MemberControl = null;
+            isOraColElement41.MemberValue = null;
+            isOraColElement41.Nullable = null;
+            isOraColElement41.Ordinal = 12;
+            isOraColElement41.RelationKeyColumn = null;
+            isOraColElement41.ReturnParameter = null;
+            isOraColElement41.TL1_KR = null;
+            isOraColElement41.TL2_CN = null;
+            isOraColElement41.TL3_VN = null;
+            isOraColElement41.TL4_JP = null;
+            isOraColElement41.TL5_XAA = null;
+            isOraColElement41.Visible = 0;
+            isOraColElement41.Width = 65;
+            this.ILA_TAX_OFFICE.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
+            isOraColElement29,
+            isOraColElement30,
+            isOraColElement31,
+            isOraColElement32,
+            isOraColElement33,
+            isOraColElement34,
+            isOraColElement35,
+            isOraColElement36,
+            isOraColElement37,
+            isOraColElement38,
+            isOraColElement39,
+            isOraColElement40,
+            isOraColElement41});
+            this.ILA_TAX_OFFICE.LookupData = this.ildCOMMON;
+            this.ILA_TAX_OFFICE.LookupSize = new System.Drawing.Size(372, 335);
+            this.ILA_TAX_OFFICE.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
+            this.ILA_TAX_OFFICE.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
+            this.ILA_TAX_OFFICE.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_TAX_OFFICE_PrePopupShow);
             // 
             // igrHRM_OPERATING_UNIT_G
             // 
@@ -7046,7 +7340,7 @@
             new Syncfusion.Windows.Forms.Grid.GridRowHeight(0, 22),
             new Syncfusion.Windows.Forms.Grid.GridRowHeight(1, 22)});
             this.igrHRM_OPERATING_UNIT_G.BaseGrid.SerializeCellsBehavior = Syncfusion.Windows.Forms.Grid.GridSerializeCellsBehavior.SerializeAsRangeStylesIntoCode;
-            this.igrHRM_OPERATING_UNIT_G.BaseGrid.Size = new System.Drawing.Size(945, 144);
+            this.igrHRM_OPERATING_UNIT_G.BaseGrid.Size = new System.Drawing.Size(961, 139);
             this.igrHRM_OPERATING_UNIT_G.BaseGrid.SmartSizeBox = false;
             this.igrHRM_OPERATING_UNIT_G.BaseGrid.TabIndex = 0;
             this.igrHRM_OPERATING_UNIT_G.BaseGrid.ThemesEnabled = true;
@@ -8136,7 +8430,7 @@
             isGridAdvExColElement60});
             this.igrHRM_OPERATING_UNIT_G.Location = new System.Drawing.Point(0, 23);
             this.igrHRM_OPERATING_UNIT_G.Name = "igrHRM_OPERATING_UNIT_G";
-            this.igrHRM_OPERATING_UNIT_G.Size = new System.Drawing.Size(948, 147);
+            this.igrHRM_OPERATING_UNIT_G.Size = new System.Drawing.Size(964, 142);
             this.igrHRM_OPERATING_UNIT_G.TabIndex = 0;
             this.igrHRM_OPERATING_UNIT_G.TabStop = false;
             this.igrHRM_OPERATING_UNIT_G.Text = "isGridAdvEx1";
@@ -9418,263 +9712,6 @@
             this.IDA_OPERATING_UNIT.PreRowUpdate += new InfoSummit.Win.ControlAdv.ISDataAdapter.PreRowUpdateHandler(this.IDA_OPERATING_UNIT_PreRowUpdate);
             this.IDA_OPERATING_UNIT.PreDelete += new InfoSummit.Win.ControlAdv.ISDataAdapter.PreDeleteHandler(this.IDA_OPERATING_UNIT_PreDelete);
             // 
-            // ILA_TAX_OFFICE
-            // 
-            this.ILA_TAX_OFFICE.DisplayCaption = "Corp Type Search";
-            isOraColElement29.DataColumn = "CODE_NAME";
-            isOraColElement29.DataOrdinal = 0;
-            isOraColElement29.DataType = "System.String";
-            isOraColElement29.HeaderPrompt = "Tax offiece Name";
-            isOraColElement29.LastValue = null;
-            isOraColElement29.MemberControl = this.igrHRM_OPERATING_UNIT_G;
-            isOraColElement29.MemberValue = "TAX_OFFICE_NAME";
-            isOraColElement29.Nullable = null;
-            isOraColElement29.Ordinal = 0;
-            isOraColElement29.RelationKeyColumn = null;
-            isOraColElement29.ReturnParameter = null;
-            isOraColElement29.TL1_KR = "세무서명";
-            isOraColElement29.TL2_CN = null;
-            isOraColElement29.TL3_VN = null;
-            isOraColElement29.TL4_JP = null;
-            isOraColElement29.TL5_XAA = null;
-            isOraColElement29.Visible = 1;
-            isOraColElement29.Width = 200;
-            isOraColElement30.DataColumn = "CODE";
-            isOraColElement30.DataOrdinal = 1;
-            isOraColElement30.DataType = "System.String";
-            isOraColElement30.HeaderPrompt = "Code";
-            isOraColElement30.LastValue = null;
-            isOraColElement30.MemberControl = this.igrHRM_OPERATING_UNIT_G;
-            isOraColElement30.MemberValue = "TAX_OFFICE_CODE";
-            isOraColElement30.Nullable = null;
-            isOraColElement30.Ordinal = 1;
-            isOraColElement30.RelationKeyColumn = null;
-            isOraColElement30.ReturnParameter = null;
-            isOraColElement30.TL1_KR = "코드";
-            isOraColElement30.TL2_CN = null;
-            isOraColElement30.TL3_VN = null;
-            isOraColElement30.TL4_JP = null;
-            isOraColElement30.TL5_XAA = null;
-            isOraColElement30.Visible = 1;
-            isOraColElement30.Width = 100;
-            isOraColElement31.DataColumn = "COMMON_ID";
-            isOraColElement31.DataOrdinal = 2;
-            isOraColElement31.DataType = "System.Decimal";
-            isOraColElement31.HeaderPrompt = "ID";
-            isOraColElement31.LastValue = null;
-            isOraColElement31.MemberControl = null;
-            isOraColElement31.MemberValue = null;
-            isOraColElement31.Nullable = null;
-            isOraColElement31.Ordinal = 2;
-            isOraColElement31.RelationKeyColumn = null;
-            isOraColElement31.ReturnParameter = null;
-            isOraColElement31.TL1_KR = "공통코드 ID";
-            isOraColElement31.TL2_CN = null;
-            isOraColElement31.TL3_VN = null;
-            isOraColElement31.TL4_JP = null;
-            isOraColElement31.TL5_XAA = null;
-            isOraColElement31.Visible = 0;
-            isOraColElement31.Width = 28;
-            isOraColElement32.DataColumn = "VALUE1";
-            isOraColElement32.DataOrdinal = 3;
-            isOraColElement32.DataType = "System.String";
-            isOraColElement32.HeaderPrompt = "VALUE1";
-            isOraColElement32.LastValue = null;
-            isOraColElement32.MemberControl = null;
-            isOraColElement32.MemberValue = null;
-            isOraColElement32.Nullable = null;
-            isOraColElement32.Ordinal = 3;
-            isOraColElement32.RelationKeyColumn = null;
-            isOraColElement32.ReturnParameter = null;
-            isOraColElement32.TL1_KR = null;
-            isOraColElement32.TL2_CN = null;
-            isOraColElement32.TL3_VN = null;
-            isOraColElement32.TL4_JP = null;
-            isOraColElement32.TL5_XAA = null;
-            isOraColElement32.Visible = 0;
-            isOraColElement32.Width = 65;
-            isOraColElement33.DataColumn = "VALUE2";
-            isOraColElement33.DataOrdinal = 4;
-            isOraColElement33.DataType = "System.String";
-            isOraColElement33.HeaderPrompt = "VALUE2";
-            isOraColElement33.LastValue = null;
-            isOraColElement33.MemberControl = null;
-            isOraColElement33.MemberValue = null;
-            isOraColElement33.Nullable = null;
-            isOraColElement33.Ordinal = 4;
-            isOraColElement33.RelationKeyColumn = null;
-            isOraColElement33.ReturnParameter = null;
-            isOraColElement33.TL1_KR = null;
-            isOraColElement33.TL2_CN = null;
-            isOraColElement33.TL3_VN = null;
-            isOraColElement33.TL4_JP = null;
-            isOraColElement33.TL5_XAA = null;
-            isOraColElement33.Visible = 0;
-            isOraColElement33.Width = 65;
-            isOraColElement34.DataColumn = "VALUE3";
-            isOraColElement34.DataOrdinal = 5;
-            isOraColElement34.DataType = "System.String";
-            isOraColElement34.HeaderPrompt = "VALUE3";
-            isOraColElement34.LastValue = null;
-            isOraColElement34.MemberControl = null;
-            isOraColElement34.MemberValue = null;
-            isOraColElement34.Nullable = null;
-            isOraColElement34.Ordinal = 5;
-            isOraColElement34.RelationKeyColumn = null;
-            isOraColElement34.ReturnParameter = null;
-            isOraColElement34.TL1_KR = null;
-            isOraColElement34.TL2_CN = null;
-            isOraColElement34.TL3_VN = null;
-            isOraColElement34.TL4_JP = null;
-            isOraColElement34.TL5_XAA = null;
-            isOraColElement34.Visible = 0;
-            isOraColElement34.Width = 65;
-            isOraColElement35.DataColumn = "VALUE4";
-            isOraColElement35.DataOrdinal = 6;
-            isOraColElement35.DataType = "System.String";
-            isOraColElement35.HeaderPrompt = "VALUE4";
-            isOraColElement35.LastValue = null;
-            isOraColElement35.MemberControl = null;
-            isOraColElement35.MemberValue = null;
-            isOraColElement35.Nullable = null;
-            isOraColElement35.Ordinal = 6;
-            isOraColElement35.RelationKeyColumn = null;
-            isOraColElement35.ReturnParameter = null;
-            isOraColElement35.TL1_KR = null;
-            isOraColElement35.TL2_CN = null;
-            isOraColElement35.TL3_VN = null;
-            isOraColElement35.TL4_JP = null;
-            isOraColElement35.TL5_XAA = null;
-            isOraColElement35.Visible = 0;
-            isOraColElement35.Width = 65;
-            isOraColElement36.DataColumn = "VALUE5";
-            isOraColElement36.DataOrdinal = 7;
-            isOraColElement36.DataType = "System.String";
-            isOraColElement36.HeaderPrompt = "VALUE5";
-            isOraColElement36.LastValue = null;
-            isOraColElement36.MemberControl = null;
-            isOraColElement36.MemberValue = null;
-            isOraColElement36.Nullable = null;
-            isOraColElement36.Ordinal = 7;
-            isOraColElement36.RelationKeyColumn = null;
-            isOraColElement36.ReturnParameter = null;
-            isOraColElement36.TL1_KR = null;
-            isOraColElement36.TL2_CN = null;
-            isOraColElement36.TL3_VN = null;
-            isOraColElement36.TL4_JP = null;
-            isOraColElement36.TL5_XAA = null;
-            isOraColElement36.Visible = 0;
-            isOraColElement36.Width = 65;
-            isOraColElement37.DataColumn = "VALUE6";
-            isOraColElement37.DataOrdinal = 8;
-            isOraColElement37.DataType = "System.String";
-            isOraColElement37.HeaderPrompt = "VALUE6";
-            isOraColElement37.LastValue = null;
-            isOraColElement37.MemberControl = null;
-            isOraColElement37.MemberValue = null;
-            isOraColElement37.Nullable = null;
-            isOraColElement37.Ordinal = 8;
-            isOraColElement37.RelationKeyColumn = null;
-            isOraColElement37.ReturnParameter = null;
-            isOraColElement37.TL1_KR = null;
-            isOraColElement37.TL2_CN = null;
-            isOraColElement37.TL3_VN = null;
-            isOraColElement37.TL4_JP = null;
-            isOraColElement37.TL5_XAA = null;
-            isOraColElement37.Visible = 0;
-            isOraColElement37.Width = 65;
-            isOraColElement38.DataColumn = "VALUE7";
-            isOraColElement38.DataOrdinal = 9;
-            isOraColElement38.DataType = "System.String";
-            isOraColElement38.HeaderPrompt = "VALUE7";
-            isOraColElement38.LastValue = null;
-            isOraColElement38.MemberControl = null;
-            isOraColElement38.MemberValue = null;
-            isOraColElement38.Nullable = null;
-            isOraColElement38.Ordinal = 9;
-            isOraColElement38.RelationKeyColumn = null;
-            isOraColElement38.ReturnParameter = null;
-            isOraColElement38.TL1_KR = null;
-            isOraColElement38.TL2_CN = null;
-            isOraColElement38.TL3_VN = null;
-            isOraColElement38.TL4_JP = null;
-            isOraColElement38.TL5_XAA = null;
-            isOraColElement38.Visible = 0;
-            isOraColElement38.Width = 65;
-            isOraColElement39.DataColumn = "VALUE8";
-            isOraColElement39.DataOrdinal = 10;
-            isOraColElement39.DataType = "System.String";
-            isOraColElement39.HeaderPrompt = "VALUE8";
-            isOraColElement39.LastValue = null;
-            isOraColElement39.MemberControl = null;
-            isOraColElement39.MemberValue = null;
-            isOraColElement39.Nullable = null;
-            isOraColElement39.Ordinal = 10;
-            isOraColElement39.RelationKeyColumn = null;
-            isOraColElement39.ReturnParameter = null;
-            isOraColElement39.TL1_KR = null;
-            isOraColElement39.TL2_CN = null;
-            isOraColElement39.TL3_VN = null;
-            isOraColElement39.TL4_JP = null;
-            isOraColElement39.TL5_XAA = null;
-            isOraColElement39.Visible = 0;
-            isOraColElement39.Width = 65;
-            isOraColElement40.DataColumn = "VALUE9";
-            isOraColElement40.DataOrdinal = 11;
-            isOraColElement40.DataType = "System.String";
-            isOraColElement40.HeaderPrompt = "VALUE9";
-            isOraColElement40.LastValue = null;
-            isOraColElement40.MemberControl = null;
-            isOraColElement40.MemberValue = null;
-            isOraColElement40.Nullable = null;
-            isOraColElement40.Ordinal = 11;
-            isOraColElement40.RelationKeyColumn = null;
-            isOraColElement40.ReturnParameter = null;
-            isOraColElement40.TL1_KR = null;
-            isOraColElement40.TL2_CN = null;
-            isOraColElement40.TL3_VN = null;
-            isOraColElement40.TL4_JP = null;
-            isOraColElement40.TL5_XAA = null;
-            isOraColElement40.Visible = 0;
-            isOraColElement40.Width = 65;
-            isOraColElement41.DataColumn = "VALUE10";
-            isOraColElement41.DataOrdinal = 12;
-            isOraColElement41.DataType = "System.String";
-            isOraColElement41.HeaderPrompt = "VALUE10";
-            isOraColElement41.LastValue = null;
-            isOraColElement41.MemberControl = null;
-            isOraColElement41.MemberValue = null;
-            isOraColElement41.Nullable = null;
-            isOraColElement41.Ordinal = 12;
-            isOraColElement41.RelationKeyColumn = null;
-            isOraColElement41.ReturnParameter = null;
-            isOraColElement41.TL1_KR = null;
-            isOraColElement41.TL2_CN = null;
-            isOraColElement41.TL3_VN = null;
-            isOraColElement41.TL4_JP = null;
-            isOraColElement41.TL5_XAA = null;
-            isOraColElement41.Visible = 0;
-            isOraColElement41.Width = 65;
-            this.ILA_TAX_OFFICE.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
-            isOraColElement29,
-            isOraColElement30,
-            isOraColElement31,
-            isOraColElement32,
-            isOraColElement33,
-            isOraColElement34,
-            isOraColElement35,
-            isOraColElement36,
-            isOraColElement37,
-            isOraColElement38,
-            isOraColElement39,
-            isOraColElement40,
-            isOraColElement41});
-            this.ILA_TAX_OFFICE.LookupData = this.ildCOMMON;
-            this.ILA_TAX_OFFICE.LookupSize = new System.Drawing.Size(372, 335);
-            this.ILA_TAX_OFFICE.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
-            this.ILA_TAX_OFFICE.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
-            this.ILA_TAX_OFFICE.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_TAX_OFFICE_PrePopupShow);
-            // 
             // ILA_BANK
             // 
             this.ILA_BANK.DisplayCaption = "Corporation Search";
@@ -9975,15 +10012,15 @@
             0,
             0});
             this.W_CORP_NAME_0.PromptText = "Corporation";
-            isLanguageElement39.Default = "Corporation";
-            isLanguageElement39.SiteName = null;
-            isLanguageElement39.TL1_KR = "업체명";
-            isLanguageElement39.TL2_CN = "";
-            isLanguageElement39.TL3_VN = "";
-            isLanguageElement39.TL4_JP = "";
-            isLanguageElement39.TL5_XAA = "";
+            isLanguageElement47.Default = "Corporation";
+            isLanguageElement47.SiteName = null;
+            isLanguageElement47.TL1_KR = "업체명";
+            isLanguageElement47.TL2_CN = "";
+            isLanguageElement47.TL3_VN = "";
+            isLanguageElement47.TL4_JP = "";
+            isLanguageElement47.TL5_XAA = "";
             this.W_CORP_NAME_0.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement39});
+            isLanguageElement47});
             this.W_CORP_NAME_0.Size = new System.Drawing.Size(301, 21);
             this.W_CORP_NAME_0.TabIndex = 0;
             this.W_CORP_NAME_0.TextValue = "";
@@ -10281,20 +10318,20 @@
             this.igbCONTROL.Controls.Add(this.W_ENABLED_FLAG);
             this.igbCONTROL.Controls.Add(this.W_CORP_NAME_0);
             this.igbCONTROL.Controls.Add(this.W_CORP_ID_0);
-            this.igbCONTROL.Location = new System.Drawing.Point(5, 5);
+            this.igbCONTROL.Location = new System.Drawing.Point(5, 4);
             this.igbCONTROL.Name = "igbCONTROL";
             this.igbCONTROL.Padding = new System.Windows.Forms.Padding(5);
             this.igbCONTROL.PromptText = "Inquiry Condition";
-            isLanguageElement40.Default = "Inquiry Condition";
-            isLanguageElement40.SiteName = null;
-            isLanguageElement40.TL1_KR = "Inquiry Condition";
-            isLanguageElement40.TL2_CN = "";
-            isLanguageElement40.TL3_VN = "";
-            isLanguageElement40.TL4_JP = "";
-            isLanguageElement40.TL5_XAA = "";
+            isLanguageElement48.Default = "Inquiry Condition";
+            isLanguageElement48.SiteName = null;
+            isLanguageElement48.TL1_KR = "Inquiry Condition";
+            isLanguageElement48.TL2_CN = "";
+            isLanguageElement48.TL3_VN = "";
+            isLanguageElement48.TL4_JP = "";
+            isLanguageElement48.TL5_XAA = "";
             this.igbCONTROL.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement40});
-            this.igbCONTROL.Size = new System.Drawing.Size(948, 58);
+            isLanguageElement48});
+            this.igbCONTROL.Size = new System.Drawing.Size(964, 58);
             this.igbCONTROL.TabIndex = 0;
             this.igbCONTROL.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
             // 
@@ -10306,6 +10343,7 @@
             this.igbCORP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
             this.igbCORP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.igbCORP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.igbCORP.Controls.Add(this.BTN_CO_STAMP);
             this.igbCORP.Controls.Add(this.BIZ_UNIT_TYPE);
             this.igbCORP.Controls.Add(this.BIZ_UNIT_TYPE_NAME);
             this.igbCORP.Controls.Add(this.RETIRE_IRP_TYPE_NAME);
@@ -10341,22 +10379,42 @@
             this.igbCORP.Controls.Add(this.CB_PAY_CONTROL_YN);
             this.igbCORP.Controls.Add(this.EFFECTIVE_DATE_TO);
             this.igbCORP.Controls.Add(this.ENABLED_FLAG);
-            this.igbCORP.Location = new System.Drawing.Point(263, 65);
+            this.igbCORP.Location = new System.Drawing.Point(263, 63);
             this.igbCORP.Name = "igbCORP";
             this.igbCORP.Padding = new System.Windows.Forms.Padding(5);
             this.igbCORP.PromptText = "Corporation Info";
-            isLanguageElement36.Default = "Corporation Info";
-            isLanguageElement36.SiteName = null;
-            isLanguageElement36.TL1_KR = "Corporation Info";
-            isLanguageElement36.TL2_CN = "";
-            isLanguageElement36.TL3_VN = "";
-            isLanguageElement36.TL4_JP = "";
-            isLanguageElement36.TL5_XAA = "";
+            isLanguageElement44.Default = "Corporation Info";
+            isLanguageElement44.SiteName = null;
+            isLanguageElement44.TL1_KR = "Corporation Info";
+            isLanguageElement44.TL2_CN = "";
+            isLanguageElement44.TL3_VN = "";
+            isLanguageElement44.TL4_JP = "";
+            isLanguageElement44.TL5_XAA = "";
             this.igbCORP.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement36});
-            this.igbCORP.Size = new System.Drawing.Size(690, 337);
+            isLanguageElement44});
+            this.igbCORP.Size = new System.Drawing.Size(706, 319);
             this.igbCORP.TabIndex = 2;
             this.igbCORP.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
+            // 
+            // BTN_CO_STAMP
+            // 
+            this.BTN_CO_STAMP.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.BTN_CO_STAMP.ButtonText = "Co. Stamp";
+            isLanguageElement11.Default = "Co. Stamp";
+            isLanguageElement11.SiteName = null;
+            isLanguageElement11.TL1_KR = "직인 관리";
+            isLanguageElement11.TL2_CN = null;
+            isLanguageElement11.TL3_VN = null;
+            isLanguageElement11.TL4_JP = null;
+            isLanguageElement11.TL5_XAA = null;
+            this.BTN_CO_STAMP.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement11});
+            this.BTN_CO_STAMP.Location = new System.Drawing.Point(645, 271);
+            this.BTN_CO_STAMP.Name = "BTN_CO_STAMP";
+            this.BTN_CO_STAMP.Size = new System.Drawing.Size(53, 43);
+            this.BTN_CO_STAMP.TabIndex = 192;
+            this.BTN_CO_STAMP.TabStop = false;
+            this.BTN_CO_STAMP.Visible = false;
             // 
             // CB_DUTY_CONTROL_YN
             // 
@@ -10365,18 +10423,18 @@
             this.CB_DUTY_CONTROL_YN.CheckedString = "Y";
             this.CB_DUTY_CONTROL_YN.DataAdapter = this.IDA_CORP_MASTER;
             this.CB_DUTY_CONTROL_YN.DataColumn = "DUTY_CONTROL_YN";
-            this.CB_DUTY_CONTROL_YN.Location = new System.Drawing.Point(434, 213);
+            this.CB_DUTY_CONTROL_YN.Location = new System.Drawing.Point(463, 203);
             this.CB_DUTY_CONTROL_YN.Name = "CB_DUTY_CONTROL_YN";
             this.CB_DUTY_CONTROL_YN.PromptText = "Duty Control";
-            isLanguageElement28.Default = "Duty Control";
-            isLanguageElement28.SiteName = null;
-            isLanguageElement28.TL1_KR = "근태관리";
-            isLanguageElement28.TL2_CN = "";
-            isLanguageElement28.TL3_VN = "";
-            isLanguageElement28.TL4_JP = "";
-            isLanguageElement28.TL5_XAA = "";
+            isLanguageElement36.Default = "Duty Control";
+            isLanguageElement36.SiteName = null;
+            isLanguageElement36.TL1_KR = "근태관리";
+            isLanguageElement36.TL2_CN = "";
+            isLanguageElement36.TL3_VN = "";
+            isLanguageElement36.TL4_JP = "";
+            isLanguageElement36.TL5_XAA = "";
             this.CB_DUTY_CONTROL_YN.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement28});
+            isLanguageElement36});
             this.CB_DUTY_CONTROL_YN.Size = new System.Drawing.Size(115, 21);
             this.CB_DUTY_CONTROL_YN.TabIndex = 24;
             this.CB_DUTY_CONTROL_YN.UncheckedString = "N";
@@ -10388,18 +10446,18 @@
             this.CB_DEPT_CONTROL_YN.CheckedString = "Y";
             this.CB_DEPT_CONTROL_YN.DataAdapter = this.IDA_CORP_MASTER;
             this.CB_DEPT_CONTROL_YN.DataColumn = "DEPT_CONTROL_YN";
-            this.CB_DEPT_CONTROL_YN.Location = new System.Drawing.Point(283, 213);
+            this.CB_DEPT_CONTROL_YN.Location = new System.Drawing.Point(312, 203);
             this.CB_DEPT_CONTROL_YN.Name = "CB_DEPT_CONTROL_YN";
             this.CB_DEPT_CONTROL_YN.PromptText = "Department Control";
-            isLanguageElement29.Default = "Department Control";
-            isLanguageElement29.SiteName = null;
-            isLanguageElement29.TL1_KR = "조직관리";
-            isLanguageElement29.TL2_CN = "";
-            isLanguageElement29.TL3_VN = "";
-            isLanguageElement29.TL4_JP = "";
-            isLanguageElement29.TL5_XAA = "";
+            isLanguageElement37.Default = "Department Control";
+            isLanguageElement37.SiteName = null;
+            isLanguageElement37.TL1_KR = "조직관리";
+            isLanguageElement37.TL2_CN = "";
+            isLanguageElement37.TL3_VN = "";
+            isLanguageElement37.TL4_JP = "";
+            isLanguageElement37.TL5_XAA = "";
             this.CB_DEPT_CONTROL_YN.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement29});
+            isLanguageElement37});
             this.CB_DEPT_CONTROL_YN.Size = new System.Drawing.Size(145, 21);
             this.CB_DEPT_CONTROL_YN.TabIndex = 23;
             this.CB_DEPT_CONTROL_YN.UncheckedString = "N";
@@ -10411,18 +10469,18 @@
             this.CB_DEFAULT_FLAG.CheckedString = "Y";
             this.CB_DEFAULT_FLAG.DataAdapter = this.IDA_CORP_MASTER;
             this.CB_DEFAULT_FLAG.DataColumn = "DEFAULT_FLAG";
-            this.CB_DEFAULT_FLAG.Location = new System.Drawing.Point(206, 213);
+            this.CB_DEFAULT_FLAG.Location = new System.Drawing.Point(235, 203);
             this.CB_DEFAULT_FLAG.Name = "CB_DEFAULT_FLAG";
             this.CB_DEFAULT_FLAG.PromptText = "Default";
-            isLanguageElement30.Default = "Default";
-            isLanguageElement30.SiteName = null;
-            isLanguageElement30.TL1_KR = "기본";
-            isLanguageElement30.TL2_CN = "";
-            isLanguageElement30.TL3_VN = "";
-            isLanguageElement30.TL4_JP = "";
-            isLanguageElement30.TL5_XAA = "";
+            isLanguageElement38.Default = "Default";
+            isLanguageElement38.SiteName = null;
+            isLanguageElement38.TL1_KR = "기본";
+            isLanguageElement38.TL2_CN = "";
+            isLanguageElement38.TL3_VN = "";
+            isLanguageElement38.TL4_JP = "";
+            isLanguageElement38.TL5_XAA = "";
             this.CB_DEFAULT_FLAG.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement30});
+            isLanguageElement38});
             this.CB_DEFAULT_FLAG.Size = new System.Drawing.Size(71, 21);
             this.CB_DEFAULT_FLAG.TabIndex = 22;
             this.CB_DEFAULT_FLAG.UncheckedString = "N";
@@ -10434,18 +10492,18 @@
             this.CB_PAY_CONTROL_YN.CheckedString = "Y";
             this.CB_PAY_CONTROL_YN.DataAdapter = this.IDA_CORP_MASTER;
             this.CB_PAY_CONTROL_YN.DataColumn = "PAY_CONTROL_YN";
-            this.CB_PAY_CONTROL_YN.Location = new System.Drawing.Point(555, 213);
+            this.CB_PAY_CONTROL_YN.Location = new System.Drawing.Point(584, 203);
             this.CB_PAY_CONTROL_YN.Name = "CB_PAY_CONTROL_YN";
             this.CB_PAY_CONTROL_YN.PromptText = "Pay Control";
-            isLanguageElement33.Default = "Pay Control";
-            isLanguageElement33.SiteName = null;
-            isLanguageElement33.TL1_KR = "급여관리";
-            isLanguageElement33.TL2_CN = "";
-            isLanguageElement33.TL3_VN = "";
-            isLanguageElement33.TL4_JP = "";
-            isLanguageElement33.TL5_XAA = "";
+            isLanguageElement41.Default = "Pay Control";
+            isLanguageElement41.SiteName = null;
+            isLanguageElement41.TL1_KR = "급여관리";
+            isLanguageElement41.TL2_CN = "";
+            isLanguageElement41.TL3_VN = "";
+            isLanguageElement41.TL4_JP = "";
+            isLanguageElement41.TL5_XAA = "";
             this.CB_PAY_CONTROL_YN.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement33});
+            isLanguageElement41});
             this.CB_PAY_CONTROL_YN.Size = new System.Drawing.Size(115, 21);
             this.CB_PAY_CONTROL_YN.TabIndex = 25;
             this.CB_PAY_CONTROL_YN.UncheckedString = "N";
@@ -10457,18 +10515,18 @@
             this.ENABLED_FLAG.CheckedString = "Y";
             this.ENABLED_FLAG.DataAdapter = this.IDA_CORP_MASTER;
             this.ENABLED_FLAG.DataColumn = "ENABLED_FLAG";
-            this.ENABLED_FLAG.Location = new System.Drawing.Point(530, 237);
+            this.ENABLED_FLAG.Location = new System.Drawing.Point(584, 225);
             this.ENABLED_FLAG.Name = "ENABLED_FLAG";
             this.ENABLED_FLAG.PromptText = "Enabled";
-            isLanguageElement35.Default = "Enabled";
-            isLanguageElement35.SiteName = null;
-            isLanguageElement35.TL1_KR = "사용여부";
-            isLanguageElement35.TL2_CN = "";
-            isLanguageElement35.TL3_VN = "";
-            isLanguageElement35.TL4_JP = "";
-            isLanguageElement35.TL5_XAA = "";
+            isLanguageElement43.Default = "Enabled";
+            isLanguageElement43.SiteName = null;
+            isLanguageElement43.TL1_KR = "사용여부";
+            isLanguageElement43.TL2_CN = "";
+            isLanguageElement43.TL3_VN = "";
+            isLanguageElement43.TL4_JP = "";
+            isLanguageElement43.TL5_XAA = "";
             this.ENABLED_FLAG.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement35});
+            isLanguageElement43});
             this.ENABLED_FLAG.Size = new System.Drawing.Size(93, 21);
             this.ENABLED_FLAG.TabIndex = 28;
             this.ENABLED_FLAG.UncheckedString = "N";
@@ -10483,20 +10541,20 @@
             this.igrTAX_GROUP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.igrTAX_GROUP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.igrTAX_GROUP.Controls.Add(this.igrHRM_OPERATING_UNIT_G);
-            this.igrTAX_GROUP.Location = new System.Drawing.Point(5, 403);
+            this.igrTAX_GROUP.Location = new System.Drawing.Point(5, 383);
             this.igrTAX_GROUP.Name = "igrTAX_GROUP";
             this.igrTAX_GROUP.Padding = new System.Windows.Forms.Padding(0, 23, 0, 0);
             this.igrTAX_GROUP.PromptText = "Operating Unit Info";
-            isLanguageElement3.Default = "Operating Unit Info";
-            isLanguageElement3.SiteName = null;
-            isLanguageElement3.TL1_KR = "Operating Unit Info";
-            isLanguageElement3.TL2_CN = "";
-            isLanguageElement3.TL3_VN = "";
-            isLanguageElement3.TL4_JP = "";
-            isLanguageElement3.TL5_XAA = "";
+            isLanguageElement9.Default = "Operating Unit Info";
+            isLanguageElement9.SiteName = null;
+            isLanguageElement9.TL1_KR = "Operating Unit Info";
+            isLanguageElement9.TL2_CN = "";
+            isLanguageElement9.TL3_VN = "";
+            isLanguageElement9.TL4_JP = "";
+            isLanguageElement9.TL5_XAA = "";
             this.igrTAX_GROUP.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement3});
-            this.igrTAX_GROUP.Size = new System.Drawing.Size(948, 170);
+            isLanguageElement9});
+            this.igrTAX_GROUP.Size = new System.Drawing.Size(964, 165);
             this.igrTAX_GROUP.TabIndex = 3;
             this.igrTAX_GROUP.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
             // 
@@ -10511,21 +10569,282 @@
             this.IGB_CORP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.IGB_CORP.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.IGB_CORP.Controls.Add(this.IGR_CORP_LIST);
-            this.IGB_CORP.Location = new System.Drawing.Point(5, 65);
+            this.IGB_CORP.Location = new System.Drawing.Point(5, 63);
             this.IGB_CORP.Name = "IGB_CORP";
             this.IGB_CORP.Padding = new System.Windows.Forms.Padding(0, 23, 0, 0);
             this.IGB_CORP.PromptText = "Corporation List";
-            isLanguageElement1.Default = "Corporation List";
+            isLanguageElement6.Default = "Corporation List";
+            isLanguageElement6.SiteName = null;
+            isLanguageElement6.TL1_KR = "업체 리스트";
+            isLanguageElement6.TL2_CN = null;
+            isLanguageElement6.TL3_VN = null;
+            isLanguageElement6.TL4_JP = null;
+            isLanguageElement6.TL5_XAA = null;
+            this.IGB_CORP.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement6});
+            this.IGB_CORP.Size = new System.Drawing.Size(258, 319);
+            this.IGB_CORP.TabIndex = 1;
+            // 
+            // isCheckBoxAdv1
+            // 
+            this.isCheckBoxAdv1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.isCheckBoxAdv1.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.isCheckBoxAdv1.CheckBoxValue = "N";
+            this.isCheckBoxAdv1.CheckedString = "Y";
+            this.isCheckBoxAdv1.DataAdapter = this.IDA_CORP_MASTER;
+            this.isCheckBoxAdv1.DataColumn = "ENABLED_FLAG";
+            this.isCheckBoxAdv1.Location = new System.Drawing.Point(21, 552);
+            this.isCheckBoxAdv1.Name = "isCheckBoxAdv1";
+            this.isCheckBoxAdv1.PromptText = "CI File Flag";
+            isLanguageElement49.Default = "CI File Flag";
+            isLanguageElement49.SiteName = null;
+            isLanguageElement49.TL1_KR = "CI 첨부여부";
+            isLanguageElement49.TL2_CN = "";
+            isLanguageElement49.TL3_VN = "";
+            isLanguageElement49.TL4_JP = "";
+            isLanguageElement49.TL5_XAA = "";
+            this.isCheckBoxAdv1.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement49});
+            this.isCheckBoxAdv1.Size = new System.Drawing.Size(96, 21);
+            this.isCheckBoxAdv1.TabIndex = 192;
+            this.isCheckBoxAdv1.UncheckedString = "N";
+            // 
+            // isButton1
+            // 
+            this.isButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.isButton1.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.isButton1.ButtonText = "File View";
+            isLanguageElement3.Default = "File View";
+            isLanguageElement3.SiteName = null;
+            isLanguageElement3.TL1_KR = "파일 보기";
+            isLanguageElement3.TL2_CN = null;
+            isLanguageElement3.TL3_VN = null;
+            isLanguageElement3.TL4_JP = null;
+            isLanguageElement3.TL5_XAA = null;
+            this.isButton1.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement3});
+            this.isButton1.Location = new System.Drawing.Point(123, 552);
+            this.isButton1.Name = "isButton1";
+            this.isButton1.Size = new System.Drawing.Size(105, 21);
+            this.isButton1.TabIndex = 193;
+            // 
+            // isButton2
+            // 
+            this.isButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.isButton2.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.isButton2.ButtonText = "File Del.";
+            isLanguageElement4.Default = "File Del.";
+            isLanguageElement4.SiteName = null;
+            isLanguageElement4.TL1_KR = "파일 삭제";
+            isLanguageElement4.TL2_CN = null;
+            isLanguageElement4.TL3_VN = null;
+            isLanguageElement4.TL4_JP = null;
+            isLanguageElement4.TL5_XAA = null;
+            this.isButton2.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement4});
+            this.isButton2.Location = new System.Drawing.Point(234, 552);
+            this.isButton2.Name = "isButton2";
+            this.isButton2.Size = new System.Drawing.Size(105, 21);
+            this.isButton2.TabIndex = 194;
+            // 
+            // isButton3
+            // 
+            this.isButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.isButton3.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.isButton3.ButtonText = "File Upload";
+            isLanguageElement1.Default = "File Upload";
             isLanguageElement1.SiteName = null;
-            isLanguageElement1.TL1_KR = "업체 리스트";
+            isLanguageElement1.TL1_KR = "파일 올리기";
             isLanguageElement1.TL2_CN = null;
             isLanguageElement1.TL3_VN = null;
             isLanguageElement1.TL4_JP = null;
             isLanguageElement1.TL5_XAA = null;
-            this.IGB_CORP.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            this.isButton3.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
             isLanguageElement1});
-            this.IGB_CORP.Size = new System.Drawing.Size(258, 337);
-            this.IGB_CORP.TabIndex = 1;
+            this.isButton3.Location = new System.Drawing.Point(345, 552);
+            this.isButton3.Name = "isButton3";
+            this.isButton3.Size = new System.Drawing.Size(105, 21);
+            this.isButton3.TabIndex = 195;
+            // 
+            // isButton4
+            // 
+            this.isButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.isButton4.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.isButton4.ButtonText = "File Upload";
+            isLanguageElement2.Default = "File Upload";
+            isLanguageElement2.SiteName = null;
+            isLanguageElement2.TL1_KR = "파일 올리기";
+            isLanguageElement2.TL2_CN = null;
+            isLanguageElement2.TL3_VN = null;
+            isLanguageElement2.TL4_JP = null;
+            isLanguageElement2.TL5_XAA = null;
+            this.isButton4.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement2});
+            this.isButton4.Location = new System.Drawing.Point(846, 552);
+            this.isButton4.Name = "isButton4";
+            this.isButton4.Size = new System.Drawing.Size(105, 21);
+            this.isButton4.TabIndex = 199;
+            // 
+            // isButton5
+            // 
+            this.isButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.isButton5.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.isButton5.ButtonText = "File Del.";
+            isLanguageElement5.Default = "File Del.";
+            isLanguageElement5.SiteName = null;
+            isLanguageElement5.TL1_KR = "파일 삭제";
+            isLanguageElement5.TL2_CN = null;
+            isLanguageElement5.TL3_VN = null;
+            isLanguageElement5.TL4_JP = null;
+            isLanguageElement5.TL5_XAA = null;
+            this.isButton5.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement5});
+            this.isButton5.Location = new System.Drawing.Point(735, 552);
+            this.isButton5.Name = "isButton5";
+            this.isButton5.Size = new System.Drawing.Size(105, 21);
+            this.isButton5.TabIndex = 198;
+            // 
+            // isButton6
+            // 
+            this.isButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.isButton6.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.isButton6.ButtonText = "File View";
+            isLanguageElement7.Default = "File View";
+            isLanguageElement7.SiteName = null;
+            isLanguageElement7.TL1_KR = "파일 보기";
+            isLanguageElement7.TL2_CN = null;
+            isLanguageElement7.TL3_VN = null;
+            isLanguageElement7.TL4_JP = null;
+            isLanguageElement7.TL5_XAA = null;
+            this.isButton6.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement7});
+            this.isButton6.Location = new System.Drawing.Point(624, 552);
+            this.isButton6.Name = "isButton6";
+            this.isButton6.Size = new System.Drawing.Size(105, 21);
+            this.isButton6.TabIndex = 197;
+            // 
+            // isCheckBoxAdv2
+            // 
+            this.isCheckBoxAdv2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.isCheckBoxAdv2.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.isCheckBoxAdv2.CheckBoxValue = "N";
+            this.isCheckBoxAdv2.CheckedString = "Y";
+            this.isCheckBoxAdv2.DataAdapter = this.IDA_CORP_MASTER;
+            this.isCheckBoxAdv2.DataColumn = "ENABLED_FLAG";
+            this.isCheckBoxAdv2.Location = new System.Drawing.Point(498, 552);
+            this.isCheckBoxAdv2.Name = "isCheckBoxAdv2";
+            this.isCheckBoxAdv2.PromptText = "Stamp File Flag";
+            isLanguageElement10.Default = "Stamp File Flag";
+            isLanguageElement10.SiteName = null;
+            isLanguageElement10.TL1_KR = "직인 첨부여부";
+            isLanguageElement10.TL2_CN = "";
+            isLanguageElement10.TL3_VN = "";
+            isLanguageElement10.TL4_JP = "";
+            isLanguageElement10.TL5_XAA = "";
+            this.isCheckBoxAdv2.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement10});
+            this.isCheckBoxAdv2.Size = new System.Drawing.Size(120, 21);
+            this.isCheckBoxAdv2.TabIndex = 196;
+            this.isCheckBoxAdv2.UncheckedString = "N";
+            // 
+            // idcFTP_INFO
+            // 
+            isOraParamElement161.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement161.MemberControl = null;
+            isOraParamElement161.MemberValue = null;
+            isOraParamElement161.OraDbTypeString = "VARCHAR2";
+            isOraParamElement161.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement161.ParamName = "W_FTP_CODE";
+            isOraParamElement161.Size = 0;
+            isOraParamElement161.SourceColumn = null;
+            isOraParamElement162.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement162.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement162.MemberValue = "SOB_ID";
+            isOraParamElement162.OraDbTypeString = "NUMBER";
+            isOraParamElement162.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement162.ParamName = "W_SOB_ID";
+            isOraParamElement162.Size = 22;
+            isOraParamElement162.SourceColumn = null;
+            isOraParamElement163.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement163.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement163.MemberValue = "ORG_ID";
+            isOraParamElement163.OraDbTypeString = "NUMBER";
+            isOraParamElement163.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement163.ParamName = "W_ORG_ID";
+            isOraParamElement163.Size = 22;
+            isOraParamElement163.SourceColumn = null;
+            isOraParamElement164.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement164.MemberControl = null;
+            isOraParamElement164.MemberValue = null;
+            isOraParamElement164.OraDbTypeString = "VARCHAR2";
+            isOraParamElement164.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement164.ParamName = "O_HOST_IP";
+            isOraParamElement164.Size = 0;
+            isOraParamElement164.SourceColumn = null;
+            isOraParamElement165.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement165.MemberControl = null;
+            isOraParamElement165.MemberValue = null;
+            isOraParamElement165.OraDbTypeString = "VARCHAR2";
+            isOraParamElement165.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement165.ParamName = "O_HOST_PORT";
+            isOraParamElement165.Size = 0;
+            isOraParamElement165.SourceColumn = null;
+            isOraParamElement166.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement166.MemberControl = null;
+            isOraParamElement166.MemberValue = null;
+            isOraParamElement166.OraDbTypeString = "VARCHAR2";
+            isOraParamElement166.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement166.ParamName = "O_USER_NO";
+            isOraParamElement166.Size = 0;
+            isOraParamElement166.SourceColumn = null;
+            isOraParamElement167.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement167.MemberControl = null;
+            isOraParamElement167.MemberValue = null;
+            isOraParamElement167.OraDbTypeString = "VARCHAR2";
+            isOraParamElement167.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement167.ParamName = "O_USER_PWD";
+            isOraParamElement167.Size = 0;
+            isOraParamElement167.SourceColumn = null;
+            isOraParamElement168.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement168.MemberControl = null;
+            isOraParamElement168.MemberValue = null;
+            isOraParamElement168.OraDbTypeString = "VARCHAR2";
+            isOraParamElement168.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement168.ParamName = "O_PASSIVE_FLAG";
+            isOraParamElement168.Size = 0;
+            isOraParamElement168.SourceColumn = null;
+            isOraParamElement169.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement169.MemberControl = null;
+            isOraParamElement169.MemberValue = null;
+            isOraParamElement169.OraDbTypeString = "VARCHAR2";
+            isOraParamElement169.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement169.ParamName = "O_HOST_FOLDER";
+            isOraParamElement169.Size = 0;
+            isOraParamElement169.SourceColumn = null;
+            isOraParamElement170.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement170.MemberControl = null;
+            isOraParamElement170.MemberValue = null;
+            isOraParamElement170.OraDbTypeString = "VARCHAR2";
+            isOraParamElement170.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement170.ParamName = "O_CLIENT_FOLDER";
+            isOraParamElement170.Size = 0;
+            isOraParamElement170.SourceColumn = null;
+            this.idcFTP_INFO.CommandParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
+            isOraParamElement161,
+            isOraParamElement162,
+            isOraParamElement163,
+            isOraParamElement164,
+            isOraParamElement165,
+            isOraParamElement166,
+            isOraParamElement167,
+            isOraParamElement168,
+            isOraParamElement169,
+            isOraParamElement170});
+            this.idcFTP_INFO.DataTransaction = null;
+            this.idcFTP_INFO.OraConnection = this.isOraConnection1;
+            this.idcFTP_INFO.OraOwner = "APPS";
+            this.idcFTP_INFO.OraPackage = "EAPP_FTP_G";
+            this.idcFTP_INFO.OraProcedure = "GET_CODE_FTP_INFO_P";
             this.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ILA_BIZ_UNIT_TYPE.PropSourceDataTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ilaCORP_CATEGORY.PropSourceDataTable)).EndInit();
@@ -10533,8 +10852,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.IGR_CORP_LIST.BaseGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ilaRETIRE_IRP_TYPE.PropSourceDataTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_VENDOR.PropSourceDataTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.igrHRM_OPERATING_UNIT_G.BaseGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_TAX_OFFICE.PropSourceDataTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.igrHRM_OPERATING_UNIT_G.BaseGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_BANK.PropSourceDataTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_BANK_ACCOUNT.PropSourceDataTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_CORP_W.PropSourceDataTable)).EndInit();
@@ -10620,5 +10939,15 @@
         private InfoSummit.Win.ControlAdv.ISEditAdv BIZ_UNIT_TYPE;
         private InfoSummit.Win.ControlAdv.ISEditAdv BIZ_UNIT_TYPE_NAME;
         private InfoSummit.Win.ControlAdv.ISLookupAdapter ILA_BIZ_UNIT_TYPE;
+        private InfoSummit.Win.ControlAdv.ISButton isButton3;
+        private InfoSummit.Win.ControlAdv.ISButton isButton4;
+        private InfoSummit.Win.ControlAdv.ISButton isButton1;
+        private InfoSummit.Win.ControlAdv.ISButton isButton2;
+        private InfoSummit.Win.ControlAdv.ISButton isButton5;
+        private InfoSummit.Win.ControlAdv.ISButton isButton6;
+        private InfoSummit.Win.ControlAdv.ISCheckBoxAdv isCheckBoxAdv2;
+        private InfoSummit.Win.ControlAdv.ISCheckBoxAdv isCheckBoxAdv1;
+        private InfoSummit.Win.ControlAdv.ISButton BTN_CO_STAMP;
+        private InfoSummit.Win.ControlAdv.ISDataCommand idcFTP_INFO;
     }
 }

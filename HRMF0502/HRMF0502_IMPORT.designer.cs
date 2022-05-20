@@ -197,7 +197,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
-            this.ClientSize = new System.Drawing.Size(716, 219);
+            this.ClientSize = new System.Drawing.Size(716, 291);
             this.ControlBox = false;
             this.Controls.Add(this.GB_UPLOAD_FILE);
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -353,7 +353,7 @@
             this.V_SYSDATE.DataAdapter = null;
             this.V_SYSDATE.DataColumn = null;
             this.V_SYSDATE.DateFormat = "yyyy-MM-dd HH:mm:ss";
-            this.V_SYSDATE.DateTimeValue = new System.DateTime(2020, 12, 9, 0, 0, 0, 0);
+            this.V_SYSDATE.DateTimeValue = new System.DateTime(2022, 5, 8, 0, 0, 0, 0);
             this.V_SYSDATE.DoubleValue = 0D;
             this.V_SYSDATE.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.DateTimeEdit;
             this.V_SYSDATE.EditValue = null;
@@ -391,10 +391,10 @@
             // 
             this.isOraConnection1.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.isOraConnection1.OraConnectionInfo = oraConnectionInfo1;
-            this.isOraConnection1.OraHost = "172.16.160.15";
+            this.isOraConnection1.OraHost = "146.56.184.66";
             this.isOraConnection1.OraPassword = "infoflex";
             this.isOraConnection1.OraPort = "1521";
-            this.isOraConnection1.OraServiceName = "sivprod";
+            this.isOraConnection1.OraServiceName = "KJK_icn1rm.sub12300429060.kjkvcn.oraclevcn.com";
             this.isOraConnection1.OraUserId = "APPS";
             // 
             // isMessageAdapter1
@@ -435,7 +435,7 @@
             isLanguageElement11.TL5_XAA = null;
             this.GB_UPLOAD_FILE.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
             isLanguageElement11});
-            this.GB_UPLOAD_FILE.Size = new System.Drawing.Size(708, 211);
+            this.GB_UPLOAD_FILE.Size = new System.Drawing.Size(708, 283);
             this.GB_UPLOAD_FILE.TabIndex = 7;
             // 
             // V_MESSAGE
@@ -457,7 +457,7 @@
             isLanguageElement4.TL5_XAA = "";
             this.V_MESSAGE.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
             isLanguageElement4});
-            this.V_MESSAGE.Size = new System.Drawing.Size(692, 29);
+            this.V_MESSAGE.Size = new System.Drawing.Size(692, 101);
             this.V_MESSAGE.TabIndex = 194;
             this.V_MESSAGE.TabStop = false;
             // 

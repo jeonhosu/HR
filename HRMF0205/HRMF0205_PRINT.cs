@@ -31,6 +31,11 @@ namespace HRMF0205
             mPrintInfo = new ISHR.isCertificatePrint();
             mPrintInfo = pPrintInfo;
             mPrintInfo.ISPrinting += ISOnPrint;
+
+
+            V_RB_KO.CheckedState = ISUtil.Enum.CheckedState.Checked;
+            V_LANG_CODE.EditValue = V_RB_KO.RadioCheckedString;
+
         }
 
         private void ISOnPrint(string pFormID)
@@ -203,7 +208,7 @@ namespace HRMF0205
                 string vREPRE_FLAG = icb_REPRE_FLAG.CheckBoxString ;
 
                 int nPrintTotalCnt = iString.ISNumtoZero(iedPRINT_COUNT.EditValue);
-                xlPrinting.XLWirte(pGrid, nPrintTotalCnt, vTerritory, vPeriodFrom, vUserName, vCaption);
+                xlPrinting.XLWirte(pGrid, pGrid_History, nPrintTotalCnt, vTerritory, vPeriodFrom, vUserName, vCaption, V_LANG_CODE.EditValue.ToString());
 
                 xlPrinting.Printing(1, nPrintTotalCnt); //시작 페이지 번호, 종료 페이지 번호
                 //xlPrinting.Printing(3, 4);
@@ -328,8 +333,15 @@ namespace HRMF0205
                 ildPERSON.SetLookupParamValue("W_END_DATE", DateTime.Today);
             }
             ildPERSON.SetLookupParamValue("W_CORP_ID", mPrintInfo.Corp_ID);
-        }        
-        #endregion       
+        }
+        #endregion
 
+        private void V_RB_KO_CheckChanged(object sender, EventArgs e)
+        {
+            if (V_RB_EN.Checked == true)
+            {
+                V_LANG_CODE.EditValue = V_RB_EN.RadioCheckedString;
+            }
+        }
     }
 }

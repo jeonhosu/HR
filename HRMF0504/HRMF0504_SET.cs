@@ -36,6 +36,8 @@ namespace HRMF0504
         object mPerson_Num = null;
         object mName = null;
         object mCorp_Type = null;
+        object mEmploye_Type = null;
+        object mEmploye_Desc = null;
 
         #endregion;
 
@@ -46,7 +48,8 @@ namespace HRMF0504
                                     , object pPay_YYYYMM, object pWage_Type, object pWage_Type_NAME
                                     , object pDept_ID, object pDept_Code, object pDept_Name
                                     , object pFloor_ID, object pFloor_Name
-                                    , object pPerson_id, object pPerson_Num, object pName, object pCorp_Type)
+                                    , object pPerson_id, object pPerson_Num, object pName, object pCorp_Type
+                                    , object pEmploye_Desc, object pEmploye_Type)
         {
             InitializeComponent();
             isAppInterfaceAdv1.AppInterface = pAppInterface;
@@ -67,6 +70,9 @@ namespace HRMF0504
             mPerson_Num = pPerson_Num;
             mName = pName;
             mCorp_Type = pCorp_Type;
+            mEmploye_Type = pEmploye_Type;
+            mEmploye_Desc = pEmploye_Desc; 
+            
         }
 
         #endregion;
@@ -176,6 +182,9 @@ namespace HRMF0504
             PERSON_NUM.EditValue = mPerson_Num;
             NAME.EditValue = mName;
             CORP_TYPE.EditValue = mCorp_Type;
+            EMPLOYE_TYPE.EditValue = mEmploye_Type;
+            EMPLOYE_DESC.EditValue = mEmploye_Desc;
+            
 
             idcSUPPLY_DATE.ExecuteNonQuery();
             SUPPLY_DATE.EditValue = idcSUPPLY_DATE.GetCommandParamValue("O_SUPPLY_DATE");
@@ -244,7 +253,12 @@ namespace HRMF0504
                 this.Cursor = Cursors.Default;
                 Application.DoEvents();
 
-                if (idcSET_PAYMENT.ExcuteError || vSTATUS == "F")
+                if (idcSET_PAYMENT.ExcuteError)
+                {
+                    MessageBoxAdv.Show(idcSET_PAYMENT.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else if (vSTATUS == "F")
                 {
                     if (vMESSAGE != string.Empty)
                     {
@@ -269,7 +283,12 @@ namespace HRMF0504
                 this.Cursor = Cursors.Default;
                 Application.DoEvents();
 
-                if (IDC_PAYMENT_CLOSED.ExcuteError || vSTATUS == "F")
+                if (IDC_PAYMENT_CLOSED.ExcuteError)
+                {
+                    MessageBoxAdv.Show(IDC_PAYMENT_CLOSED.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+                    return;
+                }
+                else if (vSTATUS == "F")
                 {
                     if (vMESSAGE != string.Empty)
                     {
@@ -293,8 +312,12 @@ namespace HRMF0504
                 Application.UseWaitCursor = false;
                 this.Cursor = Cursors.Default;
                 Application.DoEvents();
-
-                if (IDC_PAYMENT_CLOSED_CANCEL.ExcuteError || vSTATUS == "F")
+                if (IDC_PAYMENT_CLOSED_CANCEL.ExcuteError)
+                {
+                    MessageBoxAdv.Show(IDC_PAYMENT_CLOSED_CANCEL.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else if  (vSTATUS == "F")
                 {
                     if (vMESSAGE != string.Empty)
                     {
@@ -357,8 +380,13 @@ namespace HRMF0504
         {
             ILD_OPERATING_UNIT.SetLookupParamValue("W_ENABLED_FLAG", "Y");
         }
-        
+
         #endregion
 
+        private void ILA_EMPLOYEE_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ildCOMMON.SetLookupParamValue("W_GROUP_CODE", "YEAR_EMPLOYE_TYPE");
+            ildCOMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
+        }
     }
 }

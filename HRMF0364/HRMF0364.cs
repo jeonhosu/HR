@@ -1,19 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-using Syncfusion.Windows.Forms;
-using Syncfusion.Windows.Forms.Tools;
-using Syncfusion.Windows.Forms.Grid;
-
-using InfoSummit.Win.ControlAdv;
+﻿using InfoSummit.Win.ControlAdv;
 using ISCommonUtil;
-using System.IO;
+using Syncfusion.Windows.Forms;
 using Syncfusion.XlsIO;
+using System;
+using System.Data;
+using System.IO;
+using System.Windows.Forms;
 
 
 namespace HRMF0364
@@ -313,7 +305,27 @@ namespace HRMF0364
             IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("BEFORE_TIME_START_M"), IDC_GET_OT_STD_TIME.GetCommandParamValue("O_BEFORE_TIME_START_M"));
             IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("BEFORE_TIME_END_M"), IDC_GET_OT_STD_TIME.GetCommandParamValue("O_BEFORE_TIME_END_M"));
             IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("AFTER_OT_TIME_START_M"), IDC_GET_OT_STD_TIME.GetCommandParamValue("O_AFTER_OT_TIME_START_M"));
-            IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("AFTER_OT_TIME_END_M"), IDC_GET_OT_STD_TIME.GetCommandParamValue("O_AFTER_OT_TIME_END_M"));  
+            IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("AFTER_OT_TIME_END_M"), IDC_GET_OT_STD_TIME.GetCommandParamValue("O_AFTER_OT_TIME_END_M"));
+        }
+
+        private void Get_Req_OT_Time(int pRow_Index, object pWork_date, object pPerson_ID, object pHoly_Type, object pOT_Time_Type)
+        {
+            IDC_GET_REQ_OT_TIME_P.SetCommandParamValue("W_WORK_DATE", pWork_date);
+            IDC_GET_REQ_OT_TIME_P.SetCommandParamValue("W_PERSON_ID", pPerson_ID);
+            IDC_GET_REQ_OT_TIME_P.SetCommandParamValue("W_HOLY_TYPE", pHoly_Type);
+            IDC_GET_REQ_OT_TIME_P.SetCommandParamValue("W_OT_TIME_TYPE", pOT_Time_Type);
+            IDC_GET_REQ_OT_TIME_P.ExecuteNonQuery();  
+            IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("BEFORE_TIME_START"), IDC_GET_REQ_OT_TIME_P.GetCommandParamValue("O_BEFORE_OT_TIME_START"));
+            IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("BEFORE_TIME_END"), IDC_GET_REQ_OT_TIME_P.GetCommandParamValue("O_BEFORE_OT_TIME_END"));
+            IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("BEFORE_TIME_START_M"), IDC_GET_REQ_OT_TIME_P.GetCommandParamValue("O_BEFORE_OT_TIME_START_M"));
+            IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("BEFORE_TIME_END_M"), IDC_GET_REQ_OT_TIME_P.GetCommandParamValue("O_BEFORE_OT_TIME_END_M"));
+            
+            IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("AFTER_OT_DATE_START"), IDC_GET_REQ_OT_TIME_P.GetCommandParamValue("O_AFTER_OT_DATE_START"));
+            IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("AFTER_OT_TIME_START"), IDC_GET_REQ_OT_TIME_P.GetCommandParamValue("O_AFTER_OT_TIME_START"));
+            IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("AFTER_OT_TIME_START_M"), IDC_GET_REQ_OT_TIME_P.GetCommandParamValue("O_AFTER_OT_TIME_START_M"));
+            IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("AFTER_OT_DATE_END"), IDC_GET_REQ_OT_TIME_P.GetCommandParamValue("O_AFTER_OT_DATE_END"));
+            IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("AFTER_OT_TIME_END"), IDC_GET_REQ_OT_TIME_P.GetCommandParamValue("O_AFTER_OT_TIME_END"));
+            IGR_OT_REQ.SetCellValue(pRow_Index, IGR_OT_REQ.GetColumnToIndex("AFTER_OT_TIME_END_M"), IDC_GET_REQ_OT_TIME_P.GetCommandParamValue("O_AFTER_OT_TIME_END_M"));
         }
 
         private bool Check_Work_Date_time(object pHoly_Type, object IO_Flag, object pWork_Date, object pNew_Work_Date)
@@ -2299,6 +2311,17 @@ namespace HRMF0364
         {
             ILD_COMMON.SetLookupParamValue("W_GROUP_CODE", "HOLY_TYPE");
             ILD_COMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
+        }
+
+        private void ILA_OT_TIME_TYPE_SelectedRowData(object pSender)
+        {
+            int vRow_Index = IGR_OT_REQ.RowIndex;
+            object vWork_date = IGR_OT_REQ.GetCellValue("WORK_DATE");
+            object vPerson_ID = IGR_OT_REQ.GetCellValue("PERSON_ID");
+            object vHoly_Type = IGR_OT_REQ.GetCellValue("HOLY_TYPE");
+            object vOT_Time_Type = IGR_OT_REQ.GetCellValue("OT_TIME_TYPE");
+
+            Get_Req_OT_Time(vRow_Index, vWork_date, vPerson_ID, vHoly_Type, vOT_Time_Type);
         }
 
         private void ILA_START_TIME_BEFORE_RefreshLookupData(object pSender, ISRefreshLookupDataEventArgs e)

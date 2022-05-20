@@ -10,6 +10,10 @@ using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Tools;
 using Syncfusion.Windows.Forms.Grid;
 
+using System.Net; 
+using System.IO;
+using System.Xml;
+
 using InfoSummit.Win.ControlAdv;
 using ISCommonUtil;
 
@@ -149,6 +153,71 @@ namespace HRMF0301
             W_WORK_YYYY.EditValue = System.DateTime.Today.Year.ToString();
         }
 
+        private void BTN_INIT_DATE_ButtonClick(object pSender, EventArgs pEventArgs)        
+        {
+            if(MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_10067"), "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                return;
+            }
+
+            IDC_GET_API_AUTH_KEY_P.ExecuteNonQuery();
+            string vAuth_Key = iConv.ISNull(IDC_GET_API_AUTH_KEY_P.GetCommandParamValue("O_KEY_VALUE"));
+
+            string url = "http://apis.data.go.kr/B090041/openapi/service/SpcdeInfoService/getRestDeInfo"; // URL
+            url += "?ServiceKey=" + vAuth_Key;  // "HWRwrRtZlqXfu6yLCnW6A6oY5l5Bg8OblhOQIrWIURHAF7YNN6ZPN%2BCFJgilf%2FIch243dXcXgUUvd2FVjtyf7A%3D%3D"; // Service Key
+            url += "&pageNo=1";
+            url += "&numOfRows=900";
+            url += "&solYear=" + iConv.ISNull(W_WORK_YYYY.EditValue);
+            //url += "&solMonth=";
+
+            var request = (HttpWebRequest)WebRequest.Create(url);
+            request.Method = "GET";
+
+            string results = string.Empty;
+            HttpWebResponse response;
+            using (response = request.GetResponse() as HttpWebResponse)
+            {
+                StreamReader reader = new StreamReader(response.GetResponseStream());
+                results = reader.ReadToEnd();
+            }
+            if (string.IsNullOrEmpty(results))
+            {
+                MessageBoxAdv.Show(string.Format("Calendar Copy :: {0}", isMessageAdapter1.ReturnText("EAPP_10061")), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                isSEARCH_DB();
+                return;
+            }
+
+            //xml 파싱//
+            XmlDocument vXml = new XmlDocument();
+            vXml.LoadXml(results);
+            XmlNodeList xnList = vXml.SelectNodes("/response/body/items/item"); //접근할 노드 
+            foreach (XmlNode xn in xnList)
+            {
+                string vHoliday_Name = xn["dateName"].InnerText; //예술반 불러오기
+                string vWork_Date = xn["locdate"].InnerText; //예술반 code_name 불러오기 
+                  
+                IDC_SAVE_HOLIDAY.SetCommandParamValue("P_WORK_DATE", vWork_Date);
+                IDC_SAVE_HOLIDAY.SetCommandParamValue("P_HOLIDAY_NAME", vHoliday_Name);
+                IDC_SAVE_HOLIDAY.ExecuteNonQuery();
+
+                string vStatus = iConv.ISNull(IDC_SAVE_HOLIDAY.GetCommandParamValue("O_STATUS"));
+                string vMessage = iConv.ISNull(IDC_SAVE_HOLIDAY.GetCommandParamValue("O_MESSAGE"));
+                if (IDC_SAVE_HOLIDAY.ExcuteError)
+                {
+                    MessageBoxAdv.Show(IDC_SAVE_HOLIDAY.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                else if(vStatus.Equals("F"))
+                {
+                    MessageBoxAdv.Show(vMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }  
+            }
+
+            MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10038", "&&VALUE:=Calendar Copy"), "Infomation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            isSEARCH_DB();
+        }
+
         #endregion
 
         #region ----- Adapter Event -----
@@ -201,6 +270,12 @@ namespace HRMF0301
         private void ilaYEAR_1_SelectedRowData(object pSender)
         {
             System.Windows.Forms.SendKeys.Send("{TAB}");
+        }
+
+        private void ILA_HOLIDAY_CAL_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ILD_HOLIDAY_CAL_TYPE.SetLookupParamValue("W_GROUP_CODE", "HOLIDAY_CAL_TYPE");
+            ILD_HOLIDAY_CAL_TYPE.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
         }
 
         #endregion
@@ -263,10 +338,5 @@ namespace HRMF0301
 
         #endregion
 
-        private void ILA_HOLIDAY_CAL_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
-        {
-            ILD_HOLIDAY_CAL_TYPE.SetLookupParamValue("W_GROUP_CODE", "HOLIDAY_CAL_TYPE");
-            ILD_HOLIDAY_CAL_TYPE.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
-        }
     }
 }

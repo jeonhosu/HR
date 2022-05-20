@@ -50,9 +50,9 @@
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement4 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement5 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement5 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement8 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement13 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement10 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement15 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement12 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement1 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement2 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement3 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
@@ -69,13 +69,15 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement4 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement5 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISDataUtil.OraConnectionInfo oraConnectionInfo1 = new InfoSummit.Win.ControlAdv.ISDataUtil.OraConnectionInfo();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement14 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement16 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement5 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement6 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement7 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement8 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement9 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement11 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement12 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement13 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement14 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement4 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement3 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement2 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
@@ -90,6 +92,9 @@
             this.isOraConnection1 = new InfoSummit.Win.ControlAdv.ISOraConnection(this.components);
             this.isMessageAdapter1 = new InfoSummit.Win.ControlAdv.ISMessageAdapter(this.components);
             this.isGroupBox1 = new InfoSummit.Win.ControlAdv.ISGroupBox();
+            this.V_LANG_TYPE = new InfoSummit.Win.ControlAdv.ISEditAdv();
+            this.V_LANG_KOR = new InfoSummit.Win.ControlAdv.ISRadioButtonAdv();
+            this.V_LANG_ENG = new InfoSummit.Win.ControlAdv.ISRadioButtonAdv();
             this.RB_LAND = new InfoSummit.Win.ControlAdv.ISRadioButtonAdv();
             this.RB_ROAD = new InfoSummit.Win.ControlAdv.ISRadioButtonAdv();
             this.isPrompt1 = new InfoSummit.Win.ControlAdv.ISPrompt();
@@ -104,6 +109,8 @@
             this.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.isGroupBox1)).BeginInit();
             this.isGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.V_LANG_KOR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.V_LANG_ENG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RB_LAND)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RB_ROAD)).BeginInit();
             // 
@@ -462,15 +469,15 @@
             0,
             0});
             this.W_ADDRESS.PromptText = "Find Address";
-            isLanguageElement8.Default = "Find Address";
-            isLanguageElement8.SiteName = null;
-            isLanguageElement8.TL1_KR = "찾을 주소";
-            isLanguageElement8.TL2_CN = null;
-            isLanguageElement8.TL3_VN = null;
-            isLanguageElement8.TL4_JP = null;
-            isLanguageElement8.TL5_XAA = null;
+            isLanguageElement10.Default = "Find Address";
+            isLanguageElement10.SiteName = null;
+            isLanguageElement10.TL1_KR = "찾을 주소";
+            isLanguageElement10.TL2_CN = null;
+            isLanguageElement10.TL3_VN = null;
+            isLanguageElement10.TL4_JP = null;
+            isLanguageElement10.TL5_XAA = null;
             this.W_ADDRESS.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement8});
+            isLanguageElement10});
             this.W_ADDRESS.PromptWidth = 110;
             this.W_ADDRESS.Size = new System.Drawing.Size(482, 21);
             this.W_ADDRESS.TabIndex = 4;
@@ -506,15 +513,15 @@
             0,
             0});
             this.W_NUM.PromptText = "Address No";
-            isLanguageElement13.Default = "Address No";
-            isLanguageElement13.SiteName = null;
-            isLanguageElement13.TL1_KR = "(지번/건물) 번호";
-            isLanguageElement13.TL2_CN = null;
-            isLanguageElement13.TL3_VN = null;
-            isLanguageElement13.TL4_JP = null;
-            isLanguageElement13.TL5_XAA = null;
+            isLanguageElement15.Default = "Address No";
+            isLanguageElement15.SiteName = null;
+            isLanguageElement15.TL1_KR = "(지번/건물) 번호";
+            isLanguageElement15.TL2_CN = null;
+            isLanguageElement15.TL3_VN = null;
+            isLanguageElement15.TL4_JP = null;
+            isLanguageElement15.TL5_XAA = null;
             this.W_NUM.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement13});
+            isLanguageElement15});
             this.W_NUM.PromptWidth = 110;
             this.W_NUM.Size = new System.Drawing.Size(269, 21);
             this.W_NUM.TabIndex = 5;
@@ -551,15 +558,15 @@
             0,
             0});
             this.W_STRUCTURE_DESC.PromptText = "Structure Desc";
-            isLanguageElement10.Default = "Structure Desc";
-            isLanguageElement10.SiteName = null;
-            isLanguageElement10.TL1_KR = "건물명";
-            isLanguageElement10.TL2_CN = null;
-            isLanguageElement10.TL3_VN = null;
-            isLanguageElement10.TL4_JP = null;
-            isLanguageElement10.TL5_XAA = null;
+            isLanguageElement12.Default = "Structure Desc";
+            isLanguageElement12.SiteName = null;
+            isLanguageElement12.TL1_KR = "건물명";
+            isLanguageElement12.TL2_CN = null;
+            isLanguageElement12.TL3_VN = null;
+            isLanguageElement12.TL4_JP = null;
+            isLanguageElement12.TL5_XAA = null;
             this.W_STRUCTURE_DESC.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement10});
+            isLanguageElement12});
             this.W_STRUCTURE_DESC.PromptWidth = 110;
             this.W_STRUCTURE_DESC.Size = new System.Drawing.Size(269, 21);
             this.W_STRUCTURE_DESC.TabIndex = 6;
@@ -785,6 +792,9 @@
             this.isGroupBox1.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.isGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.isGroupBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.isGroupBox1.Controls.Add(this.V_LANG_KOR);
+            this.isGroupBox1.Controls.Add(this.V_LANG_ENG);
+            this.isGroupBox1.Controls.Add(this.V_LANG_TYPE);
             this.isGroupBox1.Controls.Add(this.W_ADDRESS_TYPE);
             this.isGroupBox1.Controls.Add(this.RB_LAND);
             this.isGroupBox1.Controls.Add(this.RB_ROAD);
@@ -799,17 +809,116 @@
             this.isGroupBox1.Name = "isGroupBox1";
             this.isGroupBox1.Padding = new System.Windows.Forms.Padding(0, 22, 0, 0);
             this.isGroupBox1.PromptText = "Inquiry condition";
-            isLanguageElement14.Default = "Inquiry condition";
-            isLanguageElement14.SiteName = null;
-            isLanguageElement14.TL1_KR = "조회 조건";
-            isLanguageElement14.TL2_CN = null;
-            isLanguageElement14.TL3_VN = null;
-            isLanguageElement14.TL4_JP = null;
-            isLanguageElement14.TL5_XAA = null;
+            isLanguageElement16.Default = "Inquiry condition";
+            isLanguageElement16.SiteName = null;
+            isLanguageElement16.TL1_KR = "조회 조건";
+            isLanguageElement16.TL2_CN = null;
+            isLanguageElement16.TL3_VN = null;
+            isLanguageElement16.TL4_JP = null;
+            isLanguageElement16.TL5_XAA = null;
             this.isGroupBox1.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement14});
+            isLanguageElement16});
             this.isGroupBox1.Size = new System.Drawing.Size(972, 90);
             this.isGroupBox1.TabIndex = 0;
+            // 
+            // V_LANG_TYPE
+            // 
+            this.V_LANG_TYPE.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.V_LANG_TYPE.ComboBoxValue = "";
+            this.V_LANG_TYPE.ComboData = null;
+            this.V_LANG_TYPE.CurrencyValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.V_LANG_TYPE.DataAdapter = null;
+            this.V_LANG_TYPE.DataColumn = null;
+            this.V_LANG_TYPE.DateTimeValue = new System.DateTime(2010, 3, 17, 0, 0, 0, 0);
+            this.V_LANG_TYPE.DoubleValue = 0D;
+            this.V_LANG_TYPE.EditValue = "";
+            this.V_LANG_TYPE.Location = new System.Drawing.Point(712, 25);
+            this.V_LANG_TYPE.LookupAdapter = null;
+            this.V_LANG_TYPE.Name = "V_LANG_TYPE";
+            this.V_LANG_TYPE.Nullable = true;
+            this.V_LANG_TYPE.NumberValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.V_LANG_TYPE.PercentValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.V_LANG_TYPE.PromptText = null;
+            this.V_LANG_TYPE.PromptVisible = false;
+            this.V_LANG_TYPE.ReadOnly = true;
+            this.V_LANG_TYPE.Size = new System.Drawing.Size(32, 21);
+            this.V_LANG_TYPE.TabIndex = 196;
+            this.V_LANG_TYPE.TabStop = false;
+            this.V_LANG_TYPE.TextValue = "";
+            this.V_LANG_TYPE.Visible = false;
+            // 
+            // V_LANG_KOR
+            // 
+            this.V_LANG_KOR.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.V_LANG_KOR.CheckedString = "LAND";
+            this.V_LANG_KOR.DataAdapter = null;
+            this.V_LANG_KOR.DataColumn = null;
+            this.V_LANG_KOR.Location = new System.Drawing.Point(833, 3);
+            this.V_LANG_KOR.MetroColor = System.Drawing.Color.Empty;
+            this.V_LANG_KOR.Name = "V_LANG_KOR";
+            this.V_LANG_KOR.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+            this.V_LANG_KOR.PromptText = "Kor";
+            isLanguageElement5.Default = "Kor";
+            isLanguageElement5.SiteName = null;
+            isLanguageElement5.TL1_KR = "한글";
+            isLanguageElement5.TL2_CN = null;
+            isLanguageElement5.TL3_VN = null;
+            isLanguageElement5.TL4_JP = null;
+            isLanguageElement5.TL5_XAA = null;
+            this.V_LANG_KOR.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement5});
+            this.V_LANG_KOR.RadioButtonValue = null;
+            this.V_LANG_KOR.RadioCheckedString = "KOR";
+            this.V_LANG_KOR.Size = new System.Drawing.Size(60, 20);
+            this.V_LANG_KOR.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007;
+            this.V_LANG_KOR.TabIndex = 194;
+            this.V_LANG_KOR.Text = "Kor";
+            this.V_LANG_KOR.ThemesEnabled = false;
+            this.V_LANG_KOR.Visible = false;
+            this.V_LANG_KOR.CheckChanged += new System.EventHandler(this.V_LANG_KOR_CheckChanged);
+            // 
+            // V_LANG_ENG
+            // 
+            this.V_LANG_ENG.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.V_LANG_ENG.CheckedString = "ENG";
+            this.V_LANG_ENG.DataAdapter = null;
+            this.V_LANG_ENG.DataColumn = null;
+            this.V_LANG_ENG.Location = new System.Drawing.Point(899, 3);
+            this.V_LANG_ENG.MetroColor = System.Drawing.Color.Empty;
+            this.V_LANG_ENG.Name = "V_LANG_ENG";
+            this.V_LANG_ENG.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+            this.V_LANG_ENG.PromptText = "Eng";
+            isLanguageElement6.Default = "Eng";
+            isLanguageElement6.SiteName = null;
+            isLanguageElement6.TL1_KR = "영문";
+            isLanguageElement6.TL2_CN = null;
+            isLanguageElement6.TL3_VN = null;
+            isLanguageElement6.TL4_JP = null;
+            isLanguageElement6.TL5_XAA = null;
+            this.V_LANG_ENG.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement6});
+            this.V_LANG_ENG.RadioButtonValue = null;
+            this.V_LANG_ENG.RadioCheckedString = "ENG";
+            this.V_LANG_ENG.Size = new System.Drawing.Size(60, 20);
+            this.V_LANG_ENG.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007;
+            this.V_LANG_ENG.TabIndex = 195;
+            this.V_LANG_ENG.TabStop = false;
+            this.V_LANG_ENG.Text = "Eng";
+            this.V_LANG_ENG.ThemesEnabled = false;
+            this.V_LANG_ENG.Visible = false;
+            this.V_LANG_ENG.CheckChanged += new System.EventHandler(this.V_LANG_KOR_CheckChanged);
             // 
             // RB_LAND
             // 
@@ -822,15 +931,15 @@
             this.RB_LAND.Name = "RB_LAND";
             this.RB_LAND.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
             this.RB_LAND.PromptText = "Land address";
-            isLanguageElement5.Default = "Land address";
-            isLanguageElement5.SiteName = null;
-            isLanguageElement5.TL1_KR = "지번 주소";
-            isLanguageElement5.TL2_CN = null;
-            isLanguageElement5.TL3_VN = null;
-            isLanguageElement5.TL4_JP = null;
-            isLanguageElement5.TL5_XAA = null;
+            isLanguageElement7.Default = "Land address";
+            isLanguageElement7.SiteName = null;
+            isLanguageElement7.TL1_KR = "지번 주소";
+            isLanguageElement7.TL2_CN = null;
+            isLanguageElement7.TL3_VN = null;
+            isLanguageElement7.TL4_JP = null;
+            isLanguageElement7.TL5_XAA = null;
             this.RB_LAND.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement5});
+            isLanguageElement7});
             this.RB_LAND.RadioButtonValue = null;
             this.RB_LAND.RadioCheckedString = "LAND";
             this.RB_LAND.Size = new System.Drawing.Size(119, 26);
@@ -852,15 +961,15 @@
             this.RB_ROAD.Name = "RB_ROAD";
             this.RB_ROAD.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
             this.RB_ROAD.PromptText = "Road address";
-            isLanguageElement6.Default = "Road address";
-            isLanguageElement6.SiteName = null;
-            isLanguageElement6.TL1_KR = "도로 주소";
-            isLanguageElement6.TL2_CN = null;
-            isLanguageElement6.TL3_VN = null;
-            isLanguageElement6.TL4_JP = null;
-            isLanguageElement6.TL5_XAA = null;
+            isLanguageElement8.Default = "Road address";
+            isLanguageElement8.SiteName = null;
+            isLanguageElement8.TL1_KR = "도로 주소";
+            isLanguageElement8.TL2_CN = null;
+            isLanguageElement8.TL3_VN = null;
+            isLanguageElement8.TL4_JP = null;
+            isLanguageElement8.TL5_XAA = null;
             this.RB_ROAD.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement6});
+            isLanguageElement8});
             this.RB_ROAD.RadioButtonValue = null;
             this.RB_ROAD.RadioCheckedString = "ROAD";
             this.RB_ROAD.Size = new System.Drawing.Size(119, 26);
@@ -879,15 +988,15 @@
             this.isPrompt1.Name = "isPrompt1";
             this.isPrompt1.PromptStyle = InfoSummit.Win.ControlAdv.ISUtil.Enum.PromptStyle.UnderLine;
             this.isPrompt1.PromptText = "";
-            isLanguageElement7.Default = "";
-            isLanguageElement7.SiteName = null;
-            isLanguageElement7.TL1_KR = null;
-            isLanguageElement7.TL2_CN = null;
-            isLanguageElement7.TL3_VN = null;
-            isLanguageElement7.TL4_JP = null;
-            isLanguageElement7.TL5_XAA = null;
+            isLanguageElement9.Default = "";
+            isLanguageElement9.SiteName = null;
+            isLanguageElement9.TL1_KR = null;
+            isLanguageElement9.TL2_CN = null;
+            isLanguageElement9.TL3_VN = null;
+            isLanguageElement9.TL4_JP = null;
+            isLanguageElement9.TL5_XAA = null;
             this.isPrompt1.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement7});
+            isLanguageElement9});
             this.isPrompt1.Size = new System.Drawing.Size(457, 30);
             this.isPrompt1.TabIndex = 190;
             this.isPrompt1.TabStop = false;
@@ -896,16 +1005,16 @@
             // 
             this.BTN_CLOSED.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.BTN_CLOSED.ButtonText = "Closed";
-            isLanguageElement9.Default = "Closed";
-            isLanguageElement9.SiteName = null;
-            isLanguageElement9.TL1_KR = "닫기";
-            isLanguageElement9.TL2_CN = null;
-            isLanguageElement9.TL3_VN = null;
-            isLanguageElement9.TL4_JP = null;
-            isLanguageElement9.TL5_XAA = null;
+            isLanguageElement11.Default = "Closed";
+            isLanguageElement11.SiteName = null;
+            isLanguageElement11.TL1_KR = "닫기";
+            isLanguageElement11.TL2_CN = null;
+            isLanguageElement11.TL3_VN = null;
+            isLanguageElement11.TL4_JP = null;
+            isLanguageElement11.TL5_XAA = null;
             this.BTN_CLOSED.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement9});
-            this.BTN_CLOSED.Location = new System.Drawing.Point(857, 57);
+            isLanguageElement11});
+            this.BTN_CLOSED.Location = new System.Drawing.Point(857, 59);
             this.BTN_CLOSED.Name = "BTN_CLOSED";
             this.BTN_CLOSED.Size = new System.Drawing.Size(85, 26);
             this.BTN_CLOSED.TabIndex = 9;
@@ -915,16 +1024,16 @@
             // 
             this.BTN_OK.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.BTN_OK.ButtonText = "Choose";
-            isLanguageElement11.Default = "Choose";
-            isLanguageElement11.SiteName = null;
-            isLanguageElement11.TL1_KR = "선택";
-            isLanguageElement11.TL2_CN = null;
-            isLanguageElement11.TL3_VN = null;
-            isLanguageElement11.TL4_JP = null;
-            isLanguageElement11.TL5_XAA = null;
+            isLanguageElement13.Default = "Choose";
+            isLanguageElement13.SiteName = null;
+            isLanguageElement13.TL1_KR = "선택";
+            isLanguageElement13.TL2_CN = null;
+            isLanguageElement13.TL3_VN = null;
+            isLanguageElement13.TL4_JP = null;
+            isLanguageElement13.TL5_XAA = null;
             this.BTN_OK.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement11});
-            this.BTN_OK.Location = new System.Drawing.Point(766, 57);
+            isLanguageElement13});
+            this.BTN_OK.Location = new System.Drawing.Point(766, 59);
             this.BTN_OK.Name = "BTN_OK";
             this.BTN_OK.Size = new System.Drawing.Size(85, 26);
             this.BTN_OK.TabIndex = 8;
@@ -934,16 +1043,16 @@
             // 
             this.BTN_FIND.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.BTN_FIND.ButtonText = "Find";
-            isLanguageElement12.Default = "Find";
-            isLanguageElement12.SiteName = null;
-            isLanguageElement12.TL1_KR = "찾기";
-            isLanguageElement12.TL2_CN = null;
-            isLanguageElement12.TL3_VN = null;
-            isLanguageElement12.TL4_JP = null;
-            isLanguageElement12.TL5_XAA = null;
+            isLanguageElement14.Default = "Find";
+            isLanguageElement14.SiteName = null;
+            isLanguageElement14.TL1_KR = "찾기";
+            isLanguageElement14.TL2_CN = null;
+            isLanguageElement14.TL3_VN = null;
+            isLanguageElement14.TL4_JP = null;
+            isLanguageElement14.TL5_XAA = null;
             this.BTN_FIND.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement12});
-            this.BTN_FIND.Location = new System.Drawing.Point(766, 27);
+            isLanguageElement14});
+            this.BTN_FIND.Location = new System.Drawing.Point(766, 30);
             this.BTN_FIND.Name = "BTN_FIND";
             this.BTN_FIND.Size = new System.Drawing.Size(176, 26);
             this.BTN_FIND.TabIndex = 7;
@@ -1085,6 +1194,8 @@
             this.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.isGroupBox1)).EndInit();
             this.isGroupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.V_LANG_KOR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.V_LANG_ENG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RB_LAND)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RB_ROAD)).EndInit();
 
@@ -1112,6 +1223,9 @@
         private InfoSummit.Win.ControlAdv.ISEditAdv V_CURRENT;
         private InfoSummit.Win.ControlAdv.ISButton BTN_NEXT;
         private InfoSummit.Win.ControlAdv.ISButton BTN_PRE;
+        private InfoSummit.Win.ControlAdv.ISEditAdv V_LANG_TYPE;
+        private InfoSummit.Win.ControlAdv.ISRadioButtonAdv V_LANG_KOR;
+        private InfoSummit.Win.ControlAdv.ISRadioButtonAdv V_LANG_ENG;
     }
 }
 

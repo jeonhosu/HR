@@ -549,6 +549,21 @@ namespace HRMF0516
             Set_Common_Parameter("JOB_CATEGORY", "Y");
         }
 
+        private void ilaPAY_TYPE_0_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            Set_Common_Parameter("PAY_TYPE", "Y");
+        }
+
+        private void ilaDEPT_0_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ildDEPT.SetLookupParamValue("W_USABLE_CHECK_YN", "Y");
+        }
+
+        private void ILA_OPERATING_UNIT_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ILD_OPERATING_UNIT.SetLookupParamValue("W_USABLE_CHECK_YN", "Y");
+        }
+
         #endregion
 
     }

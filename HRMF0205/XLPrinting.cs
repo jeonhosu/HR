@@ -659,16 +659,70 @@ namespace HRMF0205
             }
         }
 
+        private void XLContentWrite2(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, int pIndexRow, int pLINE)
+        {
+            //object vObject = null;
+            int vLINE = pLINE;
+            try
+            {
+                mPrinting.XLActiveSheet("Sheet1");
+
+                int vIndexDataColumn1 = pGrid.GetColumnToIndex("CHARGE_DATE");        //재직시작일
+                int vIndexDataColumn5 = pGrid.GetColumnToIndex("END_DATE");           //재직종료일
+                int vIndexDataColumn2 = pGrid.GetColumnToIndex("DEPT_NAME");          //소속 (부서)
+                int vIndexDataColumn3 = pGrid.GetColumnToIndex("POST_NAME");          //직위
+                int vIndexDataColumn4 = pGrid.GetColumnToIndex("OCPT_NAME");          //담당업무 (직무) 
+
+
+                //재직시작일
+                mPrinting.XLSetCell(pLINE, 5, pGrid.GetCellValue(pIndexRow, vIndexDataColumn1));
+                //재직종료일
+                mPrinting.XLSetCell(pLINE, 10, pGrid.GetCellValue(pIndexRow, vIndexDataColumn5));
+
+                //소속 --부서 
+                mPrinting.XLSetCell(pLINE, 15, pGrid.GetCellValue(pIndexRow, vIndexDataColumn2));
+
+                //직위
+                mPrinting.XLSetCell(pLINE, 25, pGrid.GetCellValue(pIndexRow, vIndexDataColumn3));
+
+                //직무
+                mPrinting.XLSetCell(pLINE, 31, pGrid.GetCellValue(pIndexRow, vIndexDataColumn4));
+
+
+                pLINE = pLINE + 1;
+                //재직기간(최초일자)
+                //if(pGrid.GetCellValue(pIndexRow, vIndexDataColumn9) != null)
+                //{
+                //    object test1 = ConvertDateTime(pGrid.GetCellValue(pIndexRow, vIndexDataColumn9));
+                //mPrinting.XLSetCell(23, 9, pGrid.GetCellValue(pIndexRow, vIndexDataColumn9));
+                //}
+                //else
+                //    mPrinting.XLSetCell(30, 13, "");
+
+                //재직기간(최종일자)
+                //if (pGrid.GetCellValue(pIndexRow, vIndexDataColumn10) != null)
+                //{
+                //    object test2 = ConvertDateTime(pGrid.GetCellValue(pIndexRow, vIndexDataColumn10));
+
+
+            }
+            catch (System.Exception ex)
+            {
+                mMessageError = string.Format("{0}", ex.Message);
+            }
+        }
+
+
         #endregion;
 
         #region ----- Excel Wirte Methods ----
 
-        public int XLWirte(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, int nPrintTotalCnt, int pTerritory, string pPeriodFrom, /*string pPeriodTo,*/ string pUserName, string pCaption)
+        public int XLWirte(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid2, int nPrintTotalCnt, int pTerritory, string pPeriodFrom, /*string pPeriodTo,*/ string pUserName, string pCaption, string pLang)
         {
             string vMessageText = string.Empty;
 
             //int vPageNumber = 0;
-
+            int nLine = 37;
             try
             {
                 //int vTotalRow = pGrid.RowCount; //Grid의 총 행수
@@ -677,12 +731,21 @@ namespace HRMF0205
                 {
                     //vPageNumber++;
                     //[Sheet2]내용을 [Sheet1]에 붙여넣기
-                    mSumPrintingLineCopy = CopyAndPaste(mSumPrintingLineCopy);
+                    mSumPrintingLineCopy = CopyAndPaste(mSumPrintingLineCopy, pLang);
 
                     //[Content_Printing]
                     XLContentWrite(pGrid, 0);
 
-                  
+                    for (int nPrintCnt2 = 0; nPrintCnt2 < 4; nPrintCnt2++)
+                    {
+
+                        //[Content_Printing]
+                        XLContentWrite2(pGrid2, nPrintCnt2, nLine);  //LINE 
+
+                        nLine = nLine + 1;
+
+                    }
+
                 }                
             }
             catch
@@ -699,7 +762,7 @@ namespace HRMF0205
         #region ----- Excel Copy&Paste Methods ----
 
         //[Sheet2]내용을 [Sheet1]에 붙여넣기
-        private int CopyAndPaste(int pCopySumPrintingLine)
+        private int CopyAndPaste(int pCopySumPrintingLine, string pLang)
         {
             int vPrintHeaderColumnSTART = mXLColumnAreaSTART; //복사되어질 쉬트의 폭, 시작열
             int vPrintHeaderColumnEND = mXLColumnAreaEND;     //복사되어질 쉬트의 폭, 종료열
@@ -711,8 +774,15 @@ namespace HRMF0205
                 int vCopyPrintingRowSTART = vCopySumPrintingLine;
                 vCopySumPrintingLine = vCopySumPrintingLine + mMaxIncrementCopy;
                 int vCopyPrintingRowEnd = vCopySumPrintingLine;
-
-                mPrinting.XLActiveSheet("Destination"); //mPrinting.XLActiveSheet(2);
+                if (pLang == "US")
+                {
+                    mPrinting.XLActiveSheet("Destination2"); //mPrinting.XLActiveSheet(2);
+                }
+                else
+                {
+                    mPrinting.XLActiveSheet("Destination"); //mPrinting.XLActiveSheet(2);
+                }
+               //mPrinting.XLActiveSheet("Destination"); //mPrinting.XLActiveSheet(2);
                 object vRangeSource = mPrinting.XLGetRange(vPrintHeaderColumnSTART, 1, mMaxIncrementCopy, vPrintHeaderColumnEND); //[원본], [Sheet2.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
 
                 mPrinting.XLActiveSheet("Sheet1"); //mPrinting.XLActiveSheet(1);

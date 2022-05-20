@@ -45,17 +45,20 @@ namespace HRMF0220
             ildCORP.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
                         
             // LOOKUP DEFAULT VALUE SETTING - CORP
-            IDC_DEFAULT_CORP.SetCommandParamValue("W_DEPT_CONTROL_YN", "Y");
-            IDC_DEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "Y");
-            IDC_DEFAULT_CORP.ExecuteNonQuery();
-            CORP_NAME_0.EditValue = IDC_DEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
-            CORP_ID_0.EditValue = IDC_DEFAULT_CORP.GetCommandParamValue("O_CORP_ID");
+            idcDEFAULT_CORP.SetCommandParamValue("W_DEPT_CONTROL_YN", "Y");
+            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "Y");
+            idcDEFAULT_CORP.ExecuteNonQuery();
+            W_CORP_NAME.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
+            W_CORP_ID.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_ID");
+
+            W_CORP_NAME.BringToFront();
         }
 
         private void Insert_Dispatch_Person()
         {
-            IGR_PERSON_INFO.SetCellValue("CORP_ID", CORP_ID_0.EditValue);
-            IGR_PERSON_INFO.SetCellValue("CORP_NAME", CORP_NAME_0.EditValue); 
+            IGR_PERSON_INFO.SetCellValue("CORP_ID", W_CORP_ID.EditValue);
+            IGR_PERSON_INFO.SetCellValue("CORP_NAME", W_CORP_NAME.EditValue);
+            IGR_PERSON_INFO.SetCellValue("ORI_JOIN_DATE", DateTime.Today);
             IGR_PERSON_INFO.SetCellValue("JOIN_DATE", DateTime.Today);
             IGR_PERSON_INFO.SetCellValue("PAY_DATE", DateTime.Today);
 
@@ -76,10 +79,10 @@ namespace HRMF0220
 
         private void Search_DB()
         {
-            if (iString.ISNull(CORP_ID_0.EditValue) == string.Empty)
+            if (iString.ISNull(W_CORP_ID.EditValue) == string.Empty)
             {// 업체.
                 MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10001"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                CORP_NAME_0.Focus();
+                W_CORP_NAME.Focus();
                 return;
             }
 
@@ -185,8 +188,7 @@ namespace HRMF0220
                     }
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Update)
-                {
-                    
+                {                    
                     IDA_PERSON.Update();
                     
                 }
@@ -221,13 +223,11 @@ namespace HRMF0220
         {
             DefaultCorporation();
 
-            CORP_NAME_0.BringToFront();
-
             //재직구분.
             IDC_DV_COMMON.SetCommandParamValue("W_GROUP_CODE", "EMPLOYE_TYPE");
             IDC_DV_COMMON.ExecuteNonQuery();
-            EMPLOYE_TYPE_0.EditValue = IDC_DV_COMMON.GetCommandParamValue("O_CODE");
-            EMPLOYE_TYPE_NAME_0.EditValue = IDC_DV_COMMON.GetCommandParamValue("O_CODE_NAME");
+            W_EMPLOYE_TYPE.EditValue = IDC_DV_COMMON.GetCommandParamValue("O_CODE");
+            W_EMPLOYE_TYPE_NAME.EditValue = IDC_DV_COMMON.GetCommandParamValue("O_CODE_NAME");
 
             IDA_PERSON.FillSchema();
         }
@@ -316,12 +316,12 @@ namespace HRMF0220
             //    e.Cancel = true;
             //    return;
             //}
-            if (iString.ISNull(e.Row["SEX_TYPE"]) == string.Empty)
-            {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10037", "&&VALUE:=Sex Type"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                e.Cancel = true;
-                return;
-            }
+            //if (iString.ISNull(e.Row["SEX_TYPE"]) == string.Empty)
+            //{
+            //    MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10037", "&&VALUE:=Sex Type"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    e.Cancel = true;
+            //    return;
+            //}
             //if (e.Row["JOIN_ID"] == DBNull.Value)
             //{
             //    MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10037", "&&VALUE:=입사구분"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -392,16 +392,10 @@ namespace HRMF0220
 
         #region ----- LOOKUP EVENT -----
 
-        private void ilaCORP_0_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
-        {
-            ildCORP.SetLookupParamValue("W_DEPT_CONTROL_YN", "Y");
-            ildCORP.SetLookupParamValue("W_ENABLED_FLAG", "N");
-        }
-
         private void ilaCORP_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
             ildCORP.SetLookupParamValue("W_DEPT_CONTROL_YN", "Y");
-            ildCORP.SetLookupParamValue("W_ENABLED_FLAG", "Y");
+            ildCORP.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
         }
          
         private void ilaEMPLOYE_TYPE_0_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
@@ -452,6 +446,11 @@ namespace HRMF0220
         private void ilaRETIRE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
             Set_Common_Parameter("RETIRE", "Y");
+        }
+
+        private void ilaDEPT_3_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ildDEPT_2.SetLookupParamValue("W_USABLE_CHECK_YN", "Y");
         }
 
         #endregion

@@ -23,6 +23,7 @@ namespace HRMF0201
 
         private string mMessageError = string.Empty;
         private string mCARD_VALUE = string.Empty;
+        bool mSUB_SHOW_FLAG = false;
 
         #endregion;
 
@@ -30,15 +31,24 @@ namespace HRMF0201
 
         private InfoSummit.Win.ControlAdv.ISFileTransferAdv mFileTransferAdv;
         private ItemImageInfomationFTP mImageFTP;
+        private PersonDocFTP mDocFTP;
 
         private string mFTP_Source_Directory = string.Empty;            // ftp 소스 디렉토리.
         private string mClient_Base_Path = System.Windows.Forms.Application.StartupPath;    // 현재 디렉토리.
+
         private string mClient_Directory = string.Empty;            // 실제 디렉토리 
         private string mClient_ImageDirectory = string.Empty;       // 클라이언트 이미지 디렉토리.
         private string mFileExtension = ".JPG";                     // 확장자명.
 
+        private string mClient_DocDirectory = string.Empty;         // 클라이언트 문서 디렉토리.
         private bool mIsGetInformationFTP = false;                  // FTP 정보 상태.
+        private bool mIsGetPersonDocFTP = false;                    // 사원 정보 FTP 정보 상태.
         private bool mIsFormLoad = false;                           // NEWMOVE 이벤트 제어.
+
+        private string mPerson_ImageLocation;                       //이미지 로케이션.
+
+        bool mIsClickInquiryDetail = false;
+        int mInquiryDetailPreX, mInquiryDetailPreY; //마우스 이동 제어.
 
         #endregion;
 
@@ -84,48 +94,48 @@ namespace HRMF0201
 
         private void isSearch_Sub_DB()
         {// 서브 tab 조회.
-            if (iedPERSON_ID.EditValue == null)
+            if (PERSON_ID.EditValue == null)
             {
                 return;
             }
-            idaBODY.SetSelectParamValue("W_PERSON_ID", iedPERSON_ID.EditValue);
+            idaBODY.SetSelectParamValue("W_PERSON_ID", PERSON_ID.EditValue);
             idaBODY.Fill();
 
-            idaARMY.SetSelectParamValue("W_PERSON_ID", iedPERSON_ID.EditValue);
+            idaARMY.SetSelectParamValue("W_PERSON_ID", PERSON_ID.EditValue);
             idaARMY.Fill();
 
             idaFAMILY.SetSelectParamValue("W_SOB_ID", isAppInterfaceAdv1.SOB_ID);
             idaFAMILY.SetSelectParamValue("W_ORG_ID", isAppInterfaceAdv1.ORG_ID);
-            idaFAMILY.SetSelectParamValue("W_PERSON_ID", iedPERSON_ID.EditValue);
+            idaFAMILY.SetSelectParamValue("W_PERSON_ID", PERSON_ID.EditValue);
             idaFAMILY.Fill();
 
             idaHISTORY.SetSelectParamValue("W_HISTORY_HEADER_ID", DBNull.Value);
             idaHISTORY.SetSelectParamValue("W_DEPT_ID", DBNull.Value);
-            idaHISTORY.SetSelectParamValue("W_PERSON_ID", iedPERSON_ID.EditValue);
+            idaHISTORY.SetSelectParamValue("W_PERSON_ID", PERSON_ID.EditValue);
             idaHISTORY.Fill();
 
-            idaCAREER.SetSelectParamValue("W_PERSON_ID", iedPERSON_ID.EditValue);
+            idaCAREER.SetSelectParamValue("W_PERSON_ID", PERSON_ID.EditValue);
             idaCAREER.Fill();
 
-            idaSCHOLARSHIP.SetSelectParamValue("W_PERSON_ID", iedPERSON_ID.EditValue);
+            idaSCHOLARSHIP.SetSelectParamValue("W_PERSON_ID", PERSON_ID.EditValue);
             idaSCHOLARSHIP.Fill();
 
-            idaEDUCATION.SetSelectParamValue("W_PERSON_ID", iedPERSON_ID.EditValue);
+            idaEDUCATION.SetSelectParamValue("W_PERSON_ID", PERSON_ID.EditValue);
             idaEDUCATION.Fill();
 
-            idaRESULT.SetSelectParamValue("W_PERSON_ID", iedPERSON_ID.EditValue);
+            idaRESULT.SetSelectParamValue("W_PERSON_ID", PERSON_ID.EditValue);
             idaRESULT.Fill();
 
-            idaLICENSE.SetSelectParamValue("W_PERSON_ID", iedPERSON_ID.EditValue);
+            idaLICENSE.SetSelectParamValue("W_PERSON_ID", PERSON_ID.EditValue);
             idaLICENSE.Fill();
 
-            idaFOREIGN_LANGUAGE.SetSelectParamValue("W_PERSON_ID", iedPERSON_ID.EditValue);
+            idaFOREIGN_LANGUAGE.SetSelectParamValue("W_PERSON_ID", PERSON_ID.EditValue);
             idaFOREIGN_LANGUAGE.Fill();
 
-            idaREWARD_PUNISHMENT.SetSelectParamValue("W_PERSON_ID", iedPERSON_ID.EditValue);
+            idaREWARD_PUNISHMENT.SetSelectParamValue("W_PERSON_ID", PERSON_ID.EditValue);
             idaREWARD_PUNISHMENT.Fill();
 
-            idaREFERENCE.SetSelectParamValue("W_PERSON_ID", iedPERSON_ID.EditValue);
+            idaREFERENCE.SetSelectParamValue("W_PERSON_ID", PERSON_ID.EditValue);
             idaREFERENCE.Fill();
 
         }
@@ -135,7 +145,7 @@ namespace HRMF0201
         private bool isPerson_ID_Validate()
         {// 사원번호 존재 여부 체크.
             bool ibReturn_Value = false;
-            if (iedPERSON_ID.EditValue == null)
+            if (PERSON_ID.EditValue == null)
             {
                 ibReturn_Value = false;
                 MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10028"), "Warning", MessageBoxButtons.OK,MessageBoxIcon.Warning);  // 사원정보는 필수.
@@ -434,11 +444,11 @@ namespace HRMF0201
         {
             // Lookup SETTING
             ildCORP.SetLookupParamValue("W_DEPT_CONTROL_YN", "Y");
-            ildCORP.SetLookupParamValue("W_ENABLED_FLAG_YN", "N");
+            ildCORP.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
 
             // LOOKUP DEFAULT VALUE SETTING - CORP
             idcDEFAULT_CORP.SetCommandParamValue("W_DEPT_CONTROL_YN", "Y");
-            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "N");
+            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "Y");
             idcDEFAULT_CORP.ExecuteNonQuery();
             W_CORP_NAME.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
             W_CORP_ID.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_ID");
@@ -546,35 +556,92 @@ namespace HRMF0201
             iedNAME.Focus();
         }
 
-        private void Sub_Form_Visible(bool pShow_Flag, string pSub_Form)
+        private void Sub_Form_Visible(bool pShow_Flag, string pSub_Panel)
         {
-            if(pShow_Flag == false)
+            if (mSUB_SHOW_FLAG == true && pShow_Flag == true)
             {
-                GB_IC_NUM.Visible = false;
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_10069"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (pShow_Flag == true)
+            {
+                try
+                {
+                    if (pSub_Panel == "IC_CARD")
+                    {
+                        GB_IC_NUM.Left = 251;
+                        GB_IC_NUM.Top = 277;
 
-                GB_CONDITION.Enabled = true;
-                SC_MAIN.Enabled = true;
+                        GB_IC_NUM.Width = 584;
+                        GB_IC_NUM.Height = 197;
+
+                        GB_IC_NUM.Border3DStyle = Border3DStyle.Bump;
+                        GB_IC_NUM.BorderStyle = BorderStyle.Fixed3D;
+
+                        GB_IC_NUM.BringToFront();
+                        GB_IC_NUM.Visible = true;
+                    }
+                    else if (pSub_Panel == "PERSON_DOC")
+                    {
+                        GB_DOC_ATT.Left = 340;
+                        GB_DOC_ATT.Top = 100;
+
+                        GB_DOC_ATT.Width = 415;
+                        GB_DOC_ATT.Height = 230;
+
+                        GB_DOC_ATT.Border3DStyle = Border3DStyle.Bump;
+                        GB_DOC_ATT.BorderStyle = BorderStyle.Fixed3D;
+
+                        GB_DOC_ATT.Controls[0].MouseDown += GB_DOC_ATT_MouseDown;
+                        GB_DOC_ATT.Controls[0].MouseMove += GB_DOC_ATT_MouseMove;
+                        GB_DOC_ATT.Controls[0].MouseUp += GB_DOC_ATT_MouseUp;
+                        GB_DOC_ATT.Controls[1].MouseDown += GB_DOC_ATT_MouseDown;
+                        GB_DOC_ATT.Controls[1].MouseMove += GB_DOC_ATT_MouseMove;
+                        GB_DOC_ATT.Controls[1].MouseUp += GB_DOC_ATT_MouseUp;
+                        GB_DOC_ATT.BringToFront();
+                        GB_DOC_ATT.Visible = true;
+                    }
+                    mSUB_SHOW_FLAG = true;
+                }
+                catch
+                {
+                    mSUB_SHOW_FLAG = false;
+                }
+                GB_CONDITION.Enabled = false;
+                SC_MAIN.Enabled = false;
             }
             else
             {
-                GB_CONDITION.Enabled = false;
-                SC_MAIN.Enabled = false;
-
-                if (pSub_Form == "IC_CARD")
+                try
                 {
-                    GB_IC_NUM.Left = 251;
-                    GB_IC_NUM.Top = 277; 
-
-                    GB_IC_NUM.Width = 584;
-                    GB_IC_NUM.Height = 197;
-
-                    GB_IC_NUM.Border3DStyle = Border3DStyle.Bump;
-                    GB_IC_NUM.BorderStyle = BorderStyle.Fixed3D;
-
-                    GB_IC_NUM.BringToFront();
-                    GB_IC_NUM.Visible = true;
+                    if (pSub_Panel == "IC_CARD")
+                    {
+                        GB_IC_NUM.Visible = false;
+                    }
+                    else if (pSub_Panel == "PERSON_DOC")
+                    {
+                        GB_DOC_ATT.Visible = false;
+                    }
+                    else
+                    {
+                        GB_IC_NUM.Visible = false;
+                        GB_DOC_ATT.Visible = false;
+                    }
+                    mSUB_SHOW_FLAG = false;
                 }
-            }
+                catch
+                {
+                    mSUB_SHOW_FLAG = false;
+                }
+                GB_CONDITION.Enabled = true;
+                SC_MAIN.Enabled = true;
+            } 
+        }
+
+        private void Init_Sub_Panel(bool pShow_Flag, string pSub_Panel)
+        {
+            
+            
         }
 
         #endregion
@@ -603,7 +670,7 @@ namespace HRMF0201
                             return;
                         }
                         idaBODY.AddOver();
-                        iedB_PERSON_ID.EditValue = iedPERSON_ID.EditValue;      //사원id copy
+                        iedB_PERSON_ID.EditValue = PERSON_ID.EditValue;      //사원id copy
                     }
                     else if (idaARMY.IsFocused)
                     {// 병역사항
@@ -612,7 +679,7 @@ namespace HRMF0201
                             return;
                         }
                         idaARMY.AddOver();
-                        iedA_PERSON_ID.EditValue = iedPERSON_ID.EditValue;      //사원id copy
+                        iedA_PERSON_ID.EditValue = PERSON_ID.EditValue;      //사원id copy
                     }
                     else if (idaFAMILY.IsFocused)
                     {// 가족사항
@@ -621,7 +688,7 @@ namespace HRMF0201
                             return;
                         }
                         idaFAMILY.AddOver();
-                        igrFAMILY.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);    //사원id copy
+                        igrFAMILY.SetCellValue("PERSON_ID", PERSON_ID.EditValue);    //사원id copy
                         igrFAMILY.SetCellValue("YEAR_ADJUST_YN", "Y");                  //정산여부. 
                     }
                     else if (idaCAREER.IsFocused)
@@ -631,7 +698,7 @@ namespace HRMF0201
                             return;
                         }
                         idaCAREER.AddOver();
-                        igrCAREER.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrCAREER.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaSCHOLARSHIP.IsFocused)
                     {// 학력사항
@@ -640,7 +707,7 @@ namespace HRMF0201
                             return;
                         }
                         idaSCHOLARSHIP.AddOver();
-                        igrSCHOLARSHIP.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrSCHOLARSHIP.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaEDUCATION.IsFocused)
                     {// 교육사항
@@ -649,7 +716,7 @@ namespace HRMF0201
                             return;
                         }
                         idaEDUCATION.AddOver();
-                        igrEDUCATION.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrEDUCATION.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaRESULT.IsFocused)
                     {// 평가사항
@@ -658,7 +725,7 @@ namespace HRMF0201
                             return;
                         }
                         idaRESULT.AddOver();
-                        igrRESULT.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrRESULT.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaLICENSE.IsFocused)
                     {// 자격사항
@@ -667,7 +734,7 @@ namespace HRMF0201
                             return;
                         }
                         idaLICENSE.AddOver();
-                        igrLICENSE.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrLICENSE.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaFOREIGN_LANGUAGE.IsFocused)
                     {// 어학사항
@@ -676,7 +743,7 @@ namespace HRMF0201
                             return;
                         }
                         idaFOREIGN_LANGUAGE.AddOver();
-                        igrFOREIGN_LANGUAGE.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrFOREIGN_LANGUAGE.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaREWARD_PUNISHMENT.IsFocused)
                     {// 상벌사항
@@ -685,7 +752,7 @@ namespace HRMF0201
                             return;
                         }
                         idaREWARD_PUNISHMENT.AddOver();
-                        igrREWARD_PUNISHMENT.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrREWARD_PUNISHMENT.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaREFERENCE.IsFocused)
                     {// 신원보증
@@ -694,7 +761,7 @@ namespace HRMF0201
                             return;
                         }
                         idaREFERENCE.AddOver();
-                        iedR_PERSON_ID.EditValue = iedPERSON_ID.EditValue;      //사원id copy
+                        iedR_PERSON_ID.EditValue = PERSON_ID.EditValue;      //사원id copy
                     }
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.AddUnder)
@@ -711,7 +778,7 @@ namespace HRMF0201
                             return;
                         }
                         idaBODY.AddUnder();
-                        iedB_PERSON_ID.EditValue = iedPERSON_ID.EditValue;      //사원id copy
+                        iedB_PERSON_ID.EditValue = PERSON_ID.EditValue;      //사원id copy
                     }
                     else if (idaARMY.IsFocused)
                     {// 병역사항
@@ -720,7 +787,7 @@ namespace HRMF0201
                             return;
                         }
                         idaARMY.AddUnder();
-                        iedA_PERSON_ID.EditValue = iedPERSON_ID.EditValue;      //사원id copy
+                        iedA_PERSON_ID.EditValue = PERSON_ID.EditValue;      //사원id copy
                     }
                     else if (idaFAMILY.IsFocused)
                     {// 가족사항
@@ -729,7 +796,7 @@ namespace HRMF0201
                             return;
                         }
                         idaFAMILY.AddUnder();
-                        igrFAMILY.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);    //사원id copy
+                        igrFAMILY.SetCellValue("PERSON_ID", PERSON_ID.EditValue);    //사원id copy
                         igrFAMILY.SetCellValue("YEAR_ADJUST_YN", "Y");                  //정산여부. 
                     }
                     else if (idaCAREER.IsFocused)
@@ -739,7 +806,7 @@ namespace HRMF0201
                             return;
                         }
                         idaCAREER.AddUnder();
-                        igrCAREER.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrCAREER.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaSCHOLARSHIP.IsFocused)
                     {// 학력사항
@@ -748,7 +815,7 @@ namespace HRMF0201
                             return;
                         }
                         idaSCHOLARSHIP.AddUnder();
-                        igrSCHOLARSHIP.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrSCHOLARSHIP.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaEDUCATION.IsFocused)
                     {// 교육사항
@@ -757,7 +824,7 @@ namespace HRMF0201
                             return;
                         }
                         idaEDUCATION.AddUnder();
-                        igrEDUCATION.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrEDUCATION.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaRESULT.IsFocused)
                     {// 평가사항
@@ -766,7 +833,7 @@ namespace HRMF0201
                             return;
                         }
                         idaRESULT.AddUnder();
-                        igrRESULT.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrRESULT.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaLICENSE.IsFocused)
                     {// 자격사항
@@ -775,7 +842,7 @@ namespace HRMF0201
                             return;
                         }
                         idaLICENSE.AddUnder();
-                        igrLICENSE.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrLICENSE.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaFOREIGN_LANGUAGE.IsFocused)
                     {// 어학사항
@@ -784,7 +851,7 @@ namespace HRMF0201
                             return;
                         }
                         idaFOREIGN_LANGUAGE.AddUnder();
-                        igrFOREIGN_LANGUAGE.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrFOREIGN_LANGUAGE.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaREWARD_PUNISHMENT.IsFocused)
                     {// 상벌사항
@@ -793,7 +860,7 @@ namespace HRMF0201
                             return;
                         }
                         idaREWARD_PUNISHMENT.AddUnder();
-                        igrREWARD_PUNISHMENT.SetCellValue("PERSON_ID", iedPERSON_ID.EditValue);      //사원id copy
+                        igrREWARD_PUNISHMENT.SetCellValue("PERSON_ID", PERSON_ID.EditValue);      //사원id copy
                     }
                     else if (idaREFERENCE.IsFocused)
                     {// 신원보증
@@ -802,7 +869,7 @@ namespace HRMF0201
                             return;
                         }
                         idaREFERENCE.AddUnder();
-                        iedR_PERSON_ID.EditValue = iedPERSON_ID.EditValue;      //사원id copy
+                        iedR_PERSON_ID.EditValue = PERSON_ID.EditValue;      //사원id copy
                     }
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Update)
@@ -999,9 +1066,16 @@ namespace HRMF0201
             mIsGetInformationFTP = GetInfomationFTP();
             if (mIsGetInformationFTP == true)
             {
-                MakeDirectory();
-                FTPInitializtion();
+                MakeDirectory("PERSON_PIC");
+                FTPInitializtion("PERSON_PIC");
             }
+
+            mIsGetPersonDocFTP = GetPersonDocFTP();
+            if(mIsGetPersonDocFTP)
+            {
+                MakeDirectory("PERSON_DOC"); 
+            } 
+
             mIsFormLoad = false;
 
             IDA_PERSON.FillSchema();
@@ -1219,7 +1293,7 @@ namespace HRMF0201
 
         private void BTN_IC_CARD_NUM_ButtonClick(object pSender, EventArgs pEventArgs)
         {
-            if(iString.ISNull(iedPERSON_ID.EditValue) == String.Empty)
+            if(iString.ISNull(PERSON_ID.EditValue) == String.Empty)
             {
                 return;
             }
@@ -1356,12 +1430,12 @@ namespace HRMF0201
                 e.Cancel = true;
                 return;
             }
-            if (string.IsNullOrEmpty(e.Row["REPRE_NUM"].ToString()))
-            {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10037", "&&VALUE:=Repre Num(주민번호)"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                e.Cancel = true;
-                return;
-            }
+            //if (string.IsNullOrEmpty(e.Row["REPRE_NUM"].ToString()))
+            //{
+            //    MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10037", "&&VALUE:=Repre Num(주민번호)"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    e.Cancel = true;
+            //    return;
+            //}
             if (string.IsNullOrEmpty(e.Row["SEX_TYPE"].ToString()))
             {
                 MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10037", "&&VALUE:=Sex Type(성별)"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -1868,6 +1942,8 @@ namespace HRMF0201
                 return;
             }
 
+            DOC_ATT_FLAG(pBindingManager.DataRow["PERSON_NUM"]);  
+
             if (mIsFormLoad == true)
             {
                 return;
@@ -1890,7 +1966,8 @@ namespace HRMF0201
 
         private void ilaCORP_0_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
-            ildCORP.SetLookupParamValue("W_ENABLED_FLAG", "N");
+            ildCORP.SetLookupParamValue("W_CORP_TYPE", "A");
+            ildCORP.SetLookupParamValue("W_ENABLED_FLAG", "Y");
         }
 
         private void ilaCORP_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
@@ -1920,17 +1997,17 @@ namespace HRMF0201
             }
             ildDEPT.SetLookupParamValue("W_CORP_ID", W_CORP_ID.EditValue);
             ildDEPT.SetLookupParamValue("W_DEPT_LEVEL", DBNull.Value);
-            ildDEPT.SetLookupParamValue("W_USABLE_CHECK_YN", "N");
+            ildDEPT.SetLookupParamValue("W_USABLE_CHECK_YN", "Y");
         }
 
         private void ilaEMPLOYE_TYPE_0_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
-            isSetCommonLookUpParameter("EMPLOYE_TYPE", null, "N");
+            isSetCommonLookUpParameter("EMPLOYE_TYPE", null, "Y");
         }
 
         private void ILA_CONTRACT_TYPE_0_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
-            isSetCommonLookUpParameter("CONTRACT_TYPE", null, "N");
+            isSetCommonLookUpParameter("CONTRACT_TYPE", null, "Y");
         }
         
         private void ILA_CONTRACT_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
@@ -2268,53 +2345,33 @@ namespace HRMF0201
         #region ----- is View Item Image Method -----
 
         private void isViewItemImage()
-        {
-            if (mIsFormLoad == true)
-            {
-                ipbPERSON.ImageLocation = string.Empty;
-                return;
-            }
-
-            bool isView = false;
-            string vDownLoadFile = string.Empty;
-
-            if (iString.ISNull(iedPERSON_NUM.EditValue) == string.Empty)
-            {
-                ipbPERSON.ImageLocation = string.Empty;
-                return;
-            }
-
-            string vPersonNumber = iedPERSON_NUM.EditValue as string;
-            string vTargetFileName = string.Format("{0}{1}", vPersonNumber.ToUpper(), mFileExtension);
-
-            bool isDown = DownLoadItem(vTargetFileName);
-            //if (isDown == false)
-            //{
-            //    //파일 실패시 소문자//
-            //    isDown = DownLoadItem(vTargetFileName.ToLower());
-            //}
-
-            if (isDown == true)
-            {
-                vDownLoadFile = string.Format("{0}\\{1}", mClient_ImageDirectory, vTargetFileName);
-                isView = ImageView(vDownLoadFile);
-            }
-            else
-            {
-                ipbPERSON.ImageLocation = string.Empty;
-            }
+        { 
+            ipbPERSON.ImageLocation = string.Empty;
+            ipbPERSON.ImageLocation = string.Format("{0}{1}.JPG", mPerson_ImageLocation, PERSON_NUM.EditValue);
+            return; 
         }
 
         #endregion;
 
         #region ----- Make Directory ----
 
-        private void MakeDirectory()
+        private void MakeDirectory(string pFTP_Type)
         {
-            System.IO.DirectoryInfo vClient_ImageDirectory = new System.IO.DirectoryInfo(mClient_ImageDirectory);
-            if (vClient_ImageDirectory.Exists == false) //있으면 True, 없으면 False
+            if (pFTP_Type.Equals("PERSON_DOC"))
             {
-                vClient_ImageDirectory.Create();
+                System.IO.DirectoryInfo vClient_Directory = new System.IO.DirectoryInfo(mClient_DocDirectory);
+                if (vClient_Directory.Exists == false) //있으면 True, 없으면 False
+                {
+                    vClient_Directory.Create();
+                }
+            }
+            else
+            {
+                System.IO.DirectoryInfo vClient_Directory = new System.IO.DirectoryInfo(mClient_ImageDirectory);
+                if (vClient_Directory.Exists == false) //있으면 True, 없으면 False
+                {
+                    vClient_Directory.Create();
+                }
             }
         }
 
@@ -2346,6 +2403,23 @@ namespace HRMF0201
 
         private bool GetInfomationFTP()
         {
+            //사원사진 로케이션//
+            mPerson_ImageLocation = "";
+            try
+            {
+                idcFTP_INFO.SetCommandParamValue("W_FTP_CODE", "PERSON_PIC_VIEW");
+                idcFTP_INFO.ExecuteNonQuery();
+
+                mPerson_ImageLocation = string.Format("http://{0}:{1}{2}", idcFTP_INFO.GetCommandParamValue("O_HOST_IP")
+                                                                    , idcFTP_INFO.GetCommandParamValue("O_HOST_PORT")
+                                                                    , idcFTP_INFO.GetCommandParamValue("O_HOST_FOLDER")); 
+            }
+            catch (System.Exception ex)
+            {
+                isAppInterfaceAdv1.OnAppMessage(ex.Message);
+                System.Windows.Forms.Application.DoEvents();
+            }
+
             bool isGet = false;
             try
             {
@@ -2377,24 +2451,77 @@ namespace HRMF0201
             return isGet;
         }
 
+        private bool GetPersonDocFTP()
+        {
+            bool isGet = false;
+            try
+            {
+                idcFTP_INFO.SetCommandParamValue("W_FTP_CODE", "PERSON_DOC");
+                idcFTP_INFO.ExecuteNonQuery();
+                mDocFTP = new PersonDocFTP();
+
+                mDocFTP.Host = iString.ISNull(idcFTP_INFO.GetCommandParamValue("O_HOST_IP"));
+                mDocFTP.Port = iString.ISNull(idcFTP_INFO.GetCommandParamValue("O_HOST_PORT"));
+                mDocFTP.UserID = iString.ISNull(idcFTP_INFO.GetCommandParamValue("O_USER_NO"));
+                mDocFTP.Password = iString.ISNull(idcFTP_INFO.GetCommandParamValue("O_USER_PWD"));
+                mDocFTP.Passive_Flag = iString.ISNull(idcFTP_INFO.GetCommandParamValue("O_PASSIVE_FLAG"));
+
+                mDocFTP.FTP_Folder = iString.ISNull(idcFTP_INFO.GetCommandParamValue("O_HOST_FOLDER"));
+                mDocFTP.Client_Folder = iString.ISNull(idcFTP_INFO.GetCommandParamValue("O_CLIENT_FOLDER"));
+                mClient_DocDirectory = string.Format("{0}\\{1}", mClient_Base_Path, mDocFTP.Client_Folder);
+
+                if (mDocFTP.Host != string.Empty)
+                {
+                    isGet = true;
+                }
+            }
+            catch (System.Exception ex)
+            {
+                isAppInterfaceAdv1.OnAppMessage(ex.Message);
+                System.Windows.Forms.Application.DoEvents();
+            }
+            return isGet;
+        }
+
         #endregion;
 
         #region ----- FTP Initialize -----
 
-        private void FTPInitializtion()
-        {
-            mFileTransferAdv = new ISFileTransferAdv();
-            mFileTransferAdv.Host = mImageFTP.Host;
-            mFileTransferAdv.Port = mImageFTP.Port;
-            mFileTransferAdv.UserId = mImageFTP.UserID;
-            mFileTransferAdv.Password = mImageFTP.Password;
-            if(mImageFTP.Passive_Flag == "Y")
+        private void FTPInitializtion(string pFTP_Type)
+        {            
+            if (pFTP_Type.Equals("PERSON_DOC"))
             {
-                mFileTransferAdv.UsePassive = true;
+                mFileTransferAdv = new ISFileTransferAdv();
+                mFileTransferAdv.Host = mDocFTP.Host; 
+                mFileTransferAdv.Port = mDocFTP.Port;
+                mFileTransferAdv.UserId = mDocFTP.UserID;
+                mFileTransferAdv.Password = mDocFTP.Password;
+                mFileTransferAdv.KeepAlive = false; 
+                if (mDocFTP.Passive_Flag == "Y")
+                {
+                    mFileTransferAdv.UsePassive = true;
+                }
+                else
+                {
+                    mFileTransferAdv.UsePassive = false;
+                }
             }
             else
             {
-                mFileTransferAdv.UsePassive = false;
+                mFileTransferAdv = new ISFileTransferAdv();
+                mFileTransferAdv.Host = mImageFTP.Host;
+                mFileTransferAdv.Port = mImageFTP.Port;
+                mFileTransferAdv.UserId = mImageFTP.UserID;
+                mFileTransferAdv.Password = mImageFTP.Password;
+                mFileTransferAdv.KeepAlive = false;
+                if (mImageFTP.Passive_Flag == "Y")
+                {
+                    mFileTransferAdv.UsePassive = true;
+                }
+                else
+                {
+                    mFileTransferAdv.UsePassive = false;
+                }
             }
         }
 
@@ -2493,7 +2620,7 @@ namespace HRMF0201
 
         private void ibtPERSON_PICTURE_ButtonClick(object pSender, EventArgs pEventArgs)
         {
-            string vPerson_Num = iString.ISNull(iedPERSON_NUM.EditValue);
+            string vPerson_Num = iString.ISNull(PERSON_NUM.EditValue);
             if (vPerson_Num == string.Empty)
             {
                 MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10028"), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -2505,14 +2632,14 @@ namespace HRMF0201
                 bool vResult = UpLoadItem(vPerson_Num);
                 if (vResult == true)
                 {
-                    Save_Pic_Attach_File(iedPERSON_ID.EditValue, vPerson_Num, "Save");
+                    Save_Pic_Attach_File(PERSON_ID.EditValue, vPerson_Num, "Save");
                 }
             }
         }
 
         private void BTN_DEL_PHOTO_ButtonClick(object pSender, EventArgs pEventArgs)
         {
-            string vPerson_Num = iString.ISNull(iedPERSON_NUM.EditValue);
+            string vPerson_Num = iString.ISNull(PERSON_NUM.EditValue);
             if (vPerson_Num == string.Empty)
             {
                 MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10028"), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -2524,7 +2651,7 @@ namespace HRMF0201
                 bool vResult = Delete_Item(vPerson_Num);
                 if (vResult == true)
                 {
-                    Save_Pic_Attach_File(iedPERSON_ID.EditValue, vPerson_Num, "DEL");
+                    Save_Pic_Attach_File(PERSON_ID.EditValue, vPerson_Num, "DEL");
                 }
             }
         }
@@ -2628,6 +2755,536 @@ namespace HRMF0201
         }
 
         #endregion;
+
+
+        #region ----- File Upload Methods -----
+        //ftp에 file upload 처리 
+        private bool UpLoadFile(object pPERSON_NUM)
+        {
+            bool isUpload = false;
+            OpenFileDialog vOpenFileDialog1 = new OpenFileDialog();
+            vOpenFileDialog1.RestoreDirectory = true;
+
+            if (!mIsGetPersonDocFTP)
+            {
+                isAppInterfaceAdv1.OnAppMessage("FTP Server Connect Fail. Check FTP Server");
+                return isUpload;
+            }
+
+            if (iString.ISNull(pPERSON_NUM) != string.Empty)
+            {
+                string vSTATUS = "F";
+                string vMESSAGE = string.Empty;
+
+                //openFileDialog1.FileName = string.Format("*{0}", vFileExtension);
+                //openFileDialog1.Filter = string.Format("Image Files (*{0})|*{1}", vFileExtension, vFileExtension);
+
+                vOpenFileDialog1.Title = "Select Open File";
+                vOpenFileDialog1.Filter = "All File(*.*)|*.*|pdf File(*.pdf)|*.pdf|jpg file(*.jpg)|*.jpg|bmp file(*.bmp)|*.bmp";
+                vOpenFileDialog1.DefaultExt = "*.*";
+                vOpenFileDialog1.FileName = "";
+                vOpenFileDialog1.RestoreDirectory = true;
+                vOpenFileDialog1.Multiselect = true;
+
+
+                if (vOpenFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    Application.UseWaitCursor = true;
+                    System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
+                    Application.DoEvents();
+
+                    string vSelectFullPath = string.Empty;
+                    string vSelectDirectoryPath = string.Empty;
+
+                    string vFileName = string.Empty;
+                    string vFileExtension = string.Empty;
+
+                    //1. 사용자 선택 파일 
+                    for (int i = 0; i < vOpenFileDialog1.FileNames.Length; i++)
+                    {
+                        vSelectFullPath = vOpenFileDialog1.FileNames[i];
+                        vSelectDirectoryPath = System.IO.Path.GetDirectoryName(vSelectFullPath);
+
+                        vFileName = System.IO.Path.GetFileName(vSelectFullPath);
+                        vFileExtension = System.IO.Path.GetExtension(vSelectFullPath).ToUpper();
+
+                        //2. 첨부파일 DB 저장 
+                        IDC_INSERT_DOC_ATTACH.SetCommandParamValue("P_SOURCE_CATEGORY", "PERSON_DOC"); //구분  
+                        IDC_INSERT_DOC_ATTACH.SetCommandParamValue("P_SOURCE_NUM", pPERSON_NUM);
+                        IDC_INSERT_DOC_ATTACH.SetCommandParamValue("P_USER_FILE_NAME", vFileName);
+                        IDC_INSERT_DOC_ATTACH.SetCommandParamValue("P_FTP_FILE_NAME", vFileName);
+                        IDC_INSERT_DOC_ATTACH.SetCommandParamValue("P_EXTENSION_NAME", vFileExtension);
+                        IDC_INSERT_DOC_ATTACH.ExecuteNonQuery();
+
+                        vSTATUS = iString.ISNull(IDC_INSERT_DOC_ATTACH.GetCommandParamValue("O_STATUS"));
+                        vMESSAGE = iString.ISNull(IDC_INSERT_DOC_ATTACH.GetCommandParamValue("O_MESSAGE"));
+                        object vDOC_ATTACH_ID = IDC_INSERT_DOC_ATTACH.GetCommandParamValue("O_DOC_ATTACH_ID");
+                        object vFTP_FILE_NAME = IDC_INSERT_DOC_ATTACH.GetCommandParamValue("O_FTP_FILE_NAME");
+
+                        //O_DOC_ATTACHMENT_ID.EditValue = vDOC_ATTACHMENT_ID;
+                        //O_FTP_FILE_NAME.EditValue = vFTP_FILE_NAME;
+
+                        if (IDC_INSERT_DOC_ATTACH.ExcuteError || vSTATUS == "F")
+                        {
+                            Application.UseWaitCursor = false;
+                            this.Cursor = Cursors.Default;
+                            Application.DoEvents();
+
+                            if (vMESSAGE != string.Empty)
+                            {
+                                MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            else
+                            {
+                                MessageBoxAdv.Show(IDC_INSERT_DOC_ATTACH.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            return isUpload;
+                        }
+
+                        //3. 첨부파일 로그 저장 
+                        IDC_INSERT_DOC_ATTACH_LOG.SetCommandParamValue("P_DOC_ATTACH_ID", vDOC_ATTACH_ID);
+                        IDC_INSERT_DOC_ATTACH_LOG.SetCommandParamValue("P_IN_OUT_STATUS", "IN");
+                        IDC_INSERT_DOC_ATTACH_LOG.ExecuteNonQuery();
+                        vSTATUS = iString.ISNull(IDC_INSERT_DOC_ATTACH_LOG.GetCommandParamValue("O_STATUS"));
+                        vMESSAGE = iString.ISNull(IDC_INSERT_DOC_ATTACH_LOG.GetCommandParamValue("O_MESSAGE"));
+                        if (IDC_INSERT_DOC_ATTACH_LOG.ExcuteError || vSTATUS == "F")
+                        {
+                            Application.UseWaitCursor = false;
+                            this.Cursor = Cursors.Default;
+                            Application.DoEvents();
+                            if (vMESSAGE != string.Empty)
+                            {
+                                MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            return isUpload;
+                        }
+
+                        //4. 파일 업로드
+                        try
+                        { 
+                            mFileTransferAdv.ShowProgress = true;      //진행바 보이기 
+
+                            //업로드 환경 설정 
+                            mFileTransferAdv.SourceDirectory = vSelectDirectoryPath;
+                            mFileTransferAdv.SourceFileName = vFileName;
+                            mFileTransferAdv.TargetDirectory = mDocFTP.FTP_Folder;
+                            mFileTransferAdv.TargetFileName = iString.ISNull(vFTP_FILE_NAME);
+
+                            bool isUpLoad = mFileTransferAdv.Upload();
+
+                            if (isUpLoad == true)
+                            {
+                                isUpload = true;
+                            }
+                            else
+                            {
+                                isUpload = false;
+                                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_10092"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+
+                            //5. 적용 
+                        }
+                        catch (Exception Ex)
+                        {
+                            isAppInterfaceAdv1.OnAppMessage(Ex.Message);
+                            return isUpload;
+                        }
+                    }
+                }
+            }
+            return isUpload;
+        }
+
+        #endregion;
+
+
+        #region ----- file Download Methods -----
+        //ftp file download 처리 
+        private bool DownLoadFile(object pDOC_ATTACH_ID, string pFTP_FileName, string pClient_FileName)
+        {
+            Application.UseWaitCursor = true;
+            System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
+            Application.DoEvents();
+
+            bool IsDownload = false;
+            string vSTATUS = "F";
+            string vMESSAGE = string.Empty;
+
+            ////1. 첨부파일 로그 저장 : Transaction을 이용해서 처리 
+            //isDataTransaction1.BeginTran();            
+            IDC_INSERT_DOC_ATTACH_LOG.SetCommandParamValue("P_DOC_ATTACH_ID", pDOC_ATTACH_ID);
+            IDC_INSERT_DOC_ATTACH_LOG.SetCommandParamValue("P_IN_OUT_STATUS", "OUT");
+            IDC_INSERT_DOC_ATTACH_LOG.ExecuteNonQuery();
+            vSTATUS = iString.ISNull(IDC_INSERT_DOC_ATTACH_LOG.GetCommandParamValue("O_STATUS"));
+            vMESSAGE = iString.ISNull(IDC_INSERT_DOC_ATTACH_LOG.GetCommandParamValue("O_MESSAGE"));
+            if (vSTATUS == "F")
+            {
+                Application.UseWaitCursor = false;
+                this.Cursor = Cursors.Default;
+                Application.DoEvents();
+
+                if (vMESSAGE != string.Empty)
+                {
+                    MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                return IsDownload;
+            }
+
+            //2. 실제 다운로드 
+            string vTempFileName = string.Format("_{0}", pFTP_FileName);
+            try
+            {
+                System.IO.FileInfo vDownFileInfo = new System.IO.FileInfo(vTempFileName);
+                if (vDownFileInfo.Exists == true)
+                {
+                    try
+                    {
+                        System.IO.File.Delete(vTempFileName);
+                    }
+                    catch
+                    {
+
+                        // ignore
+                    }
+                }
+            }
+            catch
+            {
+                //ignore                        
+            }
+
+            mFileTransferAdv.ShowProgress = false;
+            //--------------------------------------------------------------------------------
+            mFileTransferAdv.SourceDirectory = mDocFTP.FTP_Folder;
+            mFileTransferAdv.SourceFileName = pFTP_FileName;
+            mFileTransferAdv.TargetDirectory = mClient_DocDirectory;
+            mFileTransferAdv.TargetFileName = vTempFileName;
+
+            IsDownload = mFileTransferAdv.Download();
+
+            if (IsDownload == true)
+            {
+                try
+                {
+                    //isDataTransaction1.Commit();
+
+                    //다운 파일 FullPath적용 
+                    string vTempFullPath = string.Format("{0}\\{1}", mClient_DocDirectory, vTempFileName);      //임시
+
+                    System.IO.File.Delete(pClient_FileName);                 //기존 파일 삭제 
+                    System.IO.File.Move(vTempFullPath, pClient_FileName);    //ftp 이름으로 이름 변경 
+
+                    IsDownload = true;
+                }
+                catch
+                {
+                    //isDataTransaction1.RollBack();
+                    try
+                    {
+                        System.IO.FileInfo vDownFileInfo = new System.IO.FileInfo(vTempFileName);
+                        if (vDownFileInfo.Exists == true)
+                        {
+                            try
+                            {
+                                System.IO.File.Delete(vTempFileName);
+                            }
+                            catch
+                            {
+
+                                // ignore
+                            }
+                        }
+                    }
+                    catch
+                    {
+                        //ignore                        
+                    }
+                }
+            }
+            else
+            {
+                //isDataTransaction1.RollBack();
+                //download 실패 
+                try
+                {
+                    System.IO.FileInfo vDownFileInfo = new System.IO.FileInfo(vTempFileName);
+                    if (vDownFileInfo.Exists == true)
+                    {
+                        try
+                        {
+                            System.IO.File.Delete(vTempFileName);
+                        }
+                        catch
+                        {
+                            // ignore
+                        }
+                    }
+                }
+                catch
+                {
+                    //ignore                    
+                }
+            }
+            if (IsDownload == true)
+            {
+                System.Diagnostics.Process.Start(pClient_FileName);
+            }
+            else
+            {
+                string vMessage = string.Format("{0} {1}", isMessageAdapter1.ReturnText("EAPP_10212"), isMessageAdapter1.ReturnText("QM_10102"));
+                MessageBoxAdv.Show(vMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            Application.UseWaitCursor = false;
+            System.Windows.Forms.Cursor.Current = Cursors.Default;
+            Application.DoEvents();
+            return IsDownload;
+        }
+
+        #endregion;
+
+        #region ----- file Delete Methods -----
+        //ftp file delete 처리 
+        private bool DeleteFile(object pDOC_ATTACH_ID, string pFTP_FileName)
+        {
+            bool IsDelete = false;
+            string vSTATUS = "F";
+            string vMESSAGE = string.Empty;
+
+            if (iString.ISNull(pDOC_ATTACH_ID) == string.Empty)
+            {
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_10075"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return IsDelete;
+            }
+            if (pFTP_FileName == string.Empty)
+            {
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_10075"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return IsDelete;
+            }
+
+            Application.UseWaitCursor = true;
+            System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
+            Application.DoEvents();
+
+
+            //1. 첨부파일 로그 저장 : Transaction을 이용해서 처리  
+            IDC_INSERT_DOC_ATTACH_LOG.SetCommandParamValue("P_DOC_ATTACH_ID", pDOC_ATTACH_ID);
+            IDC_INSERT_DOC_ATTACH_LOG.SetCommandParamValue("P_IN_OUT_STATUS", "DELETE");
+            IDC_INSERT_DOC_ATTACH_LOG.ExecuteNonQuery();
+            vSTATUS = iString.ISNull(IDC_INSERT_DOC_ATTACH_LOG.GetCommandParamValue("O_STATUS"));
+            vMESSAGE = iString.ISNull(IDC_INSERT_DOC_ATTACH_LOG.GetCommandParamValue("O_MESSAGE"));
+            if (IDC_INSERT_DOC_ATTACH_LOG.ExcuteError || vSTATUS == "F")
+            {
+                Application.UseWaitCursor = false;
+                this.Cursor = Cursors.Default;
+                Application.DoEvents();
+
+                if (vMESSAGE != string.Empty)
+                {
+                    MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBoxAdv.Show(IDC_INSERT_DOC_ATTACH_LOG.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                return IsDelete;
+            }
+
+            //2. 파일 삭제 
+            IDC_DELETE_DOC_ATTACH.SetCommandParamValue("W_DOC_ATTACH_ID", pDOC_ATTACH_ID);
+            IDC_DELETE_DOC_ATTACH.ExecuteNonQuery();
+            vSTATUS = iString.ISNull(IDC_DELETE_DOC_ATTACH.GetCommandParamValue("O_STATUS"));
+            vMESSAGE = iString.ISNull(IDC_DELETE_DOC_ATTACH.GetCommandParamValue("O_MESSAGE"));
+
+            if (IDC_DELETE_DOC_ATTACH.ExcuteError || vSTATUS == "F")
+            {
+                IsDelete = false;
+                Application.UseWaitCursor = false;
+                System.Windows.Forms.Cursor.Current = Cursors.Default;
+                Application.DoEvents();
+
+
+                if (vMESSAGE != string.Empty)
+                {
+                    MessageBoxAdv.Show(vMESSAGE, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    MessageBoxAdv.Show(IDC_DELETE_DOC_ATTACH.ExcuteErrorMsg, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                return IsDelete;
+            }
+
+            //3. 실제 삭제 
+            mFileTransferAdv.ShowProgress = false;
+            //--------------------------------------------------------------------------------
+
+            mFileTransferAdv.SourceDirectory = mDocFTP.FTP_Folder;
+            mFileTransferAdv.SourceFileName = pFTP_FileName;
+            mFileTransferAdv.TargetDirectory = mDocFTP.FTP_Folder;
+            mFileTransferAdv.TargetFileName = pFTP_FileName;
+
+            IsDelete = mFileTransferAdv.Delete();
+            if (IsDelete == false)
+            {
+                Application.UseWaitCursor = false;
+                System.Windows.Forms.Cursor.Current = Cursors.Default;
+                Application.DoEvents();
+
+                return IsDelete;
+            }
+
+            Application.UseWaitCursor = false;
+            System.Windows.Forms.Cursor.Current = Cursors.Default;
+            Application.DoEvents();
+
+            return IsDelete;
+        }
+
+        #endregion; 
+
+
+        private bool Check_Sub_Panel()
+        {
+            if (mSUB_SHOW_FLAG == true)
+            {
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_10069"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+
+            return true;
+        }
+         
+        private void DOC_ATT_FLAG(object pPERSON_NUM)
+        { 
+            IDC_GET_DOC_ATT_FLAG_P.SetCommandParamValue("P_SOURCE_CATEGORY", "PERSON_DOC");
+            IDC_GET_DOC_ATT_FLAG_P.SetCommandParamValue("P_SOURCE_NUM", pPERSON_NUM);
+            IDC_GET_DOC_ATT_FLAG_P.ExecuteNonQuery();
+            if (iString.ISNull(IDC_GET_DOC_ATT_FLAG_P.GetCommandParamValue("O_DOC_ATT_FLAG")) == "Y")
+            {
+                CB_DOC_ATT_FLAG.CheckedState = ISUtil.Enum.CheckedState.Checked;
+            }
+            else
+            {
+                CB_DOC_ATT_FLAG.CheckedState = ISUtil.Enum.CheckedState.Unchecked;
+            }
+        }
+
+        private void BTN_FILE_ATTACH_ButtonClick(object pSender, EventArgs pEventArgs)
+        {
+            F_PERSON_NUM.EditValue = PERSON_NUM.EditValue;  
+            if (iString.ISNull(F_PERSON_NUM.EditValue) == string.Empty)
+            {
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10028"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            Sub_Form_Visible(true, "PERSON_DOC");
+
+            //FTP 정보//
+            FTPInitializtion("PERSON_DOC");
+
+            IDA_DOC_ATTACH.Fill();
+            IGR_DOC_ATTACH.Focus();
+        }
+         
+        private void IGR_DOC_ATTACH_CellDoubleClick(object pSender)
+        {
+            //if (IGR_DOC_ATTACHMENT.RowIndex < 0)
+            //{
+            //    return;
+            //}
+
+            //string vFTP_FILE_NAME = iString.ISNull(IGR_DOC_ATTACHMENT.GetCellValue("FTP_FILE_NAME"));
+            //string vUSER_FILE_NAME = string.Format("{0}{1}", mDownload_Folder, IGR_DOC_ATTACHMENT.GetCellValue("USER_FILE_NAME"));
+            //if (DownLoadFile(vFTP_FILE_NAME, vUSER_FILE_NAME) == false)
+            //{
+            //    return;
+            //} 
+        }
+
+        private void BTN_ATT_SELECT_ButtonClick(object pSender, EventArgs pEventArgs)
+        { 
+            UpLoadFile(F_PERSON_NUM.EditValue);
+            IDA_DOC_ATTACH.Fill();
+            IGR_DOC_ATTACH.Focus();
+
+            Application.UseWaitCursor = false;
+            System.Windows.Forms.Cursor.Current = Cursors.Default;
+            Application.DoEvents();
+        }
+
+        private void BTN_ATT_DOWN_ButtonClick(object pSender, EventArgs pEventArgs)
+        {
+            if (IGR_DOC_ATTACH.RowIndex < 0)
+            {
+                return;
+            }
+
+            object vDOC_ATTACH_ID = IGR_DOC_ATTACH.GetCellValue("DOC_ATTACH_ID");
+            string vFTP_FILE_NAME = iString.ISNull(IGR_DOC_ATTACH.GetCellValue("FTP_FILE_NAME"));
+            string vUSER_FILE_NAME = string.Format("{0}\\{1}", mClient_DocDirectory, IGR_DOC_ATTACH.GetCellValue("USER_FILE_NAME"));
+            if (DownLoadFile(vDOC_ATTACH_ID, vFTP_FILE_NAME, vUSER_FILE_NAME) == false)
+            {
+                Application.UseWaitCursor = false;
+                System.Windows.Forms.Cursor.Current = Cursors.Default;
+                Application.DoEvents();
+                return;
+            }
+        }
+
+        private void BTN_ATT_DELETE_ButtonClick(object pSender, EventArgs pEventArgs)
+        {
+            if (MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_10220"), "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                return;
+            }
+            if (iString.ISNull(F_PERSON_NUM.EditValue) == string.Empty)
+            {
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_10218"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+             
+            if (IGR_DOC_ATTACH.RowIndex < 0)
+            {
+                return;
+            }
+
+            object vDOC_ATTACH_ID = IGR_DOC_ATTACH.GetCellValue("DOC_ATTACH_ID");
+            string vFTP_FileName = iString.ISNull(IGR_DOC_ATTACH.GetCellValue("FTP_FILE_NAME"));
+            DeleteFile(vDOC_ATTACH_ID, vFTP_FileName);
+            IDA_DOC_ATTACH.Fill();
+            IGR_DOC_ATTACH.Focus();
+        }
+
+        private void BTN_ATT_CLOSE_ButtonClick(object pSender, EventArgs pEventArgs)
+        {
+            DOC_ATT_FLAG(PERSON_NUM.EditValue);
+            Sub_Form_Visible(false, "PERSON_DOC");
+        }
+
+        private void GB_DOC_ATT_MouseDown(object sender, MouseEventArgs e)
+        {
+            mIsClickInquiryDetail = true;
+            mInquiryDetailPreX = e.X;
+            mInquiryDetailPreY = e.Y;
+        }
+
+        private void GB_DOC_ATT_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mIsClickInquiryDetail && e.Button == MouseButtons.Left)
+            {
+                int gx = e.X - mInquiryDetailPreX;
+                int gy = e.Y - mInquiryDetailPreY;
+
+                Point I = GB_DOC_ATT.Location;
+                I.Offset(gx, gy);
+                GB_DOC_ATT.Location = I;
+            }
+        }
+         
+        private void GB_DOC_ATT_MouseUp(object sender, MouseEventArgs e)
+        {
+            mIsClickInquiryDetail = false;
+        }
 
 
         //#region ----- Get Registry Customer Methods ----
@@ -2764,6 +3421,131 @@ namespace HRMF0201
             set
             {
                 mPassive_Flag = value;
+            }
+        }
+
+        #endregion;
+    }
+
+    #endregion;
+
+
+    #region ----- User Make Person Doc Class -----
+
+    public class PersonDocFTP
+    {
+        #region ----- Variables -----
+
+        private string mHost = string.Empty;
+        private string mPort = "21";
+        private string mUserID = string.Empty;
+        private string mPassword = string.Empty;
+        private string mPassive_Flag = "N";
+        private string mFTP_Folder = string.Empty;
+        private string mClient_Folder = string.Empty;
+
+        #endregion;
+
+        #region ----- Constructor -----
+
+        public PersonDocFTP()
+        {
+        }
+
+        public PersonDocFTP(string pHost, string pPort, string pUserID, string pPassword, string pPassive_Flag)
+        {
+            mHost = pHost;
+            mPort = pPort;
+            mUserID = pUserID;
+            mPassword = pPassword;
+            mPassive_Flag = pPassive_Flag;
+        }
+
+        #endregion;
+
+        #region ----- Property -----
+
+        public string Host
+        {
+            get
+            {
+                return mHost;
+            }
+            set
+            {
+                mHost = value;
+            }
+        }
+
+        public string Port
+        {
+            get
+            {
+                return mPort;
+            }
+            set
+            {
+                mPort = value;
+            }
+        }
+
+        public string UserID
+        {
+            get
+            {
+                return mUserID;
+            }
+            set
+            {
+                mUserID = value;
+            }
+        }
+
+        public string Password
+        {
+            get
+            {
+                return mPassword;
+            }
+            set
+            {
+                mPassword = value;
+            }
+        }
+
+        public string Passive_Flag
+        {
+            get
+            {
+                return mPassive_Flag;
+            }
+            set
+            {
+                mPassive_Flag = value;
+            }
+        }
+
+        public string FTP_Folder
+        {
+            get
+            {
+                return mFTP_Folder;
+            }
+            set
+            {
+                mFTP_Folder = value;
+            }
+        }
+
+        public string Client_Folder
+        {
+            get
+            {
+                return mClient_Folder;
+            }
+            set
+            {
+                mClient_Folder = value;
             }
         }
 

@@ -22,6 +22,8 @@ namespace HRMF0251
         ISFunction.ISConvert iConv = new ISFunction.ISConvert();
         ISFunction.ISDateTime iDate = new ISFunction.ISDateTime();
 
+        EAPF1102.EAPF1102 mEAPF1102 = new EAPF1102.EAPF1102();
+
         #endregion;
 
         #region ----- Constructor -----
@@ -44,7 +46,7 @@ namespace HRMF0251
             this.MdiParent = pMainForm;
             isAppInterfaceAdv1.AppInterface = pAppInterface;
 
-            W_CERTI_TYPE.EditValue = pJOB_NO;
+            W_CERTI_TYPE_NAME.EditValue = pJOB_NO;
         }
 
         #endregion;
@@ -53,8 +55,14 @@ namespace HRMF0251
 
         private void SEARCH_DB()
         {
-            IDA_APPROVED_CERTI.Cancel();
-            IDA_APPROVED_CERTI.Fill();
+            IDA_CERTIFICATE_REQ_APPR.SetSelectParamValue("W_SOB_ID", -1);
+            IDA_CERTIFICATE_REQ_APPR.Fill();
+
+            CHECK.CheckedState = ISUtil.Enum.CheckedState.Unchecked;
+             
+            IDA_CERTIFICATE_REQ_APPR.SetSelectParamValue("W_SOB_ID", isAppInterfaceAdv1.AppInterface.SOB_ID); 
+            IDA_CERTIFICATE_REQ_APPR.Cancel();
+            IDA_CERTIFICATE_REQ_APPR.Fill();
         }
 
         #endregion;
@@ -83,7 +91,7 @@ namespace HRMF0251
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Cancel)
                 {
-                    IDA_APPROVED_CERTI.Cancel();
+                    IDA_CERTIFICATE_REQ_APPR.Cancel();
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Delete)
                 {
@@ -142,51 +150,46 @@ namespace HRMF0251
         
         private void HRMF0251_Load(object sender, EventArgs e)
         {
-            IDA_APPROVED_CERTI.FillSchema();
+            IDA_CERTIFICATE_REQ_APPR.FillSchema();
         }
 
         private void HRMF0251_Shown(object sender, EventArgs e)
         {
             //DEFAULT Date SETTING
-            iSTART_DATE_0.EditValue = iDate.ISMonth_1st(DateTime.Today);
-            iEND_DATE_0.EditValue = iDate.ISMonth_Last(DateTime.Today);
+            W_START_DATE.EditValue = iDate.ISMonth_1st(DateTime.Today);
+            W_END_DATE.EditValue = iDate.ISMonth_Last(DateTime.Today);
             
             // LOOKUP DEFAULT VALUE SETTING - CORP
-            idcDEFAULT_CORP.SetCommandParamValue("W_PAY_CONTROL_YN", "Y");
-            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "N");
-            idcDEFAULT_CORP.ExecuteNonQuery();
+            IDC_DEFAULT_CORP.SetCommandParamValue("W_PAY_CONTROL_YN", "Y");
+            IDC_DEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "Y");
+            IDC_DEFAULT_CORP.ExecuteNonQuery();
 
-            W_CORP_NAME_0.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
-            W_CORP_ID_0.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_ID");
+            W_CORP_NAME.EditValue = IDC_DEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
+            W_CORP_ID.EditValue = IDC_DEFAULT_CORP.GetCommandParamValue("O_CORP_ID");
             APPROVED_CANCEL.CheckedState = ISUtil.Enum.CheckedState.Checked;
             V_APPROVE_STATUS.EditValue = "N";
 
-            W_CORP_NAME_0.BringToFront();
+            W_CORP_NAME.BringToFront();
 
+            IDC_CERT_SEARCH_TYPE.SetCommandParamValue("W_GROUP_CODE", "CERT_SEARCH_TYPE");
+            IDC_CERT_SEARCH_TYPE.ExecuteNonQuery();
+            W_SEARCH_TYPE.EditValue = IDC_CERT_SEARCH_TYPE.GetCommandParamValue("O_CODE");
+            W_SEARCH_TYPE_NAME.EditValue = IDC_CERT_SEARCH_TYPE.GetCommandParamValue("O_CODE_NAME");
         }
-        private void IGR_OPERATION_CAPA_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void IGR_OPERATION_CAPA_CurrentCellChanged(object pSender, ISGridAdvExChangedEventArgs e)
-        {       
-
-        }
-
+          
         #region ----- Form Event ------
 
         private void isCheckBoxAdv1_CheckedChange(object pSender, ISCheckEventArgs e)
         {
-
             for (int r = 0; r < IGR_APPROVED_CERTI.RowCount; r++)
             {
                 IGR_APPROVED_CERTI.SetCellValue(r, IGR_APPROVED_CERTI.GetColumnToIndex("SELECT_YN"), CHECK.CheckBoxString);
             }
             IGR_APPROVED_CERTI.LastConfirmChanges();
-            IDA_APPROVED_CERTI.OraSelectData.AcceptChanges();
-            IDA_APPROVED_CERTI.Refillable = true;
+            IDA_CERTIFICATE_REQ_APPR.OraSelectData.AcceptChanges();
+            IDA_CERTIFICATE_REQ_APPR.Refillable = true;
         }
+
         private bool Set_Update_Return(DateTime pSys_Date)
         {
             if (IGR_APPROVED_CERTI.RowCount < 1)
@@ -199,8 +202,8 @@ namespace HRMF0251
             Application.DoEvents();
 
             IGR_APPROVED_CERTI.LastConfirmChanges();
-            IDA_APPROVED_CERTI.OraSelectData.AcceptChanges();
-            IDA_APPROVED_CERTI.Refillable = true;
+            IDA_CERTIFICATE_REQ_APPR.OraSelectData.AcceptChanges();
+            IDA_CERTIFICATE_REQ_APPR.Refillable = true;
 
             int vIDX_SELECT_YN = IGR_APPROVED_CERTI.GetColumnToIndex("SELECT_YN");
             int vIDX_DUTY_PERIOD_ID = IGR_APPROVED_CERTI.GetColumnToIndex("DUTY_PERIOD_ID");
@@ -251,26 +254,56 @@ namespace HRMF0251
 
         private void ibt_REJECT_ButtonClick(object pSender, EventArgs pEventArgs)
         {
-            int mRowCount = IGR_APPROVED_CERTI.RowCount;
-            string vSELECT_YN = string.Empty;
-            string vReject_Remark = string.Empty; 
-            for (int R = 0; R < mRowCount; R++)
-            {
-                vSELECT_YN = IGR_APPROVED_CERTI.GetCellValue(R, IGR_APPROVED_CERTI.GetColumnToIndex("SELECT_YN")).ToString();
-                vReject_Remark = IGR_APPROVED_CERTI.GetCellValue(R, IGR_APPROVED_CERTI.GetColumnToIndex("REJECT_REMARK")).ToString();
-                if (vSELECT_YN == "Y")
-                {
-                    if (vReject_Remark == null)
-                    {// 업체.
-                        MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10001"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        IGR_APPROVED_CERTI.Focus();
-                        return;
-                    }
-                }
+            if (W_CORP_ID.EditValue == null)
+            {// 업체.
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10001"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                W_CORP_NAME.Focus();
+                return;
             }
-           
+            if (W_START_DATE.EditValue == null)
+            {// 시작일자
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10010"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                W_START_DATE.Focus();
+                return;
+            }
+            if (W_END_DATE.EditValue == null)
+            {// 종료일자
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10011"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                W_END_DATE.Focus();
+                return;
+            }
+            if (Convert.ToDateTime(W_START_DATE.EditValue) > Convert.ToDateTime(W_END_DATE.EditValue))
+            {
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10012"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                W_START_DATE.Focus();
+                return;
+            }
 
-            Set_Update_Approve("R");
+            Application.UseWaitCursor = true; 
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
+            DialogResult dlgResultValue;
+              
+            Form vHRMF0251_RETURN = new HRMF0251_RETURN(isAppInterfaceAdv1.AppInterface
+                                                        , W_CORP_ID.EditValue
+                                                        , iDate.ISGetDate(W_START_DATE.EditValue)
+                                                        , iDate.ISGetDate(W_END_DATE.EditValue)
+                                                        );
+            mEAPF1102.SetProperties(EAPF1102.INIT_TYPE.None, vHRMF0251_RETURN, isAppInterfaceAdv1.AppInterface);
+            dlgResultValue = vHRMF0251_RETURN.ShowDialog();
+            if (dlgResultValue == DialogResult.OK)
+            {
+            }
+            try
+            {
+                vHRMF0251_RETURN.Dispose();
+            }
+            catch
+            {
+
+            }
+            SEARCH_DB();
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+            Application.UseWaitCursor = false; 
         }
 
         #endregion
@@ -289,9 +322,9 @@ namespace HRMF0251
 
             if (mAPPROVE_STATE == String.Empty || mAPPROVE_STATE == "A" || mAPPROVE_STATE == "R" )
             {
-                ibt_OK.Enabled = false;
-                ibt_CANCEL.Enabled = false;
-                ibt_REJECT.Enabled = false;
+                BTN_OK.Enabled = false;
+                BTN_CANCEL.Enabled = false;
+                BTN_REJECT.Enabled = false;
                 IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_REJECT_REMARK].Updatable = 0;
                 IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SELECT_YN].Updatable = 0;
             }
@@ -299,22 +332,31 @@ namespace HRMF0251
             {
                 if (mAPPROVE_STATE == "N")
                 {
-                    ibt_OK.Enabled = true;
-                    ibt_CANCEL.Enabled = false;
-                    ibt_REJECT.Enabled = true;
+                    BTN_OK.Enabled = true;
+                    BTN_CANCEL.Enabled = false;
+                    BTN_REJECT.Enabled = true;
                     IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_REJECT_REMARK].Updatable = 1;
                     IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SELECT_YN].Updatable = 1;
                 }
                 else
                 {
-                    ibt_OK.Enabled = false;
-                    ibt_CANCEL.Enabled = true;
-                    ibt_REJECT.Enabled = true;
+                    BTN_OK.Enabled = false;
+                    BTN_CANCEL.Enabled = true;
+                    BTN_REJECT.Enabled = true;
                     IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_REJECT_REMARK].Updatable = 1;
                     IGR_APPROVED_CERTI.GridAdvExColElement[mIDX_SELECT_YN].Updatable = 1;
                 }
             }
             SEARCH_DB();
+        }
+         
+        private void APPROVED_ALL_Click(object sender, EventArgs e)
+        {
+            ISRadioButtonAdv iStatus = sender as ISRadioButtonAdv;
+            V_APPROVE_STATUS.EditValue = iStatus.RadioCheckedString;
+
+            Set_BTN_STATE();
+
         }
 
         private void Set_Update_Approve(object pApproved_Flag)
@@ -328,31 +370,35 @@ namespace HRMF0251
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             Application.DoEvents();
 
-            int vIDX_SELECT_FLAG = IGR_APPROVED_CERTI.GetColumnToIndex("SELECT_YN");
-            int vIDX_DUTY_PERIOD_ID = IGR_APPROVED_CERTI.GetColumnToIndex("CERT_PRINT_ID");
-            int vIDX_CORP_ID = IGR_APPROVED_CERTI.GetColumnToIndex("CORP_ID");
-            int vIDX_REJECT_REMARK = IGR_APPROVED_CERTI.GetColumnToIndex("REJECT_REMARK");
+            int vIDX_SELECT_FLAG = IGR_APPROVED_CERTI.GetColumnToIndex("SELECT_YN");  
+            int vIDX_REJECT_REMARK = IGR_APPROVED_CERTI.GetColumnToIndex("REJECT_REMARK"); 
+            int vIDX_PRINT_REQ_NUM = IGR_APPROVED_CERTI.GetColumnToIndex("PRINT_REQ_NUM");
             string vSTATUS = "F";
-            string vMESSAGE = null;
+            string vMESSAGE = null; 
+
+            IDA_CERTIFICATE_REQ_APPR.OraSelectData.AcceptChanges();
+            IDA_CERTIFICATE_REQ_APPR.Refillable = true;
+            IGR_APPROVED_CERTI.LastConfirmChanges();
+
+            if (pApproved_Flag == null)
+            {// 업체.
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10001"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                IGR_APPROVED_CERTI.Focus();
+                return;
+            }
+
             for (int i = 0; i < IGR_APPROVED_CERTI.RowCount; i++)
             {
                 if (iConv.ISNull(IGR_APPROVED_CERTI.GetCellValue(i, vIDX_SELECT_FLAG), "N") == "Y")
                 {
-                    if (pApproved_Flag == null)
-                    {// 업체.
-                        MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10001"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        IGR_APPROVED_CERTI.Focus();
-                        return;
-                    }
-                   
-                    idcAPPROVED.SetCommandParamValue("W_CERT_PRINT_ID", IGR_APPROVED_CERTI.GetCellValue(i, vIDX_DUTY_PERIOD_ID));
-                    idcAPPROVED.SetCommandParamValue("W_CORP_ID", IGR_APPROVED_CERTI.GetCellValue(i, vIDX_CORP_ID));
-                    idcAPPROVED.SetCommandParamValue("W_APPROVE_STATUS", pApproved_Flag);
-                    idcAPPROVED.SetCommandParamValue("P_REJECT_REMARK", IGR_APPROVED_CERTI.GetCellValue(i, vIDX_REJECT_REMARK));
-                    idcAPPROVED.ExecuteNonQuery();
-                    vSTATUS = iConv.ISNull(idcAPPROVED.GetCommandParamValue("O_STATUS"));
-                    vMESSAGE = iConv.ISNull(idcAPPROVED.GetCommandParamValue("O_MESSAGE"));
-                    if (idcAPPROVED.ExcuteError || vSTATUS == "F")
+                    IDC_SET_UPDATE_APPROVE.SetCommandParamValue("W_CORP_ID", W_CORP_ID.EditValue);
+                    IDC_SET_UPDATE_APPROVE.SetCommandParamValue("W_APPROVE_STATUS", pApproved_Flag);
+                    IDC_SET_UPDATE_APPROVE.SetCommandParamValue("W_PRINT_REQ_NUM", IGR_APPROVED_CERTI.GetCellValue(i, vIDX_PRINT_REQ_NUM));
+                    IDC_SET_UPDATE_APPROVE.SetCommandParamValue("P_REJECT_REMARK", IGR_APPROVED_CERTI.GetCellValue(i, vIDX_REJECT_REMARK));
+                    IDC_SET_UPDATE_APPROVE.ExecuteNonQuery();
+                    vSTATUS = iConv.ISNull(IDC_SET_UPDATE_APPROVE.GetCommandParamValue("O_STATUS"));
+                    vMESSAGE = iConv.ISNull(IDC_SET_UPDATE_APPROVE.GetCommandParamValue("O_MESSAGE"));
+                    if (IDC_SET_UPDATE_APPROVE.ExcuteError || vSTATUS == "F")
                     {
                         Application.UseWaitCursor = false;
                         this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -374,50 +420,29 @@ namespace HRMF0251
             SEARCH_DB();
         }
         #region ----- Lookup Event ------
-
-        private void ILA_CERTIFICATE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
-        {
-            ILD_CERTIFICATE_W.SetLookupParamValue("W_GROUP_CODE", "CERT_TYPE");
-            ILD_CERTIFICATE_W.SetLookupParamValue("W_WHERE", "HC.VALUE3 = 'Y'");
-            ILD_CERTIFICATE_W.SetLookupParamValue("W_ENABLED_FLAG", "Y");
-        }
-
-        private void ILA_CERTIFICATE_PrePopupShow_1(object pSender, ISLookupPopupShowEventArgs e)
-        {
-            ILD_CERTIFICATE.SetLookupParamValue("W_GROUP_CODE", "CERT_TYPE");
-            ILD_CERTIFICATE.SetLookupParamValue("W_WHERE", "HC.VALUE3 = 'Y'");
-            ILD_CERTIFICATE.SetLookupParamValue("W_ENABLED_FLAG", "Y");
-        }
+         
         private void ILA_SEARCH_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
-            ILD_SEARCH_TYPE.SetLookupParamValue("W_GROUP_CODE", "SEARCH_TYPE");
+            ILD_SEARCH_TYPE.SetLookupParamValue("W_GROUP_CODE", "CERT_SEARCH_TYPE");
             ILD_SEARCH_TYPE.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
         }
 
         private void ilaFLOOR_0_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
-            ildCOMMON.SetLookupParamValue("W_GROUP_CODE", "FLOOR");
-            ildCOMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
+            ILD_COMMON.SetLookupParamValue("W_GROUP_CODE", "FLOOR");
+            ILD_COMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
         }
         private void ilaJOB_CATEGORY_0_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
-            ildCOMMON.SetLookupParamValue("W_GROUP_CODE", "JOB_CATEGORY");
-            ildCOMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
+            ILD_COMMON.SetLookupParamValue("W_GROUP_CODE", "JOB_CATEGORY");
+            ILD_COMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
         }
-        #endregion
 
-
-
-
-        private void APPROVED_ALL_Click(object sender, EventArgs e)
+        private void ILA_DEPT_W_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
-            ISRadioButtonAdv iStatus = sender as ISRadioButtonAdv;
-            V_APPROVE_STATUS.EditValue = iStatus.RadioCheckedString;
-
-            Set_BTN_STATE();
-            
+            ILD_DEPT.SetLookupParamValue("W_ENABLED_FLAG", "Y");
         }
 
-        
+        #endregion 
     }
 }

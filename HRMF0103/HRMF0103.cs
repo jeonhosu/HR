@@ -329,6 +329,11 @@ namespace HRMF0103
             ILD_PERSON.SetLookupParamValue("W_STD_DATE", iDate.ISGetDate());
         }
 
+        private void ILA_PERSON_LEADER_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ILD_PERSON.SetLookupParamValue("W_STD_DATE", iDate.ISGetDate());
+        }
+         
         #endregion
 
     }

@@ -179,7 +179,47 @@ namespace HRMF0391
         //        return false;
         //    }
         //}
+        private bool Connect_Secom_ORACLE(object pWORK_DATE_FR, object pWORK_DATE_TO)
+        {
+            //MSSQL 처리//
+            ipbSECOM_INTERFACE.BarFillPercent = 0;
 
+            string vSTATUS = "F";
+            string vMESSAGE = null;
+            int vDayCount = (iDate.ISGetDate(pWORK_DATE_TO) - iDate.ISGetDate(pWORK_DATE_FR)).Days + 1;
+            DateTime vIO_Date = iDate.ISGetDate(pWORK_DATE_FR);
+            for(int r = 0; r < vDayCount; r++)
+            {
+                vIO_Date = iDate.ISGetDate(pWORK_DATE_FR).AddDays(r);
+                ipbSECOM_INTERFACE.BarFillPercent = (Convert.ToSingle(r) / Convert.ToSingle(vDayCount)) * 100F;
+                iptPERIOD.PromptText = string.Format("Set Interface Date : {0}~{1}", pWORK_DATE_FR, pWORK_DATE_TO);
+                iptSET_MESSAGE.PromptText = string.Format("{0:yyyy-MM-dd} :: Interface", vIO_Date);
+                 
+                try
+                {
+                    IDC_SET_T_SECOM_ALARM.SetCommandParamValue("W_IO_DATE", vIO_Date);
+                    IDC_SET_T_SECOM_ALARM.ExecuteNonQuery();
+                    vSTATUS = iConv.ISNull(IDC_SET_T_SECOM_ALARM.GetCommandParamValue("O_STATUS"));
+                    vMESSAGE = iConv.ISNull(IDC_SET_T_SECOM_ALARM.GetCommandParamValue("O_MESSAGE"));
+                    if(IDC_SET_T_SECOM_ALARM.ExcuteError)
+                    {
+                        MessageBoxAdv.Show(IDC_SET_T_SECOM_ALARM.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return false;
+                    }
+                    else if(vSTATUS.Equals("F"))
+                    {
+                        MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return false;
+                    } 
+                }
+                catch (System.Exception ex)
+                {
+                    MessageBoxAdv.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+            }
+            return true;
+        }
 
         private bool Connect_Secom_MSSQL(object pWORK_DATE_FR, object pWORK_DATE_TO)
         {
@@ -726,11 +766,11 @@ namespace HRMF0391
         {
             // Lookup SETTING
             ildCORP.SetLookupParamValue("W_DUTY_CONTROL_YN", "Y");
-            ildCORP.SetLookupParamValue("W_ENABLED_FLAG_YN", "N");
+            ildCORP.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
 
             // LOOKUP DEFAULT VALUE SETTING - CORP
             idcDEFAULT_CORP.SetCommandParamValue("W_DUTY_CONTROL_YN", "Y");
-            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "N");
+            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "Y");
             idcDEFAULT_CORP.ExecuteNonQuery();
             CORP_NAME_0.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
             CORP_ID_0.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_ID");
@@ -792,17 +832,8 @@ namespace HRMF0391
             System.Windows.Forms.Cursor.Current = Cursors.Default;
             Application.DoEvents();
 
-            if (mDEVICE_TYPE == "SECOM")
-            {
-                IDA_SECOM_HISTORY.Fill();
-                IGR_SECOM_HISTORY.Focus();
-            }
-            else if (mDEVICE_TYPE == "CAPS")
-            {
-                IDA_CAPS_HISTORY.Fill();
-                IGR_CAPS_HISTORY.Focus();
-            }
-
+            IDA_SECOM_HISTORY.Fill();
+            IGR_SECOM_HISTORY.Focus(); 
         }
 
         private void Secom_History()
@@ -840,34 +871,53 @@ namespace HRMF0391
             }
             else if (mDB_TYPE == "ORACLE")
             {
-                Application.UseWaitCursor = true;
-                System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
-                Application.DoEvents();
+                //Application.UseWaitCursor = true;
+                //System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
+                //Application.DoEvents();
+
+                //string vWORK_DATE_FR = string.Format("{0:yyyy-MM-dd}", vStartDate);
+                //string vWORK_DATE_TO = string.Format("{0:yyyy-MM-dd}", vEndDate);
+                //iptPERIOD.PromptText = string.Format("Set Interface Date : {0}~{1}", vWORK_DATE_FR, vWORK_DATE_TO);
+
+                //IDC_SET_SECOM_ALARAM.ExecuteNonQuery();
+                //mSTATUS = iConv.ISNull(IDC_SET_SECOM_ALARAM.GetCommandParamValue("O_STATUS"));
+                //mMESSAGE = iConv.ISNull(IDC_SET_SECOM_ALARAM.GetCommandParamValue("O_MESSAGE")); 
+                //if (IDC_SET_SECOM_ALARAM.ExcuteError || mSTATUS == "F")
+                //{
+                //    igbSET_INTERFACE.Visible = false;
+                //    Application.UseWaitCursor = false;
+                //    System.Windows.Forms.Cursor.Current = Cursors.Default;
+                //    Application.DoEvents();
+                //    MessageBoxAdv.Show(mMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //    return;
+                //}
+                //igbSET_INTERFACE.Visible = false;
+
+                //Application.UseWaitCursor = false;
+                //System.Windows.Forms.Cursor.Current = Cursors.Default;
+                //Application.DoEvents();
+
+                //MessageBoxAdv.Show(mMESSAGE, "Infomation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //return;
 
                 string vWORK_DATE_FR = string.Format("{0:yyyy-MM-dd}", vStartDate);
                 string vWORK_DATE_TO = string.Format("{0:yyyy-MM-dd}", vEndDate);
-                iptPERIOD.PromptText = string.Format("Set Interface Date : {0}~{1}", vWORK_DATE_FR, vWORK_DATE_TO);
 
-                IDC_SET_SECOM_ALARAM.ExecuteNonQuery();
-                mSTATUS = iConv.ISNull(IDC_SET_SECOM_ALARAM.GetCommandParamValue("O_STATUS"));
-                mMESSAGE = iConv.ISNull(IDC_SET_SECOM_ALARAM.GetCommandParamValue("O_MESSAGE")); 
-                if (IDC_SET_SECOM_ALARAM.ExcuteError || mSTATUS == "F")
+                iptPERIOD.PromptText = string.Format("Set Interface Date : {0}~{1}", vWORK_DATE_FR, vWORK_DATE_TO);
+                iptSET_MESSAGE.PromptText = "";
+                ipbSECOM_INTERFACE.BarFillPercent = 0;
+                igbSET_INTERFACE.Visible = true;
+                Application.DoEvents();
+                 
+                if (Connect_Secom_ORACLE(vWORK_DATE_FR, vWORK_DATE_TO) == false)
                 {
                     igbSET_INTERFACE.Visible = false;
                     Application.UseWaitCursor = false;
                     System.Windows.Forms.Cursor.Current = Cursors.Default;
                     Application.DoEvents();
-                    MessageBoxAdv.Show(mMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                igbSET_INTERFACE.Visible = false;
 
-                Application.UseWaitCursor = false;
-                System.Windows.Forms.Cursor.Current = Cursors.Default;
-                Application.DoEvents();
-
-                MessageBoxAdv.Show(mMESSAGE, "Infomation", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
             }
             else
             {//SECOM 
@@ -901,28 +951,31 @@ namespace HRMF0391
                         return;
                     }
                     Application.DoEvents();
-                }
+                } 
             }
-             
-            IDC_SECOM_SET_INTERFACE.ExecuteNonQuery();
-            mSTATUS = iConv.ISNull(IDC_SECOM_SET_INTERFACE.GetCommandParamValue("O_STATUS"));
-            mMESSAGE = iConv.ISNull(IDC_SECOM_SET_INTERFACE.GetCommandParamValue("O_MESSAGE"));
-            if (IDC_SECOM_SET_INTERFACE.ExcuteError || mSTATUS == "F")
+
+            if (mDB_TYPE != "ORACLE")
             {
-                igbSET_INTERFACE.Visible = false;
-                Application.UseWaitCursor = false; 
-                System.Windows.Forms.Cursor.Current = Cursors.Default;
-                Application.DoEvents(); 
-                MessageBoxAdv.Show(mMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            } 
+                IDC_SECOM_SET_INTERFACE.ExecuteNonQuery();
+                mSTATUS = iConv.ISNull(IDC_SECOM_SET_INTERFACE.GetCommandParamValue("O_STATUS"));
+                mMESSAGE = iConv.ISNull(IDC_SECOM_SET_INTERFACE.GetCommandParamValue("O_MESSAGE"));
+                if (IDC_SECOM_SET_INTERFACE.ExcuteError || mSTATUS == "F")
+                {
+                    igbSET_INTERFACE.Visible = false;
+                    Application.UseWaitCursor = false;
+                    System.Windows.Forms.Cursor.Current = Cursors.Default;
+                    Application.DoEvents();
+                    MessageBoxAdv.Show(mMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                MessageBoxAdv.Show(mMESSAGE, "Infomation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             igbSET_INTERFACE.Visible = false;
 
             Application.UseWaitCursor = false;
             System.Windows.Forms.Cursor.Current = Cursors.Default;
             Application.DoEvents();
 
-            MessageBoxAdv.Show(mMESSAGE, "Infomation", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return;
         }
 
@@ -1041,23 +1094,8 @@ namespace HRMF0391
             mDB_TYPE = iConv.ISNull(IDC_GET_WORK_DEVICE_TYPE.GetCommandParamValue("O_DB_TYPE"));
             mDEVICE_TYPE = iConv.ISNull(IDC_GET_WORK_DEVICE_TYPE.GetCommandParamValue("O_WORK_DEVICE_TYPE")); 
              
-            if (mDEVICE_TYPE == "SECOM")
-            {
-                IGR_SECOM_HISTORY.Visible = true;
-                IGR_CAPS_HISTORY.Visible = false;
+            IGR_SECOM_HISTORY.Visible = true; 
 
-                IGR_SECOM_HISTORY.Width = 946;
-                IGR_SECOM_HISTORY.Height = 483;
-            }
-            else if (mDEVICE_TYPE == "CAPS")
-            {
-                IGR_SECOM_HISTORY.Visible = false;
-                IGR_CAPS_HISTORY.Visible = true;
-
-                IGR_CAPS_HISTORY.Width = 946;
-                IGR_CAPS_HISTORY.Height = 483;
-            } 
-                
             //DefaultSetFormReSize();             //[Child Form, Mdi Form에 맞게 ReSize]
             irbALL.CheckedState = ISUtil.Enum.CheckedState.Checked;
             igbSET_INTERFACE.Visible = false;            
@@ -1111,51 +1149,8 @@ namespace HRMF0391
             GetDeviceConfig();
 
             string vSTATUS = "";
-            string vMESSAGE = "";
-            if (mDEVICE_TYPE == "SECOM")
-            {
-                IDC_SECOM_HISTORY_COUNT.ExecuteNonQuery();
-                RecordCount = Convert.ToInt32(IDC_SECOM_HISTORY_COUNT.GetCommandParamValue("O_COUNT"));
-
-                if (RecordCount > 0)
-                {
-                    if (DialogResult.OK == MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10082"), "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question))
-                    {
-                        // 기존 자료 삭제.
-                        IDC_SECOM_HISTORY_DELETE.ExecuteNonQuery();
-                        vSTATUS = iConv.ISNull(IDC_SECOM_HISTORY_DELETE.GetCommandParamValue("O_STATUS"));
-                        vMESSAGE = iConv.ISNull(IDC_SECOM_HISTORY_DELETE.GetCommandParamValue("O_MESSAGE"));
-                        if(IDC_SECOM_HISTORY_DELETE.ExcuteError)
-                        {
-                            Application.UseWaitCursor = false;
-                            System.Windows.Forms.Cursor.Current = Cursors.Default;
-                            Application.DoEvents();
-
-                            MessageBoxAdv.Show(IDC_SECOM_HISTORY_DELETE.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                        }
-                        else if(vSTATUS == "F")
-                        {
-                            Application.UseWaitCursor = false;
-                            System.Windows.Forms.Cursor.Current = Cursors.Default;
-                            Application.DoEvents();
-
-                            MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                        }
-                    }
-                    else
-                    {
-                        Application.UseWaitCursor = false;
-                        System.Windows.Forms.Cursor.Current = Cursors.Default;
-                        Application.DoEvents();
-                        return;
-                    }
-                }
-
-                Secom_History();
-            }
-            else if (mDEVICE_TYPE == "CAPS")
+            string vMESSAGE = ""; 
+            if (mDEVICE_TYPE == "CAPS")
             {
                 IDC_DEVICE_HISTORY_COUNT.ExecuteNonQuery();
                 RecordCount = Convert.ToInt32(IDC_DEVICE_HISTORY_COUNT.GetCommandParamValue("O_COUNT"));
@@ -1198,6 +1193,49 @@ namespace HRMF0391
                 }
 
                 Caps_History();
+            }
+            else
+            {
+                IDC_SECOM_HISTORY_COUNT.ExecuteNonQuery();
+                RecordCount = Convert.ToInt32(IDC_SECOM_HISTORY_COUNT.GetCommandParamValue("O_COUNT"));
+
+                if (RecordCount > 0)
+                {
+                    if (DialogResult.OK == MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10082"), "Question", MessageBoxButtons.OKCancel, MessageBoxIcon.Question))
+                    {
+                        // 기존 자료 삭제.
+                        IDC_SECOM_HISTORY_DELETE.ExecuteNonQuery();
+                        vSTATUS = iConv.ISNull(IDC_SECOM_HISTORY_DELETE.GetCommandParamValue("O_STATUS"));
+                        vMESSAGE = iConv.ISNull(IDC_SECOM_HISTORY_DELETE.GetCommandParamValue("O_MESSAGE"));
+                        if (IDC_SECOM_HISTORY_DELETE.ExcuteError)
+                        {
+                            Application.UseWaitCursor = false;
+                            System.Windows.Forms.Cursor.Current = Cursors.Default;
+                            Application.DoEvents();
+
+                            MessageBoxAdv.Show(IDC_SECOM_HISTORY_DELETE.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                        else if (vSTATUS == "F")
+                        {
+                            Application.UseWaitCursor = false;
+                            System.Windows.Forms.Cursor.Current = Cursors.Default;
+                            Application.DoEvents();
+
+                            MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        Application.UseWaitCursor = false;
+                        System.Windows.Forms.Cursor.Current = Cursors.Default;
+                        Application.DoEvents();
+                        return;
+                    }
+                }
+
+                Secom_History();
             }
             Application.UseWaitCursor = false;
             System.Windows.Forms.Cursor.Current = Cursors.Default;

@@ -43,10 +43,9 @@ namespace HRMF0522
            
         private int mPrintingLineSTART = 1;  //Line
         
-        private int mIncrementCopyMAX = 70;  //복사되어질 행의 범위
+        private int mIncrementCopyMAX = 58;  //복사되어질 행의 범위
 
-        private int mCopyColumnSTART = 1; //복사되어  진 행 누적 수
-        private int mCopyColumnEND = 45;  //엑셀의 선택된 쉬트의 복사되어질 끝 열 위치
+        private int mCopyColumnSTART = 1; //복사되어  진 행 누적 수 
 
         #endregion;
 
@@ -106,7 +105,14 @@ namespace HRMF0522
         public void Dispose()
         {
             mPrinting.XLOpenFileClose();
-            mPrinting.XLClose();
+            try
+            {
+                mPrinting.XLClose();
+            }
+            catch
+            {
+
+            }
         }
 
         #endregion;
@@ -148,19 +154,21 @@ namespace HRMF0522
 
         private void SetArray1(System.Data.DataTable pTable, out int[] pGDColumn, out int[] pXLColumn)
         {
-            pGDColumn = new int[2];
-            pXLColumn = new int[2];
+            pGDColumn = new int[3];
+            pXLColumn = new int[3];
 
             pGDColumn[0] = pTable.Columns.IndexOf("ALLOWANCE_NAME");       //급여 지급명
             pGDColumn[1] = pTable.Columns.IndexOf("ALLOWANCE_AMOUNT");     //급여 지급금액
+            pGDColumn[2] = pTable.Columns.IndexOf("CAL_METHOD_DESC");     //급여 지급설명
 
-            pXLColumn[0] = 6;    //급여 지급명
-            pXLColumn[1] = 15;   //급여 지급명액
+            pXLColumn[0] = 5;    //급여 지급명
+            pXLColumn[1] = 12;   //급여 지급명액
+            pXLColumn[2] = 18;   //급여 계산설명
         }
 
         private void SetArray1(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, out int[] pGDColumn)
         {
-            pGDColumn = new int[28];
+            pGDColumn = new int[31];
 
             pGDColumn[0] = pGrid.GetColumnToIndex("WAGE_TYPE_NAME");            //Title
             pGDColumn[1] = pGrid.GetColumnToIndex("DEPT_NAME");                 //부서
@@ -195,7 +203,10 @@ namespace HRMF0522
             pGDColumn[24] = pGrid.GetColumnToIndex("JOIN_DATE");                //입사일자 
             pGDColumn[25] = pGrid.GetColumnToIndex("PAY_DATE");                 //정식입사일 
             pGDColumn[26] = pGrid.GetColumnToIndex("PAY_STEP");                 //호봉
-            pGDColumn[27] = pGrid.GetColumnToIndex("PAY_YYYYMM");               //급여년월
+            pGDColumn[27] = pGrid.GetColumnToIndex("PAY_YYYYMM");               //급여년월 
+            pGDColumn[28] = pGrid.GetColumnToIndex("EMAIL");                    //이메일주소
+            pGDColumn[29] = pGrid.GetColumnToIndex("PASSWORD");                //암호
+            pGDColumn[30] = pGrid.GetColumnToIndex("PAY_DAY");                 //급여일수 
         }
 
         #endregion;
@@ -204,14 +215,16 @@ namespace HRMF0522
 
         private void SetArray2(System.Data.DataTable pTable, out int[] pGDColumn, out int[] pXLColumn)
         {
-            pGDColumn = new int[2];
-            pXLColumn = new int[2];
+            pGDColumn = new int[3];
+            pXLColumn = new int[3];
 
             pGDColumn[0] = pTable.Columns.IndexOf("DEDUCTION_NAME");       //급여 공제명
             pGDColumn[1] = pTable.Columns.IndexOf("DEDUCTION_AMOUNT");     //급여 공제금액
+            pGDColumn[2] = pTable.Columns.IndexOf("CAL_METHOD_DESC");     //급여 공젱 설명
 
-            pXLColumn[0] = 25;   //급여 공제명
-            pXLColumn[1] = 34;   //급여 공제금액
+            pXLColumn[0] = 26;   //급여 공제명
+            pXLColumn[1] = 33;   //급여 공제금액
+            pXLColumn[2] = 39;   //급여 계산설명
         }
 
         #endregion;
@@ -220,14 +233,16 @@ namespace HRMF0522
 
         private void SetArray3(System.Data.DataTable pTable, out int[] pGDColumn, out int[] pXLColumn)
         {
-            pGDColumn = new int[2];
-            pXLColumn = new int[2];
+            pGDColumn = new int[3];
+            pXLColumn = new int[3];
 
             pGDColumn[0] = pTable.Columns.IndexOf("ALLOWANCE_NAME");       //상여 지급명
             pGDColumn[1] = pTable.Columns.IndexOf("ALLOWANCE_AMOUNT");     //상여 지급금액
+            pGDColumn[2] = pTable.Columns.IndexOf("CAL_METHOD_DESC");     //급여 지급설명
 
-            pXLColumn[0] = 6;    //상여 지급명
-            pXLColumn[1] = 15;   //상여 지급명액
+            pXLColumn[0] = 5;    //상여 지급명
+            pXLColumn[1] = 12;   //상여 지급명액
+            pXLColumn[2] = 18;   //상여 계산설명
         }
 
         #endregion;
@@ -236,14 +251,16 @@ namespace HRMF0522
 
         private void SetArray4(System.Data.DataTable pTable, out int[] pGDColumn, out int[] pXLColumn)
         {
-            pGDColumn = new int[2];
-            pXLColumn = new int[2];
+            pGDColumn = new int[3];
+            pXLColumn = new int[3];
 
             pGDColumn[0] = pTable.Columns.IndexOf("DEDUCTION_NAME");       //상여 공제명
             pGDColumn[1] = pTable.Columns.IndexOf("DEDUCTION_AMOUNT");     //상여 공제금액
+            pGDColumn[2] = pTable.Columns.IndexOf("CAL_METHOD_DESC");     //상여 지급설명
 
-            pXLColumn[0] = 25;   //상여 공제명
-            pXLColumn[1] = 34;   //상여 공제금액
+            pXLColumn[0] = 26;   //상여 공제명
+            pXLColumn[1] = 33;   //상여 공제금액
+            pXLColumn[2] = 39;   //상여 계산설명
         }
 
         #endregion;
@@ -290,6 +307,48 @@ namespace HRMF0522
             pXLColumn[15] = 28;  //미주차(부가내역)
         }
 
+        private void SetArray5_BHK(System.Data.DataTable pTable, out int[] pGDColumn, out int[] pXLColumn)
+        {
+            pGDColumn = new int[17];
+            pXLColumn = new int[17];
+
+            pGDColumn[0] = pTable.Columns.IndexOf("TOTAL_ATT_TIME");        //기본근무시간 
+            pGDColumn[1] = pTable.Columns.IndexOf("OVER_TIME");             //연장근무  
+            pGDColumn[2] = pTable.Columns.IndexOf("NIGHT_BONUS_TIME");      //야간근무
+            pGDColumn[3] = pTable.Columns.IndexOf("HOLIDAY_TIME");          //휴일근무
+            pGDColumn[4] = pTable.Columns.IndexOf("HOLIDAY_OVER_TIME");     //휴일연장근무 
+            pGDColumn[5] = pTable.Columns.IndexOf("LATE_TIME");             //근태공제 
+            pGDColumn[6] = pTable.Columns.IndexOf("CREATION_NUM");          //발생연차 
+            pGDColumn[7] = pTable.Columns.IndexOf("REMAIN_NUM");            //잔여연차 
+            pGDColumn[8] = pTable.Columns.IndexOf("BASE_AMOUNT");           //기본급 
+            pGDColumn[9] = pTable.Columns.IndexOf("TOTAL_ATT_DAY");         //근무일수 
+            pGDColumn[10] = pTable.Columns.IndexOf("S_HOLY_1_COUNT");       //주휴일수 
+            pGDColumn[11] = pTable.Columns.IndexOf("H_HOLY_1_COUNT");       //공휴일수 
+            pGDColumn[12] = pTable.Columns.IndexOf("HOLY_0_COUNT");         //무휴일수 
+            pGDColumn[13] = pTable.Columns.IndexOf("DUTY_11");              //결근 
+            pGDColumn[14] = pTable.Columns.IndexOf("LATE_DED_COUNT");       //지각/조퇴회수 
+            pGDColumn[15] = pTable.Columns.IndexOf("THIS_DUTY_20_NUM");     //당월사용연차수
+            pGDColumn[16] = pTable.Columns.IndexOf("USE_NUM");              //누적사용연차수
+
+            pXLColumn[0] = 3;       //기본근무시간
+            pXLColumn[1] = 10;       //연장근무
+            pXLColumn[2] = 17;      //야간근무
+            pXLColumn[3] = 24;      //휴일근무
+            pXLColumn[4] = 31;      //휴일연장근무
+            pXLColumn[5] = 38;      //근태공제
+            pXLColumn[6] = 33;      //발생연차 
+            pXLColumn[7] = 38;      //잔여연차
+            pXLColumn[8] = 3;       //기본급
+            pXLColumn[9] = 19;       //근무일수
+            pXLColumn[10] = 24;     //주휴일수 
+            pXLColumn[11] = 15;     //공휴일수 
+            pXLColumn[12] = 29;     //무휴일수 
+            pXLColumn[13] = 34;     //결근
+            pXLColumn[14] = 40;     //지각/조퇴회수 
+            pXLColumn[15] = 33;     //당월사용연차수
+            pXLColumn[16] = 38;     //누적사용연차수
+        }
+
         #endregion;
 
         #region ----- Array Set 6 ----
@@ -333,38 +392,111 @@ namespace HRMF0522
             pGDColumn[25] = pGrid.GetColumnToIndex("DESCRIPTION");              //비고
             pGDColumn[26] = pGrid.GetColumnToIndex("NOTIFICATION");             //알림
 
-            pXLColumn[0] = 4;       //Title
-            pXLColumn[1] = 8;       //부서
-            pXLColumn[2] = 8;       //직위
-            pXLColumn[3] = 8;       //사번
-            pXLColumn[4] = 8;       //이름
+            pXLColumn[0] = 3;       //Title
+            pXLColumn[1] = 7;       //부서
+            pXLColumn[2] = 7;       //직위
+            pXLColumn[3] = 7;       //사번
+            pXLColumn[4] = 7;       //이름
 
-            pXLColumn[5] = 9;       //성명
-            pXLColumn[6] = 22;      //사번
-            pXLColumn[7] = 36;      //부서
-            pXLColumn[8] = 9;       //직위
-            pXLColumn[9] = 22;      //직군
-            pXLColumn[10] = 36;     //지급일
-            pXLColumn[11] = 9;      //입금은행
-            pXLColumn[12] = 22;     //입금계좌
+            pXLColumn[5] = 8;       //성명
+            pXLColumn[6] = 21;      //사번
+            pXLColumn[7] = 35;      //부서
+            pXLColumn[8] = 8;       //직위
+            pXLColumn[9] = 21;      //직군
+            pXLColumn[10] = 35;     //지급일
+            pXLColumn[11] = 8;      //입금은행
+            pXLColumn[12] = 21;     //입금계좌
 
-            pXLColumn[13] = 32;     //기본급
-            pXLColumn[14] = 36;     //시급
-            pXLColumn[15] = 40;     //통상시급
+            pXLColumn[13] = 31;     //기본급
+            pXLColumn[14] = 35;     //시급
+            pXLColumn[15] = 39;     //통상시급
 
-            pXLColumn[16] = 34;     //급여 총공제액
-            pXLColumn[17] = 15;     //급여 총지급액
-            pXLColumn[18] = 34;     //급여 실지급액
+            pXLColumn[16] = 33;     //급여 총공제액
+            pXLColumn[17] = 12;     //급여 총지급액
+            pXLColumn[18] = 33;     //급여 실지급액
 
-            pXLColumn[19] = 34;     //상여 총공제액
-            pXLColumn[20] = 15;     //상여 총지급액
-            pXLColumn[21] = 34;     //상여 실지급액
+            pXLColumn[19] = 33;     //상여 총공제액
+            pXLColumn[20] = 12;     //상여 총지급액
+            pXLColumn[21] = 33;     //상여 실지급액
 
-            pXLColumn[22] = 15;     //총지급액
-            pXLColumn[23] = 34;     //총공제액
-            pXLColumn[24] = 25;     //총 실지급액
+            pXLColumn[22] = 12;     //총지급액
+            pXLColumn[23] = 22;     //총공제액
+            pXLColumn[24] = 26;     //총 실지급액
 
-            pXLColumn[25] = 4;      //비고
+            pXLColumn[25] = 3;      //비고
+        }
+
+        private void SetArray6_BHK(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, out int[] pGDColumn, out int[] pXLColumn)
+        {
+            pGDColumn = new int[27];
+            pXLColumn = new int[26];
+
+            pGDColumn[0] = pGrid.GetColumnToIndex("WAGE_TYPE_NAME");            //Title
+            pGDColumn[1] = pGrid.GetColumnToIndex("DEPT_NAME");                 //부서
+            pGDColumn[2] = pGrid.GetColumnToIndex("POST_NAME");                 //직위
+            pGDColumn[3] = pGrid.GetColumnToIndex("PERSON_NUM");                //사번
+            pGDColumn[4] = pGrid.GetColumnToIndex("NAME");                      //이름
+
+            pGDColumn[5] = pGrid.GetColumnToIndex("NAME");                      //성명
+            pGDColumn[6] = pGrid.GetColumnToIndex("PERSON_NUM");                //사번
+            pGDColumn[7] = pGrid.GetColumnToIndex("DEPT_NAME");                 //부서
+            pGDColumn[8] = pGrid.GetColumnToIndex("POST_NAME");                 //직위
+            pGDColumn[9] = pGrid.GetColumnToIndex("JOB_CLASS_NAME");            //직군
+            pGDColumn[10] = pGrid.GetColumnToIndex("SUPPLY_DATE");              //지급일
+            pGDColumn[11] = pGrid.GetColumnToIndex("BANK_NAME");                //입금은행
+            pGDColumn[12] = pGrid.GetColumnToIndex("BANK_ACCOUNTS");            //입금계좌
+
+            pGDColumn[13] = pGrid.GetColumnToIndex("BASIC_AMOUNT");             //기본급
+            pGDColumn[14] = pGrid.GetColumnToIndex("HOURLY_AMOUNT");            //시급
+            pGDColumn[15] = pGrid.GetColumnToIndex("GENERAL_HOURLY_AMOUNT");    //통상시급
+
+            pGDColumn[16] = pGrid.GetColumnToIndex("TOT_PAY_DED_AMOUNT");       //급여 총공제액
+            pGDColumn[17] = pGrid.GetColumnToIndex("TOT_PAY_SUP_AMOUNT");       //급여 총지급액
+            pGDColumn[18] = pGrid.GetColumnToIndex("REAL_PAY_AMOUNT");          //급여 실지급액
+
+            pGDColumn[19] = pGrid.GetColumnToIndex("TOT_BONUS_DED_AMOUNT");     //상여 총공제액
+            pGDColumn[20] = pGrid.GetColumnToIndex("TOT_BONUS_SUP_AMOUNT");     //상여 총지급액
+            pGDColumn[21] = pGrid.GetColumnToIndex("REAL_BONUS_AMOUNT");        //상여 실지급액
+
+            pGDColumn[22] = pGrid.GetColumnToIndex("TOT_SUPPLY_AMOUNT");        //총지급액
+            pGDColumn[23] = pGrid.GetColumnToIndex("TOT_DED_AMOUNT");           //총공제액
+            pGDColumn[24] = pGrid.GetColumnToIndex("REAL_AMOUNT");              //총 실지급액
+
+            pGDColumn[25] = pGrid.GetColumnToIndex("DESCRIPTION");              //비고
+            pGDColumn[26] = pGrid.GetColumnToIndex("NOTIFICATION");             //알림
+
+            pXLColumn[0] = 3;       //Title
+            pXLColumn[1] = 7;       //부서
+            pXLColumn[2] = 7;       //직위
+            pXLColumn[3] = 7;       //사번
+            pXLColumn[4] = 7;       //이름
+
+            pXLColumn[5] = 8;       //성명
+            pXLColumn[6] = 21;      //사번
+            pXLColumn[7] = 35;      //부서
+            pXLColumn[8] = 8;       //직위
+            pXLColumn[9] = 21;      //직군
+            pXLColumn[10] = 35;     //지급일
+            pXLColumn[11] = 8;      //입금은행
+            pXLColumn[12] = 21;     //입금계좌
+
+            pXLColumn[13] = 3;     //기본일급
+            pXLColumn[14] = 0;     //시급
+            pXLColumn[15] = 11;     //통상시급
+
+            pXLColumn[16] = 33;     //급여 총공제액
+            pXLColumn[17] = 12;     //급여 총지급액
+            pXLColumn[18] = 33;     //급여 실지급액
+
+            pXLColumn[19] = 33;     //상여 총공제액
+            pXLColumn[20] = 12;     //상여 총지급액
+            pXLColumn[21] = 33;     //상여 실지급액
+
+            pXLColumn[22] = 12;     //총지급액
+            pXLColumn[23] = 33;     //총공제액
+            pXLColumn[24] = 26;     //총 실지급액
+
+            pXLColumn[25] = 3;      //비고
         }
 
         #endregion;
@@ -696,6 +828,246 @@ namespace HRMF0522
                 mAppInterface.OnAppMessageEvent(mMessageError);
                 System.Windows.Forms.Application.DoEvents();
             }
+        }
+
+        private bool XLLine_HEADER_IFK(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, int pGridRow, int pXLine, int[] pGridCol)
+        {
+            int vXLine = pXLine + 1; //엑셀에 내용이 표시되는 행 번호
+
+            object vObject = null;
+            string vConvertString = string.Empty;
+            DateTime vConvertDate;
+            decimal vConvertDecimal = 0m;
+
+            bool IsConvert = false;
+            try
+            {
+                mPrinting.XLActiveSheet(mTargetSheet);
+
+                //Title
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[0]);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 2, vConvertString);
+
+                //성명
+                //-------------------------------------------------------------------
+                vXLine = vXLine +4;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[4]);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}({1})", vConvertString, pGrid.GetCellValue(pGridRow, pGridCol[3]));
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 14, vConvertString);
+
+                //부서명
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[1]);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 14, vConvertString);
+
+                //직위
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[2]);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 14, vConvertString);
+
+                //입금일자
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 12;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[6]);
+                IsConvert = IsConvertDate(vObject, out vConvertDate);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:yyyy-MM-dd}", vConvertDate);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 6, vConvertString);
+
+                //입금은행
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[8]);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("[{0}] {1}", pGrid.GetCellValue(pGridRow, pGridCol[7]), vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 6, vConvertString);
+
+                //기본근무
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 1;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[30]);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 6, vConvertString);
+
+                //기본급
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[9]);
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 6, vConvertString);
+
+                //통상시급 
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[11]);
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###,###,###,###}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 14, vConvertString);
+
+                //총지급액//
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 32;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[18]);
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###,###,###,##0}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 15, vConvertString);
+
+                //총공제액 
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[19]);
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###,###,###,##0}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 37, vConvertString);
+
+                //총_실지급액
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 1;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[20]);
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###,###,###,##0}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 24, vConvertString);
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+
+                //비고
+                vObject = string.Format("{0}{1}", pGrid.GetCellValue(pGridRow, pGridCol[21]), pGrid.GetCellValue(pGridRow, pGridCol[23]));
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 1, vConvertString);
+
+                //회사명
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[22]);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("[{0}]", vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 33, vConvertString);
+
+            }
+            catch (System.Exception ex)
+            {
+                mAppInterface.OnAppMessageEvent("XLLine Header :: " + ex.Message);
+                System.Windows.Forms.Application.DoEvents();
+                return false;
+            }
+            return true;
         }
 
         private bool XLLine_HEADER_SIK(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, int pGridRow, int pXLine, int[] pGridCol)
@@ -1165,6 +1537,202 @@ namespace HRMF0522
             }
         }
 
+        private bool XLLine_HEADER_DKT(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, int pGridRow, int pXLine, int[] pGridCol)
+        {
+            int vXLine = pXLine + 1; //엑셀에 내용이 표시되는 행 번호
+
+            object vObject = null;
+            string vConvertString = string.Empty;
+            DateTime vConvertDate;
+            decimal vConvertDecimal = 0m;
+
+            bool IsConvert = false;
+            try
+            {
+                mPrinting.XLActiveSheet(mTargetSheet);
+
+                //Title
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[0]);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 2, vConvertString);
+
+                //성명
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 4;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[4]);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}({1})", vConvertString, pGrid.GetCellValue(pGridRow, pGridCol[3]));
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 14, vConvertString);
+
+                //부서명
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[1]);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 14, vConvertString);
+
+                //직위
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[2]);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 14, vConvertString);
+
+                //입금일자
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 12;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[6]);
+                IsConvert = IsConvertDate(vObject, out vConvertDate);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:yyyy-MM-dd}", vConvertDate);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 6, vConvertString);
+
+                //입금은행
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[8]);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("[{0}] {1}", pGrid.GetCellValue(pGridRow, pGridCol[7]), vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 6, vConvertString);
+                  
+                //총지급액//
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 35;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[18]);
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###,###,###,##0}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 15, vConvertString);
+
+                //총공제액 
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[19]);
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###,###,###,##0}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 37, vConvertString);
+
+                //총_실지급액
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 1;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[20]);
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:###,###,###,###,##0}", vConvertDecimal);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 24, vConvertString);
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+
+                //비고
+                vObject = string.Format("{0}{1}", pGrid.GetCellValue(pGridRow, pGridCol[21]), pGrid.GetCellValue(pGridRow, pGridCol[23]));
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 1, vConvertString);
+
+                //회사명
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+                vObject = pGrid.GetCellValue(pGridRow, pGridCol[22]);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("[{0}]", vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                }
+                mPrinting.XLSetCell(vXLine, 33, vConvertString);
+
+            }
+            catch (System.Exception ex)
+            {
+                mAppInterface.OnAppMessageEvent("XLLine Header :: " + ex.Message);
+                System.Windows.Forms.Application.DoEvents();
+                return false;
+            }
+            return true;
+        }
+
+
         #endregion;
 
         #region ----- Line Write Method : Adapter 내용 인쇄(연장근무) -----
@@ -1233,6 +1801,67 @@ namespace HRMF0522
                 mAppInterface.OnAppMessageEvent(mMessageError);
                 System.Windows.Forms.Application.DoEvents();
             }
+        }
+
+        private bool XLLine_OT_IFK(InfoSummit.Win.ControlAdv.ISDataAdapter pAdapter, int pXL_Row_Start)
+        {
+            int vXL_Row = pXL_Row_Start;    //엑셀 인쇄시 Row 시작 위치
+            int vMax_Row_Count = 11;        //최대 인쇄 Row값
+
+            object vObject = null;
+            string vConvertString = string.Empty;
+            decimal vConvertDecimal = 0m;
+            bool IsConvert = false;
+
+            mPrinting.XLActiveSheet(mTargetSheet);
+            try
+            {
+                foreach (System.Data.DataRow vRow in pAdapter.OraSelectData.Rows)
+                {
+                    if (vMax_Row_Count < 0)
+                    {
+                        return true;
+                    }
+
+                    //연장근무항목명
+                    vObject = vRow["OT_TYPE_NAME"];
+                    IsConvert = IsConvertString(vObject, out vConvertString);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0}", vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 19, vConvertString);
+
+                    //연장근무시간
+                    vObject = vRow["OT_TIME"];
+                    IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0:##0.##}", vConvertDecimal);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 30, vConvertString);
+
+                    //-------------------------------------------------------------------
+                    vXL_Row = vXL_Row + 1;
+                    vMax_Row_Count = vMax_Row_Count - 1;
+                    //-------------------------------------------------------------------
+                }
+            }
+            catch (System.Exception ex)
+            {
+                mAppInterface.OnAppMessageEvent("XLLine OT : " + ex.Message);
+                System.Windows.Forms.Application.DoEvents();
+                return false;
+            }
+            return true;
         }
 
         private bool XLLine_OT_SIK(InfoSummit.Win.ControlAdv.ISDataAdapter pAdapter, int pXL_Row_Start)
@@ -1359,6 +1988,67 @@ namespace HRMF0522
         #endregion;
 
         #region ----- Line Write Method : Adapter 내용 인쇄(근태계) -----
+
+        private bool XLLine_DUTY_IFK(InfoSummit.Win.ControlAdv.ISDataAdapter pAdapter, int pXL_Row_Start)
+        {
+            int vXL_Row = pXL_Row_Start;    //엑셀 인쇄시 Row 시작 위치
+            int vMax_Row_Count = 11;        //최대 인쇄 Row값
+            //int vMax_Row_Count2 = 5;        //최대 인쇄 Row값
+            object vObject = null;
+            string vConvertString = string.Empty;
+            decimal vConvertDecimal = 0m;
+            bool IsConvert = false;
+
+            mPrinting.XLActiveSheet(mTargetSheet);
+            try
+            {
+                foreach (System.Data.DataRow vRow in pAdapter.OraSelectData.Rows)
+                {
+                    if (vMax_Row_Count < 0)
+                    {
+                        return true;
+                    }
+
+                    //항목명
+                    vObject = vRow["DUTY_NAME"];
+                    IsConvert = IsConvertString(vObject, out vConvertString);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0}", vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 33, vConvertString);
+
+                    //횟수
+                    vObject = vRow["DUTY_COUNT"];
+                    IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0:###,##0.##}", vConvertDecimal);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 43, vConvertString);
+
+                    //-------------------------------------------------------------------
+                    vXL_Row = vXL_Row + 1;
+                    vMax_Row_Count = vMax_Row_Count - 1;
+                    //-------------------------------------------------------------------
+                }
+            }
+            catch (System.Exception ex)
+            {
+                mAppInterface.OnAppMessageEvent("XLLine Duty : " + ex.Message);
+                System.Windows.Forms.Application.DoEvents();
+                return false;
+            }
+            return true;
+        }
 
         private bool XLLine_DUTY_SIK(InfoSummit.Win.ControlAdv.ISDataAdapter pAdapter, int pXL_Row_Start)
         {
@@ -1544,6 +2234,157 @@ namespace HRMF0522
                 System.Windows.Forms.Application.DoEvents();
             }
         }
+
+
+        private bool XLLine_ALLOWANCE_DKT(InfoSummit.Win.ControlAdv.ISDataAdapter pAdapter, int pXL_Row_Start)
+        {
+            int vXL_Row = pXL_Row_Start;    //엑셀 인쇄시 Row 시작 위치
+            int vMax_Row_Count = 16;        //최대 인쇄 Row값
+
+            object vObject = null;
+            string vConvertString = string.Empty;
+            decimal vConvertDecimal = 0m;
+            bool IsConvert = false;
+
+            mPrinting.XLActiveSheet(mTargetSheet);
+            try
+            {
+                foreach (System.Data.DataRow vRow in pAdapter.OraSelectData.Rows)
+                {
+                    if (vMax_Row_Count < 0)
+                    {
+                        return true;
+                    }
+
+                    //항목명
+                    vObject = vRow["ALLOWANCE_NAME"];
+                    IsConvert = IsConvertString(vObject, out vConvertString);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0}", vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 1, vConvertString);
+
+                    //지급금액
+                    vObject = vRow["ALLOWANCE_AMOUNT"];
+                    IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0:###,###,###,###,###}", vConvertDecimal);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 9, vConvertString);
+
+                    //계산식 설명
+                    vObject = vRow["CAL_METHOD_DESC"];
+                    IsConvert = IsConvertString(vObject, out vConvertString);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0}", vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 15, vConvertString);
+
+                    //-------------------------------------------------------------------
+                    vXL_Row = vXL_Row + 2;
+                    vMax_Row_Count = vMax_Row_Count - 1;
+                    //-------------------------------------------------------------------
+                }
+            }
+            catch (System.Exception ex)
+            {
+                mAppInterface.OnAppMessageEvent("XLLine Allowance : " + ex.Message);
+                System.Windows.Forms.Application.DoEvents();
+                return false;
+            }
+            return true;
+        }
+
+
+        private bool XLLine_ALLOWANCE_IFK(InfoSummit.Win.ControlAdv.ISDataAdapter pAdapter, int pXL_Row_Start)
+        {
+            int vXL_Row = pXL_Row_Start;    //엑셀 인쇄시 Row 시작 위치
+            int vMax_Row_Count = 13;        //최대 인쇄 Row값
+
+            object vObject = null;
+            string vConvertString = string.Empty;
+            decimal vConvertDecimal = 0m;
+            bool IsConvert = false;
+
+            mPrinting.XLActiveSheet(mTargetSheet);
+            try
+            {
+                foreach (System.Data.DataRow vRow in pAdapter.OraSelectData.Rows)
+                {
+                    if (vMax_Row_Count < 0)
+                    {
+                        return true;
+                    }
+
+                    //항목명
+                    vObject = vRow["ALLOWANCE_NAME"];
+                    IsConvert = IsConvertString(vObject, out vConvertString);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0}", vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 1, vConvertString);
+
+                    //지급금액
+                    vObject = vRow["ALLOWANCE_AMOUNT"];
+                    IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0:###,###,###,###,###}", vConvertDecimal);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 9, vConvertString);
+
+                    //계산식 설명
+                    vObject = vRow["CAL_METHOD_DESC"];
+                    IsConvert = IsConvertString(vObject, out vConvertString);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0}", vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 15, vConvertString);
+
+                    //-------------------------------------------------------------------
+                    vXL_Row = vXL_Row + 2;
+                    vMax_Row_Count = vMax_Row_Count - 1;
+                    //-------------------------------------------------------------------
+                }
+            }
+            catch (System.Exception ex)
+            {
+                mAppInterface.OnAppMessageEvent("XLLine Allowance : " + ex.Message);
+                System.Windows.Forms.Application.DoEvents();
+                return false;
+            }
+            return true;
+        }
+
 
         private bool XLLine_ALLOWANCE_SIK(InfoSummit.Win.ControlAdv.ISDataAdapter pAdapter, int pXL_Row_Start)
         {
@@ -1731,6 +2572,156 @@ namespace HRMF0522
             }
         }
 
+        private bool XLLine_DEDUCTION_DKT(InfoSummit.Win.ControlAdv.ISDataAdapter pAdapter, int pXL_Row_Start)
+        {
+            int vXL_Row = pXL_Row_Start;    //엑셀 인쇄시 Row 시작 위치
+            int vMax_Row_Count = 16;        //최대 인쇄 Row값
+
+            object vObject = null;
+            string vConvertString = string.Empty;
+            decimal vConvertDecimal = 0m;
+            bool IsConvert = false;
+
+            mPrinting.XLActiveSheet(mTargetSheet);
+            try
+            {
+                foreach (System.Data.DataRow vRow in pAdapter.OraSelectData.Rows)
+                {
+                    if (vMax_Row_Count < 0)
+                    {
+                        return true;
+                    }
+
+                    //항목명
+                    vObject = vRow["DEDUCTION_NAME"];
+                    IsConvert = IsConvertString(vObject, out vConvertString);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0}", vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 24, vConvertString);
+
+                    //공제 금액
+                    vObject = vRow["DEDUCTION_AMOUNT"];
+                    IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0:###,###,###,###,###}", vConvertDecimal);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 31, vConvertString);
+
+                    //계산식 설명
+                    vObject = vRow["CAL_METHOD_DESC"];
+                    IsConvert = IsConvertString(vObject, out vConvertString);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0}", vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 37, vConvertString);
+
+                    //-------------------------------------------------------------------
+                    vXL_Row = vXL_Row + 2;
+                    vMax_Row_Count = vMax_Row_Count - 1;
+                    //-------------------------------------------------------------------
+                }
+            }
+            catch (System.Exception ex)
+            {
+                mAppInterface.OnAppMessageEvent("XLLine Deduction" + ex.Message);
+                System.Windows.Forms.Application.DoEvents();
+                return false;
+            }
+            return true;
+        }
+
+
+        private bool XLLine_DEDUCTION_IFK(InfoSummit.Win.ControlAdv.ISDataAdapter pAdapter, int pXL_Row_Start)
+        {
+            int vXL_Row = pXL_Row_Start;    //엑셀 인쇄시 Row 시작 위치
+            int vMax_Row_Count = 13;        //최대 인쇄 Row값
+
+            object vObject = null;
+            string vConvertString = string.Empty;
+            decimal vConvertDecimal = 0m;
+            bool IsConvert = false;
+
+            mPrinting.XLActiveSheet(mTargetSheet);
+            try
+            {
+                foreach (System.Data.DataRow vRow in pAdapter.OraSelectData.Rows)
+                {
+                    if (vMax_Row_Count < 0)
+                    {
+                        return true;
+                    }
+
+                    //항목명
+                    vObject = vRow["DEDUCTION_NAME"];
+                    IsConvert = IsConvertString(vObject, out vConvertString);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0}", vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 24, vConvertString);
+
+                    //공제 금액
+                    vObject = vRow["DEDUCTION_AMOUNT"];
+                    IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0:###,###,###,###,###}", vConvertDecimal);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 31, vConvertString);
+
+                    //계산식 설명
+                    vObject = vRow["CAL_METHOD_DESC"];
+                    IsConvert = IsConvertString(vObject, out vConvertString);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0}", vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXL_Row, 37, vConvertString);
+
+                    //-------------------------------------------------------------------
+                    vXL_Row = vXL_Row + 2;
+                    vMax_Row_Count = vMax_Row_Count - 1;
+                    //-------------------------------------------------------------------
+                }
+            }
+            catch (System.Exception ex)
+            {
+                mAppInterface.OnAppMessageEvent("XLLine Deduction" + ex.Message);
+                System.Windows.Forms.Application.DoEvents();
+                return false;
+            }
+            return true;
+        }
+
+
         private bool XLLine_DEDUCTION_SIK(InfoSummit.Win.ControlAdv.ISDataAdapter pAdapter, int pXL_Row_Start)
         {
             int vXL_Row = pXL_Row_Start;    //엑셀 인쇄시 Row 시작 위치
@@ -1873,7 +2864,7 @@ namespace HRMF0522
 
             try
             {
-                mPrinting.XLActiveSheet("Destination");
+                mPrinting.XLActiveSheet(mTargetSheet);
 
                 //급여 지급명
                 vDBColumnIndex = pGDColumn[0];
@@ -1907,8 +2898,24 @@ namespace HRMF0522
                     mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
                 }
 
+                //급여 지급설명
+                vDBColumnIndex = pGDColumn[2];
+                vXLColumnIndex = pXLColumn[2];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
                 //-------------------------------------------------------------------
-                vXLine = vXLine + 1;
+                vXLine = vXLine + 2;
                 //-------------------------------------------------------------------
             }
             catch (System.Exception ex)
@@ -1942,7 +2949,7 @@ namespace HRMF0522
 
             try
             {
-                mPrinting.XLActiveSheet("Destination");
+                mPrinting.XLActiveSheet(mTargetSheet);
 
                 //급여 공제명
                 vDBColumnIndex = pGDColumn[0];
@@ -1976,8 +2983,24 @@ namespace HRMF0522
                     mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
                 }
 
+                //급여 공제설명
+                vDBColumnIndex = pGDColumn[2];
+                vXLColumnIndex = pXLColumn[2];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
                 //-------------------------------------------------------------------
-                vXLine = vXLine + 1;
+                vXLine = vXLine + 2;
                 //-------------------------------------------------------------------
             }
             catch (System.Exception ex)
@@ -2011,7 +3034,7 @@ namespace HRMF0522
 
             try
             {
-                mPrinting.XLActiveSheet("Destination");
+                mPrinting.XLActiveSheet(mTargetSheet);
 
                 //상여 지급명
                 vDBColumnIndex = pGDColumn[0];
@@ -2045,8 +3068,24 @@ namespace HRMF0522
                     mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
                 }
 
+                //상여 지급설명
+                vDBColumnIndex = pGDColumn[2];
+                vXLColumnIndex = pXLColumn[2];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
                 //-------------------------------------------------------------------
-                vXLine = vXLine + 1;
+                vXLine = vXLine + 2;
                 //-------------------------------------------------------------------
             }
             catch (System.Exception ex)
@@ -2080,7 +3119,7 @@ namespace HRMF0522
 
             try
             {
-                mPrinting.XLActiveSheet("Destination");
+                mPrinting.XLActiveSheet(mTargetSheet);
 
                 //상여 공제명
                 vDBColumnIndex = pGDColumn[0];
@@ -2114,8 +3153,24 @@ namespace HRMF0522
                     mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
                 }
 
+                //상여 공제설명
+                vDBColumnIndex = pGDColumn[2];
+                vXLColumnIndex = pXLColumn[2];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
                 //-------------------------------------------------------------------
-                vXLine = vXLine + 1;
+                vXLine = vXLine + 2;
                 //-------------------------------------------------------------------
             }
             catch (System.Exception ex)
@@ -2149,7 +3204,7 @@ namespace HRMF0522
 
             try
             {
-                mPrinting.XLActiveSheet("Destination");
+                mPrinting.XLActiveSheet(mTargetSheet);
 
                 //연장(평일)
                 vDBColumnIndex = pGDColumn[0];
@@ -2494,10 +3549,381 @@ namespace HRMF0522
             return pXLine;
         }
 
+        //근무시간 및 부가내역
+        private int XLLine_5_BHK(System.Data.DataRow pRow, int pXLine, int[] pGDColumn, int[] pXLColumn)
+        {
+            int vXLine = pXLine; //엑셀에 내용이 표시되는 행 번호
+
+            int vDBColumnIndex = 0;
+            int vXLColumnIndex = 0;
+
+            object vObject = null;
+            string vConvertString = string.Empty;
+            decimal vConvertDecimal = 0m;
+            bool IsConvert = false;
+
+            try
+            {
+                mPrinting.XLActiveSheet(mTargetSheet);
+
+                //기본 근무시간
+                vDBColumnIndex = pGDColumn[0];
+                vXLColumnIndex = pXLColumn[0];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    if (vConvertDecimal != 0)
+                    {
+                        vConvertString = string.Format("{0:#,##0.###}", vConvertDecimal);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //연장(평일)
+                vDBColumnIndex = pGDColumn[1];
+                vXLColumnIndex = pXLColumn[1];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    if (vConvertDecimal != 0)
+                    {
+                        vConvertString = string.Format("{0:#,##0.###}", vConvertDecimal);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //야간
+                vDBColumnIndex = pGDColumn[2];
+                vXLColumnIndex = pXLColumn[2];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    if (vConvertDecimal != 0)
+                    {
+                        vConvertString = string.Format("{0:#,##0.###}", vConvertDecimal);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                 
+                //주휴일-근무
+                vDBColumnIndex = pGDColumn[3];
+                vXLColumnIndex = pXLColumn[3];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    if (vConvertDecimal != 0)
+                    {
+                        vConvertString = string.Format("{0:#,##0.###}", vConvertDecimal);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //주휴일-연장
+                vDBColumnIndex = pGDColumn[4];
+                vXLColumnIndex = pXLColumn[4];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    if (vConvertDecimal != 0)
+                    {
+                        vConvertString = string.Format("{0:#,##0.###}", vConvertDecimal);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //근태공제
+                vDBColumnIndex = pGDColumn[5];
+                vXLColumnIndex = pXLColumn[5];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    if (vConvertDecimal != 0)
+                    {
+                        vConvertString = string.Format("{0:#,##0.###}", vConvertDecimal);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                    }
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                ////-------------------------------------------------------------------
+                //vXLine = vXLine + 1;
+                ////-------------------------------------------------------------------
+
+                ////무휴일-근무
+                //vDBColumnIndex = pGDColumn[6];
+                //vXLColumnIndex = pXLColumn[6];
+                //vObject = pRow[vDBColumnIndex];
+                //IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                //if (IsConvert == true)
+                //{
+                //    if (vConvertDecimal != 0)
+                //    {
+                //        vConvertString = string.Format("{0:#,##0.###}", vConvertDecimal);
+                //    }
+                //    else
+                //    {
+                //        vConvertString = string.Empty;
+                //    }
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+                //else
+                //{
+                //    vConvertString = string.Empty;
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+
+                ////무휴일-연장
+                //vDBColumnIndex = pGDColumn[7];
+                //vXLColumnIndex = pXLColumn[7];
+                //vObject = pRow[vDBColumnIndex];
+                //IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                //if (IsConvert == true)
+                //{
+                //    if (vConvertDecimal != 0)
+                //    {
+                //        vConvertString = string.Format("{0:#,##0.###}", vConvertDecimal);
+                //    }
+                //    else
+                //    {
+                //        vConvertString = string.Empty;
+                //    }
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+                //else
+                //{
+                //    vConvertString = string.Empty;
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+
+                ////무휴일-야간
+                //vDBColumnIndex = pGDColumn[8];
+                //vXLColumnIndex = pXLColumn[8];
+                //vObject = pRow[vDBColumnIndex];
+                //IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                //if (IsConvert == true)
+                //{
+                //    if (vConvertDecimal != 0)
+                //    {
+                //        vConvertString = string.Format("{0:#,##0.###}", vConvertDecimal);
+                //    }
+                //    else
+                //    {
+                //        vConvertString = string.Empty;
+                //    }
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+                //else
+                //{
+                //    vConvertString = string.Empty;
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 4;
+                //-------------------------------------------------------------------
+
+                //근무일수(부가내역)
+                vDBColumnIndex = pGDColumn[9];
+                vXLColumnIndex = pXLColumn[9];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //주휴일수
+                vDBColumnIndex = pGDColumn[10];
+                vXLColumnIndex = pXLColumn[10];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                ////공휴일일수
+                //vDBColumnIndex = pGDColumn[11];
+                //vXLColumnIndex = pXLColumn[11];
+                //vObject = pRow[vDBColumnIndex];
+                //IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                //if (IsConvert == true)
+                //{
+                //    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+                //else
+                //{
+                //    vConvertString = string.Empty;
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+
+                //무휴일수(부가내역)
+                vDBColumnIndex = pGDColumn[12];
+                vXLColumnIndex = pXLColumn[12];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //결근(부가내역)
+                vDBColumnIndex = pGDColumn[13];
+                vXLColumnIndex = pXLColumn[13];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //지각/조퇴/외출(부가내역)
+                vDBColumnIndex = pGDColumn[14];
+                vXLColumnIndex = pXLColumn[14];
+                vObject = pRow[vDBColumnIndex];
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                ////당월사용연차(부가내역)
+                //vDBColumnIndex = pGDColumn[15];
+                //vXLColumnIndex = pXLColumn[15];
+                //vObject = pRow[vDBColumnIndex];
+                //IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                //if (IsConvert == true)
+                //{
+                //    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+                //else
+                //{
+                //    vConvertString = string.Empty;
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+                ////누적사용연차(부가내역)
+                //vDBColumnIndex = pGDColumn[16];
+                //vXLColumnIndex = pXLColumn[16];
+                //vObject = pRow[vDBColumnIndex];
+                //IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                //if (IsConvert == true)
+                //{
+                //    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+                //else
+                //{
+                //    vConvertString = string.Empty;
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+            }
+            catch (System.Exception ex)
+            {
+                mMessageError = ex.Message;
+                mAppInterface.OnAppMessageEvent(mMessageError);
+                System.Windows.Forms.Application.DoEvents();
+            }
+
+            pXLine = vXLine;
+
+            return pXLine;
+        }
+
         #endregion;
 
         #region ----- Line Write 6 Method -----
-        
+
         //Heaer 및 인적사항, 총금액
         private int XLLine_6(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, int pGridRow, int pXLine, int[] pGDColumn, int[] pXLColumn, string pCourse)
         {
@@ -2514,7 +3940,7 @@ namespace HRMF0522
 
             try
             {
-                mPrinting.XLActiveSheet("Destination");
+                mPrinting.XLActiveSheet(mTargetSheet);
 
                 //Title
                 vGDColumnIndex = pGDColumn[0];
@@ -2533,7 +3959,7 @@ namespace HRMF0522
                 }
 
                 //-------------------------------------------------------------------
-                vXLine = vXLine + 10;
+                vXLine = vXLine + 4;
                 //-------------------------------------------------------------------
 
                 //부서
@@ -2613,7 +4039,7 @@ namespace HRMF0522
                 }
 
                 //-------------------------------------------------------------------
-                vXLine = vXLine + 9;
+                vXLine = vXLine + 4;
                 //-------------------------------------------------------------------
 
                 //성명
@@ -2753,7 +4179,7 @@ namespace HRMF0522
                 }
 
                 //-------------------------------------------------------------------
-                vXLine = vXLine + 10;
+                vXLine = vXLine + 8;
                 //-------------------------------------------------------------------
 
                 //기본급
@@ -2863,7 +4289,7 @@ namespace HRMF0522
                     }
 
                     //-------------------------------------------------------------------
-                    vXLine = vXLine + 6;
+                    vXLine = vXLine + 5;
                     //-------------------------------------------------------------------
 
                     //상여_총공제액
@@ -2925,7 +4351,7 @@ namespace HRMF0522
                 else if (pCourse == "MONTH")
                 {
                     //-------------------------------------------------------------------
-                    vXLine = vXLine + 25;
+                    vXLine = vXLine + 24;
                     //-------------------------------------------------------------------
                 }
 
@@ -3003,6 +4429,526 @@ namespace HRMF0522
 
                 //-------------------------------------------------------------------
                 vXLine = vXLine + 1;
+                //-------------------------------------------------------------------
+            }
+            catch (System.Exception ex)
+            {
+                mMessageError = ex.Message;
+                mAppInterface.OnAppMessageEvent(mMessageError);
+                System.Windows.Forms.Application.DoEvents();
+            }
+
+            pXLine = vXLine;
+
+            return pXLine;
+        }
+
+
+        //Heaer 및 인적사항, 총금액
+        private int XLLine_6_BHK(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, int pGridRow, int pXLine, int[] pGDColumn, int[] pXLColumn, string pCourse)
+        {
+            int vXLine = pXLine; //엑셀에 내용이 표시되는 행 번호
+
+            int vGDColumnIndex = 0;
+            int vXLColumnIndex = 0;
+
+            object vObject = null;
+            string vConvertString = string.Empty;
+            decimal vConvertDecimal = 0m;
+            System.DateTime vConvertDateTime = new System.DateTime();
+            bool IsConvert = false;
+
+            try
+            {
+                mPrinting.XLActiveSheet(mTargetSheet);
+
+                //Title
+                vGDColumnIndex = pGDColumn[0];
+                vXLColumnIndex = pXLColumn[0];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 4;
+                //-------------------------------------------------------------------
+
+                //부서
+                vGDColumnIndex = pGDColumn[1];
+                vXLColumnIndex = pXLColumn[1];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+
+                //직위
+                vGDColumnIndex = pGDColumn[2];
+                vXLColumnIndex = pXLColumn[2];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+
+                //사번
+                vGDColumnIndex = pGDColumn[3];
+                vXLColumnIndex = pXLColumn[3];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
+                //-------------------------------------------------------------------
+
+                //이름
+                vGDColumnIndex = pGDColumn[4];
+                vXLColumnIndex = pXLColumn[4];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 4;
+                //-------------------------------------------------------------------
+
+                //성명
+                vGDColumnIndex = pGDColumn[5];
+                vXLColumnIndex = pXLColumn[5];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //사번
+                vGDColumnIndex = pGDColumn[6];
+                vXLColumnIndex = pXLColumn[6];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //부서
+                vGDColumnIndex = pGDColumn[7];
+                vXLColumnIndex = pXLColumn[7];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 1;
+                //-------------------------------------------------------------------
+
+                //직위
+                vGDColumnIndex = pGDColumn[8];
+                vXLColumnIndex = pXLColumn[8];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //직군
+                vGDColumnIndex = pGDColumn[9];
+                vXLColumnIndex = pXLColumn[9];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //지급일
+                vGDColumnIndex = pGDColumn[10];
+                vXLColumnIndex = pXLColumn[10];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertDate(vObject, out vConvertDateTime);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertDateTime.ToShortDateString());
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 1;
+                //-------------------------------------------------------------------
+
+                //입금은행
+                vGDColumnIndex = pGDColumn[11];
+                vXLColumnIndex = pXLColumn[11];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //입금계좌
+                vGDColumnIndex = pGDColumn[12];
+                vXLColumnIndex = pXLColumn[12];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 8;
+                //-------------------------------------------------------------------
+
+                //기본급
+                vGDColumnIndex = pGDColumn[13];
+                vXLColumnIndex = pXLColumn[13];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                ////시급
+                //vGDColumnIndex = pGDColumn[14];
+                //vXLColumnIndex = pXLColumn[14];
+                //vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                //IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                //if (IsConvert == true)
+                //{
+                //    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+                //else
+                //{
+                //    vConvertString = string.Empty;
+                //    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                //}
+
+                //통상시급
+                vGDColumnIndex = pGDColumn[15];
+                vXLColumnIndex = pXLColumn[15];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                if (pCourse == "DAILY")
+                {
+                    //-------------------------------------------------------------------
+                    vXLine = vXLine + 28;
+                    //-------------------------------------------------------------------
+
+                    //급여_총공제액
+                    vGDColumnIndex = pGDColumn[16];
+                    vXLColumnIndex = pXLColumn[16];
+                    vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                    IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0:#}", vConvertDecimal);
+                        mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                        mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                    }
+
+                    //-------------------------------------------------------------------
+                    vXLine = vXLine + 2;
+                    //-------------------------------------------------------------------
+
+                    //급여_총지급액
+                    vGDColumnIndex = pGDColumn[17];
+                    vXLColumnIndex = pXLColumn[17];
+                    vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                    IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0:#}", vConvertDecimal);
+                        mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                        mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                    }
+
+                    //급여_실지급액
+                    vGDColumnIndex = pGDColumn[18];
+                    vXLColumnIndex = pXLColumn[18];
+                    vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                    IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0:#}", vConvertDecimal);
+                        mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                        mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                    }
+
+                    //-------------------------------------------------------------------
+                    vXLine = vXLine + 10;
+                    //-------------------------------------------------------------------
+
+                    //상여_총공제액
+                    vGDColumnIndex = pGDColumn[19];
+                    vXLColumnIndex = pXLColumn[19];
+                    vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                    IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0:#}", vConvertDecimal);
+                        mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                        mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                    }
+
+                    //-------------------------------------------------------------------
+                    vXLine = vXLine + 2;
+                    //-------------------------------------------------------------------
+
+                    //상여_총지급액
+                    vGDColumnIndex = pGDColumn[20];
+                    vXLColumnIndex = pXLColumn[20];
+                    vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                    IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0:#}", vConvertDecimal);
+                        mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                        mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                    }
+
+                    //상여_실지급액
+                    vGDColumnIndex = pGDColumn[21];
+                    vXLColumnIndex = pXLColumn[21];
+                    vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                    IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                    if (IsConvert == true)
+                    {
+                        vConvertString = string.Format("{0:#}", vConvertDecimal);
+                        mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                    }
+                    else
+                    {
+                        vConvertString = string.Empty;
+                        mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                    }
+
+                    //-------------------------------------------------------------------
+                    vXLine = vXLine + 2;
+                    //-------------------------------------------------------------------
+                }
+                else if (pCourse == "MONTH")
+                {
+                    //-------------------------------------------------------------------
+                    vXLine = vXLine + 44;
+                    //-------------------------------------------------------------------
+                }
+
+                //총지급액
+                vGDColumnIndex = pGDColumn[22];
+                vXLColumnIndex = pXLColumn[22];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //총공제액
+                vGDColumnIndex = pGDColumn[23];
+                vXLColumnIndex = pXLColumn[23];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 1;
+                //-------------------------------------------------------------------
+
+                //총_실지급액
+                vGDColumnIndex = pGDColumn[24];
+                vXLColumnIndex = pXLColumn[24];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertNumber(vObject, out vConvertDecimal);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0:#}", vConvertDecimal);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 3;
+                //-------------------------------------------------------------------
+
+                //비고
+                vGDColumnIndex = pGDColumn[26];  // 알림 //
+                vXLColumnIndex = pXLColumn[25];
+                vObject = pGrid.GetCellValue(pGridRow, vGDColumnIndex);
+                IsConvert = IsConvertString(vObject, out vConvertString);
+                if (IsConvert == true)
+                {
+                    vConvertString = string.Format("{0}", vConvertString);
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+                else
+                {
+                    vConvertString = string.Empty;
+                    mPrinting.XLSetCell(vXLine, vXLColumnIndex, vConvertString);
+                }
+
+                //-------------------------------------------------------------------
+                vXLine = vXLine + 2;
                 //-------------------------------------------------------------------
             }
             catch (System.Exception ex)
@@ -3225,11 +5171,12 @@ namespace HRMF0522
 
          
         public int WriteMain(string pOUTPUT_TYPE, InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid_MONTH_PAYMENT
-                                            , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_ALLOWANCE
-                                            , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_DEDUCTION
-                                            , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_DUTY
-                                            , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_OT
-                                            , string pSeal_Stamp
+                                , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_ALLOWANCE
+                                , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_DEDUCTION
+                                , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_DUTY
+                                , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_OT
+                                , string pSeal_Stamp
+                                , string pImageFile, float pSize_W, float pSize_H, float pLoc_X, float pLoc_Y
             )
         {
             string vMessageText = string.Empty;
@@ -3306,7 +5253,7 @@ namespace HRMF0522
                             //(mCopy_EndRow * mPageNumber)+1;  //현재 인쇄 row 위치 설정 : 인쇄row에 페이지수 + 1 로 페이지 증가시 계산.
                     
                         
-                        mCopyLineSUM = CopyAndPaste(mPrinting, mCurrentRow, mSourceSheet1, pSeal_Stamp);
+                        mCopyLineSUM = CopyAndPaste(mPrinting, mCurrentRow, mSourceSheet1, pSeal_Stamp, pImageFile, pSize_W, pSize_H, pLoc_X, pLoc_Y);
 
                         //vRow++;
                         // 인적정보 인쇄
@@ -3457,12 +5404,302 @@ namespace HRMF0522
             return mPageNumber;
         }
 
+
+        public int WriteMain_IFK(string pOUTPUT_TYPE, InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid_MONTH_PAYMENT
+                                , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_ALLOWANCE
+                                , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_DEDUCTION
+                                , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_DUTY
+                                , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_OT
+                                , string pSeal_Stamp
+                                , string pImageFile, float pSize_W, float pSize_H, float pLoc_X, float pLoc_Y
+            )
+        {
+            string vMessageText = string.Empty;
+            object vObject = null;
+            string vWAGE_TYPE = string.Empty;
+            string vPAY_TYPE = string.Empty;
+            string vCheckedString = "N";
+            string vCheckedString2 = "N";
+
+            int vIDX_CheckBox = pGrid_MONTH_PAYMENT.GetColumnToIndex("SELECT_CHECK_YN");
+            int vIDX_WAGE_TYPE = pGrid_MONTH_PAYMENT.GetColumnToIndex("WAGE_TYPE");
+            int vIDX_PAY_TYPE = pGrid_MONTH_PAYMENT.GetColumnToIndex("PAY_TYPE");
+
+            int[] vGridCol;
+
+            bool isOpen = XLFileOpen();
+
+            mPageNumber = 0;
+            mCopyLineSUM = 0;
+
+            mCopy_StartCol = 1;
+            mCopy_StartRow = 1;
+            mCopy_EndCol = 45;
+            mCopy_EndRow = 64;
+
+            mCurrentRow = 1;
+            mCurrentCol = 1;
+
+            int vTotalRow = pGrid_MONTH_PAYMENT.RowCount;
+            int vRowCount = 0;
+
+            SetArray1(pGrid_MONTH_PAYMENT, out vGridCol);
+
+            for (int vRow = 0; vRow < vTotalRow; vRow++)
+            {
+                vRowCount++;
+
+                vMessageText = string.Format("Printing Rows : {0}/{1}", vRowCount, vTotalRow);
+                mAppInterface.OnAppMessageEvent(vMessageText);
+
+                System.Windows.Forms.Application.UseWaitCursor = true;
+                System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
+                System.Windows.Forms.Application.DoEvents();
+
+                vCheckedString = Convert.ToString(pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_CheckBox));
+                if (vCheckedString == "Y")
+                {
+                    if (isOpen == true)
+                    {
+                        pGrid_MONTH_PAYMENT.CurrentCellMoveTo(vRow, vIDX_CheckBox);
+
+                        mPrintPage++;
+
+                        vObject = pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_WAGE_TYPE);
+                        vWAGE_TYPE = ConvertString(vObject);
+                        vObject = pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_PAY_TYPE);
+                        vPAY_TYPE = ConvertString(vObject);
+
+                        mCurrentRow = (mCopy_EndRow * mPageNumber) + 1;  //현재 인쇄 row 위치 설정 : 인쇄row에 페이지수 + 1 로 페이지 증가시 계산.
+
+                        mCopyLineSUM = CopyAndPaste(mPrinting, mCurrentRow, mSourceSheet1, pSeal_Stamp, pImageFile, pSize_W, pSize_H, pLoc_X, pLoc_Y);
+
+                        //vRow++;
+                        // 인적정보 인쇄
+                        XLLine_HEADER_IFK(pGrid_MONTH_PAYMENT, vRow, mCurrentRow, vGridCol); //Heaer 및 인적사항, 총금액
+
+                        //연장근무 인쇄
+                        XLLine_OT_IFK(pIDA_MONTH_OT, mCurrentRow + 18);
+
+                        //근태계 인쇄
+                        XLLine_DUTY_IFK(pIDA_MONTH_DUTY, mCurrentRow + 18);
+
+                        //지급항목 인쇄
+                        XLLine_ALLOWANCE_IFK(pIDA_PAY_ALLOWANCE, mCurrentRow + 30);
+
+                        //공제항목 인쇄
+                        XLLine_DEDUCTION_IFK(pIDA_PAY_DEDUCTION, mCurrentRow + 30);
+
+                        vCheckedString2 = Convert.ToString(pGrid_MONTH_PAYMENT.GetCellValue(vRow + 1, vIDX_CheckBox));
+                         
+                        //}
+                        if (vTotalRow == vRowCount)
+                        {
+                            if (pOUTPUT_TYPE == "PRINT")
+                            {
+                                Printing(1, mPageNumber);
+                            }
+                            else if (pOUTPUT_TYPE == "FILE")
+                            {
+                                SAVE("PAY_");
+                            }
+                        }
+                        else if (mMaxPrintPage < mPageNumber)
+                        {
+                            if (pOUTPUT_TYPE == "PRINT")
+                            {
+                                Printing(1, mPageNumber);
+
+                                mPrinting.XLOpenFileClose();
+                                isOpen = XLFileOpen();
+                            }
+                            else if (pOUTPUT_TYPE == "FILE")
+                            {
+                                SAVE("PAY_");
+
+                                mPrinting.XLOpenFileClose();
+                                isOpen = XLFileOpen();
+                            }
+                            mPageNumber = 0;
+                            mCurrentRow = 1;
+                            mCopyLineSUM = 1;
+                        }
+                    }
+                     
+                    pGrid_MONTH_PAYMENT.SetCellValue(vRow, vIDX_CheckBox, "N");
+                }
+                else if (vTotalRow == vRowCount)
+                {
+                    if (isOpen == true)
+                    {
+                        if (pOUTPUT_TYPE == "PRINT")
+                        {
+                            Printing(1, mPageNumber);
+                        }
+                        else if (pOUTPUT_TYPE == "FILE")
+                        {
+                            SAVE("PAY_");
+                        }
+                    }
+                }
+            }
+
+            System.Windows.Forms.Application.UseWaitCursor = false;
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default; 
+            System.Windows.Forms.Application.DoEvents();
+
+            return mPageNumber;
+        }
+
+         
+        public int WriteMain_DKT(string pOUTPUT_TYPE, string pSaveFileName
+                                , InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid_MONTH_PAYMENT
+                                , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_ALLOWANCE
+                                , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_DEDUCTION 
+                                , string pSeal_Stamp
+                                , string pImageFile, float pSize_W, float pSize_H, float pLoc_X, float pLoc_Y
+                                )
+        {
+            string vMessageText = string.Empty;
+            object vObject = null;
+            string vWAGE_TYPE = string.Empty;
+            string vPAY_TYPE = string.Empty;
+            string vCheckedString = "N";
+            string vCheckedString2 = "N";
+
+            int vIDX_CheckBox = pGrid_MONTH_PAYMENT.GetColumnToIndex("SELECT_CHECK_YN");
+            int vIDX_WAGE_TYPE = pGrid_MONTH_PAYMENT.GetColumnToIndex("WAGE_TYPE");
+            int vIDX_PAY_TYPE = pGrid_MONTH_PAYMENT.GetColumnToIndex("PAY_TYPE");
+
+            int[] vGridCol;
+
+            bool isOpen = XLFileOpen();
+
+            mPageNumber = 0;
+            mCopyLineSUM = 0;
+
+            mCopy_StartCol = 1;
+            mCopy_StartRow = 1;
+            mCopy_EndCol = 45;
+            mCopy_EndRow = 64;
+
+            mCurrentRow = 1;
+            mCurrentCol = 1;
+
+            int vTotalRow = pGrid_MONTH_PAYMENT.RowCount;
+            int vRowCount = 0;
+
+            SetArray1(pGrid_MONTH_PAYMENT, out vGridCol);
+
+            for (int vRow = 0; vRow < vTotalRow; vRow++)
+            {
+                vRowCount++;
+
+                vMessageText = string.Format("Printing Rows : {0}/{1}", vRowCount, vTotalRow);
+                mAppInterface.OnAppMessageEvent(vMessageText);
+
+                System.Windows.Forms.Application.UseWaitCursor = true;
+                System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
+                System.Windows.Forms.Application.DoEvents();
+
+                vCheckedString = Convert.ToString(pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_CheckBox));
+                if (vCheckedString == "Y")
+                {
+                    if (isOpen == true)
+                    {
+                        pGrid_MONTH_PAYMENT.CurrentCellMoveTo(vRow, vIDX_CheckBox);
+
+                        mPrintPage++;
+
+                        vObject = pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_WAGE_TYPE);
+                        vWAGE_TYPE = ConvertString(vObject);
+                        vObject = pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_PAY_TYPE);
+                        vPAY_TYPE = ConvertString(vObject);
+
+                        mCurrentRow = (mCopy_EndRow * mPageNumber) + 1;  //현재 인쇄 row 위치 설정 : 인쇄row에 페이지수 + 1 로 페이지 증가시 계산.
+
+                        mCopyLineSUM = CopyAndPaste(mPrinting, mCurrentRow, mSourceSheet1
+                                                    , pSeal_Stamp, pImageFile, pSize_W, pSize_H, pLoc_X, pLoc_Y);
+
+                        //vRow++;
+                        // 인적정보 인쇄
+                        XLLine_HEADER_DKT(pGrid_MONTH_PAYMENT, vRow, mCurrentRow, vGridCol); //Heaer 및 인적사항, 총금액
+                         
+                        //지급항목 인쇄
+                        XLLine_ALLOWANCE_DKT(pIDA_PAY_ALLOWANCE, mCurrentRow + 26);
+
+                        //공제항목 인쇄
+                        XLLine_DEDUCTION_DKT(pIDA_PAY_DEDUCTION, mCurrentRow + 26);
+
+                        vCheckedString2 = Convert.ToString(pGrid_MONTH_PAYMENT.GetCellValue(vRow + 1, vIDX_CheckBox));
+
+                        //}
+                        if (vTotalRow == vRowCount)
+                        {
+                            if (pOUTPUT_TYPE == "PRINT")
+                            {
+                                Printing(1, mPageNumber);
+                            }
+                            else if (pOUTPUT_TYPE == "FILE")
+                            {
+                                SAVE(pSaveFileName.Replace(".", string.Format("_{0}.", vRow)));
+                            }
+                        }
+                        else if (mMaxPrintPage < mPageNumber)
+                        {
+                            if (pOUTPUT_TYPE == "PRINT")
+                            {
+                                Printing(1, mPageNumber);
+
+                                mPrinting.XLOpenFileClose();
+                                isOpen = XLFileOpen();
+                            }
+                            else if (pOUTPUT_TYPE == "FILE")
+                            {
+                                SAVE(pSaveFileName.Replace(".", string.Format("_{0}.", vRow)));
+
+                                mPrinting.XLOpenFileClose();
+                                isOpen = XLFileOpen();
+                            }
+                            mPageNumber = 0;
+                            mCurrentRow = 1;
+                            mCopyLineSUM = 1;
+                        }
+                    }
+
+                    pGrid_MONTH_PAYMENT.SetCellValue(vRow, vIDX_CheckBox, "N");
+                }
+                else if (vTotalRow == vRowCount)
+                {
+                    if (isOpen == true)
+                    {
+                        if (pOUTPUT_TYPE == "PRINT")
+                        {
+                            Printing(1, mPageNumber);
+                        }
+                        else if (pOUTPUT_TYPE == "FILE")
+                        {
+                            SAVE("PAY_");
+                        }
+                    }
+                }
+            }
+
+            System.Windows.Forms.Application.UseWaitCursor = false;
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+            System.Windows.Forms.Application.DoEvents();
+
+            return mPageNumber;
+        }
+
         public int WriteMain_SIK(string pOUTPUT_TYPE, InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid_MONTH_PAYMENT
-                                                   , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_ALLOWANCE
-                                                   , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_DEDUCTION
-                                                   , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_DUTY
-                                                   , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_OT
-                                                   , string pSeal_Stamp
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_ALLOWANCE
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_DEDUCTION
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_DUTY
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_OT
+                                    , string pSeal_Stamp
+                                    , string pImageFile
+                                    , float pSize_W, float pSize_H, float pLoc_X, float pLoc_Y
             )
         {
             string vMessageText = string.Empty;
@@ -3523,7 +5760,7 @@ namespace HRMF0522
 
                         mCurrentRow = (mCopy_EndRow * mPageNumber) + 1;  //현재 인쇄 row 위치 설정 : 인쇄row에 페이지수 + 1 로 페이지 증가시 계산.
 
-                        mCopyLineSUM = CopyAndPaste(mPrinting, mCurrentRow, mSourceSheet1, pSeal_Stamp);
+                        mCopyLineSUM = CopyAndPaste(mPrinting, mCurrentRow, mSourceSheet1, pSeal_Stamp, pImageFile, pSize_W, pSize_H, pLoc_X, pLoc_Y);
 
                         //vRow++;
                         // 인적정보 인쇄
@@ -3887,7 +6124,267 @@ namespace HRMF0522
             return mPageNumber;
         }
 
-        public int WriteMain_EMAIL(string pSaveFileName
+
+        public int WriteMain_BHK(string pOUTPUT_TYPE, InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid_MONTH_PAYMENT
+                                                   , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_ALLOWANCE
+                                                   , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_DEDUCTION
+                                                   , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_BONUS_ALLOWANCE
+                                                   , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_BONUS_DEDUCTION
+                                                   , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_DUTY
+                                                   , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_OT
+                                                   , string pSeal_Stamp
+            )
+        {
+            string vMessageText = string.Empty;
+            object vObject = null;
+            string vWAGE_TYPE = string.Empty;
+            string vPAY_TYPE = string.Empty;
+            string vCheckedString = "N";
+            string vCheckedString2 = "N";
+
+            int vIDX_CheckBox = pGrid_MONTH_PAYMENT.GetColumnToIndex("SELECT_CHECK_YN");
+            int vIDX_WAGE_TYPE = pGrid_MONTH_PAYMENT.GetColumnToIndex("WAGE_TYPE");
+            int vIDX_PAY_TYPE = pGrid_MONTH_PAYMENT.GetColumnToIndex("PAY_TYPE");
+            int vIDX_PAY_YYYYMM = pGrid_MONTH_PAYMENT.GetColumnToIndex("PAY_YYYYMM");
+            int vIDX_NAME = pGrid_MONTH_PAYMENT.GetColumnToIndex("NAME");
+
+            int[] vGridCol;
+
+            bool isOpen = XLFileOpen();
+             
+            System.IO.DirectoryInfo vWallpaperFolder = new System.IO.DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+            string vSaveFileName = ""; 
+
+            mPageNumber = 0;
+            mCopyLineSUM = 1;
+
+            mCopy_StartCol = 1;
+            mCopy_StartRow = 1;
+            mCopy_EndCol = 48;
+            mCopy_EndRow = 76;
+
+            mCurrentRow = 1;
+            mCurrentCol = 1;
+
+            int[] vGDColumn_1;
+            int[] vXLColumn_1;
+
+            int[] vGDColumn_2;
+            int[] vXLColumn_2;
+
+            int[] vGDColumn_3;
+            int[] vXLColumn_3;
+
+            int[] vGDColumn_4;
+            int[] vXLColumn_4;
+
+            int[] vGDColumn_5;
+            int[] vXLColumn_5;
+
+            int[] vGDColumn_6;
+            int[] vXLColumn_6;
+
+            int vTotalRow = pGrid_MONTH_PAYMENT.RowCount;
+            int vRowCount = 0;
+
+            int vPrintingLine = 0;
+
+            int vSecondPrinting = 29; //30번째에 인쇄
+            int vCountPrinting = 0;
+
+            SetArray1(pIDA_PAY_ALLOWANCE.OraSelectData, out vGDColumn_1, out vXLColumn_1);
+            SetArray2(pIDA_PAY_DEDUCTION.OraSelectData, out vGDColumn_2, out vXLColumn_2);
+            SetArray3(pIDA_BONUS_ALLOWANCE.OraSelectData, out vGDColumn_3, out vXLColumn_3);
+            SetArray4(pIDA_BONUS_DEDUCTION.OraSelectData, out vGDColumn_4, out vXLColumn_4);
+            SetArray5_BHK(pIDA_MONTH_DUTY.OraSelectData, out vGDColumn_5, out vXLColumn_5);
+            SetArray6_BHK(pGrid_MONTH_PAYMENT, out vGDColumn_6, out vXLColumn_6);
+
+            for (int vRow = 0; vRow < vTotalRow; vRow++)
+            {
+                vRowCount++;
+
+                vMessageText = string.Format("Printing Rows : {0}/{1}", vRowCount, vTotalRow);
+                mAppInterface.OnAppMessageEvent(vMessageText);
+
+                System.Windows.Forms.Application.UseWaitCursor = true;
+                pGrid_MONTH_PAYMENT.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+                System.Windows.Forms.Application.DoEvents();
+
+                vCheckedString = Convert.ToString(pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_CheckBox));
+                if (vCheckedString == "Y")
+                {
+                    if (isOpen == true)
+                    {
+                        pGrid_MONTH_PAYMENT.CurrentCellMoveTo(vRow, vIDX_CheckBox);
+
+                        mPrintPage++;
+
+                        vObject = pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_WAGE_TYPE);
+                        vWAGE_TYPE = ConvertString(vObject);
+                        vObject = pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_PAY_TYPE);
+                        vPAY_TYPE = ConvertString(vObject);
+
+                        //pdf 파일//
+                        if (pOUTPUT_TYPE == "PDF" || pOUTPUT_TYPE == "FILE")
+                        {                            
+                            vSaveFileName = string.Format("{0}_{1}", pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_NAME)
+                                                                    , pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_PAY_YYYYMM));   
+                            vSaveFileName = string.Format("{0}\\{1}.pdf", vWallpaperFolder.ToString(), vSaveFileName);
+                            if (System.IO.File.Exists(vSaveFileName))
+                            {
+                                try
+                                {
+                                    System.IO.File.Delete(vSaveFileName);
+                                }
+                                catch(Exception Ex)
+                                {
+                                    mAppInterface.OnAppMessageEvent(string.Format("Save File Delete Error :: {0}", Ex.Message));
+                                    System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+                                    System.Windows.Forms.Application.DoEvents();
+                                    return 0;
+                                }
+                            }
+                        } 
+
+                        mCurrentRow = (mCopy_EndRow * mPageNumber) + 1;  //현재 인쇄 row 위치 설정 : 인쇄row에 페이지수 + 1 로 페이지 증가시 계산.
+                         
+                        if (vWAGE_TYPE == "P1" && (vPAY_TYPE == "2" || vPAY_TYPE == "4"))
+                        {
+                            mCopyLineSUM = CopyAndPaste_BHK(mPrinting, mCopyLineSUM, "DAILY", pSeal_Stamp);
+                            vPrintingLine = (mCopyLineSUM - mCopy_EndRow) + (mPrintingLineSTART - 1);
+
+                            //생산직
+                            int vLinePrinting_1 = vPrintingLine + 28;
+                            for (int vRow1 = 0; vRow1 < pIDA_PAY_ALLOWANCE.OraSelectData.Rows.Count; vRow1++)
+                            {
+                                vLinePrinting_1 = XLLine_1(pIDA_PAY_ALLOWANCE.OraSelectData.Rows[vRow1], vLinePrinting_1, vGDColumn_1, vXLColumn_1); //급여 지급
+                            }
+
+                            int vLinePrinting_2 = vPrintingLine + 28;
+                            for (int vRow2 = 0; vRow2 < pIDA_PAY_DEDUCTION.OraSelectData.Rows.Count; vRow2++)
+                            {
+                                vLinePrinting_2 = XLLine_2(pIDA_PAY_DEDUCTION.OraSelectData.Rows[vRow2], vLinePrinting_2, vGDColumn_2, vXLColumn_2); //급여 공제
+                            }
+
+                            int vLinePrinting_3 = vPrintingLine + 56;
+                            for (int vRow3 = 0; vRow3 < pIDA_BONUS_ALLOWANCE.OraSelectData.Rows.Count; vRow3++)
+                            {
+                                vLinePrinting_3 = XLLine_3(pIDA_BONUS_ALLOWANCE.OraSelectData.Rows[vRow3], vLinePrinting_3, vGDColumn_3, vXLColumn_3); //상여 지급
+                            }
+
+                            int vLinePrinting_4 = vPrintingLine + 56;
+                            for (int vRow4 = 0; vRow4 < pIDA_BONUS_DEDUCTION.OraSelectData.Rows.Count; vRow4++)
+                            {
+                                vLinePrinting_4 = XLLine_4(pIDA_BONUS_DEDUCTION.OraSelectData.Rows[vRow4], vLinePrinting_4, vGDColumn_4, vXLColumn_4); //상여 공제
+                            }
+
+                            int vLinePrinting_5 = vPrintingLine + 20;
+                            for (int vRow5 = 0; vRow5 < pIDA_MONTH_DUTY.OraSelectData.Rows.Count; vRow5++)
+                            {
+                                vLinePrinting_5 = XLLine_5_BHK(pIDA_MONTH_DUTY.OraSelectData.Rows[vRow5], vLinePrinting_5, vGDColumn_5, vXLColumn_5); //근무시간 및 부가내역
+                            }
+
+                            vPrintingLine = XLLine_6_BHK(pGrid_MONTH_PAYMENT, vRow, vPrintingLine, vGDColumn_6, vXLColumn_6, "DAILY"); //Heaer 및 인적사항, 총금액
+                        }
+                        else
+                        {
+                            mCopyLineSUM = CopyAndPaste_BHK(mPrinting, mCopyLineSUM, "MONTH", pSeal_Stamp);
+                            vPrintingLine = (mCopyLineSUM - mCopy_EndRow) + (mPrintingLineSTART - 1);
+
+                            //관리직
+                            int vLinePrinting_1 = vPrintingLine + 28;
+                            for (int vRow1 = 0; vRow1 < pIDA_PAY_ALLOWANCE.OraSelectData.Rows.Count; vRow1++)
+                            {
+                                vLinePrinting_1 = XLLine_1(pIDA_PAY_ALLOWANCE.OraSelectData.Rows[vRow1], vLinePrinting_1, vGDColumn_1, vXLColumn_1); //급여 지급
+                            }
+
+                            int vLinePrinting_2 = vPrintingLine + 28;
+                            for (int vRow2 = 0; vRow2 < pIDA_PAY_DEDUCTION.OraSelectData.Rows.Count; vRow2++)
+                            {
+                                vLinePrinting_2 = XLLine_2(pIDA_PAY_DEDUCTION.OraSelectData.Rows[vRow2], vLinePrinting_2, vGDColumn_2, vXLColumn_2); //급여 공제
+                            }
+
+                            int vLinePrinting_5 = vPrintingLine + 20;
+                            for (int vRow5 = 0; vRow5 < pIDA_MONTH_DUTY.OraSelectData.Rows.Count; vRow5++)
+                            {
+                                vLinePrinting_5 = XLLine_5_BHK(pIDA_MONTH_DUTY.OraSelectData.Rows[vRow5], vLinePrinting_5, vGDColumn_5, vXLColumn_5); //근무시간 및 부가내역
+                            }
+
+                            vPrintingLine = XLLine_6_BHK(pGrid_MONTH_PAYMENT, vRow, vPrintingLine, vGDColumn_6, vXLColumn_6, "MONTH"); //Heaer 및 인적사항, 총금액
+                        }
+                          
+                        if (vTotalRow == vRowCount)
+                        {
+                            if (pOUTPUT_TYPE == "PRINT")
+                            {
+                                Printing(1, mPageNumber);
+                            }
+                            else if (pOUTPUT_TYPE == "PDF")
+                            {
+                                PDF_Save(vSaveFileName);
+                            }
+                            else if (pOUTPUT_TYPE == "FILE")
+                            {
+                                SAVE(vSaveFileName);
+                            }
+                        }
+                        else if (mMaxPrintPage < mPageNumber)
+                        {
+                            if (pOUTPUT_TYPE == "PRINT")
+                            {
+                                Printing(1, mPageNumber);
+
+                                mPrinting.XLOpenFileClose();
+                                isOpen = XLFileOpen();
+                            }
+                            else if (pOUTPUT_TYPE == "PDF")
+                            {
+                                PDF_Save(vSaveFileName);
+                            }
+                            else if (pOUTPUT_TYPE == "FILE")
+                            {
+                                SAVE(vSaveFileName);
+
+                                mPrinting.XLOpenFileClose();
+                                isOpen = XLFileOpen();
+                            }
+                            mPageNumber = 0;
+                            mCurrentRow = 1;
+                            mCopyLineSUM = 1;
+                        }
+                    } 
+                    pGrid_MONTH_PAYMENT.SetCellValue(vRow, vIDX_CheckBox, "N");
+                }
+                else if (vTotalRow == vRowCount)
+                {
+                    if (isOpen == true)
+                    {
+                        if (pOUTPUT_TYPE == "PRINT")
+                        {
+                            Printing(1, mPageNumber);
+                        }
+                        else if (pOUTPUT_TYPE == "PDF")
+                        {
+                            PDF_Save(vSaveFileName);
+                        }
+                        else if (pOUTPUT_TYPE == "FILE")
+                        {
+                            SAVE(vSaveFileName);
+                        }
+                    }
+                }
+            }
+
+            System.Windows.Forms.Application.UseWaitCursor = false;
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+            System.Windows.Forms.Application.DoEvents();
+
+            return mPageNumber;
+        }
+         
+
+        public int WriteMain_EMAIL(string pREPORT_FILE_NAME
+                                    , string pSaveFileName
                                     , string pPassword
                                     , int pRow
                                     , InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid_MONTH_PAYMENT
@@ -3896,6 +6393,7 @@ namespace HRMF0522
                                     , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_DUTY
                                     , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_OT
                                     , string pSeal_Stamp
+                                    , string pImageFile, float pSize_W, float pSize_H, float pLoc_X, float pLoc_Y
                                     )
         {
             string vMessageText = string.Empty;
@@ -3907,21 +6405,25 @@ namespace HRMF0522
             int vIDX_PAY_TYPE = pGrid_MONTH_PAYMENT.GetColumnToIndex("PAY_TYPE");
 
             int[] vGridCol;
-              
-            bool isOpen = mPrinting.XLOpenFile("HRMF0522_002.xlsx");
+             
+            string vREPORT_FILE_NAME = "HRMF0522_012.xlsx";
+            if (!string.IsNullOrEmpty(pREPORT_FILE_NAME))
+                vREPORT_FILE_NAME = pREPORT_FILE_NAME;
+
+            bool isOpen = mPrinting.XLOpenFile(vREPORT_FILE_NAME);
             if (!isOpen)
             {
                 try
                 {
-                    mPrinting = new XL.XLPrint();  
+                    mPrinting = new XL.XLPrint();
                     mPrinting.XLOpenFileClose();
                 }
                 catch
                 {
                     //
                 }
-                
-                isOpen = mPrinting.XLOpenFile("HRMF0522_002.xlsx");
+
+                isOpen = mPrinting.XLOpenFile(vREPORT_FILE_NAME);
             }
             if (!isOpen)
             {
@@ -3935,16 +6437,16 @@ namespace HRMF0522
                     //
                 }
 
-                isOpen = mPrinting.XLOpenFile("HRMF0522_002.xlsx");
+                isOpen = mPrinting.XLOpenFile(vREPORT_FILE_NAME);
             }
-
+              
             mPageNumber = 0;
             mCopyLineSUM = 0;
 
             mCopy_StartCol = 1;
             mCopy_StartRow = 1;
             mCopy_EndCol = 45;
-            mCopy_EndRow = 59;
+            mCopy_EndRow = 64;
 
             mCurrentRow = 1;
             mCurrentCol = 1;
@@ -3969,7 +6471,278 @@ namespace HRMF0522
                 {
                     mCurrentRow = (mCopy_EndRow * mPageNumber) + 1;  //현재 인쇄 row 위치 설정 : 인쇄row에 페이지수 + 1 로 페이지 증가시 계산.
 
-                    mCopyLineSUM = CopyAndPaste(mPrinting, mCurrentRow, mSourceSheet1, pSeal_Stamp);
+                    mCopyLineSUM = CopyAndPaste(mPrinting, mCurrentRow, mSourceSheet1, pSeal_Stamp, pImageFile, pSize_W, pSize_H, pLoc_X, pLoc_Y);
+
+                    // 인적정보 인쇄
+                    if (XLLine_HEADER_IFK(pGrid_MONTH_PAYMENT, vRow, mCurrentRow, vGridCol) == false) //Heaer 및 인적사항, 총금액
+                        return 0;
+
+                    //연장근무 인쇄
+                    if (XLLine_OT_IFK(pIDA_MONTH_OT, mCurrentRow + 18) == false)
+                        return 0;
+
+                    //근태계 인쇄
+                    if (XLLine_DUTY_IFK(pIDA_MONTH_DUTY, mCurrentRow + 18) == false)
+                        return 0;
+
+                    //지급항목 인쇄
+                    if (XLLine_ALLOWANCE_IFK(pIDA_PAY_ALLOWANCE, mCurrentRow + 30) == false)
+                        return 0;
+
+                    //공제항목 인쇄
+                    if (XLLine_DEDUCTION_IFK(pIDA_PAY_DEDUCTION, mCurrentRow + 30) == false)
+                        return 0;
+                     
+                    if (SaveFile(pSaveFileName, pPassword) == false)
+                        return 0;
+
+                    mPageNumber = 1;
+                    mCurrentRow = 1;
+                    mCopyLineSUM = 1;
+                }
+                catch(Exception Ex)
+                {                   
+                    mPrinting.XLOpenFileClose();
+                    mPageNumber = 0;
+                    mCurrentRow = 1;
+                    mCopyLineSUM = 1;
+                    mAppInterface.OnAppMessageEvent("Save Pdf File Error :: " + Ex.Message);
+                    System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+                    return mPageNumber;
+                } 
+                mPrinting.XLOpenFileClose();
+            }  
+            else
+                mAppInterface.OnAppMessageEvent("Print File Open Error");
+
+            return mPageNumber;
+        }
+
+
+        public int WriteMain_EMAIL_DKT(string pREPORT_FILE_NAME
+                                        , string pSaveFileName
+                                        , string pPassword
+                                        , int pRow
+                                        , InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid_MONTH_PAYMENT
+                                        , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_ALLOWANCE
+                                        , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_DEDUCTION
+                                        , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_DUTY
+                                        , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_OT
+                                        , string pSeal_Stamp
+                                        , string pImageFile, float pSize_W, float pSize_H, float pLoc_X, float pLoc_Y
+                                        )
+        {
+            string vMessageText = string.Empty;
+            object vObject = null;
+            string vWAGE_TYPE = string.Empty;
+            string vPAY_TYPE = string.Empty;
+
+            int vIDX_WAGE_TYPE = pGrid_MONTH_PAYMENT.GetColumnToIndex("WAGE_TYPE");
+            int vIDX_PAY_TYPE = pGrid_MONTH_PAYMENT.GetColumnToIndex("PAY_TYPE");
+
+            int[] vGridCol;
+
+            string vREPORT_FILE_NAME = "HRMF0522_013.xlsx";
+            if (!string.IsNullOrEmpty(pREPORT_FILE_NAME))
+                vREPORT_FILE_NAME = pREPORT_FILE_NAME;
+
+            bool isOpen = mPrinting.XLOpenFile(vREPORT_FILE_NAME);
+            if (!isOpen)
+            {
+                try
+                {
+                    mPrinting = new XL.XLPrint();
+                    mPrinting.XLOpenFileClose();
+                }
+                catch
+                {
+                    //
+                }
+
+                isOpen = mPrinting.XLOpenFile(vREPORT_FILE_NAME);
+            }
+            if (!isOpen)
+            {
+                try
+                {
+                    mPrinting = new XL.XLPrint();
+                    mPrinting.XLOpenFileClose();
+                }
+                catch
+                {
+                    //
+                } 
+                isOpen = mPrinting.XLOpenFile(vREPORT_FILE_NAME);
+            }
+
+            mPageNumber = 0;
+            mCopyLineSUM = 0;
+
+            mCopy_StartCol = 1;
+            mCopy_StartRow = 1;
+            mCopy_EndCol = 45;
+            mCopy_EndRow = 64;
+
+            mCurrentRow = 1;
+            mCurrentCol = 1;
+
+            int vRowCount = 0;
+
+            SetArray1(pGrid_MONTH_PAYMENT, out vGridCol);
+            int vRow = pRow;
+
+            vRowCount++;
+
+            if (isOpen == true)
+            {
+                mPrintPage++;
+
+                vObject = pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_WAGE_TYPE);
+                vWAGE_TYPE = ConvertString(vObject);
+                vObject = pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_PAY_TYPE);
+                vPAY_TYPE = ConvertString(vObject);
+
+                try
+                {
+                    mCurrentRow = (mCopy_EndRow * mPageNumber) + 1;  //현재 인쇄 row 위치 설정 : 인쇄row에 페이지수 + 1 로 페이지 증가시 계산.
+
+                    mCopyLineSUM = CopyAndPaste(mPrinting, mCurrentRow, mSourceSheet1, pSeal_Stamp, pImageFile, pSize_W, pSize_H, pLoc_X, pLoc_Y);
+
+                    // 인적정보 인쇄
+                    if (XLLine_HEADER_DKT(pGrid_MONTH_PAYMENT, vRow, mCurrentRow, vGridCol) == false) //Heaer 및 인적사항, 총금액
+                        return 0;
+
+                    ////연장근무 인쇄
+                    //if (XLLine_OT_IFK(pIDA_MONTH_OT, mCurrentRow + 18) == false)
+                    //    return 0;
+
+                    ////근태계 인쇄
+                    //if (XLLine_DUTY_IFK(pIDA_MONTH_DUTY, mCurrentRow + 18) == false)
+                    //    return 0;
+
+                    //지급항목 인쇄
+                    if (XLLine_ALLOWANCE_DKT(pIDA_PAY_ALLOWANCE, mCurrentRow + 26) == false)
+                        return 0;
+
+                    //공제항목 인쇄
+                    if (XLLine_DEDUCTION_DKT(pIDA_PAY_DEDUCTION, mCurrentRow + 26) == false)
+                        return 0;
+
+                    if (SaveFile(pSaveFileName, pPassword) == false)
+                        return 0;
+
+                    mPageNumber = 1;
+                    mCurrentRow = 1;
+                    mCopyLineSUM = 1;
+                }
+                catch (Exception Ex)
+                {
+                    mPrinting.XLOpenFileClose();
+                    mPageNumber = 0;
+                    mCurrentRow = 1;
+                    mCopyLineSUM = 1;
+                    mAppInterface.OnAppMessageEvent("Save Pdf File Error :: " + Ex.Message);
+                    System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+                    return mPageNumber;
+                }
+                mPrinting.XLOpenFileClose();
+            }
+            else
+                mAppInterface.OnAppMessageEvent("Print File Open Error");
+
+            return mPageNumber;
+        }
+
+
+        public int WriteMain_EMAIL_SIK(string pREPORT_FILE_NAME
+                                    , string pSaveFileName
+                                    , string pPassword
+                                    , int pRow
+                                    , InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid_MONTH_PAYMENT
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_ALLOWANCE
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_DEDUCTION
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_DUTY
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_OT
+                                    , string pSeal_Stamp
+                                    , string pImageFile, float pSize_W, float pSize_H, float pLoc_X, float pLoc_Y
+                                    )
+        {
+            string vMessageText = string.Empty;
+            object vObject = null;
+            string vWAGE_TYPE = string.Empty;
+            string vPAY_TYPE = string.Empty;
+
+            int vIDX_WAGE_TYPE = pGrid_MONTH_PAYMENT.GetColumnToIndex("WAGE_TYPE");
+            int vIDX_PAY_TYPE = pGrid_MONTH_PAYMENT.GetColumnToIndex("PAY_TYPE");
+
+            int[] vGridCol;
+
+            string vREPORT_FILE_NAME = "HRMF0522_011.xlsx";
+            if (!string.IsNullOrEmpty(pREPORT_FILE_NAME))
+                vREPORT_FILE_NAME = pREPORT_FILE_NAME;
+
+            bool isOpen = mPrinting.XLOpenFile(vREPORT_FILE_NAME);
+            if (!isOpen)
+            {
+                try
+                {
+                    mPrinting = new XL.XLPrint();
+                    mPrinting.XLOpenFileClose();
+                }
+                catch
+                {
+                    //
+                }
+
+                isOpen = mPrinting.XLOpenFile(vREPORT_FILE_NAME);
+            }
+            if (!isOpen)
+            {
+                try
+                {
+                    mPrinting = new XL.XLPrint();
+                    mPrinting.XLOpenFileClose();
+                }
+                catch
+                {
+                    //
+                }
+
+                isOpen = mPrinting.XLOpenFile(vREPORT_FILE_NAME);
+            }
+
+            mPageNumber = 0;
+            mCopyLineSUM = 0;
+
+            mCopy_StartCol = 1;
+            mCopy_StartRow = 1;
+            mCopy_EndCol = 45;
+            mCopy_EndRow = 59;
+
+            mCurrentRow = 1;
+            mCurrentCol = 1;
+
+            int vRowCount = 0;
+
+            SetArray1(pGrid_MONTH_PAYMENT, out vGridCol);
+            int vRow = pRow;
+
+            vRowCount++;
+
+            if (isOpen == true)
+            {
+                mPrintPage++;
+
+                vObject = pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_WAGE_TYPE);
+                vWAGE_TYPE = ConvertString(vObject);
+                vObject = pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_PAY_TYPE);
+                vPAY_TYPE = ConvertString(vObject);
+
+                try
+                {
+                    mCurrentRow = (mCopy_EndRow * mPageNumber) + 1;  //현재 인쇄 row 위치 설정 : 인쇄row에 페이지수 + 1 로 페이지 증가시 계산.
+
+                    mCopyLineSUM = CopyAndPaste(mPrinting, mCurrentRow, mSourceSheet1, pSeal_Stamp, pImageFile, pSize_W, pSize_H, pLoc_X, pLoc_Y);
 
                     //vRow++;
                     // 인적정보 인쇄
@@ -3999,17 +6772,217 @@ namespace HRMF0522
                     mCurrentRow = 1;
                     mCopyLineSUM = 1;
                 }
-                catch(Exception Ex)
-                {                   
+                catch (Exception Ex)
+                {
                     mPrinting.XLOpenFileClose();
                     mPageNumber = 0;
                     mCurrentRow = 1;
                     mCopyLineSUM = 1;
                     mAppInterface.OnAppMessageEvent("Save Pdf File Error :: " + Ex.Message);
+                    System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
                     return mPageNumber;
-                } 
+                }
                 mPrinting.XLOpenFileClose();
-            }  
+            }
+            else
+                mAppInterface.OnAppMessageEvent("Print File Open Error");
+
+            return mPageNumber;
+        }
+
+        public int WriteMain_EMAIL_BHK(string pREPORT_FILE_NAME
+                                    , string pSaveFileName
+                                    , string pPassword
+                                    , int pRow
+                                    , InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid_MONTH_PAYMENT
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_ALLOWANCE
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_PAY_DEDUCTION
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_BONUS_ALLOWANCE
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_BONUS_DEDUCTION
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_DUTY
+                                    , InfoSummit.Win.ControlAdv.ISDataAdapter pIDA_MONTH_OT
+                                    , string pSeal_Stamp
+                                    )
+        {
+            string vMessageText = string.Empty;
+            object vObject = null;
+            string vWAGE_TYPE = string.Empty;
+            string vPAY_TYPE = string.Empty;
+            int vPrintingLine = 0;
+
+            int vIDX_WAGE_TYPE = pGrid_MONTH_PAYMENT.GetColumnToIndex("WAGE_TYPE");
+            int vIDX_PAY_TYPE = pGrid_MONTH_PAYMENT.GetColumnToIndex("PAY_TYPE");
+
+            int[] vGDColumn_1;
+            int[] vXLColumn_1;
+
+            int[] vGDColumn_2;
+            int[] vXLColumn_2;
+
+            int[] vGDColumn_3;
+            int[] vXLColumn_3;
+
+            int[] vGDColumn_4;
+            int[] vXLColumn_4;
+
+            int[] vGDColumn_5;
+            int[] vXLColumn_5;
+
+            int[] vGDColumn_6;
+            int[] vXLColumn_6;
+
+            string vREPORT_FILE_NAME = "HRMF0522_011.xlsx";
+            if (!string.IsNullOrEmpty(pREPORT_FILE_NAME))
+                vREPORT_FILE_NAME = pREPORT_FILE_NAME;
+
+            bool isOpen = mPrinting.XLOpenFile(vREPORT_FILE_NAME);
+            if (!isOpen)
+            {
+                try
+                {
+                    mPrinting = new XL.XLPrint();
+                    mPrinting.XLOpenFileClose();
+                }
+                catch
+                {
+                    //
+                }
+
+                isOpen = mPrinting.XLOpenFile(vREPORT_FILE_NAME);
+            }
+            if (!isOpen)
+            {
+                try
+                {
+                    mPrinting = new XL.XLPrint();
+                    mPrinting.XLOpenFileClose();
+                }
+                catch
+                {
+                    //
+                }
+
+                isOpen = mPrinting.XLOpenFile(vREPORT_FILE_NAME);
+            }
+
+            mPageNumber = 0;
+            mCopyLineSUM = 1;
+
+            mCopy_StartCol = 1;
+            mCopy_StartRow = 1;
+            mCopy_EndCol = 48;
+            mCopy_EndRow = 76;
+
+            mCurrentRow = 1;
+            mCurrentCol = 1;
+
+            int vRowCount = 0;
+
+            SetArray1(pIDA_PAY_ALLOWANCE.OraSelectData, out vGDColumn_1, out vXLColumn_1);
+            SetArray2(pIDA_PAY_DEDUCTION.OraSelectData, out vGDColumn_2, out vXLColumn_2);
+            SetArray3(pIDA_BONUS_ALLOWANCE.OraSelectData, out vGDColumn_3, out vXLColumn_3);
+            SetArray4(pIDA_BONUS_DEDUCTION.OraSelectData, out vGDColumn_4, out vXLColumn_4);
+            SetArray5_BHK(pIDA_MONTH_DUTY.OraSelectData, out vGDColumn_5, out vXLColumn_5);
+            SetArray6_BHK(pGrid_MONTH_PAYMENT, out vGDColumn_6, out vXLColumn_6);
+            int vRow = pRow;
+
+            vRowCount++;
+
+            if (isOpen == true)
+            {
+                mPrintPage++;
+
+                vObject = pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_WAGE_TYPE);
+                vWAGE_TYPE = ConvertString(vObject);
+                vObject = pGrid_MONTH_PAYMENT.GetCellValue(vRow, vIDX_PAY_TYPE);
+                vPAY_TYPE = ConvertString(vObject);
+
+                try
+                {
+                    if (vWAGE_TYPE == "P1" && (vPAY_TYPE == "2" || vPAY_TYPE == "4"))
+                    {
+                        mCopyLineSUM = CopyAndPaste_BHK(mPrinting, mCopyLineSUM, "DAILY", pSeal_Stamp);
+                        vPrintingLine = (mCopyLineSUM - mCopy_EndRow) + (mPrintingLineSTART - 1);
+
+                        //생산직
+                        int vLinePrinting_1 = vPrintingLine + 28;
+                        for (int vRow1 = 0; vRow1 < pIDA_PAY_ALLOWANCE.OraSelectData.Rows.Count; vRow1++)
+                        {
+                            vLinePrinting_1 = XLLine_1(pIDA_PAY_ALLOWANCE.OraSelectData.Rows[vRow1], vLinePrinting_1, vGDColumn_1, vXLColumn_1); //급여 지급
+                        }
+
+                        int vLinePrinting_2 = vPrintingLine + 28;
+                        for (int vRow2 = 0; vRow2 < pIDA_PAY_DEDUCTION.OraSelectData.Rows.Count; vRow2++)
+                        {
+                            vLinePrinting_2 = XLLine_2(pIDA_PAY_DEDUCTION.OraSelectData.Rows[vRow2], vLinePrinting_2, vGDColumn_2, vXLColumn_2); //급여 공제
+                        }
+
+                        int vLinePrinting_3 = vPrintingLine + 56;
+                        for (int vRow3 = 0; vRow3 < pIDA_BONUS_ALLOWANCE.OraSelectData.Rows.Count; vRow3++)
+                        {
+                            vLinePrinting_3 = XLLine_3(pIDA_BONUS_ALLOWANCE.OraSelectData.Rows[vRow3], vLinePrinting_3, vGDColumn_3, vXLColumn_3); //상여 지급
+                        }
+
+                        int vLinePrinting_4 = vPrintingLine + 56;
+                        for (int vRow4 = 0; vRow4 < pIDA_BONUS_DEDUCTION.OraSelectData.Rows.Count; vRow4++)
+                        {
+                            vLinePrinting_4 = XLLine_4(pIDA_BONUS_DEDUCTION.OraSelectData.Rows[vRow4], vLinePrinting_4, vGDColumn_4, vXLColumn_4); //상여 공제
+                        }
+
+                        int vLinePrinting_5 = vPrintingLine + 20;
+                        for (int vRow5 = 0; vRow5 < pIDA_MONTH_DUTY.OraSelectData.Rows.Count; vRow5++)
+                        {
+                            vLinePrinting_5 = XLLine_5_BHK(pIDA_MONTH_DUTY.OraSelectData.Rows[vRow5], vLinePrinting_5, vGDColumn_5, vXLColumn_5); //근무시간 및 부가내역
+                        }
+
+                        vPrintingLine = XLLine_6_BHK(pGrid_MONTH_PAYMENT, vRow, vPrintingLine, vGDColumn_6, vXLColumn_6, "DAILY"); //Heaer 및 인적사항, 총금액
+                    }
+                    else
+                    {
+                        mCopyLineSUM = CopyAndPaste_BHK(mPrinting, mCopyLineSUM, "MONTH", pSeal_Stamp);
+                        vPrintingLine = (mCopyLineSUM - mCopy_EndRow) + (mPrintingLineSTART - 1);
+
+                        //관리직
+                        int vLinePrinting_1 = vPrintingLine + 28;
+                        for (int vRow1 = 0; vRow1 < pIDA_PAY_ALLOWANCE.OraSelectData.Rows.Count; vRow1++)
+                        {
+                            vLinePrinting_1 = XLLine_1(pIDA_PAY_ALLOWANCE.OraSelectData.Rows[vRow1], vLinePrinting_1, vGDColumn_1, vXLColumn_1); //급여 지급
+                        }
+
+                        int vLinePrinting_2 = vPrintingLine + 28;
+                        for (int vRow2 = 0; vRow2 < pIDA_PAY_DEDUCTION.OraSelectData.Rows.Count; vRow2++)
+                        {
+                            vLinePrinting_2 = XLLine_2(pIDA_PAY_DEDUCTION.OraSelectData.Rows[vRow2], vLinePrinting_2, vGDColumn_2, vXLColumn_2); //급여 공제
+                        }
+
+                        int vLinePrinting_5 = vPrintingLine + 20;
+                        for (int vRow5 = 0; vRow5 < pIDA_MONTH_DUTY.OraSelectData.Rows.Count; vRow5++)
+                        {
+                            vLinePrinting_5 = XLLine_5_BHK(pIDA_MONTH_DUTY.OraSelectData.Rows[vRow5], vLinePrinting_5, vGDColumn_5, vXLColumn_5); //근무시간 및 부가내역
+                        }
+
+                        vPrintingLine = XLLine_6_BHK(pGrid_MONTH_PAYMENT, vRow, vPrintingLine, vGDColumn_6, vXLColumn_6, "MONTH"); //Heaer 및 인적사항, 총금액
+                    }
+
+                    if (SaveFile(pSaveFileName, pPassword) == false)
+                        return 0;
+
+                    mPageNumber = 1;
+                    mCurrentRow = 1;
+                    mCopyLineSUM = 1;
+                }
+                catch (Exception Ex)
+                {
+                    mPrinting.XLOpenFileClose();
+                    mPageNumber = 0;
+                    mCurrentRow = 1;
+                    mCopyLineSUM = 1;
+                    mAppInterface.OnAppMessageEvent("Save Pdf File Error :: " + Ex.Message);
+                    System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+                    return mPageNumber;
+                }
+                mPrinting.XLOpenFileClose();
+            }
             else
                 mAppInterface.OnAppMessageEvent("Print File Open Error");
 
@@ -4048,7 +7021,124 @@ namespace HRMF0522
             return pCurrentRow + mCopy_EndRow;
         }
 
+
         //첫번째 페이지 복사
+        private int CopyAndPaste(XL.XLPrint pPrinting, int pCurrentRow, string pSourceSheet
+                                , string pSeal_Stamp, string pImageFile
+                                , float pSize_W, float pSize_H, float pLoc_X, float pLoc_Y)
+        {
+            //int vCopySumPrintingLine = pCopySumPrintingLine;
+
+            //int vCopyPrintingRowSTART = vCopySumPrintingLine;
+            //vCopySumPrintingLine = vCopySumPrintingLine + mCopy_EndRow;
+            //int vCopyPrintingRowEnd = vCopySumPrintingLine;
+
+            pPrinting.XLActiveSheet(pSourceSheet);
+            if (pSeal_Stamp == "Y")
+            {
+                //----------------------------------------[ 증명사진 출력 부분 ]------------------------------------------
+                try
+                {
+                    int vIndexImage = mPrinting.CountBarCodeImage;
+                    int vCountImage = mPrinting.CountBarCodeImage;
+                    for (int r = 0; r < vCountImage; r++)
+                    {
+                        mPrinting.XLDeleteBarCode(vIndexImage);
+                        vIndexImage--;
+                    }
+                    mPrinting.CountBarCodeImage = 0;
+                }
+                catch
+                {
+                    //
+                }
+
+                try
+                {
+                    System.Drawing.SizeF vSize = new System.Drawing.SizeF(pSize_W, pSize_H);
+                    System.Drawing.PointF vPoint = new System.Drawing.PointF(pLoc_X, pLoc_Y);
+                    mPrinting.XLBarCode(pImageFile, vSize, vPoint);
+                    //--------------------------------------------------------------------------------------------------------
+                }
+                catch
+                {
+                    //
+                }
+
+            }
+            //[원본], [Sheet2.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
+            object vRangeSource = pPrinting.XLGetRange(mCopy_StartRow, mCopy_StartCol, mCopy_EndRow, mCopy_EndCol);
+
+            //[대상], [Sheet1.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
+            pPrinting.XLActiveSheet(mTargetSheet);
+            object vRangeDestination = pPrinting.XLGetRange(pCurrentRow, mCopy_StartCol, pCurrentRow + mCopy_EndRow, mCopy_EndCol);
+            pPrinting.XLCopyRange(vRangeSource, vRangeDestination);
+
+            int vCopy_EndRow = pCurrentRow + mCopy_EndRow;
+            mPrinting.XLHPageBreaks_Add(mPrinting.XLGetRange("A" + vCopy_EndRow));
+
+            mPageNumber++; //페이지 번호
+
+            return pCurrentRow + mCopy_EndRow;
+        }
+
+
+        //첫번째 페이지 복사
+        private int CopyAndPaste(XL.XLPrint pPrinting, int pCurrentRow, string pSourceSheet, string pSeal_Stamp, string pImageFile
+                                , System.Drawing.SizeF pSizeF, System.Drawing.PointF pPointF)
+        {
+            //int vCopySumPrintingLine = pCopySumPrintingLine;
+
+            //int vCopyPrintingRowSTART = vCopySumPrintingLine;
+            //vCopySumPrintingLine = vCopySumPrintingLine + mCopy_EndRow;
+            //int vCopyPrintingRowEnd = vCopySumPrintingLine;
+
+            pPrinting.XLActiveSheet(pSourceSheet); 
+            if (pSeal_Stamp == "Y")
+            {
+                //----------------------------------------[ 사진 출력 부분 시작]------------------------------------------
+                try
+                {
+                    int vIndexImage = mPrinting.CountBarCodeImage;
+                    int vCountImage = mPrinting.CountBarCodeImage;
+                    for (int r = 0; r < vCountImage; r++)
+                    {
+                        mPrinting.XLDeleteBarCode(vIndexImage);
+                        vIndexImage--;
+                    }
+                    mPrinting.CountBarCodeImage = 0;
+                }
+                catch
+                {
+                    //
+                }
+
+                try
+                { 
+                    mPrinting.XLBarCode(pImageFile, pSizeF, pPointF); 
+                }
+                catch
+                {
+                    //
+                }
+                //----------------------------------------[ 사진 출력 부분 종료]------------------------------------------
+            }
+            //[원본], [Sheet2.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
+            object vRangeSource = pPrinting.XLGetRange(mCopy_StartRow, mCopy_StartCol, mCopy_EndRow, mCopy_EndCol);
+
+            //[대상], [Sheet1.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
+            pPrinting.XLActiveSheet(mTargetSheet);
+            object vRangeDestination = pPrinting.XLGetRange(pCurrentRow, mCopy_StartCol, pCurrentRow + mCopy_EndRow, mCopy_EndCol);
+            pPrinting.XLCopyRange(vRangeSource, vRangeDestination);
+
+            int vCopy_EndRow = pCurrentRow + mCopy_EndRow;
+            mPrinting.XLHPageBreaks_Add(mPrinting.XLGetRange("A" + vCopy_EndRow));
+
+            mPageNumber++; //페이지 번호
+
+            return pCurrentRow + mCopy_EndRow;
+        }
+
         private int CopyAndPaste(XL.XLPrint pPrinting, int pCurrentRow, string pSourceSheet, string pSeal_Stamp)
         {
             //int vCopySumPrintingLine = pCopySumPrintingLine;
@@ -4057,7 +7147,7 @@ namespace HRMF0522
             //vCopySumPrintingLine = vCopySumPrintingLine + mCopy_EndRow;
             //int vCopyPrintingRowEnd = vCopySumPrintingLine;
 
-            if(pSeal_Stamp == "N")
+            if (pSeal_Stamp == "N")
             {
                 mPrinting.XLDeleteBarCode(pIndexImage: 1);
             }
@@ -4101,7 +7191,47 @@ namespace HRMF0522
 
             return pCurrentCol + mCopy_EndCol;
         }
-         
+
+        //첫번째 페이지 복사
+        private int CopyAndPaste_BHK(XL.XLPrint pPrinting, int pCurrentRow, string pCourse, string vSeal_Flag)
+        {
+            int vCopySumPrintingLine = pCurrentRow;
+
+            int vCopyPrintingRowSTART = vCopySumPrintingLine;
+            vCopySumPrintingLine = vCopySumPrintingLine + mCopy_EndRow;
+            int vCopyPrintingRowEnd = vCopySumPrintingLine;
+
+            if (pCourse == "DAILY")
+            {
+                pPrinting.XLActiveSheet(mSourceSheet2);
+                if (vSeal_Flag == "N")
+                {
+                    mPrinting.XLDeleteBarCode(pIndexImage: 3);
+                }
+            }
+            else if (pCourse == "MONTH")
+            {
+                pPrinting.XLActiveSheet(mSourceSheet1);
+                if (vSeal_Flag == "N")
+                {
+                    mPrinting.XLDeleteBarCode(pIndexImage: 3);
+                }
+            } 
+            object vRangeSource = pPrinting.XLGetRange(mCopy_StartRow, mCopy_StartCol, mCopy_EndRow, mCopy_EndCol);
+
+            //[대상], [Sheet1.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
+            pPrinting.XLActiveSheet(mTargetSheet);
+            object vRangeDestination = pPrinting.XLGetRange(pCurrentRow, 1, pCurrentRow + mCopy_EndRow, mCopy_EndCol + 1);
+            pPrinting.XLCopyRange(vRangeSource, vRangeDestination);
+
+            int vCopy_EndRow = pCurrentRow + mCopy_EndRow;
+            mPrinting.XLHPageBreaks_Add(mPrinting.XLGetRange("A" + vCopy_EndRow));
+
+            mPageNumber++; //페이지 번호
+
+            return pCurrentRow + mCopy_EndRow;
+        }
+
         #endregion;
 
         #region ----- Printing Methods ----
@@ -4129,11 +7259,42 @@ namespace HRMF0522
             mPrinting.XLSave(vSaveFileName);
         }
 
+        public void PDF_Save(string pSaveFileName)
+        {
+            if (pSaveFileName == string.Empty)
+            {
+                return;
+            }
+            mPrinting.XLDeleteSheet(mSourceSheet1);
+            mPrinting.XLDeleteSheet(mSourceSheet2);
+
+            ////전호수 주석
+            //System.IO.DirectoryInfo vWallpaperFolder = new System.IO.DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+
+            //int vMaxNumber = MaxIncrement(vWallpaperFolder.ToString(), pSaveFileName);
+            //vMaxNumber = vMaxNumber + 1;
+            //string vSaveFileName = string.Format("{0}{1:D2}.pdf", pSaveFileName, vMaxNumber);
+
+            //vSaveFileName = string.Format("{0}\\{1}.pdf", vWallpaperFolder, vSaveFileName);
+
+            mPrinting.XLSaveAs_PDF(pSaveFileName);
+            //mPrinting.XLSave(vSaveFileName);
+        }
+
         public bool SaveFile(string pSaveFileName, string pPassword)
         {
             try
             {
                 mPrinting.XLDeleteSheet(mSourceSheet1);
+            }
+            catch (Exception Ex)
+            {
+                mAppInterface.OnAppMessageEvent("DeleteSheet Error : " + Ex.Message);
+                return false;
+            }
+            try
+            {
+                mPrinting.XLDeleteSheet(mSourceSheet2);
             }
             catch (Exception Ex)
             {

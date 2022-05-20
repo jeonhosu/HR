@@ -55,11 +55,11 @@ namespace HRMF0319
         {
             // Lookup SETTING
             ildCORP.SetLookupParamValue("W_DUTY_CONTROL_YN", "Y");
-            ildCORP.SetLookupParamValue("W_ENABLED_FLAG_YN", "N");
+            ildCORP.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
 
             // LOOKUP DEFAULT VALUE SETTING - CORP
             idcDEFAULT_CORP.SetCommandParamValue("W_DUTY_CONTROL_YN", "Y");
-            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "N");
+            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "Y");
             idcDEFAULT_CORP.ExecuteNonQuery();
 
             CORP_NAME_0.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
@@ -94,6 +94,11 @@ namespace HRMF0319
                 string vPERSON_NUM = iConv.ISNull(IGR_MONTH_TOTAL_SPREAD.GetCellValue("PERSON_NUM"));
                 int vIDX_Col = IGR_MONTH_TOTAL_SPREAD.GetColumnToIndex("PERSON_NUM");
 
+                IDA_MONTH_TOTAL_SPREAD.SetSelectParamValue("W_SOB_ID", -1);
+                IDA_MONTH_TOTAL_SPREAD.Fill();
+                INIT_COLUMN_0();
+
+                IDA_MONTH_TOTAL_SPREAD.SetSelectParamValue("W_SOB_ID", isAppInterfaceAdv1.AppInterface.SOB_ID);
                 IDA_MONTH_TOTAL_SPREAD.Fill();
                 IGR_MONTH_TOTAL_SPREAD.Focus();
 
@@ -108,8 +113,7 @@ namespace HRMF0319
                     }
                 }
             }
-
-            if (TB_BASE.SelectedTab.TabIndex == 2)
+            else if (TB_BASE.SelectedTab.TabIndex == 2)
             {
                 if (CORP_ID_1.EditValue == null)
                 {// 업체.
@@ -140,6 +144,11 @@ namespace HRMF0319
                 string vPERSON_NUM = iConv.ISNull(IGR_MONTH_PERIOD_SPREAD.GetCellValue("PERSON_NUM"));
                 int vIDX_Col = IGR_MONTH_PERIOD_SPREAD.GetColumnToIndex("PERSON_NUM");
 
+                IDA_MONTH_PERIOD_SPREAD.SetSelectParamValue("W_SOB_ID", -1);
+                IDA_MONTH_PERIOD_SPREAD.Fill();
+                INIT_COLUMN_1();
+
+                IDA_MONTH_PERIOD_SPREAD.SetSelectParamValue("W_SOB_ID", isAppInterfaceAdv1.AppInterface.SOB_ID);
                 IDA_MONTH_PERIOD_SPREAD.Fill();
                 IGR_MONTH_PERIOD_SPREAD.Focus();
 
@@ -155,9 +164,80 @@ namespace HRMF0319
                 }
             }
 
+        } 
+
+        private void INIT_COLUMN_0()
+        {
+            IDA_SPREAD_PROMPT.SetSelectParamValue("W_STD_YYYYMM", DUTY_YYYYMM_0.EditValue);
+            IDA_SPREAD_PROMPT.Fill();
+            if (IDA_SPREAD_PROMPT.OraSelectData.Rows.Count == 0)
+            {
+                return;
+            }
+
+            int mGRID_START_COL = 17;   // 그리드 시작 COLUMN.
+            int mIDX_Column;            // 시작 COLUMN.            
+            int mMax_Column = 80;       // 종료 COLUMN.(항목수)
+            int mENABLED_COLUMN;        // 사용여부 COLUMN.
+
+            object mENABLED_FLAG;       // 사용(표시)여부.
+            object mCOLUMN_DESC;        // 헤더 프롬프트.
+
+            for (mIDX_Column = 0; mIDX_Column < mMax_Column; mIDX_Column++)
+            {
+                mCOLUMN_DESC = IDA_SPREAD_PROMPT.CurrentRow[mIDX_Column];
+                if (iConv.ISNull(mCOLUMN_DESC) == string.Empty)
+                {
+                    IGR_MONTH_TOTAL_SPREAD.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 0;
+                }
+                else
+                {
+                    IGR_MONTH_TOTAL_SPREAD.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 1;
+                    IGR_MONTH_TOTAL_SPREAD.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[1].Default = iConv.ISNull(mCOLUMN_DESC);
+                    IGR_MONTH_TOTAL_SPREAD.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[1].TL1_KR = iConv.ISNull(mCOLUMN_DESC);
+                }
+            }
+            IGR_MONTH_TOTAL_SPREAD.ResetDraw = true;
+        }
+
+
+        private void INIT_COLUMN_1()
+        {
+            IDA_SPREAD_PROMPT.SetSelectParamValue("W_STD_YYYYMM", DUTY_YYYYMM_TO.EditValue);
+            IDA_SPREAD_PROMPT.Fill();
+            if (IDA_SPREAD_PROMPT.OraSelectData.Rows.Count == 0)
+            {
+                return;
+            }
+
+            int mGRID_START_COL = 17;   // 그리드 시작 COLUMN.
+            int mIDX_Column;            // 시작 COLUMN.            
+            int mMax_Column = 80;       // 종료 COLUMN.(항목수)
+            int mENABLED_COLUMN;        // 사용여부 COLUMN.
+
+            object mENABLED_FLAG;       // 사용(표시)여부.
+            object mCOLUMN_DESC;        // 헤더 프롬프트.
+            
+            for (mIDX_Column = 0; mIDX_Column < mMax_Column; mIDX_Column++)
+            {
+                mCOLUMN_DESC = IDA_SPREAD_PROMPT.CurrentRow[mIDX_Column];
+                if (iConv.ISNull(mCOLUMN_DESC) == string.Empty)
+                {
+                    IGR_MONTH_PERIOD_SPREAD.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 0;
+                }
+                else
+                {
+                    IGR_MONTH_PERIOD_SPREAD.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 1;
+                    IGR_MONTH_PERIOD_SPREAD.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[1].Default = iConv.ISNull(mCOLUMN_DESC);
+                    IGR_MONTH_PERIOD_SPREAD.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[1].TL1_KR = iConv.ISNull(mCOLUMN_DESC);
+                }
+            }
+            IGR_MONTH_PERIOD_SPREAD.ResetDraw = true; 
+            IGR_MONTH_PERIOD_SPREAD.Refresh();
         }
 
         #endregion;
+
         #region ----- Excel Export II -----
 
         private void ExcelExport(ISDataAdapter pAdapter, ISGridAdvEx pGrid)
@@ -467,14 +547,20 @@ namespace HRMF0319
             ildCOMMON.SetLookupParamValue("W_GROUP_CODE", "FLOOR");
             ildCOMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
         }
+         
+        private void ILA_JOB_CATEGORY_0_PrePopupShow_1(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ildCOMMON.SetLookupParamValue("W_GROUP_CODE", "JOB_CATEGORY");
+            ildCOMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
+        }
+
+        private void ILA_JOB_CATEGORY_1_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ildCOMMON.SetLookupParamValue("W_GROUP_CODE", "JOB_CATEGORY");
+            ildCOMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
+        }
 
         #endregion
-
-
-        
-
-       
-
 
     }
 }

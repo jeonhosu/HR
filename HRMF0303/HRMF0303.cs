@@ -649,6 +649,26 @@ namespace HRMF0303
             ildCOMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "N");
         }
 
+        private void ILA_DUTY_SelectedRowData(object pSender)
+        {
+            IDC_GET_DUTY_HOLY_TYPE_P.SetCommandParamValue("W_DUTY_ID", igrWORK_CALENDAR.GetCellValue("DUTY_ID"));
+            IDC_GET_DUTY_HOLY_TYPE_P.SetCommandParamValue("W_WORK_DATE", igrWORK_CALENDAR.GetCellValue("WORK_DATE"));
+            IDC_GET_DUTY_HOLY_TYPE_P.ExecuteNonQuery();
+            igrWORK_CALENDAR.SetCellValue("HOLY_TYPE", IDC_GET_DUTY_HOLY_TYPE_P.GetCommandParamValue("O_HOLY_TYPE"));
+            igrWORK_CALENDAR.SetCellValue("HOLY_TYPE_NAME", IDC_GET_DUTY_HOLY_TYPE_P.GetCommandParamValue("O_HOLY_TYPE_NAME"));
+
+            object vHOLY_TYPE = igrWORK_CALENDAR.GetCellValue("HOLY_TYPE");
+            if (iString.ISNull(igrWORK_CALENDAR.GetCellValue("C_HOLY_TYPE1")) != String.Empty)
+            {
+                vHOLY_TYPE = igrWORK_CALENDAR.GetCellValue("C_HOLY_TYPE1");
+            }
+            else if (iString.ISNull(igrWORK_CALENDAR.GetCellValue("C_HOLY_TYPE")) != String.Empty)
+            {
+                vHOLY_TYPE = igrWORK_CALENDAR.GetCellValue("C_HOLY_TYPE");
+            }
+            Init_Work_Time(igrWORK_CALENDAR.GetCellValue("WORK_TYPE"), vHOLY_TYPE);
+        }
+
         #endregion
 
     }

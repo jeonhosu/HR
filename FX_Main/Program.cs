@@ -40,31 +40,43 @@ namespace FX_Main
             vSplit[9] = "70";   //SOB_ID
             vSplit[10] = "701"; //ORG_ID
 
-            ////////// Test
-            //vSplit[0] = "192.168.10.10";  //"192.168.1.7"; //"1.241.249.174";                   //Oracle_Host
-            //vSplit[1] = "1521";                           //Oracle_Port           
-            //vSplit[2] = "MESORA";  //"FEKPROD";                          //Oracle_ServiceName 
-            //vSplit[3] = "apps";                           //Oracle_UserId
-            //vSplit[4] = "erp0201";                       //Oracle_Password          
-            //vSplit[11] = "4"; //LoginId;
-            //vSplit[19] = "100937"; //LoginNo                        
-            //vSplit[20] = "191"; //PersonID
-            //vSplit[21] = "100937"; //PersonNumber
-            //vSplit[9] = "70";   //SOB_ID
-            //vSplit[10] = "701"; //ORG_ID
+            //////// Test
+            vSplit[0] = "192.168.10.10";  //"192.168.1.7"; //"1.241.249.174";                   //Oracle_Host
+            vSplit[1] = "1521";                           //Oracle_Port           
+            vSplit[2] = "MESORA";  //"FEKPROD";                          //Oracle_ServiceName 
+            vSplit[3] = "apps";                           //Oracle_UserId
+            vSplit[4] = "erp0201";                       //Oracle_Password          
+            vSplit[11] = "461"; //LoginId;
+            vSplit[19] = "100937"; //LoginNo                        
+            vSplit[20] = "31392"; //PersonID
+            vSplit[21] = "100937"; //PersonNumber
+            vSplit[9] = "10";   //SOB_ID
+            vSplit[10] = "101"; //ORG_ID
 
             //////////// Test
-            vSplit[0] = "106.251.238.99";                   //Oracle_Host
-            vSplit[1] = "1521";                           //Oracle_Port           
-            vSplit[2] = "NFMPROD2";                          //Oracle_ServiceName 
-            vSplit[3] = "APPS";                           //Oracle_UserId
-            vSplit[4] = "infoflex!@";                       //Oracle_Password          
-            vSplit[11] = "3"; //LoginId;
-            vSplit[19] = "100937"; //LoginNo                        
-            vSplit[20] = "21933"; //이성의 // "20125"; //김종구  // "22783"; //김유진   // PersonID
-            vSplit[21] = "100937"; //PersonNumber
-            vSplit[9] = "80";   //SOB_ID
-            vSplit[10] = "801"; //ORG_ID
+            //vSplit[0] = "106.251.238.99";                   //Oracle_Host
+            //vSplit[1] = "1521";                           //Oracle_Port           
+            //vSplit[2] = "NFMPROD2";                          //Oracle_ServiceName 
+            //vSplit[3] = "APPS";                           //Oracle_UserId
+            //vSplit[4] = "infoflex!@";                       //Oracle_Password          
+            //vSplit[11] = "3"; //LoginId;
+            //vSplit[19] = "100937"; //LoginNo                        
+            //vSplit[20] = "21933"; //이성의 // "20125"; //김종구  // "22783"; //김유진   // PersonID
+            //vSplit[21] = "100937"; //PersonNumber
+            //vSplit[9] = "80";   //SOB_ID
+            //vSplit[10] = "801"; //ORG_ID
+
+            //vSplit[0] = "106.251.238.98";                   //Oracle_Host
+            //vSplit[1] = "1521";                           //Oracle_Port           
+            //vSplit[2] = "UTKPROD";                          //Oracle_ServiceName 
+            //vSplit[3] = "APPS";                           //Oracle_UserId
+            //vSplit[4] = "infoflex";                       //Oracle_Password          
+            //vSplit[11] = "3"; //LoginId;
+            //vSplit[19] = "100937"; //LoginNo                        
+            //vSplit[20] = "21933"; //이성의 // "20125"; //김종구  // "22783"; //김유진   // PersonID
+            //vSplit[21] = "100937"; //PersonNumber
+            //vSplit[9] = "80";   //SOB_ID
+            //vSplit[10] = "801"; //ORG_ID
 
             ////// Test
             //vSplit[0] = "192.168.1.7";                   //Oracle_Host
@@ -92,31 +104,31 @@ namespace FX_Main
             //vSplit[9] = "70";   //SOB_ID
             //vSplit[10] = "701"; //ORG_ID
 
-            //Test
-            vSplit[0] = "58.151.251.160";                   //Oracle_Host
-            vSplit[1] = "1521";                           //Oracle_Port           
-            vSplit[2] = "NFKPROD";                          //Oracle_ServiceName 
-            vSplit[3] = "APPS";                           //Oracle_UserId
-            vSplit[4] = "infoflex!";                       //Oracle_Password     
-            vSplit[11] = "3"; //LoginId;
-            vSplit[19] = "100937"; //LoginNo                        
-            vSplit[20] = "22783";  //최다솔.//"20635"; //최진 // "22855"; //서정필  // "20635"; //최진 //PersonID
-            vSplit[21] = "100937"; //PersonNumber
-            vSplit[9] = "80";   //SOB_ID
-            vSplit[10] = "801"; //ORG_ID
-
-            //// Test
-            //vSplit[0] = "14.241.92.241";                   //Oracle_Host
+            ////Test
+            //vSplit[0] = "58.151.251.160";                   //Oracle_Host
             //vSplit[1] = "1521";                           //Oracle_Port           
-            //vSplit[2] = "NFVPROD";                          //Oracle_ServiceName 
+            //vSplit[2] = "NFKPROD";                          //Oracle_ServiceName 
             //vSplit[3] = "APPS";                           //Oracle_UserId
             //vSplit[4] = "infoflex!";                       //Oracle_Password     
-            //vSplit[11] = "4"; //LoginId;
+            //vSplit[11] = "3"; //LoginId;
             //vSplit[19] = "100937"; //LoginNo                        
-            //vSplit[20] = "192"; //PersonID
+            //vSplit[20] = "22783";  //최다솔.//"20635"; //최진 // "22855"; //서정필  // "20635"; //최진 //PersonID
             //vSplit[21] = "100937"; //PersonNumber
-            //vSplit[9] = "70";   //SOB_ID
-            //vSplit[10] = "701"; //ORG_ID
+            //vSplit[9] = "80";   //SOB_ID
+            //vSplit[10] = "801"; //ORG_ID
+
+            // Test
+            vSplit[0] = "14.241.92.241";                   //Oracle_Host
+            vSplit[1] = "1521";                           //Oracle_Port           
+            vSplit[2] = "NFVPROD";                          //Oracle_ServiceName 
+            vSplit[3] = "APPS";                           //Oracle_UserId
+            vSplit[4] = "infoflex!";                       //Oracle_Password     
+            vSplit[11] = "4"; //LoginId;
+            vSplit[19] = "100937"; //LoginNo                        
+            vSplit[20] = "192"; //PersonID
+            vSplit[21] = "100937"; //PersonNumber
+            vSplit[9] = "70";   //SOB_ID
+            vSplit[10] = "701"; //ORG_ID
 
 
             //// Test
@@ -146,11 +158,50 @@ namespace FX_Main
             //vSplit[9] = "90";   //SOB_ID
             //vSplit[10] = "901"; //ORG_ID
 
+            //////// Test
+            vSplit[0] = "192.168.40.10";                   //Oracle_Host
+            vSplit[1] = "2653";                           //Oracle_Port           
+            vSplit[2] = "sc1kor";                          //Oracle_ServiceName 
+            vSplit[3] = "APPS";                           //Oracle_UserId
+            vSplit[4] = "apps";                       //Oracle_Password          
+            vSplit[11] = "3"; //LoginId;
+            vSplit[19] = "100937"; //LoginNo                        
+            vSplit[20] = "500006"; //이성의 // "20125"; //김종구  // "22783"; //김유진   // PersonID
+            vSplit[21] = "100937"; //PersonNumber
+            vSplit[9] = "80";   //SOB_ID
+            vSplit[10] = "801"; //ORG_ID
+
+
+            ////////// Test
+            //vSplit[0] = "106.251.238.98";                   //Oracle_Host
+            //vSplit[1] = "1521";                           //Oracle_Port           
+            //vSplit[2] = "HETN_PROD";                          //Oracle_ServiceName 
+            //vSplit[3] = "APPS";                           //Oracle_UserId
+            //vSplit[4] = "infoflex";                       //Oracle_Password          
+            //vSplit[11] = "3"; //LoginId;
+            //vSplit[19] = "100937"; //LoginNo                        
+            //vSplit[20] = "500020"; //이성의 // "20125"; //김종구  // "22783"; //김유진   // PersonID
+            //vSplit[21] = "100937"; //PersonNumber
+            //vSplit[9] = "80";   //SOB_ID
+            //vSplit[10] = "801"; //ORG_ID
+
+            ////// Test
+            //vSplit[0] = "146.56.184.66";  //"192.168.1.7"; //"1.241.249.174";                   //Oracle_Host
+            //vSplit[1] = "1521";                           //Oracle_Port           
+            //vSplit[2] = "KJK_icn1rm.sub12300429060.kjkvcn.oraclevcn.com";  //"FEKPROD";                          //Oracle_ServiceName 
+            //vSplit[3] = "apps";                           //Oracle_UserId
+            //vSplit[4] = "infoflex";                       //Oracle_Password          
+            //vSplit[11] = "3"; //LoginId;
+            //vSplit[19] = "100937"; //LoginNo                        
+            //vSplit[20] = "500035"; //PersonID
+            //vSplit[21] = "100937"; //PersonNumber
+            //vSplit[9] = "80";   //SOB_ID
+            //vSplit[10] = "801"; //ORG_ID
+
             vSplit[5] = "106.251.238.99";                 //FTP_Host;
             vSplit[6] = "1502";                             //FTP_Port;
             vSplit[7] = "infoftp";                        //FTP_Id;
             vSplit[8] = "Infof12X";                       //FTP_Password;
-
 
             vSplit[12] = "전호수"; //LoginDescription;
             vSplit[13] = "전호수(100937)"; //LoginDisplayName;

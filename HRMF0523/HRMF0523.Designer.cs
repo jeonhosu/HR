@@ -80,6 +80,8 @@
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle18 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle19 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle20 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle73 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle74 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle75 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle76 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle77 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
@@ -95,8 +97,6 @@
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle87 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle88 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle89 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle90 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle91 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement48 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement48 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement49 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
@@ -345,6 +345,8 @@
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle14 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle15 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle16 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle60 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle61 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle62 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle63 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle64 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
@@ -356,8 +358,6 @@
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle70 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle71 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle72 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle73 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle74 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement41 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement41 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement42 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
@@ -397,6 +397,8 @@
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle22 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle23 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle24 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle90 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle91 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle92 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle93 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle94 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
@@ -527,6 +529,7 @@
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle10 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle11 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle12 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle49 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle50 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle51 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle52 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
@@ -537,8 +540,6 @@
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle57 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle58 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle59 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle60 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle61 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement35 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement35 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement36 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
@@ -584,7 +585,6 @@
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle46 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle47 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle48 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
-            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle49 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement30 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement30 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement31 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
@@ -674,7 +674,7 @@
             this.idaMONTH_OT = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
             this.IGR_MONTH_DUTY = new InfoSummit.Win.ControlAdv.ISGridAdvEx();
             this.idaMONTH_DUTY = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
-            this.JOB_CATEGORY_NAME = new InfoSummit.Win.ControlAdv.ISEditAdv();
+            this.isEditAdv5 = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.iedNAME_0 = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.isMessageAdapter1 = new InfoSummit.Win.ControlAdv.ISMessageAdapter(this.components);
             this.igbCONDITION = new InfoSummit.Win.ControlAdv.ISGroupBox();
@@ -737,7 +737,7 @@
             this.Controls.Add(this.isGridAdvEx3);
             this.Controls.Add(this.isEditAdv7);
             this.Controls.Add(this.isEditAdv6);
-            this.Controls.Add(this.JOB_CATEGORY_NAME);
+            this.Controls.Add(this.isEditAdv5);
             this.Controls.Add(this.POST_DESC);
             this.Controls.Add(this.DEPT_DESC);
             this.Controls.Add(this.PERSON_NUM);
@@ -1003,10 +1003,10 @@
             // 
             this.isOraConnection1.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.isOraConnection1.OraConnectionInfo = oraConnectionInfo1;
-            this.isOraConnection1.OraHost = "192.168.1.7";
-            this.isOraConnection1.OraPassword = "infoflex";
+            this.isOraConnection1.OraHost = "58.151.251.150";
+            this.isOraConnection1.OraPassword = "infoflex!";
             this.isOraConnection1.OraPort = "1521";
-            this.isOraConnection1.OraServiceName = "SIKPROD";
+            this.isOraConnection1.OraServiceName = "NFKPROD";
             this.isOraConnection1.OraUserId = "APPS";
             // 
             // iedPAY_YYYYMM
@@ -1133,7 +1133,7 @@
             0});
             this.iedSTART_DATE.DataAdapter = null;
             this.iedSTART_DATE.DataColumn = null;
-            this.iedSTART_DATE.DateTimeValue = new System.DateTime(2020, 5, 6, 0, 0, 0, 0);
+            this.iedSTART_DATE.DateTimeValue = new System.DateTime(2021, 12, 8, 0, 0, 0, 0);
             this.iedSTART_DATE.DoubleValue = 0D;
             this.iedSTART_DATE.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.DateTimeEdit;
             this.iedSTART_DATE.EditValue = null;
@@ -1184,7 +1184,7 @@
             0});
             this.iedEND_DATE.DataAdapter = null;
             this.iedEND_DATE.DataColumn = null;
-            this.iedEND_DATE.DateTimeValue = new System.DateTime(2020, 5, 6, 0, 0, 0, 0);
+            this.iedEND_DATE.DateTimeValue = new System.DateTime(2021, 12, 8, 0, 0, 0, 0);
             this.iedEND_DATE.DoubleValue = 0D;
             this.iedEND_DATE.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.DateTimeEdit;
             this.iedEND_DATE.EditValue = null;
@@ -1764,7 +1764,42 @@
             this.isGridAdvEx3.BaseGrid.Properties.GridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.isGridAdvEx3.BaseGrid.Properties.MarkColHeader = false;
             this.isGridAdvEx3.BaseGrid.Properties.MarkRowHeader = false;
-            gridRangeStyle75.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle73.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle73.StyleInfo.Font.Bold = false;
+            gridRangeStyle73.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle73.StyleInfo.Font.Italic = false;
+            gridRangeStyle73.StyleInfo.Font.Size = 9F;
+            gridRangeStyle73.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle73.StyleInfo.Font.Underline = false;
+            gridRangeStyle73.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle74.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(1);
+            gridRangeStyle74.StyleInfo.CellType = "Currency";
+            gridRangeStyle74.StyleInfo.CellValueType = typeof(decimal);
+            gridRangeStyle74.StyleInfo.Clickable = true;
+            gridRangeStyle74.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
+            gridRangeStyle74.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
+            gridRangeStyle74.StyleInfo.CurrencyEdit.CurrencySymbol = "";
+            gridRangeStyle74.StyleInfo.CurrencyEdit.NullString = "0";
+            gridRangeStyle74.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            gridRangeStyle74.StyleInfo.Font.Bold = false;
+            gridRangeStyle74.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle74.StyleInfo.Font.Italic = false;
+            gridRangeStyle74.StyleInfo.Font.Size = 9F;
+            gridRangeStyle74.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle74.StyleInfo.Font.Underline = false;
+            gridRangeStyle74.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle74.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
+            gridRangeStyle74.StyleInfo.ReadOnly = false;
+            gridRangeStyle74.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle75.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(2, 3);
+            gridRangeStyle75.StyleInfo.CellType = "TextBox";
+            gridRangeStyle75.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle75.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle75.StyleInfo.Clickable = true;
             gridRangeStyle75.StyleInfo.Font.Bold = false;
             gridRangeStyle75.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle75.StyleInfo.Font.Italic = false;
@@ -1772,7 +1807,10 @@
             gridRangeStyle75.StyleInfo.Font.Strikeout = false;
             gridRangeStyle75.StyleInfo.Font.Underline = false;
             gridRangeStyle75.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle76.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(1);
+            gridRangeStyle75.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle75.StyleInfo.ReadOnly = false;
+            gridRangeStyle75.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle76.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(4, 5);
             gridRangeStyle76.StyleInfo.CellType = "Currency";
             gridRangeStyle76.StyleInfo.CellValueType = typeof(decimal);
             gridRangeStyle76.StyleInfo.Clickable = true;
@@ -1795,11 +1833,11 @@
             gridRangeStyle76.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
             gridRangeStyle76.StyleInfo.ReadOnly = false;
             gridRangeStyle76.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle77.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(2, 3);
+            gridRangeStyle77.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(6);
             gridRangeStyle77.StyleInfo.CellType = "TextBox";
             gridRangeStyle77.StyleInfo.CellValueType = typeof(string);
             gridRangeStyle77.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            gridRangeStyle77.StyleInfo.Clickable = true;
+            gridRangeStyle77.StyleInfo.Clickable = false;
             gridRangeStyle77.StyleInfo.Font.Bold = false;
             gridRangeStyle77.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle77.StyleInfo.Font.Italic = false;
@@ -1808,12 +1846,12 @@
             gridRangeStyle77.StyleInfo.Font.Underline = false;
             gridRangeStyle77.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
             gridRangeStyle77.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
-            gridRangeStyle77.StyleInfo.ReadOnly = false;
+            gridRangeStyle77.StyleInfo.ReadOnly = true;
             gridRangeStyle77.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle78.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(4, 5);
+            gridRangeStyle78.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(7);
             gridRangeStyle78.StyleInfo.CellType = "Currency";
             gridRangeStyle78.StyleInfo.CellValueType = typeof(decimal);
-            gridRangeStyle78.StyleInfo.Clickable = true;
+            gridRangeStyle78.StyleInfo.Clickable = false;
             gridRangeStyle78.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
             gridRangeStyle78.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
             gridRangeStyle78.StyleInfo.CurrencyEdit.CurrencySymbol = "";
@@ -1831,13 +1869,21 @@
             gridRangeStyle78.StyleInfo.Font.Underline = false;
             gridRangeStyle78.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
             gridRangeStyle78.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
-            gridRangeStyle78.StyleInfo.ReadOnly = false;
+            gridRangeStyle78.StyleInfo.ReadOnly = true;
             gridRangeStyle78.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle79.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(6);
-            gridRangeStyle79.StyleInfo.CellType = "TextBox";
-            gridRangeStyle79.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle79.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            gridRangeStyle79.StyleInfo.Clickable = false;
+            gridRangeStyle79.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(8);
+            gridRangeStyle79.StyleInfo.CellType = "Currency";
+            gridRangeStyle79.StyleInfo.CellValueType = typeof(decimal);
+            gridRangeStyle79.StyleInfo.Clickable = true;
+            gridRangeStyle79.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
+            gridRangeStyle79.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
+            gridRangeStyle79.StyleInfo.CurrencyEdit.CurrencySymbol = "";
+            gridRangeStyle79.StyleInfo.CurrencyEdit.NullString = "0";
+            gridRangeStyle79.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             gridRangeStyle79.StyleInfo.Font.Bold = false;
             gridRangeStyle79.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle79.StyleInfo.Font.Italic = false;
@@ -1845,22 +1891,14 @@
             gridRangeStyle79.StyleInfo.Font.Strikeout = false;
             gridRangeStyle79.StyleInfo.Font.Underline = false;
             gridRangeStyle79.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle79.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
-            gridRangeStyle79.StyleInfo.ReadOnly = true;
+            gridRangeStyle79.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
+            gridRangeStyle79.StyleInfo.ReadOnly = false;
             gridRangeStyle79.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle80.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(7);
-            gridRangeStyle80.StyleInfo.CellType = "Currency";
-            gridRangeStyle80.StyleInfo.CellValueType = typeof(decimal);
-            gridRangeStyle80.StyleInfo.Clickable = false;
-            gridRangeStyle80.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
-            gridRangeStyle80.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
-            gridRangeStyle80.StyleInfo.CurrencyEdit.CurrencySymbol = "";
-            gridRangeStyle80.StyleInfo.CurrencyEdit.NullString = "0";
-            gridRangeStyle80.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
+            gridRangeStyle80.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(9);
+            gridRangeStyle80.StyleInfo.CellType = "TextBox";
+            gridRangeStyle80.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle80.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle80.StyleInfo.Clickable = true;
             gridRangeStyle80.StyleInfo.Font.Bold = false;
             gridRangeStyle80.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle80.StyleInfo.Font.Italic = false;
@@ -1868,66 +1906,30 @@
             gridRangeStyle80.StyleInfo.Font.Strikeout = false;
             gridRangeStyle80.StyleInfo.Font.Underline = false;
             gridRangeStyle80.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle80.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
-            gridRangeStyle80.StyleInfo.ReadOnly = true;
+            gridRangeStyle80.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle80.StyleInfo.ReadOnly = false;
             gridRangeStyle80.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle81.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(8);
-            gridRangeStyle81.StyleInfo.CellType = "Currency";
-            gridRangeStyle81.StyleInfo.CellValueType = typeof(decimal);
-            gridRangeStyle81.StyleInfo.Clickable = true;
-            gridRangeStyle81.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
-            gridRangeStyle81.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
-            gridRangeStyle81.StyleInfo.CurrencyEdit.CurrencySymbol = "";
-            gridRangeStyle81.StyleInfo.CurrencyEdit.NullString = "0";
-            gridRangeStyle81.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            gridRangeStyle81.StyleInfo.Font.Bold = false;
-            gridRangeStyle81.StyleInfo.Font.Facename = "굴림";
-            gridRangeStyle81.StyleInfo.Font.Italic = false;
-            gridRangeStyle81.StyleInfo.Font.Size = 9F;
-            gridRangeStyle81.StyleInfo.Font.Strikeout = false;
-            gridRangeStyle81.StyleInfo.Font.Underline = false;
-            gridRangeStyle81.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle81.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
-            gridRangeStyle81.StyleInfo.ReadOnly = false;
-            gridRangeStyle81.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle82.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(9);
-            gridRangeStyle82.StyleInfo.CellType = "TextBox";
-            gridRangeStyle82.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle82.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            gridRangeStyle82.StyleInfo.Clickable = true;
-            gridRangeStyle82.StyleInfo.Font.Bold = false;
-            gridRangeStyle82.StyleInfo.Font.Facename = "굴림";
-            gridRangeStyle82.StyleInfo.Font.Italic = false;
-            gridRangeStyle82.StyleInfo.Font.Size = 9F;
-            gridRangeStyle82.StyleInfo.Font.Strikeout = false;
-            gridRangeStyle82.StyleInfo.Font.Underline = false;
-            gridRangeStyle82.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle82.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
-            gridRangeStyle82.StyleInfo.ReadOnly = false;
-            gridRangeStyle82.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle83.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 1);
-            gridRangeStyle83.StyleInfo.Text = "PERSON_ID";
-            gridRangeStyle84.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 2);
-            gridRangeStyle84.StyleInfo.Text = "PAY_YYYYMM";
-            gridRangeStyle85.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 3);
-            gridRangeStyle85.StyleInfo.Text = "WAGE_TYPE";
-            gridRangeStyle86.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 4);
-            gridRangeStyle86.StyleInfo.Text = "CORP_ID";
-            gridRangeStyle87.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 5);
-            gridRangeStyle87.StyleInfo.Text = "ALLOWANCE_ID";
-            gridRangeStyle88.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 6);
-            gridRangeStyle88.StyleInfo.Text = "Pay Item";
-            gridRangeStyle89.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 7);
-            gridRangeStyle89.StyleInfo.Text = "Pay Amount";
-            gridRangeStyle90.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 8);
-            gridRangeStyle90.StyleInfo.Text = "MONTH_PAYMENT_ID";
-            gridRangeStyle91.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 9);
-            gridRangeStyle91.StyleInfo.Text = "CREATED_FLAG";
+            gridRangeStyle81.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 1);
+            gridRangeStyle81.StyleInfo.Text = "PERSON_ID";
+            gridRangeStyle82.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 2);
+            gridRangeStyle82.StyleInfo.Text = "PAY_YYYYMM";
+            gridRangeStyle83.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 3);
+            gridRangeStyle83.StyleInfo.Text = "WAGE_TYPE";
+            gridRangeStyle84.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 4);
+            gridRangeStyle84.StyleInfo.Text = "CORP_ID";
+            gridRangeStyle85.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 5);
+            gridRangeStyle85.StyleInfo.Text = "ALLOWANCE_ID";
+            gridRangeStyle86.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 6);
+            gridRangeStyle86.StyleInfo.Text = "Pay Item";
+            gridRangeStyle87.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 7);
+            gridRangeStyle87.StyleInfo.Text = "Pay Amount";
+            gridRangeStyle88.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 8);
+            gridRangeStyle88.StyleInfo.Text = "MONTH_PAYMENT_ID";
+            gridRangeStyle89.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 9);
+            gridRangeStyle89.StyleInfo.Text = "CREATED_FLAG";
             this.isGridAdvEx3.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
+            gridRangeStyle73,
+            gridRangeStyle74,
             gridRangeStyle75,
             gridRangeStyle76,
             gridRangeStyle77,
@@ -1942,9 +1944,7 @@
             gridRangeStyle86,
             gridRangeStyle87,
             gridRangeStyle88,
-            gridRangeStyle89,
-            gridRangeStyle90,
-            gridRangeStyle91});
+            gridRangeStyle89});
             this.isGridAdvEx3.BaseGrid.RefreshCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridRefreshCurrentCellBehavior.RefreshRow;
             this.isGridAdvEx3.BaseGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.isGridAdvEx3.BaseGrid.RowCount = 0;
@@ -3498,7 +3498,7 @@
             this.DEPT_DESC.PromptText = "Department";
             isLanguageElement1.Default = "Department";
             isLanguageElement1.SiteName = null;
-            isLanguageElement1.TL1_KR = "부서";
+            isLanguageElement1.TL1_KR = "부    서";
             isLanguageElement1.TL2_CN = "";
             isLanguageElement1.TL3_VN = "";
             isLanguageElement1.TL4_JP = "";
@@ -3862,7 +3862,7 @@
             this.igrMONTH_PAYMENT.BaseGrid.RowHeightEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridRowHeight[] {
             new Syncfusion.Windows.Forms.Grid.GridRowHeight(0, 22)});
             this.igrMONTH_PAYMENT.BaseGrid.SerializeCellsBehavior = Syncfusion.Windows.Forms.Grid.GridSerializeCellsBehavior.SerializeAsRangeStylesIntoCode;
-            this.igrMONTH_PAYMENT.BaseGrid.Size = new System.Drawing.Size(57, 61);
+            this.igrMONTH_PAYMENT.BaseGrid.Size = new System.Drawing.Size(234, 61);
             this.igrMONTH_PAYMENT.BaseGrid.SmartSizeBox = false;
             this.igrMONTH_PAYMENT.BaseGrid.TabIndex = 0;
             this.igrMONTH_PAYMENT.BaseGrid.ThemesEnabled = true;
@@ -4624,9 +4624,9 @@
             isGridAdvExColElement27,
             isGridAdvExColElement28,
             isGridAdvExColElement29});
-            this.igrMONTH_PAYMENT.Location = new System.Drawing.Point(407, 457);
+            this.igrMONTH_PAYMENT.Location = new System.Drawing.Point(695, 506);
             this.igrMONTH_PAYMENT.Name = "igrMONTH_PAYMENT";
-            this.igrMONTH_PAYMENT.Size = new System.Drawing.Size(60, 64);
+            this.igrMONTH_PAYMENT.Size = new System.Drawing.Size(237, 64);
             this.igrMONTH_PAYMENT.TabIndex = 44;
             this.igrMONTH_PAYMENT.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
             this.igrMONTH_PAYMENT.Text = "isGridAdvEx1";
@@ -4842,7 +4842,7 @@
             isLanguageElement5});
             this.isEditAdv53.PromptWidth = 90;
             this.isEditAdv53.ReadOnly = true;
-            this.isEditAdv53.Size = new System.Drawing.Size(940, 41);
+            this.isEditAdv53.Size = new System.Drawing.Size(753, 41);
             this.isEditAdv53.TabIndex = 309;
             this.isEditAdv53.TextValue = "";
             this.isEditAdv53.Updatable = false;
@@ -5122,10 +5122,10 @@
             0});
             this.PERSON_NUM.PromptAlignHoriz = InfoSummit.Win.ControlAdv.ISUtil.Enum.AlignHoriz.Center;
             this.PERSON_NUM.PromptStyle = InfoSummit.Win.ControlAdv.ISUtil.Enum.PromptStyle.FullLine;
-            this.PERSON_NUM.PromptText = "Person Num.";
-            isLanguageElement11.Default = "Person Num.";
+            this.PERSON_NUM.PromptText = "Number";
+            isLanguageElement11.Default = "Number";
             isLanguageElement11.SiteName = null;
-            isLanguageElement11.TL1_KR = "사원번호";
+            isLanguageElement11.TL1_KR = "사    번";
             isLanguageElement11.TL2_CN = "";
             isLanguageElement11.TL3_VN = "";
             isLanguageElement11.TL4_JP = "";
@@ -5170,10 +5170,10 @@
             0});
             this.POST_DESC.PromptAlignHoriz = InfoSummit.Win.ControlAdv.ISUtil.Enum.AlignHoriz.Center;
             this.POST_DESC.PromptStyle = InfoSummit.Win.ControlAdv.ISUtil.Enum.PromptStyle.FullLine;
-            this.POST_DESC.PromptText = "Position";
-            isLanguageElement12.Default = "Position";
+            this.POST_DESC.PromptText = "Post";
+            isLanguageElement12.Default = "Post";
             isLanguageElement12.SiteName = null;
-            isLanguageElement12.TL1_KR = "직위";
+            isLanguageElement12.TL1_KR = "직    위";
             isLanguageElement12.TL2_CN = "";
             isLanguageElement12.TL3_VN = "";
             isLanguageElement12.TL4_JP = "";
@@ -5268,14 +5268,14 @@
             this.W_REPRE_NUM.PromptText = "CMT No";
             isLanguageElement19.Default = "CMT No";
             isLanguageElement19.SiteName = null;
-            isLanguageElement19.TL1_KR = "CMT 번호";
+            isLanguageElement19.TL1_KR = "주민번호";
             isLanguageElement19.TL2_CN = "";
             isLanguageElement19.TL3_VN = "";
             isLanguageElement19.TL4_JP = "";
             isLanguageElement19.TL5_XAA = "";
             this.W_REPRE_NUM.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
             isLanguageElement19});
-            this.W_REPRE_NUM.PromptWidth = 90;
+            this.W_REPRE_NUM.PromptWidth = 130;
             this.W_REPRE_NUM.Size = new System.Drawing.Size(217, 21);
             this.W_REPRE_NUM.TabIndex = 3;
             this.W_REPRE_NUM.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL2_CN;
@@ -5353,7 +5353,42 @@
             this.isGridAdvEx1.BaseGrid.Properties.GridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.isGridAdvEx1.BaseGrid.Properties.MarkColHeader = false;
             this.isGridAdvEx1.BaseGrid.Properties.MarkRowHeader = false;
-            gridRangeStyle62.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle60.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle60.StyleInfo.Font.Bold = false;
+            gridRangeStyle60.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle60.StyleInfo.Font.Italic = false;
+            gridRangeStyle60.StyleInfo.Font.Size = 9F;
+            gridRangeStyle60.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle60.StyleInfo.Font.Underline = false;
+            gridRangeStyle60.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle61.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(1);
+            gridRangeStyle61.StyleInfo.CellType = "Currency";
+            gridRangeStyle61.StyleInfo.CellValueType = typeof(decimal);
+            gridRangeStyle61.StyleInfo.Clickable = true;
+            gridRangeStyle61.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
+            gridRangeStyle61.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
+            gridRangeStyle61.StyleInfo.CurrencyEdit.CurrencySymbol = "";
+            gridRangeStyle61.StyleInfo.CurrencyEdit.NullString = "0";
+            gridRangeStyle61.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            gridRangeStyle61.StyleInfo.Font.Bold = false;
+            gridRangeStyle61.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle61.StyleInfo.Font.Italic = false;
+            gridRangeStyle61.StyleInfo.Font.Size = 9F;
+            gridRangeStyle61.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle61.StyleInfo.Font.Underline = false;
+            gridRangeStyle61.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle61.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
+            gridRangeStyle61.StyleInfo.ReadOnly = false;
+            gridRangeStyle61.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle62.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(2, 3);
+            gridRangeStyle62.StyleInfo.CellType = "TextBox";
+            gridRangeStyle62.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle62.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle62.StyleInfo.Clickable = true;
             gridRangeStyle62.StyleInfo.Font.Bold = false;
             gridRangeStyle62.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle62.StyleInfo.Font.Italic = false;
@@ -5361,7 +5396,10 @@
             gridRangeStyle62.StyleInfo.Font.Strikeout = false;
             gridRangeStyle62.StyleInfo.Font.Underline = false;
             gridRangeStyle62.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle63.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(1);
+            gridRangeStyle62.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle62.StyleInfo.ReadOnly = false;
+            gridRangeStyle62.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle63.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(4, 5);
             gridRangeStyle63.StyleInfo.CellType = "Currency";
             gridRangeStyle63.StyleInfo.CellValueType = typeof(decimal);
             gridRangeStyle63.StyleInfo.Clickable = true;
@@ -5384,11 +5422,11 @@
             gridRangeStyle63.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
             gridRangeStyle63.StyleInfo.ReadOnly = false;
             gridRangeStyle63.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle64.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(2, 3);
+            gridRangeStyle64.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(6);
             gridRangeStyle64.StyleInfo.CellType = "TextBox";
             gridRangeStyle64.StyleInfo.CellValueType = typeof(string);
             gridRangeStyle64.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            gridRangeStyle64.StyleInfo.Clickable = true;
+            gridRangeStyle64.StyleInfo.Clickable = false;
             gridRangeStyle64.StyleInfo.Font.Bold = false;
             gridRangeStyle64.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle64.StyleInfo.Font.Italic = false;
@@ -5397,12 +5435,12 @@
             gridRangeStyle64.StyleInfo.Font.Underline = false;
             gridRangeStyle64.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
             gridRangeStyle64.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
-            gridRangeStyle64.StyleInfo.ReadOnly = false;
+            gridRangeStyle64.StyleInfo.ReadOnly = true;
             gridRangeStyle64.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle65.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(4, 5);
+            gridRangeStyle65.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(7);
             gridRangeStyle65.StyleInfo.CellType = "Currency";
             gridRangeStyle65.StyleInfo.CellValueType = typeof(decimal);
-            gridRangeStyle65.StyleInfo.Clickable = true;
+            gridRangeStyle65.StyleInfo.Clickable = false;
             gridRangeStyle65.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
             gridRangeStyle65.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
             gridRangeStyle65.StyleInfo.CurrencyEdit.CurrencySymbol = "";
@@ -5420,61 +5458,25 @@
             gridRangeStyle65.StyleInfo.Font.Underline = false;
             gridRangeStyle65.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
             gridRangeStyle65.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
-            gridRangeStyle65.StyleInfo.ReadOnly = false;
+            gridRangeStyle65.StyleInfo.ReadOnly = true;
             gridRangeStyle65.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle66.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(6);
-            gridRangeStyle66.StyleInfo.CellType = "TextBox";
-            gridRangeStyle66.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle66.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            gridRangeStyle66.StyleInfo.Clickable = false;
-            gridRangeStyle66.StyleInfo.Font.Bold = false;
-            gridRangeStyle66.StyleInfo.Font.Facename = "굴림";
-            gridRangeStyle66.StyleInfo.Font.Italic = false;
-            gridRangeStyle66.StyleInfo.Font.Size = 9F;
-            gridRangeStyle66.StyleInfo.Font.Strikeout = false;
-            gridRangeStyle66.StyleInfo.Font.Underline = false;
-            gridRangeStyle66.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle66.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
-            gridRangeStyle66.StyleInfo.ReadOnly = true;
-            gridRangeStyle66.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle67.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(7);
-            gridRangeStyle67.StyleInfo.CellType = "Currency";
-            gridRangeStyle67.StyleInfo.CellValueType = typeof(decimal);
-            gridRangeStyle67.StyleInfo.Clickable = false;
-            gridRangeStyle67.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
-            gridRangeStyle67.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
-            gridRangeStyle67.StyleInfo.CurrencyEdit.CurrencySymbol = "";
-            gridRangeStyle67.StyleInfo.CurrencyEdit.NullString = "0";
-            gridRangeStyle67.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            gridRangeStyle67.StyleInfo.Font.Bold = false;
-            gridRangeStyle67.StyleInfo.Font.Facename = "굴림";
-            gridRangeStyle67.StyleInfo.Font.Italic = false;
-            gridRangeStyle67.StyleInfo.Font.Size = 9F;
-            gridRangeStyle67.StyleInfo.Font.Strikeout = false;
-            gridRangeStyle67.StyleInfo.Font.Underline = false;
-            gridRangeStyle67.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle67.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
-            gridRangeStyle67.StyleInfo.ReadOnly = true;
-            gridRangeStyle67.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle68.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 1);
-            gridRangeStyle68.StyleInfo.Text = "PERSON_ID";
-            gridRangeStyle69.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 2);
-            gridRangeStyle69.StyleInfo.Text = "PAY_YYYYMM";
-            gridRangeStyle70.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 3);
-            gridRangeStyle70.StyleInfo.Text = "WAGE_TYPE";
-            gridRangeStyle71.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 4);
-            gridRangeStyle71.StyleInfo.Text = "CORP_ID";
-            gridRangeStyle72.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 5);
-            gridRangeStyle72.StyleInfo.Text = "DEDUCTION_ID";
-            gridRangeStyle73.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 6);
-            gridRangeStyle73.StyleInfo.Text = "Deduce Item";
-            gridRangeStyle74.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 7);
-            gridRangeStyle74.StyleInfo.Text = "Deduce Amount";
+            gridRangeStyle66.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 1);
+            gridRangeStyle66.StyleInfo.Text = "PERSON_ID";
+            gridRangeStyle67.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 2);
+            gridRangeStyle67.StyleInfo.Text = "PAY_YYYYMM";
+            gridRangeStyle68.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 3);
+            gridRangeStyle68.StyleInfo.Text = "WAGE_TYPE";
+            gridRangeStyle69.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 4);
+            gridRangeStyle69.StyleInfo.Text = "CORP_ID";
+            gridRangeStyle70.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 5);
+            gridRangeStyle70.StyleInfo.Text = "DEDUCTION_ID";
+            gridRangeStyle71.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 6);
+            gridRangeStyle71.StyleInfo.Text = "Deduce Item";
+            gridRangeStyle72.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 7);
+            gridRangeStyle72.StyleInfo.Text = "Deduce Amount";
             this.isGridAdvEx1.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
+            gridRangeStyle60,
+            gridRangeStyle61,
             gridRangeStyle62,
             gridRangeStyle63,
             gridRangeStyle64,
@@ -5485,9 +5487,7 @@
             gridRangeStyle69,
             gridRangeStyle70,
             gridRangeStyle71,
-            gridRangeStyle72,
-            gridRangeStyle73,
-            gridRangeStyle74});
+            gridRangeStyle72});
             this.isGridAdvEx1.BaseGrid.RefreshCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridRefreshCurrentCellBehavior.RefreshRow;
             this.isGridAdvEx1.BaseGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.isGridAdvEx1.BaseGrid.RowCount = 0;
@@ -6036,6 +6036,22 @@
             this.isGridAdvEx2.BaseGrid.Properties.GridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.isGridAdvEx2.BaseGrid.Properties.MarkColHeader = false;
             this.isGridAdvEx2.BaseGrid.Properties.MarkRowHeader = false;
+            gridRangeStyle90.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle90.StyleInfo.Font.Bold = false;
+            gridRangeStyle90.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle90.StyleInfo.Font.Italic = false;
+            gridRangeStyle90.StyleInfo.Font.Size = 9F;
+            gridRangeStyle90.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle90.StyleInfo.Font.Underline = false;
+            gridRangeStyle90.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle91.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle91.StyleInfo.Font.Bold = false;
+            gridRangeStyle91.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle91.StyleInfo.Font.Italic = false;
+            gridRangeStyle91.StyleInfo.Font.Size = 9F;
+            gridRangeStyle91.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle91.StyleInfo.Font.Underline = false;
+            gridRangeStyle91.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
             gridRangeStyle92.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
             gridRangeStyle92.StyleInfo.Font.Bold = false;
             gridRangeStyle92.StyleInfo.Font.Facename = "굴림";
@@ -6123,6 +6139,8 @@
             gridRangeStyle114.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 20);
             gridRangeStyle114.StyleInfo.Text = "DUTY_YYYYMM";
             this.isGridAdvEx2.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
+            gridRangeStyle90,
+            gridRangeStyle91,
             gridRangeStyle92,
             gridRangeStyle93,
             gridRangeStyle94,
@@ -6680,7 +6698,7 @@
             isGridAdvExColElement74,
             isGridAdvExColElement75,
             isGridAdvExColElement76});
-            this.isGridAdvEx2.Location = new System.Drawing.Point(468, 479);
+            this.isGridAdvEx2.Location = new System.Drawing.Point(851, 529);
             this.isGridAdvEx2.Name = "isGridAdvEx2";
             this.isGridAdvEx2.Size = new System.Drawing.Size(29, 41);
             this.isGridAdvEx2.TabIndex = 49;
@@ -7442,7 +7460,19 @@
             this.IGR_MONTH_OT.BaseGrid.Properties.GridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.IGR_MONTH_OT.BaseGrid.Properties.MarkColHeader = false;
             this.IGR_MONTH_OT.BaseGrid.Properties.MarkRowHeader = false;
-            gridRangeStyle50.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle49.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle49.StyleInfo.Font.Bold = false;
+            gridRangeStyle49.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle49.StyleInfo.Font.Italic = false;
+            gridRangeStyle49.StyleInfo.Font.Size = 9F;
+            gridRangeStyle49.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle49.StyleInfo.Font.Underline = false;
+            gridRangeStyle49.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle50.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(1, 2);
+            gridRangeStyle50.StyleInfo.CellType = "TextBox";
+            gridRangeStyle50.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle50.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle50.StyleInfo.Clickable = true;
             gridRangeStyle50.StyleInfo.Font.Bold = false;
             gridRangeStyle50.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle50.StyleInfo.Font.Italic = false;
@@ -7450,11 +7480,22 @@
             gridRangeStyle50.StyleInfo.Font.Strikeout = false;
             gridRangeStyle50.StyleInfo.Font.Underline = false;
             gridRangeStyle50.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle51.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(1, 2);
-            gridRangeStyle51.StyleInfo.CellType = "TextBox";
-            gridRangeStyle51.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle51.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle50.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle50.StyleInfo.ReadOnly = false;
+            gridRangeStyle50.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle51.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(3, 4);
+            gridRangeStyle51.StyleInfo.CellType = "Currency";
+            gridRangeStyle51.StyleInfo.CellValueType = typeof(decimal);
             gridRangeStyle51.StyleInfo.Clickable = true;
+            gridRangeStyle51.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
+            gridRangeStyle51.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
+            gridRangeStyle51.StyleInfo.CurrencyEdit.CurrencySymbol = "";
+            gridRangeStyle51.StyleInfo.CurrencyEdit.NullString = "0";
+            gridRangeStyle51.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             gridRangeStyle51.StyleInfo.Font.Bold = false;
             gridRangeStyle51.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle51.StyleInfo.Font.Italic = false;
@@ -7462,22 +7503,14 @@
             gridRangeStyle51.StyleInfo.Font.Strikeout = false;
             gridRangeStyle51.StyleInfo.Font.Underline = false;
             gridRangeStyle51.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle51.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle51.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
             gridRangeStyle51.StyleInfo.ReadOnly = false;
             gridRangeStyle51.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle52.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(3);
-            gridRangeStyle52.StyleInfo.CellType = "Currency";
-            gridRangeStyle52.StyleInfo.CellValueType = typeof(decimal);
+            gridRangeStyle52.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(5);
+            gridRangeStyle52.StyleInfo.CellType = "TextBox";
+            gridRangeStyle52.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle52.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             gridRangeStyle52.StyleInfo.Clickable = true;
-            gridRangeStyle52.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 2;
-            gridRangeStyle52.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
-            gridRangeStyle52.StyleInfo.CurrencyEdit.CurrencySymbol = "";
-            gridRangeStyle52.StyleInfo.CurrencyEdit.NullString = "0.00";
-            gridRangeStyle52.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
             gridRangeStyle52.StyleInfo.Font.Bold = false;
             gridRangeStyle52.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle52.StyleInfo.Font.Italic = false;
@@ -7485,10 +7518,10 @@
             gridRangeStyle52.StyleInfo.Font.Strikeout = false;
             gridRangeStyle52.StyleInfo.Font.Underline = false;
             gridRangeStyle52.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle52.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
+            gridRangeStyle52.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
             gridRangeStyle52.StyleInfo.ReadOnly = false;
             gridRangeStyle52.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle53.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(4);
+            gridRangeStyle53.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(6);
             gridRangeStyle53.StyleInfo.CellType = "Currency";
             gridRangeStyle53.StyleInfo.CellValueType = typeof(decimal);
             gridRangeStyle53.StyleInfo.Clickable = true;
@@ -7511,57 +7544,20 @@
             gridRangeStyle53.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
             gridRangeStyle53.StyleInfo.ReadOnly = false;
             gridRangeStyle53.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle54.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(5);
-            gridRangeStyle54.StyleInfo.CellType = "TextBox";
-            gridRangeStyle54.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle54.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            gridRangeStyle54.StyleInfo.Clickable = true;
-            gridRangeStyle54.StyleInfo.Font.Bold = false;
-            gridRangeStyle54.StyleInfo.Font.Facename = "굴림";
-            gridRangeStyle54.StyleInfo.Font.Italic = false;
-            gridRangeStyle54.StyleInfo.Font.Size = 9F;
-            gridRangeStyle54.StyleInfo.Font.Strikeout = false;
-            gridRangeStyle54.StyleInfo.Font.Underline = false;
-            gridRangeStyle54.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle54.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
-            gridRangeStyle54.StyleInfo.ReadOnly = false;
-            gridRangeStyle54.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle55.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(6);
-            gridRangeStyle55.StyleInfo.CellType = "Currency";
-            gridRangeStyle55.StyleInfo.CellValueType = typeof(decimal);
-            gridRangeStyle55.StyleInfo.Clickable = true;
-            gridRangeStyle55.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
-            gridRangeStyle55.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
-            gridRangeStyle55.StyleInfo.CurrencyEdit.CurrencySymbol = "";
-            gridRangeStyle55.StyleInfo.CurrencyEdit.NullString = "0";
-            gridRangeStyle55.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            gridRangeStyle55.StyleInfo.Font.Bold = false;
-            gridRangeStyle55.StyleInfo.Font.Facename = "굴림";
-            gridRangeStyle55.StyleInfo.Font.Italic = false;
-            gridRangeStyle55.StyleInfo.Font.Size = 9F;
-            gridRangeStyle55.StyleInfo.Font.Strikeout = false;
-            gridRangeStyle55.StyleInfo.Font.Underline = false;
-            gridRangeStyle55.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle55.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
-            gridRangeStyle55.StyleInfo.ReadOnly = false;
-            gridRangeStyle55.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle56.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 1);
-            gridRangeStyle56.StyleInfo.Text = "";
-            gridRangeStyle57.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 2);
-            gridRangeStyle57.StyleInfo.Text = "O/T Type";
-            gridRangeStyle58.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 3);
-            gridRangeStyle58.StyleInfo.Text = "Time";
-            gridRangeStyle59.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 4);
-            gridRangeStyle59.StyleInfo.Text = "CORP_ID";
-            gridRangeStyle60.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 5);
-            gridRangeStyle60.StyleInfo.Text = "DUTY_YYYYMM";
-            gridRangeStyle61.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 6);
-            gridRangeStyle61.StyleInfo.Text = "PERSON_ID";
+            gridRangeStyle54.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 1);
+            gridRangeStyle54.StyleInfo.Text = "";
+            gridRangeStyle55.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 2);
+            gridRangeStyle55.StyleInfo.Text = "Type Name";
+            gridRangeStyle56.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 3);
+            gridRangeStyle56.StyleInfo.Text = "Time";
+            gridRangeStyle57.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 4);
+            gridRangeStyle57.StyleInfo.Text = "CORP_ID";
+            gridRangeStyle58.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 5);
+            gridRangeStyle58.StyleInfo.Text = "DUTY_YYYYMM";
+            gridRangeStyle59.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 6);
+            gridRangeStyle59.StyleInfo.Text = "PERSON_ID";
             this.IGR_MONTH_OT.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
+            gridRangeStyle49,
             gridRangeStyle50,
             gridRangeStyle51,
             gridRangeStyle52,
@@ -7571,9 +7567,7 @@
             gridRangeStyle56,
             gridRangeStyle57,
             gridRangeStyle58,
-            gridRangeStyle59,
-            gridRangeStyle60,
-            gridRangeStyle61});
+            gridRangeStyle59});
             this.IGR_MONTH_OT.BaseGrid.RefreshCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridRefreshCurrentCellBehavior.RefreshRow;
             this.IGR_MONTH_OT.BaseGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.IGR_MONTH_OT.BaseGrid.RowCount = 0;
@@ -7618,15 +7612,15 @@
             isGridAdvExColElement36.DataType = "System.String";
             isGridAdvExColElement36.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement36.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement36.Default = "O/T Type";
-            isGridAdvExTLHeaderElement36.TL1_KR = "잔업 구분";
+            isGridAdvExTLHeaderElement36.Default = "Type Name";
+            isGridAdvExTLHeaderElement36.TL1_KR = "근무형태";
             isGridAdvExTLHeaderElement36.TL2_CN = null;
             isGridAdvExTLHeaderElement36.TL3_VN = null;
             isGridAdvExTLHeaderElement36.TL4_JP = null;
             isGridAdvExTLHeaderElement36.TL5_XAA = null;
             isGridAdvExColElement36.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement36});
-            isGridAdvExColElement36.HeaderPrompt = "O/T Type";
+            isGridAdvExColElement36.HeaderPrompt = "Type Name";
             isGridAdvExColElement36.Insertable = 0;
             isGridAdvExColElement36.MergeCell = 0;
             isGridAdvExColElement36.Nullable = 0;
@@ -7642,7 +7636,7 @@
             isGridAdvExColElement37.DataOrdinal = 2;
             isGridAdvExColElement37.DataType = "System.Decimal";
             isGridAdvExColElement37.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement37.DecimalDigits = 2;
+            isGridAdvExColElement37.DecimalDigits = 0;
             isGridAdvExTLHeaderElement37.Default = "Time";
             isGridAdvExTLHeaderElement37.TL1_KR = "시간";
             isGridAdvExTLHeaderElement37.TL2_CN = null;
@@ -8080,14 +8074,14 @@
             gridRangeStyle40.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
             gridRangeStyle40.StyleInfo.ReadOnly = false;
             gridRangeStyle40.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle41.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(2);
+            gridRangeStyle41.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(2, 3);
             gridRangeStyle41.StyleInfo.CellType = "Currency";
             gridRangeStyle41.StyleInfo.CellValueType = typeof(decimal);
             gridRangeStyle41.StyleInfo.Clickable = true;
-            gridRangeStyle41.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 2;
+            gridRangeStyle41.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
             gridRangeStyle41.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
             gridRangeStyle41.StyleInfo.CurrencyEdit.CurrencySymbol = "";
-            gridRangeStyle41.StyleInfo.CurrencyEdit.NullString = "0.00";
+            gridRangeStyle41.StyleInfo.CurrencyEdit.NullString = "0";
             gridRangeStyle41.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
             0,
             0,
@@ -8103,19 +8097,11 @@
             gridRangeStyle41.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
             gridRangeStyle41.StyleInfo.ReadOnly = false;
             gridRangeStyle41.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle42.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(3);
-            gridRangeStyle42.StyleInfo.CellType = "Currency";
-            gridRangeStyle42.StyleInfo.CellValueType = typeof(decimal);
+            gridRangeStyle42.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(4);
+            gridRangeStyle42.StyleInfo.CellType = "TextBox";
+            gridRangeStyle42.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle42.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             gridRangeStyle42.StyleInfo.Clickable = true;
-            gridRangeStyle42.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
-            gridRangeStyle42.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
-            gridRangeStyle42.StyleInfo.CurrencyEdit.CurrencySymbol = "";
-            gridRangeStyle42.StyleInfo.CurrencyEdit.NullString = "0";
-            gridRangeStyle42.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
             gridRangeStyle42.StyleInfo.Font.Bold = false;
             gridRangeStyle42.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle42.StyleInfo.Font.Italic = false;
@@ -8123,14 +8109,22 @@
             gridRangeStyle42.StyleInfo.Font.Strikeout = false;
             gridRangeStyle42.StyleInfo.Font.Underline = false;
             gridRangeStyle42.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle42.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
+            gridRangeStyle42.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
             gridRangeStyle42.StyleInfo.ReadOnly = false;
             gridRangeStyle42.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle43.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(4);
-            gridRangeStyle43.StyleInfo.CellType = "TextBox";
-            gridRangeStyle43.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle43.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle43.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(5);
+            gridRangeStyle43.StyleInfo.CellType = "Currency";
+            gridRangeStyle43.StyleInfo.CellValueType = typeof(decimal);
             gridRangeStyle43.StyleInfo.Clickable = true;
+            gridRangeStyle43.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
+            gridRangeStyle43.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
+            gridRangeStyle43.StyleInfo.CurrencyEdit.CurrencySymbol = "";
+            gridRangeStyle43.StyleInfo.CurrencyEdit.NullString = "0";
+            gridRangeStyle43.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             gridRangeStyle43.StyleInfo.Font.Bold = false;
             gridRangeStyle43.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle43.StyleInfo.Font.Italic = false;
@@ -8138,42 +8132,19 @@
             gridRangeStyle43.StyleInfo.Font.Strikeout = false;
             gridRangeStyle43.StyleInfo.Font.Underline = false;
             gridRangeStyle43.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle43.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle43.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
             gridRangeStyle43.StyleInfo.ReadOnly = false;
             gridRangeStyle43.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle44.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(5);
-            gridRangeStyle44.StyleInfo.CellType = "Currency";
-            gridRangeStyle44.StyleInfo.CellValueType = typeof(decimal);
-            gridRangeStyle44.StyleInfo.Clickable = true;
-            gridRangeStyle44.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
-            gridRangeStyle44.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
-            gridRangeStyle44.StyleInfo.CurrencyEdit.CurrencySymbol = "";
-            gridRangeStyle44.StyleInfo.CurrencyEdit.NullString = "0";
-            gridRangeStyle44.StyleInfo.CurrencyEdit.NullValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            gridRangeStyle44.StyleInfo.Font.Bold = false;
-            gridRangeStyle44.StyleInfo.Font.Facename = "굴림";
-            gridRangeStyle44.StyleInfo.Font.Italic = false;
-            gridRangeStyle44.StyleInfo.Font.Size = 9F;
-            gridRangeStyle44.StyleInfo.Font.Strikeout = false;
-            gridRangeStyle44.StyleInfo.Font.Underline = false;
-            gridRangeStyle44.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle44.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
-            gridRangeStyle44.StyleInfo.ReadOnly = false;
-            gridRangeStyle44.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle45.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 1);
-            gridRangeStyle45.StyleInfo.Text = "Duty Name";
-            gridRangeStyle46.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 2);
-            gridRangeStyle46.StyleInfo.Text = "Duty Count";
-            gridRangeStyle47.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 3);
-            gridRangeStyle47.StyleInfo.Text = "CORP_ID";
-            gridRangeStyle48.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 4);
-            gridRangeStyle48.StyleInfo.Text = "DUTY_YYYYMM";
-            gridRangeStyle49.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 5);
-            gridRangeStyle49.StyleInfo.Text = "PERSON_ID";
+            gridRangeStyle44.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 1);
+            gridRangeStyle44.StyleInfo.Text = "Type Name";
+            gridRangeStyle45.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 2);
+            gridRangeStyle45.StyleInfo.Text = "Time";
+            gridRangeStyle46.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 3);
+            gridRangeStyle46.StyleInfo.Text = "CORP_ID";
+            gridRangeStyle47.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 4);
+            gridRangeStyle47.StyleInfo.Text = "DUTY_YYYYMM";
+            gridRangeStyle48.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 5);
+            gridRangeStyle48.StyleInfo.Text = "PERSON_ID";
             this.IGR_MONTH_DUTY.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
             gridRangeStyle39,
             gridRangeStyle40,
@@ -8184,8 +8155,7 @@
             gridRangeStyle45,
             gridRangeStyle46,
             gridRangeStyle47,
-            gridRangeStyle48,
-            gridRangeStyle49});
+            gridRangeStyle48});
             this.IGR_MONTH_DUTY.BaseGrid.RefreshCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridRefreshCurrentCellBehavior.RefreshRow;
             this.IGR_MONTH_DUTY.BaseGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.IGR_MONTH_DUTY.BaseGrid.RowCount = 0;
@@ -8205,15 +8175,15 @@
             isGridAdvExColElement30.DataType = "System.String";
             isGridAdvExColElement30.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement30.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement30.Default = "Duty Name";
-            isGridAdvExTLHeaderElement30.TL1_KR = "근태명";
+            isGridAdvExTLHeaderElement30.Default = "Type Name";
+            isGridAdvExTLHeaderElement30.TL1_KR = "타입명";
             isGridAdvExTLHeaderElement30.TL2_CN = null;
             isGridAdvExTLHeaderElement30.TL3_VN = null;
             isGridAdvExTLHeaderElement30.TL4_JP = null;
             isGridAdvExTLHeaderElement30.TL5_XAA = null;
             isGridAdvExColElement30.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement30});
-            isGridAdvExColElement30.HeaderPrompt = "Duty Name";
+            isGridAdvExColElement30.HeaderPrompt = "Type Name";
             isGridAdvExColElement30.Insertable = 0;
             isGridAdvExColElement30.MergeCell = 0;
             isGridAdvExColElement30.Nullable = 0;
@@ -8229,16 +8199,16 @@
             isGridAdvExColElement31.DataOrdinal = 1;
             isGridAdvExColElement31.DataType = "System.Decimal";
             isGridAdvExColElement31.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement31.DecimalDigits = 2;
-            isGridAdvExTLHeaderElement31.Default = "Duty Count";
-            isGridAdvExTLHeaderElement31.TL1_KR = "적용횟수";
+            isGridAdvExColElement31.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement31.Default = "Time";
+            isGridAdvExTLHeaderElement31.TL1_KR = "근무시간";
             isGridAdvExTLHeaderElement31.TL2_CN = null;
             isGridAdvExTLHeaderElement31.TL3_VN = null;
             isGridAdvExTLHeaderElement31.TL4_JP = null;
             isGridAdvExTLHeaderElement31.TL5_XAA = null;
             isGridAdvExColElement31.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement31});
-            isGridAdvExColElement31.HeaderPrompt = "Duty Count";
+            isGridAdvExColElement31.HeaderPrompt = "Time";
             isGridAdvExColElement31.Insertable = 0;
             isGridAdvExColElement31.MergeCell = 0;
             isGridAdvExColElement31.Nullable = 0;
@@ -8551,38 +8521,38 @@
             this.idaMONTH_DUTY.WizardProcedure = "";
             this.idaMONTH_DUTY.WizardTableName = "";
             // 
-            // JOB_CATEGORY_NAME
+            // isEditAdv5
             // 
-            this.JOB_CATEGORY_NAME.AppInterfaceAdv = this.isAppInterfaceAdv1;
-            this.JOB_CATEGORY_NAME.ComboBoxValue = "";
-            this.JOB_CATEGORY_NAME.ComboData = null;
-            this.JOB_CATEGORY_NAME.CurrencyValue = new decimal(new int[] {
+            this.isEditAdv5.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.isEditAdv5.ComboBoxValue = "";
+            this.isEditAdv5.ComboData = null;
+            this.isEditAdv5.CurrencyValue = new decimal(new int[] {
             0,
             0,
             0,
             0});
-            this.JOB_CATEGORY_NAME.DataAdapter = this.IDA_MONTH_PAYMENT;
-            this.JOB_CATEGORY_NAME.DataColumn = "JOB_CATEGORY_NAME";
-            this.JOB_CATEGORY_NAME.DateTimeValue = new System.DateTime(2010, 3, 17, 0, 0, 0, 0);
-            this.JOB_CATEGORY_NAME.DoubleValue = 0D;
-            this.JOB_CATEGORY_NAME.EditValue = "";
-            this.JOB_CATEGORY_NAME.Insertable = false;
-            this.JOB_CATEGORY_NAME.Location = new System.Drawing.Point(44, 92);
-            this.JOB_CATEGORY_NAME.LookupAdapter = null;
-            this.JOB_CATEGORY_NAME.Name = "JOB_CATEGORY_NAME";
-            this.JOB_CATEGORY_NAME.NumberValue = new decimal(new int[] {
+            this.isEditAdv5.DataAdapter = this.IDA_MONTH_PAYMENT;
+            this.isEditAdv5.DataColumn = "JOB_CATEGORY_NAME";
+            this.isEditAdv5.DateTimeValue = new System.DateTime(2010, 3, 17, 0, 0, 0, 0);
+            this.isEditAdv5.DoubleValue = 0D;
+            this.isEditAdv5.EditValue = "";
+            this.isEditAdv5.Insertable = false;
+            this.isEditAdv5.Location = new System.Drawing.Point(44, 92);
+            this.isEditAdv5.LookupAdapter = null;
+            this.isEditAdv5.Name = "isEditAdv5";
+            this.isEditAdv5.NumberValue = new decimal(new int[] {
             0,
             0,
             0,
             0});
-            this.JOB_CATEGORY_NAME.PercentValue = new decimal(new int[] {
+            this.isEditAdv5.PercentValue = new decimal(new int[] {
             0,
             0,
             0,
             0});
-            this.JOB_CATEGORY_NAME.PromptAlignHoriz = InfoSummit.Win.ControlAdv.ISUtil.Enum.AlignHoriz.Center;
-            this.JOB_CATEGORY_NAME.PromptStyle = InfoSummit.Win.ControlAdv.ISUtil.Enum.PromptStyle.FullLine;
-            this.JOB_CATEGORY_NAME.PromptText = "Job";
+            this.isEditAdv5.PromptAlignHoriz = InfoSummit.Win.ControlAdv.ISUtil.Enum.AlignHoriz.Center;
+            this.isEditAdv5.PromptStyle = InfoSummit.Win.ControlAdv.ISUtil.Enum.PromptStyle.FullLine;
+            this.isEditAdv5.PromptText = "Job";
             isLanguageElement24.Default = "Job";
             isLanguageElement24.SiteName = null;
             isLanguageElement24.TL1_KR = "직    군";
@@ -8590,14 +8560,14 @@
             isLanguageElement24.TL3_VN = "";
             isLanguageElement24.TL4_JP = "";
             isLanguageElement24.TL5_XAA = "";
-            this.JOB_CATEGORY_NAME.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            this.isEditAdv5.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
             isLanguageElement24});
-            this.JOB_CATEGORY_NAME.PromptWidth = 90;
-            this.JOB_CATEGORY_NAME.ReadOnly = true;
-            this.JOB_CATEGORY_NAME.Size = new System.Drawing.Size(226, 21);
-            this.JOB_CATEGORY_NAME.TabIndex = 194;
-            this.JOB_CATEGORY_NAME.TextValue = "";
-            this.JOB_CATEGORY_NAME.Updatable = false;
+            this.isEditAdv5.PromptWidth = 90;
+            this.isEditAdv5.ReadOnly = true;
+            this.isEditAdv5.Size = new System.Drawing.Size(226, 21);
+            this.isEditAdv5.TabIndex = 194;
+            this.isEditAdv5.TextValue = "";
+            this.isEditAdv5.Updatable = false;
             // 
             // iedNAME_0
             // 
@@ -8972,7 +8942,7 @@
         private InfoSummit.Win.ControlAdv.ISEditAdv NAME;
         private InfoSummit.Win.ControlAdv.ISEditAdv PERSON_NUM;
         private InfoSummit.Win.ControlAdv.ISEditAdv DEPT_DESC;
-        private InfoSummit.Win.ControlAdv.ISEditAdv JOB_CATEGORY_NAME;
+        private InfoSummit.Win.ControlAdv.ISEditAdv isEditAdv5;
         private InfoSummit.Win.ControlAdv.ISEditAdv POST_DESC;
         private InfoSummit.Win.ControlAdv.ISEditAdv isEditAdv7;
         private InfoSummit.Win.ControlAdv.ISEditAdv isEditAdv6;

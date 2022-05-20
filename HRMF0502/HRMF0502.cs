@@ -95,10 +95,16 @@ namespace HRMF0502
             PERSON_ID.EditValue = igrPERSON.GetCellValue("PERSON_ID");
             PAY_GRADE_NAME.EditValue = igrPERSON.GetCellValue("PAY_GRADE_NAME");
             PAY_GRADE_ID.EditValue = igrPERSON.GetCellValue("PAY_GRADE_ID");
+
+            IDC_BASE_CURRENCY.ExecuteNonQuery();
+            CURRENCY_CODE.EditValue = IDC_BASE_CURRENCY.GetCommandParamValue("O_CURRENCY_CODE");
+            CURRENCY_DESC.EditValue = IDC_BASE_CURRENCY.GetCommandParamValue("O_CURRENCY_CODE");
+
             PAY_PROVIDE_YN.CheckBoxValue = "Y";
             BONUS_PROVIDE_YN.CheckBoxValue = "Y";
             YEAR_PROVIDE_YN.CheckBoxValue = "Y";
             HIRE_INSUR_YN.CheckBoxValue = "Y";
+            EMP_ASSOCIATION_YN.CheckBoxValue = "Y";
 
             HEADER_DATA_STATE.EditValue = "U";
             INCOME_TAX_RATE.EditValue = 100;
@@ -107,11 +113,13 @@ namespace HRMF0502
 
         private void Initial_Insert_Allowance()
         {
+            igrPAY_ALLOWANCE.SetCellValue("ALLOWANCE_AMOUNT", 0);
             igrPAY_ALLOWANCE.SetCellValue("ENABLED_FLAG", "Y");
         }
 
         private void Initial_Insert_Deduction()
         {
+            igrPAY_DEDUCTION.SetCellValue("ALLOWANCE_AMOUNT", 0);
             igrPAY_DEDUCTION.SetCellValue("ENABLED_FLAG", "Y");
         }
 

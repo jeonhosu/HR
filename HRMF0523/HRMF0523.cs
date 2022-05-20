@@ -262,11 +262,11 @@ namespace HRMF0523
         {
             // Lookup SETTING
             ildCORP.SetLookupParamValue("W_PAY_CONTROL_YN", "Y");
-            ildCORP.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
+            ildCORP.SetLookupParamValue("W_ENABLED_FLAG_YN", "N");
 
             // LOOKUP DEFAULT VALUE SETTING - CORP
             idcDEFAULT_CORP.SetCommandParamValue("W_PAY_CONTROL_YN", "Y");
-            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "Y");
+            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "N");
             idcDEFAULT_CORP.ExecuteNonQuery();
 
             iedCORP_NAME_0.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
@@ -277,18 +277,10 @@ namespace HRMF0523
             iedWAGE_TYPE_NAME.EditValue = idcDEFAULT_WORK_TYPE.GetCommandParamValue("O_CODE_NAME");
             iedWAGE_TYPE.EditValue = idcDEFAULT_WORK_TYPE.GetCommandParamValue("O_CODE");
 
-            if (DateTime.Today.Day < 15)
-            {
-                iedPAY_YYYYMM.EditValue = iDate.ISYearMonth(DateTime.Today, -1, 0);
-                iedSTART_DATE.EditValue = iDate.ISMonth_1st(DateTime.Today, -1, 0).ToString("yyyy-MM-dd");
-                iedEND_DATE.EditValue = iDate.ISMonth_Last(DateTime.Today, -1, 0).ToString("yyyy-MM-dd");
-            }
-            else
-            {
-                iedPAY_YYYYMM.EditValue = iDate.ISYearMonth(DateTime.Today, 0);
-                iedSTART_DATE.EditValue = iDate.ISMonth_1st(DateTime.Today, 0).ToString("yyyy-MM-dd");
-                iedEND_DATE.EditValue = iDate.ISMonth_Last(DateTime.Today, 0).ToString("yyyy-MM-dd");
-            } 
+            iedPAY_YYYYMM.EditValue = iDate.ISYearMonth(DateTime.Today, -1, 0);
+            iedSTART_DATE.EditValue = iDate.ISMonth_1st(DateTime.Today,-1, 0).ToString("yyyy-MM-dd");
+            iedEND_DATE.EditValue = iDate.ISMonth_Last(DateTime.Today,-1, 0).ToString("yyyy-MM-dd");
+
             iedPERSON_ID_0.EditValue = isAppInterfaceAdv1.AppInterface.PersonId;
             string t = iedPERSON_ID_0.EditValue.ToString();
 
@@ -306,23 +298,8 @@ namespace HRMF0523
 
         private void ilaYYYYMM_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
-            if (DateTime.Today.Day < 15)
-            {
-                ildYYYYMM.SetLookupParamValue("W_START_YYYYMM", iDate.ISDate_Month_Add(DateTime.Today, -3).ToString("yyyy-MM-dd"));
-            }
-            else
-            {
-                ildYYYYMM.SetLookupParamValue("W_START_YYYYMM", iDate.ISDate_Month_Add(DateTime.Today, -4).ToString("yyyy-MM-dd"));
-            }
-            
-            if (DateTime.Today.Day < 15)
-            {
-                ildYYYYMM.SetLookupParamValue("W_END_YYYYMM", iDate.ISDate_Month_Add(DateTime.Today, -1).ToString("yyyy-MM-dd"));
-            }
-            else
-            {
-                ildYYYYMM.SetLookupParamValue("W_END_YYYYMM", iDate.ISGetDate(DateTime.Today).ToString("yyyy-MM-dd"));
-            }
+            ildYYYYMM.SetLookupParamValue("W_START_YYYYMM", iDate.ISDate_Month_Add(DateTime.Today, -3).ToString("yyyy-MM-dd"));
+            ildYYYYMM.SetLookupParamValue("W_END_YYYYMM", iDate.ISDate_Month_Add(DateTime.Today, -1).ToString("yyyy-MM-dd"));
         }
 
         private void ilaWAGE_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)

@@ -26,14 +26,26 @@ namespace HRMF0240
 
         private InfoSummit.Win.ControlAdv.ISProgressBar mProgressBar1;
         private InfoSummit.Win.ControlAdv.ISProgressBar mProgressBar2;
-
-        
-
+         
         private XL.XLPrint mPrinting = null;
 
         private string mMessageError = string.Empty;
 
         private string mXLOpenFileName = string.Empty;
+
+        private string m_SheetSource1 = "Destination";
+        private string m_SheetSource2 = "Destination2";
+        private string m_SheetPrint = "Sheet1";
+
+        private int m_Copy_StartCol = 1;
+        private int m_Copy_StartRow = 1;
+        private int m_Copy_EndCol = 40;
+        private int m_Copy_EndRow = 53;
+
+        private int m_History_Row = 37;
+        private int m_Current_Row = 0;
+
+        private int m_PageNumber = 0;
 
         private int[] mIndexGridColumns = new int[0] { };
 
@@ -178,8 +190,15 @@ namespace HRMF0240
 
         public void Dispose()
         {
-            mPrinting.XLOpenFileClose();
-            mPrinting.XLClose();
+            try
+            {
+                mPrinting.XLOpenFileClose();
+                mPrinting.XLClose();
+            }
+            catch
+            {
+
+            }
         }
 
         #endregion;
@@ -552,6 +571,159 @@ namespace HRMF0240
 
         #endregion;
 
+
+        private void XLContentWrite(string pActiveSheet, InfoSummit.Win.ControlAdv.ISDataAdapter pCert)
+        { 
+            try
+            {
+                mPrinting.XLActiveSheet(pActiveSheet);
+
+                //발급번호
+                mPrinting.XLSetCell(11, 3, pCert.CurrentRow["PRINT_NUM"]);
+
+                //증명서
+                //Code(01) : 재직증명서, Code(02) : 경력증명서, Code(03) : 퇴직증명서 
+                mPrinting.XLSetCell(2, 2, pCert.CurrentRow["CERTIFICATE_TITLE"]);
+
+                //한글
+                mPrinting.XLSetCell(14, 9, pCert.CurrentRow["NAME"]);
+
+                ////한자
+                //mPrinting.XLSetCell(15, 13, pGrid.GetCellValue(pIndexRow, vIndexDataColumn4));
+
+                //주민번호
+                mPrinting.XLSetCell(14, 27, pCert.CurrentRow["REPRE_NUM"]);
+
+                //주소
+                mPrinting.XLSetCell(17, 9, pCert.CurrentRow["NPERSON_ADDRESSAME"]);
+
+                //직위
+                mPrinting.XLSetCell(20, 9, pCert.CurrentRow["POST_NAME"]);
+
+                //부서
+                mPrinting.XLSetCell(20, 27, pCert.CurrentRow["DEPT_NAME"]);
+
+                //재직기간(최종일자) 
+                mPrinting.XLSetCell(23, 9, pCert.CurrentRow["RETIRE_DATE"]);
+
+                //담당업무
+                mPrinting.XLSetCell(26, 9, pCert.CurrentRow["TASK_DESC"]);
+
+                //용도
+                mPrinting.XLSetCell(29, 9, pCert.CurrentRow["REMARK"]);
+
+                ////제출처
+                //mPrinting.XLSetCell(39, 9, pCert.CurrentRow["SEND_ORG"]);
+
+                //증명서 설명
+                mPrinting.XLSetCell(33, 3, pCert.CurrentRow["CERTIFICATE_REMARK"]);
+
+                //인쇄일자
+                mPrinting.XLSetCell(41, 6, pCert.CurrentRow["PRINT_DATE"]);
+
+                //회사명
+                mPrinting.XLSetCell(43, 6, pCert.CurrentRow["CORP_NAME"]);
+
+                //회사주소
+                mPrinting.XLSetCell(46, 2, pCert.CurrentRow["CORP_ADDRESS"]);
+
+                //대표자명
+                mPrinting.XLSetCell(49, 6, pCert.CurrentRow["PRESIDENT_NAME"]);
+
+                //회사 영문(상단)
+                mPrinting.XLSetCell(1, 2, pCert.CurrentRow["CORP_NAME_ENG"]); 
+            }
+            catch (System.Exception ex)
+            {
+                mMessageError = string.Format("{0}", ex.Message);
+            }
+        }
+
+        private void XLContentWrite(string pActiveSheet, InfoSummit.Win.ControlAdv.ISDataAdapter pCert
+                                    , string pHISTORY_FLAG, InfoSummit.Win.ControlAdv.ISDataAdapter pHistory)
+        {
+            //object vObject = null;
+
+            try
+            { 
+                mPrinting.XLActiveSheet(pActiveSheet);
+                 
+                //발급번호
+                mPrinting.XLSetCell(11, 3, pCert.CurrentRow["PRINT_NUM"]);
+
+                //증명서
+                //Code(01) : 재직증명서, Code(02) : 경력증명서, Code(03) : 퇴직증명서 
+                mPrinting.XLSetCell(2, 2, pCert.CurrentRow["CERTIFICATE_TITLE"]);
+
+                //한글
+                mPrinting.XLSetCell(14, 9, pCert.CurrentRow["NAME"]);
+
+                ////한자
+                //mPrinting.XLSetCell(15, 13, pGrid.GetCellValue(pIndexRow, vIndexDataColumn4));
+
+                //주민번호
+                mPrinting.XLSetCell(14, 27, pCert.CurrentRow["REPRE_NUM"]);
+
+                //주소
+                mPrinting.XLSetCell(17, 9, pCert.CurrentRow["PERSON_ADDRESS"]);
+
+                //직위
+                mPrinting.XLSetCell(20, 9, pCert.CurrentRow["POST_NAME"]);
+
+                //부서
+                mPrinting.XLSetCell(20, 27, pCert.CurrentRow["DEPT_NAME"]);
+                 
+                //재직기간(최종일자) 
+                mPrinting.XLSetCell(23, 9, pCert.CurrentRow["RETIRE_DATE"]);
+                 
+                //담당업무
+                mPrinting.XLSetCell(26, 9, pCert.CurrentRow["TASK_DESC"]);
+
+                //용도
+                mPrinting.XLSetCell(29, 9, pCert.CurrentRow["REMARK"]);
+
+                ////제출처
+                //mPrinting.XLSetCell(39, 9, pCert.CurrentRow["SEND_ORG"]);
+
+                //증명서 설명
+                mPrinting.XLSetCell(33, 3, pCert.CurrentRow["CERTIFICATE_REMARK"]);
+                  
+                //인쇄일자
+                mPrinting.XLSetCell(41, 6, pCert.CurrentRow["PRINT_DATE"]);
+
+                //회사명
+                mPrinting.XLSetCell(43, 6, pCert.CurrentRow["CORP_NAME"]);
+
+                //회사주소
+                mPrinting.XLSetCell(46, 2, pCert.CurrentRow["CORP_ADDRESS"]);
+
+                //대표자명
+                mPrinting.XLSetCell(49, 6, pCert.CurrentRow["PRESIDENT_NAME"]);
+
+                //회사 영문(상단)
+                mPrinting.XLSetCell(1, 2, pCert.CurrentRow["CORP_NAME_ENG"]);
+
+                if(pHISTORY_FLAG.Equals("Y"))
+                {
+                    int vLine = m_History_Row;
+                    foreach(DataRow vROW in pHistory.CurrentRows)
+                    {
+                        mPrinting.XLSetCell(vLine, 3, pHistory.CurrentRow["CHARGE_DATE"]);
+                        mPrinting.XLSetCell(vLine, 8, pHistory.CurrentRow["END_DATE"]);
+                        mPrinting.XLSetCell(vLine, 13, pHistory.CurrentRow["DEPT_NAME"]);
+                        mPrinting.XLSetCell(vLine, 23, pHistory.CurrentRow["POST_NAME"]);
+                        mPrinting.XLSetCell(vLine, 29, pHistory.CurrentRow["OCPT_NAME"]);
+                        vLine++;
+                    }
+                } 
+            }
+            catch (System.Exception ex)
+            {
+                mMessageError = string.Format("{0}", ex.Message);
+            }
+        }
+
+
         private void XLContentWrite(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, int pIndexRow)
         {
             //object vObject = null;
@@ -659,31 +831,86 @@ namespace HRMF0240
             }
         }
 
+        private void XLContentWrite2(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, int pIndexRow, int pLINE)
+        {
+            //object vObject = null;
+            int vLINE = pLINE;
+            try
+            {
+                mPrinting.XLActiveSheet("Sheet1");
+
+                int vIndexDataColumn1 = pGrid.GetColumnToIndex("CHARGE_DATE");        //재직시작일
+                int vIndexDataColumn5 = pGrid.GetColumnToIndex("END_DATE");           //재직종료일
+                int vIndexDataColumn2 = pGrid.GetColumnToIndex("DEPT_NAME");          //소속 (부서)
+                int vIndexDataColumn3 = pGrid.GetColumnToIndex("POST_NAME");          //직위
+                int vIndexDataColumn4 = pGrid.GetColumnToIndex("OCPT_NAME");          //담당업무 (직무) 
+
+
+                //재직시작일
+                mPrinting.XLSetCell(pLINE, 5, pGrid.GetCellValue(pIndexRow, vIndexDataColumn1));
+                //재직종료일
+                mPrinting.XLSetCell(pLINE, 10, pGrid.GetCellValue(pIndexRow, vIndexDataColumn5));
+
+                //소속 --부서 
+                mPrinting.XLSetCell(pLINE, 15, pGrid.GetCellValue(pIndexRow, vIndexDataColumn2));
+
+                //직위
+                mPrinting.XLSetCell(pLINE, 25, pGrid.GetCellValue(pIndexRow, vIndexDataColumn3));
+
+                //직무
+                mPrinting.XLSetCell(pLINE, 31, pGrid.GetCellValue(pIndexRow, vIndexDataColumn4));
+
+
+                pLINE = pLINE + 1;
+                //재직기간(최초일자)
+                //if(pGrid.GetCellValue(pIndexRow, vIndexDataColumn9) != null)
+                //{
+                //    object test1 = ConvertDateTime(pGrid.GetCellValue(pIndexRow, vIndexDataColumn9));
+                //mPrinting.XLSetCell(23, 9, pGrid.GetCellValue(pIndexRow, vIndexDataColumn9));
+                //}
+                //else
+                //    mPrinting.XLSetCell(30, 13, "");
+
+                //재직기간(최종일자)
+                //if (pGrid.GetCellValue(pIndexRow, vIndexDataColumn10) != null)
+                //{
+                //    object test2 = ConvertDateTime(pGrid.GetCellValue(pIndexRow, vIndexDataColumn10));
+
+
+            }
+            catch (System.Exception ex)
+            {
+                mMessageError = string.Format("{0}", ex.Message);
+            }
+        }
+
+
         #endregion;
 
         #region ----- Excel Wirte Methods ----
 
-        public int XLWirte(InfoSummit.Win.ControlAdv.ISGridAdvEx pGrid, int nPrintTotalCnt, int pTerritory, string pPeriodFrom, /*string pPeriodTo,*/ string pUserName, string pCaption, string pLang)
+        public int XLWirte(InfoSummit.Win.ControlAdv.ISDataAdapter pCert, InfoSummit.Win.ControlAdv.ISDataAdapter pHistory
+                        , int nPrintTotalCnt, string pPeriodFrom
+                        , string pUserName, string pPRINT_TYPE, string pREPRE_FLAG, string pHISTORY_FLAG, string pSTAMP_FLAG)
         {
             string vMessageText = string.Empty;
-
-            //int vPageNumber = 0;
-
+            string vSheet_Source = string.Empty;
+            m_Current_Row = 1;         
             try
             {
-                //int vTotalRow = pGrid.RowCount; //Grid의 총 행수
-
+                if(pHISTORY_FLAG.Equals("Y"))
+                {
+                    vSheet_Source = m_SheetSource2; 
+                }
+                else
+                {
+                    vSheet_Source = m_SheetSource1; 
+                }
+                XLContentWrite(vSheet_Source, pCert, pHISTORY_FLAG, pHistory);
                 for (int nPrintCnt = 0; nPrintCnt < nPrintTotalCnt; nPrintCnt++)
                 {
-                    //vPageNumber++;
-                    //[Sheet2]내용을 [Sheet1]에 붙여넣기
-                    mSumPrintingLineCopy = CopyAndPaste(mSumPrintingLineCopy, pLang);
-
-                    //[Content_Printing]
-                    XLContentWrite(pGrid, 0);
-
-                  
-                }                
+                    m_Current_Row = CopyAndPaste(mPrinting, m_Current_Row, vSheet_Source, pSTAMP_FLAG); 
+                }
             }
             catch
             {
@@ -691,50 +918,63 @@ namespace HRMF0240
                 mPrinting.XLClose();
             }
 
+            //sheet 삭제//
+            mPrinting.XLDeleteSheet(m_SheetSource1);
+            mPrinting.XLDeleteSheet(m_SheetSource2); 
             return nPrintTotalCnt;
         }
-
+         
         #endregion;
+
 
         #region ----- Excel Copy&Paste Methods ----
 
-        //[Sheet2]내용을 [Sheet1]에 붙여넣기
-        private int CopyAndPaste(int pCopySumPrintingLine, string pLang)
-        {
-            int vPrintHeaderColumnSTART = mXLColumnAreaSTART; //복사되어질 쉬트의 폭, 시작열
-            int vPrintHeaderColumnEND = mXLColumnAreaEND;     //복사되어질 쉬트의 폭, 종료열
 
-            int vCopySumPrintingLine = pCopySumPrintingLine;
+        //첫번째 페이지 복사
+        private int CopyAndPaste(XL.XLPrint pPrinting, int pCurrentRow, string pSourceSheet)
+        { 
+            //[원본], [Sheet2.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
+            pPrinting.XLActiveSheet(pSourceSheet);
+            object vRangeSource = pPrinting.XLGetRange(m_Copy_StartRow, m_Copy_StartCol, m_Copy_EndRow, m_Copy_EndCol);
 
-            try
-            {
-                int vCopyPrintingRowSTART = vCopySumPrintingLine;
-                vCopySumPrintingLine = vCopySumPrintingLine + mMaxIncrementCopy;
-                int vCopyPrintingRowEnd = vCopySumPrintingLine;
+            //[대상], [Sheet1.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
+            pPrinting.XLActiveSheet(m_SheetPrint);
+            object vRangeDestination = pPrinting.XLGetRange(pCurrentRow, m_Copy_StartCol, (m_Copy_EndRow * (m_PageNumber + 1)) + 1, m_Copy_EndCol);
+            pPrinting.XLCopyRange(vRangeSource, vRangeDestination);
 
-                if (pLang == "EN")
-                {
-                    mPrinting.XLActiveSheet("Destination2"); //mPrinting.XLActiveSheet(2);
-                }
-                else
-                {
-                    mPrinting.XLActiveSheet("Destination"); //mPrinting.XLActiveSheet(2);
-                }
-                object vRangeSource = mPrinting.XLGetRange(vPrintHeaderColumnSTART, 1, mMaxIncrementCopy, vPrintHeaderColumnEND); //[원본], [Sheet2.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
+            int vCopy_EndRow = pCurrentRow + m_Copy_EndRow;
+            mPrinting.XLHPageBreaks_Add(mPrinting.XLGetRange("A" + vCopy_EndRow));
 
-                mPrinting.XLActiveSheet("Sheet1"); //mPrinting.XLActiveSheet(1);
-                object vRangeDestination = mPrinting.XLGetRange(vCopyPrintingRowSTART, 1, vCopyPrintingRowEnd, vPrintHeaderColumnEND); //[대상], [Sheet1.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
-                mPrinting.XLCopyRange(vRangeSource, vRangeDestination);
-            }
-            catch (System.Exception ex)
-            {
-                mMessageError = string.Format("{0}", ex.Message);
-            }
+            m_PageNumber++; //페이지 번호
 
-            return vCopySumPrintingLine;
-            mPrinting.XLPrintPreview();
+            return pCurrentRow + m_Copy_EndRow;
         }
 
+        //첫번째 페이지 복사
+        private int CopyAndPaste(XL.XLPrint pPrinting, int pCurrentRow, string pSourceSheet, string pSeal_Stamp)
+        {
+            if (pSeal_Stamp == "N")
+            {
+                mPrinting.XLDeleteBarCode(pIndexImage: 1);
+            }
+
+            //[원본], [Sheet2.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
+            pPrinting.XLActiveSheet(pSourceSheet);
+            object vRangeSource = pPrinting.XLGetRange(m_Copy_StartRow, m_Copy_StartCol, m_Copy_EndRow, m_Copy_EndCol);
+
+            //[대상], [Sheet1.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
+            pPrinting.XLActiveSheet(m_SheetPrint);
+            object vRangeDestination = pPrinting.XLGetRange(pCurrentRow, m_Copy_StartCol, pCurrentRow + m_Copy_EndRow, m_Copy_EndCol);
+            pPrinting.XLCopyRange(vRangeSource, vRangeDestination);
+
+            int vCopy_EndRow = pCurrentRow + m_Copy_EndRow;
+            mPrinting.XLHPageBreaks_Add(mPrinting.XLGetRange("A" + vCopy_EndRow));
+
+            m_PageNumber++; //페이지 번호
+
+            return pCurrentRow + m_Copy_EndRow;
+        }
+         
         #endregion;
 
         #region ----- Printing Methods ----
@@ -743,9 +983,7 @@ namespace HRMF0240
         {
             try
             {
-                mPrinting.XLDeleteSheet("Destination");
-                mPrinting.XLDeleteSheet("Destination2");
-                mPrinting.XLPreviewPrinting(pPageSTART, pPageEND, 1);
+                mPrinting.XLPrinting(pPageSTART, pPageEND, 1);
                 //mPrinting.XLPrinting(pPageSTART, pPageEND);
             }
             catch (System.Exception ex)
@@ -754,11 +992,11 @@ namespace HRMF0240
             }
         }
 
-        public void PreView()
+        public void PreView(int pPageSTART, int pPageEND)
         {
             try
             {
-                mPrinting.XLPrintPreview();
+                mPrinting.XLPreviewPrinting(pPageSTART, pPageEND, 1);
             }
             catch (System.Exception ex)
             {

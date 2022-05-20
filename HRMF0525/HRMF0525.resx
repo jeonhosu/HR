@@ -195,4 +195,7 @@
   <metadata name="IDC_CANCEL_SALARY_SLIP.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>393, 56</value>
   </metadata>
+  <metadata name="IDA_PROMT_VIEW_DTL_D.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>611, 141</value>
+  </metadata>
 </root>

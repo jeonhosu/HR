@@ -96,11 +96,11 @@ namespace HRMF0708
         {
             // Lookup SETTING
             ildCORP_0.SetLookupParamValue("W_PAY_CONTROL_YN", "Y");
-            ildCORP_0.SetLookupParamValue("W_ENABLED_FLAG_YN", "N");
+            ildCORP_0.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
 
             // LOOKUP DEFAULT VALUE SETTING - CORP
             idcDEFAULT_CORP.SetCommandParamValue("W_PAY_CONTROL_YN", "Y");
-            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "N");
+            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "Y");
             idcDEFAULT_CORP.ExecuteNonQuery();
             W_CORP_NAME.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
             W_CORP_ID.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_ID");
@@ -167,7 +167,7 @@ namespace HRMF0708
 
         private void ilaYYYYMM_RefreshLookupData(object pSender, ISRefreshLookupDataEventArgs e)
         {
-            ildYYYYMM.SetLookupParamValue("W_END_YYYYMM", iDate.ISDate_Month_Add(DateTime.Today, 2));
+            ildYYYYMM.SetLookupParamValue("W_END_YYYYMM", iDate.ISDate_Month_Add(DateTime.Today, 3));
         }
     }
 }

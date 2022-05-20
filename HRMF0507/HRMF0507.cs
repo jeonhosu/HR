@@ -51,14 +51,16 @@ namespace HRMF0507
             {
                 // Lookup SETTING
                 ildCORP.SetLookupParamValue("W_PAY_CONTROL_YN", "Y");
-                ildCORP.SetLookupParamValue("W_ENABLED_FLAG_YN", "N");
+                ildCORP.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
 
                 // LOOKUP DEFAULT VALUE SETTING - CORP
                 idcDEFAULT_CORP.SetCommandParamValue("W_PAY_CONTROL_YN", "Y");
-                idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "N");
+                idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "Y");
                 idcDEFAULT_CORP.ExecuteNonQuery();
                 CORP_NAME_0.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
                 CORP_ID_0.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_ID");
+
+                CORP_NAME_0.BringToFront();
             }
             catch (System.Exception ex)
             {
@@ -87,114 +89,560 @@ namespace HRMF0507
                 WAGE_TYPE_NAME_0.Focus();
                 return;
             }
+             
+            if (TB_MAIN.SelectedTab.TabIndex == TP_SALARY_DETAIL.TabIndex)
+            {
+                string vPERSON_NUM = string.Empty;
+                if (IGR_PAYMENT_VIEW_DTL.RowIndex < 0)
+                {
+                    vPERSON_NUM = string.Empty;
+                }
+                else
+                {
+                    vPERSON_NUM = iString.ISNull(IGR_PAYMENT_VIEW_DTL.GetCellValue("PERSON_NUM"));
+                }
 
-            Application.UseWaitCursor = true;
-            Application.DoEvents();
-            idaMONTH_PAYMENT_SPREAD.Fill();
-            igrMONTH_PAYMENT.Focus();
-            Application.DoEvents();
-            Application.UseWaitCursor = false;
+                IDA_PAYMENT_VIEW_DTL.SetSelectParamValue("P_SOB_ID", -1);
+                IDA_PAYMENT_VIEW_DTL.Fill();
+                INIT_COLUMN_0();
 
-            object vObject1 = idaMONTH_PAYMENT_SPREAD.GetSelectParamValue("W_CORP_ID");
-            object vObject2 = idaMONTH_PAYMENT_SPREAD.GetSelectParamValue("W_WAGE_TYPE");
-            object vObject3 = idaMONTH_PAYMENT_SPREAD.GetSelectParamValue("W_PAY_YYYYMM");
+                IDA_PAYMENT_VIEW_DTL.SetSelectParamValue("P_SOB_ID", isAppInterfaceAdv1.AppInterface.SOB_ID);
+                IDA_PAYMENT_VIEW_DTL.Fill(); 
+                if (vPERSON_NUM == string.Empty)
+                {
+                    IGR_PAYMENT_VIEW_DTL.Focus();
+                }
+                else
+                {
+                    int vIDX_PERSON_NUM = IGR_PAYMENT_VIEW_DTL.GetColumnToIndex("PERSON_NUM");
+                    for (int r = 0; r < IGR_PAYMENT_VIEW_DTL.RowCount; r++)
+                    {
+                        if (vPERSON_NUM == iString.ISNull(IGR_PAYMENT_VIEW_DTL.GetCellValue(r, vIDX_PERSON_NUM)))
+                        {
+                            IGR_PAYMENT_VIEW_DTL.CurrentCellMoveTo(r, vIDX_PERSON_NUM);
+                            IGR_PAYMENT_VIEW_DTL.CurrentCellActivate(r, vIDX_PERSON_NUM);
+                            IGR_PAYMENT_VIEW_DTL.Focus();
+                            return;
+                        }
+                    }
+                }
+            }             
+            else if (TB_MAIN.SelectedTab.TabIndex == TP_SALARY_SUM.TabIndex)
+            {
+                string vPERSON_NUM = string.Empty;
+                if (IGR_PAYMENT_VIEW_SUM.RowIndex < 0)
+                {
+                    vPERSON_NUM = string.Empty;
+                }
+                else
+                {
+                    vPERSON_NUM = iString.ISNull(IGR_PAYMENT_VIEW_SUM.GetCellValue("PERSON_NUM"));
+                }
+
+                IDA_PAYMENT_VIEW_SUM.SetSelectParamValue("P_SOB_ID", -1);
+                IDA_PAYMENT_VIEW_SUM.Fill();
+                INIT_COLUMN_1();
+
+                IDA_PAYMENT_VIEW_SUM.SetSelectParamValue("P_SOB_ID", isAppInterfaceAdv1.AppInterface.SOB_ID);
+                IDA_PAYMENT_VIEW_SUM.Fill();  
+                if (vPERSON_NUM == string.Empty)
+                {
+                    IGR_PAYMENT_VIEW_SUM.Focus();
+                }
+                else
+                {
+                    int vIDX_PERSON_NUM = IGR_PAYMENT_VIEW_SUM.GetColumnToIndex("PERSON_NUM");
+                    for (int r = 0; r < IGR_PAYMENT_VIEW_SUM.RowCount; r++)
+                    {
+                        if (vPERSON_NUM == iString.ISNull(IGR_PAYMENT_VIEW_SUM.GetCellValue(r, vIDX_PERSON_NUM)))
+                        {
+                            IGR_PAYMENT_VIEW_SUM.CurrentCellMoveTo(r, vIDX_PERSON_NUM);
+                            IGR_PAYMENT_VIEW_SUM.CurrentCellActivate(r, vIDX_PERSON_NUM);
+                            IGR_PAYMENT_VIEW_SUM.Focus();
+                            return;
+                        }
+                    }
+                }
+            } 
+            else if (TB_MAIN.SelectedTab.TabIndex == TP_SALARY_SUM_DEPT.TabIndex)
+            {
+                IDA_PAYMENT_VIEW_DEPT.SetSelectParamValue("P_SOB_ID", -1);
+                IDA_PAYMENT_VIEW_DEPT.Fill();
+                INIT_COLUMN_2();
+
+                IDA_PAYMENT_VIEW_DEPT.SetSelectParamValue("P_SOB_ID", isAppInterfaceAdv1.AppInterface.SOB_ID);
+                IDA_PAYMENT_VIEW_DEPT.Fill(); 
+            }
+        }
+
+        private void INIT_COLUMN_0()
+        {
+            int mGRID_START_COL = 19;   // 그리드 시작 COLUMN.
+            int mIDX_HEADER_ROW = 0;
+            int mMax_Column = 53 + 42 + 54;       // 종료 COLUMN.(항목수) 
+
+            //보이는 컬럼 초기화.
+            for (int mIDX_Column = 0; mIDX_Column < mMax_Column; mIDX_Column++)
+            { 
+                IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 0; 
+            }
+
+            //지급//
+            IDA_PROMT_VIEW_DTL_A.SetSelectParamValue("W_STD_YYYYMM", PAY_YYYYMM_0.EditValue);
+            IDA_PROMT_VIEW_DTL_A.Fill(); 
+            if (IDA_PROMT_VIEW_DTL_A.OraSelectData.Rows.Count == 0)
+            {
+                return;
+            }
+
+            mGRID_START_COL = 19;   // 그리드 시작 COLUMN.
+            mIDX_HEADER_ROW = (IDA_PROMT_VIEW_DTL_A.OraSelectData.Rows.Count - 1); 
+            mMax_Column = 53;       // 종료 COLUMN.(항목수) 
+           
+            string mCOLUMN_DESC;        // 헤더 프롬프트.
+
+            foreach(DataRow vRow in IDA_PROMT_VIEW_DTL_A.CurrentRows)
+            {
+                for (int mIDX_Column = 0; mIDX_Column < mMax_Column; mIDX_Column++)
+                {
+                    mCOLUMN_DESC = iString.ISNull(vRow[mIDX_Column]);
+                    if(IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible.ToString() == "1")
+                    {
+                        //
+                    }
+                    else if (mCOLUMN_DESC == string.Empty)
+                    {
+                        IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 0;
+                    }
+                    else
+                    {
+                        IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 1;                        
+                    }
+                    IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].Default = mCOLUMN_DESC;
+                    IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].TL1_KR = mCOLUMN_DESC;
+                }
+                mIDX_HEADER_ROW--;
+            }
+
+            //공제 
+            IDA_PROMT_VIEW_DTL_D.SetSelectParamValue("W_STD_YYYYMM", PAY_YYYYMM_0.EditValue);
+            IDA_PROMT_VIEW_DTL_D.Fill();
+            if (IDA_PROMT_VIEW_DTL_D.OraSelectData.Rows.Count == 0)
+            {
+                return;
+            }
+            mGRID_START_COL = 72;   // 그리드 시작 COLUMN.
+            mIDX_HEADER_ROW = (IDA_PROMT_VIEW_DTL_D.OraSelectData.Rows.Count - 1); 
+            mMax_Column = 42;       // 종료 COLUMN.(항목수)  
+            mCOLUMN_DESC = "";        // 헤더 프롬프트.
+
+            foreach (DataRow vRow in IDA_PROMT_VIEW_DTL_D.CurrentRows)
+            {
+                for (int mIDX_Column = 0; mIDX_Column < mMax_Column; mIDX_Column++)
+                {
+                    mCOLUMN_DESC = iString.ISNull(vRow[mIDX_Column]);
+                    if (IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible.ToString() == "1")
+                    {
+                        //
+                    }
+                    else if (mCOLUMN_DESC == string.Empty)
+                    {
+                        IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 0;
+                    }
+                    else
+                    {
+                        IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 1;
+                    }
+                    IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].Default = mCOLUMN_DESC;
+                    IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].TL1_KR = mCOLUMN_DESC;
+                }
+                mIDX_HEADER_ROW--;
+            }
+
+            //추가// 
+            IDA_PROMT_VIEW_DTL_W.SetSelectParamValue("W_STD_YYYYMM", PAY_YYYYMM_0.EditValue);
+            IDA_PROMT_VIEW_DTL_W.Fill();
+            if (IDA_PROMT_VIEW_DTL_W.OraSelectData.Rows.Count == 0)
+            {
+                return;
+            }
+            mGRID_START_COL = 113;   // 그리드 시작 COLUMN.
+            mIDX_HEADER_ROW = (IDA_PROMT_VIEW_DTL_W.OraSelectData.Rows.Count - 1);
+            mMax_Column = 54;       // 종료 COLUMN.(항목수)  
+            mCOLUMN_DESC = "";        // 헤더 프롬프트.
+
+            foreach (DataRow vRow in IDA_PROMT_VIEW_DTL_W.CurrentRows)
+            {
+                for (int mIDX_Column = 0; mIDX_Column < mMax_Column; mIDX_Column++)
+                {
+                    mCOLUMN_DESC = iString.ISNull(vRow[mIDX_Column]);
+                    if (IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible.ToString() == "1")
+                    {
+                        //
+                    }
+                    else if (mCOLUMN_DESC == string.Empty)
+                    {
+                        IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 0;
+                    }
+                    else
+                    {
+                        IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 1;
+                    }
+                    IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].Default = mCOLUMN_DESC;
+                    IGR_PAYMENT_VIEW_DTL.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].TL1_KR = mCOLUMN_DESC;
+                }
+                mIDX_HEADER_ROW--;
+            }
+
+            //그리드 헤더 merge//
+            int rowcnt = IGR_PAYMENT_VIEW_DTL.ColHeaderCount;
+            int colcnt = IGR_PAYMENT_VIEW_DTL.ColCount;
+
+            string value;
+            IGR_PAYMENT_VIEW_DTL.ColHeaderMergeElement.Clear();
+            for (int j = 0; j < rowcnt; j++)
+            {
+                for (int i = 0; i < colcnt; i++)
+                {
+                    value = IGR_PAYMENT_VIEW_DTL.BaseGrid[j, i].CellValue?.ToString();
+                    int bottom = j;
+                    int right = i;
+
+                    if (string.IsNullOrEmpty(value) == false)
+                    {
+                        for (int x = i + 1; x < colcnt; x++)
+                        {
+                            value = IGR_PAYMENT_VIEW_DTL.BaseGrid[j, x].CellValue?.ToString();
+
+                            // already?
+                            foreach (ISGridAdvExRangeElement ele in IGR_PAYMENT_VIEW_DTL.ColHeaderMergeElement)
+                            {
+                                if (ele.Top <= j && j <= ele.Bottom &&
+                                    ele.Left <= x && x <= ele.Right)
+                                {
+                                    value = "-1";
+                                    break;
+                                }
+                            }
+
+                            if (string.IsNullOrEmpty(value))
+                                right = x;
+                            else
+                                break;
+                        }
+
+                        for (int y = j + 1; y < rowcnt; y++)
+                        {
+                            value = IGR_PAYMENT_VIEW_DTL.BaseGrid[y, i].CellValue?.ToString();
+
+                            // already?
+                            foreach (ISGridAdvExRangeElement ele in IGR_PAYMENT_VIEW_DTL.ColHeaderMergeElement)
+                            {
+                                if (ele.Top <= y && y <= ele.Bottom &&
+                                    ele.Left <= i && i <= ele.Right)
+                                {
+                                    value = "-1";
+                                    break;
+                                }
+                            }
+
+                            if (string.IsNullOrEmpty(value))
+                                bottom = y;
+                            else
+                                break;
+                        }
+
+                        IGR_PAYMENT_VIEW_DTL.ColHeaderMergeElement.Add(new ISGridAdvExRangeElement() { Top = j, Left = i, Bottom = bottom, Right = right });
+                    }
+                }
+            }
+             
+            IGR_PAYMENT_VIEW_DTL.ResetDraw = true;
+            IGR_PAYMENT_VIEW_DTL.Refresh();
+        }
+
+        private void INIT_COLUMN_1()
+        {
+            int mGRID_START_COL = 26;   // 그리드 시작 COLUMN.
+            int mIDX_HEADER_ROW = 0;
+            int mMax_Column = 41 + 54;       // 종료 COLUMN.(항목수) 
+            string mCOLUMN_DESC;            // 헤더 프롬프트.
+
+            //보이는 컬럼 초기화.
+            for (int mIDX_Column = 0; mIDX_Column < mMax_Column; mIDX_Column++)
+            {
+                IGR_PAYMENT_VIEW_SUM.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 0;
+            }
+             
+            //공제 
+            IDA_PROMT_VIEW_DTL_D1.SetSelectParamValue("W_STD_YYYYMM", PAY_YYYYMM_0.EditValue);
+            IDA_PROMT_VIEW_DTL_D1.Fill();
+            if (IDA_PROMT_VIEW_DTL_D1.OraSelectData.Rows.Count == 0)
+            {
+                return;
+            }
+            mGRID_START_COL = 26;   // 그리드 시작 COLUMN.
+            mIDX_HEADER_ROW = (IDA_PROMT_VIEW_DTL_D1.OraSelectData.Rows.Count - 2);
+            mMax_Column = 41;       // 종료 COLUMN.(항목수)  
+            mCOLUMN_DESC = "";        // 헤더 프롬프트.
+
+            foreach (DataRow vRow in IDA_PROMT_VIEW_DTL_D1.CurrentRows)
+            {
+                for (int mIDX_Column = 0; mIDX_Column < mMax_Column; mIDX_Column++)
+                {
+                    mCOLUMN_DESC = iString.ISNull(vRow[mIDX_Column]);
+                    if (IGR_PAYMENT_VIEW_SUM.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible.ToString() == "1")
+                    {
+                        //
+                    }
+                    else if (mCOLUMN_DESC == string.Empty)
+                    {
+                        IGR_PAYMENT_VIEW_SUM.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 0;
+                    }
+                    else
+                    {
+                        IGR_PAYMENT_VIEW_SUM.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 1;
+                    }
+                    if (mIDX_HEADER_ROW >= 0)
+                    {
+                        IGR_PAYMENT_VIEW_SUM.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].Default = mCOLUMN_DESC;
+                        IGR_PAYMENT_VIEW_SUM.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].TL1_KR = mCOLUMN_DESC;
+                    }
+                }
+                mIDX_HEADER_ROW--;
+            }
+
+            //추가// 
+            IDA_PROMT_VIEW_DTL_W1.SetSelectParamValue("W_STD_YYYYMM", PAY_YYYYMM_0.EditValue);
+            IDA_PROMT_VIEW_DTL_W1.Fill();
+            if (IDA_PROMT_VIEW_DTL_W1.OraSelectData.Rows.Count == 0)
+            {
+                return;
+            }
+            mGRID_START_COL = 67;   // 그리드 시작 COLUMN.
+            mIDX_HEADER_ROW = (IDA_PROMT_VIEW_DTL_W1.OraSelectData.Rows.Count - 2);
+            mMax_Column = 54;       // 종료 COLUMN.(항목수)  
+            mCOLUMN_DESC = "";        // 헤더 프롬프트.
+
+            foreach (DataRow vRow in IDA_PROMT_VIEW_DTL_W1.CurrentRows)
+            {
+                for (int mIDX_Column = 0; mIDX_Column < mMax_Column; mIDX_Column++)
+                {
+                    mCOLUMN_DESC = iString.ISNull(vRow[mIDX_Column]);
+                    if (IGR_PAYMENT_VIEW_SUM.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible.ToString() == "1")
+                    {
+                        //
+                    }
+                    else if (mCOLUMN_DESC == string.Empty)
+                    {
+                        IGR_PAYMENT_VIEW_SUM.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 0;
+                    }
+                    else
+                    {
+                        IGR_PAYMENT_VIEW_SUM.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 1;
+                    }
+                    if (mIDX_HEADER_ROW >= 0)
+                    {
+                        IGR_PAYMENT_VIEW_SUM.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].Default = mCOLUMN_DESC;
+                        IGR_PAYMENT_VIEW_SUM.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].TL1_KR = mCOLUMN_DESC;
+                    }
+                }
+                mIDX_HEADER_ROW--;
+            }
+
+            IGR_PAYMENT_VIEW_SUM.ResetDraw = true;
+            IGR_PAYMENT_VIEW_SUM.Refresh();
+        }
+
+        private void INIT_COLUMN_2()
+        {
+            int mGRID_START_COL = 10;   // 그리드 시작 COLUMN.
+            int mIDX_HEADER_ROW = 0;
+            int mMax_Column = 53 + 41 + 44;       // 종료 COLUMN.(항목수) 
+
+            //보이는 컬럼 초기화.
+            for (int mIDX_Column = 0; mIDX_Column < mMax_Column; mIDX_Column++)
+            {
+                IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 0;
+            }
+            
+            //지급//
+            IDA_PROMT_VIEW_DTL_A2.SetSelectParamValue("W_STD_YYYYMM", PAY_YYYYMM_0.EditValue);
+            IDA_PROMT_VIEW_DTL_A2.Fill();
+            if (IDA_PROMT_VIEW_DTL_A2.OraSelectData.Rows.Count == 0)
+            {
+                return;
+            }
+
+            mGRID_START_COL = 9;   // 그리드 시작 COLUMN.
+            mIDX_HEADER_ROW = (IDA_PROMT_VIEW_DTL_A2.OraSelectData.Rows.Count - 1);
+            mMax_Column = 53;       // 종료 COLUMN.(항목수) 
+
+            string mCOLUMN_DESC;        // 헤더 프롬프트.
+
+            foreach (DataRow vRow in IDA_PROMT_VIEW_DTL_A2.CurrentRows)
+            {
+                for (int mIDX_Column = 0; mIDX_Column < mMax_Column; mIDX_Column++)
+                {
+                    mCOLUMN_DESC = iString.ISNull(vRow[mIDX_Column]);
+                    if (IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible.ToString() == "1")
+                    {
+                        //
+                    }
+                    else if (mCOLUMN_DESC == string.Empty)
+                    {
+                        IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 0;
+                    }
+                    else
+                    {
+                        IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 1;
+                    }
+                    IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].Default = mCOLUMN_DESC;
+                    IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].TL1_KR = mCOLUMN_DESC;
+                }
+                mIDX_HEADER_ROW--;
+            }
+
+            //공제 
+            IDA_PROMT_VIEW_DTL_D2.SetSelectParamValue("W_STD_YYYYMM", PAY_YYYYMM_0.EditValue);
+            IDA_PROMT_VIEW_DTL_D2.Fill();
+            if (IDA_PROMT_VIEW_DTL_D2.OraSelectData.Rows.Count == 0)
+            {
+                return;
+            }
+            mGRID_START_COL = 62;   // 그리드 시작 COLUMN.
+            mIDX_HEADER_ROW = (IDA_PROMT_VIEW_DTL_D2.OraSelectData.Rows.Count - 1);
+            mMax_Column = 41;       // 종료 COLUMN.(항목수)  
+            mCOLUMN_DESC = "";        // 헤더 프롬프트.
+
+            foreach (DataRow vRow in IDA_PROMT_VIEW_DTL_D2.CurrentRows)
+            {
+                for (int mIDX_Column = 0; mIDX_Column < mMax_Column; mIDX_Column++)
+                {
+                    mCOLUMN_DESC = iString.ISNull(vRow[mIDX_Column]);
+                    if (IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible.ToString() == "1")
+                    {
+                        //
+                    }
+                    else if (mCOLUMN_DESC == string.Empty)
+                    {
+                        IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 0;
+                    }
+                    else
+                    {
+                        IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 1;
+                    }
+                    IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].Default = mCOLUMN_DESC;
+                    IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].TL1_KR = mCOLUMN_DESC;
+                }
+                mIDX_HEADER_ROW--;
+            }
+
+            //추가// 
+            IDA_PROMT_VIEW_DTL_W2.SetSelectParamValue("W_STD_YYYYMM", PAY_YYYYMM_0.EditValue);
+            IDA_PROMT_VIEW_DTL_W2.Fill();
+            if (IDA_PROMT_VIEW_DTL_W2.OraSelectData.Rows.Count == 0)
+            {
+                return;
+            }
+            mGRID_START_COL = 103;   // 그리드 시작 COLUMN.
+            mIDX_HEADER_ROW = (IDA_PROMT_VIEW_DTL_W2.OraSelectData.Rows.Count - 1);
+            mMax_Column = 44;       // 종료 COLUMN.(항목수)  
+            mCOLUMN_DESC = "";        // 헤더 프롬프트.
+
+            foreach (DataRow vRow in IDA_PROMT_VIEW_DTL_W2.CurrentRows)
+            {
+                for (int mIDX_Column = 0; mIDX_Column < mMax_Column; mIDX_Column++)
+                {
+                    mCOLUMN_DESC = iString.ISNull(vRow[mIDX_Column]);
+                    if (IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible.ToString() == "1")
+                    {
+                        //
+                    }
+                    else if (mCOLUMN_DESC == string.Empty)
+                    {
+                        IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 0;
+                    }
+                    else
+                    {
+                        IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].Visible = 1;
+                    }
+                    IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].Default = mCOLUMN_DESC;
+                    IGR_PAYMENT_VIEW_DEPT.GridAdvExColElement[mGRID_START_COL + mIDX_Column].HeaderElement[mIDX_HEADER_ROW].TL1_KR = mCOLUMN_DESC;
+                }
+                mIDX_HEADER_ROW--;
+            }
+
+            //그리드 헤더 merge//
+            //int RowCnt = IGR_PAYMENT_SPREAD_DTL.ColHeaderCount;
+            //int ColCnt = IGR_PAYMENT_SPREAD_DTL.ColCount;
+            //string value;
+            //IGR_PAYMENT_SPREAD_DTL.ColHeaderMergeElement.Clear();
+            //for (int j = RowCnt - 1; j >= 0; j--)
+            //{
+            //    for (int i = 0; i < ColCnt; i++)
+            //    {
+            //        value = IGR_PAYMENT_SPREAD_DTL.BaseGrid[j, i].CellValue?.ToString();
+            //        int bottom = j;
+            //        int right = i;
+
+            //        if (string.IsNullOrEmpty(value) == false)
+            //        {
+            //            for (int x = i + 1; x < ColCnt; x++)
+            //            {
+            //                value = IGR_PAYMENT_SPREAD_DTL.BaseGrid[j, x].CellValue?.ToString();
+
+            //                // already?
+            //                foreach (ISGridAdvExRangeElement ele in IGR_PAYMENT_SPREAD_DTL.ColHeaderMergeElement)
+            //                {
+            //                    if (ele.Top <= j && j <= ele.Bottom &&
+            //                        ele.Left <= x && x <= ele.Right)
+            //                    {
+            //                        value = "-1";
+            //                        break;
+            //                    }
+            //                }
+
+            //                if (string.IsNullOrEmpty(value))
+            //                    right = x;
+            //                else
+            //                    break;
+            //            }
+
+            //            //for (int y = j - 1; y >= 0; y--)
+            //            //{
+            //            //    value = IGR_PAYMENT_SPREAD_DTL.BaseGrid[y, i].CellValue?.ToString();
+
+            //            //    // already?
+            //            //    foreach (ISGridAdvExRangeElement ele in IGR_PAYMENT_SPREAD_DTL.ColHeaderMergeElement)
+            //            //    {
+            //            //        if (ele.Top <= y && y <= ele.Bottom &&
+            //            //            ele.Left <= i && i <= ele.Right)
+            //            //        {
+            //            //            value = "-1";
+            //            //            break;
+            //            //        }
+            //            //    }
+
+            //            //    if (string.IsNullOrEmpty(value))
+            //            //        bottom = y;
+            //            //    else
+            //            //        break;
+            //            //}
+
+            //            IGR_PAYMENT_SPREAD_DTL.ColHeaderMergeElement.Add(new ISGridAdvExRangeElement() { Top = j, Left = i, Bottom = bottom, Right = right });
+            //        }
+            //    }
+            //} 
+
+            IGR_PAYMENT_VIEW_DEPT.ResetDraw = true;
+            IGR_PAYMENT_VIEW_DEPT.Refresh();
         }
 
         private void Set_Common_Parameter(string pGroup_Code, string pEnabled_Flag_YN)
         {
             ildCOMMON.SetLookupParamValue("W_GROUP_CODE", pGroup_Code);
             ildCOMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", pEnabled_Flag_YN);
-        }
-
-        private void Show_Print()
-        {
-            System.Windows.Forms.DialogResult vdlrResult;
-
-            //if (CORP_ID_0.EditValue == null)
-            //{
-            //    MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10001"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    CORP_NAME_0.Focus();
-            //    return;
-            //}
-            //if (iString.ISNull(PAY_YYYYMM_0.EditValue) == String.Empty)
-            //{// 급여년월
-            //    MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10036"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    PAY_YYYYMM_0.Focus();
-            //    return;
-            //}
-            //if (iString.ISNull(WAGE_TYPE_0.EditValue) == string.Empty)
-            //{// 급상여 구분
-            //    MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10105"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    WAGE_TYPE_NAME_0.Focus();
-            //    return;
-            //}
-
-            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            Application.DoEvents();
-
-            HRMF0507_PRINT vSHOW_PRINT = new HRMF0507_PRINT(isAppInterfaceAdv1.AppInterface
-                                                           , CORP_ID_0.EditValue
-                                                           , CORP_NAME_0.EditValue
-                                                           , PAY_YYYYMM_0.EditValue
-                                                           , WAGE_TYPE_0.EditValue
-                                                           , WAGE_TYPE_NAME_0.EditValue
-                                                           , FLOOR_NAME_0.EditValue
-                                                           , igrMONTH_PAYMENT);
-            vdlrResult = vSHOW_PRINT.ShowDialog();
-            vSHOW_PRINT.Dispose();
-
-
-            this.Cursor = System.Windows.Forms.Cursors.Default;
-            Application.DoEvents();
-        }
-
-        #endregion;
-
-        #region ----- XL Export Methods ----
-
-        private void ExportXL(ISGridAdvEx pGrid)
-        {
-            string vMessage = string.Empty;
-            int vCountRows = pGrid.RowCount;
-
-            if (vCountRows > 0)
-            {
-                saveFileDialog1.Title = "Excel_Save";
-                saveFileDialog1.FileName = "Ex_00";
-                saveFileDialog1.DefaultExt = "xls";
-                System.IO.DirectoryInfo vSaveFolder = new System.IO.DirectoryInfo(System.Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
-                saveFileDialog1.InitialDirectory = vSaveFolder.FullName;
-                saveFileDialog1.Filter = "Excel Files (*.xls)|*.xls";
-                if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    System.Windows.Forms.Application.UseWaitCursor = true;
-                    this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-                    System.Windows.Forms.Application.DoEvents();
-
-                    string vOpenExcelFileName = "HRMF0507_002.xls";
-                    string vSaveExcelFileName = saveFileDialog1.FileName;
-
-                    XLExport mExport = new XLExport();
-                    int vTerritory = GetTerritory(pGrid.TerritoryLanguage);
-                    bool vbXLSaveOK = mExport.ExcelExport(pGrid, vTerritory, vOpenExcelFileName, vSaveExcelFileName, this.Text, this);
-                    if (vbXLSaveOK == true)
-                    {
-                        vMessage = string.Format("Save OK [{0}]", vSaveExcelFileName);
-                        isAppInterfaceAdv1.OnAppMessage(vMessage);
-                        System.Windows.Forms.Application.DoEvents();
-                    }
-                    else
-                    {
-                        vMessage = string.Format("Save Err [{0}]", vSaveExcelFileName);
-                        isAppInterfaceAdv1.OnAppMessage(vMessage);
-                        System.Windows.Forms.Application.DoEvents();
-                    }
-
-                    System.Windows.Forms.Application.UseWaitCursor = false;
-                    this.Cursor = System.Windows.Forms.Cursors.Default;
-                    System.Windows.Forms.Application.DoEvents();
-                }
-            }
         }
 
         #endregion;
@@ -230,12 +678,167 @@ namespace HRMF0507
             return vTerritory;
         }
 
+        private object Get_Edit_Prompt(InfoSummit.Win.ControlAdv.ISEditAdv pEdit)
+        {
+            int mIDX = 0;
+            object mPrompt = null;
+            switch (isAppInterfaceAdv1.AppInterface.OraConnectionInfo.TerritoryLanguage)
+            {
+                case ISUtil.Enum.TerritoryLanguage.Default:
+                    mPrompt = pEdit.PromptTextElement[mIDX].Default;
+                    break;
+                case ISUtil.Enum.TerritoryLanguage.TL1_KR:
+                    mPrompt = pEdit.PromptTextElement[mIDX].TL1_KR;
+                    break;
+                case ISUtil.Enum.TerritoryLanguage.TL2_CN:
+                    mPrompt = pEdit.PromptTextElement[mIDX].TL2_CN;
+                    break;
+                case ISUtil.Enum.TerritoryLanguage.TL3_VN:
+                    mPrompt = pEdit.PromptTextElement[mIDX].TL3_VN;
+                    break;
+                case ISUtil.Enum.TerritoryLanguage.TL4_JP:
+                    mPrompt = pEdit.PromptTextElement[mIDX].TL4_JP;
+                    break;
+                case ISUtil.Enum.TerritoryLanguage.TL5_XAA:
+                    mPrompt = pEdit.PromptTextElement[mIDX].TL5_XAA;
+                    break;
+            }
+            return mPrompt;
+        }
+
         #endregion;
 
+        #region ----- XL Print 1 Method ----
+
+        //private void XLPrinting_1(string pOutChoice, ISDataAdapter pAdapter)
+        //{// pOutChoice : 출력구분.
+        //    string vMessageText = string.Empty;
+        //    string vSaveFileName = string.Empty;
+
+        //    object vToday = DateTime.Today.ToShortDateString();
+
+        //    Application.UseWaitCursor = false;
+        //    System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+        //    Application.DoEvents();
+
+        //    //출력구분이 파일인 경우 처리.
+        //    if (pOutChoice == "FILE")
+        //    {
+        //        System.IO.DirectoryInfo vSaveFolder = new System.IO.DirectoryInfo(System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments));
+        //        vSaveFileName = string.Format("Accounts_{0}", vToday);
+
+        //        saveFileDialog1.Title = "Excel Save";
+        //        saveFileDialog1.FileName = vSaveFileName;
+        //        saveFileDialog1.Filter = "Excel file(*.xls)|*.xls";
+        //        saveFileDialog1.DefaultExt = "xls";
+        //        if (saveFileDialog1.ShowDialog() != DialogResult.OK)
+        //        {
+        //            return;
+        //        }
+        //        else
+        //        {
+        //            vSaveFileName = saveFileDialog1.FileName;
+        //            System.IO.FileInfo vFileName = new System.IO.FileInfo(vSaveFileName);
+        //            try
+        //            {
+        //                if (vFileName.Exists)
+        //                {
+        //                    vFileName.Delete();
+        //                }
+        //            }
+        //            catch (Exception EX)
+        //            {
+        //                MessageBoxAdv.Show(EX.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //                return;
+        //            }
+        //        }
+        //        vMessageText = string.Format(" Writing Starting...");
+        //    }
+        //    else
+        //    {
+        //        vMessageText = string.Format(" Printing Starting...");
+        //    }
+        //    isAppInterfaceAdv1.OnAppMessage(vMessageText);
+        //    Application.UseWaitCursor = true;
+        //    System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
+        //    Application.DoEvents();
+
+        //    int vPageNumber = 0;
+        //    //int vTerritory = GetTerritory(isAppInterfaceAdv1.AppInterface.OraConnectionInfo.TerritoryLanguage);
+        //    XLPrinting xlPrinting = new XLPrinting(isAppInterfaceAdv1.AppInterface, isMessageAdapter1);
+
+        //    try
+        //    {// 폼에 있는 항목들중 기본적으로 출력해야 하는 값.
+
+        //        // open해야 할 파일명 지정.
+        //        //-------------------------------------------------------------------------------------
+        //        xlPrinting.OpenFileNameExcel = "HRMF0516_001.xls";
+        //        //-------------------------------------------------------------------------------------
+        //        // 파일 오픈.
+        //        //-------------------------------------------------------------------------------------
+        //        bool isOpen = xlPrinting.XLFileOpen();
+        //        //-------------------------------------------------------------------------------------
+
+        //        //-------------------------------------------------------------------------------------
+        //        if (isOpen == true)
+        //        {
+        //            // 헤더 부분 인쇄.
+        //            //xlPrinting.HeaderWrite(vAccountBook, vToday);
+
+        //            // 라인 인쇄
+        //            vPageNumber = xlPrinting.LineWrite(IGR_PAYMENT_ITEM_SUM);
+
+        //            //출력구분에 따른 선택(인쇄 or file 저장)
+        //            if (pOutChoice == "PRINT")
+        //            {
+        //                xlPrinting.Printing(1, vPageNumber);
+        //            }
+        //            else if (pOutChoice == "FILE")
+        //            {
+        //                xlPrinting.SAVE(vSaveFileName);
+        //            }
+
+        //            //-------------------------------------------------------------------------------------
+        //            xlPrinting.Dispose();
+        //            //-------------------------------------------------------------------------------------
+
+        //            vMessageText = string.Format("Printing End [Total Page : {0}]", vPageNumber);
+        //            isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(vMessageText);
+        //            System.Windows.Forms.Application.DoEvents();
+        //        }
+        //        else
+        //        {
+        //            vMessageText = "Excel File Open Error";
+        //            isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(vMessageText);
+        //            System.Windows.Forms.Application.DoEvents();
+        //        }
+        //        //-------------------------------------------------------------------------------------
+        //    }
+        //    catch (System.Exception ex)
+        //    {
+        //        xlPrinting.Dispose();
+
+        //        vMessageText = ex.Message;
+        //        isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(vMessageText);
+        //        System.Windows.Forms.Application.DoEvents();
+        //    }
+
+        //    System.Windows.Forms.Application.UseWaitCursor = false;
+        //    System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+        //    System.Windows.Forms.Application.DoEvents();
+        //}
+
+        #endregion;
+        
         #region ----- XL Print 1 Methods ----
 
-        private void XLPrinting()
+        private void XLPrinting_Main()
         {
+            IDC_GET_REPORT_SET_P.SetCommandParamValue("P_STD_DATE", iDate.ISMonth_Last(PAY_YYYYMM_0.EditValue));
+            IDC_GET_REPORT_SET_P.SetCommandParamValue("P_ASSEMBLY_ID", "HRMF0507");
+            IDC_GET_REPORT_SET_P.ExecuteNonQuery();
+            string vREPORT_TYPE = iString.ISNull(IDC_GET_REPORT_SET_P.GetCommandParamValue("O_REPORT_TYPE"));
+
             //print type 설정
             DialogResult vdlgResult;
             HRMF0507_PRINT_TYPE vHRMF0507_PRINT_TYPE = new HRMF0507_PRINT_TYPE(isAppInterfaceAdv1.AppInterface);
@@ -252,44 +855,83 @@ namespace HRMF0507
             vHRMF0507_PRINT_TYPE.Dispose();
 
             //급상여대장인쇄.
-            if (vPRINT_TYPE == "FILE")
+            if (TB_MAIN.SelectedTab.TabIndex == TP_SALARY_DETAIL.TabIndex)
             {
-                ExcelExport(igrMONTH_PAYMENT);
-            }
-            else
-            {
-                XLPrinting1(iString.ISNull(vPRINT_TYPE));
+                XLPrinting_DTL(vPRINT_TYPE);
             }
 
-            Application.UseWaitCursor = false;
-            this.Cursor = Cursors.Default;
-            Application.DoEvents();
-        }
+            System.Windows.Forms.Application.UseWaitCursor = false;
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+            System.Windows.Forms.Application.DoEvents();
+        } 
 
-        private void XLPrinting1(string pOutChoice)
+        //급상여 상세//
+        private void XLPrinting_DTL(string pOutput_Type)
         {
             string vMessageText = string.Empty;
+            string vTitle = string.Empty;
+            string vSaveFileName = string.Empty;
+
             int vPageNumber = 0;
 
-            int vCountRowGrid = igrMONTH_PAYMENT.RowCount;
+            Application.UseWaitCursor = false;
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+            Application.DoEvents();
 
-            if (vCountRowGrid < 1)
+            IDA_PROMPT_PRINT_DTL.Fill();
+            IDA_PAYMENT_PRINT_DTL.Fill();
+            int vRowCount = IDA_PAYMENT_PRINT_DTL.CurrentRows.Count;
+
+            if (vRowCount < 1)
             {
+                isAppInterfaceAdv1.OnAppMessage("Print Data is not found. Check Please");
+                Application.UseWaitCursor = false;
+                System.Windows.Forms.Cursor.Current = Cursors.Default;
+                Application.DoEvents();
                 return;
+            } 
+
+            if (pOutput_Type == "EXCEL")
+            {
+                SaveFileDialog vSaveFileDialog = new SaveFileDialog();
+                vSaveFileDialog.RestoreDirectory = true;
+                vSaveFileDialog.Filter = "Excel file(*.xls)|*.xls|(*.xlsx)|*.xlsx";
+                vSaveFileDialog.DefaultExt = "xlsx";
+
+                if (vSaveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    vSaveFileName = vSaveFileDialog.FileName;
+                }
+                else
+                    return;
+            }
+            else if (pOutput_Type == "PDF")
+            {
+                SaveFileDialog vSaveFileDialog = new SaveFileDialog();
+                vSaveFileDialog.RestoreDirectory = true;
+                vSaveFileDialog.Filter = "Pdf file(*.pdf)|*.pdf";
+                vSaveFileDialog.DefaultExt = "pdf";
+
+                if (vSaveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    vSaveFileName = vSaveFileDialog.FileName;
+                }
+                else
+                    return;
             }
 
-            XLPrinting xlPrinting = new XLPrinting(isAppInterfaceAdv1, isMessageAdapter1);
+            vMessageText = string.Format(" Printing Starting...");
 
+            isAppInterfaceAdv1.OnAppMessage(vMessageText);
+            Application.UseWaitCursor = true;
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
+            Application.DoEvents(); 
+
+            XLPrinting xlPrinting = new XLPrinting(isAppInterfaceAdv1, isMessageAdapter1);
             try
             {
                 //-------------------------------------------------------------------------------------
-                if (mCompany == "Flex_ERP_FC")
-                {
-                    xlPrinting.OpenFileNameExcel = "HRMF0507_001.xlsx";
-                }
-                else if (mCompany == "Flex_ERP_BH")
-                {
-                }
+                xlPrinting.OpenFileNameExcel = "HRMF0507_001.xlsx";
                 //-------------------------------------------------------------------------------------
 
                 bool IsOpen = xlPrinting.XLFileOpen();
@@ -298,31 +940,42 @@ namespace HRMF0507
                     isAppInterfaceAdv1.OnAppMessage("Printing Start...");
 
                     System.Windows.Forms.Application.UseWaitCursor = true;
-                    this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+                    System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
                     System.Windows.Forms.Application.DoEvents();
-
-                    int vTerritory = GetTerritory(igrMONTH_PAYMENT.TerritoryLanguage);
 
                     string vUserName = isAppInterfaceAdv1.AppInterface.LoginDescription;
 
                     string vCORP_NAME = CORP_NAME_0.EditValue as string;
                     string vYYYYMM = PAY_YYYYMM_0.EditValue as string;
                     string vWageTypeName = WAGE_TYPE_NAME_0.EditValue as string;
-                    string vDepartment_NAME = FLOOR_NAME_0.EditValue as string;
-                    vPageNumber = xlPrinting.XLWirte(igrMONTH_PAYMENT, vTerritory, vUserName, vCORP_NAME, vYYYYMM, vWageTypeName, vDepartment_NAME);
+                    string vDepartment_NAME = DEPT_NAME_0.EditValue as string;
 
-                    if (pOutChoice == "PRINT")
-                    {
-                        ////[PRINTER]
-                        xlPrinting.Printing(1, vPageNumber); //시작 페이지 번호, 종료 페이지 번호
-                        ////xlPrinting.Printing(3, 4);
+                    //인쇄일자 
+                    IDC_GET_DATE.ExecuteNonQuery();
+                    object vLOCAL_DATE = IDC_GET_DATE.GetCommandParamValue("X_LOCAL_DATE");
+
+                    //엑셀양식 헤더 인쇄//
+
+
+                    vPageNumber = xlPrinting.XLWirteMain(IDA_PROMPT_PRINT_DTL, IDA_PAYMENT_PRINT_DTL, vLOCAL_DATE, vUserName, vCORP_NAME, vYYYYMM, vWageTypeName, vDepartment_NAME);
+                    
+                    if (pOutput_Type == "PDF")
+                    { 
+                        xlPrinting.PDF_Save(vSaveFileName);
                     }
-                    else if (pOutChoice == "FILE")
+                    else if(pOutput_Type == "EXCEL")
                     {
-                        ////[SAVE]
-                        xlPrinting.Save("Salary_"); //저장 파일명
+                        xlPrinting.Save(vSaveFileName);
                     }
-                    //-------------------------------------------------------------------------
+                    else if (pOutput_Type == "PREVIEW")
+                    {
+                        xlPrinting.PreviewPrinting(1, vPageNumber);
+                    }
+                    else
+                    {
+                        xlPrinting.Printing(1, vPageNumber);
+                    } 
+                    xlPrinting.Dispose();
                 }
                 else
                 {
@@ -332,16 +985,22 @@ namespace HRMF0507
             catch (System.Exception ex)
             {
                 string vMessage = ex.Message;
-                xlPrinting.Dispose();
+                try
+                {
+                    xlPrinting.Dispose();
+                }
+                catch
+                {
+
+                }
             }
 
-            xlPrinting.Dispose();
 
             vMessageText = string.Format("Print End! [Page : {0}]", vPageNumber);
             isAppInterfaceAdv1.OnAppMessage(vMessageText);
 
             System.Windows.Forms.Application.UseWaitCursor = false;
-            this.Cursor = System.Windows.Forms.Cursors.Default;
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
             System.Windows.Forms.Application.DoEvents();
         }
 
@@ -408,26 +1067,6 @@ namespace HRMF0507
 
         #endregion
 
-
-        #region ----- Company Search Methods ----
-
-        private void CompanySearch()
-        {
-            string vStartupPath = System.Windows.Forms.Application.StartupPath;
-            //vStartupPath = "C:\\Program Files\\Flex_ERP_FC\\Kor";
-            //vStartupPath = "C:\\Program Files\\Flex_ERP_BH\\Kor";
-
-
-            int vCutStart = vStartupPath.LastIndexOf("\\");
-            string vCutStringFiRST = vStartupPath.Substring(0, vCutStart);
-
-            vCutStart = vCutStringFiRST.LastIndexOf("\\") + 1;
-            int vCutLength = vCutStringFiRST.Length - vCutStart;
-            mCompany = vCutStringFiRST.Substring(vCutStart, vCutLength);
-        }
-
-        #endregion;
-
         #region ----- Events -----
 
         private void isAppInterfaceAdv1_AppMainButtonClick(ISAppButtonEvents e)
@@ -460,13 +1099,24 @@ namespace HRMF0507
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Print)
                 {
-                    //Show_Print();
-                    XLPrinting1("PRINT");
+                    XLPrinting_Main();
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Export)
                 {
                     //ExportXL(igrMONTH_PAYMENT);
-                    XLPrinting();
+                    //XLPrinting("FILE");
+                    if (TB_MAIN.SelectedTab.TabIndex == TP_SALARY_DETAIL.TabIndex)
+                    {
+                        ExcelExport(IGR_PAYMENT_VIEW_DTL);
+                    }                     
+                    else if (TB_MAIN.SelectedTab.TabIndex == TP_SALARY_SUM.TabIndex)
+                    {
+                        ExcelExport(IGR_PAYMENT_VIEW_SUM);
+                    } 
+                    else if (TB_MAIN.SelectedTab.TabIndex == TP_SALARY_SUM_DEPT.TabIndex)
+                    {
+                        ExcelExport(IGR_PAYMENT_VIEW_DEPT);
+                    }
                 }
             }
         }
@@ -481,9 +1131,7 @@ namespace HRMF0507
             START_DATE_0.EditValue = iDate.ISMonth_1st(DateTime.Today);
             END_DATE_0.EditValue = iDate.ISMonth_Last(DateTime.Today);
 
-            DefaultCorporation();              //Default Corp.
-
-            CompanySearch();
+            DefaultCorporation();              //Default Corp. 
         }
 
         #endregion
@@ -519,6 +1167,7 @@ namespace HRMF0507
         }
 
         #endregion
+
 
     }
 }

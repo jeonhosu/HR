@@ -20,9 +20,11 @@ namespace HRMF0501
 
         ISCommonUtil.ISFunction.ISConvert iConv = new ISFunction.ISConvert();
         ISCommonUtil.ISFunction.ISDateTime iDate = new ISFunction.ISDateTime();
+        EAPF1102.EAPF1102 mEAPF1102 = new EAPF1102.EAPF1102();
+        Object mSESSION_ID;
 
         #endregion;
-        
+
         #region ----- Constructor -----
 
         public HRMF0501(Form pMainForm, ISAppInterface pAppInterface)
@@ -162,16 +164,69 @@ namespace HRMF0501
                 {
                     if (IDA_GRADE_HEADER.IsFocused)
                     {
-                        IDA_GRADE_HEADER.Delete();
+                        if (MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_10030"), "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                            return;
+                        
+                        IDC_DELETE_GRADE_HEADER.SetCommandParamValue("W_GRADE_HEADER_ID", IGR_GRADE_HEADER.GetCellValue("GRADE_HEADER_ID"));
+                        IDC_DELETE_GRADE_HEADER.ExecuteNonQuery();
+                        string vSTATUS = iConv.ISNull(IDC_DELETE_GRADE_HEADER.GetCommandParamValue("O_STATUS"));
+                        string vMESSAGE = iConv.ISNull(IDC_DELETE_GRADE_HEADER.GetCommandParamValue("O_MESSAGE"));
+                        if (IDC_DELETE_GRADE_HEADER.ExcuteError)
+                        {
+                            MessageBoxAdv.Show(IDC_DELETE_GRADE_HEADER.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                        else if (vSTATUS.Equals("F"))
+                        {
+                            if (vMESSAGE != string.Empty)
+                                MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }                        
                     }
                     else if (IDA_GRADE_STEP.IsFocused)
                     {
-                        IDA_GRADE_STEP.Delete();
+                        if (MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_10030"), "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                            return;
+
+                        IDC_DELETE_GRADE_STEP.SetCommandParamValue("W_GRADE_HEADER_ID", IGR_GRADE_STEP.GetCellValue("GRADE_HEADER_ID"));
+                        IDC_DELETE_GRADE_STEP.SetCommandParamValue("W_GRADE_STEP", IGR_GRADE_STEP.GetCellValue("GRADE_STEP"));
+                        IDC_DELETE_GRADE_STEP.ExecuteNonQuery();
+                        string vSTATUS = iConv.ISNull(IDC_DELETE_GRADE_STEP.GetCommandParamValue("O_STATUS"));
+                        string vMESSAGE = iConv.ISNull(IDC_DELETE_GRADE_STEP.GetCommandParamValue("O_MESSAGE"));
+                        if(IDC_DELETE_GRADE_STEP.ExcuteError)
+                        {
+                            MessageBoxAdv.Show(IDC_DELETE_GRADE_STEP.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                        else if(vSTATUS.Equals("F"))
+                        {
+                            if(vMESSAGE != string.Empty)                            
+                                MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }  
                     }
                     else if (IDA_GRADE_LINE.IsFocused)
                     {
-                        IDA_GRADE_LINE.Delete();
+                        if (MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_10030"), "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                            return;
+                        
+                        IDC_DELETE_GRADE_LINE.SetCommandParamValue("W_GRADE_LINE_ID", IGR_GRADE_LINE.GetCellValue("GRADE_LINE_ID")); 
+                        IDC_DELETE_GRADE_LINE.ExecuteNonQuery();
+                        string vSTATUS = iConv.ISNull(IDC_DELETE_GRADE_LINE.GetCommandParamValue("O_STATUS"));
+                        string vMESSAGE = iConv.ISNull(IDC_DELETE_GRADE_LINE.GetCommandParamValue("O_MESSAGE"));
+                        if (IDC_DELETE_GRADE_LINE.ExcuteError)
+                        {
+                            MessageBoxAdv.Show(IDC_DELETE_GRADE_LINE.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                        else if (vSTATUS.Equals("F"))
+                        {
+                            if (vMESSAGE != string.Empty)
+                                MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
                     }
+                    Search_DB();
                 }
             }
         }
@@ -185,6 +240,9 @@ namespace HRMF0501
             W_STD_YYYYMM.EditValue = iDate.ISYearMonth(DateTime.Today);                        
             DefaultCorporation();              //Default Corp.
             //DefaultSetFormReSize();		//[Child Form, Mdi Form에 맞게 ReSize]        
+
+            IDC_GET_SESSION_ID_P.ExecuteNonQuery();
+            mSESSION_ID = IDC_GET_SESSION_ID_P.GetCommandParamValue("O_SESSION_ID");
 
             IDA_GRADE_HEADER.FillSchema();
         }
@@ -317,5 +375,33 @@ namespace HRMF0501
 
         #endregion
 
+        private void BTN_EXCEL_EXPORT_ButtonClick(object pSender, EventArgs pEventArgs)
+        {
+            DialogResult vdlgResult;
+            HRMF0501_EXPORT vHRMF0501_EXPORT = new HRMF0501_EXPORT(this.MdiParent, isAppInterfaceAdv1.AppInterface
+                                                                , W_CORP_ID.EditValue, W_CORP_NAME.EditValue
+                                                                , W_STD_YYYYMM.EditValue);
+            mEAPF1102.SetProperties(EAPF1102.INIT_TYPE.None, vHRMF0501_EXPORT, isAppInterfaceAdv1.AppInterface);
+            vdlgResult = vHRMF0501_EXPORT.ShowDialog();
+            vHRMF0501_EXPORT.Dispose();
+            if (vdlgResult == DialogResult.OK)
+            {
+                Search_DB();
+            }
+        }
+
+        private void BTN_EXCEL_IMPORT_ButtonClick(object pSender, EventArgs pEventArgs)
+        {
+            DialogResult vdlgResult;
+            HRMF0501_IMPORT vHRMF0501_IMPORT = new HRMF0501_IMPORT(this.MdiParent, isAppInterfaceAdv1.AppInterface, W_CORP_ID.EditValue
+                                                                , W_STD_YYYYMM.EditValue, mSESSION_ID);
+            mEAPF1102.SetProperties(EAPF1102.INIT_TYPE.None, vHRMF0501_IMPORT, isAppInterfaceAdv1.AppInterface);
+            vdlgResult = vHRMF0501_IMPORT.ShowDialog();
+            vHRMF0501_IMPORT.Dispose();
+            if (vdlgResult == DialogResult.OK)
+            {
+                Search_DB();
+            }
+        }
     }
 }

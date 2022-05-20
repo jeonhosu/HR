@@ -29,6 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement109 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement110 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement111 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement112 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement113 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement114 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement115 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement116 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement117 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement118 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement119 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement120 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement121 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle1 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle2 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle3 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
@@ -85,6 +98,12 @@
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle50 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle51 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle52 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle53 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle54 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle55 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle56 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle57 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle58 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement1 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement2 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement3 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
@@ -109,6 +128,9 @@
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement22 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement23 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement24 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement25 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement26 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement isGridAdvExRangeElement27 = new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement1 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement1 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement2 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
@@ -190,6 +212,15 @@
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement27 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement53 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement54 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement28 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement55 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement56 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement29 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement57 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement58 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement30 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement59 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement60 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement1 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement2 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement3 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
@@ -217,6 +248,9 @@
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement25 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement26 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement27 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement28 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement29 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement30 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement1 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement2 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement3 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
@@ -240,6 +274,9 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement21 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement22 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement23 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement24 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement25 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement26 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement1 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement2 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement3 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -267,9 +304,9 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement25 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement26 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement27 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement24 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement25 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement26 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement28 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement29 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement30 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement27 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement28 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement29 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
@@ -295,12 +332,15 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement49 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement50 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement51 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement52 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement53 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement54 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement55 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement56 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement57 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISDataUtil.OraConnectionInfo oraConnectionInfo1 = new InfoSummit.Win.ControlAdv.ISDataUtil.OraConnectionInfo();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement2 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement1 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement28 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement29 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement30 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement2 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement31 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement32 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement33 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -311,15 +351,15 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement38 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement39 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement40 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement52 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement53 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement54 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement55 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement56 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement57 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement41 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement42 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement43 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement58 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement59 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement60 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement61 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement62 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement63 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement44 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement45 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement46 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -385,26 +425,16 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement106 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement107 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement108 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement109 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement110 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement111 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement112 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement113 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement114 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement115 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement116 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement117 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement118 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement3 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            this.ILA_CHG_OT_TYPE_H = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
             this.IGR_OT_TYPE = new InfoSummit.Win.ControlAdv.ISGridAdvEx();
             this.isAppInterfaceAdv1 = new InfoSummit.Win.ControlAdv.ISAppInterfaceAdv(this.components);
             this.IDA_OT_TYPE = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
             this.isOraConnection1 = new InfoSummit.Win.ControlAdv.ISOraConnection(this.components);
             this.W_OT_TYPE_NAME = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.W_ENABLED_FLAG_A = new InfoSummit.Win.ControlAdv.ISCheckBoxAdv();
-            this.ILA_CHG_OT_TYPE_H = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
-            this.ILD_COMMON = new InfoSummit.Win.ControlAdv.ISLookupData(this.components);
             this.ILA_CHG_OT_TYPE_1 = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
+            this.ILD_COMMON = new InfoSummit.Win.ControlAdv.ISLookupData(this.components);
             this.ILA_CHG_OT_TYPE_0 = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
             this.ILA_CHG_OT_TYPE = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
             this.ILA_OT_GROUP_TYPE = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
@@ -412,9 +442,9 @@
             this.ILA_ALLOWANCE_ITEM_20 = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
             this.isMessageAdapter1 = new InfoSummit.Win.ControlAdv.ISMessageAdapter(this.components);
             this.gbControl = new InfoSummit.Win.ControlAdv.ISGroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.IGR_OT_TYPE.BaseGrid)).BeginInit();
             this.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_CHG_OT_TYPE_H.PropSourceDataTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_OT_TYPE.BaseGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_CHG_OT_TYPE_1.PropSourceDataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_CHG_OT_TYPE_0.PropSourceDataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_CHG_OT_TYPE.PropSourceDataTable)).BeginInit();
@@ -423,6 +453,276 @@
             ((System.ComponentModel.ISupportInitialize)(this.ILA_ALLOWANCE_ITEM_20.PropSourceDataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gbControl)).BeginInit();
             this.gbControl.SuspendLayout();
+            // 
+            // ILA_CHG_OT_TYPE_H
+            // 
+            this.ILA_CHG_OT_TYPE_H.DisplayCaption = "Cost Center Search";
+            // 
+            // HRMF0162
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
+            this.ClientSize = new System.Drawing.Size(958, 578);
+            this.Controls.Add(this.IGR_OT_TYPE);
+            this.Controls.Add(this.gbControl);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Name = "HRMF0162";
+            this.Padding = new System.Windows.Forms.Padding(2);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "Work Center";
+            this.Load += new System.EventHandler(this.HRMF0162_Load);
+            isOraColElement109.DataColumn = "CODE_NAME";
+            isOraColElement109.DataOrdinal = 0;
+            isOraColElement109.DataType = "System.String";
+            isOraColElement109.HeaderPrompt = "OT Type";
+            isOraColElement109.LastValue = null;
+            isOraColElement109.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement109.MemberValue = "CHG_OT_TYPE_H_NAME";
+            isOraColElement109.Nullable = null;
+            isOraColElement109.Ordinal = 0;
+            isOraColElement109.RelationKeyColumn = null;
+            isOraColElement109.ReturnParameter = null;
+            isOraColElement109.TL1_KR = "연장 구분";
+            isOraColElement109.TL2_CN = null;
+            isOraColElement109.TL3_VN = null;
+            isOraColElement109.TL4_JP = null;
+            isOraColElement109.TL5_XAA = null;
+            isOraColElement109.Visible = 1;
+            isOraColElement109.Width = 250;
+            isOraColElement110.DataColumn = "CODE";
+            isOraColElement110.DataOrdinal = 1;
+            isOraColElement110.DataType = "System.String";
+            isOraColElement110.HeaderPrompt = "Code";
+            isOraColElement110.LastValue = null;
+            isOraColElement110.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement110.MemberValue = "CHG_OT_TYPE_H";
+            isOraColElement110.Nullable = null;
+            isOraColElement110.Ordinal = 1;
+            isOraColElement110.RelationKeyColumn = null;
+            isOraColElement110.ReturnParameter = null;
+            isOraColElement110.TL1_KR = "코드";
+            isOraColElement110.TL2_CN = null;
+            isOraColElement110.TL3_VN = null;
+            isOraColElement110.TL4_JP = null;
+            isOraColElement110.TL5_XAA = null;
+            isOraColElement110.Visible = 1;
+            isOraColElement110.Width = 100;
+            isOraColElement111.DataColumn = "COMMON_ID";
+            isOraColElement111.DataOrdinal = 2;
+            isOraColElement111.DataType = "System.Decimal";
+            isOraColElement111.HeaderPrompt = "COMMON_ID";
+            isOraColElement111.LastValue = null;
+            isOraColElement111.MemberControl = null;
+            isOraColElement111.MemberValue = null;
+            isOraColElement111.Nullable = null;
+            isOraColElement111.Ordinal = 2;
+            isOraColElement111.RelationKeyColumn = null;
+            isOraColElement111.ReturnParameter = null;
+            isOraColElement111.TL1_KR = null;
+            isOraColElement111.TL2_CN = null;
+            isOraColElement111.TL3_VN = null;
+            isOraColElement111.TL4_JP = null;
+            isOraColElement111.TL5_XAA = null;
+            isOraColElement111.Visible = 0;
+            isOraColElement111.Width = 65;
+            isOraColElement112.DataColumn = "VALUE1";
+            isOraColElement112.DataOrdinal = 3;
+            isOraColElement112.DataType = "System.String";
+            isOraColElement112.HeaderPrompt = "VALUE1";
+            isOraColElement112.LastValue = null;
+            isOraColElement112.MemberControl = null;
+            isOraColElement112.MemberValue = null;
+            isOraColElement112.Nullable = null;
+            isOraColElement112.Ordinal = 3;
+            isOraColElement112.RelationKeyColumn = null;
+            isOraColElement112.ReturnParameter = null;
+            isOraColElement112.TL1_KR = null;
+            isOraColElement112.TL2_CN = null;
+            isOraColElement112.TL3_VN = null;
+            isOraColElement112.TL4_JP = null;
+            isOraColElement112.TL5_XAA = null;
+            isOraColElement112.Visible = 0;
+            isOraColElement112.Width = 65;
+            isOraColElement113.DataColumn = "VALUE2";
+            isOraColElement113.DataOrdinal = 4;
+            isOraColElement113.DataType = "System.String";
+            isOraColElement113.HeaderPrompt = "VALUE2";
+            isOraColElement113.LastValue = null;
+            isOraColElement113.MemberControl = null;
+            isOraColElement113.MemberValue = null;
+            isOraColElement113.Nullable = null;
+            isOraColElement113.Ordinal = 4;
+            isOraColElement113.RelationKeyColumn = null;
+            isOraColElement113.ReturnParameter = null;
+            isOraColElement113.TL1_KR = null;
+            isOraColElement113.TL2_CN = null;
+            isOraColElement113.TL3_VN = null;
+            isOraColElement113.TL4_JP = null;
+            isOraColElement113.TL5_XAA = null;
+            isOraColElement113.Visible = 0;
+            isOraColElement113.Width = 65;
+            isOraColElement114.DataColumn = "VALUE3";
+            isOraColElement114.DataOrdinal = 5;
+            isOraColElement114.DataType = "System.String";
+            isOraColElement114.HeaderPrompt = "VALUE3";
+            isOraColElement114.LastValue = null;
+            isOraColElement114.MemberControl = null;
+            isOraColElement114.MemberValue = null;
+            isOraColElement114.Nullable = null;
+            isOraColElement114.Ordinal = 5;
+            isOraColElement114.RelationKeyColumn = null;
+            isOraColElement114.ReturnParameter = null;
+            isOraColElement114.TL1_KR = null;
+            isOraColElement114.TL2_CN = null;
+            isOraColElement114.TL3_VN = null;
+            isOraColElement114.TL4_JP = null;
+            isOraColElement114.TL5_XAA = null;
+            isOraColElement114.Visible = 0;
+            isOraColElement114.Width = 65;
+            isOraColElement115.DataColumn = "VALUE4";
+            isOraColElement115.DataOrdinal = 6;
+            isOraColElement115.DataType = "System.String";
+            isOraColElement115.HeaderPrompt = "VALUE4";
+            isOraColElement115.LastValue = null;
+            isOraColElement115.MemberControl = null;
+            isOraColElement115.MemberValue = null;
+            isOraColElement115.Nullable = null;
+            isOraColElement115.Ordinal = 6;
+            isOraColElement115.RelationKeyColumn = null;
+            isOraColElement115.ReturnParameter = null;
+            isOraColElement115.TL1_KR = null;
+            isOraColElement115.TL2_CN = null;
+            isOraColElement115.TL3_VN = null;
+            isOraColElement115.TL4_JP = null;
+            isOraColElement115.TL5_XAA = null;
+            isOraColElement115.Visible = 0;
+            isOraColElement115.Width = 65;
+            isOraColElement116.DataColumn = "VALUE5";
+            isOraColElement116.DataOrdinal = 7;
+            isOraColElement116.DataType = "System.String";
+            isOraColElement116.HeaderPrompt = "VALUE5";
+            isOraColElement116.LastValue = null;
+            isOraColElement116.MemberControl = null;
+            isOraColElement116.MemberValue = null;
+            isOraColElement116.Nullable = null;
+            isOraColElement116.Ordinal = 7;
+            isOraColElement116.RelationKeyColumn = null;
+            isOraColElement116.ReturnParameter = null;
+            isOraColElement116.TL1_KR = null;
+            isOraColElement116.TL2_CN = null;
+            isOraColElement116.TL3_VN = null;
+            isOraColElement116.TL4_JP = null;
+            isOraColElement116.TL5_XAA = null;
+            isOraColElement116.Visible = 0;
+            isOraColElement116.Width = 65;
+            isOraColElement117.DataColumn = "VALUE6";
+            isOraColElement117.DataOrdinal = 8;
+            isOraColElement117.DataType = "System.String";
+            isOraColElement117.HeaderPrompt = "VALUE6";
+            isOraColElement117.LastValue = null;
+            isOraColElement117.MemberControl = null;
+            isOraColElement117.MemberValue = null;
+            isOraColElement117.Nullable = null;
+            isOraColElement117.Ordinal = 8;
+            isOraColElement117.RelationKeyColumn = null;
+            isOraColElement117.ReturnParameter = null;
+            isOraColElement117.TL1_KR = null;
+            isOraColElement117.TL2_CN = null;
+            isOraColElement117.TL3_VN = null;
+            isOraColElement117.TL4_JP = null;
+            isOraColElement117.TL5_XAA = null;
+            isOraColElement117.Visible = 0;
+            isOraColElement117.Width = 65;
+            isOraColElement118.DataColumn = "VALUE7";
+            isOraColElement118.DataOrdinal = 9;
+            isOraColElement118.DataType = "System.String";
+            isOraColElement118.HeaderPrompt = "VALUE7";
+            isOraColElement118.LastValue = null;
+            isOraColElement118.MemberControl = null;
+            isOraColElement118.MemberValue = null;
+            isOraColElement118.Nullable = null;
+            isOraColElement118.Ordinal = 9;
+            isOraColElement118.RelationKeyColumn = null;
+            isOraColElement118.ReturnParameter = null;
+            isOraColElement118.TL1_KR = null;
+            isOraColElement118.TL2_CN = null;
+            isOraColElement118.TL3_VN = null;
+            isOraColElement118.TL4_JP = null;
+            isOraColElement118.TL5_XAA = null;
+            isOraColElement118.Visible = 0;
+            isOraColElement118.Width = 65;
+            isOraColElement119.DataColumn = "VALUE8";
+            isOraColElement119.DataOrdinal = 10;
+            isOraColElement119.DataType = "System.String";
+            isOraColElement119.HeaderPrompt = "VALUE8";
+            isOraColElement119.LastValue = null;
+            isOraColElement119.MemberControl = null;
+            isOraColElement119.MemberValue = null;
+            isOraColElement119.Nullable = null;
+            isOraColElement119.Ordinal = 10;
+            isOraColElement119.RelationKeyColumn = null;
+            isOraColElement119.ReturnParameter = null;
+            isOraColElement119.TL1_KR = null;
+            isOraColElement119.TL2_CN = null;
+            isOraColElement119.TL3_VN = null;
+            isOraColElement119.TL4_JP = null;
+            isOraColElement119.TL5_XAA = null;
+            isOraColElement119.Visible = 0;
+            isOraColElement119.Width = 65;
+            isOraColElement120.DataColumn = "VALUE9";
+            isOraColElement120.DataOrdinal = 11;
+            isOraColElement120.DataType = "System.String";
+            isOraColElement120.HeaderPrompt = "VALUE9";
+            isOraColElement120.LastValue = null;
+            isOraColElement120.MemberControl = null;
+            isOraColElement120.MemberValue = null;
+            isOraColElement120.Nullable = null;
+            isOraColElement120.Ordinal = 11;
+            isOraColElement120.RelationKeyColumn = null;
+            isOraColElement120.ReturnParameter = null;
+            isOraColElement120.TL1_KR = null;
+            isOraColElement120.TL2_CN = null;
+            isOraColElement120.TL3_VN = null;
+            isOraColElement120.TL4_JP = null;
+            isOraColElement120.TL5_XAA = null;
+            isOraColElement120.Visible = 0;
+            isOraColElement120.Width = 65;
+            isOraColElement121.DataColumn = "VALUE10";
+            isOraColElement121.DataOrdinal = 12;
+            isOraColElement121.DataType = "System.String";
+            isOraColElement121.HeaderPrompt = "VALUE10";
+            isOraColElement121.LastValue = null;
+            isOraColElement121.MemberControl = null;
+            isOraColElement121.MemberValue = null;
+            isOraColElement121.Nullable = null;
+            isOraColElement121.Ordinal = 12;
+            isOraColElement121.RelationKeyColumn = null;
+            isOraColElement121.ReturnParameter = null;
+            isOraColElement121.TL1_KR = null;
+            isOraColElement121.TL2_CN = null;
+            isOraColElement121.TL3_VN = null;
+            isOraColElement121.TL4_JP = null;
+            isOraColElement121.TL5_XAA = null;
+            isOraColElement121.Visible = 0;
+            isOraColElement121.Width = 65;
+            this.ILA_CHG_OT_TYPE_H.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
+            isOraColElement109,
+            isOraColElement110,
+            isOraColElement111,
+            isOraColElement112,
+            isOraColElement113,
+            isOraColElement114,
+            isOraColElement115,
+            isOraColElement116,
+            isOraColElement117,
+            isOraColElement118,
+            isOraColElement119,
+            isOraColElement120,
+            isOraColElement121});
+            this.ILA_CHG_OT_TYPE_H.LookupData = this.ILD_COMMON;
+            this.ILA_CHG_OT_TYPE_H.LookupSize = new System.Drawing.Size(429, 347);
+            this.ILA_CHG_OT_TYPE_H.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
+            this.ILA_CHG_OT_TYPE_H.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_CHG_OT_TYPE_H_PrePopupShow);
             // 
             // IGR_OT_TYPE
             // 
@@ -465,7 +765,7 @@
             gridBaseStyle2,
             gridBaseStyle3,
             gridBaseStyle4});
-            this.IGR_OT_TYPE.BaseGrid.ColCount = 27;
+            this.IGR_OT_TYPE.BaseGrid.ColCount = 30;
             this.IGR_OT_TYPE.BaseGrid.ColHiddenEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridColHidden[] {
             new Syncfusion.Windows.Forms.Grid.GridColHidden(1),
             new Syncfusion.Windows.Forms.Grid.GridColHidden(4),
@@ -496,12 +796,15 @@
             new Syncfusion.Windows.Forms.Grid.GridColWidth(19, 60),
             new Syncfusion.Windows.Forms.Grid.GridColWidth(20, 130),
             new Syncfusion.Windows.Forms.Grid.GridColWidth(21, 70),
-            new Syncfusion.Windows.Forms.Grid.GridColWidth(22, 60),
-            new Syncfusion.Windows.Forms.Grid.GridColWidth(23, 70),
-            new Syncfusion.Windows.Forms.Grid.GridColWidth(24, 200),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(22, 65),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(23, 150),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(24, 70),
             new Syncfusion.Windows.Forms.Grid.GridColWidth(25, 60),
-            new Syncfusion.Windows.Forms.Grid.GridColWidth(26, 100),
-            new Syncfusion.Windows.Forms.Grid.GridColWidth(27, 100)});
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(26, 70),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(27, 200),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(28, 60),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(29, 100),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(30, 100)});
             this.IGR_OT_TYPE.BaseGrid.CoveredRanges.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeInfo[] {
             Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 0, 1, 0),
             Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 1, 1, 1),
@@ -526,7 +829,10 @@
             Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 16, 0, 18),
             Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 19, 0, 21),
             Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 14, 1, 14),
-            Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 15, 1, 15)});
+            Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 15, 1, 15),
+            Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 28, 1, 28),
+            Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 29, 1, 29),
+            Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 30, 1, 30)});
             this.IGR_OT_TYPE.BaseGrid.DefaultGridBorderStyle = Syncfusion.Windows.Forms.Grid.GridBorderStyle.Solid;
             this.IGR_OT_TYPE.BaseGrid.DefaultRowHeight = 19;
             this.IGR_OT_TYPE.BaseGrid.EnterKeyBehavior = Syncfusion.Windows.Forms.Grid.GridDirectionType.None;
@@ -839,10 +1145,9 @@
             gridRangeStyle19.StyleInfo.ReadOnly = false;
             gridRangeStyle19.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
             gridRangeStyle20.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(22);
-            gridRangeStyle20.StyleInfo.CellType = "CheckBox";
+            gridRangeStyle20.StyleInfo.CellType = "TextBox";
             gridRangeStyle20.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle20.StyleInfo.CheckBoxOptions.CheckedValue = "Y";
-            gridRangeStyle20.StyleInfo.CheckBoxOptions.UncheckedValue = "N";
+            gridRangeStyle20.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             gridRangeStyle20.StyleInfo.Clickable = true;
             gridRangeStyle20.StyleInfo.Font.Bold = false;
             gridRangeStyle20.StyleInfo.Font.Facename = "굴림";
@@ -851,18 +1156,14 @@
             gridRangeStyle20.StyleInfo.Font.Strikeout = false;
             gridRangeStyle20.StyleInfo.Font.Underline = false;
             gridRangeStyle20.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle20.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
+            gridRangeStyle20.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
             gridRangeStyle20.StyleInfo.ReadOnly = false;
             gridRangeStyle20.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
             gridRangeStyle21.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(23);
-            gridRangeStyle21.StyleInfo.CellType = "Currency";
-            gridRangeStyle21.StyleInfo.CellValueType = typeof(decimal);
+            gridRangeStyle21.StyleInfo.CellType = "TextBox";
+            gridRangeStyle21.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle21.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             gridRangeStyle21.StyleInfo.Clickable = true;
-            gridRangeStyle21.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
-            gridRangeStyle21.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
-            gridRangeStyle21.StyleInfo.CurrencyEdit.CurrencySymbol = "";
-            gridRangeStyle21.StyleInfo.CurrencyEdit.NullString = "";
-            gridRangeStyle21.StyleInfo.CurrencyEdit.NullValue = null;
             gridRangeStyle21.StyleInfo.Font.Bold = false;
             gridRangeStyle21.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle21.StyleInfo.Font.Italic = false;
@@ -870,13 +1171,14 @@
             gridRangeStyle21.StyleInfo.Font.Strikeout = false;
             gridRangeStyle21.StyleInfo.Font.Underline = false;
             gridRangeStyle21.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle21.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
+            gridRangeStyle21.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
             gridRangeStyle21.StyleInfo.ReadOnly = false;
             gridRangeStyle21.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle22.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(24);
-            gridRangeStyle22.StyleInfo.CellType = "TextBox";
+            gridRangeStyle22.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(24, 25);
+            gridRangeStyle22.StyleInfo.CellType = "CheckBox";
             gridRangeStyle22.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle22.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle22.StyleInfo.CheckBoxOptions.CheckedValue = "Y";
+            gridRangeStyle22.StyleInfo.CheckBoxOptions.UncheckedValue = "N";
             gridRangeStyle22.StyleInfo.Clickable = true;
             gridRangeStyle22.StyleInfo.Font.Bold = false;
             gridRangeStyle22.StyleInfo.Font.Facename = "굴림";
@@ -885,15 +1187,18 @@
             gridRangeStyle22.StyleInfo.Font.Strikeout = false;
             gridRangeStyle22.StyleInfo.Font.Underline = false;
             gridRangeStyle22.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle22.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle22.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
             gridRangeStyle22.StyleInfo.ReadOnly = false;
             gridRangeStyle22.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle23.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(25);
-            gridRangeStyle23.StyleInfo.CellType = "CheckBox";
-            gridRangeStyle23.StyleInfo.CellValueType = typeof(string);
-            gridRangeStyle23.StyleInfo.CheckBoxOptions.CheckedValue = "Y";
-            gridRangeStyle23.StyleInfo.CheckBoxOptions.UncheckedValue = "N";
+            gridRangeStyle23.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(26);
+            gridRangeStyle23.StyleInfo.CellType = "Currency";
+            gridRangeStyle23.StyleInfo.CellValueType = typeof(decimal);
             gridRangeStyle23.StyleInfo.Clickable = true;
+            gridRangeStyle23.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
+            gridRangeStyle23.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
+            gridRangeStyle23.StyleInfo.CurrencyEdit.CurrencySymbol = "";
+            gridRangeStyle23.StyleInfo.CurrencyEdit.NullString = "";
+            gridRangeStyle23.StyleInfo.CurrencyEdit.NullValue = null;
             gridRangeStyle23.StyleInfo.Font.Bold = false;
             gridRangeStyle23.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle23.StyleInfo.Font.Italic = false;
@@ -901,14 +1206,14 @@
             gridRangeStyle23.StyleInfo.Font.Strikeout = false;
             gridRangeStyle23.StyleInfo.Font.Underline = false;
             gridRangeStyle23.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle23.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
+            gridRangeStyle23.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
             gridRangeStyle23.StyleInfo.ReadOnly = false;
             gridRangeStyle23.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle24.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(26, 27);
-            gridRangeStyle24.StyleInfo.CellType = "ComboBox";
-            gridRangeStyle24.StyleInfo.CellValueType = typeof(System.DateTime);
+            gridRangeStyle24.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(27);
+            gridRangeStyle24.StyleInfo.CellType = "TextBox";
+            gridRangeStyle24.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle24.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             gridRangeStyle24.StyleInfo.Clickable = true;
-            gridRangeStyle24.StyleInfo.CultureInfo = new System.Globalization.CultureInfo("");
             gridRangeStyle24.StyleInfo.Font.Bold = false;
             gridRangeStyle24.StyleInfo.Font.Facename = "굴림";
             gridRangeStyle24.StyleInfo.Font.Italic = false;
@@ -916,66 +1221,105 @@
             gridRangeStyle24.StyleInfo.Font.Strikeout = false;
             gridRangeStyle24.StyleInfo.Font.Underline = false;
             gridRangeStyle24.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
-            gridRangeStyle24.StyleInfo.Format = "yyyy-MM-dd";
             gridRangeStyle24.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
             gridRangeStyle24.StyleInfo.ReadOnly = false;
             gridRangeStyle24.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
-            gridRangeStyle25.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 1, 1, 1);
-            gridRangeStyle25.StyleInfo.Text = "ID";
-            gridRangeStyle26.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 2, 1, 2);
-            gridRangeStyle26.StyleInfo.Text = "코드";
-            gridRangeStyle27.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 3, 1, 3);
-            gridRangeStyle27.StyleInfo.Text = "연장구분";
-            gridRangeStyle28.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 4, 1, 5);
-            gridRangeStyle28.StyleInfo.Text = "변경 연장(국경일)";
-            gridRangeStyle29.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 6, 1, 7);
-            gridRangeStyle29.StyleInfo.Text = "변경 연장(유휴일)";
-            gridRangeStyle30.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 8, 1, 9);
-            gridRangeStyle30.StyleInfo.Text = "변경 연장(무휴일)";
-            gridRangeStyle31.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 10, 1, 11);
-            gridRangeStyle31.StyleInfo.Text = "변경 연장(평일)";
-            gridRangeStyle32.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 12, 1, 13);
-            gridRangeStyle32.StyleInfo.Text = "연장 그룹 구분";
-            gridRangeStyle33.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 14, 1, 14);
-            gridRangeStyle33.StyleInfo.Text = "연장 공제 순서";
-            gridRangeStyle34.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 15, 1, 15);
-            gridRangeStyle34.StyleInfo.Text = "연장 그룹 순서";
-            gridRangeStyle35.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 16);
-            gridRangeStyle35.StyleInfo.Text = "지급항목(관리직)";
-            gridRangeStyle36.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 17);
-            gridRangeStyle36.StyleInfo.Text = "Allowance(Manager)";
-            gridRangeStyle37.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 18);
-            gridRangeStyle37.StyleInfo.Text = "Rate(%)";
-            gridRangeStyle38.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 19);
-            gridRangeStyle38.StyleInfo.Text = "지급항목(생산직)";
-            gridRangeStyle39.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 20);
-            gridRangeStyle39.StyleInfo.Text = "Allowance(Production)";
-            gridRangeStyle40.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 21);
-            gridRangeStyle40.StyleInfo.Text = "Rate(%)";
-            gridRangeStyle41.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 22, 1, 22);
-            gridRangeStyle41.StyleInfo.Text = "기본 여부";
-            gridRangeStyle42.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 23, 1, 23);
-            gridRangeStyle42.StyleInfo.Text = "순서";
-            gridRangeStyle43.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 24, 1, 24);
-            gridRangeStyle43.StyleInfo.Text = "비고";
-            gridRangeStyle44.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 25, 1, 25);
-            gridRangeStyle44.StyleInfo.Text = "사용 여부";
-            gridRangeStyle45.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 26, 1, 26);
-            gridRangeStyle45.StyleInfo.Text = "적용 시작일자";
-            gridRangeStyle46.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 27, 1, 27);
-            gridRangeStyle46.StyleInfo.Text = "적용 종료일자";
-            gridRangeStyle47.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 16);
-            gridRangeStyle47.StyleInfo.Text = "코드";
-            gridRangeStyle48.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 17);
-            gridRangeStyle48.StyleInfo.Text = "항목명";
-            gridRangeStyle49.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 18);
-            gridRangeStyle49.StyleInfo.Text = "지급율(%)";
-            gridRangeStyle50.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 19);
-            gridRangeStyle50.StyleInfo.Text = "코드";
-            gridRangeStyle51.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 20);
-            gridRangeStyle51.StyleInfo.Text = "항목명";
-            gridRangeStyle52.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 21);
-            gridRangeStyle52.StyleInfo.Text = "지급율(%)";
+            gridRangeStyle25.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(28);
+            gridRangeStyle25.StyleInfo.CellType = "CheckBox";
+            gridRangeStyle25.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle25.StyleInfo.CheckBoxOptions.CheckedValue = "Y";
+            gridRangeStyle25.StyleInfo.CheckBoxOptions.UncheckedValue = "N";
+            gridRangeStyle25.StyleInfo.Clickable = true;
+            gridRangeStyle25.StyleInfo.Font.Bold = false;
+            gridRangeStyle25.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle25.StyleInfo.Font.Italic = false;
+            gridRangeStyle25.StyleInfo.Font.Size = 9F;
+            gridRangeStyle25.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle25.StyleInfo.Font.Underline = false;
+            gridRangeStyle25.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle25.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
+            gridRangeStyle25.StyleInfo.ReadOnly = false;
+            gridRangeStyle25.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle26.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(29, 30);
+            gridRangeStyle26.StyleInfo.CellType = "ComboBox";
+            gridRangeStyle26.StyleInfo.CellValueType = typeof(System.DateTime);
+            gridRangeStyle26.StyleInfo.Clickable = true;
+            gridRangeStyle26.StyleInfo.CultureInfo = new System.Globalization.CultureInfo("");
+            gridRangeStyle26.StyleInfo.Font.Bold = false;
+            gridRangeStyle26.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle26.StyleInfo.Font.Italic = false;
+            gridRangeStyle26.StyleInfo.Font.Size = 9F;
+            gridRangeStyle26.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle26.StyleInfo.Font.Underline = false;
+            gridRangeStyle26.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle26.StyleInfo.Format = "yyyy-MM-dd";
+            gridRangeStyle26.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle26.StyleInfo.ReadOnly = false;
+            gridRangeStyle26.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle27.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 1, 1, 1);
+            gridRangeStyle27.StyleInfo.Text = "ID";
+            gridRangeStyle28.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 2, 1, 2);
+            gridRangeStyle28.StyleInfo.Text = "코드";
+            gridRangeStyle29.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 3, 1, 3);
+            gridRangeStyle29.StyleInfo.Text = "연장구분";
+            gridRangeStyle30.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 4, 1, 5);
+            gridRangeStyle30.StyleInfo.Text = "변경 연장(국경일)";
+            gridRangeStyle31.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 6, 1, 7);
+            gridRangeStyle31.StyleInfo.Text = "변경 연장(유휴일)";
+            gridRangeStyle32.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 8, 1, 9);
+            gridRangeStyle32.StyleInfo.Text = "변경 연장(무휴일)";
+            gridRangeStyle33.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 10, 1, 11);
+            gridRangeStyle33.StyleInfo.Text = "변경 연장(평일)";
+            gridRangeStyle34.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 12, 1, 13);
+            gridRangeStyle34.StyleInfo.Text = "연장 그룹 구분";
+            gridRangeStyle35.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 14, 1, 14);
+            gridRangeStyle35.StyleInfo.Text = "연장 공제 순서";
+            gridRangeStyle36.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 15, 1, 15);
+            gridRangeStyle36.StyleInfo.Text = "연장 그룹 순서";
+            gridRangeStyle37.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 16);
+            gridRangeStyle37.StyleInfo.Text = "지급항목(관리직)";
+            gridRangeStyle38.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 17);
+            gridRangeStyle38.StyleInfo.Text = "Allowance(Manager)";
+            gridRangeStyle39.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 18);
+            gridRangeStyle39.StyleInfo.Text = "Rate(%)";
+            gridRangeStyle40.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 19);
+            gridRangeStyle40.StyleInfo.Text = "지급항목(생산직)";
+            gridRangeStyle41.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 20);
+            gridRangeStyle41.StyleInfo.Text = "Allowance(Production)";
+            gridRangeStyle42.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 21);
+            gridRangeStyle42.StyleInfo.Text = "Rate(%)";
+            gridRangeStyle43.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 22);
+            gridRangeStyle43.StyleInfo.Text = "인쇄 코드";
+            gridRangeStyle44.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 23);
+            gridRangeStyle44.StyleInfo.Text = "인쇄명";
+            gridRangeStyle45.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 24, 1, 24);
+            gridRangeStyle45.StyleInfo.Text = "인쇄구분";
+            gridRangeStyle46.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 25, 1, 25);
+            gridRangeStyle46.StyleInfo.Text = "기본 여부";
+            gridRangeStyle47.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 26, 1, 26);
+            gridRangeStyle47.StyleInfo.Text = "순서";
+            gridRangeStyle48.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 27, 1, 27);
+            gridRangeStyle48.StyleInfo.Text = "비고";
+            gridRangeStyle49.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 28, 1, 28);
+            gridRangeStyle49.StyleInfo.Text = "사용 여부";
+            gridRangeStyle50.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 29, 1, 29);
+            gridRangeStyle50.StyleInfo.Text = "적용 시작일자";
+            gridRangeStyle51.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(0, 30, 1, 30);
+            gridRangeStyle51.StyleInfo.Text = "적용 종료일자";
+            gridRangeStyle52.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 16);
+            gridRangeStyle52.StyleInfo.Text = "코드";
+            gridRangeStyle53.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 17);
+            gridRangeStyle53.StyleInfo.Text = "항목명";
+            gridRangeStyle54.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 18);
+            gridRangeStyle54.StyleInfo.Text = "지급율(%)";
+            gridRangeStyle55.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 19);
+            gridRangeStyle55.StyleInfo.Text = "코드";
+            gridRangeStyle56.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 20);
+            gridRangeStyle56.StyleInfo.Text = "항목명";
+            gridRangeStyle57.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(1, 21);
+            gridRangeStyle57.StyleInfo.Text = "지급율(%)";
+            gridRangeStyle58.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cells(1, 22, 1, 23);
+            gridRangeStyle58.StyleInfo.Text = "";
             this.IGR_OT_TYPE.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
             gridRangeStyle1,
             gridRangeStyle2,
@@ -1028,7 +1372,13 @@
             gridRangeStyle49,
             gridRangeStyle50,
             gridRangeStyle51,
-            gridRangeStyle52});
+            gridRangeStyle52,
+            gridRangeStyle53,
+            gridRangeStyle54,
+            gridRangeStyle55,
+            gridRangeStyle56,
+            gridRangeStyle57,
+            gridRangeStyle58});
             this.IGR_OT_TYPE.BaseGrid.RefreshCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridRefreshCurrentCellBehavior.RefreshRow;
             this.IGR_OT_TYPE.BaseGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.IGR_OT_TYPE.BaseGrid.RowCount = 1;
@@ -1041,7 +1391,7 @@
             this.IGR_OT_TYPE.BaseGrid.TabIndex = 0;
             this.IGR_OT_TYPE.BaseGrid.ThemesEnabled = true;
             this.IGR_OT_TYPE.BaseGrid.UseRightToLeftCompatibleTextBox = true;
-            this.IGR_OT_TYPE.ColCount = 27;
+            this.IGR_OT_TYPE.ColCount = 30;
             this.IGR_OT_TYPE.ColHeaderCount = 2;
             isGridAdvExRangeElement1.Bottom = 1;
             isGridAdvExRangeElement1.Left = 0;
@@ -1139,6 +1489,18 @@
             isGridAdvExRangeElement24.Left = 15;
             isGridAdvExRangeElement24.Right = 15;
             isGridAdvExRangeElement24.Top = 0;
+            isGridAdvExRangeElement25.Bottom = 1;
+            isGridAdvExRangeElement25.Left = 28;
+            isGridAdvExRangeElement25.Right = 28;
+            isGridAdvExRangeElement25.Top = 0;
+            isGridAdvExRangeElement26.Bottom = 1;
+            isGridAdvExRangeElement26.Left = 29;
+            isGridAdvExRangeElement26.Right = 29;
+            isGridAdvExRangeElement26.Top = 0;
+            isGridAdvExRangeElement27.Bottom = 1;
+            isGridAdvExRangeElement27.Left = 30;
+            isGridAdvExRangeElement27.Right = 30;
+            isGridAdvExRangeElement27.Top = 0;
             this.IGR_OT_TYPE.ColHeaderMergeElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExRangeElement[] {
             isGridAdvExRangeElement1,
             isGridAdvExRangeElement2,
@@ -1163,7 +1525,10 @@
             isGridAdvExRangeElement21,
             isGridAdvExRangeElement22,
             isGridAdvExRangeElement23,
-            isGridAdvExRangeElement24});
+            isGridAdvExRangeElement24,
+            isGridAdvExRangeElement25,
+            isGridAdvExRangeElement26,
+            isGridAdvExRangeElement27});
             this.IGR_OT_TYPE.DataAdapter = this.IDA_OT_TYPE;
             this.IGR_OT_TYPE.FrozenColCount = 3;
             isGridAdvExColElement1.ColumnType = "NumberEdit";
@@ -1845,21 +2210,20 @@
             isGridAdvExColElement21.Updatable = 1;
             isGridAdvExColElement21.Visible = 1;
             isGridAdvExColElement21.Width = 70;
-            isGridAdvExColElement22.CheckedString = "Y";
-            isGridAdvExColElement22.ColumnType = "CheckBox";
-            isGridAdvExColElement22.DataColumn = "DEFAULT_FLAG";
+            isGridAdvExColElement22.ColumnType = "TextEdit";
+            isGridAdvExColElement22.DataColumn = "OT_TYPE_PRINT_CODE";
             isGridAdvExColElement22.DataOrdinal = 21;
             isGridAdvExColElement22.DataType = "System.String";
             isGridAdvExColElement22.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement22.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement43.Default = "Default Y/N";
-            isGridAdvExTLHeaderElement43.TL1_KR = "기본 여부";
+            isGridAdvExTLHeaderElement43.Default = "";
+            isGridAdvExTLHeaderElement43.TL1_KR = null;
             isGridAdvExTLHeaderElement43.TL2_CN = null;
             isGridAdvExTLHeaderElement43.TL3_VN = null;
             isGridAdvExTLHeaderElement43.TL4_JP = null;
             isGridAdvExTLHeaderElement43.TL5_XAA = null;
-            isGridAdvExTLHeaderElement44.Default = "Default Y/N";
-            isGridAdvExTLHeaderElement44.TL1_KR = "기본 여부";
+            isGridAdvExTLHeaderElement44.Default = "Print Code";
+            isGridAdvExTLHeaderElement44.TL1_KR = "인쇄 코드";
             isGridAdvExTLHeaderElement44.TL2_CN = null;
             isGridAdvExTLHeaderElement44.TL3_VN = null;
             isGridAdvExTLHeaderElement44.TL4_JP = null;
@@ -1867,7 +2231,7 @@
             isGridAdvExColElement22.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement43,
             isGridAdvExTLHeaderElement44});
-            isGridAdvExColElement22.HeaderPrompt = "Default Y/N";
+            isGridAdvExColElement22.HeaderPrompt = "";
             isGridAdvExColElement22.Insertable = 1;
             isGridAdvExColElement22.MergeCell = 0;
             isGridAdvExColElement22.Nullable = 1;
@@ -1875,24 +2239,24 @@
             isGridAdvExColElement22.ReadOnly = 0;
             isGridAdvExColElement22.Symbol = "";
             isGridAdvExColElement22.SymbolPosition = "";
-            isGridAdvExColElement22.UncheckedString = "N";
             isGridAdvExColElement22.Updatable = 1;
+            isGridAdvExColElement22.UseCharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             isGridAdvExColElement22.Visible = 1;
-            isGridAdvExColElement22.Width = 60;
-            isGridAdvExColElement23.ColumnType = "NumberEdit";
-            isGridAdvExColElement23.DataColumn = "SORT_NUM";
+            isGridAdvExColElement22.Width = 65;
+            isGridAdvExColElement23.ColumnType = "TextEdit";
+            isGridAdvExColElement23.DataColumn = "OT_TYPE_PRINT_NAME";
             isGridAdvExColElement23.DataOrdinal = 22;
-            isGridAdvExColElement23.DataType = "System.Decimal";
+            isGridAdvExColElement23.DataType = "System.String";
             isGridAdvExColElement23.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement23.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement45.Default = "Sort No.";
-            isGridAdvExTLHeaderElement45.TL1_KR = "순서";
+            isGridAdvExTLHeaderElement45.Default = "";
+            isGridAdvExTLHeaderElement45.TL1_KR = null;
             isGridAdvExTLHeaderElement45.TL2_CN = null;
             isGridAdvExTLHeaderElement45.TL3_VN = null;
             isGridAdvExTLHeaderElement45.TL4_JP = null;
             isGridAdvExTLHeaderElement45.TL5_XAA = null;
-            isGridAdvExTLHeaderElement46.Default = "Sort No.";
-            isGridAdvExTLHeaderElement46.TL1_KR = "순서";
+            isGridAdvExTLHeaderElement46.Default = "Print Name";
+            isGridAdvExTLHeaderElement46.TL1_KR = "인쇄명";
             isGridAdvExTLHeaderElement46.TL2_CN = null;
             isGridAdvExTLHeaderElement46.TL3_VN = null;
             isGridAdvExTLHeaderElement46.TL4_JP = null;
@@ -1900,7 +2264,7 @@
             isGridAdvExColElement23.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement45,
             isGridAdvExTLHeaderElement46});
-            isGridAdvExColElement23.HeaderPrompt = "Sort No.";
+            isGridAdvExColElement23.HeaderPrompt = "";
             isGridAdvExColElement23.Insertable = 1;
             isGridAdvExColElement23.MergeCell = 0;
             isGridAdvExColElement23.Nullable = 1;
@@ -1910,21 +2274,22 @@
             isGridAdvExColElement23.SymbolPosition = "";
             isGridAdvExColElement23.Updatable = 1;
             isGridAdvExColElement23.Visible = 1;
-            isGridAdvExColElement23.Width = 70;
-            isGridAdvExColElement24.ColumnType = "TextEdit";
-            isGridAdvExColElement24.DataColumn = "DESCRIPTION";
+            isGridAdvExColElement23.Width = 150;
+            isGridAdvExColElement24.CheckedString = "Y";
+            isGridAdvExColElement24.ColumnType = "CheckBox";
+            isGridAdvExColElement24.DataColumn = "PRINT_FLAG";
             isGridAdvExColElement24.DataOrdinal = 23;
             isGridAdvExColElement24.DataType = "System.String";
             isGridAdvExColElement24.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement24.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement47.Default = "Description";
-            isGridAdvExTLHeaderElement47.TL1_KR = "비고";
+            isGridAdvExTLHeaderElement47.Default = "Print Flag";
+            isGridAdvExTLHeaderElement47.TL1_KR = "인쇄구분";
             isGridAdvExTLHeaderElement47.TL2_CN = null;
             isGridAdvExTLHeaderElement47.TL3_VN = null;
             isGridAdvExTLHeaderElement47.TL4_JP = null;
             isGridAdvExTLHeaderElement47.TL5_XAA = null;
-            isGridAdvExTLHeaderElement48.Default = "Description";
-            isGridAdvExTLHeaderElement48.TL1_KR = "비고";
+            isGridAdvExTLHeaderElement48.Default = "Print Flag";
+            isGridAdvExTLHeaderElement48.TL1_KR = "인쇄구분";
             isGridAdvExTLHeaderElement48.TL2_CN = null;
             isGridAdvExTLHeaderElement48.TL3_VN = null;
             isGridAdvExTLHeaderElement48.TL4_JP = null;
@@ -1932,7 +2297,7 @@
             isGridAdvExColElement24.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement47,
             isGridAdvExTLHeaderElement48});
-            isGridAdvExColElement24.HeaderPrompt = "Description";
+            isGridAdvExColElement24.HeaderPrompt = "Print Flag";
             isGridAdvExColElement24.Insertable = 1;
             isGridAdvExColElement24.MergeCell = 0;
             isGridAdvExColElement24.Nullable = 1;
@@ -1940,24 +2305,25 @@
             isGridAdvExColElement24.ReadOnly = 0;
             isGridAdvExColElement24.Symbol = "";
             isGridAdvExColElement24.SymbolPosition = "";
+            isGridAdvExColElement24.UncheckedString = "N";
             isGridAdvExColElement24.Updatable = 1;
             isGridAdvExColElement24.Visible = 1;
-            isGridAdvExColElement24.Width = 200;
+            isGridAdvExColElement24.Width = 70;
             isGridAdvExColElement25.CheckedString = "Y";
             isGridAdvExColElement25.ColumnType = "CheckBox";
-            isGridAdvExColElement25.DataColumn = "ENABLED_FLAG";
+            isGridAdvExColElement25.DataColumn = "DEFAULT_FLAG";
             isGridAdvExColElement25.DataOrdinal = 24;
             isGridAdvExColElement25.DataType = "System.String";
             isGridAdvExColElement25.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement25.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement49.Default = "Enabled Flag";
-            isGridAdvExTLHeaderElement49.TL1_KR = "사용 여부";
+            isGridAdvExTLHeaderElement49.Default = "Default Y/N";
+            isGridAdvExTLHeaderElement49.TL1_KR = "기본 여부";
             isGridAdvExTLHeaderElement49.TL2_CN = null;
             isGridAdvExTLHeaderElement49.TL3_VN = null;
             isGridAdvExTLHeaderElement49.TL4_JP = null;
             isGridAdvExTLHeaderElement49.TL5_XAA = null;
-            isGridAdvExTLHeaderElement50.Default = "Enabled Flag";
-            isGridAdvExTLHeaderElement50.TL1_KR = "사용 여부";
+            isGridAdvExTLHeaderElement50.Default = "Default Y/N";
+            isGridAdvExTLHeaderElement50.TL1_KR = "기본 여부";
             isGridAdvExTLHeaderElement50.TL2_CN = null;
             isGridAdvExTLHeaderElement50.TL3_VN = null;
             isGridAdvExTLHeaderElement50.TL4_JP = null;
@@ -1965,7 +2331,7 @@
             isGridAdvExColElement25.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement49,
             isGridAdvExTLHeaderElement50});
-            isGridAdvExColElement25.HeaderPrompt = "Enabled Flag";
+            isGridAdvExColElement25.HeaderPrompt = "Default Y/N";
             isGridAdvExColElement25.Insertable = 1;
             isGridAdvExColElement25.MergeCell = 0;
             isGridAdvExColElement25.Nullable = 1;
@@ -1977,20 +2343,20 @@
             isGridAdvExColElement25.Updatable = 1;
             isGridAdvExColElement25.Visible = 1;
             isGridAdvExColElement25.Width = 60;
-            isGridAdvExColElement26.ColumnType = "DateTimeEdit";
-            isGridAdvExColElement26.DataColumn = "EFFECTIVE_DATE_FR";
+            isGridAdvExColElement26.ColumnType = "NumberEdit";
+            isGridAdvExColElement26.DataColumn = "SORT_NUM";
             isGridAdvExColElement26.DataOrdinal = 25;
-            isGridAdvExColElement26.DataType = "System.DateTime";
+            isGridAdvExColElement26.DataType = "System.Decimal";
             isGridAdvExColElement26.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement26.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement51.Default = "Effective Date From";
-            isGridAdvExTLHeaderElement51.TL1_KR = "적용 시작일자";
+            isGridAdvExTLHeaderElement51.Default = "Sort No.";
+            isGridAdvExTLHeaderElement51.TL1_KR = "순서";
             isGridAdvExTLHeaderElement51.TL2_CN = null;
             isGridAdvExTLHeaderElement51.TL3_VN = null;
             isGridAdvExTLHeaderElement51.TL4_JP = null;
             isGridAdvExTLHeaderElement51.TL5_XAA = null;
-            isGridAdvExTLHeaderElement52.Default = "Effective Date From";
-            isGridAdvExTLHeaderElement52.TL1_KR = "적용 시작일자";
+            isGridAdvExTLHeaderElement52.Default = "Sort No.";
+            isGridAdvExTLHeaderElement52.TL1_KR = "순서";
             isGridAdvExTLHeaderElement52.TL2_CN = null;
             isGridAdvExTLHeaderElement52.TL3_VN = null;
             isGridAdvExTLHeaderElement52.TL4_JP = null;
@@ -1998,31 +2364,31 @@
             isGridAdvExColElement26.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement51,
             isGridAdvExTLHeaderElement52});
-            isGridAdvExColElement26.HeaderPrompt = "Effective Date From";
+            isGridAdvExColElement26.HeaderPrompt = "Sort No.";
             isGridAdvExColElement26.Insertable = 1;
             isGridAdvExColElement26.MergeCell = 0;
-            isGridAdvExColElement26.Nullable = 0;
+            isGridAdvExColElement26.Nullable = 1;
             isGridAdvExColElement26.Ordinal = 25;
             isGridAdvExColElement26.ReadOnly = 0;
             isGridAdvExColElement26.Symbol = "";
             isGridAdvExColElement26.SymbolPosition = "";
             isGridAdvExColElement26.Updatable = 1;
             isGridAdvExColElement26.Visible = 1;
-            isGridAdvExColElement26.Width = 100;
-            isGridAdvExColElement27.ColumnType = "DateTimeEdit";
-            isGridAdvExColElement27.DataColumn = "EFFECTIVE_DATE_TO";
+            isGridAdvExColElement26.Width = 70;
+            isGridAdvExColElement27.ColumnType = "TextEdit";
+            isGridAdvExColElement27.DataColumn = "DESCRIPTION";
             isGridAdvExColElement27.DataOrdinal = 26;
-            isGridAdvExColElement27.DataType = "System.DateTime";
+            isGridAdvExColElement27.DataType = "System.String";
             isGridAdvExColElement27.DateFormat = "yyyy-MM-dd";
             isGridAdvExColElement27.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement53.Default = "Effective Date To";
-            isGridAdvExTLHeaderElement53.TL1_KR = "적용 종료일자";
+            isGridAdvExTLHeaderElement53.Default = "Description";
+            isGridAdvExTLHeaderElement53.TL1_KR = "비고";
             isGridAdvExTLHeaderElement53.TL2_CN = null;
             isGridAdvExTLHeaderElement53.TL3_VN = null;
             isGridAdvExTLHeaderElement53.TL4_JP = null;
             isGridAdvExTLHeaderElement53.TL5_XAA = null;
-            isGridAdvExTLHeaderElement54.Default = "Effective Date To";
-            isGridAdvExTLHeaderElement54.TL1_KR = "적용 종료일자";
+            isGridAdvExTLHeaderElement54.Default = "Description";
+            isGridAdvExTLHeaderElement54.TL1_KR = "비고";
             isGridAdvExTLHeaderElement54.TL2_CN = null;
             isGridAdvExTLHeaderElement54.TL3_VN = null;
             isGridAdvExTLHeaderElement54.TL4_JP = null;
@@ -2030,7 +2396,7 @@
             isGridAdvExColElement27.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
             isGridAdvExTLHeaderElement53,
             isGridAdvExTLHeaderElement54});
-            isGridAdvExColElement27.HeaderPrompt = "Effective Date To";
+            isGridAdvExColElement27.HeaderPrompt = "Description";
             isGridAdvExColElement27.Insertable = 1;
             isGridAdvExColElement27.MergeCell = 0;
             isGridAdvExColElement27.Nullable = 1;
@@ -2040,7 +2406,105 @@
             isGridAdvExColElement27.SymbolPosition = "";
             isGridAdvExColElement27.Updatable = 1;
             isGridAdvExColElement27.Visible = 1;
-            isGridAdvExColElement27.Width = 100;
+            isGridAdvExColElement27.Width = 200;
+            isGridAdvExColElement28.CheckedString = "Y";
+            isGridAdvExColElement28.ColumnType = "CheckBox";
+            isGridAdvExColElement28.DataColumn = "ENABLED_FLAG";
+            isGridAdvExColElement28.DataOrdinal = 27;
+            isGridAdvExColElement28.DataType = "System.String";
+            isGridAdvExColElement28.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement28.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement55.Default = "Enabled Flag";
+            isGridAdvExTLHeaderElement55.TL1_KR = "사용 여부";
+            isGridAdvExTLHeaderElement55.TL2_CN = null;
+            isGridAdvExTLHeaderElement55.TL3_VN = null;
+            isGridAdvExTLHeaderElement55.TL4_JP = null;
+            isGridAdvExTLHeaderElement55.TL5_XAA = null;
+            isGridAdvExTLHeaderElement56.Default = "Enabled Flag";
+            isGridAdvExTLHeaderElement56.TL1_KR = "사용 여부";
+            isGridAdvExTLHeaderElement56.TL2_CN = null;
+            isGridAdvExTLHeaderElement56.TL3_VN = null;
+            isGridAdvExTLHeaderElement56.TL4_JP = null;
+            isGridAdvExTLHeaderElement56.TL5_XAA = null;
+            isGridAdvExColElement28.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement55,
+            isGridAdvExTLHeaderElement56});
+            isGridAdvExColElement28.HeaderPrompt = "Enabled Flag";
+            isGridAdvExColElement28.Insertable = 1;
+            isGridAdvExColElement28.MergeCell = 0;
+            isGridAdvExColElement28.Nullable = 1;
+            isGridAdvExColElement28.Ordinal = 27;
+            isGridAdvExColElement28.ReadOnly = 0;
+            isGridAdvExColElement28.Symbol = "";
+            isGridAdvExColElement28.SymbolPosition = "";
+            isGridAdvExColElement28.UncheckedString = "N";
+            isGridAdvExColElement28.Updatable = 1;
+            isGridAdvExColElement28.Visible = 1;
+            isGridAdvExColElement28.Width = 60;
+            isGridAdvExColElement29.ColumnType = "DateTimeEdit";
+            isGridAdvExColElement29.DataColumn = "EFFECTIVE_DATE_FR";
+            isGridAdvExColElement29.DataOrdinal = 28;
+            isGridAdvExColElement29.DataType = "System.DateTime";
+            isGridAdvExColElement29.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement29.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement57.Default = "Effective Date From";
+            isGridAdvExTLHeaderElement57.TL1_KR = "적용 시작일자";
+            isGridAdvExTLHeaderElement57.TL2_CN = null;
+            isGridAdvExTLHeaderElement57.TL3_VN = null;
+            isGridAdvExTLHeaderElement57.TL4_JP = null;
+            isGridAdvExTLHeaderElement57.TL5_XAA = null;
+            isGridAdvExTLHeaderElement58.Default = "Effective Date From";
+            isGridAdvExTLHeaderElement58.TL1_KR = "적용 시작일자";
+            isGridAdvExTLHeaderElement58.TL2_CN = null;
+            isGridAdvExTLHeaderElement58.TL3_VN = null;
+            isGridAdvExTLHeaderElement58.TL4_JP = null;
+            isGridAdvExTLHeaderElement58.TL5_XAA = null;
+            isGridAdvExColElement29.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement57,
+            isGridAdvExTLHeaderElement58});
+            isGridAdvExColElement29.HeaderPrompt = "Effective Date From";
+            isGridAdvExColElement29.Insertable = 1;
+            isGridAdvExColElement29.MergeCell = 0;
+            isGridAdvExColElement29.Nullable = 0;
+            isGridAdvExColElement29.Ordinal = 28;
+            isGridAdvExColElement29.ReadOnly = 0;
+            isGridAdvExColElement29.Symbol = "";
+            isGridAdvExColElement29.SymbolPosition = "";
+            isGridAdvExColElement29.Updatable = 1;
+            isGridAdvExColElement29.Visible = 1;
+            isGridAdvExColElement29.Width = 100;
+            isGridAdvExColElement30.ColumnType = "DateTimeEdit";
+            isGridAdvExColElement30.DataColumn = "EFFECTIVE_DATE_TO";
+            isGridAdvExColElement30.DataOrdinal = 29;
+            isGridAdvExColElement30.DataType = "System.DateTime";
+            isGridAdvExColElement30.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement30.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement59.Default = "Effective Date To";
+            isGridAdvExTLHeaderElement59.TL1_KR = "적용 종료일자";
+            isGridAdvExTLHeaderElement59.TL2_CN = null;
+            isGridAdvExTLHeaderElement59.TL3_VN = null;
+            isGridAdvExTLHeaderElement59.TL4_JP = null;
+            isGridAdvExTLHeaderElement59.TL5_XAA = null;
+            isGridAdvExTLHeaderElement60.Default = "Effective Date To";
+            isGridAdvExTLHeaderElement60.TL1_KR = "적용 종료일자";
+            isGridAdvExTLHeaderElement60.TL2_CN = null;
+            isGridAdvExTLHeaderElement60.TL3_VN = null;
+            isGridAdvExTLHeaderElement60.TL4_JP = null;
+            isGridAdvExTLHeaderElement60.TL5_XAA = null;
+            isGridAdvExColElement30.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement59,
+            isGridAdvExTLHeaderElement60});
+            isGridAdvExColElement30.HeaderPrompt = "Effective Date To";
+            isGridAdvExColElement30.Insertable = 1;
+            isGridAdvExColElement30.MergeCell = 0;
+            isGridAdvExColElement30.Nullable = 1;
+            isGridAdvExColElement30.Ordinal = 29;
+            isGridAdvExColElement30.ReadOnly = 0;
+            isGridAdvExColElement30.Symbol = "";
+            isGridAdvExColElement30.SymbolPosition = "";
+            isGridAdvExColElement30.Updatable = 1;
+            isGridAdvExColElement30.Visible = 1;
+            isGridAdvExColElement30.Width = 100;
             this.IGR_OT_TYPE.GridAdvExColElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExColElement[] {
             isGridAdvExColElement1,
             isGridAdvExColElement2,
@@ -2068,7 +2532,10 @@
             isGridAdvExColElement24,
             isGridAdvExColElement25,
             isGridAdvExColElement26,
-            isGridAdvExColElement27});
+            isGridAdvExColElement27,
+            isGridAdvExColElement28,
+            isGridAdvExColElement29,
+            isGridAdvExColElement30});
             this.IGR_OT_TYPE.Location = new System.Drawing.Point(5, 69);
             this.IGR_OT_TYPE.Name = "IGR_OT_TYPE";
             this.IGR_OT_TYPE.Size = new System.Drawing.Size(948, 504);
@@ -2188,35 +2655,50 @@
             isOraBindingElement21.MemberValue = "ALLOWANCE_RATE_20";
             isOraBindingElement21.Ordinal = 21;
             isOraBindingElement22.LastValue = null;
-            isOraBindingElement22.MappingColumn = "DEFAULT_FLAG";
+            isOraBindingElement22.MappingColumn = "OT_TYPE_PRINT_CODE";
             isOraBindingElement22.MemberControl = this.IGR_OT_TYPE;
-            isOraBindingElement22.MemberValue = "DEFAULT_FLAG";
+            isOraBindingElement22.MemberValue = "OT_TYPE_PRINT_CODE";
             isOraBindingElement22.Ordinal = 22;
             isOraBindingElement23.LastValue = null;
-            isOraBindingElement23.MappingColumn = "SORT_NUM";
+            isOraBindingElement23.MappingColumn = "OT_TYPE_PRINT_NAME";
             isOraBindingElement23.MemberControl = this.IGR_OT_TYPE;
-            isOraBindingElement23.MemberValue = "SORT_NUM";
+            isOraBindingElement23.MemberValue = "OT_TYPE_PRINT_NAME";
             isOraBindingElement23.Ordinal = 23;
             isOraBindingElement24.LastValue = null;
-            isOraBindingElement24.MappingColumn = "DESCRIPTION";
+            isOraBindingElement24.MappingColumn = "PRINT_FLAG";
             isOraBindingElement24.MemberControl = this.IGR_OT_TYPE;
-            isOraBindingElement24.MemberValue = "DESCRIPTION";
+            isOraBindingElement24.MemberValue = "PRINT_FLAG";
             isOraBindingElement24.Ordinal = 24;
             isOraBindingElement25.LastValue = null;
-            isOraBindingElement25.MappingColumn = "ENABLED_FLAG";
+            isOraBindingElement25.MappingColumn = "DEFAULT_FLAG";
             isOraBindingElement25.MemberControl = this.IGR_OT_TYPE;
-            isOraBindingElement25.MemberValue = "ENABLED_FLAG";
+            isOraBindingElement25.MemberValue = "DEFAULT_FLAG";
             isOraBindingElement25.Ordinal = 25;
             isOraBindingElement26.LastValue = null;
-            isOraBindingElement26.MappingColumn = "EFFECTIVE_DATE_FR";
+            isOraBindingElement26.MappingColumn = "SORT_NUM";
             isOraBindingElement26.MemberControl = this.IGR_OT_TYPE;
-            isOraBindingElement26.MemberValue = "EFFECTIVE_DATE_FR";
+            isOraBindingElement26.MemberValue = "SORT_NUM";
             isOraBindingElement26.Ordinal = 26;
             isOraBindingElement27.LastValue = null;
-            isOraBindingElement27.MappingColumn = "EFFECTIVE_DATE_TO";
+            isOraBindingElement27.MappingColumn = "DESCRIPTION";
             isOraBindingElement27.MemberControl = this.IGR_OT_TYPE;
-            isOraBindingElement27.MemberValue = "EFFECTIVE_DATE_TO";
+            isOraBindingElement27.MemberValue = "DESCRIPTION";
             isOraBindingElement27.Ordinal = 27;
+            isOraBindingElement28.LastValue = null;
+            isOraBindingElement28.MappingColumn = "ENABLED_FLAG";
+            isOraBindingElement28.MemberControl = this.IGR_OT_TYPE;
+            isOraBindingElement28.MemberValue = "ENABLED_FLAG";
+            isOraBindingElement28.Ordinal = 28;
+            isOraBindingElement29.LastValue = null;
+            isOraBindingElement29.MappingColumn = "EFFECTIVE_DATE_FR";
+            isOraBindingElement29.MemberControl = this.IGR_OT_TYPE;
+            isOraBindingElement29.MemberValue = "EFFECTIVE_DATE_FR";
+            isOraBindingElement29.Ordinal = 29;
+            isOraBindingElement30.LastValue = null;
+            isOraBindingElement30.MappingColumn = "EFFECTIVE_DATE_TO";
+            isOraBindingElement30.MemberControl = this.IGR_OT_TYPE;
+            isOraBindingElement30.MemberValue = "EFFECTIVE_DATE_TO";
+            isOraBindingElement30.Ordinal = 30;
             this.IDA_OT_TYPE.BindingElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraBindingElement[] {
             isOraBindingElement1,
             isOraBindingElement2,
@@ -2244,7 +2726,10 @@
             isOraBindingElement24,
             isOraBindingElement25,
             isOraBindingElement26,
-            isOraBindingElement27});
+            isOraBindingElement27,
+            isOraBindingElement28,
+            isOraBindingElement29,
+            isOraBindingElement30});
             this.IDA_OT_TYPE.CancelMember.Cancel = false;
             this.IDA_OT_TYPE.CancelMember.Member = null;
             this.IDA_OT_TYPE.CancelMember.Prompt = null;
@@ -2254,20 +2739,6 @@
             this.IDA_OT_TYPE.CancelUpdateRow = null;
             this.IDA_OT_TYPE.DataTransaction = null;
             this.IDA_OT_TYPE.FocusedControl = null;
-            // 
-            // HRMF0162
-            // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
-            this.ClientSize = new System.Drawing.Size(958, 578);
-            this.Controls.Add(this.IGR_OT_TYPE);
-            this.Controls.Add(this.gbControl);
-            this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Name = "HRMF0162";
-            this.Padding = new System.Windows.Forms.Padding(2);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Work Center";
-            this.Load += new System.EventHandler(this.HRMF0162_Load);
             isOraParamElement1.Direction = System.Data.ParameterDirection.Output;
             isOraParamElement1.MemberControl = null;
             isOraParamElement1.MemberValue = null;
@@ -2385,73 +2856,97 @@
             isOraParamElement15.MemberValue = null;
             isOraParamElement15.OraDbTypeString = "VARCHAR2";
             isOraParamElement15.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement15.ParamName = "P_DEFAULT_FLAG";
+            isOraParamElement15.ParamName = "P_PRINT_FLAG";
             isOraParamElement15.Size = 0;
-            isOraParamElement15.SourceColumn = "DEFAULT_FLAG";
+            isOraParamElement15.SourceColumn = "PRINT_FLAG";
             isOraParamElement16.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement16.MemberControl = null;
             isOraParamElement16.MemberValue = null;
-            isOraParamElement16.OraDbTypeString = "NUMBER";
-            isOraParamElement16.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement16.ParamName = "P_SORT_NUM";
-            isOraParamElement16.Size = 22;
-            isOraParamElement16.SourceColumn = "SORT_NUM";
+            isOraParamElement16.OraDbTypeString = "VARCHAR2";
+            isOraParamElement16.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement16.ParamName = "P_DEFAULT_FLAG";
+            isOraParamElement16.Size = 0;
+            isOraParamElement16.SourceColumn = "DEFAULT_FLAG";
             isOraParamElement17.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement17.MemberControl = null;
             isOraParamElement17.MemberValue = null;
-            isOraParamElement17.OraDbTypeString = "VARCHAR2";
-            isOraParamElement17.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement17.ParamName = "P_DESCRIPTION";
-            isOraParamElement17.Size = 0;
-            isOraParamElement17.SourceColumn = "DESCRIPTION";
+            isOraParamElement17.OraDbTypeString = "NUMBER";
+            isOraParamElement17.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement17.ParamName = "P_SORT_NUM";
+            isOraParamElement17.Size = 22;
+            isOraParamElement17.SourceColumn = "SORT_NUM";
             isOraParamElement18.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement18.MemberControl = null;
             isOraParamElement18.MemberValue = null;
             isOraParamElement18.OraDbTypeString = "VARCHAR2";
             isOraParamElement18.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement18.ParamName = "P_ENABLED_FLAG";
+            isOraParamElement18.ParamName = "P_DESCRIPTION";
             isOraParamElement18.Size = 0;
-            isOraParamElement18.SourceColumn = "ENABLED_FLAG";
+            isOraParamElement18.SourceColumn = "DESCRIPTION";
             isOraParamElement19.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement19.MemberControl = null;
             isOraParamElement19.MemberValue = null;
-            isOraParamElement19.OraDbTypeString = "DATE";
-            isOraParamElement19.OraType = System.Data.OracleClient.OracleType.DateTime;
-            isOraParamElement19.ParamName = "P_EFFECTIVE_DATE_FR";
+            isOraParamElement19.OraDbTypeString = "VARCHAR2";
+            isOraParamElement19.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement19.ParamName = "P_ENABLED_FLAG";
             isOraParamElement19.Size = 0;
-            isOraParamElement19.SourceColumn = "EFFECTIVE_DATE_FR";
+            isOraParamElement19.SourceColumn = "ENABLED_FLAG";
             isOraParamElement20.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement20.MemberControl = null;
             isOraParamElement20.MemberValue = null;
             isOraParamElement20.OraDbTypeString = "DATE";
             isOraParamElement20.OraType = System.Data.OracleClient.OracleType.DateTime;
-            isOraParamElement20.ParamName = "P_EFFECTIVE_DATE_TO";
+            isOraParamElement20.ParamName = "P_EFFECTIVE_DATE_FR";
             isOraParamElement20.Size = 0;
-            isOraParamElement20.SourceColumn = "EFFECTIVE_DATE_TO";
+            isOraParamElement20.SourceColumn = "EFFECTIVE_DATE_FR";
             isOraParamElement21.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement21.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement21.MemberValue = "SOB_ID";
-            isOraParamElement21.OraDbTypeString = "NUMBER";
-            isOraParamElement21.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement21.ParamName = "P_SOB_ID";
-            isOraParamElement21.Size = 22;
-            isOraParamElement21.SourceColumn = "";
+            isOraParamElement21.MemberControl = null;
+            isOraParamElement21.MemberValue = null;
+            isOraParamElement21.OraDbTypeString = "DATE";
+            isOraParamElement21.OraType = System.Data.OracleClient.OracleType.DateTime;
+            isOraParamElement21.ParamName = "P_EFFECTIVE_DATE_TO";
+            isOraParamElement21.Size = 0;
+            isOraParamElement21.SourceColumn = "EFFECTIVE_DATE_TO";
             isOraParamElement22.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement22.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement22.MemberValue = "ORG_ID";
+            isOraParamElement22.MemberValue = "SOB_ID";
             isOraParamElement22.OraDbTypeString = "NUMBER";
             isOraParamElement22.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement22.ParamName = "P_ORG_ID";
+            isOraParamElement22.ParamName = "P_SOB_ID";
             isOraParamElement22.Size = 22;
             isOraParamElement22.SourceColumn = "";
             isOraParamElement23.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement23.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement23.MemberValue = "USER_ID";
+            isOraParamElement23.MemberValue = "ORG_ID";
             isOraParamElement23.OraDbTypeString = "NUMBER";
             isOraParamElement23.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement23.ParamName = "P_USER_ID";
+            isOraParamElement23.ParamName = "P_ORG_ID";
             isOraParamElement23.Size = 22;
             isOraParamElement23.SourceColumn = "";
+            isOraParamElement24.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement24.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement24.MemberValue = "USER_ID";
+            isOraParamElement24.OraDbTypeString = "NUMBER";
+            isOraParamElement24.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement24.ParamName = "P_USER_ID";
+            isOraParamElement24.Size = 22;
+            isOraParamElement24.SourceColumn = "";
+            isOraParamElement25.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement25.MemberControl = null;
+            isOraParamElement25.MemberValue = null;
+            isOraParamElement25.OraDbTypeString = "VARCHAR2";
+            isOraParamElement25.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement25.ParamName = "P_OT_TYPE_PRINT_CODE";
+            isOraParamElement25.Size = 0;
+            isOraParamElement25.SourceColumn = "OT_TYPE_PRINT_CODE";
+            isOraParamElement26.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement26.MemberControl = null;
+            isOraParamElement26.MemberValue = null;
+            isOraParamElement26.OraDbTypeString = "VARCHAR2";
+            isOraParamElement26.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement26.ParamName = "P_OT_TYPE_PRINT_NAME";
+            isOraParamElement26.Size = 0;
+            isOraParamElement26.SourceColumn = "OT_TYPE_PRINT_NAME";
             this.IDA_OT_TYPE.InsertParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
             isOraParamElement1,
             isOraParamElement2,
@@ -2475,7 +2970,10 @@
             isOraParamElement20,
             isOraParamElement21,
             isOraParamElement22,
-            isOraParamElement23});
+            isOraParamElement23,
+            isOraParamElement24,
+            isOraParamElement25,
+            isOraParamElement26});
             this.IDA_OT_TYPE.MasterAdapter = null;
             this.IDA_OT_TYPE.OraConnection = this.isOraConnection1;
             this.IDA_OT_TYPE.OraDelete = null;
@@ -2510,7 +3008,7 @@
             isOraColElement2.LastValue = null;
             isOraColElement2.MemberControl = null;
             isOraColElement2.MemberValue = null;
-            isOraColElement2.Nullable = 1;
+            isOraColElement2.Nullable = 0;
             isOraColElement2.Ordinal = 1;
             isOraColElement2.RelationKeyColumn = null;
             isOraColElement2.ReturnParameter = null;
@@ -2528,7 +3026,7 @@
             isOraColElement3.LastValue = null;
             isOraColElement3.MemberControl = null;
             isOraColElement3.MemberValue = null;
-            isOraColElement3.Nullable = 1;
+            isOraColElement3.Nullable = 0;
             isOraColElement3.Ordinal = 2;
             isOraColElement3.RelationKeyColumn = null;
             isOraColElement3.ReturnParameter = null;
@@ -2863,10 +3361,10 @@
             isOraColElement21.TL5_XAA = null;
             isOraColElement21.Visible = null;
             isOraColElement21.Width = null;
-            isOraColElement22.DataColumn = "DEFAULT_FLAG";
+            isOraColElement22.DataColumn = "OT_TYPE_PRINT_CODE";
             isOraColElement22.DataOrdinal = 21;
             isOraColElement22.DataType = "System.String";
-            isOraColElement22.HeaderPrompt = "DEFAULT_FLAG";
+            isOraColElement22.HeaderPrompt = "OT_TYPE_PRINT_CODE";
             isOraColElement22.LastValue = null;
             isOraColElement22.MemberControl = null;
             isOraColElement22.MemberValue = null;
@@ -2881,10 +3379,10 @@
             isOraColElement22.TL5_XAA = null;
             isOraColElement22.Visible = null;
             isOraColElement22.Width = null;
-            isOraColElement23.DataColumn = "SORT_NUM";
+            isOraColElement23.DataColumn = "OT_TYPE_PRINT_NAME";
             isOraColElement23.DataOrdinal = 22;
-            isOraColElement23.DataType = "System.Decimal";
-            isOraColElement23.HeaderPrompt = "SORT_NUM";
+            isOraColElement23.DataType = "System.String";
+            isOraColElement23.HeaderPrompt = "OT_TYPE_PRINT_NAME";
             isOraColElement23.LastValue = null;
             isOraColElement23.MemberControl = null;
             isOraColElement23.MemberValue = null;
@@ -2899,10 +3397,10 @@
             isOraColElement23.TL5_XAA = null;
             isOraColElement23.Visible = null;
             isOraColElement23.Width = null;
-            isOraColElement24.DataColumn = "DESCRIPTION";
+            isOraColElement24.DataColumn = "PRINT_FLAG";
             isOraColElement24.DataOrdinal = 23;
             isOraColElement24.DataType = "System.String";
-            isOraColElement24.HeaderPrompt = "DESCRIPTION";
+            isOraColElement24.HeaderPrompt = "PRINT_FLAG";
             isOraColElement24.LastValue = null;
             isOraColElement24.MemberControl = null;
             isOraColElement24.MemberValue = null;
@@ -2917,10 +3415,10 @@
             isOraColElement24.TL5_XAA = null;
             isOraColElement24.Visible = null;
             isOraColElement24.Width = null;
-            isOraColElement25.DataColumn = "ENABLED_FLAG";
+            isOraColElement25.DataColumn = "DEFAULT_FLAG";
             isOraColElement25.DataOrdinal = 24;
             isOraColElement25.DataType = "System.String";
-            isOraColElement25.HeaderPrompt = "ENABLED_FLAG";
+            isOraColElement25.HeaderPrompt = "DEFAULT_FLAG";
             isOraColElement25.LastValue = null;
             isOraColElement25.MemberControl = null;
             isOraColElement25.MemberValue = null;
@@ -2935,10 +3433,10 @@
             isOraColElement25.TL5_XAA = null;
             isOraColElement25.Visible = null;
             isOraColElement25.Width = null;
-            isOraColElement26.DataColumn = "EFFECTIVE_DATE_FR";
+            isOraColElement26.DataColumn = "SORT_NUM";
             isOraColElement26.DataOrdinal = 25;
-            isOraColElement26.DataType = "System.DateTime";
-            isOraColElement26.HeaderPrompt = "EFFECTIVE_DATE_FR";
+            isOraColElement26.DataType = "System.Decimal";
+            isOraColElement26.HeaderPrompt = "SORT_NUM";
             isOraColElement26.LastValue = null;
             isOraColElement26.MemberControl = null;
             isOraColElement26.MemberValue = null;
@@ -2953,10 +3451,10 @@
             isOraColElement26.TL5_XAA = null;
             isOraColElement26.Visible = null;
             isOraColElement26.Width = null;
-            isOraColElement27.DataColumn = "EFFECTIVE_DATE_TO";
+            isOraColElement27.DataColumn = "DESCRIPTION";
             isOraColElement27.DataOrdinal = 26;
-            isOraColElement27.DataType = "System.DateTime";
-            isOraColElement27.HeaderPrompt = "EFFECTIVE_DATE_TO";
+            isOraColElement27.DataType = "System.String";
+            isOraColElement27.HeaderPrompt = "DESCRIPTION";
             isOraColElement27.LastValue = null;
             isOraColElement27.MemberControl = null;
             isOraColElement27.MemberValue = null;
@@ -2971,6 +3469,60 @@
             isOraColElement27.TL5_XAA = null;
             isOraColElement27.Visible = null;
             isOraColElement27.Width = null;
+            isOraColElement28.DataColumn = "ENABLED_FLAG";
+            isOraColElement28.DataOrdinal = 27;
+            isOraColElement28.DataType = "System.String";
+            isOraColElement28.HeaderPrompt = "ENABLED_FLAG";
+            isOraColElement28.LastValue = null;
+            isOraColElement28.MemberControl = null;
+            isOraColElement28.MemberValue = null;
+            isOraColElement28.Nullable = 1;
+            isOraColElement28.Ordinal = 27;
+            isOraColElement28.RelationKeyColumn = null;
+            isOraColElement28.ReturnParameter = null;
+            isOraColElement28.TL1_KR = null;
+            isOraColElement28.TL2_CN = null;
+            isOraColElement28.TL3_VN = null;
+            isOraColElement28.TL4_JP = null;
+            isOraColElement28.TL5_XAA = null;
+            isOraColElement28.Visible = null;
+            isOraColElement28.Width = null;
+            isOraColElement29.DataColumn = "EFFECTIVE_DATE_FR";
+            isOraColElement29.DataOrdinal = 28;
+            isOraColElement29.DataType = "System.DateTime";
+            isOraColElement29.HeaderPrompt = "EFFECTIVE_DATE_FR";
+            isOraColElement29.LastValue = null;
+            isOraColElement29.MemberControl = null;
+            isOraColElement29.MemberValue = null;
+            isOraColElement29.Nullable = 1;
+            isOraColElement29.Ordinal = 28;
+            isOraColElement29.RelationKeyColumn = null;
+            isOraColElement29.ReturnParameter = null;
+            isOraColElement29.TL1_KR = null;
+            isOraColElement29.TL2_CN = null;
+            isOraColElement29.TL3_VN = null;
+            isOraColElement29.TL4_JP = null;
+            isOraColElement29.TL5_XAA = null;
+            isOraColElement29.Visible = null;
+            isOraColElement29.Width = null;
+            isOraColElement30.DataColumn = "EFFECTIVE_DATE_TO";
+            isOraColElement30.DataOrdinal = 29;
+            isOraColElement30.DataType = "System.DateTime";
+            isOraColElement30.HeaderPrompt = "EFFECTIVE_DATE_TO";
+            isOraColElement30.LastValue = null;
+            isOraColElement30.MemberControl = null;
+            isOraColElement30.MemberValue = null;
+            isOraColElement30.Nullable = 1;
+            isOraColElement30.Ordinal = 29;
+            isOraColElement30.RelationKeyColumn = null;
+            isOraColElement30.ReturnParameter = null;
+            isOraColElement30.TL1_KR = null;
+            isOraColElement30.TL2_CN = null;
+            isOraColElement30.TL3_VN = null;
+            isOraColElement30.TL4_JP = null;
+            isOraColElement30.TL5_XAA = null;
+            isOraColElement30.Visible = null;
+            isOraColElement30.Width = null;
             this.IDA_OT_TYPE.SelectColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
             isOraColElement1,
             isOraColElement2,
@@ -2998,244 +3550,268 @@
             isOraColElement24,
             isOraColElement25,
             isOraColElement26,
-            isOraColElement27});
-            isOraParamElement24.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement24.MemberControl = null;
-            isOraParamElement24.MemberValue = null;
-            isOraParamElement24.OraDbTypeString = "REF CURSOR";
-            isOraParamElement24.OraType = System.Data.OracleClient.OracleType.Cursor;
-            isOraParamElement24.ParamName = "P_CURSOR";
-            isOraParamElement24.Size = 0;
-            isOraParamElement24.SourceColumn = null;
-            isOraParamElement25.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement25.MemberControl = this.W_OT_TYPE_NAME;
-            isOraParamElement25.MemberValue = "EditValue";
-            isOraParamElement25.OraDbTypeString = "VARCHAR2";
-            isOraParamElement25.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement25.ParamName = "W_OT_TYPE_NAME";
-            isOraParamElement25.Size = 0;
-            isOraParamElement25.SourceColumn = null;
-            isOraParamElement26.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement26.MemberControl = this.W_ENABLED_FLAG_A;
-            isOraParamElement26.MemberValue = "CheckBoxValue";
-            isOraParamElement26.OraDbTypeString = "VARCHAR2";
-            isOraParamElement26.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement26.ParamName = "W_ENABLED_FLAG";
-            isOraParamElement26.Size = 0;
-            isOraParamElement26.SourceColumn = null;
-            isOraParamElement27.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement27.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement27.MemberValue = "SOB_ID";
-            isOraParamElement27.OraDbTypeString = "NUMBER";
-            isOraParamElement27.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement27.ParamName = "W_SOB_ID";
-            isOraParamElement27.Size = 22;
+            isOraColElement27,
+            isOraColElement28,
+            isOraColElement29,
+            isOraColElement30});
+            isOraParamElement27.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement27.MemberControl = null;
+            isOraParamElement27.MemberValue = null;
+            isOraParamElement27.OraDbTypeString = "REF CURSOR";
+            isOraParamElement27.OraType = System.Data.OracleClient.OracleType.Cursor;
+            isOraParamElement27.ParamName = "P_CURSOR";
+            isOraParamElement27.Size = 0;
             isOraParamElement27.SourceColumn = null;
             isOraParamElement28.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement28.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement28.MemberValue = "ORG_ID";
-            isOraParamElement28.OraDbTypeString = "NUMBER";
-            isOraParamElement28.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement28.ParamName = "W_ORG_ID";
-            isOraParamElement28.Size = 22;
+            isOraParamElement28.MemberControl = this.W_OT_TYPE_NAME;
+            isOraParamElement28.MemberValue = "EditValue";
+            isOraParamElement28.OraDbTypeString = "VARCHAR2";
+            isOraParamElement28.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement28.ParamName = "W_OT_TYPE_NAME";
+            isOraParamElement28.Size = 0;
             isOraParamElement28.SourceColumn = null;
-            this.IDA_OT_TYPE.SelectParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement24,
-            isOraParamElement25,
-            isOraParamElement26,
-            isOraParamElement27,
-            isOraParamElement28});
             isOraParamElement29.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement29.MemberControl = null;
-            isOraParamElement29.MemberValue = null;
-            isOraParamElement29.OraDbTypeString = "NUMBER";
-            isOraParamElement29.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement29.ParamName = "W_OT_TYPE_ID";
-            isOraParamElement29.Size = 22;
-            isOraParamElement29.SourceColumn = "OT_TYPE_ID";
-            isOraParamElement29.Where = 1;
+            isOraParamElement29.MemberControl = this.W_ENABLED_FLAG_A;
+            isOraParamElement29.MemberValue = "CheckBoxValue";
+            isOraParamElement29.OraDbTypeString = "VARCHAR2";
+            isOraParamElement29.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement29.ParamName = "W_ENABLED_FLAG";
+            isOraParamElement29.Size = 0;
+            isOraParamElement29.SourceColumn = null;
             isOraParamElement30.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement30.MemberControl = null;
-            isOraParamElement30.MemberValue = null;
-            isOraParamElement30.OraDbTypeString = "VARCHAR2";
-            isOraParamElement30.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement30.ParamName = "P_OT_TYPE";
-            isOraParamElement30.Size = 0;
-            isOraParamElement30.SourceColumn = "OT_TYPE";
+            isOraParamElement30.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement30.MemberValue = "SOB_ID";
+            isOraParamElement30.OraDbTypeString = "NUMBER";
+            isOraParamElement30.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement30.ParamName = "W_SOB_ID";
+            isOraParamElement30.Size = 22;
+            isOraParamElement30.SourceColumn = null;
             isOraParamElement31.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement31.MemberControl = null;
-            isOraParamElement31.MemberValue = null;
-            isOraParamElement31.OraDbTypeString = "VARCHAR2";
-            isOraParamElement31.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement31.ParamName = "P_OT_TYPE_NAME";
-            isOraParamElement31.Size = 0;
-            isOraParamElement31.SourceColumn = "OT_TYPE_NAME";
+            isOraParamElement31.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement31.MemberValue = "ORG_ID";
+            isOraParamElement31.OraDbTypeString = "NUMBER";
+            isOraParamElement31.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement31.ParamName = "W_ORG_ID";
+            isOraParamElement31.Size = 22;
+            isOraParamElement31.SourceColumn = null;
+            this.IDA_OT_TYPE.SelectParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
+            isOraParamElement27,
+            isOraParamElement28,
+            isOraParamElement29,
+            isOraParamElement30,
+            isOraParamElement31});
             isOraParamElement32.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement32.MemberControl = null;
             isOraParamElement32.MemberValue = null;
-            isOraParamElement32.OraDbTypeString = "VARCHAR2";
-            isOraParamElement32.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement32.ParamName = "P_CHG_OT_TYPE_H";
-            isOraParamElement32.Size = 0;
-            isOraParamElement32.SourceColumn = "CHG_OT_TYPE_H";
+            isOraParamElement32.OraDbTypeString = "NUMBER";
+            isOraParamElement32.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement32.ParamName = "W_OT_TYPE_ID";
+            isOraParamElement32.Size = 22;
+            isOraParamElement32.SourceColumn = "OT_TYPE_ID";
+            isOraParamElement32.Where = 1;
             isOraParamElement33.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement33.MemberControl = null;
             isOraParamElement33.MemberValue = null;
             isOraParamElement33.OraDbTypeString = "VARCHAR2";
             isOraParamElement33.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement33.ParamName = "P_CHG_OT_TYPE_1";
+            isOraParamElement33.ParamName = "P_OT_TYPE";
             isOraParamElement33.Size = 0;
-            isOraParamElement33.SourceColumn = "CHG_OT_TYPE_1";
+            isOraParamElement33.SourceColumn = "OT_TYPE";
             isOraParamElement34.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement34.MemberControl = null;
             isOraParamElement34.MemberValue = null;
             isOraParamElement34.OraDbTypeString = "VARCHAR2";
             isOraParamElement34.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement34.ParamName = "P_CHG_OT_TYPE_0";
+            isOraParamElement34.ParamName = "P_OT_TYPE_NAME";
             isOraParamElement34.Size = 0;
-            isOraParamElement34.SourceColumn = "CHG_OT_TYPE_0";
+            isOraParamElement34.SourceColumn = "OT_TYPE_NAME";
             isOraParamElement35.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement35.MemberControl = null;
             isOraParamElement35.MemberValue = null;
             isOraParamElement35.OraDbTypeString = "VARCHAR2";
             isOraParamElement35.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement35.ParamName = "P_CHG_OT_TYPE";
+            isOraParamElement35.ParamName = "P_CHG_OT_TYPE_H";
             isOraParamElement35.Size = 0;
-            isOraParamElement35.SourceColumn = "CHG_OT_TYPE";
+            isOraParamElement35.SourceColumn = "CHG_OT_TYPE_H";
             isOraParamElement36.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement36.MemberControl = null;
             isOraParamElement36.MemberValue = null;
             isOraParamElement36.OraDbTypeString = "VARCHAR2";
             isOraParamElement36.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement36.ParamName = "P_OT_GROUP_TYPE";
+            isOraParamElement36.ParamName = "P_CHG_OT_TYPE_1";
             isOraParamElement36.Size = 0;
-            isOraParamElement36.SourceColumn = "OT_GROUP_TYPE";
+            isOraParamElement36.SourceColumn = "CHG_OT_TYPE_1";
             isOraParamElement37.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement37.MemberControl = null;
             isOraParamElement37.MemberValue = null;
             isOraParamElement37.OraDbTypeString = "VARCHAR2";
             isOraParamElement37.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement37.ParamName = "P_ALLOWANCE_10_CODE";
+            isOraParamElement37.ParamName = "P_CHG_OT_TYPE_0";
             isOraParamElement37.Size = 0;
-            isOraParamElement37.SourceColumn = "ALLOWANCE_10_CODE";
+            isOraParamElement37.SourceColumn = "CHG_OT_TYPE_0";
             isOraParamElement38.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement38.MemberControl = null;
             isOraParamElement38.MemberValue = null;
-            isOraParamElement38.OraDbTypeString = "NUMBER";
-            isOraParamElement38.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement38.ParamName = "P_ALLOWANCE_RATE_10";
-            isOraParamElement38.Size = 22;
-            isOraParamElement38.SourceColumn = "ALLOWANCE_RATE_10";
+            isOraParamElement38.OraDbTypeString = "VARCHAR2";
+            isOraParamElement38.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement38.ParamName = "P_CHG_OT_TYPE";
+            isOraParamElement38.Size = 0;
+            isOraParamElement38.SourceColumn = "CHG_OT_TYPE";
             isOraParamElement39.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement39.MemberControl = null;
             isOraParamElement39.MemberValue = null;
             isOraParamElement39.OraDbTypeString = "VARCHAR2";
             isOraParamElement39.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement39.ParamName = "P_ALLOWANCE_20_CODE";
+            isOraParamElement39.ParamName = "P_OT_GROUP_TYPE";
             isOraParamElement39.Size = 0;
-            isOraParamElement39.SourceColumn = "ALLOWANCE_20_CODE";
+            isOraParamElement39.SourceColumn = "OT_GROUP_TYPE";
             isOraParamElement40.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement40.MemberControl = null;
             isOraParamElement40.MemberValue = null;
-            isOraParamElement40.OraDbTypeString = "NUMBER";
-            isOraParamElement40.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement40.ParamName = "P_ALLOWANCE_RATE_20";
-            isOraParamElement40.Size = 22;
-            isOraParamElement40.SourceColumn = "ALLOWANCE_RATE_20";
+            isOraParamElement40.OraDbTypeString = "VARCHAR2";
+            isOraParamElement40.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement40.ParamName = "P_ALLOWANCE_10_CODE";
+            isOraParamElement40.Size = 0;
+            isOraParamElement40.SourceColumn = "ALLOWANCE_10_CODE";
             isOraParamElement41.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement41.MemberControl = null;
             isOraParamElement41.MemberValue = null;
             isOraParamElement41.OraDbTypeString = "NUMBER";
             isOraParamElement41.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement41.ParamName = "P_OT_DED_SEQ";
+            isOraParamElement41.ParamName = "P_ALLOWANCE_RATE_10";
             isOraParamElement41.Size = 22;
-            isOraParamElement41.SourceColumn = "OT_DED_SEQ";
+            isOraParamElement41.SourceColumn = "ALLOWANCE_RATE_10";
             isOraParamElement42.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement42.MemberControl = null;
             isOraParamElement42.MemberValue = null;
-            isOraParamElement42.OraDbTypeString = "NUMBER";
-            isOraParamElement42.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement42.ParamName = "P_OT_GROUP_SEQ";
-            isOraParamElement42.Size = 22;
-            isOraParamElement42.SourceColumn = "OT_GROUP_SEQ";
+            isOraParamElement42.OraDbTypeString = "VARCHAR2";
+            isOraParamElement42.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement42.ParamName = "P_ALLOWANCE_20_CODE";
+            isOraParamElement42.Size = 0;
+            isOraParamElement42.SourceColumn = "ALLOWANCE_20_CODE";
             isOraParamElement43.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement43.MemberControl = null;
             isOraParamElement43.MemberValue = null;
-            isOraParamElement43.OraDbTypeString = "VARCHAR2";
-            isOraParamElement43.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement43.ParamName = "P_DEFAULT_FLAG";
-            isOraParamElement43.Size = 0;
-            isOraParamElement43.SourceColumn = "DEFAULT_FLAG";
+            isOraParamElement43.OraDbTypeString = "NUMBER";
+            isOraParamElement43.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement43.ParamName = "P_ALLOWANCE_RATE_20";
+            isOraParamElement43.Size = 22;
+            isOraParamElement43.SourceColumn = "ALLOWANCE_RATE_20";
             isOraParamElement44.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement44.MemberControl = null;
             isOraParamElement44.MemberValue = null;
             isOraParamElement44.OraDbTypeString = "NUMBER";
             isOraParamElement44.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement44.ParamName = "P_SORT_NUM";
+            isOraParamElement44.ParamName = "P_OT_DED_SEQ";
             isOraParamElement44.Size = 22;
-            isOraParamElement44.SourceColumn = "SORT_NUM";
+            isOraParamElement44.SourceColumn = "OT_DED_SEQ";
             isOraParamElement45.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement45.MemberControl = null;
             isOraParamElement45.MemberValue = null;
-            isOraParamElement45.OraDbTypeString = "VARCHAR2";
-            isOraParamElement45.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement45.ParamName = "P_DESCRIPTION";
-            isOraParamElement45.Size = 0;
-            isOraParamElement45.SourceColumn = "DESCRIPTION";
+            isOraParamElement45.OraDbTypeString = "NUMBER";
+            isOraParamElement45.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement45.ParamName = "P_OT_GROUP_SEQ";
+            isOraParamElement45.Size = 22;
+            isOraParamElement45.SourceColumn = "OT_GROUP_SEQ";
             isOraParamElement46.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement46.MemberControl = null;
             isOraParamElement46.MemberValue = null;
             isOraParamElement46.OraDbTypeString = "VARCHAR2";
             isOraParamElement46.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement46.ParamName = "P_ENABLED_FLAG";
+            isOraParamElement46.ParamName = "P_PRINT_FLAG";
             isOraParamElement46.Size = 0;
-            isOraParamElement46.SourceColumn = "ENABLED_FLAG";
+            isOraParamElement46.SourceColumn = "PRINT_FLAG";
             isOraParamElement47.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement47.MemberControl = null;
             isOraParamElement47.MemberValue = null;
-            isOraParamElement47.OraDbTypeString = "DATE";
-            isOraParamElement47.OraType = System.Data.OracleClient.OracleType.DateTime;
-            isOraParamElement47.ParamName = "P_EFFECTIVE_DATE_FR";
+            isOraParamElement47.OraDbTypeString = "VARCHAR2";
+            isOraParamElement47.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement47.ParamName = "P_DEFAULT_FLAG";
             isOraParamElement47.Size = 0;
-            isOraParamElement47.SourceColumn = "EFFECTIVE_DATE_FR";
+            isOraParamElement47.SourceColumn = "DEFAULT_FLAG";
             isOraParamElement48.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement48.MemberControl = null;
             isOraParamElement48.MemberValue = null;
-            isOraParamElement48.OraDbTypeString = "DATE";
-            isOraParamElement48.OraType = System.Data.OracleClient.OracleType.DateTime;
-            isOraParamElement48.ParamName = "P_EFFECTIVE_DATE_TO";
-            isOraParamElement48.Size = 0;
-            isOraParamElement48.SourceColumn = "EFFECTIVE_DATE_TO";
+            isOraParamElement48.OraDbTypeString = "NUMBER";
+            isOraParamElement48.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement48.ParamName = "P_SORT_NUM";
+            isOraParamElement48.Size = 22;
+            isOraParamElement48.SourceColumn = "SORT_NUM";
             isOraParamElement49.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement49.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement49.MemberValue = "SOB_ID";
-            isOraParamElement49.OraDbTypeString = "NUMBER";
-            isOraParamElement49.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement49.ParamName = "W_SOB_ID";
-            isOraParamElement49.Size = 22;
-            isOraParamElement49.SourceColumn = "";
-            isOraParamElement49.Where = 1;
+            isOraParamElement49.MemberControl = null;
+            isOraParamElement49.MemberValue = null;
+            isOraParamElement49.OraDbTypeString = "VARCHAR2";
+            isOraParamElement49.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement49.ParamName = "P_DESCRIPTION";
+            isOraParamElement49.Size = 0;
+            isOraParamElement49.SourceColumn = "DESCRIPTION";
             isOraParamElement50.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement50.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement50.MemberValue = "ORG_ID";
-            isOraParamElement50.OraDbTypeString = "NUMBER";
-            isOraParamElement50.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement50.ParamName = "W_ORG_ID";
-            isOraParamElement50.Size = 22;
-            isOraParamElement50.SourceColumn = "";
-            isOraParamElement50.Where = 1;
+            isOraParamElement50.MemberControl = null;
+            isOraParamElement50.MemberValue = null;
+            isOraParamElement50.OraDbTypeString = "VARCHAR2";
+            isOraParamElement50.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement50.ParamName = "P_ENABLED_FLAG";
+            isOraParamElement50.Size = 0;
+            isOraParamElement50.SourceColumn = "ENABLED_FLAG";
             isOraParamElement51.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement51.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement51.MemberValue = "USER_ID";
-            isOraParamElement51.OraDbTypeString = "NUMBER";
-            isOraParamElement51.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement51.ParamName = "P_USER_ID";
-            isOraParamElement51.Size = 22;
-            isOraParamElement51.SourceColumn = "";
+            isOraParamElement51.MemberControl = null;
+            isOraParamElement51.MemberValue = null;
+            isOraParamElement51.OraDbTypeString = "DATE";
+            isOraParamElement51.OraType = System.Data.OracleClient.OracleType.DateTime;
+            isOraParamElement51.ParamName = "P_EFFECTIVE_DATE_FR";
+            isOraParamElement51.Size = 0;
+            isOraParamElement51.SourceColumn = "EFFECTIVE_DATE_FR";
+            isOraParamElement52.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement52.MemberControl = null;
+            isOraParamElement52.MemberValue = null;
+            isOraParamElement52.OraDbTypeString = "DATE";
+            isOraParamElement52.OraType = System.Data.OracleClient.OracleType.DateTime;
+            isOraParamElement52.ParamName = "P_EFFECTIVE_DATE_TO";
+            isOraParamElement52.Size = 0;
+            isOraParamElement52.SourceColumn = "EFFECTIVE_DATE_TO";
+            isOraParamElement53.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement53.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement53.MemberValue = "SOB_ID";
+            isOraParamElement53.OraDbTypeString = "NUMBER";
+            isOraParamElement53.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement53.ParamName = "W_SOB_ID";
+            isOraParamElement53.Size = 22;
+            isOraParamElement53.SourceColumn = "";
+            isOraParamElement53.Where = 1;
+            isOraParamElement54.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement54.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement54.MemberValue = "ORG_ID";
+            isOraParamElement54.OraDbTypeString = "NUMBER";
+            isOraParamElement54.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement54.ParamName = "W_ORG_ID";
+            isOraParamElement54.Size = 22;
+            isOraParamElement54.SourceColumn = "";
+            isOraParamElement54.Where = 1;
+            isOraParamElement55.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement55.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement55.MemberValue = "USER_ID";
+            isOraParamElement55.OraDbTypeString = "NUMBER";
+            isOraParamElement55.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement55.ParamName = "P_USER_ID";
+            isOraParamElement55.Size = 22;
+            isOraParamElement55.SourceColumn = "";
+            isOraParamElement56.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement56.MemberControl = null;
+            isOraParamElement56.MemberValue = null;
+            isOraParamElement56.OraDbTypeString = "VARCHAR2";
+            isOraParamElement56.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement56.ParamName = "P_OT_TYPE_PRINT_CODE";
+            isOraParamElement56.Size = 0;
+            isOraParamElement56.SourceColumn = "OT_TYPE_PRINT_CODE";
+            isOraParamElement57.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement57.MemberControl = null;
+            isOraParamElement57.MemberValue = null;
+            isOraParamElement57.OraDbTypeString = "VARCHAR2";
+            isOraParamElement57.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement57.ParamName = "P_OT_TYPE_PRINT_NAME";
+            isOraParamElement57.Size = 0;
+            isOraParamElement57.SourceColumn = "OT_TYPE_PRINT_NAME";
             this.IDA_OT_TYPE.UpdateParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement29,
-            isOraParamElement30,
-            isOraParamElement31,
             isOraParamElement32,
             isOraParamElement33,
             isOraParamElement34,
@@ -3255,7 +3831,13 @@
             isOraParamElement48,
             isOraParamElement49,
             isOraParamElement50,
-            isOraParamElement51});
+            isOraParamElement51,
+            isOraParamElement52,
+            isOraParamElement53,
+            isOraParamElement54,
+            isOraParamElement55,
+            isOraParamElement56,
+            isOraParamElement57});
             this.IDA_OT_TYPE.WizardOwner = "";
             this.IDA_OT_TYPE.WizardProcedure = "";
             this.IDA_OT_TYPE.WizardTableName = "";
@@ -3265,10 +3847,10 @@
             // 
             this.isOraConnection1.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.isOraConnection1.OraConnectionInfo = oraConnectionInfo1;
-            this.isOraConnection1.OraHost = "192.168.1.7";
+            this.isOraConnection1.OraHost = "146.56.184.66";
             this.isOraConnection1.OraPassword = "infoflex";
             this.isOraConnection1.OraPort = "1521";
-            this.isOraConnection1.OraServiceName = "SIKPROD";
+            this.isOraConnection1.OraServiceName = "KJK_icn1rm.sub12300429060.kjkvcn.oraclevcn.com";
             this.isOraConnection1.OraUserId = "APPS";
             // 
             // W_OT_TYPE_NAME
@@ -3300,15 +3882,15 @@
             0,
             0});
             this.W_OT_TYPE_NAME.PromptText = "OT Type Name";
-            isLanguageElement2.Default = "OT Type Name";
-            isLanguageElement2.SiteName = null;
-            isLanguageElement2.TL1_KR = "연장구분명";
-            isLanguageElement2.TL2_CN = "";
-            isLanguageElement2.TL3_VN = "";
-            isLanguageElement2.TL4_JP = "";
-            isLanguageElement2.TL5_XAA = "";
+            isLanguageElement1.Default = "OT Type Name";
+            isLanguageElement1.SiteName = null;
+            isLanguageElement1.TL1_KR = "연장구분명";
+            isLanguageElement1.TL2_CN = "";
+            isLanguageElement1.TL3_VN = "";
+            isLanguageElement1.TL4_JP = "";
+            isLanguageElement1.TL5_XAA = "";
             this.W_OT_TYPE_NAME.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement2});
+            isLanguageElement1});
             this.W_OT_TYPE_NAME.PromptWidth = 120;
             this.W_OT_TYPE_NAME.Size = new System.Drawing.Size(320, 21);
             this.W_OT_TYPE_NAME.TabIndex = 0;
@@ -3326,121 +3908,67 @@
             this.W_ENABLED_FLAG_A.Location = new System.Drawing.Point(329, 32);
             this.W_ENABLED_FLAG_A.Name = "W_ENABLED_FLAG_A";
             this.W_ENABLED_FLAG_A.PromptText = "Enabled flag";
-            isLanguageElement1.Default = "Enabled flag";
-            isLanguageElement1.SiteName = null;
-            isLanguageElement1.TL1_KR = "사용여부";
-            isLanguageElement1.TL2_CN = null;
-            isLanguageElement1.TL3_VN = null;
-            isLanguageElement1.TL4_JP = null;
-            isLanguageElement1.TL5_XAA = null;
+            isLanguageElement2.Default = "Enabled flag";
+            isLanguageElement2.SiteName = null;
+            isLanguageElement2.TL1_KR = "사용여부";
+            isLanguageElement2.TL2_CN = null;
+            isLanguageElement2.TL3_VN = null;
+            isLanguageElement2.TL4_JP = null;
+            isLanguageElement2.TL5_XAA = null;
             this.W_ENABLED_FLAG_A.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement1});
+            isLanguageElement2});
             this.W_ENABLED_FLAG_A.Size = new System.Drawing.Size(125, 21);
             this.W_ENABLED_FLAG_A.TabIndex = 1;
             this.W_ENABLED_FLAG_A.UncheckedString = "N";
             // 
-            // ILA_CHG_OT_TYPE_H
+            // ILA_CHG_OT_TYPE_1
             // 
-            this.ILA_CHG_OT_TYPE_H.DisplayCaption = "Cost Center Search";
-            isOraColElement28.DataColumn = "CODE_NAME";
-            isOraColElement28.DataOrdinal = 0;
-            isOraColElement28.DataType = "System.String";
-            isOraColElement28.HeaderPrompt = "OT Type";
-            isOraColElement28.LastValue = null;
-            isOraColElement28.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement28.MemberValue = "CHG_OT_TYPE_H_NAME";
-            isOraColElement28.Nullable = null;
-            isOraColElement28.Ordinal = 0;
-            isOraColElement28.RelationKeyColumn = null;
-            isOraColElement28.ReturnParameter = null;
-            isOraColElement28.TL1_KR = "연장 구분";
-            isOraColElement28.TL2_CN = null;
-            isOraColElement28.TL3_VN = null;
-            isOraColElement28.TL4_JP = null;
-            isOraColElement28.TL5_XAA = null;
-            isOraColElement28.Visible = 1;
-            isOraColElement28.Width = 250;
-            isOraColElement29.DataColumn = "CODE";
-            isOraColElement29.DataOrdinal = 1;
-            isOraColElement29.DataType = "System.String";
-            isOraColElement29.HeaderPrompt = "Code";
-            isOraColElement29.LastValue = null;
-            isOraColElement29.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement29.MemberValue = "CHG_OT_TYPE_H";
-            isOraColElement29.Nullable = null;
-            isOraColElement29.Ordinal = 1;
-            isOraColElement29.RelationKeyColumn = null;
-            isOraColElement29.ReturnParameter = null;
-            isOraColElement29.TL1_KR = "코드";
-            isOraColElement29.TL2_CN = null;
-            isOraColElement29.TL3_VN = null;
-            isOraColElement29.TL4_JP = null;
-            isOraColElement29.TL5_XAA = null;
-            isOraColElement29.Visible = 1;
-            isOraColElement29.Width = 100;
-            isOraColElement30.DataColumn = "COMMON_ID";
-            isOraColElement30.DataOrdinal = 2;
-            isOraColElement30.DataType = "System.Decimal";
-            isOraColElement30.HeaderPrompt = "COMMON_ID";
-            isOraColElement30.LastValue = null;
-            isOraColElement30.MemberControl = null;
-            isOraColElement30.MemberValue = null;
-            isOraColElement30.Nullable = null;
-            isOraColElement30.Ordinal = 2;
-            isOraColElement30.RelationKeyColumn = null;
-            isOraColElement30.ReturnParameter = null;
-            isOraColElement30.TL1_KR = null;
-            isOraColElement30.TL2_CN = null;
-            isOraColElement30.TL3_VN = null;
-            isOraColElement30.TL4_JP = null;
-            isOraColElement30.TL5_XAA = null;
-            isOraColElement30.Visible = 0;
-            isOraColElement30.Width = 65;
-            isOraColElement31.DataColumn = "VALUE1";
-            isOraColElement31.DataOrdinal = 3;
+            this.ILA_CHG_OT_TYPE_1.DisplayCaption = "Cost Center Search";
+            isOraColElement31.DataColumn = "CODE_NAME";
+            isOraColElement31.DataOrdinal = 0;
             isOraColElement31.DataType = "System.String";
-            isOraColElement31.HeaderPrompt = "VALUE1";
+            isOraColElement31.HeaderPrompt = "OT Type";
             isOraColElement31.LastValue = null;
-            isOraColElement31.MemberControl = null;
-            isOraColElement31.MemberValue = null;
+            isOraColElement31.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement31.MemberValue = "CHG_OT_TYPE_1_NAME";
             isOraColElement31.Nullable = null;
-            isOraColElement31.Ordinal = 3;
+            isOraColElement31.Ordinal = 0;
             isOraColElement31.RelationKeyColumn = null;
             isOraColElement31.ReturnParameter = null;
-            isOraColElement31.TL1_KR = null;
+            isOraColElement31.TL1_KR = "연장 구분";
             isOraColElement31.TL2_CN = null;
             isOraColElement31.TL3_VN = null;
             isOraColElement31.TL4_JP = null;
             isOraColElement31.TL5_XAA = null;
-            isOraColElement31.Visible = 0;
-            isOraColElement31.Width = 65;
-            isOraColElement32.DataColumn = "VALUE2";
-            isOraColElement32.DataOrdinal = 4;
+            isOraColElement31.Visible = 1;
+            isOraColElement31.Width = 250;
+            isOraColElement32.DataColumn = "CODE";
+            isOraColElement32.DataOrdinal = 1;
             isOraColElement32.DataType = "System.String";
-            isOraColElement32.HeaderPrompt = "VALUE2";
+            isOraColElement32.HeaderPrompt = "Code";
             isOraColElement32.LastValue = null;
-            isOraColElement32.MemberControl = null;
-            isOraColElement32.MemberValue = null;
+            isOraColElement32.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement32.MemberValue = "CHG_OT_TYPE_1";
             isOraColElement32.Nullable = null;
-            isOraColElement32.Ordinal = 4;
+            isOraColElement32.Ordinal = 1;
             isOraColElement32.RelationKeyColumn = null;
             isOraColElement32.ReturnParameter = null;
-            isOraColElement32.TL1_KR = null;
+            isOraColElement32.TL1_KR = "코드";
             isOraColElement32.TL2_CN = null;
             isOraColElement32.TL3_VN = null;
             isOraColElement32.TL4_JP = null;
             isOraColElement32.TL5_XAA = null;
-            isOraColElement32.Visible = 0;
-            isOraColElement32.Width = 65;
-            isOraColElement33.DataColumn = "VALUE3";
-            isOraColElement33.DataOrdinal = 5;
-            isOraColElement33.DataType = "System.String";
-            isOraColElement33.HeaderPrompt = "VALUE3";
+            isOraColElement32.Visible = 1;
+            isOraColElement32.Width = 100;
+            isOraColElement33.DataColumn = "COMMON_ID";
+            isOraColElement33.DataOrdinal = 2;
+            isOraColElement33.DataType = "System.Decimal";
+            isOraColElement33.HeaderPrompt = "COMMON_ID";
             isOraColElement33.LastValue = null;
             isOraColElement33.MemberControl = null;
             isOraColElement33.MemberValue = null;
             isOraColElement33.Nullable = null;
-            isOraColElement33.Ordinal = 5;
+            isOraColElement33.Ordinal = 2;
             isOraColElement33.RelationKeyColumn = null;
             isOraColElement33.ReturnParameter = null;
             isOraColElement33.TL1_KR = null;
@@ -3450,15 +3978,15 @@
             isOraColElement33.TL5_XAA = null;
             isOraColElement33.Visible = 0;
             isOraColElement33.Width = 65;
-            isOraColElement34.DataColumn = "VALUE4";
-            isOraColElement34.DataOrdinal = 6;
+            isOraColElement34.DataColumn = "VALUE1";
+            isOraColElement34.DataOrdinal = 3;
             isOraColElement34.DataType = "System.String";
-            isOraColElement34.HeaderPrompt = "VALUE4";
+            isOraColElement34.HeaderPrompt = "VALUE1";
             isOraColElement34.LastValue = null;
             isOraColElement34.MemberControl = null;
             isOraColElement34.MemberValue = null;
             isOraColElement34.Nullable = null;
-            isOraColElement34.Ordinal = 6;
+            isOraColElement34.Ordinal = 3;
             isOraColElement34.RelationKeyColumn = null;
             isOraColElement34.ReturnParameter = null;
             isOraColElement34.TL1_KR = null;
@@ -3468,15 +3996,15 @@
             isOraColElement34.TL5_XAA = null;
             isOraColElement34.Visible = 0;
             isOraColElement34.Width = 65;
-            isOraColElement35.DataColumn = "VALUE5";
-            isOraColElement35.DataOrdinal = 7;
+            isOraColElement35.DataColumn = "VALUE2";
+            isOraColElement35.DataOrdinal = 4;
             isOraColElement35.DataType = "System.String";
-            isOraColElement35.HeaderPrompt = "VALUE5";
+            isOraColElement35.HeaderPrompt = "VALUE2";
             isOraColElement35.LastValue = null;
             isOraColElement35.MemberControl = null;
             isOraColElement35.MemberValue = null;
             isOraColElement35.Nullable = null;
-            isOraColElement35.Ordinal = 7;
+            isOraColElement35.Ordinal = 4;
             isOraColElement35.RelationKeyColumn = null;
             isOraColElement35.ReturnParameter = null;
             isOraColElement35.TL1_KR = null;
@@ -3486,15 +4014,15 @@
             isOraColElement35.TL5_XAA = null;
             isOraColElement35.Visible = 0;
             isOraColElement35.Width = 65;
-            isOraColElement36.DataColumn = "VALUE6";
-            isOraColElement36.DataOrdinal = 8;
+            isOraColElement36.DataColumn = "VALUE3";
+            isOraColElement36.DataOrdinal = 5;
             isOraColElement36.DataType = "System.String";
-            isOraColElement36.HeaderPrompt = "VALUE6";
+            isOraColElement36.HeaderPrompt = "VALUE3";
             isOraColElement36.LastValue = null;
             isOraColElement36.MemberControl = null;
             isOraColElement36.MemberValue = null;
             isOraColElement36.Nullable = null;
-            isOraColElement36.Ordinal = 8;
+            isOraColElement36.Ordinal = 5;
             isOraColElement36.RelationKeyColumn = null;
             isOraColElement36.ReturnParameter = null;
             isOraColElement36.TL1_KR = null;
@@ -3504,15 +4032,15 @@
             isOraColElement36.TL5_XAA = null;
             isOraColElement36.Visible = 0;
             isOraColElement36.Width = 65;
-            isOraColElement37.DataColumn = "VALUE7";
-            isOraColElement37.DataOrdinal = 9;
+            isOraColElement37.DataColumn = "VALUE4";
+            isOraColElement37.DataOrdinal = 6;
             isOraColElement37.DataType = "System.String";
-            isOraColElement37.HeaderPrompt = "VALUE7";
+            isOraColElement37.HeaderPrompt = "VALUE4";
             isOraColElement37.LastValue = null;
             isOraColElement37.MemberControl = null;
             isOraColElement37.MemberValue = null;
             isOraColElement37.Nullable = null;
-            isOraColElement37.Ordinal = 9;
+            isOraColElement37.Ordinal = 6;
             isOraColElement37.RelationKeyColumn = null;
             isOraColElement37.ReturnParameter = null;
             isOraColElement37.TL1_KR = null;
@@ -3522,15 +4050,15 @@
             isOraColElement37.TL5_XAA = null;
             isOraColElement37.Visible = 0;
             isOraColElement37.Width = 65;
-            isOraColElement38.DataColumn = "VALUE8";
-            isOraColElement38.DataOrdinal = 10;
+            isOraColElement38.DataColumn = "VALUE5";
+            isOraColElement38.DataOrdinal = 7;
             isOraColElement38.DataType = "System.String";
-            isOraColElement38.HeaderPrompt = "VALUE8";
+            isOraColElement38.HeaderPrompt = "VALUE5";
             isOraColElement38.LastValue = null;
             isOraColElement38.MemberControl = null;
             isOraColElement38.MemberValue = null;
             isOraColElement38.Nullable = null;
-            isOraColElement38.Ordinal = 10;
+            isOraColElement38.Ordinal = 7;
             isOraColElement38.RelationKeyColumn = null;
             isOraColElement38.ReturnParameter = null;
             isOraColElement38.TL1_KR = null;
@@ -3540,15 +4068,15 @@
             isOraColElement38.TL5_XAA = null;
             isOraColElement38.Visible = 0;
             isOraColElement38.Width = 65;
-            isOraColElement39.DataColumn = "VALUE9";
-            isOraColElement39.DataOrdinal = 11;
+            isOraColElement39.DataColumn = "VALUE6";
+            isOraColElement39.DataOrdinal = 8;
             isOraColElement39.DataType = "System.String";
-            isOraColElement39.HeaderPrompt = "VALUE9";
+            isOraColElement39.HeaderPrompt = "VALUE6";
             isOraColElement39.LastValue = null;
             isOraColElement39.MemberControl = null;
             isOraColElement39.MemberValue = null;
             isOraColElement39.Nullable = null;
-            isOraColElement39.Ordinal = 11;
+            isOraColElement39.Ordinal = 8;
             isOraColElement39.RelationKeyColumn = null;
             isOraColElement39.ReturnParameter = null;
             isOraColElement39.TL1_KR = null;
@@ -3558,15 +4086,15 @@
             isOraColElement39.TL5_XAA = null;
             isOraColElement39.Visible = 0;
             isOraColElement39.Width = 65;
-            isOraColElement40.DataColumn = "VALUE10";
-            isOraColElement40.DataOrdinal = 12;
+            isOraColElement40.DataColumn = "VALUE7";
+            isOraColElement40.DataOrdinal = 9;
             isOraColElement40.DataType = "System.String";
-            isOraColElement40.HeaderPrompt = "VALUE10";
+            isOraColElement40.HeaderPrompt = "VALUE7";
             isOraColElement40.LastValue = null;
             isOraColElement40.MemberControl = null;
             isOraColElement40.MemberValue = null;
             isOraColElement40.Nullable = null;
-            isOraColElement40.Ordinal = 12;
+            isOraColElement40.Ordinal = 9;
             isOraColElement40.RelationKeyColumn = null;
             isOraColElement40.ReturnParameter = null;
             isOraColElement40.TL1_KR = null;
@@ -3576,135 +4104,51 @@
             isOraColElement40.TL5_XAA = null;
             isOraColElement40.Visible = 0;
             isOraColElement40.Width = 65;
-            this.ILA_CHG_OT_TYPE_H.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
-            isOraColElement28,
-            isOraColElement29,
-            isOraColElement30,
-            isOraColElement31,
-            isOraColElement32,
-            isOraColElement33,
-            isOraColElement34,
-            isOraColElement35,
-            isOraColElement36,
-            isOraColElement37,
-            isOraColElement38,
-            isOraColElement39,
-            isOraColElement40});
-            this.ILA_CHG_OT_TYPE_H.LookupData = this.ILD_COMMON;
-            this.ILA_CHG_OT_TYPE_H.LookupSize = new System.Drawing.Size(429, 347);
-            this.ILA_CHG_OT_TYPE_H.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
-            this.ILA_CHG_OT_TYPE_H.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_CHG_OT_TYPE_H_PrePopupShow);
-            // 
-            // ILD_COMMON
-            // 
-            isOraParamElement52.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement52.MemberControl = null;
-            isOraParamElement52.MemberValue = null;
-            isOraParamElement52.OraDbTypeString = "REF CURSOR";
-            isOraParamElement52.OraType = System.Data.OracleClient.OracleType.Cursor;
-            isOraParamElement52.ParamName = "P_CURSOR3";
-            isOraParamElement52.Size = 0;
-            isOraParamElement52.SourceColumn = null;
-            isOraParamElement53.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement53.MemberControl = null;
-            isOraParamElement53.MemberValue = null;
-            isOraParamElement53.OraDbTypeString = "VARCHAR2";
-            isOraParamElement53.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement53.ParamName = "W_GROUP_CODE";
-            isOraParamElement53.Size = 70;
-            isOraParamElement53.SourceColumn = null;
-            isOraParamElement54.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement54.MemberControl = null;
-            isOraParamElement54.MemberValue = null;
-            isOraParamElement54.OraDbTypeString = "VARCHAR2";
-            isOraParamElement54.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement54.ParamName = "W_CODE_NAME";
-            isOraParamElement54.Size = 150;
-            isOraParamElement54.SourceColumn = null;
-            isOraParamElement55.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement55.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement55.MemberValue = "SOB_ID";
-            isOraParamElement55.OraDbTypeString = "NUMBER";
-            isOraParamElement55.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement55.ParamName = "W_SOB_ID";
-            isOraParamElement55.Size = 22;
-            isOraParamElement55.SourceColumn = null;
-            isOraParamElement56.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement56.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement56.MemberValue = "ORG_ID";
-            isOraParamElement56.OraDbTypeString = "NUMBER";
-            isOraParamElement56.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement56.ParamName = "W_ORG_ID";
-            isOraParamElement56.Size = 22;
-            isOraParamElement56.SourceColumn = null;
-            isOraParamElement57.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement57.MemberControl = null;
-            isOraParamElement57.MemberValue = null;
-            isOraParamElement57.OraDbTypeString = "VARCHAR2";
-            isOraParamElement57.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement57.ParamName = "W_ENABLED_FLAG_YN";
-            isOraParamElement57.Size = 1;
-            isOraParamElement57.SourceColumn = null;
-            this.ILD_COMMON.LookupParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement52,
-            isOraParamElement53,
-            isOraParamElement54,
-            isOraParamElement55,
-            isOraParamElement56,
-            isOraParamElement57});
-            this.ILD_COMMON.OraConnection = this.isOraConnection1;
-            this.ILD_COMMON.OraOwner = "APPS";
-            this.ILD_COMMON.OraPackage = "HRM_COMMON_G";
-            this.ILD_COMMON.OraProcedure = "LU_SELECT_GROUP";
-            // 
-            // ILA_CHG_OT_TYPE_1
-            // 
-            this.ILA_CHG_OT_TYPE_1.DisplayCaption = "Cost Center Search";
-            isOraColElement41.DataColumn = "CODE_NAME";
-            isOraColElement41.DataOrdinal = 0;
+            isOraColElement41.DataColumn = "VALUE8";
+            isOraColElement41.DataOrdinal = 10;
             isOraColElement41.DataType = "System.String";
-            isOraColElement41.HeaderPrompt = "OT Type";
+            isOraColElement41.HeaderPrompt = "VALUE8";
             isOraColElement41.LastValue = null;
-            isOraColElement41.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement41.MemberValue = "CHG_OT_TYPE_1_NAME";
+            isOraColElement41.MemberControl = null;
+            isOraColElement41.MemberValue = null;
             isOraColElement41.Nullable = null;
-            isOraColElement41.Ordinal = 0;
+            isOraColElement41.Ordinal = 10;
             isOraColElement41.RelationKeyColumn = null;
             isOraColElement41.ReturnParameter = null;
-            isOraColElement41.TL1_KR = "연장 구분";
+            isOraColElement41.TL1_KR = null;
             isOraColElement41.TL2_CN = null;
             isOraColElement41.TL3_VN = null;
             isOraColElement41.TL4_JP = null;
             isOraColElement41.TL5_XAA = null;
-            isOraColElement41.Visible = 1;
-            isOraColElement41.Width = 250;
-            isOraColElement42.DataColumn = "CODE";
-            isOraColElement42.DataOrdinal = 1;
+            isOraColElement41.Visible = 0;
+            isOraColElement41.Width = 65;
+            isOraColElement42.DataColumn = "VALUE9";
+            isOraColElement42.DataOrdinal = 11;
             isOraColElement42.DataType = "System.String";
-            isOraColElement42.HeaderPrompt = "Code";
+            isOraColElement42.HeaderPrompt = "VALUE9";
             isOraColElement42.LastValue = null;
-            isOraColElement42.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement42.MemberValue = "CHG_OT_TYPE_1";
+            isOraColElement42.MemberControl = null;
+            isOraColElement42.MemberValue = null;
             isOraColElement42.Nullable = null;
-            isOraColElement42.Ordinal = 1;
+            isOraColElement42.Ordinal = 11;
             isOraColElement42.RelationKeyColumn = null;
             isOraColElement42.ReturnParameter = null;
-            isOraColElement42.TL1_KR = "코드";
+            isOraColElement42.TL1_KR = null;
             isOraColElement42.TL2_CN = null;
             isOraColElement42.TL3_VN = null;
             isOraColElement42.TL4_JP = null;
             isOraColElement42.TL5_XAA = null;
-            isOraColElement42.Visible = 1;
-            isOraColElement42.Width = 100;
-            isOraColElement43.DataColumn = "COMMON_ID";
-            isOraColElement43.DataOrdinal = 2;
-            isOraColElement43.DataType = "System.Decimal";
-            isOraColElement43.HeaderPrompt = "COMMON_ID";
+            isOraColElement42.Visible = 0;
+            isOraColElement42.Width = 65;
+            isOraColElement43.DataColumn = "VALUE10";
+            isOraColElement43.DataOrdinal = 12;
+            isOraColElement43.DataType = "System.String";
+            isOraColElement43.HeaderPrompt = "VALUE10";
             isOraColElement43.LastValue = null;
             isOraColElement43.MemberControl = null;
             isOraColElement43.MemberValue = null;
             isOraColElement43.Nullable = null;
-            isOraColElement43.Ordinal = 2;
+            isOraColElement43.Ordinal = 12;
             isOraColElement43.RelationKeyColumn = null;
             isOraColElement43.ReturnParameter = null;
             isOraColElement43.TL1_KR = null;
@@ -3714,51 +4158,135 @@
             isOraColElement43.TL5_XAA = null;
             isOraColElement43.Visible = 0;
             isOraColElement43.Width = 65;
-            isOraColElement44.DataColumn = "VALUE1";
-            isOraColElement44.DataOrdinal = 3;
+            this.ILA_CHG_OT_TYPE_1.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
+            isOraColElement31,
+            isOraColElement32,
+            isOraColElement33,
+            isOraColElement34,
+            isOraColElement35,
+            isOraColElement36,
+            isOraColElement37,
+            isOraColElement38,
+            isOraColElement39,
+            isOraColElement40,
+            isOraColElement41,
+            isOraColElement42,
+            isOraColElement43});
+            this.ILA_CHG_OT_TYPE_1.LookupData = this.ILD_COMMON;
+            this.ILA_CHG_OT_TYPE_1.LookupSize = new System.Drawing.Size(429, 347);
+            this.ILA_CHG_OT_TYPE_1.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
+            this.ILA_CHG_OT_TYPE_1.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_CHG_OT_TYPE_1_PrePopupShow);
+            // 
+            // ILD_COMMON
+            // 
+            isOraParamElement58.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement58.MemberControl = null;
+            isOraParamElement58.MemberValue = null;
+            isOraParamElement58.OraDbTypeString = "REF CURSOR";
+            isOraParamElement58.OraType = System.Data.OracleClient.OracleType.Cursor;
+            isOraParamElement58.ParamName = "P_CURSOR3";
+            isOraParamElement58.Size = 0;
+            isOraParamElement58.SourceColumn = null;
+            isOraParamElement59.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement59.MemberControl = null;
+            isOraParamElement59.MemberValue = null;
+            isOraParamElement59.OraDbTypeString = "VARCHAR2";
+            isOraParamElement59.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement59.ParamName = "W_GROUP_CODE";
+            isOraParamElement59.Size = 70;
+            isOraParamElement59.SourceColumn = null;
+            isOraParamElement60.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement60.MemberControl = null;
+            isOraParamElement60.MemberValue = null;
+            isOraParamElement60.OraDbTypeString = "VARCHAR2";
+            isOraParamElement60.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement60.ParamName = "W_CODE_NAME";
+            isOraParamElement60.Size = 150;
+            isOraParamElement60.SourceColumn = null;
+            isOraParamElement61.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement61.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement61.MemberValue = "SOB_ID";
+            isOraParamElement61.OraDbTypeString = "NUMBER";
+            isOraParamElement61.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement61.ParamName = "W_SOB_ID";
+            isOraParamElement61.Size = 22;
+            isOraParamElement61.SourceColumn = null;
+            isOraParamElement62.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement62.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement62.MemberValue = "ORG_ID";
+            isOraParamElement62.OraDbTypeString = "NUMBER";
+            isOraParamElement62.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement62.ParamName = "W_ORG_ID";
+            isOraParamElement62.Size = 22;
+            isOraParamElement62.SourceColumn = null;
+            isOraParamElement63.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement63.MemberControl = null;
+            isOraParamElement63.MemberValue = null;
+            isOraParamElement63.OraDbTypeString = "VARCHAR2";
+            isOraParamElement63.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement63.ParamName = "W_ENABLED_FLAG_YN";
+            isOraParamElement63.Size = 1;
+            isOraParamElement63.SourceColumn = null;
+            this.ILD_COMMON.LookupParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
+            isOraParamElement58,
+            isOraParamElement59,
+            isOraParamElement60,
+            isOraParamElement61,
+            isOraParamElement62,
+            isOraParamElement63});
+            this.ILD_COMMON.OraConnection = this.isOraConnection1;
+            this.ILD_COMMON.OraOwner = "APPS";
+            this.ILD_COMMON.OraPackage = "HRM_COMMON_G";
+            this.ILD_COMMON.OraProcedure = "LU_SELECT_GROUP";
+            // 
+            // ILA_CHG_OT_TYPE_0
+            // 
+            this.ILA_CHG_OT_TYPE_0.DisplayCaption = "Cost Center Search";
+            isOraColElement44.DataColumn = "CODE_NAME";
+            isOraColElement44.DataOrdinal = 0;
             isOraColElement44.DataType = "System.String";
-            isOraColElement44.HeaderPrompt = "VALUE1";
+            isOraColElement44.HeaderPrompt = "OT Type";
             isOraColElement44.LastValue = null;
-            isOraColElement44.MemberControl = null;
-            isOraColElement44.MemberValue = null;
+            isOraColElement44.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement44.MemberValue = "CHG_OT_TYPE_0_NAME";
             isOraColElement44.Nullable = null;
-            isOraColElement44.Ordinal = 3;
+            isOraColElement44.Ordinal = 0;
             isOraColElement44.RelationKeyColumn = null;
             isOraColElement44.ReturnParameter = null;
-            isOraColElement44.TL1_KR = null;
+            isOraColElement44.TL1_KR = "연장구분";
             isOraColElement44.TL2_CN = null;
             isOraColElement44.TL3_VN = null;
             isOraColElement44.TL4_JP = null;
             isOraColElement44.TL5_XAA = null;
-            isOraColElement44.Visible = 0;
-            isOraColElement44.Width = 65;
-            isOraColElement45.DataColumn = "VALUE2";
-            isOraColElement45.DataOrdinal = 4;
+            isOraColElement44.Visible = 1;
+            isOraColElement44.Width = 250;
+            isOraColElement45.DataColumn = "CODE";
+            isOraColElement45.DataOrdinal = 1;
             isOraColElement45.DataType = "System.String";
-            isOraColElement45.HeaderPrompt = "VALUE2";
+            isOraColElement45.HeaderPrompt = "Code";
             isOraColElement45.LastValue = null;
-            isOraColElement45.MemberControl = null;
-            isOraColElement45.MemberValue = null;
+            isOraColElement45.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement45.MemberValue = "CHG_OT_TYPE_0";
             isOraColElement45.Nullable = null;
-            isOraColElement45.Ordinal = 4;
+            isOraColElement45.Ordinal = 1;
             isOraColElement45.RelationKeyColumn = null;
             isOraColElement45.ReturnParameter = null;
-            isOraColElement45.TL1_KR = null;
+            isOraColElement45.TL1_KR = "코드";
             isOraColElement45.TL2_CN = null;
             isOraColElement45.TL3_VN = null;
             isOraColElement45.TL4_JP = null;
             isOraColElement45.TL5_XAA = null;
-            isOraColElement45.Visible = 0;
-            isOraColElement45.Width = 65;
-            isOraColElement46.DataColumn = "VALUE3";
-            isOraColElement46.DataOrdinal = 5;
-            isOraColElement46.DataType = "System.String";
-            isOraColElement46.HeaderPrompt = "VALUE3";
+            isOraColElement45.Visible = 1;
+            isOraColElement45.Width = 100;
+            isOraColElement46.DataColumn = "COMMON_ID";
+            isOraColElement46.DataOrdinal = 2;
+            isOraColElement46.DataType = "System.Decimal";
+            isOraColElement46.HeaderPrompt = "COMMON_ID";
             isOraColElement46.LastValue = null;
             isOraColElement46.MemberControl = null;
             isOraColElement46.MemberValue = null;
             isOraColElement46.Nullable = null;
-            isOraColElement46.Ordinal = 5;
+            isOraColElement46.Ordinal = 2;
             isOraColElement46.RelationKeyColumn = null;
             isOraColElement46.ReturnParameter = null;
             isOraColElement46.TL1_KR = null;
@@ -3768,15 +4296,15 @@
             isOraColElement46.TL5_XAA = null;
             isOraColElement46.Visible = 0;
             isOraColElement46.Width = 65;
-            isOraColElement47.DataColumn = "VALUE4";
-            isOraColElement47.DataOrdinal = 6;
+            isOraColElement47.DataColumn = "VALUE1";
+            isOraColElement47.DataOrdinal = 3;
             isOraColElement47.DataType = "System.String";
-            isOraColElement47.HeaderPrompt = "VALUE4";
+            isOraColElement47.HeaderPrompt = "VALUE1";
             isOraColElement47.LastValue = null;
             isOraColElement47.MemberControl = null;
             isOraColElement47.MemberValue = null;
             isOraColElement47.Nullable = null;
-            isOraColElement47.Ordinal = 6;
+            isOraColElement47.Ordinal = 3;
             isOraColElement47.RelationKeyColumn = null;
             isOraColElement47.ReturnParameter = null;
             isOraColElement47.TL1_KR = null;
@@ -3786,15 +4314,15 @@
             isOraColElement47.TL5_XAA = null;
             isOraColElement47.Visible = 0;
             isOraColElement47.Width = 65;
-            isOraColElement48.DataColumn = "VALUE5";
-            isOraColElement48.DataOrdinal = 7;
+            isOraColElement48.DataColumn = "VALUE2";
+            isOraColElement48.DataOrdinal = 4;
             isOraColElement48.DataType = "System.String";
-            isOraColElement48.HeaderPrompt = "VALUE5";
+            isOraColElement48.HeaderPrompt = "VALUE2";
             isOraColElement48.LastValue = null;
             isOraColElement48.MemberControl = null;
             isOraColElement48.MemberValue = null;
             isOraColElement48.Nullable = null;
-            isOraColElement48.Ordinal = 7;
+            isOraColElement48.Ordinal = 4;
             isOraColElement48.RelationKeyColumn = null;
             isOraColElement48.ReturnParameter = null;
             isOraColElement48.TL1_KR = null;
@@ -3804,15 +4332,15 @@
             isOraColElement48.TL5_XAA = null;
             isOraColElement48.Visible = 0;
             isOraColElement48.Width = 65;
-            isOraColElement49.DataColumn = "VALUE6";
-            isOraColElement49.DataOrdinal = 8;
+            isOraColElement49.DataColumn = "VALUE3";
+            isOraColElement49.DataOrdinal = 5;
             isOraColElement49.DataType = "System.String";
-            isOraColElement49.HeaderPrompt = "VALUE6";
+            isOraColElement49.HeaderPrompt = "VALUE3";
             isOraColElement49.LastValue = null;
             isOraColElement49.MemberControl = null;
             isOraColElement49.MemberValue = null;
             isOraColElement49.Nullable = null;
-            isOraColElement49.Ordinal = 8;
+            isOraColElement49.Ordinal = 5;
             isOraColElement49.RelationKeyColumn = null;
             isOraColElement49.ReturnParameter = null;
             isOraColElement49.TL1_KR = null;
@@ -3822,15 +4350,15 @@
             isOraColElement49.TL5_XAA = null;
             isOraColElement49.Visible = 0;
             isOraColElement49.Width = 65;
-            isOraColElement50.DataColumn = "VALUE7";
-            isOraColElement50.DataOrdinal = 9;
+            isOraColElement50.DataColumn = "VALUE4";
+            isOraColElement50.DataOrdinal = 6;
             isOraColElement50.DataType = "System.String";
-            isOraColElement50.HeaderPrompt = "VALUE7";
+            isOraColElement50.HeaderPrompt = "VALUE4";
             isOraColElement50.LastValue = null;
             isOraColElement50.MemberControl = null;
             isOraColElement50.MemberValue = null;
             isOraColElement50.Nullable = null;
-            isOraColElement50.Ordinal = 9;
+            isOraColElement50.Ordinal = 6;
             isOraColElement50.RelationKeyColumn = null;
             isOraColElement50.ReturnParameter = null;
             isOraColElement50.TL1_KR = null;
@@ -3840,15 +4368,15 @@
             isOraColElement50.TL5_XAA = null;
             isOraColElement50.Visible = 0;
             isOraColElement50.Width = 65;
-            isOraColElement51.DataColumn = "VALUE8";
-            isOraColElement51.DataOrdinal = 10;
+            isOraColElement51.DataColumn = "VALUE5";
+            isOraColElement51.DataOrdinal = 7;
             isOraColElement51.DataType = "System.String";
-            isOraColElement51.HeaderPrompt = "VALUE8";
+            isOraColElement51.HeaderPrompt = "VALUE5";
             isOraColElement51.LastValue = null;
             isOraColElement51.MemberControl = null;
             isOraColElement51.MemberValue = null;
             isOraColElement51.Nullable = null;
-            isOraColElement51.Ordinal = 10;
+            isOraColElement51.Ordinal = 7;
             isOraColElement51.RelationKeyColumn = null;
             isOraColElement51.ReturnParameter = null;
             isOraColElement51.TL1_KR = null;
@@ -3858,15 +4386,15 @@
             isOraColElement51.TL5_XAA = null;
             isOraColElement51.Visible = 0;
             isOraColElement51.Width = 65;
-            isOraColElement52.DataColumn = "VALUE9";
-            isOraColElement52.DataOrdinal = 11;
+            isOraColElement52.DataColumn = "VALUE6";
+            isOraColElement52.DataOrdinal = 8;
             isOraColElement52.DataType = "System.String";
-            isOraColElement52.HeaderPrompt = "VALUE9";
+            isOraColElement52.HeaderPrompt = "VALUE6";
             isOraColElement52.LastValue = null;
             isOraColElement52.MemberControl = null;
             isOraColElement52.MemberValue = null;
             isOraColElement52.Nullable = null;
-            isOraColElement52.Ordinal = 11;
+            isOraColElement52.Ordinal = 8;
             isOraColElement52.RelationKeyColumn = null;
             isOraColElement52.ReturnParameter = null;
             isOraColElement52.TL1_KR = null;
@@ -3876,15 +4404,15 @@
             isOraColElement52.TL5_XAA = null;
             isOraColElement52.Visible = 0;
             isOraColElement52.Width = 65;
-            isOraColElement53.DataColumn = "VALUE10";
-            isOraColElement53.DataOrdinal = 12;
+            isOraColElement53.DataColumn = "VALUE7";
+            isOraColElement53.DataOrdinal = 9;
             isOraColElement53.DataType = "System.String";
-            isOraColElement53.HeaderPrompt = "VALUE10";
+            isOraColElement53.HeaderPrompt = "VALUE7";
             isOraColElement53.LastValue = null;
             isOraColElement53.MemberControl = null;
             isOraColElement53.MemberValue = null;
             isOraColElement53.Nullable = null;
-            isOraColElement53.Ordinal = 12;
+            isOraColElement53.Ordinal = 9;
             isOraColElement53.RelationKeyColumn = null;
             isOraColElement53.ReturnParameter = null;
             isOraColElement53.TL1_KR = null;
@@ -3894,73 +4422,51 @@
             isOraColElement53.TL5_XAA = null;
             isOraColElement53.Visible = 0;
             isOraColElement53.Width = 65;
-            this.ILA_CHG_OT_TYPE_1.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
-            isOraColElement41,
-            isOraColElement42,
-            isOraColElement43,
-            isOraColElement44,
-            isOraColElement45,
-            isOraColElement46,
-            isOraColElement47,
-            isOraColElement48,
-            isOraColElement49,
-            isOraColElement50,
-            isOraColElement51,
-            isOraColElement52,
-            isOraColElement53});
-            this.ILA_CHG_OT_TYPE_1.LookupData = this.ILD_COMMON;
-            this.ILA_CHG_OT_TYPE_1.LookupSize = new System.Drawing.Size(429, 347);
-            this.ILA_CHG_OT_TYPE_1.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
-            this.ILA_CHG_OT_TYPE_1.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_CHG_OT_TYPE_1_PrePopupShow);
-            // 
-            // ILA_CHG_OT_TYPE_0
-            // 
-            this.ILA_CHG_OT_TYPE_0.DisplayCaption = "Cost Center Search";
-            isOraColElement54.DataColumn = "CODE_NAME";
-            isOraColElement54.DataOrdinal = 0;
+            isOraColElement54.DataColumn = "VALUE8";
+            isOraColElement54.DataOrdinal = 10;
             isOraColElement54.DataType = "System.String";
-            isOraColElement54.HeaderPrompt = "OT Type";
+            isOraColElement54.HeaderPrompt = "VALUE8";
             isOraColElement54.LastValue = null;
-            isOraColElement54.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement54.MemberValue = "CHG_OT_TYPE_0_NAME";
+            isOraColElement54.MemberControl = null;
+            isOraColElement54.MemberValue = null;
             isOraColElement54.Nullable = null;
-            isOraColElement54.Ordinal = 0;
+            isOraColElement54.Ordinal = 10;
             isOraColElement54.RelationKeyColumn = null;
             isOraColElement54.ReturnParameter = null;
-            isOraColElement54.TL1_KR = "연장구분";
+            isOraColElement54.TL1_KR = null;
             isOraColElement54.TL2_CN = null;
             isOraColElement54.TL3_VN = null;
             isOraColElement54.TL4_JP = null;
             isOraColElement54.TL5_XAA = null;
-            isOraColElement54.Visible = 1;
-            isOraColElement54.Width = 250;
-            isOraColElement55.DataColumn = "CODE";
-            isOraColElement55.DataOrdinal = 1;
+            isOraColElement54.Visible = 0;
+            isOraColElement54.Width = 65;
+            isOraColElement55.DataColumn = "VALUE9";
+            isOraColElement55.DataOrdinal = 11;
             isOraColElement55.DataType = "System.String";
-            isOraColElement55.HeaderPrompt = "Code";
+            isOraColElement55.HeaderPrompt = "VALUE9";
             isOraColElement55.LastValue = null;
-            isOraColElement55.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement55.MemberValue = "CHG_OT_TYPE_0";
+            isOraColElement55.MemberControl = null;
+            isOraColElement55.MemberValue = null;
             isOraColElement55.Nullable = null;
-            isOraColElement55.Ordinal = 1;
+            isOraColElement55.Ordinal = 11;
             isOraColElement55.RelationKeyColumn = null;
             isOraColElement55.ReturnParameter = null;
-            isOraColElement55.TL1_KR = "코드";
+            isOraColElement55.TL1_KR = null;
             isOraColElement55.TL2_CN = null;
             isOraColElement55.TL3_VN = null;
             isOraColElement55.TL4_JP = null;
             isOraColElement55.TL5_XAA = null;
-            isOraColElement55.Visible = 1;
-            isOraColElement55.Width = 100;
-            isOraColElement56.DataColumn = "COMMON_ID";
-            isOraColElement56.DataOrdinal = 2;
-            isOraColElement56.DataType = "System.Decimal";
-            isOraColElement56.HeaderPrompt = "COMMON_ID";
+            isOraColElement55.Visible = 0;
+            isOraColElement55.Width = 65;
+            isOraColElement56.DataColumn = "VALUE10";
+            isOraColElement56.DataOrdinal = 12;
+            isOraColElement56.DataType = "System.String";
+            isOraColElement56.HeaderPrompt = "VALUE10";
             isOraColElement56.LastValue = null;
             isOraColElement56.MemberControl = null;
             isOraColElement56.MemberValue = null;
             isOraColElement56.Nullable = null;
-            isOraColElement56.Ordinal = 2;
+            isOraColElement56.Ordinal = 12;
             isOraColElement56.RelationKeyColumn = null;
             isOraColElement56.ReturnParameter = null;
             isOraColElement56.TL1_KR = null;
@@ -3970,51 +4476,73 @@
             isOraColElement56.TL5_XAA = null;
             isOraColElement56.Visible = 0;
             isOraColElement56.Width = 65;
-            isOraColElement57.DataColumn = "VALUE1";
-            isOraColElement57.DataOrdinal = 3;
+            this.ILA_CHG_OT_TYPE_0.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
+            isOraColElement44,
+            isOraColElement45,
+            isOraColElement46,
+            isOraColElement47,
+            isOraColElement48,
+            isOraColElement49,
+            isOraColElement50,
+            isOraColElement51,
+            isOraColElement52,
+            isOraColElement53,
+            isOraColElement54,
+            isOraColElement55,
+            isOraColElement56});
+            this.ILA_CHG_OT_TYPE_0.LookupData = this.ILD_COMMON;
+            this.ILA_CHG_OT_TYPE_0.LookupSize = new System.Drawing.Size(428, 347);
+            this.ILA_CHG_OT_TYPE_0.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
+            this.ILA_CHG_OT_TYPE_0.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_CHG_OT_TYPE_0_PrePopupShow);
+            // 
+            // ILA_CHG_OT_TYPE
+            // 
+            this.ILA_CHG_OT_TYPE.DisplayCaption = "Cost Center Search";
+            isOraColElement57.DataColumn = "CODE_NAME";
+            isOraColElement57.DataOrdinal = 0;
             isOraColElement57.DataType = "System.String";
-            isOraColElement57.HeaderPrompt = "VALUE1";
+            isOraColElement57.HeaderPrompt = "OT Type";
             isOraColElement57.LastValue = null;
-            isOraColElement57.MemberControl = null;
-            isOraColElement57.MemberValue = null;
+            isOraColElement57.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement57.MemberValue = "CHG_OT_TYPE_NAME";
             isOraColElement57.Nullable = null;
-            isOraColElement57.Ordinal = 3;
+            isOraColElement57.Ordinal = 0;
             isOraColElement57.RelationKeyColumn = null;
             isOraColElement57.ReturnParameter = null;
-            isOraColElement57.TL1_KR = null;
+            isOraColElement57.TL1_KR = "연장구분";
             isOraColElement57.TL2_CN = null;
             isOraColElement57.TL3_VN = null;
             isOraColElement57.TL4_JP = null;
             isOraColElement57.TL5_XAA = null;
-            isOraColElement57.Visible = 0;
-            isOraColElement57.Width = 65;
-            isOraColElement58.DataColumn = "VALUE2";
-            isOraColElement58.DataOrdinal = 4;
+            isOraColElement57.Visible = 1;
+            isOraColElement57.Width = 250;
+            isOraColElement58.DataColumn = "CODE";
+            isOraColElement58.DataOrdinal = 1;
             isOraColElement58.DataType = "System.String";
-            isOraColElement58.HeaderPrompt = "VALUE2";
+            isOraColElement58.HeaderPrompt = "Code";
             isOraColElement58.LastValue = null;
-            isOraColElement58.MemberControl = null;
-            isOraColElement58.MemberValue = null;
+            isOraColElement58.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement58.MemberValue = "CHG_OT_TYPE";
             isOraColElement58.Nullable = null;
-            isOraColElement58.Ordinal = 4;
+            isOraColElement58.Ordinal = 1;
             isOraColElement58.RelationKeyColumn = null;
             isOraColElement58.ReturnParameter = null;
-            isOraColElement58.TL1_KR = null;
+            isOraColElement58.TL1_KR = "코드";
             isOraColElement58.TL2_CN = null;
             isOraColElement58.TL3_VN = null;
             isOraColElement58.TL4_JP = null;
             isOraColElement58.TL5_XAA = null;
-            isOraColElement58.Visible = 0;
-            isOraColElement58.Width = 65;
-            isOraColElement59.DataColumn = "VALUE3";
-            isOraColElement59.DataOrdinal = 5;
-            isOraColElement59.DataType = "System.String";
-            isOraColElement59.HeaderPrompt = "VALUE3";
+            isOraColElement58.Visible = 1;
+            isOraColElement58.Width = 100;
+            isOraColElement59.DataColumn = "COMMON_ID";
+            isOraColElement59.DataOrdinal = 2;
+            isOraColElement59.DataType = "System.Decimal";
+            isOraColElement59.HeaderPrompt = "COMMON_ID";
             isOraColElement59.LastValue = null;
             isOraColElement59.MemberControl = null;
             isOraColElement59.MemberValue = null;
             isOraColElement59.Nullable = null;
-            isOraColElement59.Ordinal = 5;
+            isOraColElement59.Ordinal = 2;
             isOraColElement59.RelationKeyColumn = null;
             isOraColElement59.ReturnParameter = null;
             isOraColElement59.TL1_KR = null;
@@ -4024,15 +4552,15 @@
             isOraColElement59.TL5_XAA = null;
             isOraColElement59.Visible = 0;
             isOraColElement59.Width = 65;
-            isOraColElement60.DataColumn = "VALUE4";
-            isOraColElement60.DataOrdinal = 6;
+            isOraColElement60.DataColumn = "VALUE1";
+            isOraColElement60.DataOrdinal = 3;
             isOraColElement60.DataType = "System.String";
-            isOraColElement60.HeaderPrompt = "VALUE4";
+            isOraColElement60.HeaderPrompt = "VALUE1";
             isOraColElement60.LastValue = null;
             isOraColElement60.MemberControl = null;
             isOraColElement60.MemberValue = null;
             isOraColElement60.Nullable = null;
-            isOraColElement60.Ordinal = 6;
+            isOraColElement60.Ordinal = 3;
             isOraColElement60.RelationKeyColumn = null;
             isOraColElement60.ReturnParameter = null;
             isOraColElement60.TL1_KR = null;
@@ -4042,15 +4570,15 @@
             isOraColElement60.TL5_XAA = null;
             isOraColElement60.Visible = 0;
             isOraColElement60.Width = 65;
-            isOraColElement61.DataColumn = "VALUE5";
-            isOraColElement61.DataOrdinal = 7;
+            isOraColElement61.DataColumn = "VALUE2";
+            isOraColElement61.DataOrdinal = 4;
             isOraColElement61.DataType = "System.String";
-            isOraColElement61.HeaderPrompt = "VALUE5";
+            isOraColElement61.HeaderPrompt = "VALUE2";
             isOraColElement61.LastValue = null;
             isOraColElement61.MemberControl = null;
             isOraColElement61.MemberValue = null;
             isOraColElement61.Nullable = null;
-            isOraColElement61.Ordinal = 7;
+            isOraColElement61.Ordinal = 4;
             isOraColElement61.RelationKeyColumn = null;
             isOraColElement61.ReturnParameter = null;
             isOraColElement61.TL1_KR = null;
@@ -4060,15 +4588,15 @@
             isOraColElement61.TL5_XAA = null;
             isOraColElement61.Visible = 0;
             isOraColElement61.Width = 65;
-            isOraColElement62.DataColumn = "VALUE6";
-            isOraColElement62.DataOrdinal = 8;
+            isOraColElement62.DataColumn = "VALUE3";
+            isOraColElement62.DataOrdinal = 5;
             isOraColElement62.DataType = "System.String";
-            isOraColElement62.HeaderPrompt = "VALUE6";
+            isOraColElement62.HeaderPrompt = "VALUE3";
             isOraColElement62.LastValue = null;
             isOraColElement62.MemberControl = null;
             isOraColElement62.MemberValue = null;
             isOraColElement62.Nullable = null;
-            isOraColElement62.Ordinal = 8;
+            isOraColElement62.Ordinal = 5;
             isOraColElement62.RelationKeyColumn = null;
             isOraColElement62.ReturnParameter = null;
             isOraColElement62.TL1_KR = null;
@@ -4078,15 +4606,15 @@
             isOraColElement62.TL5_XAA = null;
             isOraColElement62.Visible = 0;
             isOraColElement62.Width = 65;
-            isOraColElement63.DataColumn = "VALUE7";
-            isOraColElement63.DataOrdinal = 9;
+            isOraColElement63.DataColumn = "VALUE4";
+            isOraColElement63.DataOrdinal = 6;
             isOraColElement63.DataType = "System.String";
-            isOraColElement63.HeaderPrompt = "VALUE7";
+            isOraColElement63.HeaderPrompt = "VALUE4";
             isOraColElement63.LastValue = null;
             isOraColElement63.MemberControl = null;
             isOraColElement63.MemberValue = null;
             isOraColElement63.Nullable = null;
-            isOraColElement63.Ordinal = 9;
+            isOraColElement63.Ordinal = 6;
             isOraColElement63.RelationKeyColumn = null;
             isOraColElement63.ReturnParameter = null;
             isOraColElement63.TL1_KR = null;
@@ -4096,15 +4624,15 @@
             isOraColElement63.TL5_XAA = null;
             isOraColElement63.Visible = 0;
             isOraColElement63.Width = 65;
-            isOraColElement64.DataColumn = "VALUE8";
-            isOraColElement64.DataOrdinal = 10;
+            isOraColElement64.DataColumn = "VALUE5";
+            isOraColElement64.DataOrdinal = 7;
             isOraColElement64.DataType = "System.String";
-            isOraColElement64.HeaderPrompt = "VALUE8";
+            isOraColElement64.HeaderPrompt = "VALUE5";
             isOraColElement64.LastValue = null;
             isOraColElement64.MemberControl = null;
             isOraColElement64.MemberValue = null;
             isOraColElement64.Nullable = null;
-            isOraColElement64.Ordinal = 10;
+            isOraColElement64.Ordinal = 7;
             isOraColElement64.RelationKeyColumn = null;
             isOraColElement64.ReturnParameter = null;
             isOraColElement64.TL1_KR = null;
@@ -4114,15 +4642,15 @@
             isOraColElement64.TL5_XAA = null;
             isOraColElement64.Visible = 0;
             isOraColElement64.Width = 65;
-            isOraColElement65.DataColumn = "VALUE9";
-            isOraColElement65.DataOrdinal = 11;
+            isOraColElement65.DataColumn = "VALUE6";
+            isOraColElement65.DataOrdinal = 8;
             isOraColElement65.DataType = "System.String";
-            isOraColElement65.HeaderPrompt = "VALUE9";
+            isOraColElement65.HeaderPrompt = "VALUE6";
             isOraColElement65.LastValue = null;
             isOraColElement65.MemberControl = null;
             isOraColElement65.MemberValue = null;
             isOraColElement65.Nullable = null;
-            isOraColElement65.Ordinal = 11;
+            isOraColElement65.Ordinal = 8;
             isOraColElement65.RelationKeyColumn = null;
             isOraColElement65.ReturnParameter = null;
             isOraColElement65.TL1_KR = null;
@@ -4132,15 +4660,15 @@
             isOraColElement65.TL5_XAA = null;
             isOraColElement65.Visible = 0;
             isOraColElement65.Width = 65;
-            isOraColElement66.DataColumn = "VALUE10";
-            isOraColElement66.DataOrdinal = 12;
+            isOraColElement66.DataColumn = "VALUE7";
+            isOraColElement66.DataOrdinal = 9;
             isOraColElement66.DataType = "System.String";
-            isOraColElement66.HeaderPrompt = "VALUE10";
+            isOraColElement66.HeaderPrompt = "VALUE7";
             isOraColElement66.LastValue = null;
             isOraColElement66.MemberControl = null;
             isOraColElement66.MemberValue = null;
             isOraColElement66.Nullable = null;
-            isOraColElement66.Ordinal = 12;
+            isOraColElement66.Ordinal = 9;
             isOraColElement66.RelationKeyColumn = null;
             isOraColElement66.ReturnParameter = null;
             isOraColElement66.TL1_KR = null;
@@ -4150,73 +4678,51 @@
             isOraColElement66.TL5_XAA = null;
             isOraColElement66.Visible = 0;
             isOraColElement66.Width = 65;
-            this.ILA_CHG_OT_TYPE_0.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
-            isOraColElement54,
-            isOraColElement55,
-            isOraColElement56,
-            isOraColElement57,
-            isOraColElement58,
-            isOraColElement59,
-            isOraColElement60,
-            isOraColElement61,
-            isOraColElement62,
-            isOraColElement63,
-            isOraColElement64,
-            isOraColElement65,
-            isOraColElement66});
-            this.ILA_CHG_OT_TYPE_0.LookupData = this.ILD_COMMON;
-            this.ILA_CHG_OT_TYPE_0.LookupSize = new System.Drawing.Size(428, 347);
-            this.ILA_CHG_OT_TYPE_0.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
-            this.ILA_CHG_OT_TYPE_0.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_CHG_OT_TYPE_0_PrePopupShow);
-            // 
-            // ILA_CHG_OT_TYPE
-            // 
-            this.ILA_CHG_OT_TYPE.DisplayCaption = "Cost Center Search";
-            isOraColElement67.DataColumn = "CODE_NAME";
-            isOraColElement67.DataOrdinal = 0;
+            isOraColElement67.DataColumn = "VALUE8";
+            isOraColElement67.DataOrdinal = 10;
             isOraColElement67.DataType = "System.String";
-            isOraColElement67.HeaderPrompt = "OT Type";
+            isOraColElement67.HeaderPrompt = "VALUE8";
             isOraColElement67.LastValue = null;
-            isOraColElement67.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement67.MemberValue = "CHG_OT_TYPE_NAME";
+            isOraColElement67.MemberControl = null;
+            isOraColElement67.MemberValue = null;
             isOraColElement67.Nullable = null;
-            isOraColElement67.Ordinal = 0;
+            isOraColElement67.Ordinal = 10;
             isOraColElement67.RelationKeyColumn = null;
             isOraColElement67.ReturnParameter = null;
-            isOraColElement67.TL1_KR = "연장구분";
+            isOraColElement67.TL1_KR = null;
             isOraColElement67.TL2_CN = null;
             isOraColElement67.TL3_VN = null;
             isOraColElement67.TL4_JP = null;
             isOraColElement67.TL5_XAA = null;
-            isOraColElement67.Visible = 1;
-            isOraColElement67.Width = 250;
-            isOraColElement68.DataColumn = "CODE";
-            isOraColElement68.DataOrdinal = 1;
+            isOraColElement67.Visible = 0;
+            isOraColElement67.Width = 65;
+            isOraColElement68.DataColumn = "VALUE9";
+            isOraColElement68.DataOrdinal = 11;
             isOraColElement68.DataType = "System.String";
-            isOraColElement68.HeaderPrompt = "Code";
+            isOraColElement68.HeaderPrompt = "VALUE9";
             isOraColElement68.LastValue = null;
-            isOraColElement68.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement68.MemberValue = "CHG_OT_TYPE";
+            isOraColElement68.MemberControl = null;
+            isOraColElement68.MemberValue = null;
             isOraColElement68.Nullable = null;
-            isOraColElement68.Ordinal = 1;
+            isOraColElement68.Ordinal = 11;
             isOraColElement68.RelationKeyColumn = null;
             isOraColElement68.ReturnParameter = null;
-            isOraColElement68.TL1_KR = "코드";
+            isOraColElement68.TL1_KR = null;
             isOraColElement68.TL2_CN = null;
             isOraColElement68.TL3_VN = null;
             isOraColElement68.TL4_JP = null;
             isOraColElement68.TL5_XAA = null;
-            isOraColElement68.Visible = 1;
-            isOraColElement68.Width = 100;
-            isOraColElement69.DataColumn = "COMMON_ID";
-            isOraColElement69.DataOrdinal = 2;
-            isOraColElement69.DataType = "System.Decimal";
-            isOraColElement69.HeaderPrompt = "COMMON_ID";
+            isOraColElement68.Visible = 0;
+            isOraColElement68.Width = 65;
+            isOraColElement69.DataColumn = "VALUE10";
+            isOraColElement69.DataOrdinal = 12;
+            isOraColElement69.DataType = "System.String";
+            isOraColElement69.HeaderPrompt = "VALUE10";
             isOraColElement69.LastValue = null;
             isOraColElement69.MemberControl = null;
             isOraColElement69.MemberValue = null;
             isOraColElement69.Nullable = null;
-            isOraColElement69.Ordinal = 2;
+            isOraColElement69.Ordinal = 12;
             isOraColElement69.RelationKeyColumn = null;
             isOraColElement69.ReturnParameter = null;
             isOraColElement69.TL1_KR = null;
@@ -4226,51 +4732,73 @@
             isOraColElement69.TL5_XAA = null;
             isOraColElement69.Visible = 0;
             isOraColElement69.Width = 65;
-            isOraColElement70.DataColumn = "VALUE1";
-            isOraColElement70.DataOrdinal = 3;
+            this.ILA_CHG_OT_TYPE.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
+            isOraColElement57,
+            isOraColElement58,
+            isOraColElement59,
+            isOraColElement60,
+            isOraColElement61,
+            isOraColElement62,
+            isOraColElement63,
+            isOraColElement64,
+            isOraColElement65,
+            isOraColElement66,
+            isOraColElement67,
+            isOraColElement68,
+            isOraColElement69});
+            this.ILA_CHG_OT_TYPE.LookupData = this.ILD_COMMON;
+            this.ILA_CHG_OT_TYPE.LookupSize = new System.Drawing.Size(427, 347);
+            this.ILA_CHG_OT_TYPE.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
+            this.ILA_CHG_OT_TYPE.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_CHG_OT_TYPE_PrePopupShow);
+            // 
+            // ILA_OT_GROUP_TYPE
+            // 
+            this.ILA_OT_GROUP_TYPE.DisplayCaption = "Cost Center Search";
+            isOraColElement70.DataColumn = "CODE_NAME";
+            isOraColElement70.DataOrdinal = 0;
             isOraColElement70.DataType = "System.String";
-            isOraColElement70.HeaderPrompt = "VALUE1";
+            isOraColElement70.HeaderPrompt = "OT Group";
             isOraColElement70.LastValue = null;
-            isOraColElement70.MemberControl = null;
-            isOraColElement70.MemberValue = null;
+            isOraColElement70.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement70.MemberValue = "OT_GROUP_TYPE_NAME";
             isOraColElement70.Nullable = null;
-            isOraColElement70.Ordinal = 3;
+            isOraColElement70.Ordinal = 0;
             isOraColElement70.RelationKeyColumn = null;
             isOraColElement70.ReturnParameter = null;
-            isOraColElement70.TL1_KR = null;
+            isOraColElement70.TL1_KR = "연장 그룹";
             isOraColElement70.TL2_CN = null;
             isOraColElement70.TL3_VN = null;
             isOraColElement70.TL4_JP = null;
             isOraColElement70.TL5_XAA = null;
-            isOraColElement70.Visible = 0;
-            isOraColElement70.Width = 65;
-            isOraColElement71.DataColumn = "VALUE2";
-            isOraColElement71.DataOrdinal = 4;
+            isOraColElement70.Visible = 1;
+            isOraColElement70.Width = 250;
+            isOraColElement71.DataColumn = "CODE";
+            isOraColElement71.DataOrdinal = 1;
             isOraColElement71.DataType = "System.String";
-            isOraColElement71.HeaderPrompt = "VALUE2";
+            isOraColElement71.HeaderPrompt = "Code";
             isOraColElement71.LastValue = null;
-            isOraColElement71.MemberControl = null;
-            isOraColElement71.MemberValue = null;
+            isOraColElement71.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement71.MemberValue = "OT_GROUP_TYPE";
             isOraColElement71.Nullable = null;
-            isOraColElement71.Ordinal = 4;
+            isOraColElement71.Ordinal = 1;
             isOraColElement71.RelationKeyColumn = null;
             isOraColElement71.ReturnParameter = null;
-            isOraColElement71.TL1_KR = null;
+            isOraColElement71.TL1_KR = "코드";
             isOraColElement71.TL2_CN = null;
             isOraColElement71.TL3_VN = null;
             isOraColElement71.TL4_JP = null;
             isOraColElement71.TL5_XAA = null;
-            isOraColElement71.Visible = 0;
-            isOraColElement71.Width = 65;
-            isOraColElement72.DataColumn = "VALUE3";
-            isOraColElement72.DataOrdinal = 5;
-            isOraColElement72.DataType = "System.String";
-            isOraColElement72.HeaderPrompt = "VALUE3";
+            isOraColElement71.Visible = 1;
+            isOraColElement71.Width = 100;
+            isOraColElement72.DataColumn = "COMMON_ID";
+            isOraColElement72.DataOrdinal = 2;
+            isOraColElement72.DataType = "System.Decimal";
+            isOraColElement72.HeaderPrompt = "COMMON_ID";
             isOraColElement72.LastValue = null;
             isOraColElement72.MemberControl = null;
             isOraColElement72.MemberValue = null;
             isOraColElement72.Nullable = null;
-            isOraColElement72.Ordinal = 5;
+            isOraColElement72.Ordinal = 2;
             isOraColElement72.RelationKeyColumn = null;
             isOraColElement72.ReturnParameter = null;
             isOraColElement72.TL1_KR = null;
@@ -4280,15 +4808,15 @@
             isOraColElement72.TL5_XAA = null;
             isOraColElement72.Visible = 0;
             isOraColElement72.Width = 65;
-            isOraColElement73.DataColumn = "VALUE4";
-            isOraColElement73.DataOrdinal = 6;
+            isOraColElement73.DataColumn = "VALUE1";
+            isOraColElement73.DataOrdinal = 3;
             isOraColElement73.DataType = "System.String";
-            isOraColElement73.HeaderPrompt = "VALUE4";
+            isOraColElement73.HeaderPrompt = "VALUE1";
             isOraColElement73.LastValue = null;
             isOraColElement73.MemberControl = null;
             isOraColElement73.MemberValue = null;
             isOraColElement73.Nullable = null;
-            isOraColElement73.Ordinal = 6;
+            isOraColElement73.Ordinal = 3;
             isOraColElement73.RelationKeyColumn = null;
             isOraColElement73.ReturnParameter = null;
             isOraColElement73.TL1_KR = null;
@@ -4298,15 +4826,15 @@
             isOraColElement73.TL5_XAA = null;
             isOraColElement73.Visible = 0;
             isOraColElement73.Width = 65;
-            isOraColElement74.DataColumn = "VALUE5";
-            isOraColElement74.DataOrdinal = 7;
+            isOraColElement74.DataColumn = "VALUE2";
+            isOraColElement74.DataOrdinal = 4;
             isOraColElement74.DataType = "System.String";
-            isOraColElement74.HeaderPrompt = "VALUE5";
+            isOraColElement74.HeaderPrompt = "VALUE2";
             isOraColElement74.LastValue = null;
             isOraColElement74.MemberControl = null;
             isOraColElement74.MemberValue = null;
             isOraColElement74.Nullable = null;
-            isOraColElement74.Ordinal = 7;
+            isOraColElement74.Ordinal = 4;
             isOraColElement74.RelationKeyColumn = null;
             isOraColElement74.ReturnParameter = null;
             isOraColElement74.TL1_KR = null;
@@ -4316,15 +4844,15 @@
             isOraColElement74.TL5_XAA = null;
             isOraColElement74.Visible = 0;
             isOraColElement74.Width = 65;
-            isOraColElement75.DataColumn = "VALUE6";
-            isOraColElement75.DataOrdinal = 8;
+            isOraColElement75.DataColumn = "VALUE3";
+            isOraColElement75.DataOrdinal = 5;
             isOraColElement75.DataType = "System.String";
-            isOraColElement75.HeaderPrompt = "VALUE6";
+            isOraColElement75.HeaderPrompt = "VALUE3";
             isOraColElement75.LastValue = null;
             isOraColElement75.MemberControl = null;
             isOraColElement75.MemberValue = null;
             isOraColElement75.Nullable = null;
-            isOraColElement75.Ordinal = 8;
+            isOraColElement75.Ordinal = 5;
             isOraColElement75.RelationKeyColumn = null;
             isOraColElement75.ReturnParameter = null;
             isOraColElement75.TL1_KR = null;
@@ -4334,15 +4862,15 @@
             isOraColElement75.TL5_XAA = null;
             isOraColElement75.Visible = 0;
             isOraColElement75.Width = 65;
-            isOraColElement76.DataColumn = "VALUE7";
-            isOraColElement76.DataOrdinal = 9;
+            isOraColElement76.DataColumn = "VALUE4";
+            isOraColElement76.DataOrdinal = 6;
             isOraColElement76.DataType = "System.String";
-            isOraColElement76.HeaderPrompt = "VALUE7";
+            isOraColElement76.HeaderPrompt = "VALUE4";
             isOraColElement76.LastValue = null;
             isOraColElement76.MemberControl = null;
             isOraColElement76.MemberValue = null;
             isOraColElement76.Nullable = null;
-            isOraColElement76.Ordinal = 9;
+            isOraColElement76.Ordinal = 6;
             isOraColElement76.RelationKeyColumn = null;
             isOraColElement76.ReturnParameter = null;
             isOraColElement76.TL1_KR = null;
@@ -4352,15 +4880,15 @@
             isOraColElement76.TL5_XAA = null;
             isOraColElement76.Visible = 0;
             isOraColElement76.Width = 65;
-            isOraColElement77.DataColumn = "VALUE8";
-            isOraColElement77.DataOrdinal = 10;
+            isOraColElement77.DataColumn = "VALUE5";
+            isOraColElement77.DataOrdinal = 7;
             isOraColElement77.DataType = "System.String";
-            isOraColElement77.HeaderPrompt = "VALUE8";
+            isOraColElement77.HeaderPrompt = "VALUE5";
             isOraColElement77.LastValue = null;
             isOraColElement77.MemberControl = null;
             isOraColElement77.MemberValue = null;
             isOraColElement77.Nullable = null;
-            isOraColElement77.Ordinal = 10;
+            isOraColElement77.Ordinal = 7;
             isOraColElement77.RelationKeyColumn = null;
             isOraColElement77.ReturnParameter = null;
             isOraColElement77.TL1_KR = null;
@@ -4370,15 +4898,15 @@
             isOraColElement77.TL5_XAA = null;
             isOraColElement77.Visible = 0;
             isOraColElement77.Width = 65;
-            isOraColElement78.DataColumn = "VALUE9";
-            isOraColElement78.DataOrdinal = 11;
+            isOraColElement78.DataColumn = "VALUE6";
+            isOraColElement78.DataOrdinal = 8;
             isOraColElement78.DataType = "System.String";
-            isOraColElement78.HeaderPrompt = "VALUE9";
+            isOraColElement78.HeaderPrompt = "VALUE6";
             isOraColElement78.LastValue = null;
             isOraColElement78.MemberControl = null;
             isOraColElement78.MemberValue = null;
             isOraColElement78.Nullable = null;
-            isOraColElement78.Ordinal = 11;
+            isOraColElement78.Ordinal = 8;
             isOraColElement78.RelationKeyColumn = null;
             isOraColElement78.ReturnParameter = null;
             isOraColElement78.TL1_KR = null;
@@ -4388,15 +4916,15 @@
             isOraColElement78.TL5_XAA = null;
             isOraColElement78.Visible = 0;
             isOraColElement78.Width = 65;
-            isOraColElement79.DataColumn = "VALUE10";
-            isOraColElement79.DataOrdinal = 12;
+            isOraColElement79.DataColumn = "VALUE7";
+            isOraColElement79.DataOrdinal = 9;
             isOraColElement79.DataType = "System.String";
-            isOraColElement79.HeaderPrompt = "VALUE10";
+            isOraColElement79.HeaderPrompt = "VALUE7";
             isOraColElement79.LastValue = null;
             isOraColElement79.MemberControl = null;
             isOraColElement79.MemberValue = null;
             isOraColElement79.Nullable = null;
-            isOraColElement79.Ordinal = 12;
+            isOraColElement79.Ordinal = 9;
             isOraColElement79.RelationKeyColumn = null;
             isOraColElement79.ReturnParameter = null;
             isOraColElement79.TL1_KR = null;
@@ -4406,73 +4934,51 @@
             isOraColElement79.TL5_XAA = null;
             isOraColElement79.Visible = 0;
             isOraColElement79.Width = 65;
-            this.ILA_CHG_OT_TYPE.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
-            isOraColElement67,
-            isOraColElement68,
-            isOraColElement69,
-            isOraColElement70,
-            isOraColElement71,
-            isOraColElement72,
-            isOraColElement73,
-            isOraColElement74,
-            isOraColElement75,
-            isOraColElement76,
-            isOraColElement77,
-            isOraColElement78,
-            isOraColElement79});
-            this.ILA_CHG_OT_TYPE.LookupData = this.ILD_COMMON;
-            this.ILA_CHG_OT_TYPE.LookupSize = new System.Drawing.Size(427, 347);
-            this.ILA_CHG_OT_TYPE.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
-            this.ILA_CHG_OT_TYPE.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_CHG_OT_TYPE_PrePopupShow);
-            // 
-            // ILA_OT_GROUP_TYPE
-            // 
-            this.ILA_OT_GROUP_TYPE.DisplayCaption = "Cost Center Search";
-            isOraColElement80.DataColumn = "CODE_NAME";
-            isOraColElement80.DataOrdinal = 0;
+            isOraColElement80.DataColumn = "VALUE8";
+            isOraColElement80.DataOrdinal = 10;
             isOraColElement80.DataType = "System.String";
-            isOraColElement80.HeaderPrompt = "OT Group";
+            isOraColElement80.HeaderPrompt = "VALUE8";
             isOraColElement80.LastValue = null;
-            isOraColElement80.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement80.MemberValue = "OT_GROUP_TYPE_NAME";
+            isOraColElement80.MemberControl = null;
+            isOraColElement80.MemberValue = null;
             isOraColElement80.Nullable = null;
-            isOraColElement80.Ordinal = 0;
+            isOraColElement80.Ordinal = 10;
             isOraColElement80.RelationKeyColumn = null;
             isOraColElement80.ReturnParameter = null;
-            isOraColElement80.TL1_KR = "연장 그룹";
+            isOraColElement80.TL1_KR = null;
             isOraColElement80.TL2_CN = null;
             isOraColElement80.TL3_VN = null;
             isOraColElement80.TL4_JP = null;
             isOraColElement80.TL5_XAA = null;
-            isOraColElement80.Visible = 1;
-            isOraColElement80.Width = 250;
-            isOraColElement81.DataColumn = "CODE";
-            isOraColElement81.DataOrdinal = 1;
+            isOraColElement80.Visible = 0;
+            isOraColElement80.Width = 65;
+            isOraColElement81.DataColumn = "VALUE9";
+            isOraColElement81.DataOrdinal = 11;
             isOraColElement81.DataType = "System.String";
-            isOraColElement81.HeaderPrompt = "Code";
+            isOraColElement81.HeaderPrompt = "VALUE9";
             isOraColElement81.LastValue = null;
-            isOraColElement81.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement81.MemberValue = "OT_GROUP_TYPE";
+            isOraColElement81.MemberControl = null;
+            isOraColElement81.MemberValue = null;
             isOraColElement81.Nullable = null;
-            isOraColElement81.Ordinal = 1;
+            isOraColElement81.Ordinal = 11;
             isOraColElement81.RelationKeyColumn = null;
             isOraColElement81.ReturnParameter = null;
-            isOraColElement81.TL1_KR = "코드";
+            isOraColElement81.TL1_KR = null;
             isOraColElement81.TL2_CN = null;
             isOraColElement81.TL3_VN = null;
             isOraColElement81.TL4_JP = null;
             isOraColElement81.TL5_XAA = null;
-            isOraColElement81.Visible = 1;
-            isOraColElement81.Width = 100;
-            isOraColElement82.DataColumn = "COMMON_ID";
-            isOraColElement82.DataOrdinal = 2;
-            isOraColElement82.DataType = "System.Decimal";
-            isOraColElement82.HeaderPrompt = "COMMON_ID";
+            isOraColElement81.Visible = 0;
+            isOraColElement81.Width = 65;
+            isOraColElement82.DataColumn = "VALUE10";
+            isOraColElement82.DataOrdinal = 12;
+            isOraColElement82.DataType = "System.String";
+            isOraColElement82.HeaderPrompt = "VALUE10";
             isOraColElement82.LastValue = null;
             isOraColElement82.MemberControl = null;
             isOraColElement82.MemberValue = null;
             isOraColElement82.Nullable = null;
-            isOraColElement82.Ordinal = 2;
+            isOraColElement82.Ordinal = 12;
             isOraColElement82.RelationKeyColumn = null;
             isOraColElement82.ReturnParameter = null;
             isOraColElement82.TL1_KR = null;
@@ -4482,51 +4988,73 @@
             isOraColElement82.TL5_XAA = null;
             isOraColElement82.Visible = 0;
             isOraColElement82.Width = 65;
-            isOraColElement83.DataColumn = "VALUE1";
-            isOraColElement83.DataOrdinal = 3;
+            this.ILA_OT_GROUP_TYPE.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
+            isOraColElement70,
+            isOraColElement71,
+            isOraColElement72,
+            isOraColElement73,
+            isOraColElement74,
+            isOraColElement75,
+            isOraColElement76,
+            isOraColElement77,
+            isOraColElement78,
+            isOraColElement79,
+            isOraColElement80,
+            isOraColElement81,
+            isOraColElement82});
+            this.ILA_OT_GROUP_TYPE.LookupData = this.ILD_COMMON;
+            this.ILA_OT_GROUP_TYPE.LookupSize = new System.Drawing.Size(423, 347);
+            this.ILA_OT_GROUP_TYPE.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
+            this.ILA_OT_GROUP_TYPE.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_OT_GROUP_TYPE_PrePopupShow);
+            // 
+            // ILA_ALLOWANCE_ITEM_10
+            // 
+            this.ILA_ALLOWANCE_ITEM_10.DisplayCaption = "Cost Center Search";
+            isOraColElement83.DataColumn = "CODE_NAME";
+            isOraColElement83.DataOrdinal = 0;
             isOraColElement83.DataType = "System.String";
-            isOraColElement83.HeaderPrompt = "VALUE1";
+            isOraColElement83.HeaderPrompt = "Allowance Item";
             isOraColElement83.LastValue = null;
-            isOraColElement83.MemberControl = null;
-            isOraColElement83.MemberValue = null;
+            isOraColElement83.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement83.MemberValue = "ALLOWANCE_10_NAME";
             isOraColElement83.Nullable = null;
-            isOraColElement83.Ordinal = 3;
+            isOraColElement83.Ordinal = 0;
             isOraColElement83.RelationKeyColumn = null;
             isOraColElement83.ReturnParameter = null;
-            isOraColElement83.TL1_KR = null;
+            isOraColElement83.TL1_KR = "지급항목";
             isOraColElement83.TL2_CN = null;
             isOraColElement83.TL3_VN = null;
             isOraColElement83.TL4_JP = null;
             isOraColElement83.TL5_XAA = null;
-            isOraColElement83.Visible = 0;
-            isOraColElement83.Width = 65;
-            isOraColElement84.DataColumn = "VALUE2";
-            isOraColElement84.DataOrdinal = 4;
+            isOraColElement83.Visible = 1;
+            isOraColElement83.Width = 250;
+            isOraColElement84.DataColumn = "CODE";
+            isOraColElement84.DataOrdinal = 1;
             isOraColElement84.DataType = "System.String";
-            isOraColElement84.HeaderPrompt = "VALUE2";
+            isOraColElement84.HeaderPrompt = "Code";
             isOraColElement84.LastValue = null;
-            isOraColElement84.MemberControl = null;
-            isOraColElement84.MemberValue = null;
+            isOraColElement84.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement84.MemberValue = "ALLOWANCE_10_CODE";
             isOraColElement84.Nullable = null;
-            isOraColElement84.Ordinal = 4;
+            isOraColElement84.Ordinal = 1;
             isOraColElement84.RelationKeyColumn = null;
             isOraColElement84.ReturnParameter = null;
-            isOraColElement84.TL1_KR = null;
+            isOraColElement84.TL1_KR = "코드";
             isOraColElement84.TL2_CN = null;
             isOraColElement84.TL3_VN = null;
             isOraColElement84.TL4_JP = null;
             isOraColElement84.TL5_XAA = null;
-            isOraColElement84.Visible = 0;
-            isOraColElement84.Width = 65;
-            isOraColElement85.DataColumn = "VALUE3";
-            isOraColElement85.DataOrdinal = 5;
-            isOraColElement85.DataType = "System.String";
-            isOraColElement85.HeaderPrompt = "VALUE3";
+            isOraColElement84.Visible = 1;
+            isOraColElement84.Width = 100;
+            isOraColElement85.DataColumn = "COMMON_ID";
+            isOraColElement85.DataOrdinal = 2;
+            isOraColElement85.DataType = "System.Decimal";
+            isOraColElement85.HeaderPrompt = "COMMON_ID";
             isOraColElement85.LastValue = null;
             isOraColElement85.MemberControl = null;
             isOraColElement85.MemberValue = null;
             isOraColElement85.Nullable = null;
-            isOraColElement85.Ordinal = 5;
+            isOraColElement85.Ordinal = 2;
             isOraColElement85.RelationKeyColumn = null;
             isOraColElement85.ReturnParameter = null;
             isOraColElement85.TL1_KR = null;
@@ -4536,15 +5064,15 @@
             isOraColElement85.TL5_XAA = null;
             isOraColElement85.Visible = 0;
             isOraColElement85.Width = 65;
-            isOraColElement86.DataColumn = "VALUE4";
-            isOraColElement86.DataOrdinal = 6;
+            isOraColElement86.DataColumn = "VALUE1";
+            isOraColElement86.DataOrdinal = 3;
             isOraColElement86.DataType = "System.String";
-            isOraColElement86.HeaderPrompt = "VALUE4";
+            isOraColElement86.HeaderPrompt = "VALUE1";
             isOraColElement86.LastValue = null;
             isOraColElement86.MemberControl = null;
             isOraColElement86.MemberValue = null;
             isOraColElement86.Nullable = null;
-            isOraColElement86.Ordinal = 6;
+            isOraColElement86.Ordinal = 3;
             isOraColElement86.RelationKeyColumn = null;
             isOraColElement86.ReturnParameter = null;
             isOraColElement86.TL1_KR = null;
@@ -4554,15 +5082,15 @@
             isOraColElement86.TL5_XAA = null;
             isOraColElement86.Visible = 0;
             isOraColElement86.Width = 65;
-            isOraColElement87.DataColumn = "VALUE5";
-            isOraColElement87.DataOrdinal = 7;
+            isOraColElement87.DataColumn = "VALUE2";
+            isOraColElement87.DataOrdinal = 4;
             isOraColElement87.DataType = "System.String";
-            isOraColElement87.HeaderPrompt = "VALUE5";
+            isOraColElement87.HeaderPrompt = "VALUE2";
             isOraColElement87.LastValue = null;
             isOraColElement87.MemberControl = null;
             isOraColElement87.MemberValue = null;
             isOraColElement87.Nullable = null;
-            isOraColElement87.Ordinal = 7;
+            isOraColElement87.Ordinal = 4;
             isOraColElement87.RelationKeyColumn = null;
             isOraColElement87.ReturnParameter = null;
             isOraColElement87.TL1_KR = null;
@@ -4572,15 +5100,15 @@
             isOraColElement87.TL5_XAA = null;
             isOraColElement87.Visible = 0;
             isOraColElement87.Width = 65;
-            isOraColElement88.DataColumn = "VALUE6";
-            isOraColElement88.DataOrdinal = 8;
+            isOraColElement88.DataColumn = "VALUE3";
+            isOraColElement88.DataOrdinal = 5;
             isOraColElement88.DataType = "System.String";
-            isOraColElement88.HeaderPrompt = "VALUE6";
+            isOraColElement88.HeaderPrompt = "VALUE3";
             isOraColElement88.LastValue = null;
             isOraColElement88.MemberControl = null;
             isOraColElement88.MemberValue = null;
             isOraColElement88.Nullable = null;
-            isOraColElement88.Ordinal = 8;
+            isOraColElement88.Ordinal = 5;
             isOraColElement88.RelationKeyColumn = null;
             isOraColElement88.ReturnParameter = null;
             isOraColElement88.TL1_KR = null;
@@ -4590,15 +5118,15 @@
             isOraColElement88.TL5_XAA = null;
             isOraColElement88.Visible = 0;
             isOraColElement88.Width = 65;
-            isOraColElement89.DataColumn = "VALUE7";
-            isOraColElement89.DataOrdinal = 9;
+            isOraColElement89.DataColumn = "VALUE4";
+            isOraColElement89.DataOrdinal = 6;
             isOraColElement89.DataType = "System.String";
-            isOraColElement89.HeaderPrompt = "VALUE7";
+            isOraColElement89.HeaderPrompt = "VALUE4";
             isOraColElement89.LastValue = null;
             isOraColElement89.MemberControl = null;
             isOraColElement89.MemberValue = null;
             isOraColElement89.Nullable = null;
-            isOraColElement89.Ordinal = 9;
+            isOraColElement89.Ordinal = 6;
             isOraColElement89.RelationKeyColumn = null;
             isOraColElement89.ReturnParameter = null;
             isOraColElement89.TL1_KR = null;
@@ -4608,15 +5136,15 @@
             isOraColElement89.TL5_XAA = null;
             isOraColElement89.Visible = 0;
             isOraColElement89.Width = 65;
-            isOraColElement90.DataColumn = "VALUE8";
-            isOraColElement90.DataOrdinal = 10;
+            isOraColElement90.DataColumn = "VALUE5";
+            isOraColElement90.DataOrdinal = 7;
             isOraColElement90.DataType = "System.String";
-            isOraColElement90.HeaderPrompt = "VALUE8";
+            isOraColElement90.HeaderPrompt = "VALUE5";
             isOraColElement90.LastValue = null;
             isOraColElement90.MemberControl = null;
             isOraColElement90.MemberValue = null;
             isOraColElement90.Nullable = null;
-            isOraColElement90.Ordinal = 10;
+            isOraColElement90.Ordinal = 7;
             isOraColElement90.RelationKeyColumn = null;
             isOraColElement90.ReturnParameter = null;
             isOraColElement90.TL1_KR = null;
@@ -4626,15 +5154,15 @@
             isOraColElement90.TL5_XAA = null;
             isOraColElement90.Visible = 0;
             isOraColElement90.Width = 65;
-            isOraColElement91.DataColumn = "VALUE9";
-            isOraColElement91.DataOrdinal = 11;
+            isOraColElement91.DataColumn = "VALUE6";
+            isOraColElement91.DataOrdinal = 8;
             isOraColElement91.DataType = "System.String";
-            isOraColElement91.HeaderPrompt = "VALUE9";
+            isOraColElement91.HeaderPrompt = "VALUE6";
             isOraColElement91.LastValue = null;
             isOraColElement91.MemberControl = null;
             isOraColElement91.MemberValue = null;
             isOraColElement91.Nullable = null;
-            isOraColElement91.Ordinal = 11;
+            isOraColElement91.Ordinal = 8;
             isOraColElement91.RelationKeyColumn = null;
             isOraColElement91.ReturnParameter = null;
             isOraColElement91.TL1_KR = null;
@@ -4644,15 +5172,15 @@
             isOraColElement91.TL5_XAA = null;
             isOraColElement91.Visible = 0;
             isOraColElement91.Width = 65;
-            isOraColElement92.DataColumn = "VALUE10";
-            isOraColElement92.DataOrdinal = 12;
+            isOraColElement92.DataColumn = "VALUE7";
+            isOraColElement92.DataOrdinal = 9;
             isOraColElement92.DataType = "System.String";
-            isOraColElement92.HeaderPrompt = "VALUE10";
+            isOraColElement92.HeaderPrompt = "VALUE7";
             isOraColElement92.LastValue = null;
             isOraColElement92.MemberControl = null;
             isOraColElement92.MemberValue = null;
             isOraColElement92.Nullable = null;
-            isOraColElement92.Ordinal = 12;
+            isOraColElement92.Ordinal = 9;
             isOraColElement92.RelationKeyColumn = null;
             isOraColElement92.ReturnParameter = null;
             isOraColElement92.TL1_KR = null;
@@ -4662,73 +5190,51 @@
             isOraColElement92.TL5_XAA = null;
             isOraColElement92.Visible = 0;
             isOraColElement92.Width = 65;
-            this.ILA_OT_GROUP_TYPE.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
-            isOraColElement80,
-            isOraColElement81,
-            isOraColElement82,
-            isOraColElement83,
-            isOraColElement84,
-            isOraColElement85,
-            isOraColElement86,
-            isOraColElement87,
-            isOraColElement88,
-            isOraColElement89,
-            isOraColElement90,
-            isOraColElement91,
-            isOraColElement92});
-            this.ILA_OT_GROUP_TYPE.LookupData = this.ILD_COMMON;
-            this.ILA_OT_GROUP_TYPE.LookupSize = new System.Drawing.Size(423, 347);
-            this.ILA_OT_GROUP_TYPE.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
-            this.ILA_OT_GROUP_TYPE.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_OT_GROUP_TYPE_PrePopupShow);
-            // 
-            // ILA_ALLOWANCE_ITEM_10
-            // 
-            this.ILA_ALLOWANCE_ITEM_10.DisplayCaption = "Cost Center Search";
-            isOraColElement93.DataColumn = "CODE_NAME";
-            isOraColElement93.DataOrdinal = 0;
+            isOraColElement93.DataColumn = "VALUE8";
+            isOraColElement93.DataOrdinal = 10;
             isOraColElement93.DataType = "System.String";
-            isOraColElement93.HeaderPrompt = "Allowance Item";
+            isOraColElement93.HeaderPrompt = "VALUE8";
             isOraColElement93.LastValue = null;
-            isOraColElement93.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement93.MemberValue = "ALLOWANCE_10_NAME";
+            isOraColElement93.MemberControl = null;
+            isOraColElement93.MemberValue = null;
             isOraColElement93.Nullable = null;
-            isOraColElement93.Ordinal = 0;
+            isOraColElement93.Ordinal = 10;
             isOraColElement93.RelationKeyColumn = null;
             isOraColElement93.ReturnParameter = null;
-            isOraColElement93.TL1_KR = "지급항목";
+            isOraColElement93.TL1_KR = null;
             isOraColElement93.TL2_CN = null;
             isOraColElement93.TL3_VN = null;
             isOraColElement93.TL4_JP = null;
             isOraColElement93.TL5_XAA = null;
-            isOraColElement93.Visible = 1;
-            isOraColElement93.Width = 250;
-            isOraColElement94.DataColumn = "CODE";
-            isOraColElement94.DataOrdinal = 1;
+            isOraColElement93.Visible = 0;
+            isOraColElement93.Width = 65;
+            isOraColElement94.DataColumn = "VALUE9";
+            isOraColElement94.DataOrdinal = 11;
             isOraColElement94.DataType = "System.String";
-            isOraColElement94.HeaderPrompt = "Code";
+            isOraColElement94.HeaderPrompt = "VALUE9";
             isOraColElement94.LastValue = null;
-            isOraColElement94.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement94.MemberValue = "ALLOWANCE_10_CODE";
+            isOraColElement94.MemberControl = null;
+            isOraColElement94.MemberValue = null;
             isOraColElement94.Nullable = null;
-            isOraColElement94.Ordinal = 1;
+            isOraColElement94.Ordinal = 11;
             isOraColElement94.RelationKeyColumn = null;
             isOraColElement94.ReturnParameter = null;
-            isOraColElement94.TL1_KR = "코드";
+            isOraColElement94.TL1_KR = null;
             isOraColElement94.TL2_CN = null;
             isOraColElement94.TL3_VN = null;
             isOraColElement94.TL4_JP = null;
             isOraColElement94.TL5_XAA = null;
-            isOraColElement94.Visible = 1;
-            isOraColElement94.Width = 100;
-            isOraColElement95.DataColumn = "COMMON_ID";
-            isOraColElement95.DataOrdinal = 2;
-            isOraColElement95.DataType = "System.Decimal";
-            isOraColElement95.HeaderPrompt = "COMMON_ID";
+            isOraColElement94.Visible = 0;
+            isOraColElement94.Width = 65;
+            isOraColElement95.DataColumn = "VALUE10";
+            isOraColElement95.DataOrdinal = 12;
+            isOraColElement95.DataType = "System.String";
+            isOraColElement95.HeaderPrompt = "VALUE10";
             isOraColElement95.LastValue = null;
             isOraColElement95.MemberControl = null;
             isOraColElement95.MemberValue = null;
             isOraColElement95.Nullable = null;
-            isOraColElement95.Ordinal = 2;
+            isOraColElement95.Ordinal = 12;
             isOraColElement95.RelationKeyColumn = null;
             isOraColElement95.ReturnParameter = null;
             isOraColElement95.TL1_KR = null;
@@ -4738,51 +5244,73 @@
             isOraColElement95.TL5_XAA = null;
             isOraColElement95.Visible = 0;
             isOraColElement95.Width = 65;
-            isOraColElement96.DataColumn = "VALUE1";
-            isOraColElement96.DataOrdinal = 3;
+            this.ILA_ALLOWANCE_ITEM_10.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
+            isOraColElement83,
+            isOraColElement84,
+            isOraColElement85,
+            isOraColElement86,
+            isOraColElement87,
+            isOraColElement88,
+            isOraColElement89,
+            isOraColElement90,
+            isOraColElement91,
+            isOraColElement92,
+            isOraColElement93,
+            isOraColElement94,
+            isOraColElement95});
+            this.ILA_ALLOWANCE_ITEM_10.LookupData = this.ILD_COMMON;
+            this.ILA_ALLOWANCE_ITEM_10.LookupSize = new System.Drawing.Size(429, 347);
+            this.ILA_ALLOWANCE_ITEM_10.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
+            this.ILA_ALLOWANCE_ITEM_10.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_ALLOWANCE_ITEM_10_PrePopupShow);
+            // 
+            // ILA_ALLOWANCE_ITEM_20
+            // 
+            this.ILA_ALLOWANCE_ITEM_20.DisplayCaption = "Cost Center Search";
+            isOraColElement96.DataColumn = "CODE_NAME";
+            isOraColElement96.DataOrdinal = 0;
             isOraColElement96.DataType = "System.String";
-            isOraColElement96.HeaderPrompt = "VALUE1";
+            isOraColElement96.HeaderPrompt = "Allowance Item";
             isOraColElement96.LastValue = null;
-            isOraColElement96.MemberControl = null;
-            isOraColElement96.MemberValue = null;
+            isOraColElement96.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement96.MemberValue = "ALLOWANCE_20_NAME";
             isOraColElement96.Nullable = null;
-            isOraColElement96.Ordinal = 3;
+            isOraColElement96.Ordinal = 0;
             isOraColElement96.RelationKeyColumn = null;
             isOraColElement96.ReturnParameter = null;
-            isOraColElement96.TL1_KR = null;
+            isOraColElement96.TL1_KR = "지급항목";
             isOraColElement96.TL2_CN = null;
             isOraColElement96.TL3_VN = null;
             isOraColElement96.TL4_JP = null;
             isOraColElement96.TL5_XAA = null;
-            isOraColElement96.Visible = 0;
-            isOraColElement96.Width = 65;
-            isOraColElement97.DataColumn = "VALUE2";
-            isOraColElement97.DataOrdinal = 4;
+            isOraColElement96.Visible = 1;
+            isOraColElement96.Width = 250;
+            isOraColElement97.DataColumn = "CODE";
+            isOraColElement97.DataOrdinal = 1;
             isOraColElement97.DataType = "System.String";
-            isOraColElement97.HeaderPrompt = "VALUE2";
+            isOraColElement97.HeaderPrompt = "Code";
             isOraColElement97.LastValue = null;
-            isOraColElement97.MemberControl = null;
-            isOraColElement97.MemberValue = null;
+            isOraColElement97.MemberControl = this.IGR_OT_TYPE;
+            isOraColElement97.MemberValue = "ALLOWANCE_20_CODE";
             isOraColElement97.Nullable = null;
-            isOraColElement97.Ordinal = 4;
+            isOraColElement97.Ordinal = 1;
             isOraColElement97.RelationKeyColumn = null;
             isOraColElement97.ReturnParameter = null;
-            isOraColElement97.TL1_KR = null;
+            isOraColElement97.TL1_KR = "코드";
             isOraColElement97.TL2_CN = null;
             isOraColElement97.TL3_VN = null;
             isOraColElement97.TL4_JP = null;
             isOraColElement97.TL5_XAA = null;
-            isOraColElement97.Visible = 0;
-            isOraColElement97.Width = 65;
-            isOraColElement98.DataColumn = "VALUE3";
-            isOraColElement98.DataOrdinal = 5;
-            isOraColElement98.DataType = "System.String";
-            isOraColElement98.HeaderPrompt = "VALUE3";
+            isOraColElement97.Visible = 1;
+            isOraColElement97.Width = 100;
+            isOraColElement98.DataColumn = "COMMON_ID";
+            isOraColElement98.DataOrdinal = 2;
+            isOraColElement98.DataType = "System.Decimal";
+            isOraColElement98.HeaderPrompt = "COMMON_ID";
             isOraColElement98.LastValue = null;
             isOraColElement98.MemberControl = null;
             isOraColElement98.MemberValue = null;
             isOraColElement98.Nullable = null;
-            isOraColElement98.Ordinal = 5;
+            isOraColElement98.Ordinal = 2;
             isOraColElement98.RelationKeyColumn = null;
             isOraColElement98.ReturnParameter = null;
             isOraColElement98.TL1_KR = null;
@@ -4792,15 +5320,15 @@
             isOraColElement98.TL5_XAA = null;
             isOraColElement98.Visible = 0;
             isOraColElement98.Width = 65;
-            isOraColElement99.DataColumn = "VALUE4";
-            isOraColElement99.DataOrdinal = 6;
+            isOraColElement99.DataColumn = "VALUE1";
+            isOraColElement99.DataOrdinal = 3;
             isOraColElement99.DataType = "System.String";
-            isOraColElement99.HeaderPrompt = "VALUE4";
+            isOraColElement99.HeaderPrompt = "VALUE1";
             isOraColElement99.LastValue = null;
             isOraColElement99.MemberControl = null;
             isOraColElement99.MemberValue = null;
             isOraColElement99.Nullable = null;
-            isOraColElement99.Ordinal = 6;
+            isOraColElement99.Ordinal = 3;
             isOraColElement99.RelationKeyColumn = null;
             isOraColElement99.ReturnParameter = null;
             isOraColElement99.TL1_KR = null;
@@ -4810,15 +5338,15 @@
             isOraColElement99.TL5_XAA = null;
             isOraColElement99.Visible = 0;
             isOraColElement99.Width = 65;
-            isOraColElement100.DataColumn = "VALUE5";
-            isOraColElement100.DataOrdinal = 7;
+            isOraColElement100.DataColumn = "VALUE2";
+            isOraColElement100.DataOrdinal = 4;
             isOraColElement100.DataType = "System.String";
-            isOraColElement100.HeaderPrompt = "VALUE5";
+            isOraColElement100.HeaderPrompt = "VALUE2";
             isOraColElement100.LastValue = null;
             isOraColElement100.MemberControl = null;
             isOraColElement100.MemberValue = null;
             isOraColElement100.Nullable = null;
-            isOraColElement100.Ordinal = 7;
+            isOraColElement100.Ordinal = 4;
             isOraColElement100.RelationKeyColumn = null;
             isOraColElement100.ReturnParameter = null;
             isOraColElement100.TL1_KR = null;
@@ -4828,15 +5356,15 @@
             isOraColElement100.TL5_XAA = null;
             isOraColElement100.Visible = 0;
             isOraColElement100.Width = 65;
-            isOraColElement101.DataColumn = "VALUE6";
-            isOraColElement101.DataOrdinal = 8;
+            isOraColElement101.DataColumn = "VALUE3";
+            isOraColElement101.DataOrdinal = 5;
             isOraColElement101.DataType = "System.String";
-            isOraColElement101.HeaderPrompt = "VALUE6";
+            isOraColElement101.HeaderPrompt = "VALUE3";
             isOraColElement101.LastValue = null;
             isOraColElement101.MemberControl = null;
             isOraColElement101.MemberValue = null;
             isOraColElement101.Nullable = null;
-            isOraColElement101.Ordinal = 8;
+            isOraColElement101.Ordinal = 5;
             isOraColElement101.RelationKeyColumn = null;
             isOraColElement101.ReturnParameter = null;
             isOraColElement101.TL1_KR = null;
@@ -4846,15 +5374,15 @@
             isOraColElement101.TL5_XAA = null;
             isOraColElement101.Visible = 0;
             isOraColElement101.Width = 65;
-            isOraColElement102.DataColumn = "VALUE7";
-            isOraColElement102.DataOrdinal = 9;
+            isOraColElement102.DataColumn = "VALUE4";
+            isOraColElement102.DataOrdinal = 6;
             isOraColElement102.DataType = "System.String";
-            isOraColElement102.HeaderPrompt = "VALUE7";
+            isOraColElement102.HeaderPrompt = "VALUE4";
             isOraColElement102.LastValue = null;
             isOraColElement102.MemberControl = null;
             isOraColElement102.MemberValue = null;
             isOraColElement102.Nullable = null;
-            isOraColElement102.Ordinal = 9;
+            isOraColElement102.Ordinal = 6;
             isOraColElement102.RelationKeyColumn = null;
             isOraColElement102.ReturnParameter = null;
             isOraColElement102.TL1_KR = null;
@@ -4864,15 +5392,15 @@
             isOraColElement102.TL5_XAA = null;
             isOraColElement102.Visible = 0;
             isOraColElement102.Width = 65;
-            isOraColElement103.DataColumn = "VALUE8";
-            isOraColElement103.DataOrdinal = 10;
+            isOraColElement103.DataColumn = "VALUE5";
+            isOraColElement103.DataOrdinal = 7;
             isOraColElement103.DataType = "System.String";
-            isOraColElement103.HeaderPrompt = "VALUE8";
+            isOraColElement103.HeaderPrompt = "VALUE5";
             isOraColElement103.LastValue = null;
             isOraColElement103.MemberControl = null;
             isOraColElement103.MemberValue = null;
             isOraColElement103.Nullable = null;
-            isOraColElement103.Ordinal = 10;
+            isOraColElement103.Ordinal = 7;
             isOraColElement103.RelationKeyColumn = null;
             isOraColElement103.ReturnParameter = null;
             isOraColElement103.TL1_KR = null;
@@ -4882,15 +5410,15 @@
             isOraColElement103.TL5_XAA = null;
             isOraColElement103.Visible = 0;
             isOraColElement103.Width = 65;
-            isOraColElement104.DataColumn = "VALUE9";
-            isOraColElement104.DataOrdinal = 11;
+            isOraColElement104.DataColumn = "VALUE6";
+            isOraColElement104.DataOrdinal = 8;
             isOraColElement104.DataType = "System.String";
-            isOraColElement104.HeaderPrompt = "VALUE9";
+            isOraColElement104.HeaderPrompt = "VALUE6";
             isOraColElement104.LastValue = null;
             isOraColElement104.MemberControl = null;
             isOraColElement104.MemberValue = null;
             isOraColElement104.Nullable = null;
-            isOraColElement104.Ordinal = 11;
+            isOraColElement104.Ordinal = 8;
             isOraColElement104.RelationKeyColumn = null;
             isOraColElement104.ReturnParameter = null;
             isOraColElement104.TL1_KR = null;
@@ -4900,15 +5428,15 @@
             isOraColElement104.TL5_XAA = null;
             isOraColElement104.Visible = 0;
             isOraColElement104.Width = 65;
-            isOraColElement105.DataColumn = "VALUE10";
-            isOraColElement105.DataOrdinal = 12;
+            isOraColElement105.DataColumn = "VALUE7";
+            isOraColElement105.DataOrdinal = 9;
             isOraColElement105.DataType = "System.String";
-            isOraColElement105.HeaderPrompt = "VALUE10";
+            isOraColElement105.HeaderPrompt = "VALUE7";
             isOraColElement105.LastValue = null;
             isOraColElement105.MemberControl = null;
             isOraColElement105.MemberValue = null;
             isOraColElement105.Nullable = null;
-            isOraColElement105.Ordinal = 12;
+            isOraColElement105.Ordinal = 9;
             isOraColElement105.RelationKeyColumn = null;
             isOraColElement105.ReturnParameter = null;
             isOraColElement105.TL1_KR = null;
@@ -4918,73 +5446,51 @@
             isOraColElement105.TL5_XAA = null;
             isOraColElement105.Visible = 0;
             isOraColElement105.Width = 65;
-            this.ILA_ALLOWANCE_ITEM_10.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
-            isOraColElement93,
-            isOraColElement94,
-            isOraColElement95,
-            isOraColElement96,
-            isOraColElement97,
-            isOraColElement98,
-            isOraColElement99,
-            isOraColElement100,
-            isOraColElement101,
-            isOraColElement102,
-            isOraColElement103,
-            isOraColElement104,
-            isOraColElement105});
-            this.ILA_ALLOWANCE_ITEM_10.LookupData = this.ILD_COMMON;
-            this.ILA_ALLOWANCE_ITEM_10.LookupSize = new System.Drawing.Size(429, 347);
-            this.ILA_ALLOWANCE_ITEM_10.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
-            this.ILA_ALLOWANCE_ITEM_10.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ILA_ALLOWANCE_ITEM_10_PrePopupShow);
-            // 
-            // ILA_ALLOWANCE_ITEM_20
-            // 
-            this.ILA_ALLOWANCE_ITEM_20.DisplayCaption = "Cost Center Search";
-            isOraColElement106.DataColumn = "CODE_NAME";
-            isOraColElement106.DataOrdinal = 0;
+            isOraColElement106.DataColumn = "VALUE8";
+            isOraColElement106.DataOrdinal = 10;
             isOraColElement106.DataType = "System.String";
-            isOraColElement106.HeaderPrompt = "Allowance Item";
+            isOraColElement106.HeaderPrompt = "VALUE8";
             isOraColElement106.LastValue = null;
-            isOraColElement106.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement106.MemberValue = "ALLOWANCE_20_NAME";
+            isOraColElement106.MemberControl = null;
+            isOraColElement106.MemberValue = null;
             isOraColElement106.Nullable = null;
-            isOraColElement106.Ordinal = 0;
+            isOraColElement106.Ordinal = 10;
             isOraColElement106.RelationKeyColumn = null;
             isOraColElement106.ReturnParameter = null;
-            isOraColElement106.TL1_KR = "지급항목";
+            isOraColElement106.TL1_KR = null;
             isOraColElement106.TL2_CN = null;
             isOraColElement106.TL3_VN = null;
             isOraColElement106.TL4_JP = null;
             isOraColElement106.TL5_XAA = null;
-            isOraColElement106.Visible = 1;
-            isOraColElement106.Width = 250;
-            isOraColElement107.DataColumn = "CODE";
-            isOraColElement107.DataOrdinal = 1;
+            isOraColElement106.Visible = 0;
+            isOraColElement106.Width = 65;
+            isOraColElement107.DataColumn = "VALUE9";
+            isOraColElement107.DataOrdinal = 11;
             isOraColElement107.DataType = "System.String";
-            isOraColElement107.HeaderPrompt = "Code";
+            isOraColElement107.HeaderPrompt = "VALUE9";
             isOraColElement107.LastValue = null;
-            isOraColElement107.MemberControl = this.IGR_OT_TYPE;
-            isOraColElement107.MemberValue = "ALLOWANCE_20_CODE";
+            isOraColElement107.MemberControl = null;
+            isOraColElement107.MemberValue = null;
             isOraColElement107.Nullable = null;
-            isOraColElement107.Ordinal = 1;
+            isOraColElement107.Ordinal = 11;
             isOraColElement107.RelationKeyColumn = null;
             isOraColElement107.ReturnParameter = null;
-            isOraColElement107.TL1_KR = "코드";
+            isOraColElement107.TL1_KR = null;
             isOraColElement107.TL2_CN = null;
             isOraColElement107.TL3_VN = null;
             isOraColElement107.TL4_JP = null;
             isOraColElement107.TL5_XAA = null;
-            isOraColElement107.Visible = 1;
-            isOraColElement107.Width = 100;
-            isOraColElement108.DataColumn = "COMMON_ID";
-            isOraColElement108.DataOrdinal = 2;
-            isOraColElement108.DataType = "System.Decimal";
-            isOraColElement108.HeaderPrompt = "COMMON_ID";
+            isOraColElement107.Visible = 0;
+            isOraColElement107.Width = 65;
+            isOraColElement108.DataColumn = "VALUE10";
+            isOraColElement108.DataOrdinal = 12;
+            isOraColElement108.DataType = "System.String";
+            isOraColElement108.HeaderPrompt = "VALUE10";
             isOraColElement108.LastValue = null;
             isOraColElement108.MemberControl = null;
             isOraColElement108.MemberValue = null;
             isOraColElement108.Nullable = null;
-            isOraColElement108.Ordinal = 2;
+            isOraColElement108.Ordinal = 12;
             isOraColElement108.RelationKeyColumn = null;
             isOraColElement108.ReturnParameter = null;
             isOraColElement108.TL1_KR = null;
@@ -4994,200 +5500,20 @@
             isOraColElement108.TL5_XAA = null;
             isOraColElement108.Visible = 0;
             isOraColElement108.Width = 65;
-            isOraColElement109.DataColumn = "VALUE1";
-            isOraColElement109.DataOrdinal = 3;
-            isOraColElement109.DataType = "System.String";
-            isOraColElement109.HeaderPrompt = "VALUE1";
-            isOraColElement109.LastValue = null;
-            isOraColElement109.MemberControl = null;
-            isOraColElement109.MemberValue = null;
-            isOraColElement109.Nullable = null;
-            isOraColElement109.Ordinal = 3;
-            isOraColElement109.RelationKeyColumn = null;
-            isOraColElement109.ReturnParameter = null;
-            isOraColElement109.TL1_KR = null;
-            isOraColElement109.TL2_CN = null;
-            isOraColElement109.TL3_VN = null;
-            isOraColElement109.TL4_JP = null;
-            isOraColElement109.TL5_XAA = null;
-            isOraColElement109.Visible = 0;
-            isOraColElement109.Width = 65;
-            isOraColElement110.DataColumn = "VALUE2";
-            isOraColElement110.DataOrdinal = 4;
-            isOraColElement110.DataType = "System.String";
-            isOraColElement110.HeaderPrompt = "VALUE2";
-            isOraColElement110.LastValue = null;
-            isOraColElement110.MemberControl = null;
-            isOraColElement110.MemberValue = null;
-            isOraColElement110.Nullable = null;
-            isOraColElement110.Ordinal = 4;
-            isOraColElement110.RelationKeyColumn = null;
-            isOraColElement110.ReturnParameter = null;
-            isOraColElement110.TL1_KR = null;
-            isOraColElement110.TL2_CN = null;
-            isOraColElement110.TL3_VN = null;
-            isOraColElement110.TL4_JP = null;
-            isOraColElement110.TL5_XAA = null;
-            isOraColElement110.Visible = 0;
-            isOraColElement110.Width = 65;
-            isOraColElement111.DataColumn = "VALUE3";
-            isOraColElement111.DataOrdinal = 5;
-            isOraColElement111.DataType = "System.String";
-            isOraColElement111.HeaderPrompt = "VALUE3";
-            isOraColElement111.LastValue = null;
-            isOraColElement111.MemberControl = null;
-            isOraColElement111.MemberValue = null;
-            isOraColElement111.Nullable = null;
-            isOraColElement111.Ordinal = 5;
-            isOraColElement111.RelationKeyColumn = null;
-            isOraColElement111.ReturnParameter = null;
-            isOraColElement111.TL1_KR = null;
-            isOraColElement111.TL2_CN = null;
-            isOraColElement111.TL3_VN = null;
-            isOraColElement111.TL4_JP = null;
-            isOraColElement111.TL5_XAA = null;
-            isOraColElement111.Visible = 0;
-            isOraColElement111.Width = 65;
-            isOraColElement112.DataColumn = "VALUE4";
-            isOraColElement112.DataOrdinal = 6;
-            isOraColElement112.DataType = "System.String";
-            isOraColElement112.HeaderPrompt = "VALUE4";
-            isOraColElement112.LastValue = null;
-            isOraColElement112.MemberControl = null;
-            isOraColElement112.MemberValue = null;
-            isOraColElement112.Nullable = null;
-            isOraColElement112.Ordinal = 6;
-            isOraColElement112.RelationKeyColumn = null;
-            isOraColElement112.ReturnParameter = null;
-            isOraColElement112.TL1_KR = null;
-            isOraColElement112.TL2_CN = null;
-            isOraColElement112.TL3_VN = null;
-            isOraColElement112.TL4_JP = null;
-            isOraColElement112.TL5_XAA = null;
-            isOraColElement112.Visible = 0;
-            isOraColElement112.Width = 65;
-            isOraColElement113.DataColumn = "VALUE5";
-            isOraColElement113.DataOrdinal = 7;
-            isOraColElement113.DataType = "System.String";
-            isOraColElement113.HeaderPrompt = "VALUE5";
-            isOraColElement113.LastValue = null;
-            isOraColElement113.MemberControl = null;
-            isOraColElement113.MemberValue = null;
-            isOraColElement113.Nullable = null;
-            isOraColElement113.Ordinal = 7;
-            isOraColElement113.RelationKeyColumn = null;
-            isOraColElement113.ReturnParameter = null;
-            isOraColElement113.TL1_KR = null;
-            isOraColElement113.TL2_CN = null;
-            isOraColElement113.TL3_VN = null;
-            isOraColElement113.TL4_JP = null;
-            isOraColElement113.TL5_XAA = null;
-            isOraColElement113.Visible = 0;
-            isOraColElement113.Width = 65;
-            isOraColElement114.DataColumn = "VALUE6";
-            isOraColElement114.DataOrdinal = 8;
-            isOraColElement114.DataType = "System.String";
-            isOraColElement114.HeaderPrompt = "VALUE6";
-            isOraColElement114.LastValue = null;
-            isOraColElement114.MemberControl = null;
-            isOraColElement114.MemberValue = null;
-            isOraColElement114.Nullable = null;
-            isOraColElement114.Ordinal = 8;
-            isOraColElement114.RelationKeyColumn = null;
-            isOraColElement114.ReturnParameter = null;
-            isOraColElement114.TL1_KR = null;
-            isOraColElement114.TL2_CN = null;
-            isOraColElement114.TL3_VN = null;
-            isOraColElement114.TL4_JP = null;
-            isOraColElement114.TL5_XAA = null;
-            isOraColElement114.Visible = 0;
-            isOraColElement114.Width = 65;
-            isOraColElement115.DataColumn = "VALUE7";
-            isOraColElement115.DataOrdinal = 9;
-            isOraColElement115.DataType = "System.String";
-            isOraColElement115.HeaderPrompt = "VALUE7";
-            isOraColElement115.LastValue = null;
-            isOraColElement115.MemberControl = null;
-            isOraColElement115.MemberValue = null;
-            isOraColElement115.Nullable = null;
-            isOraColElement115.Ordinal = 9;
-            isOraColElement115.RelationKeyColumn = null;
-            isOraColElement115.ReturnParameter = null;
-            isOraColElement115.TL1_KR = null;
-            isOraColElement115.TL2_CN = null;
-            isOraColElement115.TL3_VN = null;
-            isOraColElement115.TL4_JP = null;
-            isOraColElement115.TL5_XAA = null;
-            isOraColElement115.Visible = 0;
-            isOraColElement115.Width = 65;
-            isOraColElement116.DataColumn = "VALUE8";
-            isOraColElement116.DataOrdinal = 10;
-            isOraColElement116.DataType = "System.String";
-            isOraColElement116.HeaderPrompt = "VALUE8";
-            isOraColElement116.LastValue = null;
-            isOraColElement116.MemberControl = null;
-            isOraColElement116.MemberValue = null;
-            isOraColElement116.Nullable = null;
-            isOraColElement116.Ordinal = 10;
-            isOraColElement116.RelationKeyColumn = null;
-            isOraColElement116.ReturnParameter = null;
-            isOraColElement116.TL1_KR = null;
-            isOraColElement116.TL2_CN = null;
-            isOraColElement116.TL3_VN = null;
-            isOraColElement116.TL4_JP = null;
-            isOraColElement116.TL5_XAA = null;
-            isOraColElement116.Visible = 0;
-            isOraColElement116.Width = 65;
-            isOraColElement117.DataColumn = "VALUE9";
-            isOraColElement117.DataOrdinal = 11;
-            isOraColElement117.DataType = "System.String";
-            isOraColElement117.HeaderPrompt = "VALUE9";
-            isOraColElement117.LastValue = null;
-            isOraColElement117.MemberControl = null;
-            isOraColElement117.MemberValue = null;
-            isOraColElement117.Nullable = null;
-            isOraColElement117.Ordinal = 11;
-            isOraColElement117.RelationKeyColumn = null;
-            isOraColElement117.ReturnParameter = null;
-            isOraColElement117.TL1_KR = null;
-            isOraColElement117.TL2_CN = null;
-            isOraColElement117.TL3_VN = null;
-            isOraColElement117.TL4_JP = null;
-            isOraColElement117.TL5_XAA = null;
-            isOraColElement117.Visible = 0;
-            isOraColElement117.Width = 65;
-            isOraColElement118.DataColumn = "VALUE10";
-            isOraColElement118.DataOrdinal = 12;
-            isOraColElement118.DataType = "System.String";
-            isOraColElement118.HeaderPrompt = "VALUE10";
-            isOraColElement118.LastValue = null;
-            isOraColElement118.MemberControl = null;
-            isOraColElement118.MemberValue = null;
-            isOraColElement118.Nullable = null;
-            isOraColElement118.Ordinal = 12;
-            isOraColElement118.RelationKeyColumn = null;
-            isOraColElement118.ReturnParameter = null;
-            isOraColElement118.TL1_KR = null;
-            isOraColElement118.TL2_CN = null;
-            isOraColElement118.TL3_VN = null;
-            isOraColElement118.TL4_JP = null;
-            isOraColElement118.TL5_XAA = null;
-            isOraColElement118.Visible = 0;
-            isOraColElement118.Width = 65;
             this.ILA_ALLOWANCE_ITEM_20.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
+            isOraColElement96,
+            isOraColElement97,
+            isOraColElement98,
+            isOraColElement99,
+            isOraColElement100,
+            isOraColElement101,
+            isOraColElement102,
+            isOraColElement103,
+            isOraColElement104,
+            isOraColElement105,
             isOraColElement106,
             isOraColElement107,
-            isOraColElement108,
-            isOraColElement109,
-            isOraColElement110,
-            isOraColElement111,
-            isOraColElement112,
-            isOraColElement113,
-            isOraColElement114,
-            isOraColElement115,
-            isOraColElement116,
-            isOraColElement117,
-            isOraColElement118});
+            isOraColElement108});
             this.ILA_ALLOWANCE_ITEM_20.LookupData = this.ILD_COMMON;
             this.ILA_ALLOWANCE_ITEM_20.LookupSize = new System.Drawing.Size(427, 347);
             this.ILA_ALLOWANCE_ITEM_20.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
@@ -5222,9 +5548,9 @@
             isLanguageElement3});
             this.gbControl.Size = new System.Drawing.Size(948, 62);
             this.gbControl.TabIndex = 0;
-            ((System.ComponentModel.ISupportInitialize)(this.IGR_OT_TYPE.BaseGrid)).EndInit();
             this.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ILA_CHG_OT_TYPE_H.PropSourceDataTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_OT_TYPE.BaseGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_CHG_OT_TYPE_1.PropSourceDataTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_CHG_OT_TYPE_0.PropSourceDataTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_CHG_OT_TYPE.PropSourceDataTable)).EndInit();

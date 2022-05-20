@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      빌드 번호
 //      수정 버전
 //
-[assembly: AssemblyVersion("20.06.01.02")]
-[assembly: AssemblyFileVersion("20.06.01.02")]
+[assembly: AssemblyVersion("20.06.01.03")]
+[assembly: AssemblyFileVersion("20.06.01.03")]

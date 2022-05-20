@@ -20,8 +20,32 @@ namespace HRMF0522
     {
         #region ----- Variables -----
 
+        private InfoSummit.Win.ControlAdv.ISFileTransferAdv mFileTransferAdv;
+
         ISFunction.ISConvert iConv = new ISFunction.ISConvert();
         ISFunction.ISDateTime iDate = new ISFunction.ISDateTime();
+
+        bool mIsClickInquiryDetail = false;
+        int mInquiryDetailPreX, mInquiryDetailPreY; //마우스 이동 제어.
+
+        private string mClient_Base_Path = System.Windows.Forms.Application.StartupPath;    // 현재 디렉토리.
+        private string mClientFile = string.Empty;    // 현재 디렉토리및파일.
+
+        private bool mIsGetInformationFTP = false;
+        private string mHost = string.Empty;
+        private string mPort = "21";
+        private string mUserID = string.Empty;
+        private string mPassword = string.Empty;
+        private string mPassive_Flag = "N";
+
+        private string mFILE_NAME = string.Empty;
+        private string mFTP_Folder = string.Empty;
+        private string mClient_Folder = "Image";
+
+        private float fSIZE_W = 0;
+        private float fSIZE_H = 0;
+        private float fLOC_X = 0;
+        private float fLOC_Y = 0;
 
         #endregion;
 
@@ -67,6 +91,15 @@ namespace HRMF0522
 
             if (TB_MAIN.SelectedTab.TabIndex == TP_PAPER.TabIndex)
             {
+                ////master-detail 관계 해제
+                //IDA_MONTH_DUTY.MasterAdapter = null;
+                //IDA_MONTH_DUTY_B01.MasterAdapter = null;
+                //IDA_MONTH_OT.MasterAdapter = null;
+                //IDA_PAY_ALLOWANCE.MasterAdapter = null;
+                //IDA_PAY_DEDUCTION.MasterAdapter = null;
+                //IDA_BONUS_ALLOWANCE.MasterAdapter = null;
+                //IDA_BONUS_DEDUCTION.MasterAdapter = null;
+
                 // 그리드 부분 업데이트 처리
                 IGR_MONTH_PAYMENT.LastConfirmChanges();
                 IDA_MONTH_PAYMENT.OraSelectData.AcceptChanges();
@@ -76,6 +109,15 @@ namespace HRMF0522
             }
             else if(TB_MAIN.SelectedTab.TabIndex == TP_EMAIL.TabIndex)
             {
+                ////master-detail 관계 해제
+                //IDA_MONTH_DUTY_E.MasterAdapter = null;
+                //IDA_MONTH_DUTY_B01_E.MasterAdapter = null;
+                //IDA_MONTH_OT_E.MasterAdapter = null;
+                //IDA_MONTH_ALLOWANCE_E.MasterAdapter = null;
+                //IDA_MONTH_DEDUCTION_E.MasterAdapter = null;
+                //IDA_BONUS_ALLOWANCE_E.MasterAdapter = null;
+                //IDA_BONUS_DEDUCTION_E.MasterAdapter = null;
+                  
                 IGR_MONTH_PAYMENT_EMAIL.LastConfirmChanges();
                 IDA_MONTH_PAYMENT_EMAIL.OraSelectData.AcceptChanges();
                 IDA_MONTH_PAYMENT_EMAIL.Refillable = true;
@@ -90,8 +132,8 @@ namespace HRMF0522
             {
                 if (pSub_Form == "EMAIL_TEXT")
                 {
-                    GB_EMAIL_TEXT.Left = 300;
-                    GB_EMAIL_TEXT.Top = 120;
+                    GB_EMAIL_TEXT.Left = 250;
+                    GB_EMAIL_TEXT.Top = 60;
 
                     GB_EMAIL_TEXT.Width = 610;
                     GB_EMAIL_TEXT.Height = 360; 
@@ -99,13 +141,19 @@ namespace HRMF0522
                     GB_CONDITION.Enabled = false;
                     TB_MAIN.Enabled = true; //false;
 
+                    // 세부 조회창 마우스 드래그 
+                    GB_EMAIL_TEXT.Controls[0].MouseDown += GB_EMAIL_TEXT_MouseDown;
+                    GB_EMAIL_TEXT.Controls[1].MouseDown += GB_EMAIL_TEXT_MouseDown;
+                    GB_EMAIL_TEXT.Controls[0].MouseMove += GB_EMAIL_TEXT_MouseMove;
+                    GB_EMAIL_TEXT.Controls[1].MouseMove += GB_EMAIL_TEXT_MouseMove;
+                    GB_EMAIL_TEXT.Controls[0].MouseUp += GB_EMAIL_TEXT_MouseUp;
+                    GB_EMAIL_TEXT.Controls[1].MouseUp += GB_EMAIL_TEXT_MouseUp;
+          
                     GB_EMAIL_TEXT.BringToFront();
                     GB_EMAIL_TEXT.Visible = true;
                     GB_EMAIL_TEXT.Enabled = true; 
                     V_SAVE.Enabled = true;
-                    V_CLOSE.Enabled = true;
-
-
+                    V_CLOSE.Enabled = true; 
                 }
                 else
                 {
@@ -132,12 +180,242 @@ namespace HRMF0522
             }
         }
 
+        private void GET_CO_STAMP()
+        { 
+            IDC_GET_CORP_STAMP_P.SetCommandParamValue("W_ASSEMBLY_ID", "HRMF0522");
+            IDC_GET_CORP_STAMP_P.ExecuteNonQuery();
+            //mFTP_Folder= iConv.ISNull(IDC_GET_CORP_STAMP_P.GetCommandParamValue("O_STAMP_FTP_PATH"));
+            mFILE_NAME = iConv.ISNull(IDC_GET_CORP_STAMP_P.GetCommandParamValue("O_STAMP_FILE_NAME"));
+
+            fSIZE_W = ((float)iConv.ISDecimaltoZero(IDC_GET_CORP_STAMP_P.GetCommandParamValue("O_STAMP_SIZE_W"), 0));
+            fSIZE_H = ((float)iConv.ISDecimaltoZero(IDC_GET_CORP_STAMP_P.GetCommandParamValue("O_STAMP_SIZE_H"), 0));
+            fLOC_X = ((float)iConv.ISDecimaltoZero(IDC_GET_CORP_STAMP_P.GetCommandParamValue("O_STAMP_LOC_X"), 0));
+            fLOC_Y = ((float)iConv.ISDecimaltoZero(IDC_GET_CORP_STAMP_P.GetCommandParamValue("O_STAMP_LOC_Y"), 0));
+
+#if DEBUG
+{
+                mFILE_NAME = "C01.PNG";
+                fSIZE_W = 80;
+                fSIZE_H = 80;
+                fLOC_X = 465;
+                fLOC_Y = 695;
+}
+#endif 
+            if(mFILE_NAME.Equals(""))
+            {
+                Application.UseWaitCursor = false;
+                System.Windows.Forms.Cursor.Current = Cursors.Default;
+                Application.DoEvents();
+                return;
+            }
+            if (DownLoadFile(mFILE_NAME) == false)
+            {
+                Application.UseWaitCursor = false;
+                System.Windows.Forms.Cursor.Current = Cursors.Default;
+                Application.DoEvents();
+                return;
+            } 
+        }
+
         #endregion;
+
+
+        #region ----- file Download Methods -----
+        //ftp file download 처리 
+        private bool DownLoadFile(string pFILE_NAME)
+        {
+            Application.UseWaitCursor = true;
+            System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
+            Application.DoEvents();
+
+            bool IsDownload = false;
+
+            System.IO.DirectoryInfo vClientFolder = new System.IO.DirectoryInfo(mClient_Folder);
+            if (vClientFolder.Exists == false) //있으면 True, 없으면 False
+            {
+                vClientFolder.Create();
+            }
+
+            //2. 실제 다운로드 
+            string vTempFileName = string.Format("_{0}", pFILE_NAME);
+            try
+            {
+                System.IO.FileInfo vDownFileInfo = new System.IO.FileInfo(string.Format("{0}\\_{1}", mClient_Folder, vTempFileName));
+                if (vDownFileInfo.Exists == true)
+                {
+                    try
+                    {
+                        System.IO.File.Delete(string.Format("{0}\\_{1}", mClient_Folder, vTempFileName));
+                    }
+                    catch
+                    {
+
+                        // ignore
+                    }
+                }
+            }
+            catch
+            {
+                //ignore                        
+            }
+
+            mFileTransferAdv.ShowProgress = false;
+            //--------------------------------------------------------------------------------
+            mFileTransferAdv.SourceDirectory = mFTP_Folder;
+            mFileTransferAdv.SourceFileName = pFILE_NAME;
+            mFileTransferAdv.TargetDirectory = mClient_Folder;
+            mFileTransferAdv.TargetFileName = vTempFileName;
+
+            IsDownload = mFileTransferAdv.Download();
+
+            if (IsDownload == true)
+            {
+                try
+                {
+                    //isDataTransaction1.Commit();
+
+                    //다운 파일 FullPath적용 
+                    mClientFile = string.Format("{0}\\{1}", mClient_Folder, pFILE_NAME);      //임시
+                    System.IO.File.Delete(mClientFile);                 //기존 파일 삭제 
+
+                    //다운 파일 FullPath적용 
+                    string vTempFullPath = string.Format("{0}\\{1}", mClient_Folder, vTempFileName);      //임시
+                    System.IO.File.Move(vTempFullPath, mClientFile);    //ftp 이름으로 이름 변경 
+
+                    IsDownload = true;
+                }
+                catch
+                {
+                    //isDataTransaction1.RollBack();
+                    try
+                    {
+                        System.IO.FileInfo vDownFileInfo = new System.IO.FileInfo(string.Format("{0}\\_{1}", mClient_Folder, vTempFileName));
+                        if (vDownFileInfo.Exists == true)
+                        {
+                            try
+                            {
+                                System.IO.File.Delete(string.Format("{0}\\_{1}", mClient_Folder, vTempFileName));
+                            }
+                            catch
+                            {
+
+                                // ignore
+                            }
+                        }
+                    }
+                    catch
+                    {
+                        //ignore                        
+                    }
+                }
+            }
+            else
+            {
+                //isDataTransaction1.RollBack();
+                //download 실패 
+                try
+                {
+                    System.IO.FileInfo vDownFileInfo = new System.IO.FileInfo(string.Format("{0}\\_{1}", mClient_Folder, vTempFileName));
+                    if (vDownFileInfo.Exists == true)
+                    {
+                        try
+                        {
+                            System.IO.File.Delete(string.Format("{0}\\_{1}", mClient_Folder, vTempFileName));
+                        }
+                        catch
+                        {
+                            // ignore
+                        }
+                    }
+                }
+                catch
+                {
+                    //ignore                    
+                }
+            }
+            if (IsDownload != true)
+            { 
+                string vMessage = string.Format("{0} {1}", isMessageAdapter1.ReturnText("EAPP_10212"), isMessageAdapter1.ReturnText("QM_10102"));
+                MessageBoxAdv.Show(string.Format("{0}\r\n{1}\r\n{2}", vMessage, mHost, mClientFile), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            Application.UseWaitCursor = false;
+            System.Windows.Forms.Cursor.Current = Cursors.Default;
+            Application.DoEvents();
+            return IsDownload;
+        }
+
+        #endregion;
+
+
+        #region ----- Get Information FTP Methods -----
+
+        private bool GetInfomationFTP()
+        { 
+            bool isGet = false;
+            try
+            {
+                IDC_FTP_INFO.SetCommandParamValue("W_FTP_CODE", "COMM_DOC");
+                IDC_FTP_INFO.ExecuteNonQuery(); 
+                
+                mHost = iConv.ISNull(IDC_FTP_INFO.GetCommandParamValue("O_HOST_IP"));
+                mPort = iConv.ISNull(IDC_FTP_INFO.GetCommandParamValue("O_HOST_PORT"));
+                mUserID = iConv.ISNull(IDC_FTP_INFO.GetCommandParamValue("O_USER_NO"));
+                mPassword = iConv.ISNull(IDC_FTP_INFO.GetCommandParamValue("O_USER_PWD"));
+                mPassive_Flag = iConv.ISNull(IDC_FTP_INFO.GetCommandParamValue("O_PASSIVE_FLAG"));
+
+                mFTP_Folder = iConv.ISNull(IDC_FTP_INFO.GetCommandParamValue("O_HOST_FOLDER"));
+                mClient_Folder = iConv.ISNull(IDC_FTP_INFO.GetCommandParamValue("O_CLIENT_FOLDER"));
+                mClient_Folder = string.Format("{0}\\{1}", mClient_Base_Path, mClient_Folder);
+
+#if DEBUG
+{
+    mHost = "192.168.40.12";
+    mPort = "1503";
+    mUserID = "dkterp";
+    mPassword = "dkt2202";
+    mPassive_Flag = "Y";
+
+    mFTP_Folder = "/ERP/FILE/COMM_DOC";
+    mClient_Folder = "Image";
+    mClient_Folder = string.Format("{0}\\{1}", mClient_Base_Path, mClient_Folder);
+}
+#endif
+
+                if (mHost != string.Empty)
+                {
+                    mFileTransferAdv = new ISFileTransferAdv();
+                    mFileTransferAdv.Host = mHost;
+                    mFileTransferAdv.Port = mPort;
+                    mFileTransferAdv.UserId = mUserID;
+                    mFileTransferAdv.Password = mPassword;
+                    mFileTransferAdv.KeepAlive = false;
+                    if (mPassive_Flag == "Y")
+                    {
+                        mFileTransferAdv.UsePassive = true;
+                    }
+                    else
+                    {
+                        mFileTransferAdv.UsePassive = false;
+                    }
+
+                    isGet = true;
+                }
+            }
+            catch (System.Exception ex)
+            {
+                isAppInterfaceAdv1.OnAppMessage(ex.Message);
+                System.Windows.Forms.Application.DoEvents();
+            }
+            return isGet;
+        } 
+
+#endregion;
+         
 
         // 인쇄 부분
         // Print 관련 소스 코드 2011.1.15(토)
         // Print 관련 소스 코드 2011.5.11(수) 수정
-        #region ----- Convert String Method ----
+#region ----- Convert String Method ----
 
         private string ConvertString(object pObject)
         {
@@ -163,9 +441,9 @@ namespace HRMF0522
             return vString;
         }
 
-        #endregion;
+#endregion;
 
-        #region ----- XL Print 1 Method ----
+#region ----- XL Print 1 Method ----
 
         private void XLPrinting_1(string pCourse)
         {
@@ -287,7 +565,11 @@ namespace HRMF0522
         private void XLPrinting_Main(string pOutput_Type)
         {
             string vSaveFileName = string.Empty;
-            if (pOutput_Type == "EXCEL")
+            if(V_CB_PDF.CheckedState == ISUtil.Enum.CheckedState.Checked)
+            {
+                pOutput_Type = "PDF";
+            }
+            else if (pOutput_Type == "FILE")
             {
                 SaveFileDialog vSaveFileDialog = new SaveFileDialog();
                 vSaveFileDialog.RestoreDirectory = true;
@@ -319,27 +601,271 @@ namespace HRMF0522
                     return;
                 }
             }
-            
 
-          //  IDC_GET_REPORT_SET.SetCommandParamValue("P_STD_DATE", GL_DATE.EditValue);
+            //master - detail 관계 다시 연결. 
+            IDA_MONTH_DUTY.MasterAdapter = IDA_MONTH_PAYMENT;
+            IDA_MONTH_DUTY_B01.MasterAdapter = IDA_MONTH_PAYMENT;
+            IDA_MONTH_OT.MasterAdapter = IDA_MONTH_PAYMENT;
+            IDA_PAY_ALLOWANCE.MasterAdapter = IDA_MONTH_PAYMENT;
+            IDA_PAY_DEDUCTION.MasterAdapter = IDA_MONTH_PAYMENT;
+            IDA_BONUS_ALLOWANCE.MasterAdapter = IDA_MONTH_PAYMENT;
+            IDA_BONUS_DEDUCTION.MasterAdapter = IDA_MONTH_PAYMENT; 
+
+            //  IDC_GET_REPORT_SET.SetCommandParamValue("P_STD_DATE", GL_DATE.EditValue);
             IDC_GET_REPORT_SET.SetCommandParamValue("P_ASSEMBLY_ID", "HRMF0522");
             IDC_GET_REPORT_SET.ExecuteNonQuery();
             string vREPORT_TYPE = iConv.ISNull(IDC_GET_REPORT_SET.GetCommandParamValue("O_REPORT_TYPE"));
             string vREPORT_FILE_NAME = iConv.ISNull(IDC_GET_REPORT_SET.GetCommandParamValue("O_REPORT_FILE_NAME"));
 
-            if (vREPORT_TYPE.ToUpper() == "SIK")
+            if(vREPORT_TYPE.ToUpper().Equals("BHK"))
+            {
+                XLPrinting_BHK(pOutput_Type, vREPORT_FILE_NAME, CB_STAMP.CheckBoxString);
+            }
+            else if (vREPORT_TYPE.ToUpper() == "SIK")
             {
                 XLPrinting_SIK( pOutput_Type, vREPORT_FILE_NAME, CB_STAMP.CheckBoxString);
             }
             else if (vREPORT_TYPE.ToUpper() == "SIV" )
             {
                 XLPrinting_SIV(vREPORT_FILE_NAME, pOutput_Type, CB_STAMP.CheckBoxString);
-            }    
-            else
+            }
+            else if (vREPORT_TYPE.ToUpper() == "BSK")
             {
                 XLPrinting_BSK(pOutput_Type, vREPORT_FILE_NAME, CB_STAMP.CheckBoxString);
-            }          
+            }
+            else if (vREPORT_TYPE.ToUpper() == "DKT")
+            {                
+                XLPrinting_DKT(pOutput_Type, vSaveFileName, vREPORT_FILE_NAME, CB_STAMP.CheckBoxString, mClientFile, fSIZE_W, fSIZE_H, fLOC_X, fLOC_Y);
+            } 
+            else
+            {
+                XLPrinting_IFK(pOutput_Type, vREPORT_FILE_NAME, CB_STAMP.CheckBoxString, mClientFile, fSIZE_W, fSIZE_H, fLOC_X, fLOC_Y);
+            }
         }
+
+
+        private void XLPrinting_IFK(string pOUTPUT_TYPE, string pReport_File_Name
+                                    , string pCB_STAMP, string pImageFile
+                                    , float pSize_W, float pSize_H, float pLoc_X, float pLoc_Y)
+        {
+            System.DateTime vStartTime = DateTime.Now;
+
+            string vMessageText = string.Empty;
+
+            string vBoxCheck = string.Empty;
+            string vWAGE_TYPE = string.Empty;
+            string vPAY_TYPE = string.Empty;
+
+            int vCountCheck = 0;
+
+            object vObject = null;
+
+            int vCountRow = IGR_MONTH_PAYMENT.RowCount;
+
+            if (vCountRow < 1)
+            {
+                vMessageText = string.Format("Without Data");
+                isAppInterfaceAdv1.OnAppMessage(vMessageText);
+                System.Windows.Forms.Application.DoEvents();
+                return;
+            }
+
+            int vIndexWAGE_TYPE = IGR_MONTH_PAYMENT.GetColumnToIndex("WAGE_TYPE");
+            int vIndexPAY_TYPE = IGR_MONTH_PAYMENT.GetColumnToIndex("PAY_TYPE");
+
+            int vIndexCheckBox = IGR_MONTH_PAYMENT.GetColumnToIndex("SELECT_CHECK_YN");
+            string vCheckedString = IGR_MONTH_PAYMENT.GridAdvExColElement[vIndexCheckBox].CheckedString;
+            //-------------------------------------------------------------------------------------
+            for (int vRow = 0; vRow < vCountRow; vRow++)
+            {
+                vObject = IGR_MONTH_PAYMENT.GetCellValue(vRow, vIndexCheckBox);
+                vBoxCheck = ConvertString(vObject);
+                if (vBoxCheck == vCheckedString)
+                {
+                    vCountCheck++;
+                }
+            }
+
+            if (vCountCheck < 1)
+            {
+                vMessageText = string.Format("Not Select");
+                isAppInterfaceAdv1.OnAppMessage(vMessageText);
+                this.Cursor = System.Windows.Forms.Cursors.Default;
+                System.Windows.Forms.Application.DoEvents();
+                return;
+            }
+            //-------------------------------------------------------------------------------------
+
+            IGR_MONTH_PAYMENT.LastConfirmChanges();
+            IDA_MONTH_PAYMENT.OraSelectData.AcceptChanges();
+            IDA_MONTH_PAYMENT.Refillable = true;
+
+            IGR_MONTH_PAYMENT_EMAIL.LastConfirmChanges();
+            IDA_MONTH_PAYMENT_EMAIL.OraSelectData.AcceptChanges();
+            IDA_MONTH_PAYMENT_EMAIL.Refillable = true;
+
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
+            System.Windows.Forms.Application.DoEvents();
+
+            int vPageNumber = 0;
+
+            vMessageText = string.Format(" Printing Starting...");
+            isAppInterfaceAdv1.OnAppMessage(vMessageText);
+            System.Windows.Forms.Application.DoEvents();
+
+            XLPrinting xlPrinting = new XLPrinting(isAppInterfaceAdv1.AppInterface, isMessageAdapter1);
+
+            try
+            {
+                //-------------------------------------------------------------------------------------
+                if (pReport_File_Name == string.Empty)
+                {
+                    xlPrinting.OpenFileNameExcel = "HRMF0522_012.xlsx";
+                }
+                else
+                {
+                    xlPrinting.OpenFileNameExcel = pReport_File_Name;
+                }
+
+
+                //-------------------------------------------------------------------------------------
+
+                vPageNumber = xlPrinting.WriteMain_IFK(pOUTPUT_TYPE, IGR_MONTH_PAYMENT, IDA_PAY_ALLOWANCE, IDA_PAY_DEDUCTION, IDA_MONTH_DUTY, IDA_MONTH_OT
+                                                    , pCB_STAMP, mClientFile, fSIZE_W, fSIZE_H, fLOC_X, fLOC_Y);
+            }
+            catch (System.Exception ex)
+            {
+                vMessageText = ex.Message;
+                isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(vMessageText);
+                System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+                System.Windows.Forms.Application.DoEvents();
+            }
+            //-------------------------------------------------------------------------------------
+            xlPrinting.Dispose();
+            //-------------------------------------------------------------------------------------
+
+            System.DateTime vEndTime = DateTime.Now;
+            System.TimeSpan vTimeSpan = vEndTime - vStartTime;
+
+            vMessageText = string.Format("Printing End [Total Page : {0}] ---> {1}", vPageNumber, vTimeSpan.ToString());
+            isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(vMessageText);
+            System.Windows.Forms.Application.DoEvents();
+
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+            System.Windows.Forms.Application.DoEvents();
+        }
+                 
+        private void XLPrinting_DKT(string pOUTPUT_TYPE, string pSaveFileName, string pReport_File_Name
+                                    , string pCB_STAMP, string pImageFile
+                                    , float pSize_W, float pSize_H, float pLoc_X, float pLoc_Y)
+        {
+            System.DateTime vStartTime = DateTime.Now;
+
+            string vMessageText = string.Empty;
+
+            string vBoxCheck = string.Empty;
+            string vWAGE_TYPE = string.Empty;
+            string vPAY_TYPE = string.Empty;
+
+            int vCountCheck = 0;
+
+            object vObject = null;
+
+            int vCountRow = IGR_MONTH_PAYMENT.RowCount;
+
+            if (vCountRow < 1)
+            {
+                vMessageText = string.Format("Without Data");
+                isAppInterfaceAdv1.OnAppMessage(vMessageText);
+                System.Windows.Forms.Application.DoEvents();
+                return;
+            }
+
+            int vIndexWAGE_TYPE = IGR_MONTH_PAYMENT.GetColumnToIndex("WAGE_TYPE");
+            int vIndexPAY_TYPE = IGR_MONTH_PAYMENT.GetColumnToIndex("PAY_TYPE");
+
+            int vIndexCheckBox = IGR_MONTH_PAYMENT.GetColumnToIndex("SELECT_CHECK_YN");
+            string vCheckedString = IGR_MONTH_PAYMENT.GridAdvExColElement[vIndexCheckBox].CheckedString;
+            //-------------------------------------------------------------------------------------
+            for (int vRow = 0; vRow < vCountRow; vRow++)
+            {
+                vObject = IGR_MONTH_PAYMENT.GetCellValue(vRow, vIndexCheckBox);
+                vBoxCheck = ConvertString(vObject);
+                if (vBoxCheck == vCheckedString)
+                {
+                    vCountCheck++;
+                }
+            }
+
+            if (vCountCheck < 1)
+            {
+                vMessageText = string.Format("Not Select");
+                isAppInterfaceAdv1.OnAppMessage(vMessageText);
+                this.Cursor = System.Windows.Forms.Cursors.Default;
+                System.Windows.Forms.Application.DoEvents();
+                return;
+            }
+            //-------------------------------------------------------------------------------------
+
+            IGR_MONTH_PAYMENT.LastConfirmChanges();
+            IDA_MONTH_PAYMENT.OraSelectData.AcceptChanges();
+            IDA_MONTH_PAYMENT.Refillable = true;
+
+            IGR_MONTH_PAYMENT_EMAIL.LastConfirmChanges();
+            IDA_MONTH_PAYMENT_EMAIL.OraSelectData.AcceptChanges();
+            IDA_MONTH_PAYMENT_EMAIL.Refillable = true;
+
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor;
+            System.Windows.Forms.Application.DoEvents();
+
+            int vPageNumber = 0;
+
+            vMessageText = string.Format(" Printing Starting...");
+            isAppInterfaceAdv1.OnAppMessage(vMessageText);
+            System.Windows.Forms.Application.DoEvents();
+
+            XLPrinting xlPrinting = new XLPrinting(isAppInterfaceAdv1.AppInterface, isMessageAdapter1);
+
+            try
+            {
+                //-------------------------------------------------------------------------------------
+                if (pReport_File_Name == string.Empty)
+                {
+                    xlPrinting.OpenFileNameExcel = "HRMF0522_013.xlsx";
+                }
+                else
+                {
+                    xlPrinting.OpenFileNameExcel = pReport_File_Name;
+                }
+
+
+                //-------------------------------------------------------------------------------------
+
+                vPageNumber = xlPrinting.WriteMain_DKT(pOUTPUT_TYPE, pSaveFileName, IGR_MONTH_PAYMENT, IDA_PAY_ALLOWANCE, IDA_PAY_DEDUCTION
+                                                    , pCB_STAMP, pImageFile, pSize_W, pSize_H, pLoc_X, pLoc_Y);
+            }
+            catch (System.Exception ex)
+            {
+                vMessageText = ex.Message;
+                isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(vMessageText);
+                System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+                System.Windows.Forms.Application.DoEvents();
+            }
+            //-------------------------------------------------------------------------------------
+            xlPrinting.Dispose();
+            //-------------------------------------------------------------------------------------
+
+            System.DateTime vEndTime = DateTime.Now;
+            System.TimeSpan vTimeSpan = vEndTime - vStartTime;
+
+            vMessageText = string.Format("Printing End [Total Page : {0}] ---> {1}", vPageNumber, vTimeSpan.ToString());
+            isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(vMessageText);
+            System.Windows.Forms.Application.DoEvents();
+
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+            System.Windows.Forms.Application.DoEvents();
+        }
+
 
         private void XLPrinting_SIV(string pReport_File_Name, string pCourse, string pCB_STAMP)
         {
@@ -502,7 +1028,8 @@ namespace HRMF0522
                 
                 //-------------------------------------------------------------------------------------
 
-                vPageNumber = xlPrinting.WriteMain(pOUTPUT_TYPE, IGR_MONTH_PAYMENT, IDA_PAY_ALLOWANCE, IDA_PAY_DEDUCTION, IDA_MONTH_DUTY, IDA_MONTH_OT, CB_STAMP.CheckBoxString);
+                vPageNumber = xlPrinting.WriteMain(pOUTPUT_TYPE, IGR_MONTH_PAYMENT, IDA_PAY_ALLOWANCE, IDA_PAY_DEDUCTION, IDA_MONTH_DUTY, IDA_MONTH_OT
+                                                , CB_STAMP.CheckBoxString, mClientFile, fSIZE_W, fSIZE_H, fLOC_X, fLOC_Y);
             }
             catch (System.Exception ex)
             {
@@ -570,6 +1097,116 @@ namespace HRMF0522
             {
                 vMessageText = string.Format("Not Select");
                 isAppInterfaceAdv1.OnAppMessage(vMessageText);
+                this.Cursor = System.Windows.Forms.Cursors.Default;
+                System.Windows.Forms.Application.DoEvents();
+                return;
+            }
+            //-------------------------------------------------------------------------------------
+
+            IGR_MONTH_PAYMENT.LastConfirmChanges();
+            IDA_MONTH_PAYMENT.OraSelectData.AcceptChanges();
+            IDA_MONTH_PAYMENT.Refillable = true;
+
+            IGR_MONTH_PAYMENT_EMAIL.LastConfirmChanges();
+            IDA_MONTH_PAYMENT_EMAIL.OraSelectData.AcceptChanges();
+            IDA_MONTH_PAYMENT_EMAIL.Refillable = true;
+
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor; 
+            System.Windows.Forms.Application.DoEvents();
+
+            int vPageNumber = 0;
+
+            vMessageText = string.Format(" Printing Starting...");
+            isAppInterfaceAdv1.OnAppMessage(vMessageText);
+            System.Windows.Forms.Application.DoEvents();
+
+            XLPrinting xlPrinting = new XLPrinting(isAppInterfaceAdv1.AppInterface, isMessageAdapter1);
+
+            try
+            {
+                //-------------------------------------------------------------------------------------
+                if (pReport_File_Name == string.Empty)
+                {
+                    xlPrinting.OpenFileNameExcel = "HRMF0522_002.xlsx";
+                }
+                else
+                {
+                    xlPrinting.OpenFileNameExcel = pReport_File_Name;
+                }
+
+
+                //-------------------------------------------------------------------------------------
+
+                vPageNumber = xlPrinting.WriteMain_SIK(pOUTPUT_TYPE, IGR_MONTH_PAYMENT, IDA_PAY_ALLOWANCE, IDA_PAY_DEDUCTION, IDA_MONTH_DUTY, IDA_MONTH_OT
+                                                    , pCB_STAMP, mClientFile, fSIZE_W, fSIZE_H, fLOC_X, fLOC_Y);
+            }
+            catch (System.Exception ex)
+            {
+                vMessageText = ex.Message;
+                isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(vMessageText);
+                System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+                System.Windows.Forms.Application.DoEvents();
+            }
+            //-------------------------------------------------------------------------------------
+            xlPrinting.Dispose();
+            //-------------------------------------------------------------------------------------
+
+            System.DateTime vEndTime = DateTime.Now;
+            System.TimeSpan vTimeSpan = vEndTime - vStartTime;
+
+            vMessageText = string.Format("Printing End [Total Page : {0}] ---> {1}", vPageNumber, vTimeSpan.ToString());
+            isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(vMessageText);
+            System.Windows.Forms.Application.DoEvents();
+
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
+            System.Windows.Forms.Application.DoEvents();
+        }
+
+        private void XLPrinting_BHK(string pOUTPUT_TYPE, string pReport_File_Name, string pCB_STAMP)
+        {
+            System.DateTime vStartTime = DateTime.Now;
+
+            string vMessageText = string.Empty;
+
+            string vBoxCheck = string.Empty;
+            string vWAGE_TYPE = string.Empty;
+            string vPAY_TYPE = string.Empty;
+
+            int vCountCheck = 0;
+
+            object vObject = null;
+
+            int vCountRow = IGR_MONTH_PAYMENT.RowCount;
+
+            if (vCountRow < 1)
+            {
+                vMessageText = string.Format("Without Data");
+                isAppInterfaceAdv1.OnAppMessage(vMessageText);
+                System.Windows.Forms.Application.DoEvents();
+                return;
+            }
+
+            int vIndexWAGE_TYPE = IGR_MONTH_PAYMENT.GetColumnToIndex("WAGE_TYPE");
+            int vIndexPAY_TYPE = IGR_MONTH_PAYMENT.GetColumnToIndex("PAY_TYPE");
+
+            int vIndexCheckBox = IGR_MONTH_PAYMENT.GetColumnToIndex("SELECT_CHECK_YN");
+            string vCheckedString = IGR_MONTH_PAYMENT.GridAdvExColElement[vIndexCheckBox].CheckedString;
+            //-------------------------------------------------------------------------------------
+            for (int vRow = 0; vRow < vCountRow; vRow++)
+            {
+                vObject = IGR_MONTH_PAYMENT.GetCellValue(vRow, vIndexCheckBox);
+                vBoxCheck = ConvertString(vObject);
+                if (vBoxCheck == vCheckedString)
+                {
+                    vCountCheck++;
+                }
+            }
+
+            if (vCountCheck < 1)
+            {
+                vMessageText = string.Format("Not Select");
+                isAppInterfaceAdv1.OnAppMessage(vMessageText);
+                this.Cursor = System.Windows.Forms.Cursors.Default;
                 System.Windows.Forms.Application.DoEvents();
                 return;
             }
@@ -600,21 +1237,21 @@ namespace HRMF0522
                 //-------------------------------------------------------------------------------------
                 if (pReport_File_Name == string.Empty)
                 {
-                    xlPrinting.OpenFileNameExcel = "HRMF0522_002.xlsx";
+                    xlPrinting.OpenFileNameExcel = "HRMF0522_011.xlsx";
                 }
                 else
                 {
                     xlPrinting.OpenFileNameExcel = pReport_File_Name;
-                }
-
-
+                } 
                 //-------------------------------------------------------------------------------------
 
-                vPageNumber = xlPrinting.WriteMain_SIK(pOUTPUT_TYPE, IGR_MONTH_PAYMENT, IDA_PAY_ALLOWANCE, IDA_PAY_DEDUCTION, IDA_MONTH_DUTY, IDA_MONTH_OT, pCB_STAMP);
+                vPageNumber = xlPrinting.WriteMain_BHK(pOUTPUT_TYPE, IGR_MONTH_PAYMENT, IDA_PAY_ALLOWANCE, IDA_PAY_DEDUCTION, IDA_BONUS_ALLOWANCE, IDA_BONUS_DEDUCTION, IDA_MONTH_DUTY_B01, IDA_MONTH_OT, pCB_STAMP);
             }
             catch (System.Exception ex)
             {
+                xlPrinting.Dispose();
                 vMessageText = ex.Message;
+                System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
                 isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(vMessageText);
                 System.Windows.Forms.Application.DoEvents();
             }
@@ -634,9 +1271,9 @@ namespace HRMF0522
             System.Windows.Forms.Application.DoEvents();
         }
 
-        #endregion;
+#endregion;
 
-        #region ----- C# Email 발송 -----
+#region ----- C# Email 발송 -----
 
         private void Send_eMail(string pRept_ID, string pName, string pAttachment_Path)
         {
@@ -684,9 +1321,9 @@ namespace HRMF0522
             }
         }
 
-        #endregion
+#endregion
 
-        #region ----- Events -----
+#region ----- Events -----
 
         private void isAppInterfaceAdv1_AppMainButtonClick(ISAppButtonEvents e)
         {
@@ -713,21 +1350,22 @@ namespace HRMF0522
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Print)
                 {
-                    XLPrinting_Main("PRINT"); // 출력 함수 호출
-
-                    MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10035"), "", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    XLPrinting_Main("PRINT"); // 출력 함수 호출 
+                    MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10035"), "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     // 인쇄 완료 메시지 출력
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Export)
                 {
                     XLPrinting_Main("FILE"); // 출력 함수 호출
+                    MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10035"), "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // 인쇄 완료 메시지 출력
                 }
             }
         }
 
-        #endregion;
+#endregion;
 
-        #region ----- Form Event ------
+#region ----- Form Event ------
 
         private void HRMF0522_Load(object sender, EventArgs e)
         {
@@ -748,9 +1386,13 @@ namespace HRMF0522
             W_CORP_NAME.BringToFront();
 
             W_PAY_YYYYMM.EditValue = iDate.ISYearMonth(DateTime.Today);
+            W_YYYYMM_TO.EditValue = W_PAY_YYYYMM.EditValue;
             W_START_DATE.EditValue = iDate.ISMonth_1st(DateTime.Today);
-            W_END_DATE.EditValue = iDate.ISMonth_Last(DateTime.Today);
+            W_END_DATE.EditValue = iDate.ISMonth_Last(DateTime.Today); 
+        }
 
+        private void HRMF0522_Shown(object sender, EventArgs e)
+        {
             // 그리드 부분 업데이트 처리 위함.
             IDA_MONTH_PAYMENT.FillSchema();
             IDA_MONTH_PAYMENT_EMAIL.FillSchema();
@@ -765,6 +1407,9 @@ namespace HRMF0522
             V_EMAIL_ACCOUNT_PWD.EditValue = IDC_GET_EMAIL_SENDER.GetCommandParamValue("O_EMAIL_ACCOUNT_PWD");
 
             isAppInterfaceAdv1.OnAppMessage("");
+
+            mIsGetInformationFTP = GetInfomationFTP();
+            GET_CO_STAMP(); 
         }
 
         // 전체선택 버튼
@@ -861,6 +1506,15 @@ namespace HRMF0522
             IDA_MONTH_PAYMENT_EMAIL.OraSelectData.AcceptChanges();
             IDA_MONTH_PAYMENT_EMAIL.Refillable = true;
 
+            ////master-detail 관계 설정 
+            //IDA_MONTH_DUTY_E.MasterAdapter = IDA_MONTH_PAYMENT_EMAIL;
+            //IDA_MONTH_DUTY_B01_E.MasterAdapter = IDA_MONTH_PAYMENT_EMAIL;
+            //IDA_MONTH_OT_E.MasterAdapter = IDA_MONTH_PAYMENT_EMAIL;
+            //IDA_MONTH_ALLOWANCE_E.MasterAdapter = IDA_MONTH_PAYMENT_EMAIL;
+            //IDA_MONTH_DEDUCTION_E.MasterAdapter = IDA_MONTH_PAYMENT_EMAIL;
+            //IDA_BONUS_ALLOWANCE_E.MasterAdapter = IDA_MONTH_PAYMENT_EMAIL;
+            //IDA_BONUS_DEDUCTION_E.MasterAdapter = IDA_MONTH_PAYMENT_EMAIL; 
+
             string vSTATUS = string.Empty;
             string vMESSAGE = string.Empty;
 
@@ -873,7 +1527,7 @@ namespace HRMF0522
             int vIndexNAME = IGR_MONTH_PAYMENT_EMAIL.GetColumnToIndex("NAME");
             int vIndexPERSON_NUM = IGR_MONTH_PAYMENT_EMAIL.GetColumnToIndex("PERSON_NUM");
             int vIDX_EMAIL_ID = IGR_MONTH_PAYMENT_EMAIL.GetColumnToIndex("EMAIL");
-            int vIDX_PASSWORD = IGR_MONTH_PAYMENT_EMAIL.GetColumnToIndex("PASSWORD");
+            int vIDX_PASSWORD = IGR_MONTH_PAYMENT_EMAIL.GetColumnToIndex("PASSWORD"); 
 
             int vIndexCheckBox = IGR_MONTH_PAYMENT_EMAIL.GetColumnToIndex("SELECT_CHECK_YN");
             string vCheckedString = IGR_MONTH_PAYMENT_EMAIL.GridAdvExColElement[vIndexCheckBox].CheckedString;
@@ -888,16 +1542,6 @@ namespace HRMF0522
                 V_EMAIL_ACCOUNT_ID.Focus();
                 return;
             }
-            //if (iConv.ISNull(V_EMAIL_ACCOUNT_PWD.EditValue) == string.Empty)
-            //{
-            //    Application.UseWaitCursor = false;
-            //    System.Windows.Forms.Cursor.Current = Cursors.Default;
-            //    Application.DoEvents();
-
-            //    MessageBoxAdv.Show(string.Format("Sender : {0}", isMessageAdapter1.ReturnText("EAPP_10143")), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    V_EMAIL_ACCOUNT_PWD.Focus();
-            //    return;
-            //}
 
             //저장폴더//
             string vSavePath = System.Environment.CurrentDirectory + "\\Pdf";
@@ -914,6 +1558,7 @@ namespace HRMF0522
             }
 
             isAppInterfaceAdv1.AppInterface.OnAppMessageEvent("E-Mail Send Data Save Start");
+            System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
             System.Windows.Forms.Application.DoEvents(); 
             
             XLPrinting xlPrinting = new XLPrinting(isAppInterfaceAdv1.AppInterface, isMessageAdapter1);
@@ -928,57 +1573,17 @@ namespace HRMF0522
             //    isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(vMessageText);
             //    System.Windows.Forms.Application.DoEvents();
             //}
-
-            //메일 본문.
-            IDA_EMAIL_DOC.Fill();
-            foreach(DataRow vROW in IDA_EMAIL_DOC.CurrentRows)
-            {
-                if(iConv.ISNull(vROW["EMAIL_TYPE"]) == "HEADER")
-                {
-                    if (vSUBJECT == string.Empty)
-                    {
-                        vSUBJECT = String.Format("{0} {1}", W_PAY_YYYYMM.EditValue, vROW["EMAIL_DOC"]);
-                    }
-                    else
-                    {
-                        vSUBJECT = String.Format("{0}\r\n{1}", vSUBJECT, vROW["EMAIL_DOC"]);
-                    }
-                }
-                else if(iConv.ISNull(vROW["EMAIL_TYPE"]) == "BODY")
-                {
-                    if (vBODY == string.Empty)
-                    {
-                        vBODY = String.Format("{0}", vROW["EMAIL_DOC"]);
-                    }
-                    else
-                    {
-                        vBODY = String.Format("{0}\r\n{1}", vBODY, vROW["EMAIL_DOC"]);
-                    }
-                }
-                else if(iConv.ISNull(vROW["EMAIL_TYPE"]) == "NOTICE")
-                {
-                    if (vNOTICE == string.Empty)
-                    {
-                        vNOTICE = String.Format("{0}", vROW["EMAIL_DOC"]);
-                    }
-                    else
-                    {
-                        vNOTICE = String.Format("{0}\r\n{1}", vNOTICE, vROW["EMAIL_DOC"]);
-                    }
-                }
-                else if (iConv.ISNull(vROW["EMAIL_TYPE"]) == "BOTTOM")
-                {
-                    if (vBOTTOM == string.Empty)
-                    {
-                        vBOTTOM = String.Format("{0}", vROW["EMAIL_DOC"]);
-                    }
-                    else
-                    {
-                        vBOTTOM = String.Format("{0}\r\n{1}", vBOTTOM, vROW["EMAIL_DOC"]);
-                    }
-                }
-            }
              
+            DateTime vSTD_Date = iDate.ISGetDate();
+            IDC_GET_REPORT_SET.SetCommandParamValue("P_STD_DATE", vSTD_Date);
+            IDC_GET_REPORT_SET.SetCommandParamValue("P_ASSEMBLY_ID", "HRMF0522");
+            IDC_GET_REPORT_SET.ExecuteNonQuery();
+            string vREPORT_TYPE = iConv.ISNull(IDC_GET_REPORT_SET.GetCommandParamValue("O_REPORT_TYPE"));
+            string vREPORT_FILE_NAME = iConv.ISNull(IDC_GET_REPORT_SET.GetCommandParamValue("O_REPORT_FILE_NAME"));
+                        
+            //메일 본문.
+            IDA_EMAIL_DOC.Fill(); 
+
             vCountCheck = 0;
             for (int vRow = 0; vRow < IGR_MONTH_PAYMENT_EMAIL.RowCount; vRow++)
             {                
@@ -995,6 +1600,61 @@ namespace HRMF0522
                     isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(vMessageText);
                     System.Windows.Forms.Application.DoEvents();
 
+                    //급상여년월//
+                    string vPay_YYYYMM = iConv.ISNull(IGR_MONTH_PAYMENT_EMAIL.GetCellValue(vRow, vIndexPAY_YYYYMM));
+                    vSUBJECT = "";
+                    vBODY = "";
+                    vNOTICE = "";
+                    vBOTTOM = "";
+                    foreach (DataRow vROW in IDA_EMAIL_DOC.CurrentRows)
+                    {
+                        if (iConv.ISNull(vROW["EMAIL_TYPE"]) == "HEADER")
+                        {
+                            if (vSUBJECT == string.Empty)
+                            {
+                                //vSUBJECT = String.Format("{0} {1}", W_PAY_YYYYMM.EditValue, vROW["EMAIL_DOC"]);
+                                vSUBJECT = string.Format("{0}", vROW["EMAIL_DOC"]).Replace("PERIOD_NAME", vPay_YYYYMM);
+                            }
+                            else
+                            {
+                                vSUBJECT = String.Format("{0}\r\n{1}", vSUBJECT, string.Format("{0}", vROW["EMAIL_DOC"]).Replace("PERIOD_NAME", vPay_YYYYMM));
+                            }
+                        }
+                        else if (iConv.ISNull(vROW["EMAIL_TYPE"]) == "BODY")
+                        {
+                            if (vBODY == string.Empty)
+                            {
+                                vBODY = String.Format("{0}", vROW["EMAIL_DOC"]).Replace("PERIOD_NAME", vPay_YYYYMM);
+                            }
+                            else
+                            {
+                                vBODY = String.Format("{0}\r\n{1}", vBODY, string.Format("{0}", vROW["EMAIL_DOC"]).Replace("PERIOD_NAME", vPay_YYYYMM));
+                            }
+                        }
+                        else if (iConv.ISNull(vROW["EMAIL_TYPE"]) == "NOTICE")
+                        {
+                            if (vNOTICE == string.Empty)
+                            {
+                                vNOTICE = String.Format("{0}", vROW["EMAIL_DOC"]);
+                            }
+                            else
+                            {
+                                vNOTICE = String.Format("{0}\r\n{1}", vNOTICE, vROW["EMAIL_DOC"]);
+                            }
+                        }
+                        else if (iConv.ISNull(vROW["EMAIL_TYPE"]) == "BOTTOM")
+                        {
+                            if (vBOTTOM == string.Empty)
+                            {
+                                vBOTTOM = String.Format("{0}", vROW["EMAIL_DOC"]);
+                            }
+                            else
+                            {
+                                vBOTTOM = String.Format("{0}\r\n{1}", vBOTTOM, vROW["EMAIL_DOC"]);
+                            }
+                        }
+                    }
+
                     //판넬 view.
                     SUB_STATUS(true, "PRINT");
                     V_PRINT.CheckedState = ISUtil.Enum.CheckedState.Checked;
@@ -1003,24 +1663,42 @@ namespace HRMF0522
                     vCountCheck++;
 
                     //파일명.
-                    string vPay_YYYYMM = iConv.ISNull(IGR_MONTH_PAYMENT_EMAIL.GetCellValue(vRow, vIndexPAY_YYYYMM));
                     string vPerson_Num = iConv.ISNull(IGR_MONTH_PAYMENT_EMAIL.GetCellValue(vRow, vIndexPERSON_NUM));
                     string vPassword = iConv.ISNull(IGR_MONTH_PAYMENT_EMAIL.GetCellValue(vRow, vIDX_PASSWORD));
                     string vSaveFileName = String.Format("{0}\\{1}_{2}.pdf", vSavePath, vPay_YYYYMM, vPerson_Num);
                     try
                     {
                         if (System.IO.File.Exists(vSaveFileName))
-                            System.IO.File.Delete(vSaveFileName); 
+                            System.IO.File.Delete(vSaveFileName);
                     }
                     catch (Exception Ex)
                     {
-                        isAppInterfaceAdv1.OnAppMessage("XLLine Deduction" + Ex.Message); 
-                        System.Windows.Forms.Application.DoEvents(); 
+                        isAppInterfaceAdv1.OnAppMessage("Old File Delete Error :: " + Ex.Message);
+                        System.Windows.Forms.Application.DoEvents();
                     }
-                     
+
                     isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(string.Format("{0} => Printing", vMessageText));
 
-                    int vFileCnt = xlPrinting.WriteMain_EMAIL(vSaveFileName
+                    int vFileCnt = 0;
+                    if (vREPORT_TYPE.ToUpper().Equals("BHK"))
+                    {
+                        vFileCnt = xlPrinting.WriteMain_EMAIL_BHK(vREPORT_FILE_NAME
+                                                            , vSaveFileName
+                                                            , vPassword
+                                                            , vRow
+                                                            , IGR_MONTH_PAYMENT_EMAIL
+                                                            , IDA_MONTH_ALLOWANCE_E
+                                                            , IDA_MONTH_DEDUCTION_E
+                                                            , IDA_BONUS_ALLOWANCE_E
+                                                            , IDA_BONUS_DEDUCTION_E
+                                                            , IDA_MONTH_DUTY_B01_E
+                                                            , IDA_MONTH_OT_E
+                                                            , CB_STAMP.CheckedString);
+                    }
+                    else if(vREPORT_TYPE.ToUpper().Equals("SIK"))
+                    {
+                        vFileCnt = xlPrinting.WriteMain_EMAIL_SIK(vREPORT_FILE_NAME
+                                                            , vSaveFileName
                                                             , vPassword
                                                             , vRow
                                                             , IGR_MONTH_PAYMENT_EMAIL
@@ -1028,13 +1706,46 @@ namespace HRMF0522
                                                             , IDA_MONTH_DEDUCTION_E
                                                             , IDA_MONTH_DUTY_E
                                                             , IDA_MONTH_OT_E
-                                                            , CB_STAMP.CheckedString);
+                                                            , CB_STAMP.CheckedString
+                                                            , mClientFile, fSIZE_W, fSIZE_H, fLOC_X, fLOC_Y);
+                    }
+                    else if(vREPORT_TYPE.ToUpper().Equals("DKT"))
+                    {
+                        vFileCnt = xlPrinting.WriteMain_EMAIL_DKT(vREPORT_FILE_NAME
+                                                                , vSaveFileName
+                                                                , vPassword
+                                                                , vRow
+                                                                , IGR_MONTH_PAYMENT_EMAIL
+                                                                , IDA_MONTH_ALLOWANCE_E
+                                                                , IDA_MONTH_DEDUCTION_E
+                                                                , IDA_MONTH_DUTY_E
+                                                                , IDA_MONTH_OT_E
+                                                                , CB_STAMP.CheckedString
+                                                                , mClientFile, fSIZE_W, fSIZE_H, fLOC_X, fLOC_Y); 
+                    } 
+                    else 
+                    {
+                        vFileCnt = xlPrinting.WriteMain_EMAIL(vREPORT_FILE_NAME
+                                                            , vSaveFileName
+                                                            , vPassword
+                                                            , vRow
+                                                            , IGR_MONTH_PAYMENT_EMAIL
+                                                            , IDA_MONTH_ALLOWANCE_E
+                                                            , IDA_MONTH_DEDUCTION_E
+                                                            , IDA_MONTH_DUTY_E
+                                                            , IDA_MONTH_OT_E
+                                                            , CB_STAMP.CheckedString
+                                                            , mClientFile, fSIZE_W, fSIZE_H, fLOC_X, fLOC_Y);
+                    } 
+
                     if (vFileCnt < 1)
                     {
-                        SUB_STATUS(false, "PRINT"); 
-                        System.Windows.Forms.Application.DoEvents(); 
+                        isAppInterfaceAdv1.AppInterface.OnAppMessageEvent("Printed Error");
+                        SUB_STATUS(false, "PRINT");
+                        System.Windows.Forms.Cursor.Current = Cursors.Default;
+                        System.Windows.Forms.Application.DoEvents();
                         return;
-                    } 
+                    }
                     isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(string.Format("{0} => Printed", vMessageText));
 
                     V_SAVE_FILE.CheckedState = ISUtil.Enum.CheckedState.Checked;
@@ -1065,30 +1776,44 @@ namespace HRMF0522
                         //메일 내용.
                         vMail.Body = string.Format("{0}\r\n\r\n{1}\r\n\r\n{2}", vBODY, vNOTICE, vBOTTOM);
                         vMail.BodyEncoding = System.Text.Encoding.UTF8;
+                    }
+                    catch (Exception Ex)
+                    {
+                        SUB_STATUS(false, "PRINT");
+                        Application.UseWaitCursor = false;
+                        System.Windows.Forms.Cursor.Current = Cursors.Default;
+                        System.Windows.Forms.Application.DoEvents();
+                        isAppInterfaceAdv1.AppInterface.OnAppMessageEvent("Email Send Error :: " + Ex.Message);
 
-                        //첨부파일 첨부.
-                        if (vSaveFileName != string.Empty)
+                        xlPrinting.Dispose();
+                        MessageBoxAdv.Show(Ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    //첨부파일 첨부.
+                    if (vSaveFileName != string.Empty)
+                    {
+                        System.Net.Mail.Attachment vAttachment;
+                        vAttachment = new System.Net.Mail.Attachment(vSaveFileName);
+                        vAttachment.NameEncoding = System.Text.Encoding.UTF8;
+                        vMail.Attachments.Clear();
+                        try
                         {
-                            System.Net.Mail.Attachment vAttachment;
-                            vAttachment = new System.Net.Mail.Attachment(vSaveFileName);
-                            vAttachment.NameEncoding = System.Text.Encoding.UTF8;
-                            vMail.Attachments.Clear();
-                            try
-                            {
-                                vMail.Attachments.Add(vAttachment);     //첨부파일 붙이기.
-                            }
-                            catch(Exception Ex)
-                            { 
-                                isAppInterfaceAdv1.AppInterface.OnAppMessageEvent("Email Attachment Add Error :: " + Ex.Message);
-                            }
+                            vMail.Attachments.Add(vAttachment);     //첨부파일 붙이기.
                         }
-                        else
+                        catch (Exception Ex)
                         {
-                            isAppInterfaceAdv1.AppInterface.OnAppMessageEvent("Email Attachment Empty");
+                            isAppInterfaceAdv1.AppInterface.OnAppMessageEvent("Email Attachment Add Error :: " + Ex.Message);
                         }
-
-                        //mail svr 설정. 
-                        SmtpClient vSmtp = new SmtpClient(iConv.ISNull(O_SMTP_SVR.EditValue), iConv.ISNumtoZero(O_SMTP_PORT.EditValue, 25));
+                    }
+                    else
+                    {
+                        isAppInterfaceAdv1.AppInterface.OnAppMessageEvent("Email Attachment Empty");
+                    }
+                                        
+                    //mail svr 설정. 
+                    SmtpClient vSmtp = new SmtpClient(iConv.ISNull(O_SMTP_SVR.EditValue), iConv.ISNumtoZero(O_SMTP_PORT.EditValue, 25));
+                    try
+                    {
                         if (O_USER_AUTH_FLAG.CheckedState == ISUtil.Enum.CheckedState.Checked)
                         {
                             vSmtp.UseDefaultCredentials = false;    //시스템에 설정된 인증 정보를 사용하지 않는다.
@@ -1115,7 +1840,26 @@ namespace HRMF0522
                         }
                          
                         isAppInterfaceAdv1.AppInterface.OnAppMessageEvent(string.Format("{0} => Email Sending", vMessageText));
-                        
+                    }
+                    catch (Exception Ex)
+                    {
+                        SUB_STATUS(false, "PRINT");
+                        Application.UseWaitCursor = false;
+                        System.Windows.Forms.Cursor.Current = Cursors.Default;
+                        System.Windows.Forms.Application.DoEvents();
+                        isAppInterfaceAdv1.AppInterface.OnAppMessageEvent("Email Send Error :: " + Ex.Message);
+                        xlPrinting.Dispose();
+                        string errMsg = Ex.Message + "\r\n" + Ex.StackTrace;
+                        if (Ex.InnerException != null)
+                        {
+                            errMsg += "\r\n" + Ex.InnerException.Message + "\r\n" + Ex.InnerException.StackTrace;
+                        }
+                        MessageBoxAdv.Show(errMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    try
+                    {  
                         V_EMAIL_SEND.CheckedState = ISUtil.Enum.CheckedState.Checked;
                         vSmtp.Send(vMail); 
                         
@@ -1130,7 +1874,13 @@ namespace HRMF0522
                         isAppInterfaceAdv1.AppInterface.OnAppMessageEvent("Email Send Error :: " + Ex.Message);
 
                         xlPrinting.Dispose();
-                        MessageBoxAdv.Show(Ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        string errMsg = Ex.Message + "\r\n" + Ex.StackTrace;
+                        if (Ex.InnerException != null)
+                        {
+                            errMsg += "\r\n" + Ex.InnerException.Message + "\r\n" + Ex.InnerException.StackTrace;
+                        }
+                        MessageBoxAdv.Show(errMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     } 
                     vMail.Dispose();
@@ -1145,6 +1895,7 @@ namespace HRMF0522
             }
             catch(Exception Ex)
             {
+                System.Windows.Forms.Cursor.Current = Cursors.Default;
                 isAppInterfaceAdv1.AppInterface.OnAppMessageEvent("Print File Closing Error :: " + Ex.Message);
             }
             //-------------------------------------------------------------------------------------
@@ -1164,7 +1915,7 @@ namespace HRMF0522
         }
 
         private void BTN_EMAIL_TEXT_ButtonClick(object pSender, EventArgs pEventArgs)
-        {
+        {        
             IDC_GET_EMAIL_PERSON_DESC.SetCommandParamValue("W_EMAIL_TYPE", "SALARY");
             IDC_GET_EMAIL_PERSON_DESC.ExecuteNonQuery();
 
@@ -1214,9 +1965,9 @@ namespace HRMF0522
             SUB_STATUS(false, "EMAIL_TEXT");
         }
 
-        #endregion
+#endregion
 
-        #region ----- Lookup Event ----- 
+#region ----- Lookup Event ----- 
 
         private void ilaPAY_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
@@ -1239,7 +1990,18 @@ namespace HRMF0522
         private void ilaYYYYMM_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
             ildYYYYMM.SetLookupParamValue("W_START_YYYYMM", "2001-01");
-            ildYYYYMM.SetLookupParamValue("W_END_YYYYMM", iDate.ISYearMonth(DateTime.Today));
+            ildYYYYMM.SetLookupParamValue("W_END_YYYYMM", iDate.ISDate_Month_Add(DateTime.Today, 3));
+        }
+
+        private void ilaYYYYMM_SelectedRowData(object pSender)
+        {
+            W_YYYYMM_TO.EditValue = W_PAY_YYYYMM.EditValue;
+        }
+
+        private void ilaYYYYMM_TO_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ildYYYYMM.SetLookupParamValue("W_START_YYYYMM", W_PAY_YYYYMM.EditValue);
+            ildYYYYMM.SetLookupParamValue("W_END_YYYYMM", iDate.ISYearMonth(iDate.ISDate_Month_Add(DateTime.Today, 3)));
         }
 
         private void ilaDEPT_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
@@ -1259,7 +2021,31 @@ namespace HRMF0522
             ildCOMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
         }
 
-        #endregion
+#endregion
 
+        private void GB_EMAIL_TEXT_MouseDown(object sender, MouseEventArgs e)
+        {
+            mIsClickInquiryDetail = true;
+            mInquiryDetailPreX = e.X;
+            mInquiryDetailPreY = e.Y;
+        }
+
+        private void GB_EMAIL_TEXT_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mIsClickInquiryDetail && e.Button == MouseButtons.Left)
+            {
+                int gx = e.X - mInquiryDetailPreX;
+                int gy = e.Y - mInquiryDetailPreY;
+
+                Point I = GB_EMAIL_TEXT.Location;
+                I.Offset(gx, gy);
+                GB_EMAIL_TEXT.Location = I;
+            }
+        }
+
+        private void GB_EMAIL_TEXT_MouseUp(object sender, MouseEventArgs e)
+        {
+            mIsClickInquiryDetail = false;
+        }
     }
 }

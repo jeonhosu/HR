@@ -31,10 +31,12 @@
             this.components = new System.ComponentModel.Container();
             InfoSummit.Win.ControlAdv.ISDataUtil.OraConnectionInfo oraConnectionInfo1 = new InfoSummit.Win.ControlAdv.ISDataUtil.OraConnectionInfo();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement1 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement8 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement6 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement7 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement3 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement4 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement5 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement3 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement2 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             this.isAppInterfaceAdv1 = new InfoSummit.Win.ControlAdv.ISAppInterfaceAdv(this.components);
             this.isOraConnection1 = new InfoSummit.Win.ControlAdv.ISOraConnection(this.components);
@@ -43,12 +45,16 @@
             this.BTN_CLOSED = new InfoSummit.Win.ControlAdv.ISButton();
             this.RB_PDF = new InfoSummit.Win.ControlAdv.ISRadioButtonAdv();
             this.isGroupBox7 = new InfoSummit.Win.ControlAdv.ISGroupBox();
+            this.isRadioButtonAdv3 = new InfoSummit.Win.ControlAdv.ISRadioButtonAdv();
+            this.isRadioButtonAdv2 = new InfoSummit.Win.ControlAdv.ISRadioButtonAdv();
             this.isRadioButtonAdv1 = new InfoSummit.Win.ControlAdv.ISRadioButtonAdv();
             this.V_PRINT_TYPE = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RB_PDF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.isGroupBox7)).BeginInit();
             this.isGroupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.isRadioButtonAdv3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.isRadioButtonAdv2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.isRadioButtonAdv1)).BeginInit();
             // 
             // isAppInterfaceAdv1
@@ -88,7 +94,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
-            this.ClientSize = new System.Drawing.Size(251, 93);
+            this.ClientSize = new System.Drawing.Size(260, 126);
             this.Controls.Add(this.V_PRINT_TYPE);
             this.Controls.Add(this.isGroupBox7);
             this.Controls.Add(this.BTN_CLOSED);
@@ -102,7 +108,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Salary Printer Type";
             this.Load += new System.EventHandler(this.HRMF0507_PRINT_TYPE_Load);
-            this.BTN_OK.Location = new System.Drawing.Point(44, 54);
+            this.BTN_OK.Location = new System.Drawing.Point(63, 87);
             this.BTN_OK.Name = "BTN_OK";
             this.BTN_OK.Size = new System.Drawing.Size(83, 25);
             this.BTN_OK.TabIndex = 1;
@@ -113,16 +119,16 @@
             // 
             this.BTN_CLOSED.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.BTN_CLOSED.ButtonText = "닫기";
-            isLanguageElement6.Default = "Closed";
-            isLanguageElement6.SiteName = null;
-            isLanguageElement6.TL1_KR = "닫기";
-            isLanguageElement6.TL2_CN = null;
-            isLanguageElement6.TL3_VN = null;
-            isLanguageElement6.TL4_JP = null;
-            isLanguageElement6.TL5_XAA = null;
+            isLanguageElement8.Default = "Closed";
+            isLanguageElement8.SiteName = null;
+            isLanguageElement8.TL1_KR = "닫기";
+            isLanguageElement8.TL2_CN = null;
+            isLanguageElement8.TL3_VN = null;
+            isLanguageElement8.TL4_JP = null;
+            isLanguageElement8.TL5_XAA = null;
             this.BTN_CLOSED.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement6});
-            this.BTN_CLOSED.Location = new System.Drawing.Point(136, 54);
+            isLanguageElement8});
+            this.BTN_CLOSED.Location = new System.Drawing.Point(155, 87);
             this.BTN_CLOSED.Name = "BTN_CLOSED";
             this.BTN_CLOSED.Size = new System.Drawing.Size(83, 25);
             this.BTN_CLOSED.TabIndex = 2;
@@ -135,23 +141,23 @@
             this.RB_PDF.CheckedString = "PDF";
             this.RB_PDF.DataAdapter = null;
             this.RB_PDF.DataColumn = null;
-            this.RB_PDF.Location = new System.Drawing.Point(122, 9);
+            this.RB_PDF.Location = new System.Drawing.Point(126, 12);
             this.RB_PDF.MetroColor = System.Drawing.Color.Empty;
             this.RB_PDF.Name = "RB_PDF";
             this.RB_PDF.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
             this.RB_PDF.PromptText = "PDF";
-            isLanguageElement4.Default = "PDF";
-            isLanguageElement4.SiteName = null;
-            isLanguageElement4.TL1_KR = "PDF";
-            isLanguageElement4.TL2_CN = null;
-            isLanguageElement4.TL3_VN = null;
-            isLanguageElement4.TL4_JP = null;
-            isLanguageElement4.TL5_XAA = null;
+            isLanguageElement6.Default = "PDF";
+            isLanguageElement6.SiteName = null;
+            isLanguageElement6.TL1_KR = "PDF";
+            isLanguageElement6.TL2_CN = null;
+            isLanguageElement6.TL3_VN = null;
+            isLanguageElement6.TL4_JP = null;
+            isLanguageElement6.TL5_XAA = null;
             this.RB_PDF.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement4});
+            isLanguageElement6});
             this.RB_PDF.RadioButtonValue = null;
             this.RB_PDF.RadioCheckedString = "PDF";
-            this.RB_PDF.Size = new System.Drawing.Size(100, 21);
+            this.RB_PDF.Size = new System.Drawing.Size(92, 21);
             this.RB_PDF.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007;
             this.RB_PDF.TabIndex = 2;
             this.RB_PDF.TabStop = false;
@@ -164,50 +170,111 @@
             this.isGroupBox7.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.isGroupBox7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.isGroupBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.isGroupBox7.Controls.Add(this.isRadioButtonAdv3);
+            this.isGroupBox7.Controls.Add(this.isRadioButtonAdv2);
             this.isGroupBox7.Controls.Add(this.isRadioButtonAdv1);
             this.isGroupBox7.Controls.Add(this.RB_PDF);
             this.isGroupBox7.Location = new System.Drawing.Point(8, 8);
             this.isGroupBox7.Name = "isGroupBox7";
             this.isGroupBox7.PromptText = "isGroupBox4";
-            isLanguageElement5.Default = "isGroupBox4";
-            isLanguageElement5.SiteName = null;
-            isLanguageElement5.TL1_KR = null;
-            isLanguageElement5.TL2_CN = null;
-            isLanguageElement5.TL3_VN = null;
-            isLanguageElement5.TL4_JP = null;
-            isLanguageElement5.TL5_XAA = null;
+            isLanguageElement7.Default = "isGroupBox4";
+            isLanguageElement7.SiteName = null;
+            isLanguageElement7.TL1_KR = null;
+            isLanguageElement7.TL2_CN = null;
+            isLanguageElement7.TL3_VN = null;
+            isLanguageElement7.TL4_JP = null;
+            isLanguageElement7.TL5_XAA = null;
             this.isGroupBox7.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement5});
+            isLanguageElement7});
             this.isGroupBox7.PromptVisible = false;
-            this.isGroupBox7.Size = new System.Drawing.Size(232, 40);
+            this.isGroupBox7.Size = new System.Drawing.Size(244, 70);
             this.isGroupBox7.TabIndex = 0;
             // 
-            // isRadioButtonAdv1
+            // isRadioButtonAdv3
             // 
-            this.isRadioButtonAdv1.AppInterfaceAdv = this.isAppInterfaceAdv1;
-            this.isRadioButtonAdv1.CheckedString = "FILE";
-            this.isRadioButtonAdv1.DataAdapter = null;
-            this.isRadioButtonAdv1.DataColumn = null;
-            this.isRadioButtonAdv1.Location = new System.Drawing.Point(16, 9);
-            this.isRadioButtonAdv1.MetroColor = System.Drawing.Color.Empty;
-            this.isRadioButtonAdv1.Name = "isRadioButtonAdv1";
-            this.isRadioButtonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-            this.isRadioButtonAdv1.PromptText = "Excel";
-            isLanguageElement3.Default = "Excel";
+            this.isRadioButtonAdv3.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.isRadioButtonAdv3.CheckedString = "PREVIEW";
+            this.isRadioButtonAdv3.DataAdapter = null;
+            this.isRadioButtonAdv3.DataColumn = null;
+            this.isRadioButtonAdv3.Location = new System.Drawing.Point(19, 39);
+            this.isRadioButtonAdv3.MetroColor = System.Drawing.Color.Empty;
+            this.isRadioButtonAdv3.Name = "isRadioButtonAdv3";
+            this.isRadioButtonAdv3.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+            this.isRadioButtonAdv3.PromptText = "Preview";
+            isLanguageElement3.Default = "Preview";
             isLanguageElement3.SiteName = null;
-            isLanguageElement3.TL1_KR = "Excel";
+            isLanguageElement3.TL1_KR = "미리보기";
             isLanguageElement3.TL2_CN = null;
             isLanguageElement3.TL3_VN = null;
             isLanguageElement3.TL4_JP = null;
             isLanguageElement3.TL5_XAA = null;
-            this.isRadioButtonAdv1.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            this.isRadioButtonAdv3.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
             isLanguageElement3});
+            this.isRadioButtonAdv3.RadioButtonValue = null;
+            this.isRadioButtonAdv3.RadioCheckedString = "PREVIEW";
+            this.isRadioButtonAdv3.Size = new System.Drawing.Size(89, 21);
+            this.isRadioButtonAdv3.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007;
+            this.isRadioButtonAdv3.TabIndex = 190;
+            this.isRadioButtonAdv3.Text = "Preview";
+            this.isRadioButtonAdv3.ThemesEnabled = false;
+            this.isRadioButtonAdv3.CheckChanged += new System.EventHandler(this.isRadioButtonAdv_CheckChanged);
+            // 
+            // isRadioButtonAdv2
+            // 
+            this.isRadioButtonAdv2.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.isRadioButtonAdv2.CheckedString = "EXCEL";
+            this.isRadioButtonAdv2.DataAdapter = null;
+            this.isRadioButtonAdv2.DataColumn = null;
+            this.isRadioButtonAdv2.Location = new System.Drawing.Point(126, 39);
+            this.isRadioButtonAdv2.MetroColor = System.Drawing.Color.Empty;
+            this.isRadioButtonAdv2.Name = "isRadioButtonAdv2";
+            this.isRadioButtonAdv2.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+            this.isRadioButtonAdv2.PromptText = "Excel";
+            isLanguageElement4.Default = "Excel";
+            isLanguageElement4.SiteName = null;
+            isLanguageElement4.TL1_KR = "Excel";
+            isLanguageElement4.TL2_CN = null;
+            isLanguageElement4.TL3_VN = null;
+            isLanguageElement4.TL4_JP = null;
+            isLanguageElement4.TL5_XAA = null;
+            this.isRadioButtonAdv2.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement4});
+            this.isRadioButtonAdv2.RadioButtonValue = null;
+            this.isRadioButtonAdv2.RadioCheckedString = "EXCEL";
+            this.isRadioButtonAdv2.Size = new System.Drawing.Size(92, 21);
+            this.isRadioButtonAdv2.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007;
+            this.isRadioButtonAdv2.TabIndex = 189;
+            this.isRadioButtonAdv2.TabStop = false;
+            this.isRadioButtonAdv2.Text = "Excel";
+            this.isRadioButtonAdv2.ThemesEnabled = false;
+            this.isRadioButtonAdv2.CheckChanged += new System.EventHandler(this.isRadioButtonAdv_CheckChanged);
+            // 
+            // isRadioButtonAdv1
+            // 
+            this.isRadioButtonAdv1.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.isRadioButtonAdv1.CheckedString = "PRINT";
+            this.isRadioButtonAdv1.DataAdapter = null;
+            this.isRadioButtonAdv1.DataColumn = null;
+            this.isRadioButtonAdv1.Location = new System.Drawing.Point(19, 12);
+            this.isRadioButtonAdv1.MetroColor = System.Drawing.Color.Empty;
+            this.isRadioButtonAdv1.Name = "isRadioButtonAdv1";
+            this.isRadioButtonAdv1.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+            this.isRadioButtonAdv1.PromptText = "Printer";
+            isLanguageElement5.Default = "Printer";
+            isLanguageElement5.SiteName = null;
+            isLanguageElement5.TL1_KR = "인쇄";
+            isLanguageElement5.TL2_CN = null;
+            isLanguageElement5.TL3_VN = null;
+            isLanguageElement5.TL4_JP = null;
+            isLanguageElement5.TL5_XAA = null;
+            this.isRadioButtonAdv1.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement5});
             this.isRadioButtonAdv1.RadioButtonValue = null;
-            this.isRadioButtonAdv1.RadioCheckedString = "FILE";
-            this.isRadioButtonAdv1.Size = new System.Drawing.Size(100, 21);
+            this.isRadioButtonAdv1.RadioCheckedString = "PRINT";
+            this.isRadioButtonAdv1.Size = new System.Drawing.Size(89, 21);
             this.isRadioButtonAdv1.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007;
             this.isRadioButtonAdv1.TabIndex = 1;
-            this.isRadioButtonAdv1.Text = "Excel";
+            this.isRadioButtonAdv1.Text = "Printer";
             this.isRadioButtonAdv1.ThemesEnabled = false;
             this.isRadioButtonAdv1.CheckChanged += new System.EventHandler(this.isRadioButtonAdv_CheckChanged);
             // 
@@ -224,9 +291,9 @@
             this.V_PRINT_TYPE.DataAdapter = null;
             this.V_PRINT_TYPE.DataColumn = null;
             this.V_PRINT_TYPE.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
-            this.V_PRINT_TYPE.DoubleValue = 0;
+            this.V_PRINT_TYPE.DoubleValue = 0D;
             this.V_PRINT_TYPE.EditValue = "";
-            this.V_PRINT_TYPE.Location = new System.Drawing.Point(8, 54);
+            this.V_PRINT_TYPE.Location = new System.Drawing.Point(27, 86);
             this.V_PRINT_TYPE.LookupAdapter = null;
             this.V_PRINT_TYPE.Name = "V_PRINT_TYPE";
             this.V_PRINT_TYPE.Nullable = true;
@@ -261,6 +328,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.RB_PDF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.isGroupBox7)).EndInit();
             this.isGroupBox7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.isRadioButtonAdv3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.isRadioButtonAdv2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.isRadioButtonAdv1)).EndInit();
 
         }
@@ -276,6 +345,8 @@
         private InfoSummit.Win.ControlAdv.ISGroupBox isGroupBox7;
         private InfoSummit.Win.ControlAdv.ISEditAdv V_PRINT_TYPE;
         private InfoSummit.Win.ControlAdv.ISRadioButtonAdv isRadioButtonAdv1;
+        private InfoSummit.Win.ControlAdv.ISRadioButtonAdv isRadioButtonAdv2;
+        private InfoSummit.Win.ControlAdv.ISRadioButtonAdv isRadioButtonAdv3;
     }
 }
 

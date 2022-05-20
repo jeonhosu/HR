@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement24 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle1 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle2 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
             Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle3 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
@@ -102,9 +101,6 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement1 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement2 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement3 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement4 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement5 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement6 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement7 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement8 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement9 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
@@ -112,7 +108,9 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement11 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement12 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement13 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement1 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement14 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement15 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement16 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement2 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement3 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement4 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -121,8 +119,9 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement7 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement8 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement9 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement14 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement15 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement10 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement17 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement18 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement19 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement20 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement21 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
@@ -136,11 +135,11 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement29 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement30 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISDataUtil.OraConnectionInfo oraConnectionInfo1 = new InfoSummit.Win.ControlAdv.ISDataUtil.OraConnectionInfo();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement1 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement10 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement16 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement17 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement18 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement2 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement1 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement4 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement5 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement6 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement11 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement12 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement13 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -154,21 +153,31 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement21 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement22 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement23 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement24 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement31 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement32 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement33 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement34 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement35 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement36 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement4 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement1 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement3 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement2 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement37 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement38 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement39 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement40 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement41 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement42 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            this.ilaYEAR_1 = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement43 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement44 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement45 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement46 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement47 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement48 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement49 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement50 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement51 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             this.igrHOLIDAY = new InfoSummit.Win.ControlAdv.ISGridAdvEx();
             this.isAppInterfaceAdv1 = new InfoSummit.Win.ControlAdv.ISAppInterfaceAdv(this.components);
             this.IDA_HOLIDAY_CALENDAR = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
@@ -176,64 +185,23 @@
             this.W_WORK_YYYY = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.ilaYEAR_0 = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
             this.ildYEAR = new InfoSummit.Win.ControlAdv.ISLookupData(this.components);
+            this.ilaYEAR_1 = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
             this.ILA_HOLIDAY_CAL_TYPE = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
             this.ILD_HOLIDAY_CAL_TYPE = new InfoSummit.Win.ControlAdv.ISLookupData(this.components);
             this.isMessageAdapter1 = new InfoSummit.Win.ControlAdv.ISMessageAdapter(this.components);
             this.igbCONDITION = new InfoSummit.Win.ControlAdv.ISGroupBox();
+            this.BTN_INIT_DATE = new InfoSummit.Win.ControlAdv.ISButton();
             this.DATA_COPY = new InfoSummit.Win.ControlAdv.ISButton();
             this.IDC_HOLIDAY_COPY = new InfoSummit.Win.ControlAdv.ISDataCommand(this.components);
-            this.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ilaYEAR_1.PropSourceDataTable)).BeginInit();
+            this.IDC_SAVE_HOLIDAY = new InfoSummit.Win.ControlAdv.ISDataCommand(this.components);
+            this.IDC_GET_API_AUTH_KEY_P = new InfoSummit.Win.ControlAdv.ISDataCommand(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.igrHOLIDAY.BaseGrid)).BeginInit();
+            this.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ilaYEAR_0.PropSourceDataTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ilaYEAR_1.PropSourceDataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_HOLIDAY_CAL_TYPE.PropSourceDataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.igbCONDITION)).BeginInit();
             this.igbCONDITION.SuspendLayout();
-            // 
-            // ilaYEAR_1
-            // 
-            this.ilaYEAR_1.DisplayCaption = "Year Search";
-            // 
-            // HRMF0301
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
-            this.ClientSize = new System.Drawing.Size(944, 572);
-            this.Controls.Add(this.igrHOLIDAY);
-            this.Controls.Add(this.igbCONDITION);
-            this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Name = "HRMF0301";
-            this.Padding = new System.Windows.Forms.Padding(2);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "휴일관리";
-            this.Load += new System.EventHandler(this.HRMF0301_Load);
-            isOraColElement24.DataColumn = "YEAR";
-            isOraColElement24.DataOrdinal = 0;
-            isOraColElement24.DataType = "System.String";
-            isOraColElement24.HeaderPrompt = "Year";
-            isOraColElement24.LastValue = null;
-            isOraColElement24.MemberControl = this.igrHOLIDAY;
-            isOraColElement24.MemberValue = "WORK_YYYY";
-            isOraColElement24.Nullable = null;
-            isOraColElement24.Ordinal = 0;
-            isOraColElement24.RelationKeyColumn = null;
-            isOraColElement24.ReturnParameter = null;
-            isOraColElement24.TL1_KR = "년도";
-            isOraColElement24.TL2_CN = null;
-            isOraColElement24.TL3_VN = null;
-            isOraColElement24.TL4_JP = null;
-            isOraColElement24.TL5_XAA = null;
-            isOraColElement24.Visible = 1;
-            isOraColElement24.Width = 100;
-            this.ilaYEAR_1.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
-            isOraColElement24});
-            this.ilaYEAR_1.LookupData = this.ildYEAR;
-            this.ilaYEAR_1.LookupSize = new System.Drawing.Size(166, 308);
-            this.ilaYEAR_1.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
-            this.ilaYEAR_1.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
-            this.ilaYEAR_1.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ilaYEAR_PrePopupShow);
-            this.ilaYEAR_1.SelectedRowData += new InfoSummit.Win.ControlAdv.ISLookupAdapter.SelectedHandler(this.ilaYEAR_1_SelectedRowData);
             // 
             // igrHOLIDAY
             // 
@@ -958,97 +926,113 @@
             isOraParamElement2,
             isOraParamElement3});
             this.IDA_HOLIDAY_CALENDAR.FocusedControl = null;
-            isOraParamElement4.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement4.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement4.MemberValue = "SOB_ID";
-            isOraParamElement4.OraDbTypeString = "NUMBER";
-            isOraParamElement4.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement4.ParamName = "P_SOB_ID";
-            isOraParamElement4.Size = 22;
-            isOraParamElement4.SourceColumn = "";
-            isOraParamElement5.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement5.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement5.MemberValue = "ORG_ID";
-            isOraParamElement5.OraDbTypeString = "NUMBER";
-            isOraParamElement5.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement5.ParamName = "P_ORG_ID";
-            isOraParamElement5.Size = 22;
-            isOraParamElement5.SourceColumn = "";
-            isOraParamElement6.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement6.MemberControl = null;
-            isOraParamElement6.MemberValue = null;
-            isOraParamElement6.OraDbTypeString = "DATE";
-            isOraParamElement6.OraType = System.Data.OracleClient.OracleType.DateTime;
-            isOraParamElement6.ParamName = "P_WORK_DATE";
-            isOraParamElement6.Size = 0;
-            isOraParamElement6.SourceColumn = "WORK_DATE";
+            // 
+            // HRMF0301
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
+            this.ClientSize = new System.Drawing.Size(944, 572);
+            this.Controls.Add(this.igrHOLIDAY);
+            this.Controls.Add(this.igbCONDITION);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.DoubleBuffered = true;
+            this.Name = "HRMF0301";
+            this.Padding = new System.Windows.Forms.Padding(2);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "휴일관리";
+            this.Load += new System.EventHandler(this.HRMF0301_Load);
             isOraParamElement7.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement7.MemberControl = null;
-            isOraParamElement7.MemberValue = null;
-            isOraParamElement7.OraDbTypeString = "VARCHAR2";
-            isOraParamElement7.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement7.ParamName = "P_HOLIDAY_NAME";
-            isOraParamElement7.Size = 50;
-            isOraParamElement7.SourceColumn = "HOLIDAY_NAME";
+            isOraParamElement7.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement7.MemberValue = "SOB_ID";
+            isOraParamElement7.OraDbTypeString = "NUMBER";
+            isOraParamElement7.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement7.ParamName = "P_SOB_ID";
+            isOraParamElement7.Size = 22;
+            isOraParamElement7.SourceColumn = "";
             isOraParamElement8.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement8.MemberControl = null;
-            isOraParamElement8.MemberValue = null;
-            isOraParamElement8.OraDbTypeString = "CHAR";
-            isOraParamElement8.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement8.ParamName = "P_HOLIDAY_FLAG";
-            isOraParamElement8.Size = 1;
-            isOraParamElement8.SourceColumn = "HOLIDAY_FLAG";
+            isOraParamElement8.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement8.MemberValue = "ORG_ID";
+            isOraParamElement8.OraDbTypeString = "NUMBER";
+            isOraParamElement8.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement8.ParamName = "P_ORG_ID";
+            isOraParamElement8.Size = 22;
+            isOraParamElement8.SourceColumn = "";
             isOraParamElement9.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement9.MemberControl = null;
             isOraParamElement9.MemberValue = null;
-            isOraParamElement9.OraDbTypeString = "VARCHAR2";
-            isOraParamElement9.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement9.ParamName = "P_ALL_CHECK";
-            isOraParamElement9.Size = 1;
-            isOraParamElement9.SourceColumn = "ALL_CHECK";
+            isOraParamElement9.OraDbTypeString = "DATE";
+            isOraParamElement9.OraType = System.Data.OracleClient.OracleType.DateTime;
+            isOraParamElement9.ParamName = "P_WORK_DATE";
+            isOraParamElement9.Size = 0;
+            isOraParamElement9.SourceColumn = "WORK_DATE";
             isOraParamElement10.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement10.MemberControl = null;
             isOraParamElement10.MemberValue = null;
-            isOraParamElement10.OraDbTypeString = "CHAR";
+            isOraParamElement10.OraDbTypeString = "VARCHAR2";
             isOraParamElement10.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement10.ParamName = "P_UNPAIED_FLAG";
-            isOraParamElement10.Size = 1;
-            isOraParamElement10.SourceColumn = "UNPAIED_FLAG";
+            isOraParamElement10.ParamName = "P_HOLIDAY_NAME";
+            isOraParamElement10.Size = 50;
+            isOraParamElement10.SourceColumn = "HOLIDAY_NAME";
             isOraParamElement11.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement11.MemberControl = null;
             isOraParamElement11.MemberValue = null;
-            isOraParamElement11.OraDbTypeString = "VARCHAR2";
+            isOraParamElement11.OraDbTypeString = "CHAR";
             isOraParamElement11.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement11.ParamName = "P_DESCRIPTION";
-            isOraParamElement11.Size = 100;
-            isOraParamElement11.SourceColumn = "DESCRIPTION";
+            isOraParamElement11.ParamName = "P_HOLIDAY_FLAG";
+            isOraParamElement11.Size = 1;
+            isOraParamElement11.SourceColumn = "HOLIDAY_FLAG";
             isOraParamElement12.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement12.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement12.MemberValue = "USER_ID";
-            isOraParamElement12.OraDbTypeString = "NUMBER";
-            isOraParamElement12.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement12.ParamName = "P_USER_ID";
-            isOraParamElement12.Size = 22;
-            isOraParamElement12.SourceColumn = "";
+            isOraParamElement12.MemberControl = null;
+            isOraParamElement12.MemberValue = null;
+            isOraParamElement12.OraDbTypeString = "VARCHAR2";
+            isOraParamElement12.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement12.ParamName = "P_ALL_CHECK";
+            isOraParamElement12.Size = 1;
+            isOraParamElement12.SourceColumn = "ALL_CHECK";
             isOraParamElement13.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement13.MemberControl = null;
             isOraParamElement13.MemberValue = null;
-            isOraParamElement13.OraDbTypeString = "VARCHAR2";
+            isOraParamElement13.OraDbTypeString = "CHAR";
             isOraParamElement13.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement13.ParamName = "P_HOLIDAY_CAL_TYPE";
-            isOraParamElement13.Size = 30;
-            isOraParamElement13.SourceColumn = "HOLIDAY_CAL_TYPE";
+            isOraParamElement13.ParamName = "P_UNPAIED_FLAG";
+            isOraParamElement13.Size = 1;
+            isOraParamElement13.SourceColumn = "UNPAIED_FLAG";
+            isOraParamElement14.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement14.MemberControl = null;
+            isOraParamElement14.MemberValue = null;
+            isOraParamElement14.OraDbTypeString = "VARCHAR2";
+            isOraParamElement14.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement14.ParamName = "P_DESCRIPTION";
+            isOraParamElement14.Size = 100;
+            isOraParamElement14.SourceColumn = "DESCRIPTION";
+            isOraParamElement15.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement15.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement15.MemberValue = "USER_ID";
+            isOraParamElement15.OraDbTypeString = "NUMBER";
+            isOraParamElement15.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement15.ParamName = "P_USER_ID";
+            isOraParamElement15.Size = 22;
+            isOraParamElement15.SourceColumn = "";
+            isOraParamElement16.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement16.MemberControl = null;
+            isOraParamElement16.MemberValue = null;
+            isOraParamElement16.OraDbTypeString = "VARCHAR2";
+            isOraParamElement16.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement16.ParamName = "P_HOLIDAY_CAL_TYPE";
+            isOraParamElement16.Size = 30;
+            isOraParamElement16.SourceColumn = "HOLIDAY_CAL_TYPE";
             this.IDA_HOLIDAY_CALENDAR.InsertParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement4,
-            isOraParamElement5,
-            isOraParamElement6,
             isOraParamElement7,
             isOraParamElement8,
             isOraParamElement9,
             isOraParamElement10,
             isOraParamElement11,
             isOraParamElement12,
-            isOraParamElement13});
+            isOraParamElement13,
+            isOraParamElement14,
+            isOraParamElement15,
+            isOraParamElement16});
             this.IDA_HOLIDAY_CALENDAR.MasterAdapter = null;
             this.IDA_HOLIDAY_CALENDAR.OraConnection = this.isOraConnection1;
             this.IDA_HOLIDAY_CALENDAR.OraDelete = "DATA_DELETE";
@@ -1058,33 +1042,15 @@
             this.IDA_HOLIDAY_CALENDAR.OraSelect = "DATA_SELECT";
             this.IDA_HOLIDAY_CALENDAR.OraSelectData = null;
             this.IDA_HOLIDAY_CALENDAR.OraUpdate = "DATA_UPDATE";
-            isOraColElement1.DataColumn = "WORK_YYYY";
-            isOraColElement1.DataOrdinal = 0;
-            isOraColElement1.DataType = "System.String";
-            isOraColElement1.HeaderPrompt = "WORK_YYYY";
-            isOraColElement1.LastValue = null;
-            isOraColElement1.MemberControl = null;
-            isOraColElement1.MemberValue = null;
-            isOraColElement1.Nullable = 1;
-            isOraColElement1.Ordinal = 0;
-            isOraColElement1.RelationKeyColumn = null;
-            isOraColElement1.ReturnParameter = null;
-            isOraColElement1.TL1_KR = null;
-            isOraColElement1.TL2_CN = null;
-            isOraColElement1.TL3_VN = null;
-            isOraColElement1.TL4_JP = null;
-            isOraColElement1.TL5_XAA = null;
-            isOraColElement1.Visible = null;
-            isOraColElement1.Width = null;
-            isOraColElement2.DataColumn = "WORK_DATE";
-            isOraColElement2.DataOrdinal = 1;
-            isOraColElement2.DataType = "System.DateTime";
-            isOraColElement2.HeaderPrompt = "WORK_DATE";
+            isOraColElement2.DataColumn = "WORK_YYYY";
+            isOraColElement2.DataOrdinal = 0;
+            isOraColElement2.DataType = "System.String";
+            isOraColElement2.HeaderPrompt = "WORK_YYYY";
             isOraColElement2.LastValue = null;
             isOraColElement2.MemberControl = null;
             isOraColElement2.MemberValue = null;
             isOraColElement2.Nullable = 1;
-            isOraColElement2.Ordinal = 1;
+            isOraColElement2.Ordinal = 0;
             isOraColElement2.RelationKeyColumn = null;
             isOraColElement2.ReturnParameter = null;
             isOraColElement2.TL1_KR = null;
@@ -1094,15 +1060,15 @@
             isOraColElement2.TL5_XAA = null;
             isOraColElement2.Visible = null;
             isOraColElement2.Width = null;
-            isOraColElement3.DataColumn = "HOLIDAY_NAME";
-            isOraColElement3.DataOrdinal = 2;
-            isOraColElement3.DataType = "System.String";
-            isOraColElement3.HeaderPrompt = "HOLIDAY_NAME";
+            isOraColElement3.DataColumn = "WORK_DATE";
+            isOraColElement3.DataOrdinal = 1;
+            isOraColElement3.DataType = "System.DateTime";
+            isOraColElement3.HeaderPrompt = "WORK_DATE";
             isOraColElement3.LastValue = null;
             isOraColElement3.MemberControl = null;
             isOraColElement3.MemberValue = null;
             isOraColElement3.Nullable = 1;
-            isOraColElement3.Ordinal = 2;
+            isOraColElement3.Ordinal = 1;
             isOraColElement3.RelationKeyColumn = null;
             isOraColElement3.ReturnParameter = null;
             isOraColElement3.TL1_KR = null;
@@ -1112,15 +1078,15 @@
             isOraColElement3.TL5_XAA = null;
             isOraColElement3.Visible = null;
             isOraColElement3.Width = null;
-            isOraColElement4.DataColumn = "HOLIDAY_FLAG";
-            isOraColElement4.DataOrdinal = 3;
+            isOraColElement4.DataColumn = "HOLIDAY_NAME";
+            isOraColElement4.DataOrdinal = 2;
             isOraColElement4.DataType = "System.String";
-            isOraColElement4.HeaderPrompt = "HOLIDAY_FLAG";
+            isOraColElement4.HeaderPrompt = "HOLIDAY_NAME";
             isOraColElement4.LastValue = null;
             isOraColElement4.MemberControl = null;
             isOraColElement4.MemberValue = null;
             isOraColElement4.Nullable = 1;
-            isOraColElement4.Ordinal = 3;
+            isOraColElement4.Ordinal = 2;
             isOraColElement4.RelationKeyColumn = null;
             isOraColElement4.ReturnParameter = null;
             isOraColElement4.TL1_KR = null;
@@ -1130,15 +1096,15 @@
             isOraColElement4.TL5_XAA = null;
             isOraColElement4.Visible = null;
             isOraColElement4.Width = null;
-            isOraColElement5.DataColumn = "ALL_CHECK";
-            isOraColElement5.DataOrdinal = 4;
+            isOraColElement5.DataColumn = "HOLIDAY_FLAG";
+            isOraColElement5.DataOrdinal = 3;
             isOraColElement5.DataType = "System.String";
-            isOraColElement5.HeaderPrompt = "ALL_CHECK";
+            isOraColElement5.HeaderPrompt = "HOLIDAY_FLAG";
             isOraColElement5.LastValue = null;
             isOraColElement5.MemberControl = null;
             isOraColElement5.MemberValue = null;
             isOraColElement5.Nullable = 1;
-            isOraColElement5.Ordinal = 4;
+            isOraColElement5.Ordinal = 3;
             isOraColElement5.RelationKeyColumn = null;
             isOraColElement5.ReturnParameter = null;
             isOraColElement5.TL1_KR = null;
@@ -1148,15 +1114,15 @@
             isOraColElement5.TL5_XAA = null;
             isOraColElement5.Visible = null;
             isOraColElement5.Width = null;
-            isOraColElement6.DataColumn = "UNPAIED_FLAG";
-            isOraColElement6.DataOrdinal = 5;
+            isOraColElement6.DataColumn = "ALL_CHECK";
+            isOraColElement6.DataOrdinal = 4;
             isOraColElement6.DataType = "System.String";
-            isOraColElement6.HeaderPrompt = "UNPAIED_FLAG";
+            isOraColElement6.HeaderPrompt = "ALL_CHECK";
             isOraColElement6.LastValue = null;
             isOraColElement6.MemberControl = null;
             isOraColElement6.MemberValue = null;
             isOraColElement6.Nullable = 1;
-            isOraColElement6.Ordinal = 5;
+            isOraColElement6.Ordinal = 4;
             isOraColElement6.RelationKeyColumn = null;
             isOraColElement6.ReturnParameter = null;
             isOraColElement6.TL1_KR = null;
@@ -1166,15 +1132,15 @@
             isOraColElement6.TL5_XAA = null;
             isOraColElement6.Visible = null;
             isOraColElement6.Width = null;
-            isOraColElement7.DataColumn = "HOLIDAY_CAL_TYPE";
-            isOraColElement7.DataOrdinal = 6;
+            isOraColElement7.DataColumn = "UNPAIED_FLAG";
+            isOraColElement7.DataOrdinal = 5;
             isOraColElement7.DataType = "System.String";
-            isOraColElement7.HeaderPrompt = "HOLIDAY_CAL_TYPE";
+            isOraColElement7.HeaderPrompt = "UNPAIED_FLAG";
             isOraColElement7.LastValue = null;
             isOraColElement7.MemberControl = null;
             isOraColElement7.MemberValue = null;
             isOraColElement7.Nullable = 1;
-            isOraColElement7.Ordinal = 6;
+            isOraColElement7.Ordinal = 5;
             isOraColElement7.RelationKeyColumn = null;
             isOraColElement7.ReturnParameter = null;
             isOraColElement7.TL1_KR = null;
@@ -1184,15 +1150,15 @@
             isOraColElement7.TL5_XAA = null;
             isOraColElement7.Visible = null;
             isOraColElement7.Width = null;
-            isOraColElement8.DataColumn = "HOLIDAY_CAL_DESC";
-            isOraColElement8.DataOrdinal = 7;
+            isOraColElement8.DataColumn = "HOLIDAY_CAL_TYPE";
+            isOraColElement8.DataOrdinal = 6;
             isOraColElement8.DataType = "System.String";
-            isOraColElement8.HeaderPrompt = "HOLIDAY_CAL_DESC";
+            isOraColElement8.HeaderPrompt = "HOLIDAY_CAL_TYPE";
             isOraColElement8.LastValue = null;
             isOraColElement8.MemberControl = null;
             isOraColElement8.MemberValue = null;
             isOraColElement8.Nullable = 1;
-            isOraColElement8.Ordinal = 7;
+            isOraColElement8.Ordinal = 6;
             isOraColElement8.RelationKeyColumn = null;
             isOraColElement8.ReturnParameter = null;
             isOraColElement8.TL1_KR = null;
@@ -1202,15 +1168,15 @@
             isOraColElement8.TL5_XAA = null;
             isOraColElement8.Visible = null;
             isOraColElement8.Width = null;
-            isOraColElement9.DataColumn = "DESCRIPTION";
-            isOraColElement9.DataOrdinal = 8;
+            isOraColElement9.DataColumn = "HOLIDAY_CAL_DESC";
+            isOraColElement9.DataOrdinal = 7;
             isOraColElement9.DataType = "System.String";
-            isOraColElement9.HeaderPrompt = "DESCRIPTION";
+            isOraColElement9.HeaderPrompt = "HOLIDAY_CAL_DESC";
             isOraColElement9.LastValue = null;
             isOraColElement9.MemberControl = null;
             isOraColElement9.MemberValue = null;
             isOraColElement9.Nullable = 1;
-            isOraColElement9.Ordinal = 8;
+            isOraColElement9.Ordinal = 7;
             isOraColElement9.RelationKeyColumn = null;
             isOraColElement9.ReturnParameter = null;
             isOraColElement9.TL1_KR = null;
@@ -1220,8 +1186,25 @@
             isOraColElement9.TL5_XAA = null;
             isOraColElement9.Visible = null;
             isOraColElement9.Width = null;
+            isOraColElement10.DataColumn = "DESCRIPTION";
+            isOraColElement10.DataOrdinal = 8;
+            isOraColElement10.DataType = "System.String";
+            isOraColElement10.HeaderPrompt = "DESCRIPTION";
+            isOraColElement10.LastValue = null;
+            isOraColElement10.MemberControl = null;
+            isOraColElement10.MemberValue = null;
+            isOraColElement10.Nullable = 1;
+            isOraColElement10.Ordinal = 8;
+            isOraColElement10.RelationKeyColumn = null;
+            isOraColElement10.ReturnParameter = null;
+            isOraColElement10.TL1_KR = null;
+            isOraColElement10.TL2_CN = null;
+            isOraColElement10.TL3_VN = null;
+            isOraColElement10.TL4_JP = null;
+            isOraColElement10.TL5_XAA = null;
+            isOraColElement10.Visible = null;
+            isOraColElement10.Width = null;
             this.IDA_HOLIDAY_CALENDAR.SelectColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
-            isOraColElement1,
             isOraColElement2,
             isOraColElement3,
             isOraColElement4,
@@ -1229,24 +1212,25 @@
             isOraColElement6,
             isOraColElement7,
             isOraColElement8,
-            isOraColElement9});
-            isOraParamElement14.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement14.MemberControl = null;
-            isOraParamElement14.MemberValue = null;
-            isOraParamElement14.OraDbTypeString = "REF CURSOR";
-            isOraParamElement14.OraType = System.Data.OracleClient.OracleType.Cursor;
-            isOraParamElement14.ParamName = "P_CURSOR";
-            isOraParamElement14.Size = 0;
-            isOraParamElement14.SourceColumn = null;
-            isOraParamElement15.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement15.MemberControl = this.W_WORK_YYYY;
-            isOraParamElement15.MemberValue = "EditValue";
-            isOraParamElement15.OraDbTypeString = "VARCHAR2";
-            isOraParamElement15.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement15.ParamName = "W_WORK_YYYY";
-            isOraParamElement15.Size = 4;
-            isOraParamElement15.SourceColumn = null;
-            isOraParamElement15.TestValue = "2014";
+            isOraColElement9,
+            isOraColElement10});
+            isOraParamElement17.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement17.MemberControl = null;
+            isOraParamElement17.MemberValue = null;
+            isOraParamElement17.OraDbTypeString = "REF CURSOR";
+            isOraParamElement17.OraType = System.Data.OracleClient.OracleType.Cursor;
+            isOraParamElement17.ParamName = "P_CURSOR";
+            isOraParamElement17.Size = 0;
+            isOraParamElement17.SourceColumn = null;
+            isOraParamElement18.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement18.MemberControl = this.W_WORK_YYYY;
+            isOraParamElement18.MemberValue = "EditValue";
+            isOraParamElement18.OraDbTypeString = "VARCHAR2";
+            isOraParamElement18.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement18.ParamName = "W_WORK_YYYY";
+            isOraParamElement18.Size = 4;
+            isOraParamElement18.SourceColumn = null;
+            isOraParamElement18.TestValue = "2014";
             isOraParamElement19.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement19.MemberControl = this.isAppInterfaceAdv1;
             isOraParamElement19.MemberValue = "SOB_ID";
@@ -1266,8 +1250,8 @@
             isOraParamElement20.SourceColumn = null;
             isOraParamElement20.TestValue = "201";
             this.IDA_HOLIDAY_CALENDAR.SelectParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement14,
-            isOraParamElement15,
+            isOraParamElement17,
+            isOraParamElement18,
             isOraParamElement19,
             isOraParamElement20});
             isOraParamElement21.Direction = System.Data.ParameterDirection.Input;
@@ -1373,10 +1357,10 @@
             // 
             this.isOraConnection1.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.isOraConnection1.OraConnectionInfo = oraConnectionInfo1;
-            this.isOraConnection1.OraHost = "192.168.1.7";
+            this.isOraConnection1.OraHost = "106.251.238.98";
             this.isOraConnection1.OraPassword = "infoflex";
             this.isOraConnection1.OraPort = "1521";
-            this.isOraConnection1.OraServiceName = "SIKPROD";
+            this.isOraConnection1.OraServiceName = "KJKPROD";
             this.isOraConnection1.OraUserId = "APPS";
             // 
             // W_WORK_YYYY
@@ -1409,15 +1393,15 @@
             0,
             0});
             this.W_WORK_YYYY.PromptText = "년도";
-            isLanguageElement1.Default = "Year";
-            isLanguageElement1.SiteName = null;
-            isLanguageElement1.TL1_KR = "년도";
-            isLanguageElement1.TL2_CN = "";
-            isLanguageElement1.TL3_VN = "";
-            isLanguageElement1.TL4_JP = "";
-            isLanguageElement1.TL5_XAA = "";
+            isLanguageElement2.Default = "Year";
+            isLanguageElement2.SiteName = null;
+            isLanguageElement2.TL1_KR = "년도";
+            isLanguageElement2.TL2_CN = "";
+            isLanguageElement2.TL3_VN = "";
+            isLanguageElement2.TL4_JP = "";
+            isLanguageElement2.TL5_XAA = "";
             this.W_WORK_YYYY.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement1});
+            isLanguageElement2});
             this.W_WORK_YYYY.PromptWidth = 70;
             this.W_WORK_YYYY.Size = new System.Drawing.Size(208, 21);
             this.W_WORK_YYYY.TabIndex = 0;
@@ -1427,26 +1411,26 @@
             // ilaYEAR_0
             // 
             this.ilaYEAR_0.DisplayCaption = "휴일 년도 조회";
-            isOraColElement10.DataColumn = "YEAR";
-            isOraColElement10.DataOrdinal = 0;
-            isOraColElement10.DataType = "System.String";
-            isOraColElement10.HeaderPrompt = "Year";
-            isOraColElement10.LastValue = null;
-            isOraColElement10.MemberControl = this.W_WORK_YYYY;
-            isOraColElement10.MemberValue = "EditValue";
-            isOraColElement10.Nullable = null;
-            isOraColElement10.Ordinal = 0;
-            isOraColElement10.RelationKeyColumn = null;
-            isOraColElement10.ReturnParameter = null;
-            isOraColElement10.TL1_KR = "년도";
-            isOraColElement10.TL2_CN = null;
-            isOraColElement10.TL3_VN = null;
-            isOraColElement10.TL4_JP = null;
-            isOraColElement10.TL5_XAA = null;
-            isOraColElement10.Visible = 1;
-            isOraColElement10.Width = 100;
+            isOraColElement1.DataColumn = "YEAR";
+            isOraColElement1.DataOrdinal = 0;
+            isOraColElement1.DataType = "System.String";
+            isOraColElement1.HeaderPrompt = "Year";
+            isOraColElement1.LastValue = null;
+            isOraColElement1.MemberControl = this.W_WORK_YYYY;
+            isOraColElement1.MemberValue = "EditValue";
+            isOraColElement1.Nullable = null;
+            isOraColElement1.Ordinal = 0;
+            isOraColElement1.RelationKeyColumn = null;
+            isOraColElement1.ReturnParameter = null;
+            isOraColElement1.TL1_KR = "년도";
+            isOraColElement1.TL2_CN = null;
+            isOraColElement1.TL3_VN = null;
+            isOraColElement1.TL4_JP = null;
+            isOraColElement1.TL5_XAA = null;
+            isOraColElement1.Visible = 1;
+            isOraColElement1.Width = 100;
             this.ilaYEAR_0.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
-            isOraColElement10});
+            isOraColElement1});
             this.ilaYEAR_0.LookupData = this.ildYEAR;
             this.ilaYEAR_0.LookupSize = new System.Drawing.Size(167, 329);
             this.ilaYEAR_0.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
@@ -1455,107 +1439,119 @@
             // 
             // ildYEAR
             // 
-            isOraParamElement16.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement16.MemberControl = null;
-            isOraParamElement16.MemberValue = null;
-            isOraParamElement16.OraDbTypeString = "REF CURSOR";
-            isOraParamElement16.OraType = System.Data.OracleClient.OracleType.Cursor;
-            isOraParamElement16.ParamName = "P_CURSOR1";
-            isOraParamElement16.Size = 0;
-            isOraParamElement16.SourceColumn = null;
-            isOraParamElement17.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement17.MemberControl = null;
-            isOraParamElement17.MemberValue = null;
-            isOraParamElement17.OraDbTypeString = "CHAR";
-            isOraParamElement17.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement17.ParamName = "W_START_YEAR";
-            isOraParamElement17.Size = 4;
-            isOraParamElement17.SourceColumn = null;
-            isOraParamElement17.TestValue = "2001";
-            isOraParamElement18.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement18.MemberControl = null;
-            isOraParamElement18.MemberValue = null;
-            isOraParamElement18.OraDbTypeString = "CHAR";
-            isOraParamElement18.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement18.ParamName = "W_END_YEAR";
-            isOraParamElement18.Size = 4;
-            isOraParamElement18.SourceColumn = null;
-            isOraParamElement18.TestValue = "2010";
+            isOraParamElement4.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement4.MemberControl = null;
+            isOraParamElement4.MemberValue = null;
+            isOraParamElement4.OraDbTypeString = "REF CURSOR";
+            isOraParamElement4.OraType = System.Data.OracleClient.OracleType.Cursor;
+            isOraParamElement4.ParamName = "P_CURSOR1";
+            isOraParamElement4.Size = 0;
+            isOraParamElement4.SourceColumn = null;
+            isOraParamElement5.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement5.MemberControl = null;
+            isOraParamElement5.MemberValue = null;
+            isOraParamElement5.OraDbTypeString = "CHAR";
+            isOraParamElement5.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement5.ParamName = "W_START_YEAR";
+            isOraParamElement5.Size = 4;
+            isOraParamElement5.SourceColumn = null;
+            isOraParamElement5.TestValue = "2001";
+            isOraParamElement6.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement6.MemberControl = null;
+            isOraParamElement6.MemberValue = null;
+            isOraParamElement6.OraDbTypeString = "CHAR";
+            isOraParamElement6.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement6.ParamName = "W_END_YEAR";
+            isOraParamElement6.Size = 4;
+            isOraParamElement6.SourceColumn = null;
+            isOraParamElement6.TestValue = "2010";
             this.ildYEAR.LookupParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement16,
-            isOraParamElement17,
-            isOraParamElement18});
+            isOraParamElement4,
+            isOraParamElement5,
+            isOraParamElement6});
             this.ildYEAR.OraConnection = this.isOraConnection1;
             this.ildYEAR.OraOwner = "APPS";
             this.ildYEAR.OraPackage = "EAPP_CALENDAR_G";
             this.ildYEAR.OraProcedure = "LU_CALENDAR_YEAR_STR";
             // 
-            // ILA_HOLIDAY_CAL_TYPE
+            // ilaYEAR_1
             // 
-            this.ILA_HOLIDAY_CAL_TYPE.DisplayCaption = "휴일구분";
-            isOraColElement11.DataColumn = "CODE_NAME";
+            this.ilaYEAR_1.DisplayCaption = "Year Search";
+            isOraColElement11.DataColumn = "YEAR";
             isOraColElement11.DataOrdinal = 0;
             isOraColElement11.DataType = "System.String";
-            isOraColElement11.HeaderPrompt = "Holiday Type";
+            isOraColElement11.HeaderPrompt = "Year";
             isOraColElement11.LastValue = null;
             isOraColElement11.MemberControl = this.igrHOLIDAY;
-            isOraColElement11.MemberValue = "HOLIDAY_CAL_DESC";
+            isOraColElement11.MemberValue = "WORK_YYYY";
             isOraColElement11.Nullable = null;
             isOraColElement11.Ordinal = 0;
             isOraColElement11.RelationKeyColumn = null;
             isOraColElement11.ReturnParameter = null;
-            isOraColElement11.TL1_KR = "휴일구분";
+            isOraColElement11.TL1_KR = "년도";
             isOraColElement11.TL2_CN = null;
             isOraColElement11.TL3_VN = null;
             isOraColElement11.TL4_JP = null;
             isOraColElement11.TL5_XAA = null;
             isOraColElement11.Visible = 1;
-            isOraColElement11.Width = 120;
-            isOraColElement12.DataColumn = "CODE";
-            isOraColElement12.DataOrdinal = 1;
+            isOraColElement11.Width = 100;
+            this.ilaYEAR_1.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
+            isOraColElement11});
+            this.ilaYEAR_1.LookupData = this.ildYEAR;
+            this.ilaYEAR_1.LookupSize = new System.Drawing.Size(166, 308);
+            this.ilaYEAR_1.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
+            this.ilaYEAR_1.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
+            this.ilaYEAR_1.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ilaYEAR_PrePopupShow);
+            this.ilaYEAR_1.SelectedRowData += new InfoSummit.Win.ControlAdv.ISLookupAdapter.SelectedHandler(this.ilaYEAR_1_SelectedRowData);
+            // 
+            // ILA_HOLIDAY_CAL_TYPE
+            // 
+            this.ILA_HOLIDAY_CAL_TYPE.DisplayCaption = "휴일구분";
+            isOraColElement12.DataColumn = "CODE_NAME";
+            isOraColElement12.DataOrdinal = 0;
             isOraColElement12.DataType = "System.String";
-            isOraColElement12.HeaderPrompt = "Code";
+            isOraColElement12.HeaderPrompt = "Holiday Type";
             isOraColElement12.LastValue = null;
             isOraColElement12.MemberControl = this.igrHOLIDAY;
-            isOraColElement12.MemberValue = "HOLIDAY_CAL_TYPE";
+            isOraColElement12.MemberValue = "HOLIDAY_CAL_DESC";
             isOraColElement12.Nullable = null;
-            isOraColElement12.Ordinal = 1;
+            isOraColElement12.Ordinal = 0;
             isOraColElement12.RelationKeyColumn = null;
             isOraColElement12.ReturnParameter = null;
-            isOraColElement12.TL1_KR = "코드";
+            isOraColElement12.TL1_KR = "휴일구분";
             isOraColElement12.TL2_CN = null;
             isOraColElement12.TL3_VN = null;
             isOraColElement12.TL4_JP = null;
             isOraColElement12.TL5_XAA = null;
             isOraColElement12.Visible = 1;
-            isOraColElement12.Width = 80;
-            isOraColElement13.DataColumn = "COMMON_ID";
-            isOraColElement13.DataOrdinal = 2;
-            isOraColElement13.DataType = "System.Decimal";
-            isOraColElement13.HeaderPrompt = "COMMON_ID";
+            isOraColElement12.Width = 120;
+            isOraColElement13.DataColumn = "CODE";
+            isOraColElement13.DataOrdinal = 1;
+            isOraColElement13.DataType = "System.String";
+            isOraColElement13.HeaderPrompt = "Code";
             isOraColElement13.LastValue = null;
-            isOraColElement13.MemberControl = null;
-            isOraColElement13.MemberValue = null;
+            isOraColElement13.MemberControl = this.igrHOLIDAY;
+            isOraColElement13.MemberValue = "HOLIDAY_CAL_TYPE";
             isOraColElement13.Nullable = null;
-            isOraColElement13.Ordinal = 2;
+            isOraColElement13.Ordinal = 1;
             isOraColElement13.RelationKeyColumn = null;
             isOraColElement13.ReturnParameter = null;
-            isOraColElement13.TL1_KR = null;
+            isOraColElement13.TL1_KR = "코드";
             isOraColElement13.TL2_CN = null;
             isOraColElement13.TL3_VN = null;
             isOraColElement13.TL4_JP = null;
             isOraColElement13.TL5_XAA = null;
-            isOraColElement13.Visible = 0;
-            isOraColElement13.Width = 65;
-            isOraColElement14.DataColumn = "VALUE1";
-            isOraColElement14.DataOrdinal = 3;
-            isOraColElement14.DataType = "System.String";
-            isOraColElement14.HeaderPrompt = "VALUE1";
+            isOraColElement13.Visible = 1;
+            isOraColElement13.Width = 80;
+            isOraColElement14.DataColumn = "COMMON_ID";
+            isOraColElement14.DataOrdinal = 2;
+            isOraColElement14.DataType = "System.Decimal";
+            isOraColElement14.HeaderPrompt = "COMMON_ID";
             isOraColElement14.LastValue = null;
             isOraColElement14.MemberControl = null;
             isOraColElement14.MemberValue = null;
             isOraColElement14.Nullable = null;
-            isOraColElement14.Ordinal = 3;
+            isOraColElement14.Ordinal = 2;
             isOraColElement14.RelationKeyColumn = null;
             isOraColElement14.ReturnParameter = null;
             isOraColElement14.TL1_KR = null;
@@ -1565,15 +1561,15 @@
             isOraColElement14.TL5_XAA = null;
             isOraColElement14.Visible = 0;
             isOraColElement14.Width = 65;
-            isOraColElement15.DataColumn = "VALUE2";
-            isOraColElement15.DataOrdinal = 4;
+            isOraColElement15.DataColumn = "VALUE1";
+            isOraColElement15.DataOrdinal = 3;
             isOraColElement15.DataType = "System.String";
-            isOraColElement15.HeaderPrompt = "VALUE2";
+            isOraColElement15.HeaderPrompt = "VALUE1";
             isOraColElement15.LastValue = null;
             isOraColElement15.MemberControl = null;
             isOraColElement15.MemberValue = null;
             isOraColElement15.Nullable = null;
-            isOraColElement15.Ordinal = 4;
+            isOraColElement15.Ordinal = 3;
             isOraColElement15.RelationKeyColumn = null;
             isOraColElement15.ReturnParameter = null;
             isOraColElement15.TL1_KR = null;
@@ -1583,15 +1579,15 @@
             isOraColElement15.TL5_XAA = null;
             isOraColElement15.Visible = 0;
             isOraColElement15.Width = 65;
-            isOraColElement16.DataColumn = "VALUE3";
-            isOraColElement16.DataOrdinal = 5;
+            isOraColElement16.DataColumn = "VALUE2";
+            isOraColElement16.DataOrdinal = 4;
             isOraColElement16.DataType = "System.String";
-            isOraColElement16.HeaderPrompt = "VALUE3";
+            isOraColElement16.HeaderPrompt = "VALUE2";
             isOraColElement16.LastValue = null;
             isOraColElement16.MemberControl = null;
             isOraColElement16.MemberValue = null;
             isOraColElement16.Nullable = null;
-            isOraColElement16.Ordinal = 5;
+            isOraColElement16.Ordinal = 4;
             isOraColElement16.RelationKeyColumn = null;
             isOraColElement16.ReturnParameter = null;
             isOraColElement16.TL1_KR = null;
@@ -1601,15 +1597,15 @@
             isOraColElement16.TL5_XAA = null;
             isOraColElement16.Visible = 0;
             isOraColElement16.Width = 65;
-            isOraColElement17.DataColumn = "VALUE4";
-            isOraColElement17.DataOrdinal = 6;
+            isOraColElement17.DataColumn = "VALUE3";
+            isOraColElement17.DataOrdinal = 5;
             isOraColElement17.DataType = "System.String";
-            isOraColElement17.HeaderPrompt = "VALUE4";
+            isOraColElement17.HeaderPrompt = "VALUE3";
             isOraColElement17.LastValue = null;
             isOraColElement17.MemberControl = null;
             isOraColElement17.MemberValue = null;
             isOraColElement17.Nullable = null;
-            isOraColElement17.Ordinal = 6;
+            isOraColElement17.Ordinal = 5;
             isOraColElement17.RelationKeyColumn = null;
             isOraColElement17.ReturnParameter = null;
             isOraColElement17.TL1_KR = null;
@@ -1619,15 +1615,15 @@
             isOraColElement17.TL5_XAA = null;
             isOraColElement17.Visible = 0;
             isOraColElement17.Width = 65;
-            isOraColElement18.DataColumn = "VALUE5";
-            isOraColElement18.DataOrdinal = 7;
+            isOraColElement18.DataColumn = "VALUE4";
+            isOraColElement18.DataOrdinal = 6;
             isOraColElement18.DataType = "System.String";
-            isOraColElement18.HeaderPrompt = "VALUE5";
+            isOraColElement18.HeaderPrompt = "VALUE4";
             isOraColElement18.LastValue = null;
             isOraColElement18.MemberControl = null;
             isOraColElement18.MemberValue = null;
             isOraColElement18.Nullable = null;
-            isOraColElement18.Ordinal = 7;
+            isOraColElement18.Ordinal = 6;
             isOraColElement18.RelationKeyColumn = null;
             isOraColElement18.ReturnParameter = null;
             isOraColElement18.TL1_KR = null;
@@ -1637,15 +1633,15 @@
             isOraColElement18.TL5_XAA = null;
             isOraColElement18.Visible = 0;
             isOraColElement18.Width = 65;
-            isOraColElement19.DataColumn = "VALUE6";
-            isOraColElement19.DataOrdinal = 8;
+            isOraColElement19.DataColumn = "VALUE5";
+            isOraColElement19.DataOrdinal = 7;
             isOraColElement19.DataType = "System.String";
-            isOraColElement19.HeaderPrompt = "VALUE6";
+            isOraColElement19.HeaderPrompt = "VALUE5";
             isOraColElement19.LastValue = null;
             isOraColElement19.MemberControl = null;
             isOraColElement19.MemberValue = null;
             isOraColElement19.Nullable = null;
-            isOraColElement19.Ordinal = 8;
+            isOraColElement19.Ordinal = 7;
             isOraColElement19.RelationKeyColumn = null;
             isOraColElement19.ReturnParameter = null;
             isOraColElement19.TL1_KR = null;
@@ -1655,15 +1651,15 @@
             isOraColElement19.TL5_XAA = null;
             isOraColElement19.Visible = 0;
             isOraColElement19.Width = 65;
-            isOraColElement20.DataColumn = "VALUE7";
-            isOraColElement20.DataOrdinal = 9;
+            isOraColElement20.DataColumn = "VALUE6";
+            isOraColElement20.DataOrdinal = 8;
             isOraColElement20.DataType = "System.String";
-            isOraColElement20.HeaderPrompt = "VALUE7";
+            isOraColElement20.HeaderPrompt = "VALUE6";
             isOraColElement20.LastValue = null;
             isOraColElement20.MemberControl = null;
             isOraColElement20.MemberValue = null;
             isOraColElement20.Nullable = null;
-            isOraColElement20.Ordinal = 9;
+            isOraColElement20.Ordinal = 8;
             isOraColElement20.RelationKeyColumn = null;
             isOraColElement20.ReturnParameter = null;
             isOraColElement20.TL1_KR = null;
@@ -1673,15 +1669,15 @@
             isOraColElement20.TL5_XAA = null;
             isOraColElement20.Visible = 0;
             isOraColElement20.Width = 65;
-            isOraColElement21.DataColumn = "VALUE8";
-            isOraColElement21.DataOrdinal = 10;
+            isOraColElement21.DataColumn = "VALUE7";
+            isOraColElement21.DataOrdinal = 9;
             isOraColElement21.DataType = "System.String";
-            isOraColElement21.HeaderPrompt = "VALUE8";
+            isOraColElement21.HeaderPrompt = "VALUE7";
             isOraColElement21.LastValue = null;
             isOraColElement21.MemberControl = null;
             isOraColElement21.MemberValue = null;
             isOraColElement21.Nullable = null;
-            isOraColElement21.Ordinal = 10;
+            isOraColElement21.Ordinal = 9;
             isOraColElement21.RelationKeyColumn = null;
             isOraColElement21.ReturnParameter = null;
             isOraColElement21.TL1_KR = null;
@@ -1691,15 +1687,15 @@
             isOraColElement21.TL5_XAA = null;
             isOraColElement21.Visible = 0;
             isOraColElement21.Width = 65;
-            isOraColElement22.DataColumn = "VALUE9";
-            isOraColElement22.DataOrdinal = 11;
+            isOraColElement22.DataColumn = "VALUE8";
+            isOraColElement22.DataOrdinal = 10;
             isOraColElement22.DataType = "System.String";
-            isOraColElement22.HeaderPrompt = "VALUE9";
+            isOraColElement22.HeaderPrompt = "VALUE8";
             isOraColElement22.LastValue = null;
             isOraColElement22.MemberControl = null;
             isOraColElement22.MemberValue = null;
             isOraColElement22.Nullable = null;
-            isOraColElement22.Ordinal = 11;
+            isOraColElement22.Ordinal = 10;
             isOraColElement22.RelationKeyColumn = null;
             isOraColElement22.ReturnParameter = null;
             isOraColElement22.TL1_KR = null;
@@ -1709,15 +1705,15 @@
             isOraColElement22.TL5_XAA = null;
             isOraColElement22.Visible = 0;
             isOraColElement22.Width = 65;
-            isOraColElement23.DataColumn = "VALUE10";
-            isOraColElement23.DataOrdinal = 12;
+            isOraColElement23.DataColumn = "VALUE9";
+            isOraColElement23.DataOrdinal = 11;
             isOraColElement23.DataType = "System.String";
-            isOraColElement23.HeaderPrompt = "VALUE10";
+            isOraColElement23.HeaderPrompt = "VALUE9";
             isOraColElement23.LastValue = null;
             isOraColElement23.MemberControl = null;
             isOraColElement23.MemberValue = null;
             isOraColElement23.Nullable = null;
-            isOraColElement23.Ordinal = 12;
+            isOraColElement23.Ordinal = 11;
             isOraColElement23.RelationKeyColumn = null;
             isOraColElement23.ReturnParameter = null;
             isOraColElement23.TL1_KR = null;
@@ -1727,8 +1723,25 @@
             isOraColElement23.TL5_XAA = null;
             isOraColElement23.Visible = 0;
             isOraColElement23.Width = 65;
+            isOraColElement24.DataColumn = "VALUE10";
+            isOraColElement24.DataOrdinal = 12;
+            isOraColElement24.DataType = "System.String";
+            isOraColElement24.HeaderPrompt = "VALUE10";
+            isOraColElement24.LastValue = null;
+            isOraColElement24.MemberControl = null;
+            isOraColElement24.MemberValue = null;
+            isOraColElement24.Nullable = null;
+            isOraColElement24.Ordinal = 12;
+            isOraColElement24.RelationKeyColumn = null;
+            isOraColElement24.ReturnParameter = null;
+            isOraColElement24.TL1_KR = null;
+            isOraColElement24.TL2_CN = null;
+            isOraColElement24.TL3_VN = null;
+            isOraColElement24.TL4_JP = null;
+            isOraColElement24.TL5_XAA = null;
+            isOraColElement24.Visible = 0;
+            isOraColElement24.Width = 65;
             this.ILA_HOLIDAY_CAL_TYPE.LookupColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
-            isOraColElement11,
             isOraColElement12,
             isOraColElement13,
             isOraColElement14,
@@ -1740,7 +1753,8 @@
             isOraColElement20,
             isOraColElement21,
             isOraColElement22,
-            isOraColElement23});
+            isOraColElement23,
+            isOraColElement24});
             this.ILA_HOLIDAY_CAL_TYPE.LookupData = this.ILD_HOLIDAY_CAL_TYPE;
             this.ILA_HOLIDAY_CAL_TYPE.LookupSize = new System.Drawing.Size(273, 329);
             this.ILA_HOLIDAY_CAL_TYPE.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
@@ -1822,41 +1836,61 @@
             this.igbCONDITION.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
             this.igbCONDITION.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.igbCONDITION.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.igbCONDITION.Controls.Add(this.BTN_INIT_DATE);
             this.igbCONDITION.Controls.Add(this.W_WORK_YYYY);
             this.igbCONDITION.Controls.Add(this.DATA_COPY);
             this.igbCONDITION.Location = new System.Drawing.Point(5, 5);
             this.igbCONDITION.Name = "igbCONDITION";
             this.igbCONDITION.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.igbCONDITION.PromptText = "Inquiry Condition";
-            isLanguageElement3.Default = "Inquiry Condition";
-            isLanguageElement3.SiteName = null;
-            isLanguageElement3.TL1_KR = "Inquiry Condition";
-            isLanguageElement3.TL2_CN = "";
-            isLanguageElement3.TL3_VN = "";
-            isLanguageElement3.TL4_JP = "";
-            isLanguageElement3.TL5_XAA = "";
+            isLanguageElement4.Default = "Inquiry Condition";
+            isLanguageElement4.SiteName = null;
+            isLanguageElement4.TL1_KR = "Inquiry Condition";
+            isLanguageElement4.TL2_CN = "";
+            isLanguageElement4.TL3_VN = "";
+            isLanguageElement4.TL4_JP = "";
+            isLanguageElement4.TL5_XAA = "";
             this.igbCONDITION.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement3});
+            isLanguageElement4});
             this.igbCONDITION.Size = new System.Drawing.Size(934, 65);
             this.igbCONDITION.TabIndex = 0;
             this.igbCONDITION.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
+            // 
+            // BTN_INIT_DATE
+            // 
+            this.BTN_INIT_DATE.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.BTN_INIT_DATE.ButtonText = "Init. Calendar";
+            isLanguageElement1.Default = "Init. Calendar";
+            isLanguageElement1.SiteName = null;
+            isLanguageElement1.TL1_KR = "공휴일 생성";
+            isLanguageElement1.TL2_CN = "";
+            isLanguageElement1.TL3_VN = "";
+            isLanguageElement1.TL4_JP = "";
+            isLanguageElement1.TL5_XAA = "";
+            this.BTN_INIT_DATE.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement1});
+            this.BTN_INIT_DATE.Location = new System.Drawing.Point(605, 32);
+            this.BTN_INIT_DATE.Name = "BTN_INIT_DATE";
+            this.BTN_INIT_DATE.Size = new System.Drawing.Size(150, 25);
+            this.BTN_INIT_DATE.TabIndex = 190;
+            this.BTN_INIT_DATE.ButtonClick += new InfoSummit.Win.ControlAdv.ISButton.ClickEventHandler(this.BTN_INIT_DATE_ButtonClick);
             // 
             // DATA_COPY
             // 
             this.DATA_COPY.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.DATA_COPY.ButtonText = "Preyear Copy";
-            isLanguageElement2.Default = "Preyear Copy";
-            isLanguageElement2.SiteName = null;
-            isLanguageElement2.TL1_KR = "전년도 복사";
-            isLanguageElement2.TL2_CN = "";
-            isLanguageElement2.TL3_VN = "";
-            isLanguageElement2.TL4_JP = "";
-            isLanguageElement2.TL5_XAA = "";
+            isLanguageElement3.Default = "Preyear Copy";
+            isLanguageElement3.SiteName = null;
+            isLanguageElement3.TL1_KR = "전년도 복사";
+            isLanguageElement3.TL2_CN = "";
+            isLanguageElement3.TL3_VN = "";
+            isLanguageElement3.TL4_JP = "";
+            isLanguageElement3.TL5_XAA = "";
             this.DATA_COPY.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement2});
-            this.DATA_COPY.Location = new System.Drawing.Point(798, 32);
+            isLanguageElement3});
+            this.DATA_COPY.Location = new System.Drawing.Point(761, 32);
             this.DATA_COPY.Name = "DATA_COPY";
-            this.DATA_COPY.Size = new System.Drawing.Size(100, 25);
+            this.DATA_COPY.Size = new System.Drawing.Size(150, 25);
             this.DATA_COPY.TabIndex = 189;
             this.DATA_COPY.ButtonClick += new InfoSummit.Win.ControlAdv.ISButton.ClickEventHandler(this.DATA_COPY_ButtonClick);
             // 
@@ -1922,10 +1956,109 @@
             this.IDC_HOLIDAY_COPY.OraOwner = "APPS";
             this.IDC_HOLIDAY_COPY.OraPackage = "HRD_HOLIDAY_CALENDAR_G";
             this.IDC_HOLIDAY_COPY.OraProcedure = "HOLIDAY_COPY";
-            this.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ilaYEAR_1.PropSourceDataTable)).EndInit();
+            // 
+            // IDC_SAVE_HOLIDAY
+            // 
+            isOraParamElement43.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement43.MemberControl = null;
+            isOraParamElement43.MemberValue = null;
+            isOraParamElement43.OraDbTypeString = "VARCHAR2";
+            isOraParamElement43.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement43.ParamName = "P_WORK_DATE";
+            isOraParamElement43.Size = 0;
+            isOraParamElement43.SourceColumn = null;
+            isOraParamElement44.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement44.MemberControl = null;
+            isOraParamElement44.MemberValue = null;
+            isOraParamElement44.OraDbTypeString = "VARCHAR2";
+            isOraParamElement44.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement44.ParamName = "P_HOLIDAY_NAME";
+            isOraParamElement44.Size = 50;
+            isOraParamElement44.SourceColumn = null;
+            isOraParamElement45.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement45.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement45.MemberValue = "SOB_ID";
+            isOraParamElement45.OraDbTypeString = "NUMBER";
+            isOraParamElement45.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement45.ParamName = "P_SOB_ID";
+            isOraParamElement45.Size = 22;
+            isOraParamElement45.SourceColumn = null;
+            isOraParamElement46.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement46.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement46.MemberValue = "ORG_ID";
+            isOraParamElement46.OraDbTypeString = "NUMBER";
+            isOraParamElement46.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement46.ParamName = "P_ORG_ID";
+            isOraParamElement46.Size = 22;
+            isOraParamElement46.SourceColumn = null;
+            isOraParamElement47.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement47.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement47.MemberValue = "USER_ID";
+            isOraParamElement47.OraDbTypeString = "NUMBER";
+            isOraParamElement47.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement47.ParamName = "P_USER_ID";
+            isOraParamElement47.Size = 22;
+            isOraParamElement47.SourceColumn = null;
+            isOraParamElement48.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement48.MemberControl = null;
+            isOraParamElement48.MemberValue = null;
+            isOraParamElement48.OraDbTypeString = "VARCHAR2";
+            isOraParamElement48.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement48.ParamName = "O_STATUS";
+            isOraParamElement48.Size = 0;
+            isOraParamElement48.SourceColumn = null;
+            isOraParamElement49.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement49.MemberControl = null;
+            isOraParamElement49.MemberValue = null;
+            isOraParamElement49.OraDbTypeString = "VARCHAR2";
+            isOraParamElement49.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement49.ParamName = "O_MESSAGE";
+            isOraParamElement49.Size = 0;
+            isOraParamElement49.SourceColumn = null;
+            this.IDC_SAVE_HOLIDAY.CommandParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
+            isOraParamElement43,
+            isOraParamElement44,
+            isOraParamElement45,
+            isOraParamElement46,
+            isOraParamElement47,
+            isOraParamElement48,
+            isOraParamElement49});
+            this.IDC_SAVE_HOLIDAY.DataTransaction = null;
+            this.IDC_SAVE_HOLIDAY.OraConnection = this.isOraConnection1;
+            this.IDC_SAVE_HOLIDAY.OraOwner = "APPS";
+            this.IDC_SAVE_HOLIDAY.OraPackage = "HRD_HOLIDAY_CALENDAR_G";
+            this.IDC_SAVE_HOLIDAY.OraProcedure = "SAVE_HOLIDAY";
+            // 
+            // IDC_GET_API_AUTH_KEY_P
+            // 
+            isOraParamElement50.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement50.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement50.MemberValue = "SOB_ID";
+            isOraParamElement50.OraDbTypeString = "NUMBER";
+            isOraParamElement50.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement50.ParamName = "P_SOB_ID";
+            isOraParamElement50.Size = 22;
+            isOraParamElement50.SourceColumn = null;
+            isOraParamElement51.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement51.MemberControl = null;
+            isOraParamElement51.MemberValue = null;
+            isOraParamElement51.OraDbTypeString = "VARCHAR2";
+            isOraParamElement51.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement51.ParamName = "O_KEY_VALUE";
+            isOraParamElement51.Size = 0;
+            isOraParamElement51.SourceColumn = null;
+            this.IDC_GET_API_AUTH_KEY_P.CommandParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
+            isOraParamElement50,
+            isOraParamElement51});
+            this.IDC_GET_API_AUTH_KEY_P.DataTransaction = null;
+            this.IDC_GET_API_AUTH_KEY_P.OraConnection = this.isOraConnection1;
+            this.IDC_GET_API_AUTH_KEY_P.OraOwner = "APPS";
+            this.IDC_GET_API_AUTH_KEY_P.OraPackage = "HRD_HOLIDAY_CALENDAR_G";
+            this.IDC_GET_API_AUTH_KEY_P.OraProcedure = "GET_API_AUTH_KEY_P";
             ((System.ComponentModel.ISupportInitialize)(this.igrHOLIDAY.BaseGrid)).EndInit();
+            this.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ilaYEAR_0.PropSourceDataTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ilaYEAR_1.PropSourceDataTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ILA_HOLIDAY_CAL_TYPE.PropSourceDataTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.igbCONDITION)).EndInit();
             this.igbCONDITION.ResumeLayout(false);
@@ -1948,6 +2081,9 @@
         private InfoSummit.Win.ControlAdv.ISButton DATA_COPY;
         private InfoSummit.Win.ControlAdv.ISLookupAdapter ILA_HOLIDAY_CAL_TYPE;
         private InfoSummit.Win.ControlAdv.ISLookupData ILD_HOLIDAY_CAL_TYPE;
+        private InfoSummit.Win.ControlAdv.ISButton BTN_INIT_DATE;
+        private InfoSummit.Win.ControlAdv.ISDataCommand IDC_SAVE_HOLIDAY;
+        private InfoSummit.Win.ControlAdv.ISDataCommand IDC_GET_API_AUTH_KEY_P;
     }
 }
 

@@ -71,6 +71,10 @@ namespace EAPF0299
 
         #region ----- Private Methods ----
 
+        /// <summary>
+        /// 한글 주소
+        /// </summary>
+        /// <param name="pCurrPage"></param>
         private void SEARCH_DB(int pCurrPage)
         {
             if (iConvert.ISNull(W_ADDRESS.EditValue) == string.Empty)
@@ -85,41 +89,78 @@ namespace EAPF0299
             {
                 mKeyWord = string.Format("{0} {1}", mKeyWord, W_STRUCTURE_DESC.EditValue);
             }
-             
 
-            int vCurrentRow = 0;
-            decimal vTotalPage = 1;
-
-            WebClient vWC = new WebClient();
-
-            mApiUrl = "http://www.juso.go.kr/addrlink/addrLinkApi.do?currentPage=" + pCurrPage + "&countPerPage=" + mCountPerPage + "&keyword=" + mKeyWord + "&confmKey=" + mConfirmKey;
-            XmlReader vRead = new XmlTextReader(vWC.OpenRead(mApiUrl));
-            DataSet vDS = new DataSet();
-            vDS.ReadXml(vRead);
-
-            DataRow[] vRow = vDS.Tables[0].Select();
-            if (vRow[0]["totalcount"].ToString() != "0")
+            if (V_LANG_TYPE.EditValue.Equals("ENG"))
             {
-                decimal vCountPerPage = iConvert.ISDecimaltoZero(vRow[0]["countPerPage"]);
-                decimal vTotalCount = iConvert.ISDecimaltoZero(vRow[0]["totalCount"]);
-                vTotalPage = Math.Ceiling(vTotalCount / vCountPerPage);
+                ///영문주소.
+                int vCurrentRow = 0;
+                decimal vTotalPage = 1;
 
-                V_CURRENT.EditValue = pCurrPage;
-                V_TOTAL.EditValue = vTotalPage;
-             
-                foreach (DataRow mRow in vDS.Tables[1].Rows)
+                WebClient vWC = new WebClient();
+
+                mApiUrl = "	https://www.juso.go.kr/addrlink/addrEngUrl.do?currentPage=" + pCurrPage + "&countPerPage=" + mCountPerPage + "&keyword=" + mKeyWord + "&confmKey=" + mConfirmKey;
+                XmlReader vRead = new XmlTextReader(vWC.OpenRead(mApiUrl));
+                DataSet vDS = new DataSet();
+                vDS.ReadXml(vRead);
+
+                DataRow[] vRow = vDS.Tables[0].Select();
+                if (vRow[0]["totalcount"].ToString() != "0")
                 {
-                    IGR_ADDRESS.RowCount = vCurrentRow + 1;
-                    IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("ZIP_CODE"), mRow["zipNo"]);
-                    IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("LAND_ADDR_DESC"), mRow["jibunAddr"]);
-                    IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("ROAD_ADDR_DESC"), mRow["roadAddr"]);
-                    IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("STRUCTURE_DESC"), mRow["bdNm"]);
-                    IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("ADDRESS"), mRow["roadAddr"]);
-                    vCurrentRow++;
+                    decimal vCountPerPage = iConvert.ISDecimaltoZero(vRow[0]["countPerPage"]);
+                    decimal vTotalCount = iConvert.ISDecimaltoZero(vRow[0]["totalCount"]);
+                    vTotalPage = Math.Ceiling(vTotalCount / vCountPerPage);
+
+                    V_CURRENT.EditValue = pCurrPage;
+                    V_TOTAL.EditValue = vTotalPage;
+
+                    foreach (DataRow mRow in vDS.Tables[1].Rows)
+                    {
+                        IGR_ADDRESS.RowCount = vCurrentRow + 1;
+                        IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("ZIP_CODE"), mRow["zipNo"]);
+                        IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("LAND_ADDR_DESC"), mRow["jibunAddr"]);
+                        IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("ROAD_ADDR_DESC"), mRow["roadAddr"]);
+                        IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("STRUCTURE_DESC"), mRow["korAddr"]);
+                        IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("ADDRESS"), mRow["roadAddr"]);
+                        vCurrentRow++;
+                    }
+                }
+            }
+            else
+            {
+                int vCurrentRow = 0;
+                decimal vTotalPage = 1;
+
+                WebClient vWC = new WebClient();
+
+                mApiUrl = "http://www.juso.go.kr/addrlink/addrLinkApi.do?currentPage=" + pCurrPage + "&countPerPage=" + mCountPerPage + "&keyword=" + mKeyWord + "&confmKey=" + mConfirmKey;
+                XmlReader vRead = new XmlTextReader(vWC.OpenRead(mApiUrl));
+                DataSet vDS = new DataSet();
+                vDS.ReadXml(vRead);
+
+                DataRow[] vRow = vDS.Tables[0].Select();
+                if (vRow[0]["totalcount"].ToString() != "0")
+                {
+                    decimal vCountPerPage = iConvert.ISDecimaltoZero(vRow[0]["countPerPage"]);
+                    decimal vTotalCount = iConvert.ISDecimaltoZero(vRow[0]["totalCount"]);
+                    vTotalPage = Math.Ceiling(vTotalCount / vCountPerPage);
+
+                    V_CURRENT.EditValue = pCurrPage;
+                    V_TOTAL.EditValue = vTotalPage;
+
+                    foreach (DataRow mRow in vDS.Tables[1].Rows)
+                    {
+                        IGR_ADDRESS.RowCount = vCurrentRow + 1;
+                        IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("ZIP_CODE"), mRow["zipNo"]);
+                        IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("LAND_ADDR_DESC"), mRow["jibunAddr"]);
+                        IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("ROAD_ADDR_DESC"), mRow["roadAddr"]);
+                        IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("STRUCTURE_DESC"), mRow["bdNm"]);
+                        IGR_ADDRESS.SetCellValue(vCurrentRow, IGR_ADDRESS.GetColumnToIndex("ADDRESS"), mRow["roadAddr"]);
+                        vCurrentRow++;
+                    }
                 }
             }
         }
-
+         
         private void SEARCH_DB_ADDR(int pPage)
         {
             if (iConvert.ISNull(W_ADDRESS.EditValue) == string.Empty)
@@ -236,8 +277,17 @@ namespace EAPF0299
 
         private void EAPF0299_Shown(object sender, EventArgs e)
         {
+            V_LANG_KOR.CheckedState = ISUtil.Enum.CheckedState.Checked;
+            V_LANG_TYPE.EditValue = V_LANG_KOR.RadioCheckedString;
+
             RB_ROAD.CheckedState = ISUtil.Enum.CheckedState.Checked;
             W_ADDRESS_TYPE.EditValue = RB_ROAD.RadioCheckedString;
+
+            V_LANG_KOR.BringToFront();
+            V_LANG_ENG.BringToFront();
+
+            V_LANG_KOR.CheckedState = ISUtil.Enum.CheckedState.Checked;
+            V_LANG_TYPE.EditValue = V_LANG_KOR.RadioCheckedString;
 
             W_ADDRESS.Focus();
 
@@ -252,6 +302,13 @@ namespace EAPF0299
 
             W_ADDRESS_TYPE.EditValue = RB.RadioCheckedString;
             W_ADDRESS.Focus();
+        }
+
+        private void V_LANG_KOR_CheckChanged(object sender, EventArgs e)
+        {
+            ISRadioButtonAdv RB = sender as ISRadioButtonAdv;
+
+            V_LANG_TYPE.EditValue = RB.RadioCheckedString; 
         }
 
         private void ADDRESS_KeyDown(object pSender, KeyEventArgs e)

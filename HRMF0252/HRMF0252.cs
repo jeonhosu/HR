@@ -12,15 +12,15 @@ using ISCommonUtil;
 
 using System.IO;
 using Syncfusion.GridExcelConverter;
- 
+
+
 using System.ComponentModel;
 using System.Text;
 
 using System.Reflection;
 using System.Diagnostics;
 
-
-
+ 
 namespace HRMF0252
 {
     public partial class HRMF0252 : Office2007Form
@@ -33,24 +33,7 @@ namespace HRMF0252
 
         ISHR.isCertificatePrint mPrintInfo;
         #endregion;
-
-        #region ----- UpLoad / DownLoad Variables -----
-
-        private InfoSummit.Win.ControlAdv.ISFileTransferAdv mFileTransferAdv;
-        private ItemImageInfomationFTP mImageFTP;
-
-        private string mFTP_Source_Directory = string.Empty;            // ftp 소스 디렉토리.
-        private string mClient_Base_Path = System.Windows.Forms.Application.StartupPath;    // 현재 디렉토리.
-        private string mClient_Directory = string.Empty;                // 실제 디렉토리 
-        private string mClient_ImageDirectory = string.Empty;           // 클라이언트 이미지 디렉토리.
-        private string mFileExtension = ".bmp";                         // 확장자명.
-
-        private bool mIsGetInformationFTP = false;                      // FTP 정보 상태.
-        private bool mIsFormLoad = false;                               // NEWMOVE 이벤트 제어.
-        private int mStartPage = 1;                                     // 시작 페이지
-        
-        #endregion;
-
+         
         #region ----- Constructor -----
 
         public HRMF0252()
@@ -85,8 +68,8 @@ namespace HRMF0252
 
         private void SEARCH_DB()
         {
-            IDA_CERTIFICATE_PRINT.Cancel();
-            IDA_CERTIFICATE_PRINT.Fill();
+            IDA_CERTIFICATE_REQ_PRINT.Cancel();
+            IDA_CERTIFICATE_REQ_PRINT.Fill();
         }
 
         #endregion;
@@ -103,19 +86,19 @@ namespace HRMF0252
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.AddOver)
                 {
-                  
+
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.AddUnder)
                 {
-                 
+
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Update)
                 {
-                    
+
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Cancel)
                 {
-                 
+
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Delete)
                 {
@@ -125,7 +108,37 @@ namespace HRMF0252
                 {
                     //ExcelExport(IGR_APPROVED_CERTI);
                 }
+                else if(e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Print)
+                {
+                    Print_CERTIFICATE();
+                }
             }
+        }
+
+        private void Print_CERTIFICATE()
+        {
+            if (IGR_CERTIFICATE_REQ_PRINT.Row < 1)
+                return;
+
+            string vPRINT_STATUS = iConv.ISNull(IGR_CERTIFICATE_REQ_PRINT.GetCellValue("PRINT_STATUS"));
+            if (!vPRINT_STATUS.Equals("Y"))
+            {
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("IFEAPP_10249"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            object vREQ_DATE = IGR_CERTIFICATE_REQ_PRINT.GetCellValue("REQ_DATE");
+            object vPRINT_REQ_NUM = IGR_CERTIFICATE_REQ_PRINT.GetCellValue("PRINT_REQ_NUM");
+
+            if (iConv.ISNull(vPRINT_REQ_NUM) == string.Empty)
+            {
+                return;
+            }
+
+            if (MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_10146"), "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                return;
+
+            AssmblyRun_Manual("HRMF0240", W_CORP_ID.EditValue, vPRINT_REQ_NUM, vREQ_DATE);
         }
 
         #endregion;
@@ -172,148 +185,34 @@ namespace HRMF0252
         }
         #endregion
 
+
         #region ----- Assembly Run Methods ----
-        private void Print_10( object pEMPLOYE
-                                            , object pPERSON_ID
-                                            , object PERSON_NUM
-                                            , object PERSON_NMAE
-                                            , object CERTI_TYPE
-                                            , object CERTI_TYPE_ID
-                                            , object CERT_TYPE_NAME
-                                            , object PERPOSE
-                                            , object DESCRIPTION
-                                            , object JOINDATE
-                                            , object RETIREDATE
-                                            , object CORP_ID
 
-                                )
+        private void AssmblyRun_Manual(object pAssembly_ID, object pCorp_ID, object pPrint_Req_Num, object pReq_Date)
         {
-            string vAssemblyId = string.Empty;
-            string vAssemblyFileName = string.Empty;
-            string vAssemblyFileVersion = string.Empty;
-
-            vAssemblyId = "HRMF0240";
-            vAssemblyFileName = "HRMF0240.dll";
-
-            AssmblyRun_Manual(vAssemblyId);
-
-            Assembly vAssembly = Assembly.LoadFrom(vAssemblyFileName);
-            Type vType = vAssembly.GetType(vAssembly.GetName().Name + "." + vAssembly.GetName().Name);
-
-            if (vType != null)
-            {
-                object[] vParam = new object[15];
-                vParam[0] = this.MdiParent;
-                vParam[1] = isAppInterfaceAdv1.AppInterface;
-                vParam[2] = this.mPrintInfo;
-                vParam[3] = pEMPLOYE;
-                vParam[4] = pPERSON_ID;
-                vParam[5] = PERSON_NUM;
-                vParam[6] = PERSON_NMAE;
-                vParam[7] = CERTI_TYPE;
-                vParam[8] = CERTI_TYPE_ID;
-                vParam[9] = CERT_TYPE_NAME;
-                vParam[10] = PERPOSE;
-                vParam[11] = DESCRIPTION;
-                vParam[12] = string.Format("{0:yyyy-MM-dd}", iDate.ISGetDate(JOINDATE));
-                vParam[13] = string.Format("{0:yyyy-MM-dd}", iDate.ISGetDate(RETIREDATE));
-                vParam[14] = CORP_ID;
-
-
-                object vCreateInstance = Activator.CreateInstance(vType, vParam);
-                //object vTest = Activator.CreateInstance(vType, vParam);
-                //Form vForm = vCreateInstance as Form;
-                Office2007Form vForm = vCreateInstance as Office2007Form;
-                Point vPoint = new Point(30, 30);
-                vForm.Location = vPoint;
-                vForm.StartPosition = FormStartPosition.Manual;
-                vForm.Text = string.Format("{0}[{1}] - {2}", "Cetificate Print", vAssemblyId, vAssemblyFileVersion);
-
-                vForm.Show(); 
-            }
-        }
-
-        private void Print_20(object pPERSON_ID
-                            , object pCORP_ID
-                            , object pPERSON_NUM
-                            , object pPERSON_NMAE
-                            , object pCERTI_TYPE
-                            , object pCERTI_TYPE_ID
-                            , object pCERT_TYPE_NAME
-                            , object pPERPOSE
-                            , object pDESCRIPTION
-                            , object pJOIN_DATE
-                            , object pRETIRE_DATE
-                            )
-        {
-
-            string vAssemblyId = string.Empty;
-            string vAssemblyFileName = string.Empty;
-            string vAssemblyFileVersion = string.Empty;
-
-            vAssemblyId = "HRMF0730";
-            vAssemblyFileName = "HRMF0730.dll";
-
-            AssmblyRun_Manual(vAssemblyId);
-
-            Assembly vAssembly = Assembly.LoadFrom(vAssemblyFileName);
-            Type vType = vAssembly.GetType(vAssembly.GetName().Name + "." + vAssembly.GetName().Name);
-
-            if (vType != null)
-            {
-                object[] vParam = new object[15];
-                vParam[0] = this.MdiParent;
-                vParam[1] = isAppInterfaceAdv1.AppInterface;
-                vParam[2] = iConv.ISDecimaltoZero(pCORP_ID);
-                vParam[3] = iConv.ISNull(pPERSON_NUM);
-                vParam[4] = string.Format("{0:yyyy-MM-dd}", DateTime.Today);
-                vParam[5] = iConv.ISNull(((DateTime.Today.Year) -1));
-                vParam[6] = iConv.ISNull(pCERT_TYPE_NAME);
-                vParam[7] = pCERTI_TYPE_ID;
-                vParam[8] = pCERTI_TYPE;
-                vParam[9] = iConv.ISNull(pPERSON_NMAE);
-                vParam[10] = pPERSON_ID;
-                vParam[11] = string.Format("{0:yyyy-MM-dd}", iDate.ISGetDate(pJOIN_DATE)); 
-                vParam[12] = string.Format("{0:yyyy-MM-dd}", iDate.ISGetDate(pRETIRE_DATE)); 
-                vParam[13] = iConv.ISNull(pPERPOSE);
-                vParam[14] = iConv.ISNull(pDESCRIPTION);
-
-
-                object vCreateInstance = Activator.CreateInstance(vType, vParam);
-                //object vTest = Activator.CreateInstance(vType, vParam);
-                //Form vForm = vCreateInstance as Form;
-                Office2007Form vForm = vCreateInstance as Office2007Form;
-                //Point vPoint = new Point(30, 30);
-                //vForm.Location = vPoint;
-                vForm.StartPosition = FormStartPosition.Manual;
-                vForm.Text = string.Format("{0}[{1}] - {2}", "Certificate Print", vAssemblyId, vAssemblyFileVersion);
-
-                vForm.Show(); 
-            }
-        }
-
-        private void AssmblyRun_Manual(object pAssembly_ID)
-        {
-            this.Cursor = Cursors.WaitCursor;
-            Application.DoEvents();
+            Application.UseWaitCursor = true;
+            System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
+            Application.DoEvents(); 
 
             string vCurrAssemblyFileVersion = string.Empty;
+
+            // Form pMainForm, ISAppInterface pAppInterface, object pCorp_ID, string pUser_Print, string pPrint_Req_Num, object pReq_Date
 
             //[EAPP_ASSEMBLY_INFO_G.MENU_ENTRY_PROCESS_START]
             IDC_MENU_ENTRY_MANUAL_START.SetCommandParamValue("W_ASSEMBLY_ID", pAssembly_ID);
             IDC_MENU_ENTRY_MANUAL_START.ExecuteNonQuery();
 
-            string vREAD_FLAG = iConvert.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_READ_FLAG"));
-            string vUSER_TYPE = iConvert.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_USER_TYPE"));
-            string vPRINT_FLAG = iConvert.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_PRINT_FLAG"));
+            string vREAD_FLAG = iConv.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_READ_FLAG"));
+            string vUSER_TYPE = iConv.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_USER_TYPE"));
+            string vPRINT_FLAG = iConv.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_PRINT_FLAG"));
 
-            decimal vASSEMBLY_INFO_ID = iConvert.ISDecimaltoZero(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_ASSEMBLY_INFO_ID"));
-            string vASSEMBLY_ID = iConvert.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_ASSEMBLY_ID"));
-            string vASSEMBLY_NAME = iConvert.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_ASSEMBLY_NAME"));
-            string vASSEMBLY_FILE_NAME = iConvert.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_ASSEMBLY_FILE_NAME"));
+            decimal vASSEMBLY_INFO_ID = iConv.ISDecimaltoZero(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_ASSEMBLY_INFO_ID"));
+            string vASSEMBLY_ID = iConv.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_ASSEMBLY_ID"));
+            string vASSEMBLY_NAME = iConv.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_ASSEMBLY_NAME"));
+            string vASSEMBLY_FILE_NAME = iConv.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_ASSEMBLY_FILE_NAME"));
 
-            string vASSEMBLY_VERSION = iConvert.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_ASSEMBLY_VERSION"));
-            string vDIR_FULL_PATH = iConvert.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_DIR_FULL_PATH"));
+            string vASSEMBLY_VERSION = iConv.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_ASSEMBLY_VERSION"));
+            string vDIR_FULL_PATH = iConv.ISNull(IDC_MENU_ENTRY_MANUAL_START.GetCommandParamValue("O_DIR_FULL_PATH"));
 
             System.IO.FileInfo vFile = new System.IO.FileInfo(vASSEMBLY_FILE_NAME);
             if (vFile.Exists)
@@ -321,6 +220,7 @@ namespace HRMF0252
                 vCurrAssemblyFileVersion = System.Diagnostics.FileVersionInfo.GetVersionInfo(vASSEMBLY_FILE_NAME).FileVersion;
             }
 
+            vREAD_FLAG = "Y";  //무조건 인쇄
 
             //1. Assembly file Name(.dll) 있을겨우만 실행//
             if (vASSEMBLY_FILE_NAME != string.Empty)
@@ -336,14 +236,17 @@ namespace HRMF0252
                         vFileTransferAdv.Port = isAppInterfaceAdv1.AppInterface.AppHostInfo.Port;
                         vFileTransferAdv.UserId = isAppInterfaceAdv1.AppInterface.AppHostInfo.UserId;
                         vFileTransferAdv.Password = isAppInterfaceAdv1.AppInterface.AppHostInfo.Password;
-                        if (isAppInterfaceAdv1.AppInterface.AppHostInfo.Passive == "N")
+                        vFileTransferAdv.UseBinary = true;
+                        vFileTransferAdv.KeepAlive = false;
+                        if (isAppInterfaceAdv1.AppInterface.AppHostInfo.Passive != "Y")
                         {
                             vFileTransferAdv.UsePassive = false;
                         }
                         else
                         {
                             vFileTransferAdv.UsePassive = true;
-                        } 
+                        }
+
                         vFileTransferAdv.SourceDirectory = vDIR_FULL_PATH;
                         vFileTransferAdv.SourceFileName = vASSEMBLY_FILE_NAME;
                         vFileTransferAdv.TargetDirectory = Application.StartupPath;
@@ -379,19 +282,56 @@ namespace HRMF0252
                                 }
                             }
                         }
-                        else
-                        {
-                            MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_10241"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
 
                         //report update//
                         ReportUpdate(vASSEMBLY_INFO_ID);
-                    } 
+                    }
+                     
+                    try
+                    {
+                        System.Reflection.Assembly vAssembly = System.Reflection.Assembly.LoadFrom(vASSEMBLY_FILE_NAME);
+                        Type vType = vAssembly.GetType(vAssembly.GetName().Name + "." + vAssembly.GetName().Name);
+
+                        if (vType != null)
+                        {
+                            if (vFile.Exists)
+                            {
+                                vCurrAssemblyFileVersion = System.Diagnostics.FileVersionInfo.GetVersionInfo(vASSEMBLY_FILE_NAME).FileVersion;
+                            }
+
+                            object[] vParam = new object[6];
+                            vParam[0] = this.MdiParent;
+                            vParam[1] = isAppInterfaceAdv1.AppInterface;
+                            vParam[2] = pCorp_ID;     //업체id
+                            vParam[3] = "Y";        //사용자 인쇄
+                            vParam[4] = pPrint_Req_Num; //요청번호
+                            vParam[5] = pReq_Date;      //요청일자
+
+                            object vCreateInstance = Activator.CreateInstance(vType, vParam);
+                            Office2007Form vForm = vCreateInstance as Office2007Form;
+                            Point vPoint = new Point(30, 30);
+                            vForm.Location = vPoint;
+                            vForm.StartPosition = FormStartPosition.Manual;
+                            vForm.Text = string.Format("{0}[{1}] - {2}", vASSEMBLY_NAME, vASSEMBLY_ID, vCurrAssemblyFileVersion);
+
+                            vForm.Show();
+                        }
+                        else
+                        {
+                            MessageBoxAdv.Show("Form Namespace Error");
+                        }
+                    }
+                    catch
+                    {
+                        //
+                    }
                 }
             }
-
-            this.Cursor = Cursors.Default;
+            Application.UseWaitCursor = false;
+            System.Windows.Forms.Cursor.Current = Cursors.Default;
             Application.DoEvents();
+
+            SEARCH_DB();
         }
 
         //report download//
@@ -403,7 +343,6 @@ namespace HRMF0252
 
             try
             {
-
                 IDA_REPORT_INFO_DOWNLOAD.SetSelectParamValue("W_ASSEMBLY_INFO_ID", pAssemblyInfoID);
                 IDA_REPORT_INFO_DOWNLOAD.Fill();
                 if (IDA_REPORT_INFO_DOWNLOAD.OraSelectData.Rows.Count > 0)
@@ -425,14 +364,14 @@ namespace HRMF0252
 
                     foreach (System.Data.DataRow vRow in IDA_REPORT_INFO_DOWNLOAD.OraSelectData.Rows)
                     {
-                        if (iConvert.ISNull(vRow["REPORT_FILE_NAME"]) != string.Empty)
+                        if (iConv.ISNull(vRow["REPORT_FILE_NAME"]) != string.Empty)
                         {
-                            vReportFileName = iConvert.ISNull(vRow["REPORT_FILE_NAME"]);
+                            vReportFileName = iConv.ISNull(vRow["REPORT_FILE_NAME"]);
                             vReportFileNameTarget = string.Format("_{0}", vReportFileName);
                         }
-                        if (iConvert.ISNull(vRow["REPORT_PATH_FTP"]) != string.Empty)
+                        if (iConv.ISNull(vRow["REPORT_PATH_FTP"]) != string.Empty)
                         {
-                            vPathReportFTP = iConvert.ISNull(vRow["REPORT_PATH_FTP"]);
+                            vPathReportFTP = iConv.ISNull(vRow["REPORT_PATH_FTP"]);
                         }
 
                         if (vReportFileName != string.Empty && vPathReportFTP != string.Empty)
@@ -493,219 +432,62 @@ namespace HRMF0252
 
         #endregion;
 
+
         private void HRMF0252_Load(object sender, EventArgs e)
         {
-            IDA_CERTIFICATE_PRINT.FillSchema();
+            IDA_CERTIFICATE_REQ_PRINT.FillSchema();
         }
 
         private void HRMF0252_Shown(object sender, EventArgs e)
         {
             //DEFAULT Date SETTING
-            iSTART_DATE_0.EditValue = iDate.ISMonth_1st(DateTime.Today);
-            iEND_DATE_0.EditValue = iDate.ISMonth_Last(DateTime.Today);
-            
+            W_START_DATE.EditValue = iDate.ISMonth_1st(DateTime.Today);
+            W_END_DATE.EditValue = iDate.ISMonth_Last(DateTime.Today);
+
             // LOOKUP DEFAULT VALUE SETTING - CORP
-            idcDEFAULT_CORP.SetCommandParamValue("W_PAY_CONTROL_YN", "Y");
-            idcDEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "Y");
-            idcDEFAULT_CORP.ExecuteNonQuery();
+            IDC_DEFAULT_CORP.SetCommandParamValue("W_PAY_CONTROL_YN", "Y");
+            IDC_DEFAULT_CORP.SetCommandParamValue("W_ENABLED_FLAG_YN", "Y");
+            IDC_DEFAULT_CORP.ExecuteNonQuery();
 
-            W_CORP_NAME_0.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
-            W_CORP_ID_0.EditValue = idcDEFAULT_CORP.GetCommandParamValue("O_CORP_ID");
-        
+            W_CORP_NAME.EditValue = IDC_DEFAULT_CORP.GetCommandParamValue("O_CORP_NAME");
+            W_CORP_ID.EditValue = IDC_DEFAULT_CORP.GetCommandParamValue("O_CORP_ID");
 
-            W_CORP_NAME_0.BringToFront();
+            W_CORP_NAME.BringToFront();
 
+            W_PRINT_YES.CheckedState = ISUtil.Enum.CheckedState.Checked;
+            V_PRINT_STATUS.EditValue = W_PRINT_YES.RadioCheckedString;
         }
+
+        private void W_PRINT_ALL_CheckChanged(object sender, EventArgs e)
+        {
+            ISRadioButtonAdv iStatus = sender as ISRadioButtonAdv;
+            V_PRINT_STATUS.EditValue = iStatus.RadioCheckedString;
+        }
+
 
         #region ----- Form Event ------
 
         private void isCheckBoxAdv1_CheckedChange(object pSender, ISCheckEventArgs e)
         {
-     
+
         }
 
         #endregion
 
-        private void Default_Setting()
-        {
-            IGR_CERTIFICATE_PRINT.SetCellValue("PRINT_DATE", DateTime.Today );
-        }
-        
+
         #region ----- Lookup Event ------
 
-        private void ILA_CERTIFICATE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
-        {
-            ILD_CERTIFICATE_W.SetLookupParamValue("W_GROUP_CODE", "CERT_TYPE");
-            ILD_CERTIFICATE_W.SetLookupParamValue("W_WHERE", "HC.VALUE3 = 'Y'");
-            ILD_CERTIFICATE_W.SetLookupParamValue("W_ENABLED_FLAG", "Y");
-        }
-
-     
         private void ILA_SEARCH_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
-            ILD_SEARCH_TYPE.SetLookupParamValue("W_GROUP_CODE", "SEARCH_TYPE");
+            ILD_SEARCH_TYPE.SetLookupParamValue("W_GROUP_CODE", "CERT_SEARCH_TYPE");
             ILD_SEARCH_TYPE.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
         }
-
-
-
-
-
+           
         #endregion
 
-        private void IGR_APPROVED_CERTI_CellDoubleClick(object pSender)
+        private void IGR_CERTIFICATE_REQ_PRINT_CellDoubleClick(object pSender)
         {
-            
-            object vPERSON_ID = IGR_CERTIFICATE_PRINT.GetCellValue("PERSON_ID");
-            object vCERTI_TYPE_ID = IGR_CERTIFICATE_PRINT.GetCellValue("CERT_TYPE_ID");
-            object vCERTI_TYPE_CODE = IGR_CERTIFICATE_PRINT.GetCellValue("CERT_TYPE");
-            object vCERTI_TYPE = IGR_CERTIFICATE_PRINT.GetCellValue("CERT_CATEGORY");
-            object vCERT_TYPE_NAME = IGR_CERTIFICATE_PRINT.GetCellValue("CERT_TYPE_NAME");
-            object vPERSON_NUM = IGR_CERTIFICATE_PRINT.GetCellValue("PERSON_NUM");
-            object vPERSON_NMAE = IGR_CERTIFICATE_PRINT.GetCellValue("NAME");
-            object vPERPOSE = IGR_CERTIFICATE_PRINT.GetCellValue("CERT_PRINT_PERPOSE");
-            object vDESCRIPTION = IGR_CERTIFICATE_PRINT.GetCellValue("DESCRIPTION");
-            object vEMPLOYE = IGR_CERTIFICATE_PRINT.GetCellValue("EMPLOYE_TYPE");
-            object vCORP_ID = IGR_CERTIFICATE_PRINT.GetCellValue("CORP_ID");
-            object vJOIN_DATE = IGR_CERTIFICATE_PRINT.GetCellValue("JOIN_DATE");
-            object vRETIRE_DATE = IGR_CERTIFICATE_PRINT.GetCellValue("RETIRE_DATE");
-            if (iConv.ISNull(vPERSON_ID) != string.Empty && iConv.ISNull(vCERTI_TYPE_ID) != string.Empty)
-            {
-                if(iConv.ISNull(vCERTI_TYPE) == "10")
-                {
-                    Print_10(vEMPLOYE
-                            , vPERSON_ID
-                            , vPERSON_NUM
-                            , vPERSON_NMAE
-                            , vCERTI_TYPE_CODE
-                            , vCERTI_TYPE_ID
-                            , vCERT_TYPE_NAME
-                            , vPERPOSE
-                            , vDESCRIPTION
-                            , vJOIN_DATE
-                            , vRETIRE_DATE
-                            , vCORP_ID
-                            );
-                }
-                else
-                {
-                    Print_20(vPERSON_ID
-                            , vCORP_ID
-                            , vPERSON_NUM
-                            , vPERSON_NMAE
-                            , vCERTI_TYPE_CODE
-                            , vCERTI_TYPE_ID
-                            , vCERT_TYPE_NAME
-                            , vPERPOSE
-                            , vDESCRIPTION
-                            , vJOIN_DATE
-                            , vRETIRE_DATE
-                            );
-                }
-            }
-            else
-            {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10033"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-
-        
-    }
-        #region ----- User Make Class -----
-
-        public class ItemImageInfomationFTP
-        {
-            #region ----- Variables -----
-
-            private string mHost = string.Empty;
-            private string mPort = "21";
-            private string mUserID = string.Empty;
-            private string mPassword = string.Empty;
-            private string mPassive_Flag = "N";
-
-            #endregion;
-
-            #region ----- Constructor -----
-
-            public ItemImageInfomationFTP()
-            {
-            }
-
-            public ItemImageInfomationFTP(string pHost, string pPort, string pUserID, string pPassword, string pPassive_Flag)
-            {
-                mHost = pHost;
-                mPort = pPort;
-                mUserID = pUserID;
-                mPassword = pPassword;
-                mPassive_Flag = pPassive_Flag;
-            }
-
-            #endregion;
-
-            #region ----- Property -----
-
-            public string Host
-            {
-                get
-                {
-                    return mHost;
-                }
-                set
-                {
-                    mHost = value;
-                }
-            }
-
-            public string Port
-            {
-                get
-                {
-                    return mPort;
-                }
-                set
-                {
-                    mPort = value;
-                }
-            }
-
-            public string UserID
-            {
-                get
-                {
-                    return mUserID;
-                }
-                set
-                {
-                    mUserID = value;
-                }
-            }
-
-            public string Password
-            {
-                get
-                {
-                    return mPassword;
-                }
-                set
-                {
-                    mPassword = value;
-                }
-            }
-
-            public string Passive_Flag
-            {
-                get
-                {
-                    return mPassive_Flag;
-                }
-                set
-                {
-                    mPassive_Flag = value;
-                }
-            }
-
-            #endregion;
+            Print_CERTIFICATE();
         }
-
-        #endregion;
-    }
+    } 
 }

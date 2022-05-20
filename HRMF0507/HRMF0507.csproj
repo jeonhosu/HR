@@ -17,7 +17,7 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -33,6 +33,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,6 +43,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -50,6 +52,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
@@ -135,38 +138,23 @@
     <Compile Include="HRMF0507.Designer.cs">
       <DependentUpon>HRMF0507.cs</DependentUpon>
     </Compile>
-    <Compile Include="HRMF0507_PRINT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HRMF0507_PRINT.Designer.cs">
-      <DependentUpon>HRMF0507_PRINT.cs</DependentUpon>
-    </Compile>
     <Compile Include="HRMF0507_PRINT_TYPE.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HRMF0507_PRINT_TYPE.designer.cs">
+    <Compile Include="HRMF0507_PRINT_TYPE.Designer.cs">
       <DependentUpon>HRMF0507_PRINT_TYPE.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="HRMF0507.resx">
-      <SubType>Designer</SubType>
       <DependentUpon>HRMF0507.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HRMF0507_PRINT.resx">
-      <DependentUpon>HRMF0507_PRINT.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="HRMF0507_PRINT_TYPE.resx">
       <DependentUpon>HRMF0507_PRINT_TYPE.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="XLExport.resx">
-      <DependentUpon>XLExport.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -182,12 +170,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="XLExport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="XLExport.designer.cs">
-      <DependentUpon>XLExport.cs</DependentUpon>
     </Compile>
     <Compile Include="XLPrinting.cs" />
   </ItemGroup>

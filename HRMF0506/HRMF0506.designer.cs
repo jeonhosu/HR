@@ -107,7 +107,6 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement86 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement87 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement88 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement45 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement46 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement47 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement48 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
@@ -117,6 +116,9 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement52 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement53 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement54 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement55 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement56 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement57 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement29 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement27 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement26 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
@@ -275,6 +277,7 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement19 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement20 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement21 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement1 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement9 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement10 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement11 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
@@ -406,6 +409,7 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement42 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement43 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement44 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement45 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement9 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement35 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement36 = new InfoSummit.Win.ControlAdv.ISOraColElement();
@@ -459,9 +463,6 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement96 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement97 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement98 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement55 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement56 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement57 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement58 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement59 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement60 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
@@ -481,6 +482,9 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement74 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement75 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement76 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement77 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement78 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement79 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement28 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement13 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement15 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
@@ -495,9 +499,6 @@
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement107 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement108 = new InfoSummit.Win.ControlAdv.ISOraColElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement12 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement77 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement78 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement79 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement80 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement81 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement82 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
@@ -505,7 +506,9 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement84 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement85 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement86 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement1 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement87 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement88 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement89 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             this.CORP_ID = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.isAppInterfaceAdv1 = new InfoSummit.Win.ControlAdv.ISAppInterfaceAdv(this.components);
             this.idaPAY_MASTER = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
@@ -536,6 +539,7 @@
             this.PERSON_ID_0 = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.PERSON_NAME_0 = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.ilaPERSON_0 = new InfoSummit.Win.ControlAdv.ISLookupAdapter(this.components);
+            this.PERSON_NUM_0 = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.ildPERSON_0 = new InfoSummit.Win.ControlAdv.ISLookupData(this.components);
             this.igrPAYMENT_TERM = new InfoSummit.Win.ControlAdv.ISGridAdvEx();
             this.idaPAYMENT_TERM = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
@@ -559,7 +563,6 @@
             this.igbCONDITION = new InfoSummit.Win.ControlAdv.ISGroupBox();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.IDC_PRINTED_VALUE = new InfoSummit.Win.ControlAdv.ISDataCommand(this.components);
-            this.PERSON_NUM_0 = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.igrPERSON.BaseGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ilaSTART_YYYYMM_0.PropSourceDataTable)).BeginInit();
@@ -955,7 +958,7 @@
             isOraColElement59.LastValue = null;
             isOraColElement59.MemberControl = null;
             isOraColElement59.MemberValue = null;
-            isOraColElement59.Nullable = 0;
+            isOraColElement59.Nullable = 1;
             isOraColElement59.Ordinal = 1;
             isOraColElement59.RelationKeyColumn = null;
             isOraColElement59.ReturnParameter = null;
@@ -973,7 +976,7 @@
             isOraColElement60.LastValue = null;
             isOraColElement60.MemberControl = null;
             isOraColElement60.MemberValue = null;
-            isOraColElement60.Nullable = 0;
+            isOraColElement60.Nullable = 1;
             isOraColElement60.Ordinal = 2;
             isOraColElement60.RelationKeyColumn = null;
             isOraColElement60.ReturnParameter = null;
@@ -991,7 +994,7 @@
             isOraColElement61.LastValue = null;
             isOraColElement61.MemberControl = null;
             isOraColElement61.MemberValue = null;
-            isOraColElement61.Nullable = 0;
+            isOraColElement61.Nullable = 1;
             isOraColElement61.Ordinal = 3;
             isOraColElement61.RelationKeyColumn = null;
             isOraColElement61.ReturnParameter = null;
@@ -1459,7 +1462,7 @@
             isOraColElement87.LastValue = null;
             isOraColElement87.MemberControl = null;
             isOraColElement87.MemberValue = null;
-            isOraColElement87.Nullable = 0;
+            isOraColElement87.Nullable = 1;
             isOraColElement87.Ordinal = 29;
             isOraColElement87.RelationKeyColumn = null;
             isOraColElement87.ReturnParameter = null;
@@ -1477,7 +1480,7 @@
             isOraColElement88.LastValue = null;
             isOraColElement88.MemberControl = null;
             isOraColElement88.MemberValue = null;
-            isOraColElement88.Nullable = 0;
+            isOraColElement88.Nullable = 1;
             isOraColElement88.Ordinal = 30;
             isOraColElement88.RelationKeyColumn = null;
             isOraColElement88.ReturnParameter = null;
@@ -1520,94 +1523,109 @@
             isOraColElement86,
             isOraColElement87,
             isOraColElement88});
-            isOraParamElement45.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement45.MemberControl = null;
-            isOraParamElement45.MemberValue = null;
-            isOraParamElement45.OraDbTypeString = "REF CURSOR";
-            isOraParamElement45.OraType = System.Data.OracleClient.OracleType.Cursor;
-            isOraParamElement45.ParamName = "P_CURSOR";
-            isOraParamElement45.Size = 0;
-            isOraParamElement45.SourceColumn = null;
-            isOraParamElement46.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement46.MemberControl = this.CORP_ID_0;
-            isOraParamElement46.MemberValue = "EditValue";
-            isOraParamElement46.OraDbTypeString = "NUMBER";
-            isOraParamElement46.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement46.ParamName = "W_CORP_ID";
-            isOraParamElement46.Size = 22;
+            isOraParamElement46.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement46.MemberControl = null;
+            isOraParamElement46.MemberValue = null;
+            isOraParamElement46.OraDbTypeString = "REF CURSOR";
+            isOraParamElement46.OraType = System.Data.OracleClient.OracleType.Cursor;
+            isOraParamElement46.ParamName = "P_CURSOR";
+            isOraParamElement46.Size = 0;
             isOraParamElement46.SourceColumn = null;
-            isOraParamElement46.TestValue = "1";
             isOraParamElement47.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement47.MemberControl = this.START_YYYYMM_0;
+            isOraParamElement47.MemberControl = this.CORP_ID_0;
             isOraParamElement47.MemberValue = "EditValue";
-            isOraParamElement47.OraDbTypeString = "VARCHAR2";
-            isOraParamElement47.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement47.ParamName = "W_START_YYYYMM";
-            isOraParamElement47.Size = 7;
+            isOraParamElement47.OraDbTypeString = "NUMBER";
+            isOraParamElement47.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement47.ParamName = "W_CORP_ID";
+            isOraParamElement47.Size = 22;
             isOraParamElement47.SourceColumn = null;
+            isOraParamElement47.TestValue = "1";
             isOraParamElement48.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement48.MemberControl = this.END_YYYYMM_0;
+            isOraParamElement48.MemberControl = this.START_YYYYMM_0;
             isOraParamElement48.MemberValue = "EditValue";
             isOraParamElement48.OraDbTypeString = "VARCHAR2";
             isOraParamElement48.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement48.ParamName = "W_END_YYYYMM";
+            isOraParamElement48.ParamName = "W_START_YYYYMM";
             isOraParamElement48.Size = 7;
             isOraParamElement48.SourceColumn = null;
             isOraParamElement49.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement49.MemberControl = null;
-            isOraParamElement49.MemberValue = null;
+            isOraParamElement49.MemberControl = this.END_YYYYMM_0;
+            isOraParamElement49.MemberValue = "EditValue";
             isOraParamElement49.OraDbTypeString = "VARCHAR2";
             isOraParamElement49.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement49.ParamName = "W_PAY_TYPE";
-            isOraParamElement49.Size = 2;
+            isOraParamElement49.ParamName = "W_END_YYYYMM";
+            isOraParamElement49.Size = 7;
             isOraParamElement49.SourceColumn = null;
             isOraParamElement50.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement50.MemberControl = this.PAY_GRADE_ID_0;
-            isOraParamElement50.MemberValue = "EditValue";
-            isOraParamElement50.OraDbTypeString = "NUMBER";
-            isOraParamElement50.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement50.ParamName = "W_PAY_GRADE_ID";
-            isOraParamElement50.Size = 22;
+            isOraParamElement50.MemberControl = null;
+            isOraParamElement50.MemberValue = null;
+            isOraParamElement50.OraDbTypeString = "VARCHAR2";
+            isOraParamElement50.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement50.ParamName = "W_PAY_TYPE";
+            isOraParamElement50.Size = 2;
             isOraParamElement50.SourceColumn = null;
-            isOraParamElement50.TestValue = "1";
             isOraParamElement51.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement51.MemberControl = this.DEPT_ID_0;
+            isOraParamElement51.MemberControl = this.PAY_GRADE_ID_0;
             isOraParamElement51.MemberValue = "EditValue";
             isOraParamElement51.OraDbTypeString = "NUMBER";
             isOraParamElement51.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement51.ParamName = "W_DEPT_ID";
+            isOraParamElement51.ParamName = "W_PAY_GRADE_ID";
             isOraParamElement51.Size = 22;
             isOraParamElement51.SourceColumn = null;
-            isOraParamElement51.TestValue = "23";
+            isOraParamElement51.TestValue = "1";
             isOraParamElement52.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement52.MemberControl = this.PERSON_ID_0;
+            isOraParamElement52.MemberControl = this.DEPT_ID_0;
             isOraParamElement52.MemberValue = "EditValue";
             isOraParamElement52.OraDbTypeString = "NUMBER";
             isOraParamElement52.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement52.ParamName = "W_PERSON_ID";
+            isOraParamElement52.ParamName = "W_DEPT_ID";
             isOraParamElement52.Size = 22;
             isOraParamElement52.SourceColumn = null;
-            isOraParamElement52.TestValue = "2";
+            isOraParamElement52.TestValue = "23";
             isOraParamElement53.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement53.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement53.MemberValue = "SOB_ID";
+            isOraParamElement53.MemberControl = this.PERSON_ID_0;
+            isOraParamElement53.MemberValue = "EditValue";
             isOraParamElement53.OraDbTypeString = "NUMBER";
             isOraParamElement53.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement53.ParamName = "W_SOB_ID";
+            isOraParamElement53.ParamName = "W_PERSON_ID";
             isOraParamElement53.Size = 22;
             isOraParamElement53.SourceColumn = null;
-            isOraParamElement53.TestValue = "20";
+            isOraParamElement53.TestValue = "2";
             isOraParamElement54.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement54.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement54.MemberValue = "ORG_ID";
+            isOraParamElement54.MemberValue = "PERSON_ID";
             isOraParamElement54.OraDbTypeString = "NUMBER";
             isOraParamElement54.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement54.ParamName = "W_ORG_ID";
+            isOraParamElement54.ParamName = "W_CONNECT_PERSON_ID";
             isOraParamElement54.Size = 22;
             isOraParamElement54.SourceColumn = null;
-            isOraParamElement54.TestValue = "201";
+            isOraParamElement55.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement55.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement55.MemberValue = "SOB_ID";
+            isOraParamElement55.OraDbTypeString = "NUMBER";
+            isOraParamElement55.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement55.ParamName = "W_SOB_ID";
+            isOraParamElement55.Size = 22;
+            isOraParamElement55.SourceColumn = null;
+            isOraParamElement55.TestValue = "20";
+            isOraParamElement56.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement56.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement56.MemberValue = "ORG_ID";
+            isOraParamElement56.OraDbTypeString = "NUMBER";
+            isOraParamElement56.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement56.ParamName = "W_ORG_ID";
+            isOraParamElement56.Size = 22;
+            isOraParamElement56.SourceColumn = null;
+            isOraParamElement56.TestValue = "201";
+            isOraParamElement57.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement57.MemberControl = null;
+            isOraParamElement57.MemberValue = null;
+            isOraParamElement57.OraDbTypeString = "VARCHAR2";
+            isOraParamElement57.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement57.ParamName = "W_CORP_TYPE";
+            isOraParamElement57.Size = 0;
+            isOraParamElement57.SourceColumn = null;
             this.idaPAY_MASTER.SelectParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement45,
             isOraParamElement46,
             isOraParamElement47,
             isOraParamElement48,
@@ -1616,7 +1634,10 @@
             isOraParamElement51,
             isOraParamElement52,
             isOraParamElement53,
-            isOraParamElement54});
+            isOraParamElement54,
+            isOraParamElement55,
+            isOraParamElement56,
+            isOraParamElement57});
             this.idaPAY_MASTER.WizardOwner = "APPS";
             this.idaPAY_MASTER.WizardProcedure = "";
             this.idaPAY_MASTER.WizardTableName = "HRP_PAY_MASTER_HEADER";
@@ -3072,7 +3093,7 @@
             0});
             this.JOIN_DATE.DataAdapter = this.idaPAY_MASTER;
             this.JOIN_DATE.DataColumn = "JOIN_DATE";
-            this.JOIN_DATE.DateTimeValue = new System.DateTime(2020, 6, 9, 0, 0, 0, 0);
+            this.JOIN_DATE.DateTimeValue = new System.DateTime(2021, 12, 27, 0, 0, 0, 0);
             this.JOIN_DATE.DoubleValue = 0D;
             this.JOIN_DATE.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.DateTimeEdit;
             this.JOIN_DATE.EditValue = null;
@@ -3121,7 +3142,7 @@
             0});
             this.ORI_JOIN_DATE.DataAdapter = this.idaPAY_MASTER;
             this.ORI_JOIN_DATE.DataColumn = "ORI_JOIN_DATE";
-            this.ORI_JOIN_DATE.DateTimeValue = new System.DateTime(2020, 6, 9, 0, 0, 0, 0);
+            this.ORI_JOIN_DATE.DateTimeValue = new System.DateTime(2021, 12, 27, 0, 0, 0, 0);
             this.ORI_JOIN_DATE.DoubleValue = 0D;
             this.ORI_JOIN_DATE.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.DateTimeEdit;
             this.ORI_JOIN_DATE.EditValue = null;
@@ -3170,7 +3191,7 @@
             0});
             this.PAY_DATE.DataAdapter = this.idaPAY_MASTER;
             this.PAY_DATE.DataColumn = "PAY_DATE";
-            this.PAY_DATE.DateTimeValue = new System.DateTime(2020, 6, 9, 0, 0, 0, 0);
+            this.PAY_DATE.DateTimeValue = new System.DateTime(2021, 12, 27, 0, 0, 0, 0);
             this.PAY_DATE.DoubleValue = 0D;
             this.PAY_DATE.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.DateTimeEdit;
             this.PAY_DATE.EditValue = null;
@@ -3512,7 +3533,7 @@
             0});
             this.RETIRE_DATE.DataAdapter = this.idaPAY_MASTER;
             this.RETIRE_DATE.DataColumn = "RETIRE_DATE";
-            this.RETIRE_DATE.DateTimeValue = new System.DateTime(2020, 6, 9, 0, 0, 0, 0);
+            this.RETIRE_DATE.DateTimeValue = new System.DateTime(2021, 12, 27, 0, 0, 0, 0);
             this.RETIRE_DATE.DoubleValue = 0D;
             this.RETIRE_DATE.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.DateTimeEdit;
             this.RETIRE_DATE.EditValue = null;
@@ -3553,10 +3574,10 @@
             // 
             this.isOraConnection1.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.isOraConnection1.OraConnectionInfo = oraConnectionInfo1;
-            this.isOraConnection1.OraHost = "192.168.1.7";
+            this.isOraConnection1.OraHost = "106.251.238.98";
             this.isOraConnection1.OraPassword = "infoflex";
             this.isOraConnection1.OraPort = "1521";
-            this.isOraConnection1.OraServiceName = "SIKPROD";
+            this.isOraConnection1.OraServiceName = "KJKPROD";
             this.isOraConnection1.OraUserId = "APPS";
             // 
             // CORP_ID_0
@@ -4407,6 +4428,53 @@
             this.ilaPERSON_0.SelectLookupSize = InfoSummit.Win.ControlAdv.ISUtil.Enum.SelectLookupSize.Custom;
             this.ilaPERSON_0.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
             this.ilaPERSON_0.PrePopupShow += new InfoSummit.Win.ControlAdv.ISLookupAdapter.PopupShowHandler(this.ilaPERSON_0_PrePopupShow);
+            // 
+            // PERSON_NUM_0
+            // 
+            this.PERSON_NUM_0.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.PERSON_NUM_0.ComboBoxValue = "";
+            this.PERSON_NUM_0.ComboData = null;
+            this.PERSON_NUM_0.CurrencyValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.PERSON_NUM_0.DataAdapter = null;
+            this.PERSON_NUM_0.DataColumn = null;
+            this.PERSON_NUM_0.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
+            this.PERSON_NUM_0.DoubleValue = 0D;
+            this.PERSON_NUM_0.EditValue = "";
+            this.PERSON_NUM_0.Location = new System.Drawing.Point(860, 54);
+            this.PERSON_NUM_0.LookupAdapter = null;
+            this.PERSON_NUM_0.Name = "PERSON_NUM_0";
+            this.PERSON_NUM_0.Nullable = true;
+            this.PERSON_NUM_0.NumberValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.PERSON_NUM_0.PercentValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.PERSON_NUM_0.PromptText = "Person ID";
+            isLanguageElement1.Default = "Person ID";
+            isLanguageElement1.SiteName = null;
+            isLanguageElement1.TL1_KR = "사원 ID";
+            isLanguageElement1.TL2_CN = "";
+            isLanguageElement1.TL3_VN = "";
+            isLanguageElement1.TL4_JP = "";
+            isLanguageElement1.TL5_XAA = "";
+            this.PERSON_NUM_0.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement1});
+            this.PERSON_NUM_0.PromptVisible = false;
+            this.PERSON_NUM_0.PromptWidth = 80;
+            this.PERSON_NUM_0.ReadOnly = true;
+            this.PERSON_NUM_0.Size = new System.Drawing.Size(80, 21);
+            this.PERSON_NUM_0.TabIndex = 191;
+            this.PERSON_NUM_0.TabStop = false;
+            this.PERSON_NUM_0.TextValue = "";
             // 
             // ildPERSON_0
             // 
@@ -5631,8 +5699,8 @@
             isOraParamElement36.Size = 0;
             isOraParamElement36.SourceColumn = null;
             isOraParamElement37.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement37.MemberControl = this.CORP_ID_0;
-            isOraParamElement37.MemberValue = "EditValue";
+            isOraParamElement37.MemberControl = this.igrPERSON;
+            isOraParamElement37.MemberValue = "CORP_ID";
             isOraParamElement37.OraDbTypeString = "NUMBER";
             isOraParamElement37.OraType = System.Data.OracleClient.OracleType.Number;
             isOraParamElement37.ParamName = "W_CORP_ID";
@@ -5655,16 +5723,16 @@
             isOraParamElement39.Size = 7;
             isOraParamElement39.SourceColumn = null;
             isOraParamElement40.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement40.MemberControl = this.PAY_GRADE_ID_0;
-            isOraParamElement40.MemberValue = "EditValue";
+            isOraParamElement40.MemberControl = null;
+            isOraParamElement40.MemberValue = null;
             isOraParamElement40.OraDbTypeString = "NUMBER";
             isOraParamElement40.OraType = System.Data.OracleClient.OracleType.Number;
             isOraParamElement40.ParamName = "W_PAY_GRADE_ID";
             isOraParamElement40.Size = 22;
             isOraParamElement40.SourceColumn = null;
             isOraParamElement41.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement41.MemberControl = this.DEPT_ID_0;
-            isOraParamElement41.MemberValue = "EditValue";
+            isOraParamElement41.MemberControl = null;
+            isOraParamElement41.MemberValue = null;
             isOraParamElement41.OraDbTypeString = "NUMBER";
             isOraParamElement41.OraType = System.Data.OracleClient.OracleType.Number;
             isOraParamElement41.ParamName = "W_DEPT_ID";
@@ -5694,6 +5762,14 @@
             isOraParamElement44.ParamName = "W_ORG_ID";
             isOraParamElement44.Size = 22;
             isOraParamElement44.SourceColumn = null;
+            isOraParamElement45.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement45.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement45.MemberValue = "PERSON_ID";
+            isOraParamElement45.OraDbTypeString = "NUMBER";
+            isOraParamElement45.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement45.ParamName = "W_CONNECT_PERSON_ID";
+            isOraParamElement45.Size = 22;
+            isOraParamElement45.SourceColumn = null;
             this.idaPAYMENT_TERM.SelectParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
             isOraParamElement36,
             isOraParamElement37,
@@ -5703,7 +5779,8 @@
             isOraParamElement41,
             isOraParamElement42,
             isOraParamElement43,
-            isOraParamElement44});
+            isOraParamElement44,
+            isOraParamElement45});
             this.idaPAYMENT_TERM.WizardOwner = "APPS";
             this.idaPAYMENT_TERM.WizardProcedure = "";
             this.idaPAYMENT_TERM.WizardTableName = "HRP_PAY_MASTER_LINE";
@@ -6657,44 +6734,20 @@
             // 
             // ildCOMMON_7
             // 
-            isOraParamElement55.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement55.MemberControl = null;
-            isOraParamElement55.MemberValue = null;
-            isOraParamElement55.OraDbTypeString = "REF CURSOR";
-            isOraParamElement55.OraType = System.Data.OracleClient.OracleType.Cursor;
-            isOraParamElement55.ParamName = "P_CURSOR3";
-            isOraParamElement55.Size = 0;
-            isOraParamElement55.SourceColumn = null;
-            isOraParamElement56.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement56.MemberControl = null;
-            isOraParamElement56.MemberValue = null;
-            isOraParamElement56.OraDbTypeString = "VARCHAR2";
-            isOraParamElement56.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement56.ParamName = "W_FIELD_NAME";
-            isOraParamElement56.Size = 100;
-            isOraParamElement56.SourceColumn = null;
-            isOraParamElement57.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement57.MemberControl = null;
-            isOraParamElement57.MemberValue = null;
-            isOraParamElement57.OraDbTypeString = "VARCHAR2";
-            isOraParamElement57.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement57.ParamName = "W_VALUE1";
-            isOraParamElement57.Size = 100;
-            isOraParamElement57.SourceColumn = null;
-            isOraParamElement58.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement58.Direction = System.Data.ParameterDirection.Output;
             isOraParamElement58.MemberControl = null;
             isOraParamElement58.MemberValue = null;
-            isOraParamElement58.OraDbTypeString = "VARCHAR2";
-            isOraParamElement58.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement58.ParamName = "W_VALUE2";
-            isOraParamElement58.Size = 100;
+            isOraParamElement58.OraDbTypeString = "REF CURSOR";
+            isOraParamElement58.OraType = System.Data.OracleClient.OracleType.Cursor;
+            isOraParamElement58.ParamName = "P_CURSOR3";
+            isOraParamElement58.Size = 0;
             isOraParamElement58.SourceColumn = null;
             isOraParamElement59.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement59.MemberControl = null;
             isOraParamElement59.MemberValue = null;
             isOraParamElement59.OraDbTypeString = "VARCHAR2";
             isOraParamElement59.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement59.ParamName = "W_VALUE3";
+            isOraParamElement59.ParamName = "W_FIELD_NAME";
             isOraParamElement59.Size = 100;
             isOraParamElement59.SourceColumn = null;
             isOraParamElement60.Direction = System.Data.ParameterDirection.Input;
@@ -6702,7 +6755,7 @@
             isOraParamElement60.MemberValue = null;
             isOraParamElement60.OraDbTypeString = "VARCHAR2";
             isOraParamElement60.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement60.ParamName = "W_VALUE4";
+            isOraParamElement60.ParamName = "W_VALUE1";
             isOraParamElement60.Size = 100;
             isOraParamElement60.SourceColumn = null;
             isOraParamElement61.Direction = System.Data.ParameterDirection.Input;
@@ -6710,7 +6763,7 @@
             isOraParamElement61.MemberValue = null;
             isOraParamElement61.OraDbTypeString = "VARCHAR2";
             isOraParamElement61.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement61.ParamName = "W_VALUE5";
+            isOraParamElement61.ParamName = "W_VALUE2";
             isOraParamElement61.Size = 100;
             isOraParamElement61.SourceColumn = null;
             isOraParamElement62.Direction = System.Data.ParameterDirection.Input;
@@ -6718,7 +6771,7 @@
             isOraParamElement62.MemberValue = null;
             isOraParamElement62.OraDbTypeString = "VARCHAR2";
             isOraParamElement62.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement62.ParamName = "W_VALUE6";
+            isOraParamElement62.ParamName = "W_VALUE3";
             isOraParamElement62.Size = 100;
             isOraParamElement62.SourceColumn = null;
             isOraParamElement63.Direction = System.Data.ParameterDirection.Input;
@@ -6726,37 +6779,58 @@
             isOraParamElement63.MemberValue = null;
             isOraParamElement63.OraDbTypeString = "VARCHAR2";
             isOraParamElement63.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement63.ParamName = "W_VALUE7";
+            isOraParamElement63.ParamName = "W_VALUE4";
             isOraParamElement63.Size = 100;
             isOraParamElement63.SourceColumn = null;
             isOraParamElement64.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement64.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement64.MemberValue = "SOB_ID";
-            isOraParamElement64.OraDbTypeString = "NUMBER";
-            isOraParamElement64.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement64.ParamName = "W_SOB_ID";
-            isOraParamElement64.Size = 22;
+            isOraParamElement64.MemberControl = null;
+            isOraParamElement64.MemberValue = null;
+            isOraParamElement64.OraDbTypeString = "VARCHAR2";
+            isOraParamElement64.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement64.ParamName = "W_VALUE5";
+            isOraParamElement64.Size = 100;
             isOraParamElement64.SourceColumn = null;
             isOraParamElement65.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement65.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement65.MemberValue = "ORG_ID";
-            isOraParamElement65.OraDbTypeString = "NUMBER";
-            isOraParamElement65.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement65.ParamName = "W_ORG_ID";
-            isOraParamElement65.Size = 22;
+            isOraParamElement65.MemberControl = null;
+            isOraParamElement65.MemberValue = null;
+            isOraParamElement65.OraDbTypeString = "VARCHAR2";
+            isOraParamElement65.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement65.ParamName = "W_VALUE6";
+            isOraParamElement65.Size = 100;
             isOraParamElement65.SourceColumn = null;
             isOraParamElement66.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement66.MemberControl = null;
             isOraParamElement66.MemberValue = null;
             isOraParamElement66.OraDbTypeString = "VARCHAR2";
             isOraParamElement66.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement66.ParamName = "W_USABLE_CHECK_YN";
-            isOraParamElement66.Size = 1;
+            isOraParamElement66.ParamName = "W_VALUE7";
+            isOraParamElement66.Size = 100;
             isOraParamElement66.SourceColumn = null;
+            isOraParamElement67.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement67.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement67.MemberValue = "SOB_ID";
+            isOraParamElement67.OraDbTypeString = "NUMBER";
+            isOraParamElement67.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement67.ParamName = "W_SOB_ID";
+            isOraParamElement67.Size = 22;
+            isOraParamElement67.SourceColumn = null;
+            isOraParamElement68.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement68.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement68.MemberValue = "ORG_ID";
+            isOraParamElement68.OraDbTypeString = "NUMBER";
+            isOraParamElement68.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement68.ParamName = "W_ORG_ID";
+            isOraParamElement68.Size = 22;
+            isOraParamElement68.SourceColumn = null;
+            isOraParamElement69.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement69.MemberControl = null;
+            isOraParamElement69.MemberValue = null;
+            isOraParamElement69.OraDbTypeString = "VARCHAR2";
+            isOraParamElement69.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement69.ParamName = "W_USABLE_CHECK_YN";
+            isOraParamElement69.Size = 1;
+            isOraParamElement69.SourceColumn = null;
             this.ildCOMMON_7.LookupParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement55,
-            isOraParamElement56,
-            isOraParamElement57,
             isOraParamElement58,
             isOraParamElement59,
             isOraParamElement60,
@@ -6765,7 +6839,10 @@
             isOraParamElement63,
             isOraParamElement64,
             isOraParamElement65,
-            isOraParamElement66});
+            isOraParamElement66,
+            isOraParamElement67,
+            isOraParamElement68,
+            isOraParamElement69});
             this.ildCOMMON_7.OraConnection = this.isOraConnection1;
             this.ildCOMMON_7.OraOwner = "APPS";
             this.ildCOMMON_7.OraPackage = "HRM_COMMON_G";
@@ -6778,100 +6855,100 @@
             // 
             // idcDEFAULT_CORP
             // 
-            isOraParamElement67.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement67.MemberControl = null;
-            isOraParamElement67.MemberValue = null;
-            isOraParamElement67.OraDbTypeString = "VARCHAR2";
-            isOraParamElement67.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement67.ParamName = "W_DEPT_CONTROL_YN";
-            isOraParamElement67.Size = 1;
-            isOraParamElement67.SourceColumn = null;
-            isOraParamElement67.TestValue = "Y";
-            isOraParamElement68.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement68.MemberControl = null;
-            isOraParamElement68.MemberValue = null;
-            isOraParamElement68.OraDbTypeString = "VARCHAR2";
-            isOraParamElement68.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement68.ParamName = "W_DUTY_CONTROL_YN";
-            isOraParamElement68.Size = 1;
-            isOraParamElement68.SourceColumn = null;
-            isOraParamElement68.TestValue = "Y";
-            isOraParamElement69.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement69.MemberControl = null;
-            isOraParamElement69.MemberValue = null;
-            isOraParamElement69.OraDbTypeString = "VARCHAR2";
-            isOraParamElement69.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement69.ParamName = "W_PAY_CONTROL_YN";
-            isOraParamElement69.Size = 1;
-            isOraParamElement69.SourceColumn = null;
-            isOraParamElement69.TestValue = "Y";
             isOraParamElement70.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement70.MemberControl = null;
             isOraParamElement70.MemberValue = null;
             isOraParamElement70.OraDbTypeString = "VARCHAR2";
             isOraParamElement70.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement70.ParamName = "W_CORP_TYPE";
-            isOraParamElement70.Size = 2;
+            isOraParamElement70.ParamName = "W_DEPT_CONTROL_YN";
+            isOraParamElement70.Size = 1;
             isOraParamElement70.SourceColumn = null;
+            isOraParamElement70.TestValue = "Y";
             isOraParamElement71.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement71.MemberControl = null;
             isOraParamElement71.MemberValue = null;
             isOraParamElement71.OraDbTypeString = "VARCHAR2";
             isOraParamElement71.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement71.ParamName = "W_ENABLED_FLAG_YN";
+            isOraParamElement71.ParamName = "W_DUTY_CONTROL_YN";
             isOraParamElement71.Size = 1;
             isOraParamElement71.SourceColumn = null;
+            isOraParamElement71.TestValue = "Y";
             isOraParamElement72.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement72.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement72.MemberValue = "SOB_ID";
-            isOraParamElement72.OraDbTypeString = "NUMBER";
-            isOraParamElement72.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement72.ParamName = "W_SOB_ID";
-            isOraParamElement72.Size = 22;
+            isOraParamElement72.MemberControl = null;
+            isOraParamElement72.MemberValue = null;
+            isOraParamElement72.OraDbTypeString = "VARCHAR2";
+            isOraParamElement72.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement72.ParamName = "W_PAY_CONTROL_YN";
+            isOraParamElement72.Size = 1;
             isOraParamElement72.SourceColumn = null;
+            isOraParamElement72.TestValue = "Y";
             isOraParamElement73.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement73.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement73.MemberValue = "ORG_ID";
-            isOraParamElement73.OraDbTypeString = "NUMBER";
-            isOraParamElement73.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement73.ParamName = "W_ORG_ID";
-            isOraParamElement73.Size = 22;
+            isOraParamElement73.MemberControl = null;
+            isOraParamElement73.MemberValue = null;
+            isOraParamElement73.OraDbTypeString = "VARCHAR2";
+            isOraParamElement73.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement73.ParamName = "W_CORP_TYPE";
+            isOraParamElement73.Size = 2;
             isOraParamElement73.SourceColumn = null;
-            isOraParamElement74.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement74.Direction = System.Data.ParameterDirection.Input;
             isOraParamElement74.MemberControl = null;
             isOraParamElement74.MemberValue = null;
-            isOraParamElement74.OraDbTypeString = "NUMBER";
-            isOraParamElement74.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement74.ParamName = "O_CORP_ID";
-            isOraParamElement74.Size = 22;
+            isOraParamElement74.OraDbTypeString = "VARCHAR2";
+            isOraParamElement74.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement74.ParamName = "W_ENABLED_FLAG_YN";
+            isOraParamElement74.Size = 1;
             isOraParamElement74.SourceColumn = null;
-            isOraParamElement75.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement75.MemberControl = null;
-            isOraParamElement75.MemberValue = null;
-            isOraParamElement75.OraDbTypeString = "VARCHAR2";
-            isOraParamElement75.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement75.ParamName = "O_CORP_NAME";
-            isOraParamElement75.Size = 70;
+            isOraParamElement75.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement75.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement75.MemberValue = "SOB_ID";
+            isOraParamElement75.OraDbTypeString = "NUMBER";
+            isOraParamElement75.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement75.ParamName = "W_SOB_ID";
+            isOraParamElement75.Size = 22;
             isOraParamElement75.SourceColumn = null;
-            isOraParamElement76.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement76.MemberControl = null;
-            isOraParamElement76.MemberValue = null;
+            isOraParamElement76.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement76.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement76.MemberValue = "ORG_ID";
             isOraParamElement76.OraDbTypeString = "NUMBER";
             isOraParamElement76.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement76.ParamName = "O_DEPT_CONTROL_LEVEL";
+            isOraParamElement76.ParamName = "W_ORG_ID";
             isOraParamElement76.Size = 22;
             isOraParamElement76.SourceColumn = null;
+            isOraParamElement77.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement77.MemberControl = null;
+            isOraParamElement77.MemberValue = null;
+            isOraParamElement77.OraDbTypeString = "NUMBER";
+            isOraParamElement77.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement77.ParamName = "O_CORP_ID";
+            isOraParamElement77.Size = 22;
+            isOraParamElement77.SourceColumn = null;
+            isOraParamElement78.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement78.MemberControl = null;
+            isOraParamElement78.MemberValue = null;
+            isOraParamElement78.OraDbTypeString = "VARCHAR2";
+            isOraParamElement78.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement78.ParamName = "O_CORP_NAME";
+            isOraParamElement78.Size = 70;
+            isOraParamElement78.SourceColumn = null;
+            isOraParamElement79.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement79.MemberControl = null;
+            isOraParamElement79.MemberValue = null;
+            isOraParamElement79.OraDbTypeString = "NUMBER";
+            isOraParamElement79.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement79.ParamName = "O_DEPT_CONTROL_LEVEL";
+            isOraParamElement79.Size = 22;
+            isOraParamElement79.SourceColumn = null;
             this.idcDEFAULT_CORP.CommandParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement67,
-            isOraParamElement68,
-            isOraParamElement69,
             isOraParamElement70,
             isOraParamElement71,
             isOraParamElement72,
             isOraParamElement73,
             isOraParamElement74,
             isOraParamElement75,
-            isOraParamElement76});
+            isOraParamElement76,
+            isOraParamElement77,
+            isOraParamElement78,
+            isOraParamElement79});
             this.idcDEFAULT_CORP.DataTransaction = null;
             this.idcDEFAULT_CORP.OraConnection = this.isOraConnection1;
             this.idcDEFAULT_CORP.OraOwner = "APPS";
@@ -7210,149 +7287,102 @@
             // 
             // IDC_PRINTED_VALUE
             // 
-            isOraParamElement77.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement77.MemberControl = this.CORP_ID_0;
-            isOraParamElement77.MemberValue = "EditValue";
-            isOraParamElement77.OraDbTypeString = "NUMBER";
-            isOraParamElement77.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement77.ParamName = "P_CORP_ID";
-            isOraParamElement77.Size = 22;
-            isOraParamElement77.SourceColumn = null;
-            isOraParamElement78.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement78.MemberControl = this.START_YYYYMM_0;
-            isOraParamElement78.MemberValue = "EditValue";
-            isOraParamElement78.OraDbTypeString = "DATE";
-            isOraParamElement78.OraType = System.Data.OracleClient.OracleType.DateTime;
-            isOraParamElement78.ParamName = "P_DATE_FR";
-            isOraParamElement78.Size = 0;
-            isOraParamElement78.SourceColumn = null;
-            isOraParamElement79.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement79.MemberControl = this.END_YYYYMM_0;
-            isOraParamElement79.MemberValue = "EditValue";
-            isOraParamElement79.OraDbTypeString = "DATE";
-            isOraParamElement79.OraType = System.Data.OracleClient.OracleType.DateTime;
-            isOraParamElement79.ParamName = "P_DATE_TO";
-            isOraParamElement79.Size = 0;
-            isOraParamElement79.SourceColumn = null;
             isOraParamElement80.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement80.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement80.MemberValue = "SOB_ID";
+            isOraParamElement80.MemberControl = this.CORP_ID_0;
+            isOraParamElement80.MemberValue = "EditValue";
             isOraParamElement80.OraDbTypeString = "NUMBER";
             isOraParamElement80.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement80.ParamName = "P_SOB_ID";
+            isOraParamElement80.ParamName = "P_CORP_ID";
             isOraParamElement80.Size = 22;
             isOraParamElement80.SourceColumn = null;
             isOraParamElement81.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement81.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement81.MemberValue = "ORG_ID";
-            isOraParamElement81.OraDbTypeString = "NUMBER";
-            isOraParamElement81.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement81.ParamName = "P_ORG_ID";
-            isOraParamElement81.Size = 22;
+            isOraParamElement81.MemberControl = this.START_YYYYMM_0;
+            isOraParamElement81.MemberValue = "EditValue";
+            isOraParamElement81.OraDbTypeString = "DATE";
+            isOraParamElement81.OraType = System.Data.OracleClient.OracleType.DateTime;
+            isOraParamElement81.ParamName = "P_DATE_FR";
+            isOraParamElement81.Size = 0;
             isOraParamElement81.SourceColumn = null;
             isOraParamElement82.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement82.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement82.MemberValue = "PERSON_ID";
-            isOraParamElement82.OraDbTypeString = "NUMBER";
-            isOraParamElement82.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement82.ParamName = "P_CONNECT_PERSON_ID";
-            isOraParamElement82.Size = 22;
+            isOraParamElement82.MemberControl = this.END_YYYYMM_0;
+            isOraParamElement82.MemberValue = "EditValue";
+            isOraParamElement82.OraDbTypeString = "DATE";
+            isOraParamElement82.OraType = System.Data.OracleClient.OracleType.DateTime;
+            isOraParamElement82.ParamName = "P_DATE_TO";
+            isOraParamElement82.Size = 0;
             isOraParamElement82.SourceColumn = null;
-            isOraParamElement83.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement83.MemberControl = null;
-            isOraParamElement83.MemberValue = null;
-            isOraParamElement83.OraDbTypeString = "VARCHAR2";
-            isOraParamElement83.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement83.ParamName = "O_CORP_NAME";
-            isOraParamElement83.Size = 0;
+            isOraParamElement83.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement83.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement83.MemberValue = "SOB_ID";
+            isOraParamElement83.OraDbTypeString = "NUMBER";
+            isOraParamElement83.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement83.ParamName = "P_SOB_ID";
+            isOraParamElement83.Size = 22;
             isOraParamElement83.SourceColumn = null;
-            isOraParamElement84.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement84.MemberControl = null;
-            isOraParamElement84.MemberValue = null;
-            isOraParamElement84.OraDbTypeString = "VARCHAR2";
-            isOraParamElement84.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement84.ParamName = "O_PERIOD_DATE";
-            isOraParamElement84.Size = 0;
+            isOraParamElement84.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement84.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement84.MemberValue = "ORG_ID";
+            isOraParamElement84.OraDbTypeString = "NUMBER";
+            isOraParamElement84.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement84.ParamName = "P_ORG_ID";
+            isOraParamElement84.Size = 22;
             isOraParamElement84.SourceColumn = null;
-            isOraParamElement85.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement85.MemberControl = null;
-            isOraParamElement85.MemberValue = null;
-            isOraParamElement85.OraDbTypeString = "VARCHAR2";
-            isOraParamElement85.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement85.ParamName = "O_PRINTED_DATE";
-            isOraParamElement85.Size = 0;
+            isOraParamElement85.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement85.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement85.MemberValue = "PERSON_ID";
+            isOraParamElement85.OraDbTypeString = "NUMBER";
+            isOraParamElement85.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement85.ParamName = "P_CONNECT_PERSON_ID";
+            isOraParamElement85.Size = 22;
             isOraParamElement85.SourceColumn = null;
             isOraParamElement86.Direction = System.Data.ParameterDirection.Output;
             isOraParamElement86.MemberControl = null;
             isOraParamElement86.MemberValue = null;
             isOraParamElement86.OraDbTypeString = "VARCHAR2";
             isOraParamElement86.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement86.ParamName = "O_PRINTED_BY";
+            isOraParamElement86.ParamName = "O_CORP_NAME";
             isOraParamElement86.Size = 0;
             isOraParamElement86.SourceColumn = null;
+            isOraParamElement87.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement87.MemberControl = null;
+            isOraParamElement87.MemberValue = null;
+            isOraParamElement87.OraDbTypeString = "VARCHAR2";
+            isOraParamElement87.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement87.ParamName = "O_PERIOD_DATE";
+            isOraParamElement87.Size = 0;
+            isOraParamElement87.SourceColumn = null;
+            isOraParamElement88.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement88.MemberControl = null;
+            isOraParamElement88.MemberValue = null;
+            isOraParamElement88.OraDbTypeString = "VARCHAR2";
+            isOraParamElement88.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement88.ParamName = "O_PRINTED_DATE";
+            isOraParamElement88.Size = 0;
+            isOraParamElement88.SourceColumn = null;
+            isOraParamElement89.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement89.MemberControl = null;
+            isOraParamElement89.MemberValue = null;
+            isOraParamElement89.OraDbTypeString = "VARCHAR2";
+            isOraParamElement89.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement89.ParamName = "O_PRINTED_BY";
+            isOraParamElement89.Size = 0;
+            isOraParamElement89.SourceColumn = null;
             this.IDC_PRINTED_VALUE.CommandParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement77,
-            isOraParamElement78,
-            isOraParamElement79,
             isOraParamElement80,
             isOraParamElement81,
             isOraParamElement82,
             isOraParamElement83,
             isOraParamElement84,
             isOraParamElement85,
-            isOraParamElement86});
+            isOraParamElement86,
+            isOraParamElement87,
+            isOraParamElement88,
+            isOraParamElement89});
             this.IDC_PRINTED_VALUE.DataTransaction = null;
             this.IDC_PRINTED_VALUE.OraConnection = this.isOraConnection1;
             this.IDC_PRINTED_VALUE.OraOwner = "APPS";
             this.IDC_PRINTED_VALUE.OraPackage = "HRM_COMMON_G";
             this.IDC_PRINTED_VALUE.OraProcedure = "PRINTED_VALUE1";
-            // 
-            // PERSON_NUM_0
-            // 
-            this.PERSON_NUM_0.AppInterfaceAdv = this.isAppInterfaceAdv1;
-            this.PERSON_NUM_0.ComboBoxValue = "";
-            this.PERSON_NUM_0.ComboData = null;
-            this.PERSON_NUM_0.CurrencyValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.PERSON_NUM_0.DataAdapter = null;
-            this.PERSON_NUM_0.DataColumn = null;
-            this.PERSON_NUM_0.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
-            this.PERSON_NUM_0.DoubleValue = 0D;
-            this.PERSON_NUM_0.EditValue = "";
-            this.PERSON_NUM_0.Location = new System.Drawing.Point(860, 54);
-            this.PERSON_NUM_0.LookupAdapter = null;
-            this.PERSON_NUM_0.Name = "PERSON_NUM_0";
-            this.PERSON_NUM_0.Nullable = true;
-            this.PERSON_NUM_0.NumberValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.PERSON_NUM_0.PercentValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.PERSON_NUM_0.PromptText = "Person ID";
-            isLanguageElement1.Default = "Person ID";
-            isLanguageElement1.SiteName = null;
-            isLanguageElement1.TL1_KR = "사원 ID";
-            isLanguageElement1.TL2_CN = "";
-            isLanguageElement1.TL3_VN = "";
-            isLanguageElement1.TL4_JP = "";
-            isLanguageElement1.TL5_XAA = "";
-            this.PERSON_NUM_0.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement1});
-            this.PERSON_NUM_0.PromptVisible = false;
-            this.PERSON_NUM_0.PromptWidth = 80;
-            this.PERSON_NUM_0.ReadOnly = true;
-            this.PERSON_NUM_0.Size = new System.Drawing.Size(80, 21);
-            this.PERSON_NUM_0.TabIndex = 191;
-            this.PERSON_NUM_0.TabStop = false;
-            this.PERSON_NUM_0.TextValue = "";
             this.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.igrPERSON.BaseGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ilaSTART_YYYYMM_0.PropSourceDataTable)).EndInit();

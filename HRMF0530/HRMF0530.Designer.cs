@@ -152,6 +152,11 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement66 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement67 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement68 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle9 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle10 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle11 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle12 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle20 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement13 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement13 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement14 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
@@ -182,6 +187,11 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement27 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement31 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement30 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle13 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle14 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle15 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle16 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle21 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement18 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement18 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement19 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
@@ -228,6 +238,76 @@
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement35 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement36 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement37 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle17 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle18 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle19 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle20 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle22 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement27 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement27 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement28 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement28 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement29 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement29 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement30 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement30 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement29 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement30 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement31 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement32 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement30 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement31 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement32 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement33 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement38 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement39 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement40 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement41 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement42 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement43 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement44 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement45 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement46 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement35 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement36 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement37 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle21 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle22 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle23 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle24 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle23 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement31 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement31 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement32 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement32 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement33 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement33 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement34 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement34 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement35 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement35 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement36 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
+            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement36 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement33 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement34 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement35 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement36 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement37 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement38 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement34 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement35 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement36 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement37 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement38 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement39 = new InfoSummit.Win.ControlAdv.ISOraColElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement47 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement48 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement49 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement50 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement51 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement52 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement53 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
+            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement54 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement3 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement4 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
             InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement5 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
@@ -282,6 +362,22 @@
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement46 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement1 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement5 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle1 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle2 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle3 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle4 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle1 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle2 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle3 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle4 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle5 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle6 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle7 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle8 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle9 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle10 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle11 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle12 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement1 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement1 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement2 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
@@ -300,6 +396,17 @@
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement8 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement28 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement29 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle5 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle6 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle7 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridBaseStyle gridBaseStyle8 = new Syncfusion.Windows.Forms.Grid.GridBaseStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle13 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle14 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle15 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle16 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle17 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle18 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
+            Syncfusion.Windows.Forms.Grid.GridRangeStyle gridRangeStyle19 = new Syncfusion.Windows.Forms.Grid.GridRangeStyle();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement9 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement9 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
             InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement10 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
@@ -311,72 +418,12 @@
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement32 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement33 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement34 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement37 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement36 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement39 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement38 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement27 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement27 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement28 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement28 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement29 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement29 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement30 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement30 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement39 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement40 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement31 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement31 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement32 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement32 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement33 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement33 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement34 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement34 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement35 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement35 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExColElement isGridAdvExColElement36 = new InfoSummit.Win.ControlAdv.ISGridAdvExColElement();
-            InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement isGridAdvExTLHeaderElement36 = new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement();
-            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement29 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
-            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement30 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
-            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement31 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
-            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement32 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement30 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement31 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement32 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement33 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement38 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement39 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement40 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement41 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement42 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement43 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement44 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement45 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement46 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement33 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
-            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement34 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
-            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement35 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
-            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement36 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
-            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement37 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
-            InfoSummit.Win.ControlAdv.ISOraBindingElement isOraBindingElement38 = new InfoSummit.Win.ControlAdv.ISOraBindingElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement34 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement35 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement36 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement37 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement38 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraColElement isOraColElement39 = new InfoSummit.Win.ControlAdv.ISOraColElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement47 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement48 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement49 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement50 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement51 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement52 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement53 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISOraParamElement isOraParamElement54 = new InfoSummit.Win.ControlAdv.ISOraParamElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement43 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement42 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
-            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement35 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement41 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement42 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
+            InfoSummit.Win.ControlAdv.ISLanguageElement isLanguageElement43 = new InfoSummit.Win.ControlAdv.ISLanguageElement();
             this.ADMINISTRATIVE_COUNT = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.isAppInterfaceAdv1 = new InfoSummit.Win.ControlAdv.ISAppInterfaceAdv(this.components);
             this.IDA_SALARY_CLOSED = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
@@ -421,6 +468,13 @@
             this.W_AMOUNT_TO = new InfoSummit.Win.ControlAdv.ISEditAdv();
             this.IGR_SALARY_ITEM_DETAIL = new InfoSummit.Win.ControlAdv.ISGridAdvEx();
             this.IDA_SALARY_ITEM_DETAIL = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
+            this.IGR_SALARY_TOTAL_AMOUNT = new InfoSummit.Win.ControlAdv.ISGridAdvEx();
+            this.IDA_SALARY_TOTAL_AMOUNT = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
+            this.W2_ALLOWANCE_TYPE = new InfoSummit.Win.ControlAdv.ISEditAdv();
+            this.W2_AMOUNT_FR = new InfoSummit.Win.ControlAdv.ISEditAdv();
+            this.W2_AMOUNT_TO = new InfoSummit.Win.ControlAdv.ISEditAdv();
+            this.IGR_SALARY_TOTAL_DETAIL = new InfoSummit.Win.ControlAdv.ISGridAdvEx();
+            this.IDA_SALARY_TOTAL_DETAIL = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
             this.IDA_SALARY_DETAIL = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
             this.isMessageAdapter1 = new InfoSummit.Win.ControlAdv.ISMessageAdapter(this.components);
             this.igbCONDITION = new InfoSummit.Win.ControlAdv.ISGroupBox();
@@ -441,24 +495,21 @@
             this.isGroupBox3 = new InfoSummit.Win.ControlAdv.ISGroupBox();
             this.isGroupBox4 = new InfoSummit.Win.ControlAdv.ISGroupBox();
             this.TP_TOTAL_VALIDATE = new Syncfusion.Windows.Forms.Tools.TabPageAdv();
-            this.W2_AMOUNT_TO = new InfoSummit.Win.ControlAdv.ISEditAdv();
-            this.W2_AMOUNT_FR = new InfoSummit.Win.ControlAdv.ISEditAdv();
-            this.PT_TITLE_2 = new InfoSummit.Win.ControlAdv.ISPrompt();
-            this.isGroupBox5 = new InfoSummit.Win.ControlAdv.ISGroupBox();
-            this.IGR_SALARY_TOTAL_AMOUNT = new InfoSummit.Win.ControlAdv.ISGridAdvEx();
-            this.isGroupBox6 = new InfoSummit.Win.ControlAdv.ISGroupBox();
-            this.IGR_SALARY_TOTAL_DETAIL = new InfoSummit.Win.ControlAdv.ISGridAdvEx();
-            this.IDA_SALARY_TOTAL_AMOUNT = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
-            this.IDA_SALARY_TOTAL_DETAIL = new InfoSummit.Win.ControlAdv.ISDataAdapter(this.components);
-            this.W2_RB_ALLOWANCE_A = new InfoSummit.Win.ControlAdv.ISRadioButtonAdv();
-            this.W2_RB_ALLOWANCE_D = new InfoSummit.Win.ControlAdv.ISRadioButtonAdv();
-            this.W2_ALLOWANCE_TYPE = new InfoSummit.Win.ControlAdv.ISEditAdv();
-            this.isPrompt2 = new InfoSummit.Win.ControlAdv.ISPrompt();
             this.splitContainerAdv2 = new Syncfusion.Windows.Forms.Tools.SplitContainerAdv();
+            this.isGroupBox5 = new InfoSummit.Win.ControlAdv.ISGroupBox();
+            this.PT_TITLE_2 = new InfoSummit.Win.ControlAdv.ISPrompt();
+            this.isGroupBox6 = new InfoSummit.Win.ControlAdv.ISGroupBox();
+            this.isPrompt2 = new InfoSummit.Win.ControlAdv.ISPrompt();
+            this.W2_RB_ALLOWANCE_D = new InfoSummit.Win.ControlAdv.ISRadioButtonAdv();
+            this.W2_RB_ALLOWANCE_A = new InfoSummit.Win.ControlAdv.ISRadioButtonAdv();
             this.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ilaYYYYMM_0.PropSourceDataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ilaCORP_0.PropSourceDataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ilaWAGE_TYPE_0.PropSourceDataTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_SALARY_ITEM_AMOUNT.BaseGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_SALARY_ITEM_DETAIL.BaseGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_SALARY_TOTAL_DETAIL.BaseGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.igbCONDITION)).BeginInit();
             this.igbCONDITION.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TB_MAIN)).BeginInit();
@@ -466,6 +517,7 @@
             this.TP_CHECK.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GB_DETAIL)).BeginInit();
             this.GB_DETAIL.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_PREVIOUS_DETAIL.BaseGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerAdv1)).BeginInit();
             this.splitContainerAdv1.Panel1.SuspendLayout();
             this.splitContainerAdv1.Panel2.SuspendLayout();
@@ -474,22 +526,23 @@
             this.isGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.isGroupBox2)).BeginInit();
             this.isGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_SALARY_ITEM.BaseGrid)).BeginInit();
             this.TP_ITEM_VALIDATE.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.isGroupBox3)).BeginInit();
             this.isGroupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.isGroupBox4)).BeginInit();
             this.isGroupBox4.SuspendLayout();
             this.TP_TOTAL_VALIDATE.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.isGroupBox5)).BeginInit();
-            this.isGroupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.isGroupBox6)).BeginInit();
-            this.isGroupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.W2_RB_ALLOWANCE_A)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.W2_RB_ALLOWANCE_D)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerAdv2)).BeginInit();
             this.splitContainerAdv2.Panel1.SuspendLayout();
             this.splitContainerAdv2.Panel2.SuspendLayout();
             this.splitContainerAdv2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.isGroupBox5)).BeginInit();
+            this.isGroupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.isGroupBox6)).BeginInit();
+            this.isGroupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.W2_RB_ALLOWANCE_D)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.W2_RB_ALLOWANCE_A)).BeginInit();
             // 
             // ADMINISTRATIVE_COUNT
             // 
@@ -504,9 +557,8 @@
             this.ADMINISTRATIVE_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.ADMINISTRATIVE_COUNT.DataColumn = "ADMINISTRATIVE_COUNT";
             this.ADMINISTRATIVE_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.ADMINISTRATIVE_COUNT.DoubleValue = 0;
-            this.ADMINISTRATIVE_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.ADMINISTRATIVE_COUNT.EditValue = null;
+            this.ADMINISTRATIVE_COUNT.DoubleValue = 0D;
+            this.ADMINISTRATIVE_COUNT.EditValue = "";
             this.ADMINISTRATIVE_COUNT.ForeColor = System.Drawing.Color.Blue;
             this.ADMINISTRATIVE_COUNT.Insertable = false;
             this.ADMINISTRATIVE_COUNT.Location = new System.Drawing.Point(6, 68);
@@ -1240,9 +1292,8 @@
             this.GAP_ALLOWANCE_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.GAP_ALLOWANCE_COUNT.DataColumn = "GAP_ALLOWANCE_COUNT";
             this.GAP_ALLOWANCE_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.GAP_ALLOWANCE_COUNT.DoubleValue = 0;
-            this.GAP_ALLOWANCE_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.GAP_ALLOWANCE_COUNT.EditValue = null;
+            this.GAP_ALLOWANCE_COUNT.DoubleValue = 0D;
+            this.GAP_ALLOWANCE_COUNT.EditValue = "";
             this.GAP_ALLOWANCE_COUNT.ForeColor = System.Drawing.Color.Blue;
             // 
             // HRMF0530
@@ -1306,9 +1357,8 @@
             this.GAP_DEDUCTION_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.GAP_DEDUCTION_COUNT.DataColumn = "GAP_DEDUCTION_COUNT";
             this.GAP_DEDUCTION_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.GAP_DEDUCTION_COUNT.DoubleValue = 0;
-            this.GAP_DEDUCTION_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.GAP_DEDUCTION_COUNT.EditValue = null;
+            this.GAP_DEDUCTION_COUNT.DoubleValue = 0D;
+            this.GAP_DEDUCTION_COUNT.EditValue = "";
             this.GAP_DEDUCTION_COUNT.ForeColor = System.Drawing.Color.Blue;
             this.GAP_DEDUCTION_COUNT.Insertable = false;
             this.GAP_DEDUCTION_COUNT.Location = new System.Drawing.Point(229, 287);
@@ -1357,9 +1407,8 @@
             this.GAP_MONTH_CLOSED_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.GAP_MONTH_CLOSED_COUNT.DataColumn = "GAP_MONTH_CLOSED_COUNT";
             this.GAP_MONTH_CLOSED_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.GAP_MONTH_CLOSED_COUNT.DoubleValue = 0;
-            this.GAP_MONTH_CLOSED_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.GAP_MONTH_CLOSED_COUNT.EditValue = null;
+            this.GAP_MONTH_CLOSED_COUNT.DoubleValue = 0D;
+            this.GAP_MONTH_CLOSED_COUNT.EditValue = "";
             this.GAP_MONTH_CLOSED_COUNT.ForeColor = System.Drawing.Color.Red;
             this.GAP_MONTH_CLOSED_COUNT.Insertable = false;
             this.GAP_MONTH_CLOSED_COUNT.Location = new System.Drawing.Point(229, 243);
@@ -1408,9 +1457,8 @@
             this.GAP_REAL_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.GAP_REAL_COUNT.DataColumn = "GAP_REAL_COUNT";
             this.GAP_REAL_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.GAP_REAL_COUNT.DoubleValue = 0;
-            this.GAP_REAL_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.GAP_REAL_COUNT.EditValue = null;
+            this.GAP_REAL_COUNT.DoubleValue = 0D;
+            this.GAP_REAL_COUNT.EditValue = "";
             this.GAP_REAL_COUNT.ForeColor = System.Drawing.Color.Blue;
             this.GAP_REAL_COUNT.Insertable = false;
             this.GAP_REAL_COUNT.Location = new System.Drawing.Point(229, 266);
@@ -1459,9 +1507,8 @@
             this.MONTH_CLOSED_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.MONTH_CLOSED_COUNT.DataColumn = "MONTH_CLOSED_COUNT";
             this.MONTH_CLOSED_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.MONTH_CLOSED_COUNT.DoubleValue = 0;
-            this.MONTH_CLOSED_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.MONTH_CLOSED_COUNT.EditValue = null;
+            this.MONTH_CLOSED_COUNT.DoubleValue = 0D;
+            this.MONTH_CLOSED_COUNT.EditValue = "";
             this.MONTH_CLOSED_COUNT.ForeColor = System.Drawing.Color.Red;
             this.MONTH_CLOSED_COUNT.Insertable = false;
             this.MONTH_CLOSED_COUNT.Location = new System.Drawing.Point(229, 222);
@@ -1510,9 +1557,8 @@
             this.MONTH_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.MONTH_COUNT.DataColumn = "MONTH_COUNT";
             this.MONTH_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.MONTH_COUNT.DoubleValue = 0;
-            this.MONTH_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.MONTH_COUNT.EditValue = null;
+            this.MONTH_COUNT.DoubleValue = 0D;
+            this.MONTH_COUNT.EditValue = "";
             this.MONTH_COUNT.ForeColor = System.Drawing.Color.Red;
             this.MONTH_COUNT.Insertable = false;
             this.MONTH_COUNT.Location = new System.Drawing.Point(6, 222);
@@ -1561,9 +1607,8 @@
             this.NG_PAY_TYPE_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.NG_PAY_TYPE_COUNT.DataColumn = "NG_PAY_TYPE_COUNT";
             this.NG_PAY_TYPE_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.NG_PAY_TYPE_COUNT.DoubleValue = 0;
-            this.NG_PAY_TYPE_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.NG_PAY_TYPE_COUNT.EditValue = null;
+            this.NG_PAY_TYPE_COUNT.DoubleValue = 0D;
+            this.NG_PAY_TYPE_COUNT.EditValue = "";
             this.NG_PAY_TYPE_COUNT.ForeColor = System.Drawing.Color.Red;
             this.NG_PAY_TYPE_COUNT.Insertable = false;
             this.NG_PAY_TYPE_COUNT.Location = new System.Drawing.Point(229, 91);
@@ -1612,9 +1657,8 @@
             this.NO_BANK_ACCOUNTS_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.NO_BANK_ACCOUNTS_COUNT.DataColumn = "NO_BANK_ACCOUNTS_COUNT";
             this.NO_BANK_ACCOUNTS_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.NO_BANK_ACCOUNTS_COUNT.DoubleValue = 0;
-            this.NO_BANK_ACCOUNTS_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.NO_BANK_ACCOUNTS_COUNT.EditValue = null;
+            this.NO_BANK_ACCOUNTS_COUNT.DoubleValue = 0D;
+            this.NO_BANK_ACCOUNTS_COUNT.EditValue = "";
             this.NO_BANK_ACCOUNTS_COUNT.ForeColor = System.Drawing.Color.Red;
             this.NO_BANK_ACCOUNTS_COUNT.Insertable = false;
             this.NO_BANK_ACCOUNTS_COUNT.Location = new System.Drawing.Point(229, 112);
@@ -1663,9 +1707,8 @@
             this.NO_BONUS_PROVIDE_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.NO_BONUS_PROVIDE_COUNT.DataColumn = "NO_BONUS_PROVIDE_COUNT";
             this.NO_BONUS_PROVIDE_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.NO_BONUS_PROVIDE_COUNT.DoubleValue = 0;
-            this.NO_BONUS_PROVIDE_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.NO_BONUS_PROVIDE_COUNT.EditValue = null;
+            this.NO_BONUS_PROVIDE_COUNT.DoubleValue = 0D;
+            this.NO_BONUS_PROVIDE_COUNT.EditValue = "";
             this.NO_BONUS_PROVIDE_COUNT.ForeColor = System.Drawing.Color.Red;
             this.NO_BONUS_PROVIDE_COUNT.Insertable = false;
             this.NO_BONUS_PROVIDE_COUNT.Location = new System.Drawing.Point(229, 133);
@@ -1714,9 +1757,8 @@
             this.NO_HIRE_INSUR_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.NO_HIRE_INSUR_COUNT.DataColumn = "NO_HIRE_INSUR_COUNT";
             this.NO_HIRE_INSUR_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.NO_HIRE_INSUR_COUNT.DoubleValue = 0;
-            this.NO_HIRE_INSUR_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.NO_HIRE_INSUR_COUNT.EditValue = null;
+            this.NO_HIRE_INSUR_COUNT.DoubleValue = 0D;
+            this.NO_HIRE_INSUR_COUNT.EditValue = "";
             this.NO_HIRE_INSUR_COUNT.ForeColor = System.Drawing.Color.Blue;
             this.NO_HIRE_INSUR_COUNT.Insertable = false;
             this.NO_HIRE_INSUR_COUNT.Location = new System.Drawing.Point(6, 177);
@@ -1765,9 +1807,8 @@
             this.NO_MEDIC_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.NO_MEDIC_COUNT.DataColumn = "NO_MEDIC_COUNT";
             this.NO_MEDIC_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.NO_MEDIC_COUNT.DoubleValue = 0;
-            this.NO_MEDIC_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.NO_MEDIC_COUNT.EditValue = null;
+            this.NO_MEDIC_COUNT.DoubleValue = 0D;
+            this.NO_MEDIC_COUNT.EditValue = "";
             this.NO_MEDIC_COUNT.ForeColor = System.Drawing.Color.Blue;
             this.NO_MEDIC_COUNT.Insertable = false;
             this.NO_MEDIC_COUNT.Location = new System.Drawing.Point(6, 198);
@@ -1816,9 +1857,8 @@
             this.NO_MONTH_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.NO_MONTH_COUNT.DataColumn = "NO_MONTH_COUNT";
             this.NO_MONTH_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.NO_MONTH_COUNT.DoubleValue = 0;
-            this.NO_MONTH_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.NO_MONTH_COUNT.EditValue = null;
+            this.NO_MONTH_COUNT.DoubleValue = 0D;
+            this.NO_MONTH_COUNT.EditValue = "";
             this.NO_MONTH_COUNT.ForeColor = System.Drawing.Color.Red;
             this.NO_MONTH_COUNT.Insertable = false;
             this.NO_MONTH_COUNT.Location = new System.Drawing.Point(239, 201);
@@ -1867,9 +1907,8 @@
             this.NO_PAY_ITEM_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.NO_PAY_ITEM_COUNT.DataColumn = "NO_PAY_ITEM_COUNT";
             this.NO_PAY_ITEM_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.NO_PAY_ITEM_COUNT.DoubleValue = 0;
-            this.NO_PAY_ITEM_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.NO_PAY_ITEM_COUNT.EditValue = null;
+            this.NO_PAY_ITEM_COUNT.DoubleValue = 0D;
+            this.NO_PAY_ITEM_COUNT.EditValue = "";
             this.NO_PAY_ITEM_COUNT.ForeColor = System.Drawing.Color.Red;
             this.NO_PAY_ITEM_COUNT.Insertable = false;
             this.NO_PAY_ITEM_COUNT.Location = new System.Drawing.Point(6, 112);
@@ -1918,9 +1957,8 @@
             this.NO_PAY_MASTER_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.NO_PAY_MASTER_COUNT.DataColumn = "NO_PAY_MASTER_COUNT";
             this.NO_PAY_MASTER_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.NO_PAY_MASTER_COUNT.DoubleValue = 0;
-            this.NO_PAY_MASTER_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.NO_PAY_MASTER_COUNT.EditValue = null;
+            this.NO_PAY_MASTER_COUNT.DoubleValue = 0D;
+            this.NO_PAY_MASTER_COUNT.EditValue = "";
             this.NO_PAY_MASTER_COUNT.ForeColor = System.Drawing.Color.Red;
             this.NO_PAY_MASTER_COUNT.Insertable = false;
             this.NO_PAY_MASTER_COUNT.Location = new System.Drawing.Point(6, 91);
@@ -1969,9 +2007,8 @@
             this.NO_PAY_PROVIDE_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.NO_PAY_PROVIDE_COUNT.DataColumn = "NO_PAY_PROVIDE_COUNT";
             this.NO_PAY_PROVIDE_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.NO_PAY_PROVIDE_COUNT.DoubleValue = 0;
-            this.NO_PAY_PROVIDE_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.NO_PAY_PROVIDE_COUNT.EditValue = null;
+            this.NO_PAY_PROVIDE_COUNT.DoubleValue = 0D;
+            this.NO_PAY_PROVIDE_COUNT.EditValue = "";
             this.NO_PAY_PROVIDE_COUNT.ForeColor = System.Drawing.Color.Red;
             this.NO_PAY_PROVIDE_COUNT.Insertable = false;
             this.NO_PAY_PROVIDE_COUNT.Location = new System.Drawing.Point(6, 133);
@@ -2020,9 +2057,8 @@
             this.NO_PENSION_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.NO_PENSION_COUNT.DataColumn = "NO_PENSION_COUNT";
             this.NO_PENSION_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.NO_PENSION_COUNT.DoubleValue = 0;
-            this.NO_PENSION_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.NO_PENSION_COUNT.EditValue = null;
+            this.NO_PENSION_COUNT.DoubleValue = 0D;
+            this.NO_PENSION_COUNT.EditValue = "";
             this.NO_PENSION_COUNT.ForeColor = System.Drawing.Color.Blue;
             this.NO_PENSION_COUNT.Insertable = false;
             this.NO_PENSION_COUNT.Location = new System.Drawing.Point(229, 177);
@@ -2071,9 +2107,8 @@
             this.NO_SALARY_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.NO_SALARY_COUNT.DataColumn = "NO_SALARY_COUNT";
             this.NO_SALARY_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.NO_SALARY_COUNT.DoubleValue = 0;
-            this.NO_SALARY_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.NO_SALARY_COUNT.EditValue = null;
+            this.NO_SALARY_COUNT.DoubleValue = 0D;
+            this.NO_SALARY_COUNT.EditValue = "";
             this.NO_SALARY_COUNT.ForeColor = System.Drawing.Color.Blue;
             this.NO_SALARY_COUNT.Insertable = false;
             this.NO_SALARY_COUNT.Location = new System.Drawing.Point(6, 266);
@@ -2122,9 +2157,8 @@
             this.NO_YEAR_PROVIDE_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.NO_YEAR_PROVIDE_COUNT.DataColumn = "NO_YEAR_PROVIDE_COUNT";
             this.NO_YEAR_PROVIDE_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.NO_YEAR_PROVIDE_COUNT.DoubleValue = 0;
-            this.NO_YEAR_PROVIDE_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.NO_YEAR_PROVIDE_COUNT.EditValue = null;
+            this.NO_YEAR_PROVIDE_COUNT.DoubleValue = 0D;
+            this.NO_YEAR_PROVIDE_COUNT.EditValue = "";
             this.NO_YEAR_PROVIDE_COUNT.ForeColor = System.Drawing.Color.Red;
             this.NO_YEAR_PROVIDE_COUNT.Insertable = false;
             this.NO_YEAR_PROVIDE_COUNT.Location = new System.Drawing.Point(6, 154);
@@ -2173,9 +2207,8 @@
             this.PERSON_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.PERSON_COUNT.DataColumn = "PERSON_COUNT";
             this.PERSON_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.PERSON_COUNT.DoubleValue = 0;
-            this.PERSON_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.PERSON_COUNT.EditValue = null;
+            this.PERSON_COUNT.DoubleValue = 0D;
+            this.PERSON_COUNT.EditValue = "";
             this.PERSON_COUNT.Insertable = false;
             this.PERSON_COUNT.Location = new System.Drawing.Point(6, 26);
             this.PERSON_COUNT.LookupAdapter = null;
@@ -2222,9 +2255,8 @@
             this.PERSON_JOIN_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.PERSON_JOIN_COUNT.DataColumn = "PERSON_JOIN_COUNT";
             this.PERSON_JOIN_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.PERSON_JOIN_COUNT.DoubleValue = 0;
-            this.PERSON_JOIN_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.PERSON_JOIN_COUNT.EditValue = null;
+            this.PERSON_JOIN_COUNT.DoubleValue = 0D;
+            this.PERSON_JOIN_COUNT.EditValue = "";
             this.PERSON_JOIN_COUNT.ForeColor = System.Drawing.Color.Blue;
             this.PERSON_JOIN_COUNT.Insertable = false;
             this.PERSON_JOIN_COUNT.Location = new System.Drawing.Point(6, 47);
@@ -2273,9 +2305,8 @@
             this.PERSON_PROMOTION_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.PERSON_PROMOTION_COUNT.DataColumn = "PERSON_PROMOTION_COUNT";
             this.PERSON_PROMOTION_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.PERSON_PROMOTION_COUNT.DoubleValue = 0;
-            this.PERSON_PROMOTION_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.PERSON_PROMOTION_COUNT.EditValue = null;
+            this.PERSON_PROMOTION_COUNT.DoubleValue = 0D;
+            this.PERSON_PROMOTION_COUNT.EditValue = "";
             this.PERSON_PROMOTION_COUNT.ForeColor = System.Drawing.Color.Blue;
             this.PERSON_PROMOTION_COUNT.Insertable = false;
             this.PERSON_PROMOTION_COUNT.Location = new System.Drawing.Point(229, 68);
@@ -2324,9 +2355,8 @@
             this.PERSON_RETIRE_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.PERSON_RETIRE_COUNT.DataColumn = "PERSON_RETIRE_COUNT";
             this.PERSON_RETIRE_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.PERSON_RETIRE_COUNT.DoubleValue = 0;
-            this.PERSON_RETIRE_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.PERSON_RETIRE_COUNT.EditValue = null;
+            this.PERSON_RETIRE_COUNT.DoubleValue = 0D;
+            this.PERSON_RETIRE_COUNT.EditValue = "";
             this.PERSON_RETIRE_COUNT.ForeColor = System.Drawing.Color.Blue;
             this.PERSON_RETIRE_COUNT.Insertable = false;
             this.PERSON_RETIRE_COUNT.Location = new System.Drawing.Point(229, 47);
@@ -2375,9 +2405,8 @@
             this.REAL_MINUS_COUNT.DataAdapter = this.IDA_SALARY_CLOSED;
             this.REAL_MINUS_COUNT.DataColumn = "REAL_MINUS_COUNT";
             this.REAL_MINUS_COUNT.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.REAL_MINUS_COUNT.DoubleValue = 0;
-            this.REAL_MINUS_COUNT.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.REAL_MINUS_COUNT.EditValue = null;
+            this.REAL_MINUS_COUNT.DoubleValue = 0D;
+            this.REAL_MINUS_COUNT.EditValue = "";
             this.REAL_MINUS_COUNT.ForeColor = System.Drawing.Color.Blue;
             this.REAL_MINUS_COUNT.Insertable = false;
             this.REAL_MINUS_COUNT.Location = new System.Drawing.Point(229, 308);
@@ -2436,7 +2465,7 @@
             this.W_CORP_ID.DataAdapter = null;
             this.W_CORP_ID.DataColumn = null;
             this.W_CORP_ID.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
-            this.W_CORP_ID.DoubleValue = 0;
+            this.W_CORP_ID.DoubleValue = 0D;
             this.W_CORP_ID.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
             this.W_CORP_ID.EditValue = null;
             this.W_CORP_ID.Location = new System.Drawing.Point(173, 32);
@@ -2484,7 +2513,7 @@
             this.W_PERIOD_NAME.DataAdapter = null;
             this.W_PERIOD_NAME.DataColumn = null;
             this.W_PERIOD_NAME.DateTimeValue = new System.DateTime(2010, 9, 14, 13, 24, 13, 140);
-            this.W_PERIOD_NAME.DoubleValue = 0;
+            this.W_PERIOD_NAME.DoubleValue = 0D;
             this.W_PERIOD_NAME.EditValue = "";
             this.W_PERIOD_NAME.Location = new System.Drawing.Point(325, 32);
             this.W_PERIOD_NAME.LookupAdapter = this.ilaYYYYMM_0;
@@ -2651,7 +2680,7 @@
             this.W_WAGE_TYPE.DataAdapter = null;
             this.W_WAGE_TYPE.DataColumn = null;
             this.W_WAGE_TYPE.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
-            this.W_WAGE_TYPE.DoubleValue = 0;
+            this.W_WAGE_TYPE.DoubleValue = 0D;
             this.W_WAGE_TYPE.EditValue = "";
             this.W_WAGE_TYPE.Location = new System.Drawing.Point(816, 32);
             this.W_WAGE_TYPE.LookupAdapter = null;
@@ -2698,7 +2727,7 @@
             this.W_CORP_DESC.DataAdapter = null;
             this.W_CORP_DESC.DataColumn = null;
             this.W_CORP_DESC.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
-            this.W_CORP_DESC.DoubleValue = 0;
+            this.W_CORP_DESC.DoubleValue = 0D;
             this.W_CORP_DESC.EditValue = "";
             this.W_CORP_DESC.Location = new System.Drawing.Point(10, 32);
             this.W_CORP_DESC.LookupAdapter = this.ilaCORP_0;
@@ -2912,7 +2941,7 @@
             this.W_WAGE_TYPE_DESC.DataAdapter = null;
             this.W_WAGE_TYPE_DESC.DataColumn = null;
             this.W_WAGE_TYPE_DESC.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
-            this.W_WAGE_TYPE_DESC.DoubleValue = 0;
+            this.W_WAGE_TYPE_DESC.DoubleValue = 0D;
             this.W_WAGE_TYPE_DESC.EditValue = "";
             this.W_WAGE_TYPE_DESC.Location = new System.Drawing.Point(634, 32);
             this.W_WAGE_TYPE_DESC.LookupAdapter = this.ilaWAGE_TYPE_0;
@@ -3264,6 +3293,81 @@
             // IGR_SALARY_ITEM_AMOUNT
             // 
             this.IGR_SALARY_ITEM_AMOUNT.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            // 
+            // 
+            // 
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.ActivateCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridCellActivateAction.SelectAll;
+            gridBaseStyle9.Name = "Header";
+            gridBaseStyle9.StyleInfo.Borders.Bottom = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle9.StyleInfo.Borders.Left = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle9.StyleInfo.Borders.Right = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle9.StyleInfo.Borders.Top = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle9.StyleInfo.CellType = "Header";
+            gridBaseStyle9.StyleInfo.Font.Bold = false;
+            gridBaseStyle9.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(199)))), ((int)(((byte)(184))))), System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(216))))));
+            gridBaseStyle9.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle;
+            gridBaseStyle10.Name = "Standard";
+            gridBaseStyle10.StyleInfo.Font.Bold = false;
+            gridBaseStyle10.StyleInfo.Font.Facename = "굴림";
+            gridBaseStyle10.StyleInfo.Font.Italic = false;
+            gridBaseStyle10.StyleInfo.Font.Size = 9F;
+            gridBaseStyle10.StyleInfo.Font.Strikeout = false;
+            gridBaseStyle10.StyleInfo.Font.Underline = false;
+            gridBaseStyle10.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridBaseStyle10.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window);
+            gridBaseStyle11.Name = "Column Header";
+            gridBaseStyle11.StyleInfo.BaseStyle = "Header";
+            gridBaseStyle11.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
+            gridBaseStyle11.StyleInfo.TextMargins.Top = 3;
+            gridBaseStyle12.Name = "Row Header";
+            gridBaseStyle12.StyleInfo.BaseStyle = "Header";
+            gridBaseStyle12.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridBaseStyle12.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(199)))), ((int)(((byte)(184))))), System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(216))))));
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.BaseStylesMap.AddRange(new Syncfusion.Windows.Forms.Grid.GridBaseStyle[] {
+            gridBaseStyle9,
+            gridBaseStyle10,
+            gridBaseStyle11,
+            gridBaseStyle12});
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.ColCount = 0;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.ColWidthEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridColWidth[] {
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(0, 30)});
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.DefaultGridBorderStyle = Syncfusion.Windows.Forms.Grid.GridBorderStyle.Solid;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.DefaultRowHeight = 19;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.EnterKeyBehavior = Syncfusion.Windows.Forms.Grid.GridDirectionType.None;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.Font = new System.Drawing.Font("굴림", 9F);
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Office2007;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Office2007Blue;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.Location = new System.Drawing.Point(0, 0);
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.Name = "isBaseGrid";
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.NumberedColHeaders = false;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.Office2007ScrollBars = true;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.Office2007ScrollBarsColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Managed;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.Properties.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.Properties.FixedLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(147)))), ((int)(((byte)(207)))));
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.Properties.GridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.Properties.MarkColHeader = false;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.Properties.MarkRowHeader = false;
+            gridRangeStyle20.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle20.StyleInfo.Font.Bold = false;
+            gridRangeStyle20.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle20.StyleInfo.Font.Italic = false;
+            gridRangeStyle20.StyleInfo.Font.Size = 9F;
+            gridRangeStyle20.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle20.StyleInfo.Font.Underline = false;
+            gridRangeStyle20.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
+            gridRangeStyle20});
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.RefreshCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridRefreshCurrentCellBehavior.RefreshRow;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.RowCount = 0;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.RowHeightEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridRowHeight[] {
+            new Syncfusion.Windows.Forms.Grid.GridRowHeight(0, 22)});
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.SerializeCellsBehavior = Syncfusion.Windows.Forms.Grid.GridSerializeCellsBehavior.SerializeAsRangeStylesIntoCode;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.Size = new System.Drawing.Size(0, 0);
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.SmartSizeBox = false;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.TabIndex = 0;
+            this.IGR_SALARY_ITEM_AMOUNT.BaseGrid.ThemesEnabled = true;
             this.IGR_SALARY_ITEM_AMOUNT.ColCount = 5;
             this.IGR_SALARY_ITEM_AMOUNT.DataAdapter = this.IDA_SALARY_ITEM_AMOUNT;
             this.IGR_SALARY_ITEM_AMOUNT.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -3642,7 +3746,7 @@
             this.W_AMOUNT_FR.DataAdapter = null;
             this.W_AMOUNT_FR.DataColumn = null;
             this.W_AMOUNT_FR.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
-            this.W_AMOUNT_FR.DoubleValue = 0;
+            this.W_AMOUNT_FR.DoubleValue = 0D;
             this.W_AMOUNT_FR.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
             this.W_AMOUNT_FR.EditValue = null;
             this.W_AMOUNT_FR.ForeColor = System.Drawing.Color.Blue;
@@ -3687,7 +3791,7 @@
             this.W_AMOUNT_TO.DataAdapter = null;
             this.W_AMOUNT_TO.DataColumn = null;
             this.W_AMOUNT_TO.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
-            this.W_AMOUNT_TO.DoubleValue = 0;
+            this.W_AMOUNT_TO.DoubleValue = 0D;
             this.W_AMOUNT_TO.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
             this.W_AMOUNT_TO.EditValue = null;
             this.W_AMOUNT_TO.ForeColor = System.Drawing.Color.Blue;
@@ -3722,6 +3826,81 @@
             // IGR_SALARY_ITEM_DETAIL
             // 
             this.IGR_SALARY_ITEM_DETAIL.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            // 
+            // 
+            // 
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.ActivateCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridCellActivateAction.SelectAll;
+            gridBaseStyle13.Name = "Header";
+            gridBaseStyle13.StyleInfo.Borders.Bottom = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle13.StyleInfo.Borders.Left = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle13.StyleInfo.Borders.Right = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle13.StyleInfo.Borders.Top = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle13.StyleInfo.CellType = "Header";
+            gridBaseStyle13.StyleInfo.Font.Bold = false;
+            gridBaseStyle13.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(199)))), ((int)(((byte)(184))))), System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(216))))));
+            gridBaseStyle13.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle;
+            gridBaseStyle14.Name = "Standard";
+            gridBaseStyle14.StyleInfo.Font.Bold = false;
+            gridBaseStyle14.StyleInfo.Font.Facename = "굴림";
+            gridBaseStyle14.StyleInfo.Font.Italic = false;
+            gridBaseStyle14.StyleInfo.Font.Size = 9F;
+            gridBaseStyle14.StyleInfo.Font.Strikeout = false;
+            gridBaseStyle14.StyleInfo.Font.Underline = false;
+            gridBaseStyle14.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridBaseStyle14.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window);
+            gridBaseStyle15.Name = "Column Header";
+            gridBaseStyle15.StyleInfo.BaseStyle = "Header";
+            gridBaseStyle15.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
+            gridBaseStyle15.StyleInfo.TextMargins.Top = 3;
+            gridBaseStyle16.Name = "Row Header";
+            gridBaseStyle16.StyleInfo.BaseStyle = "Header";
+            gridBaseStyle16.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridBaseStyle16.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(199)))), ((int)(((byte)(184))))), System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(216))))));
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.BaseStylesMap.AddRange(new Syncfusion.Windows.Forms.Grid.GridBaseStyle[] {
+            gridBaseStyle13,
+            gridBaseStyle14,
+            gridBaseStyle15,
+            gridBaseStyle16});
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.ColCount = 0;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.ColWidthEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridColWidth[] {
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(0, 30)});
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.DefaultGridBorderStyle = Syncfusion.Windows.Forms.Grid.GridBorderStyle.Solid;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.DefaultRowHeight = 19;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.EnterKeyBehavior = Syncfusion.Windows.Forms.Grid.GridDirectionType.None;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.Font = new System.Drawing.Font("굴림", 9F);
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Office2007;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Office2007Blue;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.Location = new System.Drawing.Point(0, 0);
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.Name = "isBaseGrid";
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.NumberedColHeaders = false;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.Office2007ScrollBars = true;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.Office2007ScrollBarsColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Managed;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.Properties.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.Properties.FixedLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(147)))), ((int)(((byte)(207)))));
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.Properties.GridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.Properties.MarkColHeader = false;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.Properties.MarkRowHeader = false;
+            gridRangeStyle21.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle21.StyleInfo.Font.Bold = false;
+            gridRangeStyle21.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle21.StyleInfo.Font.Italic = false;
+            gridRangeStyle21.StyleInfo.Font.Size = 9F;
+            gridRangeStyle21.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle21.StyleInfo.Font.Underline = false;
+            gridRangeStyle21.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
+            gridRangeStyle21});
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.RefreshCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridRefreshCurrentCellBehavior.RefreshRow;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.RowCount = 0;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.RowHeightEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridRowHeight[] {
+            new Syncfusion.Windows.Forms.Grid.GridRowHeight(0, 22)});
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.SerializeCellsBehavior = Syncfusion.Windows.Forms.Grid.GridSerializeCellsBehavior.SerializeAsRangeStylesIntoCode;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.Size = new System.Drawing.Size(0, 0);
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.SmartSizeBox = false;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.TabIndex = 0;
+            this.IGR_SALARY_ITEM_DETAIL.BaseGrid.ThemesEnabled = true;
             this.IGR_SALARY_ITEM_DETAIL.ColCount = 9;
             this.IGR_SALARY_ITEM_DETAIL.DataAdapter = this.IDA_SALARY_ITEM_DETAIL;
             this.IGR_SALARY_ITEM_DETAIL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -4310,6 +4489,1038 @@
             this.IDA_SALARY_ITEM_DETAIL.WizardProcedure = "";
             this.IDA_SALARY_ITEM_DETAIL.WizardTableName = "";
             // 
+            // IGR_SALARY_TOTAL_AMOUNT
+            // 
+            this.IGR_SALARY_TOTAL_AMOUNT.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            // 
+            // 
+            // 
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.ActivateCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridCellActivateAction.SelectAll;
+            gridBaseStyle17.Name = "Header";
+            gridBaseStyle17.StyleInfo.Borders.Bottom = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle17.StyleInfo.Borders.Left = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle17.StyleInfo.Borders.Right = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle17.StyleInfo.Borders.Top = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle17.StyleInfo.CellType = "Header";
+            gridBaseStyle17.StyleInfo.Font.Bold = false;
+            gridBaseStyle17.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(199)))), ((int)(((byte)(184))))), System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(216))))));
+            gridBaseStyle17.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle;
+            gridBaseStyle18.Name = "Standard";
+            gridBaseStyle18.StyleInfo.Font.Bold = false;
+            gridBaseStyle18.StyleInfo.Font.Facename = "굴림";
+            gridBaseStyle18.StyleInfo.Font.Italic = false;
+            gridBaseStyle18.StyleInfo.Font.Size = 9F;
+            gridBaseStyle18.StyleInfo.Font.Strikeout = false;
+            gridBaseStyle18.StyleInfo.Font.Underline = false;
+            gridBaseStyle18.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridBaseStyle18.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window);
+            gridBaseStyle19.Name = "Column Header";
+            gridBaseStyle19.StyleInfo.BaseStyle = "Header";
+            gridBaseStyle19.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
+            gridBaseStyle19.StyleInfo.TextMargins.Top = 3;
+            gridBaseStyle20.Name = "Row Header";
+            gridBaseStyle20.StyleInfo.BaseStyle = "Header";
+            gridBaseStyle20.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridBaseStyle20.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(199)))), ((int)(((byte)(184))))), System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(216))))));
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.BaseStylesMap.AddRange(new Syncfusion.Windows.Forms.Grid.GridBaseStyle[] {
+            gridBaseStyle17,
+            gridBaseStyle18,
+            gridBaseStyle19,
+            gridBaseStyle20});
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.ColCount = 0;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.ColWidthEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridColWidth[] {
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(0, 30)});
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.DefaultGridBorderStyle = Syncfusion.Windows.Forms.Grid.GridBorderStyle.Solid;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.DefaultRowHeight = 19;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.EnterKeyBehavior = Syncfusion.Windows.Forms.Grid.GridDirectionType.None;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.Font = new System.Drawing.Font("굴림", 9F);
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Office2007;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Office2007Blue;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.Location = new System.Drawing.Point(0, 0);
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.Name = "isBaseGrid";
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.NumberedColHeaders = false;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.Office2007ScrollBars = true;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.Office2007ScrollBarsColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Managed;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.Properties.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.Properties.FixedLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(147)))), ((int)(((byte)(207)))));
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.Properties.GridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.Properties.MarkColHeader = false;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.Properties.MarkRowHeader = false;
+            gridRangeStyle22.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle22.StyleInfo.Font.Bold = false;
+            gridRangeStyle22.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle22.StyleInfo.Font.Italic = false;
+            gridRangeStyle22.StyleInfo.Font.Size = 9F;
+            gridRangeStyle22.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle22.StyleInfo.Font.Underline = false;
+            gridRangeStyle22.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
+            gridRangeStyle22});
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.RefreshCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridRefreshCurrentCellBehavior.RefreshRow;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.RowCount = 0;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.RowHeightEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridRowHeight[] {
+            new Syncfusion.Windows.Forms.Grid.GridRowHeight(0, 22)});
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.SerializeCellsBehavior = Syncfusion.Windows.Forms.Grid.GridSerializeCellsBehavior.SerializeAsRangeStylesIntoCode;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.Size = new System.Drawing.Size(0, 0);
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.SmartSizeBox = false;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.TabIndex = 0;
+            this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid.ThemesEnabled = true;
+            this.IGR_SALARY_TOTAL_AMOUNT.ColCount = 4;
+            this.IGR_SALARY_TOTAL_AMOUNT.DataAdapter = this.IDA_SALARY_TOTAL_AMOUNT;
+            this.IGR_SALARY_TOTAL_AMOUNT.Dock = System.Windows.Forms.DockStyle.Fill;
+            isGridAdvExColElement27.ColumnType = "NumberEdit";
+            isGridAdvExColElement27.DataColumn = "PERSON_ID";
+            isGridAdvExColElement27.DataOrdinal = 0;
+            isGridAdvExColElement27.DataType = "System.Decimal";
+            isGridAdvExColElement27.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement27.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement27.Default = "PERSON_ID";
+            isGridAdvExTLHeaderElement27.TL1_KR = null;
+            isGridAdvExTLHeaderElement27.TL2_CN = null;
+            isGridAdvExTLHeaderElement27.TL3_VN = null;
+            isGridAdvExTLHeaderElement27.TL4_JP = null;
+            isGridAdvExTLHeaderElement27.TL5_XAA = null;
+            isGridAdvExColElement27.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement27});
+            isGridAdvExColElement27.HeaderPrompt = "PERSON_ID";
+            isGridAdvExColElement27.Insertable = 0;
+            isGridAdvExColElement27.MergeCell = 0;
+            isGridAdvExColElement27.Nullable = 1;
+            isGridAdvExColElement27.Ordinal = 0;
+            isGridAdvExColElement27.ReadOnly = 1;
+            isGridAdvExColElement27.Symbol = "";
+            isGridAdvExColElement27.SymbolPosition = "";
+            isGridAdvExColElement27.Updatable = 0;
+            isGridAdvExColElement27.Visible = 0;
+            isGridAdvExColElement27.Width = 65;
+            isGridAdvExColElement28.ColumnType = "TextEdit";
+            isGridAdvExColElement28.DataColumn = "PERSON_NUM";
+            isGridAdvExColElement28.DataOrdinal = 1;
+            isGridAdvExColElement28.DataType = "System.String";
+            isGridAdvExColElement28.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement28.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement28.Default = "Person No";
+            isGridAdvExTLHeaderElement28.TL1_KR = "사원번호";
+            isGridAdvExTLHeaderElement28.TL2_CN = null;
+            isGridAdvExTLHeaderElement28.TL3_VN = null;
+            isGridAdvExTLHeaderElement28.TL4_JP = null;
+            isGridAdvExTLHeaderElement28.TL5_XAA = null;
+            isGridAdvExColElement28.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement28});
+            isGridAdvExColElement28.HeaderPrompt = "Person No";
+            isGridAdvExColElement28.Insertable = 0;
+            isGridAdvExColElement28.MergeCell = 0;
+            isGridAdvExColElement28.Nullable = 1;
+            isGridAdvExColElement28.Ordinal = 1;
+            isGridAdvExColElement28.ReadOnly = 1;
+            isGridAdvExColElement28.Symbol = "";
+            isGridAdvExColElement28.SymbolPosition = "";
+            isGridAdvExColElement28.Updatable = 0;
+            isGridAdvExColElement28.Visible = 1;
+            isGridAdvExColElement28.Width = 80;
+            isGridAdvExColElement29.ColumnType = "TextEdit";
+            isGridAdvExColElement29.DataColumn = "NAME";
+            isGridAdvExColElement29.DataOrdinal = 2;
+            isGridAdvExColElement29.DataType = "System.String";
+            isGridAdvExColElement29.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement29.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement29.Default = "Name";
+            isGridAdvExTLHeaderElement29.TL1_KR = "성명";
+            isGridAdvExTLHeaderElement29.TL2_CN = null;
+            isGridAdvExTLHeaderElement29.TL3_VN = null;
+            isGridAdvExTLHeaderElement29.TL4_JP = null;
+            isGridAdvExTLHeaderElement29.TL5_XAA = null;
+            isGridAdvExColElement29.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement29});
+            isGridAdvExColElement29.HeaderPrompt = "Name";
+            isGridAdvExColElement29.Insertable = 0;
+            isGridAdvExColElement29.MergeCell = 0;
+            isGridAdvExColElement29.Nullable = 1;
+            isGridAdvExColElement29.Ordinal = 2;
+            isGridAdvExColElement29.ReadOnly = 1;
+            isGridAdvExColElement29.Symbol = "";
+            isGridAdvExColElement29.SymbolPosition = "";
+            isGridAdvExColElement29.Updatable = 0;
+            isGridAdvExColElement29.Visible = 1;
+            isGridAdvExColElement29.Width = 130;
+            isGridAdvExColElement30.ColumnType = "NumberEdit";
+            isGridAdvExColElement30.DataColumn = "AMOUNT";
+            isGridAdvExColElement30.DataOrdinal = 3;
+            isGridAdvExColElement30.DataType = "System.Decimal";
+            isGridAdvExColElement30.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement30.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement30.Default = "Amount";
+            isGridAdvExTLHeaderElement30.TL1_KR = "금액";
+            isGridAdvExTLHeaderElement30.TL2_CN = null;
+            isGridAdvExTLHeaderElement30.TL3_VN = null;
+            isGridAdvExTLHeaderElement30.TL4_JP = null;
+            isGridAdvExTLHeaderElement30.TL5_XAA = null;
+            isGridAdvExColElement30.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement30});
+            isGridAdvExColElement30.HeaderPrompt = "Amount";
+            isGridAdvExColElement30.Insertable = 0;
+            isGridAdvExColElement30.MergeCell = 0;
+            isGridAdvExColElement30.Nullable = 1;
+            isGridAdvExColElement30.Ordinal = 3;
+            isGridAdvExColElement30.ReadOnly = 1;
+            isGridAdvExColElement30.Symbol = "";
+            isGridAdvExColElement30.SymbolPosition = "";
+            isGridAdvExColElement30.Updatable = 0;
+            isGridAdvExColElement30.Visible = 1;
+            isGridAdvExColElement30.Width = 120;
+            this.IGR_SALARY_TOTAL_AMOUNT.GridAdvExColElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExColElement[] {
+            isGridAdvExColElement27,
+            isGridAdvExColElement28,
+            isGridAdvExColElement29,
+            isGridAdvExColElement30});
+            this.IGR_SALARY_TOTAL_AMOUNT.Location = new System.Drawing.Point(0, 22);
+            this.IGR_SALARY_TOTAL_AMOUNT.Name = "IGR_SALARY_TOTAL_AMOUNT";
+            this.IGR_SALARY_TOTAL_AMOUNT.Size = new System.Drawing.Size(379, 404);
+            this.IGR_SALARY_TOTAL_AMOUNT.TabIndex = 0;
+            this.IGR_SALARY_TOTAL_AMOUNT.Text = "isGridAdvEx1";
+            // 
+            // IDA_SALARY_TOTAL_AMOUNT
+            // 
+            isOraBindingElement29.LastValue = null;
+            isOraBindingElement29.MappingColumn = "PERSON_ID";
+            isOraBindingElement29.MemberControl = this.IGR_SALARY_TOTAL_AMOUNT;
+            isOraBindingElement29.MemberValue = "PERSON_ID";
+            isOraBindingElement29.Ordinal = 1;
+            isOraBindingElement30.LastValue = null;
+            isOraBindingElement30.MappingColumn = "PERSON_NUM";
+            isOraBindingElement30.MemberControl = this.IGR_SALARY_TOTAL_AMOUNT;
+            isOraBindingElement30.MemberValue = "PERSON_NUM";
+            isOraBindingElement30.Ordinal = 2;
+            isOraBindingElement31.LastValue = null;
+            isOraBindingElement31.MappingColumn = "NAME";
+            isOraBindingElement31.MemberControl = this.IGR_SALARY_TOTAL_AMOUNT;
+            isOraBindingElement31.MemberValue = "NAME";
+            isOraBindingElement31.Ordinal = 3;
+            isOraBindingElement32.LastValue = null;
+            isOraBindingElement32.MappingColumn = "AMOUNT";
+            isOraBindingElement32.MemberControl = this.IGR_SALARY_TOTAL_AMOUNT;
+            isOraBindingElement32.MemberValue = "AMOUNT";
+            isOraBindingElement32.Ordinal = 4;
+            this.IDA_SALARY_TOTAL_AMOUNT.BindingElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraBindingElement[] {
+            isOraBindingElement29,
+            isOraBindingElement30,
+            isOraBindingElement31,
+            isOraBindingElement32});
+            this.IDA_SALARY_TOTAL_AMOUNT.CancelMember.Cancel = false;
+            this.IDA_SALARY_TOTAL_AMOUNT.CancelMember.Member = null;
+            this.IDA_SALARY_TOTAL_AMOUNT.CancelMember.Prompt = null;
+            this.IDA_SALARY_TOTAL_AMOUNT.CancelMember.TabIndex = -1;
+            this.IDA_SALARY_TOTAL_AMOUNT.CancelMember.ValueItem = null;
+            this.IDA_SALARY_TOTAL_AMOUNT.CancelUpdateFilterString = null;
+            this.IDA_SALARY_TOTAL_AMOUNT.CancelUpdateRow = null;
+            this.IDA_SALARY_TOTAL_AMOUNT.DataTransaction = null;
+            this.IDA_SALARY_TOTAL_AMOUNT.FocusedControl = null;
+            this.IDA_SALARY_TOTAL_AMOUNT.MasterAdapter = null;
+            this.IDA_SALARY_TOTAL_AMOUNT.OraConnection = this.isOraConnection1;
+            this.IDA_SALARY_TOTAL_AMOUNT.OraDelete = null;
+            this.IDA_SALARY_TOTAL_AMOUNT.OraInsert = null;
+            this.IDA_SALARY_TOTAL_AMOUNT.OraOwner = "APPS";
+            this.IDA_SALARY_TOTAL_AMOUNT.OraPackage = "HRP_SALARY_CLOSED_CHECK_G";
+            this.IDA_SALARY_TOTAL_AMOUNT.OraSelect = "SELECT_SALARY_TOTAL_AMOUNT";
+            this.IDA_SALARY_TOTAL_AMOUNT.OraSelectData = null;
+            this.IDA_SALARY_TOTAL_AMOUNT.OraUpdate = null;
+            isOraColElement30.DataColumn = "PERSON_ID";
+            isOraColElement30.DataOrdinal = 0;
+            isOraColElement30.DataType = "System.Decimal";
+            isOraColElement30.HeaderPrompt = "PERSON_ID";
+            isOraColElement30.LastValue = null;
+            isOraColElement30.MemberControl = null;
+            isOraColElement30.MemberValue = null;
+            isOraColElement30.Nullable = 0;
+            isOraColElement30.Ordinal = 0;
+            isOraColElement30.RelationKeyColumn = null;
+            isOraColElement30.ReturnParameter = null;
+            isOraColElement30.TL1_KR = null;
+            isOraColElement30.TL2_CN = null;
+            isOraColElement30.TL3_VN = null;
+            isOraColElement30.TL4_JP = null;
+            isOraColElement30.TL5_XAA = null;
+            isOraColElement30.Visible = null;
+            isOraColElement30.Width = null;
+            isOraColElement31.DataColumn = "PERSON_NUM";
+            isOraColElement31.DataOrdinal = 1;
+            isOraColElement31.DataType = "System.String";
+            isOraColElement31.HeaderPrompt = "PERSON_NUM";
+            isOraColElement31.LastValue = null;
+            isOraColElement31.MemberControl = null;
+            isOraColElement31.MemberValue = null;
+            isOraColElement31.Nullable = 0;
+            isOraColElement31.Ordinal = 1;
+            isOraColElement31.RelationKeyColumn = null;
+            isOraColElement31.ReturnParameter = null;
+            isOraColElement31.TL1_KR = null;
+            isOraColElement31.TL2_CN = null;
+            isOraColElement31.TL3_VN = null;
+            isOraColElement31.TL4_JP = null;
+            isOraColElement31.TL5_XAA = null;
+            isOraColElement31.Visible = null;
+            isOraColElement31.Width = null;
+            isOraColElement32.DataColumn = "NAME";
+            isOraColElement32.DataOrdinal = 2;
+            isOraColElement32.DataType = "System.String";
+            isOraColElement32.HeaderPrompt = "NAME";
+            isOraColElement32.LastValue = null;
+            isOraColElement32.MemberControl = null;
+            isOraColElement32.MemberValue = null;
+            isOraColElement32.Nullable = 0;
+            isOraColElement32.Ordinal = 2;
+            isOraColElement32.RelationKeyColumn = null;
+            isOraColElement32.ReturnParameter = null;
+            isOraColElement32.TL1_KR = null;
+            isOraColElement32.TL2_CN = null;
+            isOraColElement32.TL3_VN = null;
+            isOraColElement32.TL4_JP = null;
+            isOraColElement32.TL5_XAA = null;
+            isOraColElement32.Visible = null;
+            isOraColElement32.Width = null;
+            isOraColElement33.DataColumn = "AMOUNT";
+            isOraColElement33.DataOrdinal = 3;
+            isOraColElement33.DataType = "System.Decimal";
+            isOraColElement33.HeaderPrompt = "AMOUNT";
+            isOraColElement33.LastValue = null;
+            isOraColElement33.MemberControl = null;
+            isOraColElement33.MemberValue = null;
+            isOraColElement33.Nullable = 1;
+            isOraColElement33.Ordinal = 3;
+            isOraColElement33.RelationKeyColumn = null;
+            isOraColElement33.ReturnParameter = null;
+            isOraColElement33.TL1_KR = null;
+            isOraColElement33.TL2_CN = null;
+            isOraColElement33.TL3_VN = null;
+            isOraColElement33.TL4_JP = null;
+            isOraColElement33.TL5_XAA = null;
+            isOraColElement33.Visible = null;
+            isOraColElement33.Width = null;
+            this.IDA_SALARY_TOTAL_AMOUNT.SelectColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
+            isOraColElement30,
+            isOraColElement31,
+            isOraColElement32,
+            isOraColElement33});
+            isOraParamElement38.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement38.MemberControl = null;
+            isOraParamElement38.MemberValue = null;
+            isOraParamElement38.OraDbTypeString = "REF CURSOR";
+            isOraParamElement38.OraType = System.Data.OracleClient.OracleType.Cursor;
+            isOraParamElement38.ParamName = "P_CURSOR2";
+            isOraParamElement38.Size = 0;
+            isOraParamElement38.SourceColumn = null;
+            isOraParamElement39.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement39.MemberControl = this.W_CORP_ID;
+            isOraParamElement39.MemberValue = "EditValue";
+            isOraParamElement39.OraDbTypeString = "NUMBER";
+            isOraParamElement39.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement39.ParamName = "W_CORP_ID";
+            isOraParamElement39.Size = 22;
+            isOraParamElement39.SourceColumn = null;
+            isOraParamElement40.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement40.MemberControl = this.W_PERIOD_NAME;
+            isOraParamElement40.MemberValue = "EditValue";
+            isOraParamElement40.OraDbTypeString = "VARCHAR2";
+            isOraParamElement40.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement40.ParamName = "W_PERIOD_NAME";
+            isOraParamElement40.Size = 0;
+            isOraParamElement40.SourceColumn = null;
+            isOraParamElement41.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement41.MemberControl = this.W_WAGE_TYPE;
+            isOraParamElement41.MemberValue = "EditValue";
+            isOraParamElement41.OraDbTypeString = "VARCHAR2";
+            isOraParamElement41.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement41.ParamName = "W_WAGE_TYPE";
+            isOraParamElement41.Size = 0;
+            isOraParamElement41.SourceColumn = null;
+            isOraParamElement42.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement42.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement42.MemberValue = "SOB_ID";
+            isOraParamElement42.OraDbTypeString = "NUMBER";
+            isOraParamElement42.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement42.ParamName = "W_SOB_ID";
+            isOraParamElement42.Size = 22;
+            isOraParamElement42.SourceColumn = null;
+            isOraParamElement43.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement43.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement43.MemberValue = "ORG_ID";
+            isOraParamElement43.OraDbTypeString = "NUMBER";
+            isOraParamElement43.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement43.ParamName = "W_ORG_ID";
+            isOraParamElement43.Size = 22;
+            isOraParamElement43.SourceColumn = null;
+            isOraParamElement44.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement44.MemberControl = this.W2_ALLOWANCE_TYPE;
+            isOraParamElement44.MemberValue = "EditValue";
+            isOraParamElement44.OraDbTypeString = "VARCHAR2";
+            isOraParamElement44.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement44.ParamName = "W_ALLOWANCE_TYPE";
+            isOraParamElement44.Size = 0;
+            isOraParamElement44.SourceColumn = null;
+            isOraParamElement45.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement45.MemberControl = this.W2_AMOUNT_FR;
+            isOraParamElement45.MemberValue = "EditValue";
+            isOraParamElement45.OraDbTypeString = "NUMBER";
+            isOraParamElement45.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement45.ParamName = "W_AMOUNT_FR";
+            isOraParamElement45.Size = 22;
+            isOraParamElement45.SourceColumn = null;
+            isOraParamElement46.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement46.MemberControl = this.W2_AMOUNT_TO;
+            isOraParamElement46.MemberValue = "EditValue";
+            isOraParamElement46.OraDbTypeString = "NUMBER";
+            isOraParamElement46.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement46.ParamName = "W_AMOUNT_TO";
+            isOraParamElement46.Size = 22;
+            isOraParamElement46.SourceColumn = null;
+            this.IDA_SALARY_TOTAL_AMOUNT.SelectParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
+            isOraParamElement38,
+            isOraParamElement39,
+            isOraParamElement40,
+            isOraParamElement41,
+            isOraParamElement42,
+            isOraParamElement43,
+            isOraParamElement44,
+            isOraParamElement45,
+            isOraParamElement46});
+            this.IDA_SALARY_TOTAL_AMOUNT.WizardOwner = "";
+            this.IDA_SALARY_TOTAL_AMOUNT.WizardProcedure = "";
+            this.IDA_SALARY_TOTAL_AMOUNT.WizardTableName = "";
+            this.IDA_SALARY_TOTAL_AMOUNT.NewRowMoved += new InfoSummit.Win.ControlAdv.ISDataAdapter.MoveHandler(this.IDA_SALARY_TOTAL_AMOUNT_NewRowMoved);
+            // 
+            // W2_ALLOWANCE_TYPE
+            // 
+            this.W2_ALLOWANCE_TYPE.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.W2_ALLOWANCE_TYPE.ComboBoxValue = "";
+            this.W2_ALLOWANCE_TYPE.ComboData = null;
+            this.W2_ALLOWANCE_TYPE.CurrencyValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.W2_ALLOWANCE_TYPE.DataAdapter = null;
+            this.W2_ALLOWANCE_TYPE.DataColumn = null;
+            this.W2_ALLOWANCE_TYPE.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
+            this.W2_ALLOWANCE_TYPE.DoubleValue = 0D;
+            this.W2_ALLOWANCE_TYPE.EditValue = "";
+            this.W2_ALLOWANCE_TYPE.Location = new System.Drawing.Point(392, 5);
+            this.W2_ALLOWANCE_TYPE.LookupAdapter = null;
+            this.W2_ALLOWANCE_TYPE.Name = "W2_ALLOWANCE_TYPE";
+            this.W2_ALLOWANCE_TYPE.Nullable = true;
+            this.W2_ALLOWANCE_TYPE.NumberValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.W2_ALLOWANCE_TYPE.PercentValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.W2_ALLOWANCE_TYPE.PromptText = "";
+            isLanguageElement35.Default = "";
+            isLanguageElement35.SiteName = null;
+            isLanguageElement35.TL1_KR = "";
+            isLanguageElement35.TL2_CN = "";
+            isLanguageElement35.TL3_VN = "";
+            isLanguageElement35.TL4_JP = "";
+            isLanguageElement35.TL5_XAA = "";
+            this.W2_ALLOWANCE_TYPE.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement35});
+            this.W2_ALLOWANCE_TYPE.PromptVisible = false;
+            this.W2_ALLOWANCE_TYPE.PromptWidth = 80;
+            this.W2_ALLOWANCE_TYPE.ReadOnly = true;
+            this.W2_ALLOWANCE_TYPE.Size = new System.Drawing.Size(37, 21);
+            this.W2_ALLOWANCE_TYPE.TabIndex = 159;
+            this.W2_ALLOWANCE_TYPE.TextValue = "";
+            this.W2_ALLOWANCE_TYPE.Visible = false;
+            // 
+            // W2_AMOUNT_FR
+            // 
+            this.W2_AMOUNT_FR.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.W2_AMOUNT_FR.ComboBoxValue = "";
+            this.W2_AMOUNT_FR.ComboData = null;
+            this.W2_AMOUNT_FR.CurrencyValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.W2_AMOUNT_FR.DataAdapter = null;
+            this.W2_AMOUNT_FR.DataColumn = null;
+            this.W2_AMOUNT_FR.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
+            this.W2_AMOUNT_FR.DoubleValue = 0D;
+            this.W2_AMOUNT_FR.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
+            this.W2_AMOUNT_FR.EditValue = null;
+            this.W2_AMOUNT_FR.ForeColor = System.Drawing.Color.Blue;
+            this.W2_AMOUNT_FR.Location = new System.Drawing.Point(470, 5);
+            this.W2_AMOUNT_FR.LookupAdapter = null;
+            this.W2_AMOUNT_FR.Name = "W2_AMOUNT_FR";
+            this.W2_AMOUNT_FR.NumberValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.W2_AMOUNT_FR.PercentValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.W2_AMOUNT_FR.PromptText = "Check Amount";
+            isLanguageElement36.Default = "Check Amount";
+            isLanguageElement36.SiteName = null;
+            isLanguageElement36.TL1_KR = "검증 금액";
+            isLanguageElement36.TL2_CN = "";
+            isLanguageElement36.TL3_VN = "";
+            isLanguageElement36.TL4_JP = "";
+            isLanguageElement36.TL5_XAA = "";
+            this.W2_AMOUNT_FR.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement36});
+            this.W2_AMOUNT_FR.PromptWidth = 120;
+            this.W2_AMOUNT_FR.Size = new System.Drawing.Size(250, 21);
+            this.W2_AMOUNT_FR.TabIndex = 2;
+            this.W2_AMOUNT_FR.TextValue = "";
+            // 
+            // W2_AMOUNT_TO
+            // 
+            this.W2_AMOUNT_TO.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.W2_AMOUNT_TO.ComboBoxValue = "";
+            this.W2_AMOUNT_TO.ComboData = null;
+            this.W2_AMOUNT_TO.CurrencyValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.W2_AMOUNT_TO.DataAdapter = null;
+            this.W2_AMOUNT_TO.DataColumn = null;
+            this.W2_AMOUNT_TO.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
+            this.W2_AMOUNT_TO.DoubleValue = 0D;
+            this.W2_AMOUNT_TO.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
+            this.W2_AMOUNT_TO.EditValue = null;
+            this.W2_AMOUNT_TO.ForeColor = System.Drawing.Color.Blue;
+            this.W2_AMOUNT_TO.Location = new System.Drawing.Point(726, 5);
+            this.W2_AMOUNT_TO.LookupAdapter = null;
+            this.W2_AMOUNT_TO.Name = "W2_AMOUNT_TO";
+            this.W2_AMOUNT_TO.NumberValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.W2_AMOUNT_TO.PercentValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.W2_AMOUNT_TO.PromptText = "~";
+            isLanguageElement37.Default = "~";
+            isLanguageElement37.SiteName = null;
+            isLanguageElement37.TL1_KR = "~";
+            isLanguageElement37.TL2_CN = "";
+            isLanguageElement37.TL3_VN = "";
+            isLanguageElement37.TL4_JP = "";
+            isLanguageElement37.TL5_XAA = "";
+            this.W2_AMOUNT_TO.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement37});
+            this.W2_AMOUNT_TO.PromptWidth = 20;
+            this.W2_AMOUNT_TO.Size = new System.Drawing.Size(150, 21);
+            this.W2_AMOUNT_TO.TabIndex = 3;
+            this.W2_AMOUNT_TO.TextValue = "";
+            // 
+            // IGR_SALARY_TOTAL_DETAIL
+            // 
+            this.IGR_SALARY_TOTAL_DETAIL.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            // 
+            // 
+            // 
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.ActivateCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridCellActivateAction.SelectAll;
+            gridBaseStyle21.Name = "Header";
+            gridBaseStyle21.StyleInfo.Borders.Bottom = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle21.StyleInfo.Borders.Left = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle21.StyleInfo.Borders.Right = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle21.StyleInfo.Borders.Top = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle21.StyleInfo.CellType = "Header";
+            gridBaseStyle21.StyleInfo.Font.Bold = false;
+            gridBaseStyle21.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(199)))), ((int)(((byte)(184))))), System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(216))))));
+            gridBaseStyle21.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle;
+            gridBaseStyle22.Name = "Standard";
+            gridBaseStyle22.StyleInfo.Font.Bold = false;
+            gridBaseStyle22.StyleInfo.Font.Facename = "굴림";
+            gridBaseStyle22.StyleInfo.Font.Italic = false;
+            gridBaseStyle22.StyleInfo.Font.Size = 9F;
+            gridBaseStyle22.StyleInfo.Font.Strikeout = false;
+            gridBaseStyle22.StyleInfo.Font.Underline = false;
+            gridBaseStyle22.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridBaseStyle22.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window);
+            gridBaseStyle23.Name = "Column Header";
+            gridBaseStyle23.StyleInfo.BaseStyle = "Header";
+            gridBaseStyle23.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
+            gridBaseStyle23.StyleInfo.TextMargins.Top = 3;
+            gridBaseStyle24.Name = "Row Header";
+            gridBaseStyle24.StyleInfo.BaseStyle = "Header";
+            gridBaseStyle24.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridBaseStyle24.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(199)))), ((int)(((byte)(184))))), System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(216))))));
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.BaseStylesMap.AddRange(new Syncfusion.Windows.Forms.Grid.GridBaseStyle[] {
+            gridBaseStyle21,
+            gridBaseStyle22,
+            gridBaseStyle23,
+            gridBaseStyle24});
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.ColCount = 0;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.ColWidthEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridColWidth[] {
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(0, 30)});
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.DefaultGridBorderStyle = Syncfusion.Windows.Forms.Grid.GridBorderStyle.Solid;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.DefaultRowHeight = 19;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.EnterKeyBehavior = Syncfusion.Windows.Forms.Grid.GridDirectionType.None;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.Font = new System.Drawing.Font("굴림", 9F);
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Office2007;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Office2007Blue;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.Location = new System.Drawing.Point(0, 0);
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.Name = "isBaseGrid";
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.NumberedColHeaders = false;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.Office2007ScrollBars = true;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.Office2007ScrollBarsColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Managed;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.Properties.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.Properties.FixedLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(147)))), ((int)(((byte)(207)))));
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.Properties.GridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.Properties.MarkColHeader = false;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.Properties.MarkRowHeader = false;
+            gridRangeStyle23.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle23.StyleInfo.Font.Bold = false;
+            gridRangeStyle23.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle23.StyleInfo.Font.Italic = false;
+            gridRangeStyle23.StyleInfo.Font.Size = 9F;
+            gridRangeStyle23.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle23.StyleInfo.Font.Underline = false;
+            gridRangeStyle23.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
+            gridRangeStyle23});
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.RefreshCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridRefreshCurrentCellBehavior.RefreshRow;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.RowCount = 0;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.RowHeightEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridRowHeight[] {
+            new Syncfusion.Windows.Forms.Grid.GridRowHeight(0, 22)});
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.SerializeCellsBehavior = Syncfusion.Windows.Forms.Grid.GridSerializeCellsBehavior.SerializeAsRangeStylesIntoCode;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.Size = new System.Drawing.Size(0, 0);
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.SmartSizeBox = false;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.TabIndex = 0;
+            this.IGR_SALARY_TOTAL_DETAIL.BaseGrid.ThemesEnabled = true;
+            this.IGR_SALARY_TOTAL_DETAIL.ColCount = 6;
+            this.IGR_SALARY_TOTAL_DETAIL.DataAdapter = this.IDA_SALARY_TOTAL_DETAIL;
+            this.IGR_SALARY_TOTAL_DETAIL.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.IGR_SALARY_TOTAL_DETAIL.FrozenColCount = 3;
+            isGridAdvExColElement31.ColumnType = "NumberEdit";
+            isGridAdvExColElement31.DataColumn = "PERSON_ID";
+            isGridAdvExColElement31.DataOrdinal = 0;
+            isGridAdvExColElement31.DataType = "System.Decimal";
+            isGridAdvExColElement31.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement31.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement31.Default = "PERSON_ID";
+            isGridAdvExTLHeaderElement31.TL1_KR = null;
+            isGridAdvExTLHeaderElement31.TL2_CN = null;
+            isGridAdvExTLHeaderElement31.TL3_VN = null;
+            isGridAdvExTLHeaderElement31.TL4_JP = null;
+            isGridAdvExTLHeaderElement31.TL5_XAA = null;
+            isGridAdvExColElement31.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement31});
+            isGridAdvExColElement31.HeaderPrompt = "PERSON_ID";
+            isGridAdvExColElement31.Insertable = 0;
+            isGridAdvExColElement31.MergeCell = 0;
+            isGridAdvExColElement31.Nullable = 1;
+            isGridAdvExColElement31.Ordinal = 0;
+            isGridAdvExColElement31.ReadOnly = 1;
+            isGridAdvExColElement31.Symbol = "";
+            isGridAdvExColElement31.SymbolPosition = "";
+            isGridAdvExColElement31.Updatable = 0;
+            isGridAdvExColElement31.Visible = 0;
+            isGridAdvExColElement31.Width = 65;
+            isGridAdvExColElement32.ColumnType = "TextEdit";
+            isGridAdvExColElement32.DataColumn = "ITEM_CODE";
+            isGridAdvExColElement32.DataOrdinal = 1;
+            isGridAdvExColElement32.DataType = "System.String";
+            isGridAdvExColElement32.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement32.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement32.Default = "Code";
+            isGridAdvExTLHeaderElement32.TL1_KR = null;
+            isGridAdvExTLHeaderElement32.TL2_CN = null;
+            isGridAdvExTLHeaderElement32.TL3_VN = null;
+            isGridAdvExTLHeaderElement32.TL4_JP = null;
+            isGridAdvExTLHeaderElement32.TL5_XAA = null;
+            isGridAdvExColElement32.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement32});
+            isGridAdvExColElement32.HeaderPrompt = "Code";
+            isGridAdvExColElement32.Insertable = 0;
+            isGridAdvExColElement32.MergeCell = 0;
+            isGridAdvExColElement32.Nullable = 1;
+            isGridAdvExColElement32.Ordinal = 1;
+            isGridAdvExColElement32.ReadOnly = 1;
+            isGridAdvExColElement32.Symbol = "";
+            isGridAdvExColElement32.SymbolPosition = "";
+            isGridAdvExColElement32.Updatable = 0;
+            isGridAdvExColElement32.Visible = 1;
+            isGridAdvExColElement32.Width = 60;
+            isGridAdvExColElement33.ColumnType = "TextEdit";
+            isGridAdvExColElement33.DataColumn = "ITEM_NAME";
+            isGridAdvExColElement33.DataOrdinal = 2;
+            isGridAdvExColElement33.DataType = "System.String";
+            isGridAdvExColElement33.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement33.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement33.Default = "Item Name";
+            isGridAdvExTLHeaderElement33.TL1_KR = null;
+            isGridAdvExTLHeaderElement33.TL2_CN = null;
+            isGridAdvExTLHeaderElement33.TL3_VN = null;
+            isGridAdvExTLHeaderElement33.TL4_JP = null;
+            isGridAdvExTLHeaderElement33.TL5_XAA = null;
+            isGridAdvExColElement33.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement33});
+            isGridAdvExColElement33.HeaderPrompt = "Item Name";
+            isGridAdvExColElement33.Insertable = 0;
+            isGridAdvExColElement33.MergeCell = 0;
+            isGridAdvExColElement33.Nullable = 1;
+            isGridAdvExColElement33.Ordinal = 2;
+            isGridAdvExColElement33.ReadOnly = 1;
+            isGridAdvExColElement33.Symbol = "";
+            isGridAdvExColElement33.SymbolPosition = "";
+            isGridAdvExColElement33.Updatable = 0;
+            isGridAdvExColElement33.Visible = 1;
+            isGridAdvExColElement33.Width = 145;
+            isGridAdvExColElement34.ColumnType = "NumberEdit";
+            isGridAdvExColElement34.DataColumn = "PRE_AMOUNT";
+            isGridAdvExColElement34.DataOrdinal = 3;
+            isGridAdvExColElement34.DataType = "System.Decimal";
+            isGridAdvExColElement34.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement34.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement34.Default = "Previous";
+            isGridAdvExTLHeaderElement34.TL1_KR = "전월금액";
+            isGridAdvExTLHeaderElement34.TL2_CN = null;
+            isGridAdvExTLHeaderElement34.TL3_VN = null;
+            isGridAdvExTLHeaderElement34.TL4_JP = null;
+            isGridAdvExTLHeaderElement34.TL5_XAA = null;
+            isGridAdvExColElement34.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement34});
+            isGridAdvExColElement34.HeaderPrompt = "Previous";
+            isGridAdvExColElement34.Insertable = 0;
+            isGridAdvExColElement34.MergeCell = 0;
+            isGridAdvExColElement34.Nullable = 1;
+            isGridAdvExColElement34.Ordinal = 3;
+            isGridAdvExColElement34.ReadOnly = 1;
+            isGridAdvExColElement34.Symbol = "";
+            isGridAdvExColElement34.SymbolPosition = "";
+            isGridAdvExColElement34.Updatable = 0;
+            isGridAdvExColElement34.Visible = 1;
+            isGridAdvExColElement34.Width = 100;
+            isGridAdvExColElement35.ColumnType = "NumberEdit";
+            isGridAdvExColElement35.DataColumn = "THIS_AMOUNT";
+            isGridAdvExColElement35.DataOrdinal = 4;
+            isGridAdvExColElement35.DataType = "System.Decimal";
+            isGridAdvExColElement35.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement35.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement35.Default = "This";
+            isGridAdvExTLHeaderElement35.TL1_KR = "당월금액";
+            isGridAdvExTLHeaderElement35.TL2_CN = null;
+            isGridAdvExTLHeaderElement35.TL3_VN = null;
+            isGridAdvExTLHeaderElement35.TL4_JP = null;
+            isGridAdvExTLHeaderElement35.TL5_XAA = null;
+            isGridAdvExColElement35.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement35});
+            isGridAdvExColElement35.HeaderPrompt = "This";
+            isGridAdvExColElement35.Insertable = 0;
+            isGridAdvExColElement35.MergeCell = 0;
+            isGridAdvExColElement35.Nullable = 1;
+            isGridAdvExColElement35.Ordinal = 4;
+            isGridAdvExColElement35.ReadOnly = 1;
+            isGridAdvExColElement35.Symbol = "";
+            isGridAdvExColElement35.SymbolPosition = "";
+            isGridAdvExColElement35.Updatable = 0;
+            isGridAdvExColElement35.Visible = 1;
+            isGridAdvExColElement35.Width = 100;
+            isGridAdvExColElement36.ColumnType = "NumberEdit";
+            isGridAdvExColElement36.DataColumn = "GAP_AMOUNT";
+            isGridAdvExColElement36.DataOrdinal = 5;
+            isGridAdvExColElement36.DataType = "System.Decimal";
+            isGridAdvExColElement36.DateFormat = "yyyy-MM-dd";
+            isGridAdvExColElement36.DecimalDigits = 0;
+            isGridAdvExTLHeaderElement36.Default = "Gap";
+            isGridAdvExTLHeaderElement36.TL1_KR = "차이금액";
+            isGridAdvExTLHeaderElement36.TL2_CN = null;
+            isGridAdvExTLHeaderElement36.TL3_VN = null;
+            isGridAdvExTLHeaderElement36.TL4_JP = null;
+            isGridAdvExTLHeaderElement36.TL5_XAA = null;
+            isGridAdvExColElement36.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
+            isGridAdvExTLHeaderElement36});
+            isGridAdvExColElement36.HeaderPrompt = "Gap";
+            isGridAdvExColElement36.Insertable = 0;
+            isGridAdvExColElement36.MergeCell = 0;
+            isGridAdvExColElement36.Nullable = 1;
+            isGridAdvExColElement36.Ordinal = 5;
+            isGridAdvExColElement36.ReadOnly = 1;
+            isGridAdvExColElement36.Symbol = "";
+            isGridAdvExColElement36.SymbolPosition = "";
+            isGridAdvExColElement36.Updatable = 0;
+            isGridAdvExColElement36.Visible = 1;
+            isGridAdvExColElement36.Width = 100;
+            this.IGR_SALARY_TOTAL_DETAIL.GridAdvExColElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExColElement[] {
+            isGridAdvExColElement31,
+            isGridAdvExColElement32,
+            isGridAdvExColElement33,
+            isGridAdvExColElement34,
+            isGridAdvExColElement35,
+            isGridAdvExColElement36});
+            this.IGR_SALARY_TOTAL_DETAIL.Location = new System.Drawing.Point(0, 22);
+            this.IGR_SALARY_TOTAL_DETAIL.Name = "IGR_SALARY_TOTAL_DETAIL";
+            this.IGR_SALARY_TOTAL_DETAIL.Size = new System.Drawing.Size(558, 382);
+            this.IGR_SALARY_TOTAL_DETAIL.TabIndex = 0;
+            this.IGR_SALARY_TOTAL_DETAIL.Text = "isGridAdvEx1";
+            // 
+            // IDA_SALARY_TOTAL_DETAIL
+            // 
+            isOraBindingElement33.LastValue = null;
+            isOraBindingElement33.MappingColumn = "PERSON_ID";
+            isOraBindingElement33.MemberControl = this.IGR_SALARY_TOTAL_DETAIL;
+            isOraBindingElement33.MemberValue = "PERSON_ID";
+            isOraBindingElement33.Ordinal = 1;
+            isOraBindingElement34.LastValue = null;
+            isOraBindingElement34.MappingColumn = "ITEM_CODE";
+            isOraBindingElement34.MemberControl = this.IGR_SALARY_TOTAL_DETAIL;
+            isOraBindingElement34.MemberValue = "ITEM_CODE";
+            isOraBindingElement34.Ordinal = 2;
+            isOraBindingElement35.LastValue = null;
+            isOraBindingElement35.MappingColumn = "ITEM_NAME";
+            isOraBindingElement35.MemberControl = this.IGR_SALARY_TOTAL_DETAIL;
+            isOraBindingElement35.MemberValue = "ITEM_NAME";
+            isOraBindingElement35.Ordinal = 3;
+            isOraBindingElement36.LastValue = null;
+            isOraBindingElement36.MappingColumn = "PRE_AMOUNT";
+            isOraBindingElement36.MemberControl = this.IGR_SALARY_TOTAL_DETAIL;
+            isOraBindingElement36.MemberValue = "PRE_AMOUNT";
+            isOraBindingElement36.Ordinal = 4;
+            isOraBindingElement37.LastValue = null;
+            isOraBindingElement37.MappingColumn = "THIS_AMOUNT";
+            isOraBindingElement37.MemberControl = this.IGR_SALARY_TOTAL_DETAIL;
+            isOraBindingElement37.MemberValue = "THIS_AMOUNT";
+            isOraBindingElement37.Ordinal = 5;
+            isOraBindingElement38.LastValue = null;
+            isOraBindingElement38.MappingColumn = "GAP_AMOUNT";
+            isOraBindingElement38.MemberControl = this.IGR_SALARY_TOTAL_DETAIL;
+            isOraBindingElement38.MemberValue = "GAP_AMOUNT";
+            isOraBindingElement38.Ordinal = 6;
+            this.IDA_SALARY_TOTAL_DETAIL.BindingElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraBindingElement[] {
+            isOraBindingElement33,
+            isOraBindingElement34,
+            isOraBindingElement35,
+            isOraBindingElement36,
+            isOraBindingElement37,
+            isOraBindingElement38});
+            this.IDA_SALARY_TOTAL_DETAIL.CancelMember.Cancel = false;
+            this.IDA_SALARY_TOTAL_DETAIL.CancelMember.Member = null;
+            this.IDA_SALARY_TOTAL_DETAIL.CancelMember.Prompt = null;
+            this.IDA_SALARY_TOTAL_DETAIL.CancelMember.TabIndex = -1;
+            this.IDA_SALARY_TOTAL_DETAIL.CancelMember.ValueItem = null;
+            this.IDA_SALARY_TOTAL_DETAIL.CancelUpdateFilterString = null;
+            this.IDA_SALARY_TOTAL_DETAIL.CancelUpdateRow = null;
+            this.IDA_SALARY_TOTAL_DETAIL.DataTransaction = null;
+            this.IDA_SALARY_TOTAL_DETAIL.FocusedControl = null;
+            this.IDA_SALARY_TOTAL_DETAIL.MasterAdapter = null;
+            this.IDA_SALARY_TOTAL_DETAIL.OraConnection = this.isOraConnection1;
+            this.IDA_SALARY_TOTAL_DETAIL.OraDelete = null;
+            this.IDA_SALARY_TOTAL_DETAIL.OraInsert = null;
+            this.IDA_SALARY_TOTAL_DETAIL.OraOwner = "APPS";
+            this.IDA_SALARY_TOTAL_DETAIL.OraPackage = "HRP_SALARY_CLOSED_CHECK_G";
+            this.IDA_SALARY_TOTAL_DETAIL.OraSelect = "SELECT_SALARY_TOTAL_DETAIL";
+            this.IDA_SALARY_TOTAL_DETAIL.OraSelectData = null;
+            this.IDA_SALARY_TOTAL_DETAIL.OraUpdate = null;
+            isOraColElement34.DataColumn = "PERSON_ID";
+            isOraColElement34.DataOrdinal = 0;
+            isOraColElement34.DataType = "System.Decimal";
+            isOraColElement34.HeaderPrompt = "PERSON_ID";
+            isOraColElement34.LastValue = null;
+            isOraColElement34.MemberControl = null;
+            isOraColElement34.MemberValue = null;
+            isOraColElement34.Nullable = 1;
+            isOraColElement34.Ordinal = 0;
+            isOraColElement34.RelationKeyColumn = null;
+            isOraColElement34.ReturnParameter = null;
+            isOraColElement34.TL1_KR = null;
+            isOraColElement34.TL2_CN = null;
+            isOraColElement34.TL3_VN = null;
+            isOraColElement34.TL4_JP = null;
+            isOraColElement34.TL5_XAA = null;
+            isOraColElement34.Visible = null;
+            isOraColElement34.Width = null;
+            isOraColElement35.DataColumn = "ITEM_CODE";
+            isOraColElement35.DataOrdinal = 1;
+            isOraColElement35.DataType = "System.String";
+            isOraColElement35.HeaderPrompt = "ITEM_CODE";
+            isOraColElement35.LastValue = null;
+            isOraColElement35.MemberControl = null;
+            isOraColElement35.MemberValue = null;
+            isOraColElement35.Nullable = 1;
+            isOraColElement35.Ordinal = 1;
+            isOraColElement35.RelationKeyColumn = null;
+            isOraColElement35.ReturnParameter = null;
+            isOraColElement35.TL1_KR = null;
+            isOraColElement35.TL2_CN = null;
+            isOraColElement35.TL3_VN = null;
+            isOraColElement35.TL4_JP = null;
+            isOraColElement35.TL5_XAA = null;
+            isOraColElement35.Visible = null;
+            isOraColElement35.Width = null;
+            isOraColElement36.DataColumn = "ITEM_NAME";
+            isOraColElement36.DataOrdinal = 2;
+            isOraColElement36.DataType = "System.String";
+            isOraColElement36.HeaderPrompt = "ITEM_NAME";
+            isOraColElement36.LastValue = null;
+            isOraColElement36.MemberControl = null;
+            isOraColElement36.MemberValue = null;
+            isOraColElement36.Nullable = 1;
+            isOraColElement36.Ordinal = 2;
+            isOraColElement36.RelationKeyColumn = null;
+            isOraColElement36.ReturnParameter = null;
+            isOraColElement36.TL1_KR = null;
+            isOraColElement36.TL2_CN = null;
+            isOraColElement36.TL3_VN = null;
+            isOraColElement36.TL4_JP = null;
+            isOraColElement36.TL5_XAA = null;
+            isOraColElement36.Visible = null;
+            isOraColElement36.Width = null;
+            isOraColElement37.DataColumn = "PRE_AMOUNT";
+            isOraColElement37.DataOrdinal = 3;
+            isOraColElement37.DataType = "System.Decimal";
+            isOraColElement37.HeaderPrompt = "PRE_AMOUNT";
+            isOraColElement37.LastValue = null;
+            isOraColElement37.MemberControl = null;
+            isOraColElement37.MemberValue = null;
+            isOraColElement37.Nullable = 1;
+            isOraColElement37.Ordinal = 3;
+            isOraColElement37.RelationKeyColumn = null;
+            isOraColElement37.ReturnParameter = null;
+            isOraColElement37.TL1_KR = null;
+            isOraColElement37.TL2_CN = null;
+            isOraColElement37.TL3_VN = null;
+            isOraColElement37.TL4_JP = null;
+            isOraColElement37.TL5_XAA = null;
+            isOraColElement37.Visible = null;
+            isOraColElement37.Width = null;
+            isOraColElement38.DataColumn = "THIS_AMOUNT";
+            isOraColElement38.DataOrdinal = 4;
+            isOraColElement38.DataType = "System.Decimal";
+            isOraColElement38.HeaderPrompt = "THIS_AMOUNT";
+            isOraColElement38.LastValue = null;
+            isOraColElement38.MemberControl = null;
+            isOraColElement38.MemberValue = null;
+            isOraColElement38.Nullable = 1;
+            isOraColElement38.Ordinal = 4;
+            isOraColElement38.RelationKeyColumn = null;
+            isOraColElement38.ReturnParameter = null;
+            isOraColElement38.TL1_KR = null;
+            isOraColElement38.TL2_CN = null;
+            isOraColElement38.TL3_VN = null;
+            isOraColElement38.TL4_JP = null;
+            isOraColElement38.TL5_XAA = null;
+            isOraColElement38.Visible = null;
+            isOraColElement38.Width = null;
+            isOraColElement39.DataColumn = "GAP_AMOUNT";
+            isOraColElement39.DataOrdinal = 5;
+            isOraColElement39.DataType = "System.Decimal";
+            isOraColElement39.HeaderPrompt = "GAP_AMOUNT";
+            isOraColElement39.LastValue = null;
+            isOraColElement39.MemberControl = null;
+            isOraColElement39.MemberValue = null;
+            isOraColElement39.Nullable = 1;
+            isOraColElement39.Ordinal = 5;
+            isOraColElement39.RelationKeyColumn = null;
+            isOraColElement39.ReturnParameter = null;
+            isOraColElement39.TL1_KR = null;
+            isOraColElement39.TL2_CN = null;
+            isOraColElement39.TL3_VN = null;
+            isOraColElement39.TL4_JP = null;
+            isOraColElement39.TL5_XAA = null;
+            isOraColElement39.Visible = null;
+            isOraColElement39.Width = null;
+            this.IDA_SALARY_TOTAL_DETAIL.SelectColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
+            isOraColElement34,
+            isOraColElement35,
+            isOraColElement36,
+            isOraColElement37,
+            isOraColElement38,
+            isOraColElement39});
+            isOraParamElement47.Direction = System.Data.ParameterDirection.Output;
+            isOraParamElement47.MemberControl = null;
+            isOraParamElement47.MemberValue = null;
+            isOraParamElement47.OraDbTypeString = "REF CURSOR";
+            isOraParamElement47.OraType = System.Data.OracleClient.OracleType.Cursor;
+            isOraParamElement47.ParamName = "P_CURSOR2";
+            isOraParamElement47.Size = 0;
+            isOraParamElement47.SourceColumn = null;
+            isOraParamElement48.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement48.MemberControl = this.W_CORP_ID;
+            isOraParamElement48.MemberValue = "EditValue";
+            isOraParamElement48.OraDbTypeString = "NUMBER";
+            isOraParamElement48.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement48.ParamName = "W_CORP_ID";
+            isOraParamElement48.Size = 22;
+            isOraParamElement48.SourceColumn = null;
+            isOraParamElement49.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement49.MemberControl = this.W_PERIOD_NAME;
+            isOraParamElement49.MemberValue = "EditValue";
+            isOraParamElement49.OraDbTypeString = "VARCHAR2";
+            isOraParamElement49.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement49.ParamName = "W_PERIOD_NAME";
+            isOraParamElement49.Size = 0;
+            isOraParamElement49.SourceColumn = null;
+            isOraParamElement50.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement50.MemberControl = this.W_WAGE_TYPE;
+            isOraParamElement50.MemberValue = "EditValue";
+            isOraParamElement50.OraDbTypeString = "VARCHAR2";
+            isOraParamElement50.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement50.ParamName = "W_WAGE_TYPE";
+            isOraParamElement50.Size = 0;
+            isOraParamElement50.SourceColumn = null;
+            isOraParamElement51.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement51.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement51.MemberValue = "SOB_ID";
+            isOraParamElement51.OraDbTypeString = "NUMBER";
+            isOraParamElement51.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement51.ParamName = "W_SOB_ID";
+            isOraParamElement51.Size = 22;
+            isOraParamElement51.SourceColumn = null;
+            isOraParamElement52.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement52.MemberControl = this.isAppInterfaceAdv1;
+            isOraParamElement52.MemberValue = "ORG_ID";
+            isOraParamElement52.OraDbTypeString = "NUMBER";
+            isOraParamElement52.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement52.ParamName = "W_ORG_ID";
+            isOraParamElement52.Size = 22;
+            isOraParamElement52.SourceColumn = null;
+            isOraParamElement53.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement53.MemberControl = this.W2_ALLOWANCE_TYPE;
+            isOraParamElement53.MemberValue = "EditValue";
+            isOraParamElement53.OraDbTypeString = "VARCHAR2";
+            isOraParamElement53.OraType = System.Data.OracleClient.OracleType.VarChar;
+            isOraParamElement53.ParamName = "W_ALLOWANCE_TYPE";
+            isOraParamElement53.Size = 0;
+            isOraParamElement53.SourceColumn = null;
+            isOraParamElement54.Direction = System.Data.ParameterDirection.Input;
+            isOraParamElement54.MemberControl = null;
+            isOraParamElement54.MemberValue = null;
+            isOraParamElement54.OraDbTypeString = "NUMBER";
+            isOraParamElement54.OraType = System.Data.OracleClient.OracleType.Number;
+            isOraParamElement54.ParamName = "W_PERSON_ID";
+            isOraParamElement54.Size = 22;
+            isOraParamElement54.SourceColumn = null;
+            this.IDA_SALARY_TOTAL_DETAIL.SelectParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
+            isOraParamElement47,
+            isOraParamElement48,
+            isOraParamElement49,
+            isOraParamElement50,
+            isOraParamElement51,
+            isOraParamElement52,
+            isOraParamElement53,
+            isOraParamElement54});
+            this.IDA_SALARY_TOTAL_DETAIL.WizardOwner = "";
+            this.IDA_SALARY_TOTAL_DETAIL.WizardProcedure = "";
+            this.IDA_SALARY_TOTAL_DETAIL.WizardTableName = "";
+            // 
             // IDA_SALARY_DETAIL
             // 
             isOraBindingElement3.LastValue = null;
@@ -4615,8 +5826,8 @@
             // 
             // igbCONDITION
             // 
-            this.igbCONDITION.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.igbCONDITION.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.igbCONDITION.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.igbCONDITION.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
             this.igbCONDITION.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
@@ -4942,9 +6153,9 @@
             // TB_MAIN
             // 
             this.TB_MAIN.AdjustTopGap = 3;
-            this.TB_MAIN.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.TB_MAIN.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TB_MAIN.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.TB_MAIN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_MAIN.Controls.Add(this.TP_CHECK);
@@ -4989,8 +6200,11 @@
             this.TP_CHECK.Controls.Add(this.PT_TITLE_0);
             this.TP_CHECK.Controls.Add(this.GB_DETAIL);
             this.TP_CHECK.Controls.Add(this.splitContainerAdv1);
+            this.TP_CHECK.Image = null;
+            this.TP_CHECK.ImageSize = new System.Drawing.Size(16, 16);
             this.TP_CHECK.Location = new System.Drawing.Point(1, 24);
             this.TP_CHECK.Name = "TP_CHECK";
+            this.TP_CHECK.ShowCloseButton = true;
             this.TP_CHECK.Size = new System.Drawing.Size(944, 455);
             this.TP_CHECK.TabIndex = 1;
             this.TP_CHECK.Text = "Salary Check List";
@@ -4998,8 +6212,8 @@
             // 
             // PT_TITLE_0
             // 
-            this.PT_TITLE_0.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.PT_TITLE_0.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PT_TITLE_0.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.PT_TITLE_0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
             this.PT_TITLE_0.ForeColor = System.Drawing.Color.Black;
@@ -5022,9 +6236,9 @@
             // 
             // GB_DETAIL
             // 
-            this.GB_DETAIL.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.GB_DETAIL.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GB_DETAIL.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.GB_DETAIL.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.GB_DETAIL.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -5049,6 +6263,164 @@
             // IGR_PREVIOUS_DETAIL
             // 
             this.IGR_PREVIOUS_DETAIL.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            // 
+            // 
+            // 
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.ActivateCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridCellActivateAction.SetCurrent;
+            gridBaseStyle1.Name = "Header";
+            gridBaseStyle1.StyleInfo.Borders.Bottom = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle1.StyleInfo.Borders.Left = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle1.StyleInfo.Borders.Right = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle1.StyleInfo.Borders.Top = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle1.StyleInfo.CellType = "Header";
+            gridBaseStyle1.StyleInfo.Font.Bold = false;
+            gridBaseStyle1.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(199)))), ((int)(((byte)(184))))), System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(216))))));
+            gridBaseStyle1.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle;
+            gridBaseStyle2.Name = "Standard";
+            gridBaseStyle2.StyleInfo.Font.Bold = false;
+            gridBaseStyle2.StyleInfo.Font.Facename = "굴림";
+            gridBaseStyle2.StyleInfo.Font.Italic = false;
+            gridBaseStyle2.StyleInfo.Font.Size = 9F;
+            gridBaseStyle2.StyleInfo.Font.Strikeout = false;
+            gridBaseStyle2.StyleInfo.Font.Underline = false;
+            gridBaseStyle2.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridBaseStyle2.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window);
+            gridBaseStyle3.Name = "Column Header";
+            gridBaseStyle3.StyleInfo.BaseStyle = "Header";
+            gridBaseStyle3.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
+            gridBaseStyle3.StyleInfo.TextMargins.Top = 3;
+            gridBaseStyle4.Name = "Row Header";
+            gridBaseStyle4.StyleInfo.BaseStyle = "Header";
+            gridBaseStyle4.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridBaseStyle4.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(199)))), ((int)(((byte)(184))))), System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(216))))));
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.BaseStylesMap.AddRange(new Syncfusion.Windows.Forms.Grid.GridBaseStyle[] {
+            gridBaseStyle1,
+            gridBaseStyle2,
+            gridBaseStyle3,
+            gridBaseStyle4});
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.ColCount = 8;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.ColHiddenEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridColHidden[] {
+            new Syncfusion.Windows.Forms.Grid.GridColHidden(5)});
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.ColWidthEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridColWidth[] {
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(0, 30),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(1, 80),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(2, 140),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(3, 100),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(4, 100),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(5, 65),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(6, 150),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(7, 150),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(8, 150)});
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.DefaultGridBorderStyle = Syncfusion.Windows.Forms.Grid.GridBorderStyle.Solid;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.DefaultRowHeight = 19;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.EnterKeyBehavior = Syncfusion.Windows.Forms.Grid.GridDirectionType.None;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.Font = new System.Drawing.Font("굴림", 9F);
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Office2007;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Office2007Blue;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.Location = new System.Drawing.Point(1, 1);
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.Name = "isBaseGrid";
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.NumberedColHeaders = false;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.Office2007ScrollBars = true;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.Office2007ScrollBarsColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Managed;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.Properties.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.Properties.FixedLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(147)))), ((int)(((byte)(207)))));
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.Properties.GridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.Properties.MarkColHeader = false;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.Properties.MarkRowHeader = false;
+            gridRangeStyle1.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle1.StyleInfo.Font.Bold = false;
+            gridRangeStyle1.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle1.StyleInfo.Font.Italic = false;
+            gridRangeStyle1.StyleInfo.Font.Size = 9F;
+            gridRangeStyle1.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle1.StyleInfo.Font.Underline = false;
+            gridRangeStyle1.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle2.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(1, 2);
+            gridRangeStyle2.StyleInfo.CellType = "TextBox";
+            gridRangeStyle2.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle2.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle2.StyleInfo.Clickable = false;
+            gridRangeStyle2.StyleInfo.Font.Bold = false;
+            gridRangeStyle2.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle2.StyleInfo.Font.Italic = false;
+            gridRangeStyle2.StyleInfo.Font.Size = 9F;
+            gridRangeStyle2.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle2.StyleInfo.Font.Underline = false;
+            gridRangeStyle2.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle2.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle2.StyleInfo.ReadOnly = true;
+            gridRangeStyle2.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle3.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(3, 4);
+            gridRangeStyle3.StyleInfo.CellType = "ComboBox";
+            gridRangeStyle3.StyleInfo.CellValueType = typeof(System.DateTime);
+            gridRangeStyle3.StyleInfo.Clickable = false;
+            gridRangeStyle3.StyleInfo.CultureInfo = new System.Globalization.CultureInfo("");
+            gridRangeStyle3.StyleInfo.Font.Bold = false;
+            gridRangeStyle3.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle3.StyleInfo.Font.Italic = false;
+            gridRangeStyle3.StyleInfo.Font.Size = 9F;
+            gridRangeStyle3.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle3.StyleInfo.Font.Underline = false;
+            gridRangeStyle3.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle3.StyleInfo.Format = "yyyy-MM-dd";
+            gridRangeStyle3.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle3.StyleInfo.ReadOnly = true;
+            gridRangeStyle3.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle4.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(5, 8);
+            gridRangeStyle4.StyleInfo.CellType = "TextBox";
+            gridRangeStyle4.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle4.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle4.StyleInfo.Clickable = false;
+            gridRangeStyle4.StyleInfo.Font.Bold = false;
+            gridRangeStyle4.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle4.StyleInfo.Font.Italic = false;
+            gridRangeStyle4.StyleInfo.Font.Size = 9F;
+            gridRangeStyle4.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle4.StyleInfo.Font.Underline = false;
+            gridRangeStyle4.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle4.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle4.StyleInfo.ReadOnly = true;
+            gridRangeStyle4.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle5.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 1);
+            gridRangeStyle5.StyleInfo.Text = "Person No";
+            gridRangeStyle6.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 2);
+            gridRangeStyle6.StyleInfo.Text = "Name";
+            gridRangeStyle7.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 3);
+            gridRangeStyle7.StyleInfo.Text = "Join Date";
+            gridRangeStyle8.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 4);
+            gridRangeStyle8.StyleInfo.Text = "Retire Date";
+            gridRangeStyle9.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 5);
+            gridRangeStyle9.StyleInfo.Text = "Person ID";
+            gridRangeStyle10.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 6);
+            gridRangeStyle10.StyleInfo.Text = "Position";
+            gridRangeStyle11.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 7);
+            gridRangeStyle11.StyleInfo.Text = "Work Center";
+            gridRangeStyle12.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 8);
+            gridRangeStyle12.StyleInfo.Text = "Job Category";
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
+            gridRangeStyle1,
+            gridRangeStyle2,
+            gridRangeStyle3,
+            gridRangeStyle4,
+            gridRangeStyle5,
+            gridRangeStyle6,
+            gridRangeStyle7,
+            gridRangeStyle8,
+            gridRangeStyle9,
+            gridRangeStyle10,
+            gridRangeStyle11,
+            gridRangeStyle12});
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.RefreshCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridRefreshCurrentCellBehavior.RefreshRow;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.RowCount = 0;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.RowHeightEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridRowHeight[] {
+            new Syncfusion.Windows.Forms.Grid.GridRowHeight(0, 22)});
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.SerializeCellsBehavior = Syncfusion.Windows.Forms.Grid.GridSerializeCellsBehavior.SerializeAsRangeStylesIntoCode;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.Size = new System.Drawing.Size(468, 398);
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.SmartSizeBox = false;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.TabIndex = 0;
+            this.IGR_PREVIOUS_DETAIL.BaseGrid.ThemesEnabled = true;
             this.IGR_PREVIOUS_DETAIL.ColCount = 8;
             this.IGR_PREVIOUS_DETAIL.DataAdapter = this.IDA_SALARY_DETAIL;
             this.IGR_PREVIOUS_DETAIL.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -5271,8 +6643,8 @@
             // 
             // splitContainerAdv1
             // 
-            this.splitContainerAdv1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.splitContainerAdv1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.splitContainerAdv1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(239)))), ((int)(((byte)(255))))), System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(147)))), ((int)(((byte)(207))))));
             this.splitContainerAdv1.FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedPanel.Panel1;
             this.splitContainerAdv1.HotBackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(151)))), ((int)(((byte)(61))))), System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(184)))), ((int)(((byte)(94))))));
@@ -5369,6 +6741,135 @@
             // IGR_SALARY_ITEM
             // 
             this.IGR_SALARY_ITEM.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            // 
+            // 
+            // 
+            this.IGR_SALARY_ITEM.BaseGrid.ActivateCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridCellActivateAction.SetCurrent;
+            gridBaseStyle5.Name = "Header";
+            gridBaseStyle5.StyleInfo.Borders.Bottom = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle5.StyleInfo.Borders.Left = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle5.StyleInfo.Borders.Right = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle5.StyleInfo.Borders.Top = new Syncfusion.Windows.Forms.Grid.GridBorder(Syncfusion.Windows.Forms.Grid.GridBorderStyle.None);
+            gridBaseStyle5.StyleInfo.CellType = "Header";
+            gridBaseStyle5.StyleInfo.Font.Bold = false;
+            gridBaseStyle5.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(199)))), ((int)(((byte)(184))))), System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(216))))));
+            gridBaseStyle5.StyleInfo.VerticalAlignment = Syncfusion.Windows.Forms.Grid.GridVerticalAlignment.Middle;
+            gridBaseStyle6.Name = "Standard";
+            gridBaseStyle6.StyleInfo.Font.Bold = false;
+            gridBaseStyle6.StyleInfo.Font.Facename = "굴림";
+            gridBaseStyle6.StyleInfo.Font.Italic = false;
+            gridBaseStyle6.StyleInfo.Font.Size = 9F;
+            gridBaseStyle6.StyleInfo.Font.Strikeout = false;
+            gridBaseStyle6.StyleInfo.Font.Underline = false;
+            gridBaseStyle6.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridBaseStyle6.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(System.Drawing.SystemColors.Window);
+            gridBaseStyle7.Name = "Column Header";
+            gridBaseStyle7.StyleInfo.BaseStyle = "Header";
+            gridBaseStyle7.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Center;
+            gridBaseStyle7.StyleInfo.TextMargins.Top = 3;
+            gridBaseStyle8.Name = "Row Header";
+            gridBaseStyle8.StyleInfo.BaseStyle = "Header";
+            gridBaseStyle8.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridBaseStyle8.StyleInfo.Interior = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Horizontal, System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(199)))), ((int)(((byte)(184))))), System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(234)))), ((int)(((byte)(216))))));
+            this.IGR_SALARY_ITEM.BaseGrid.BaseStylesMap.AddRange(new Syncfusion.Windows.Forms.Grid.GridBaseStyle[] {
+            gridBaseStyle5,
+            gridBaseStyle6,
+            gridBaseStyle7,
+            gridBaseStyle8});
+            this.IGR_SALARY_ITEM.BaseGrid.ColCount = 4;
+            this.IGR_SALARY_ITEM.BaseGrid.ColHiddenEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridColHidden[] {
+            new Syncfusion.Windows.Forms.Grid.GridColHidden(2)});
+            this.IGR_SALARY_ITEM.BaseGrid.ColWidthEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridColWidth[] {
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(0, 30),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(1, 80),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(2, 65),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(3, 250),
+            new Syncfusion.Windows.Forms.Grid.GridColWidth(4, 80)});
+            this.IGR_SALARY_ITEM.BaseGrid.DefaultGridBorderStyle = Syncfusion.Windows.Forms.Grid.GridBorderStyle.Solid;
+            this.IGR_SALARY_ITEM.BaseGrid.DefaultRowHeight = 19;
+            this.IGR_SALARY_ITEM.BaseGrid.EnterKeyBehavior = Syncfusion.Windows.Forms.Grid.GridDirectionType.None;
+            this.IGR_SALARY_ITEM.BaseGrid.Font = new System.Drawing.Font("굴림", 9F);
+            this.IGR_SALARY_ITEM.BaseGrid.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.IGR_SALARY_ITEM.BaseGrid.GridOfficeScrollBars = Syncfusion.Windows.Forms.OfficeScrollBars.Office2007;
+            this.IGR_SALARY_ITEM.BaseGrid.GridVisualStyles = Syncfusion.Windows.Forms.GridVisualStyles.Office2007Blue;
+            this.IGR_SALARY_ITEM.BaseGrid.Location = new System.Drawing.Point(1, 1);
+            this.IGR_SALARY_ITEM.BaseGrid.Name = "isBaseGrid";
+            this.IGR_SALARY_ITEM.BaseGrid.NumberedColHeaders = false;
+            this.IGR_SALARY_ITEM.BaseGrid.Office2007ScrollBars = true;
+            this.IGR_SALARY_ITEM.BaseGrid.Office2007ScrollBarsColorScheme = Syncfusion.Windows.Forms.Office2007ColorScheme.Managed;
+            this.IGR_SALARY_ITEM.BaseGrid.Properties.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.IGR_SALARY_ITEM.BaseGrid.Properties.FixedLinesColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(147)))), ((int)(((byte)(207)))));
+            this.IGR_SALARY_ITEM.BaseGrid.Properties.GridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.IGR_SALARY_ITEM.BaseGrid.Properties.MarkColHeader = false;
+            this.IGR_SALARY_ITEM.BaseGrid.Properties.MarkRowHeader = false;
+            gridRangeStyle13.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Table();
+            gridRangeStyle13.StyleInfo.Font.Bold = false;
+            gridRangeStyle13.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle13.StyleInfo.Font.Italic = false;
+            gridRangeStyle13.StyleInfo.Font.Size = 9F;
+            gridRangeStyle13.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle13.StyleInfo.Font.Underline = false;
+            gridRangeStyle13.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle14.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cols(1, 3);
+            gridRangeStyle14.StyleInfo.CellType = "TextBox";
+            gridRangeStyle14.StyleInfo.CellValueType = typeof(string);
+            gridRangeStyle14.StyleInfo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            gridRangeStyle14.StyleInfo.Clickable = false;
+            gridRangeStyle14.StyleInfo.Font.Bold = false;
+            gridRangeStyle14.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle14.StyleInfo.Font.Italic = false;
+            gridRangeStyle14.StyleInfo.Font.Size = 9F;
+            gridRangeStyle14.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle14.StyleInfo.Font.Underline = false;
+            gridRangeStyle14.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle14.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Left;
+            gridRangeStyle14.StyleInfo.ReadOnly = true;
+            gridRangeStyle14.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle15.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Col(4);
+            gridRangeStyle15.StyleInfo.CellType = "Currency";
+            gridRangeStyle15.StyleInfo.CellValueType = typeof(decimal);
+            gridRangeStyle15.StyleInfo.Clickable = false;
+            gridRangeStyle15.StyleInfo.CurrencyEdit.CurrencyDecimalDigits = 0;
+            gridRangeStyle15.StyleInfo.CurrencyEdit.CurrencyPositivePattern = 0;
+            gridRangeStyle15.StyleInfo.CurrencyEdit.CurrencySymbol = "";
+            gridRangeStyle15.StyleInfo.CurrencyEdit.NullString = "";
+            gridRangeStyle15.StyleInfo.CurrencyEdit.NullValue = null;
+            gridRangeStyle15.StyleInfo.Font.Bold = false;
+            gridRangeStyle15.StyleInfo.Font.Facename = "굴림";
+            gridRangeStyle15.StyleInfo.Font.Italic = false;
+            gridRangeStyle15.StyleInfo.Font.Size = 9F;
+            gridRangeStyle15.StyleInfo.Font.Strikeout = false;
+            gridRangeStyle15.StyleInfo.Font.Underline = false;
+            gridRangeStyle15.StyleInfo.Font.Unit = System.Drawing.GraphicsUnit.Point;
+            gridRangeStyle15.StyleInfo.HorizontalAlignment = Syncfusion.Windows.Forms.Grid.GridHorizontalAlignment.Right;
+            gridRangeStyle15.StyleInfo.ReadOnly = true;
+            gridRangeStyle15.StyleInfo.ShowButtons = Syncfusion.Windows.Forms.Grid.GridShowButtons.Show;
+            gridRangeStyle16.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 1);
+            gridRangeStyle16.StyleInfo.Text = "Code";
+            gridRangeStyle17.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 2);
+            gridRangeStyle17.StyleInfo.Text = "ITEM_TYPE";
+            gridRangeStyle18.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 3);
+            gridRangeStyle18.StyleInfo.Text = "Description";
+            gridRangeStyle19.Range = Syncfusion.Windows.Forms.Grid.GridRangeInfo.Cell(0, 4);
+            gridRangeStyle19.StyleInfo.Text = "Count";
+            this.IGR_SALARY_ITEM.BaseGrid.RangeStyles.AddRange(new Syncfusion.Windows.Forms.Grid.GridRangeStyle[] {
+            gridRangeStyle13,
+            gridRangeStyle14,
+            gridRangeStyle15,
+            gridRangeStyle16,
+            gridRangeStyle17,
+            gridRangeStyle18,
+            gridRangeStyle19});
+            this.IGR_SALARY_ITEM.BaseGrid.RefreshCurrentCellBehavior = Syncfusion.Windows.Forms.Grid.GridRefreshCurrentCellBehavior.RefreshRow;
+            this.IGR_SALARY_ITEM.BaseGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.IGR_SALARY_ITEM.BaseGrid.RowCount = 0;
+            this.IGR_SALARY_ITEM.BaseGrid.RowHeightEntries.AddRange(new Syncfusion.Windows.Forms.Grid.GridRowHeight[] {
+            new Syncfusion.Windows.Forms.Grid.GridRowHeight(0, 22)});
+            this.IGR_SALARY_ITEM.BaseGrid.SerializeCellsBehavior = Syncfusion.Windows.Forms.Grid.GridSerializeCellsBehavior.SerializeAsRangeStylesIntoCode;
+            this.IGR_SALARY_ITEM.BaseGrid.Size = new System.Drawing.Size(462, 86);
+            this.IGR_SALARY_ITEM.BaseGrid.SmartSizeBox = false;
+            this.IGR_SALARY_ITEM.BaseGrid.TabIndex = 0;
+            this.IGR_SALARY_ITEM.BaseGrid.ThemesEnabled = true;
             this.IGR_SALARY_ITEM.ColCount = 4;
             this.IGR_SALARY_ITEM.DataAdapter = this.IDA_SALARY_ITEM;
             this.IGR_SALARY_ITEM.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -5491,8 +6992,11 @@
             this.TP_ITEM_VALIDATE.Controls.Add(this.PT_TITLE_1);
             this.TP_ITEM_VALIDATE.Controls.Add(this.isGroupBox3);
             this.TP_ITEM_VALIDATE.Controls.Add(this.isGroupBox4);
+            this.TP_ITEM_VALIDATE.Image = null;
+            this.TP_ITEM_VALIDATE.ImageSize = new System.Drawing.Size(16, 16);
             this.TP_ITEM_VALIDATE.Location = new System.Drawing.Point(1, 24);
             this.TP_ITEM_VALIDATE.Name = "TP_ITEM_VALIDATE";
+            this.TP_ITEM_VALIDATE.ShowCloseButton = true;
             this.TP_ITEM_VALIDATE.Size = new System.Drawing.Size(944, 455);
             this.TP_ITEM_VALIDATE.TabIndex = 2;
             this.TP_ITEM_VALIDATE.Text = "Previous vs This Item Amount Validate";
@@ -5500,8 +7004,8 @@
             // 
             // PT_TITLE_1
             // 
-            this.PT_TITLE_1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.PT_TITLE_1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PT_TITLE_1.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.PT_TITLE_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
             this.PT_TITLE_1.ForeColor = System.Drawing.Color.Black;
@@ -5524,8 +7028,8 @@
             // 
             // isGroupBox3
             // 
-            this.isGroupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.isGroupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.isGroupBox3.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.isGroupBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.isGroupBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -5548,9 +7052,9 @@
             // 
             // isGroupBox4
             // 
-            this.isGroupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.isGroupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.isGroupBox4.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.isGroupBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.isGroupBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -5581,126 +7085,37 @@
             this.TP_TOTAL_VALIDATE.Controls.Add(this.W2_RB_ALLOWANCE_A);
             this.TP_TOTAL_VALIDATE.Controls.Add(this.W2_AMOUNT_TO);
             this.TP_TOTAL_VALIDATE.Controls.Add(this.W2_AMOUNT_FR);
+            this.TP_TOTAL_VALIDATE.Image = null;
+            this.TP_TOTAL_VALIDATE.ImageSize = new System.Drawing.Size(16, 16);
             this.TP_TOTAL_VALIDATE.Location = new System.Drawing.Point(1, 24);
             this.TP_TOTAL_VALIDATE.Name = "TP_TOTAL_VALIDATE";
+            this.TP_TOTAL_VALIDATE.ShowCloseButton = true;
             this.TP_TOTAL_VALIDATE.Size = new System.Drawing.Size(944, 455);
             this.TP_TOTAL_VALIDATE.TabIndex = 3;
             this.TP_TOTAL_VALIDATE.Text = "Previous vs This Total Amount Validate";
             this.TP_TOTAL_VALIDATE.ThemesEnabled = false;
             // 
-            // W2_AMOUNT_TO
+            // splitContainerAdv2
             // 
-            this.W2_AMOUNT_TO.AppInterfaceAdv = this.isAppInterfaceAdv1;
-            this.W2_AMOUNT_TO.ComboBoxValue = "";
-            this.W2_AMOUNT_TO.ComboData = null;
-            this.W2_AMOUNT_TO.CurrencyValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.W2_AMOUNT_TO.DataAdapter = null;
-            this.W2_AMOUNT_TO.DataColumn = null;
-            this.W2_AMOUNT_TO.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
-            this.W2_AMOUNT_TO.DoubleValue = 0;
-            this.W2_AMOUNT_TO.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.W2_AMOUNT_TO.EditValue = null;
-            this.W2_AMOUNT_TO.ForeColor = System.Drawing.Color.Blue;
-            this.W2_AMOUNT_TO.Location = new System.Drawing.Point(726, 5);
-            this.W2_AMOUNT_TO.LookupAdapter = null;
-            this.W2_AMOUNT_TO.Name = "W2_AMOUNT_TO";
-            this.W2_AMOUNT_TO.NumberValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.W2_AMOUNT_TO.PercentValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.W2_AMOUNT_TO.PromptText = "~";
-            isLanguageElement37.Default = "~";
-            isLanguageElement37.SiteName = null;
-            isLanguageElement37.TL1_KR = "~";
-            isLanguageElement37.TL2_CN = "";
-            isLanguageElement37.TL3_VN = "";
-            isLanguageElement37.TL4_JP = "";
-            isLanguageElement37.TL5_XAA = "";
-            this.W2_AMOUNT_TO.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement37});
-            this.W2_AMOUNT_TO.PromptWidth = 20;
-            this.W2_AMOUNT_TO.Size = new System.Drawing.Size(150, 21);
-            this.W2_AMOUNT_TO.TabIndex = 3;
-            this.W2_AMOUNT_TO.TextValue = "";
+            this.splitContainerAdv2.Location = new System.Drawing.Point(1, 29);
+            this.splitContainerAdv2.Name = "splitContainerAdv2";
             // 
-            // W2_AMOUNT_FR
+            // splitContainerAdv2.Panel1
             // 
-            this.W2_AMOUNT_FR.AppInterfaceAdv = this.isAppInterfaceAdv1;
-            this.W2_AMOUNT_FR.ComboBoxValue = "";
-            this.W2_AMOUNT_FR.ComboData = null;
-            this.W2_AMOUNT_FR.CurrencyValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.W2_AMOUNT_FR.DataAdapter = null;
-            this.W2_AMOUNT_FR.DataColumn = null;
-            this.W2_AMOUNT_FR.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
-            this.W2_AMOUNT_FR.DoubleValue = 0;
-            this.W2_AMOUNT_FR.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.NumberEdit;
-            this.W2_AMOUNT_FR.EditValue = null;
-            this.W2_AMOUNT_FR.ForeColor = System.Drawing.Color.Blue;
-            this.W2_AMOUNT_FR.Location = new System.Drawing.Point(470, 5);
-            this.W2_AMOUNT_FR.LookupAdapter = null;
-            this.W2_AMOUNT_FR.Name = "W2_AMOUNT_FR";
-            this.W2_AMOUNT_FR.NumberValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.W2_AMOUNT_FR.PercentValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.W2_AMOUNT_FR.PromptText = "Check Amount";
-            isLanguageElement36.Default = "Check Amount";
-            isLanguageElement36.SiteName = null;
-            isLanguageElement36.TL1_KR = "검증 금액";
-            isLanguageElement36.TL2_CN = "";
-            isLanguageElement36.TL3_VN = "";
-            isLanguageElement36.TL4_JP = "";
-            isLanguageElement36.TL5_XAA = "";
-            this.W2_AMOUNT_FR.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement36});
-            this.W2_AMOUNT_FR.PromptWidth = 120;
-            this.W2_AMOUNT_FR.Size = new System.Drawing.Size(250, 21);
-            this.W2_AMOUNT_FR.TabIndex = 2;
-            this.W2_AMOUNT_FR.TextValue = "";
+            this.splitContainerAdv2.Panel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(209)))), ((int)(((byte)(252))))), System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(255))))));
+            this.splitContainerAdv2.Panel1.Controls.Add(this.isGroupBox5);
             // 
-            // PT_TITLE_2
+            // splitContainerAdv2.Panel2
             // 
-            this.PT_TITLE_2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.PT_TITLE_2.AppInterfaceAdv = this.isAppInterfaceAdv1;
-            this.PT_TITLE_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
-            this.PT_TITLE_2.ForeColor = System.Drawing.Color.Black;
-            this.PT_TITLE_2.Location = new System.Drawing.Point(1, 1);
-            this.PT_TITLE_2.Name = "PT_TITLE_2";
-            this.PT_TITLE_2.PromptStyle = InfoSummit.Win.ControlAdv.ISUtil.Enum.PromptStyle.FullLine;
-            this.PT_TITLE_2.PromptText = "";
-            isLanguageElement39.Default = "";
-            isLanguageElement39.SiteName = null;
-            isLanguageElement39.TL1_KR = null;
-            isLanguageElement39.TL2_CN = null;
-            isLanguageElement39.TL3_VN = null;
-            isLanguageElement39.TL4_JP = null;
-            isLanguageElement39.TL5_XAA = null;
-            this.PT_TITLE_2.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement39});
-            this.PT_TITLE_2.Size = new System.Drawing.Size(558, 22);
-            this.PT_TITLE_2.TabIndex = 0;
-            this.PT_TITLE_2.TabStop = false;
+            this.splitContainerAdv2.Panel2.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(209)))), ((int)(((byte)(252))))), System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(255))))));
+            this.splitContainerAdv2.Panel2.Controls.Add(this.PT_TITLE_2);
+            this.splitContainerAdv2.Panel2.Controls.Add(this.isGroupBox6);
+            this.splitContainerAdv2.Size = new System.Drawing.Size(943, 426);
+            this.splitContainerAdv2.SplitterDistance = 379;
+            this.splitContainerAdv2.SplitterWidth = 4;
+            this.splitContainerAdv2.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2007Blue;
+            this.splitContainerAdv2.TabIndex = 4;
+            this.splitContainerAdv2.Text = "splitContainerAdv2";
             // 
             // isGroupBox5
             // 
@@ -5725,128 +7140,35 @@
             this.isGroupBox5.Size = new System.Drawing.Size(379, 426);
             this.isGroupBox5.TabIndex = 0;
             // 
-            // IGR_SALARY_TOTAL_AMOUNT
+            // PT_TITLE_2
             // 
-            this.IGR_SALARY_TOTAL_AMOUNT.AppInterfaceAdv = this.isAppInterfaceAdv1;
-            this.IGR_SALARY_TOTAL_AMOUNT.ColCount = 4;
-            this.IGR_SALARY_TOTAL_AMOUNT.DataAdapter = this.IDA_SALARY_TOTAL_AMOUNT;
-            this.IGR_SALARY_TOTAL_AMOUNT.Dock = System.Windows.Forms.DockStyle.Fill;
-            isGridAdvExColElement27.ColumnType = "NumberEdit";
-            isGridAdvExColElement27.DataColumn = "PERSON_ID";
-            isGridAdvExColElement27.DataOrdinal = 0;
-            isGridAdvExColElement27.DataType = "System.Decimal";
-            isGridAdvExColElement27.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement27.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement27.Default = "PERSON_ID";
-            isGridAdvExTLHeaderElement27.TL1_KR = null;
-            isGridAdvExTLHeaderElement27.TL2_CN = null;
-            isGridAdvExTLHeaderElement27.TL3_VN = null;
-            isGridAdvExTLHeaderElement27.TL4_JP = null;
-            isGridAdvExTLHeaderElement27.TL5_XAA = null;
-            isGridAdvExColElement27.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
-            isGridAdvExTLHeaderElement27});
-            isGridAdvExColElement27.HeaderPrompt = "PERSON_ID";
-            isGridAdvExColElement27.Insertable = 0;
-            isGridAdvExColElement27.MergeCell = 0;
-            isGridAdvExColElement27.Nullable = 1;
-            isGridAdvExColElement27.Ordinal = 0;
-            isGridAdvExColElement27.ReadOnly = 1;
-            isGridAdvExColElement27.Symbol = "";
-            isGridAdvExColElement27.SymbolPosition = "";
-            isGridAdvExColElement27.Updatable = 0;
-            isGridAdvExColElement27.Visible = 0;
-            isGridAdvExColElement27.Width = 65;
-            isGridAdvExColElement28.ColumnType = "TextEdit";
-            isGridAdvExColElement28.DataColumn = "PERSON_NUM";
-            isGridAdvExColElement28.DataOrdinal = 1;
-            isGridAdvExColElement28.DataType = "System.String";
-            isGridAdvExColElement28.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement28.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement28.Default = "Person No";
-            isGridAdvExTLHeaderElement28.TL1_KR = "사원번호";
-            isGridAdvExTLHeaderElement28.TL2_CN = null;
-            isGridAdvExTLHeaderElement28.TL3_VN = null;
-            isGridAdvExTLHeaderElement28.TL4_JP = null;
-            isGridAdvExTLHeaderElement28.TL5_XAA = null;
-            isGridAdvExColElement28.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
-            isGridAdvExTLHeaderElement28});
-            isGridAdvExColElement28.HeaderPrompt = "Person No";
-            isGridAdvExColElement28.Insertable = 0;
-            isGridAdvExColElement28.MergeCell = 0;
-            isGridAdvExColElement28.Nullable = 1;
-            isGridAdvExColElement28.Ordinal = 1;
-            isGridAdvExColElement28.ReadOnly = 1;
-            isGridAdvExColElement28.Symbol = "";
-            isGridAdvExColElement28.SymbolPosition = "";
-            isGridAdvExColElement28.Updatable = 0;
-            isGridAdvExColElement28.Visible = 1;
-            isGridAdvExColElement28.Width = 80;
-            isGridAdvExColElement29.ColumnType = "TextEdit";
-            isGridAdvExColElement29.DataColumn = "NAME";
-            isGridAdvExColElement29.DataOrdinal = 2;
-            isGridAdvExColElement29.DataType = "System.String";
-            isGridAdvExColElement29.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement29.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement29.Default = "Name";
-            isGridAdvExTLHeaderElement29.TL1_KR = "성명";
-            isGridAdvExTLHeaderElement29.TL2_CN = null;
-            isGridAdvExTLHeaderElement29.TL3_VN = null;
-            isGridAdvExTLHeaderElement29.TL4_JP = null;
-            isGridAdvExTLHeaderElement29.TL5_XAA = null;
-            isGridAdvExColElement29.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
-            isGridAdvExTLHeaderElement29});
-            isGridAdvExColElement29.HeaderPrompt = "Name";
-            isGridAdvExColElement29.Insertable = 0;
-            isGridAdvExColElement29.MergeCell = 0;
-            isGridAdvExColElement29.Nullable = 1;
-            isGridAdvExColElement29.Ordinal = 2;
-            isGridAdvExColElement29.ReadOnly = 1;
-            isGridAdvExColElement29.Symbol = "";
-            isGridAdvExColElement29.SymbolPosition = "";
-            isGridAdvExColElement29.Updatable = 0;
-            isGridAdvExColElement29.Visible = 1;
-            isGridAdvExColElement29.Width = 130;
-            isGridAdvExColElement30.ColumnType = "NumberEdit";
-            isGridAdvExColElement30.DataColumn = "AMOUNT";
-            isGridAdvExColElement30.DataOrdinal = 3;
-            isGridAdvExColElement30.DataType = "System.Decimal";
-            isGridAdvExColElement30.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement30.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement30.Default = "Amount";
-            isGridAdvExTLHeaderElement30.TL1_KR = "금액";
-            isGridAdvExTLHeaderElement30.TL2_CN = null;
-            isGridAdvExTLHeaderElement30.TL3_VN = null;
-            isGridAdvExTLHeaderElement30.TL4_JP = null;
-            isGridAdvExTLHeaderElement30.TL5_XAA = null;
-            isGridAdvExColElement30.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
-            isGridAdvExTLHeaderElement30});
-            isGridAdvExColElement30.HeaderPrompt = "Amount";
-            isGridAdvExColElement30.Insertable = 0;
-            isGridAdvExColElement30.MergeCell = 0;
-            isGridAdvExColElement30.Nullable = 1;
-            isGridAdvExColElement30.Ordinal = 3;
-            isGridAdvExColElement30.ReadOnly = 1;
-            isGridAdvExColElement30.Symbol = "";
-            isGridAdvExColElement30.SymbolPosition = "";
-            isGridAdvExColElement30.Updatable = 0;
-            isGridAdvExColElement30.Visible = 1;
-            isGridAdvExColElement30.Width = 120;
-            this.IGR_SALARY_TOTAL_AMOUNT.GridAdvExColElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExColElement[] {
-            isGridAdvExColElement27,
-            isGridAdvExColElement28,
-            isGridAdvExColElement29,
-            isGridAdvExColElement30});
-            this.IGR_SALARY_TOTAL_AMOUNT.Location = new System.Drawing.Point(0, 22);
-            this.IGR_SALARY_TOTAL_AMOUNT.Name = "IGR_SALARY_TOTAL_AMOUNT";
-            this.IGR_SALARY_TOTAL_AMOUNT.Size = new System.Drawing.Size(379, 404);
-            this.IGR_SALARY_TOTAL_AMOUNT.TabIndex = 0;
-            this.IGR_SALARY_TOTAL_AMOUNT.Text = "isGridAdvEx1";
+            this.PT_TITLE_2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PT_TITLE_2.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.PT_TITLE_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
+            this.PT_TITLE_2.ForeColor = System.Drawing.Color.Black;
+            this.PT_TITLE_2.Location = new System.Drawing.Point(1, 1);
+            this.PT_TITLE_2.Name = "PT_TITLE_2";
+            this.PT_TITLE_2.PromptStyle = InfoSummit.Win.ControlAdv.ISUtil.Enum.PromptStyle.FullLine;
+            this.PT_TITLE_2.PromptText = "";
+            isLanguageElement39.Default = "";
+            isLanguageElement39.SiteName = null;
+            isLanguageElement39.TL1_KR = null;
+            isLanguageElement39.TL2_CN = null;
+            isLanguageElement39.TL3_VN = null;
+            isLanguageElement39.TL4_JP = null;
+            isLanguageElement39.TL5_XAA = null;
+            this.PT_TITLE_2.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement39});
+            this.PT_TITLE_2.Size = new System.Drawing.Size(558, 22);
+            this.PT_TITLE_2.TabIndex = 0;
+            this.PT_TITLE_2.TabStop = false;
             // 
             // isGroupBox6
             // 
-            this.isGroupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.isGroupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.isGroupBox6.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.isGroupBox6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(176)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
             this.isGroupBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -5867,751 +7189,6 @@
             this.isGroupBox6.Size = new System.Drawing.Size(558, 404);
             this.isGroupBox6.TabIndex = 1;
             this.isGroupBox6.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
-            // 
-            // IGR_SALARY_TOTAL_DETAIL
-            // 
-            this.IGR_SALARY_TOTAL_DETAIL.AppInterfaceAdv = this.isAppInterfaceAdv1;
-            this.IGR_SALARY_TOTAL_DETAIL.ColCount = 6;
-            this.IGR_SALARY_TOTAL_DETAIL.DataAdapter = this.IDA_SALARY_TOTAL_DETAIL;
-            this.IGR_SALARY_TOTAL_DETAIL.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.IGR_SALARY_TOTAL_DETAIL.FrozenColCount = 3;
-            isGridAdvExColElement31.ColumnType = "NumberEdit";
-            isGridAdvExColElement31.DataColumn = "PERSON_ID";
-            isGridAdvExColElement31.DataOrdinal = 0;
-            isGridAdvExColElement31.DataType = "System.Decimal";
-            isGridAdvExColElement31.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement31.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement31.Default = "PERSON_ID";
-            isGridAdvExTLHeaderElement31.TL1_KR = null;
-            isGridAdvExTLHeaderElement31.TL2_CN = null;
-            isGridAdvExTLHeaderElement31.TL3_VN = null;
-            isGridAdvExTLHeaderElement31.TL4_JP = null;
-            isGridAdvExTLHeaderElement31.TL5_XAA = null;
-            isGridAdvExColElement31.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
-            isGridAdvExTLHeaderElement31});
-            isGridAdvExColElement31.HeaderPrompt = "PERSON_ID";
-            isGridAdvExColElement31.Insertable = 0;
-            isGridAdvExColElement31.MergeCell = 0;
-            isGridAdvExColElement31.Nullable = 1;
-            isGridAdvExColElement31.Ordinal = 0;
-            isGridAdvExColElement31.ReadOnly = 1;
-            isGridAdvExColElement31.Symbol = "";
-            isGridAdvExColElement31.SymbolPosition = "";
-            isGridAdvExColElement31.Updatable = 0;
-            isGridAdvExColElement31.Visible = 0;
-            isGridAdvExColElement31.Width = 65;
-            isGridAdvExColElement32.ColumnType = "TextEdit";
-            isGridAdvExColElement32.DataColumn = "ITEM_CODE";
-            isGridAdvExColElement32.DataOrdinal = 1;
-            isGridAdvExColElement32.DataType = "System.String";
-            isGridAdvExColElement32.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement32.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement32.Default = "Code";
-            isGridAdvExTLHeaderElement32.TL1_KR = null;
-            isGridAdvExTLHeaderElement32.TL2_CN = null;
-            isGridAdvExTLHeaderElement32.TL3_VN = null;
-            isGridAdvExTLHeaderElement32.TL4_JP = null;
-            isGridAdvExTLHeaderElement32.TL5_XAA = null;
-            isGridAdvExColElement32.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
-            isGridAdvExTLHeaderElement32});
-            isGridAdvExColElement32.HeaderPrompt = "Code";
-            isGridAdvExColElement32.Insertable = 0;
-            isGridAdvExColElement32.MergeCell = 0;
-            isGridAdvExColElement32.Nullable = 1;
-            isGridAdvExColElement32.Ordinal = 1;
-            isGridAdvExColElement32.ReadOnly = 1;
-            isGridAdvExColElement32.Symbol = "";
-            isGridAdvExColElement32.SymbolPosition = "";
-            isGridAdvExColElement32.Updatable = 0;
-            isGridAdvExColElement32.Visible = 1;
-            isGridAdvExColElement32.Width = 60;
-            isGridAdvExColElement33.ColumnType = "TextEdit";
-            isGridAdvExColElement33.DataColumn = "ITEM_NAME";
-            isGridAdvExColElement33.DataOrdinal = 2;
-            isGridAdvExColElement33.DataType = "System.String";
-            isGridAdvExColElement33.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement33.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement33.Default = "Item Name";
-            isGridAdvExTLHeaderElement33.TL1_KR = null;
-            isGridAdvExTLHeaderElement33.TL2_CN = null;
-            isGridAdvExTLHeaderElement33.TL3_VN = null;
-            isGridAdvExTLHeaderElement33.TL4_JP = null;
-            isGridAdvExTLHeaderElement33.TL5_XAA = null;
-            isGridAdvExColElement33.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
-            isGridAdvExTLHeaderElement33});
-            isGridAdvExColElement33.HeaderPrompt = "Item Name";
-            isGridAdvExColElement33.Insertable = 0;
-            isGridAdvExColElement33.MergeCell = 0;
-            isGridAdvExColElement33.Nullable = 1;
-            isGridAdvExColElement33.Ordinal = 2;
-            isGridAdvExColElement33.ReadOnly = 1;
-            isGridAdvExColElement33.Symbol = "";
-            isGridAdvExColElement33.SymbolPosition = "";
-            isGridAdvExColElement33.Updatable = 0;
-            isGridAdvExColElement33.Visible = 1;
-            isGridAdvExColElement33.Width = 145;
-            isGridAdvExColElement34.ColumnType = "NumberEdit";
-            isGridAdvExColElement34.DataColumn = "PRE_AMOUNT";
-            isGridAdvExColElement34.DataOrdinal = 3;
-            isGridAdvExColElement34.DataType = "System.Decimal";
-            isGridAdvExColElement34.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement34.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement34.Default = "Previous";
-            isGridAdvExTLHeaderElement34.TL1_KR = "전월금액";
-            isGridAdvExTLHeaderElement34.TL2_CN = null;
-            isGridAdvExTLHeaderElement34.TL3_VN = null;
-            isGridAdvExTLHeaderElement34.TL4_JP = null;
-            isGridAdvExTLHeaderElement34.TL5_XAA = null;
-            isGridAdvExColElement34.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
-            isGridAdvExTLHeaderElement34});
-            isGridAdvExColElement34.HeaderPrompt = "Previous";
-            isGridAdvExColElement34.Insertable = 0;
-            isGridAdvExColElement34.MergeCell = 0;
-            isGridAdvExColElement34.Nullable = 1;
-            isGridAdvExColElement34.Ordinal = 3;
-            isGridAdvExColElement34.ReadOnly = 1;
-            isGridAdvExColElement34.Symbol = "";
-            isGridAdvExColElement34.SymbolPosition = "";
-            isGridAdvExColElement34.Updatable = 0;
-            isGridAdvExColElement34.Visible = 1;
-            isGridAdvExColElement34.Width = 100;
-            isGridAdvExColElement35.ColumnType = "NumberEdit";
-            isGridAdvExColElement35.DataColumn = "THIS_AMOUNT";
-            isGridAdvExColElement35.DataOrdinal = 4;
-            isGridAdvExColElement35.DataType = "System.Decimal";
-            isGridAdvExColElement35.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement35.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement35.Default = "This";
-            isGridAdvExTLHeaderElement35.TL1_KR = "당월금액";
-            isGridAdvExTLHeaderElement35.TL2_CN = null;
-            isGridAdvExTLHeaderElement35.TL3_VN = null;
-            isGridAdvExTLHeaderElement35.TL4_JP = null;
-            isGridAdvExTLHeaderElement35.TL5_XAA = null;
-            isGridAdvExColElement35.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
-            isGridAdvExTLHeaderElement35});
-            isGridAdvExColElement35.HeaderPrompt = "This";
-            isGridAdvExColElement35.Insertable = 0;
-            isGridAdvExColElement35.MergeCell = 0;
-            isGridAdvExColElement35.Nullable = 1;
-            isGridAdvExColElement35.Ordinal = 4;
-            isGridAdvExColElement35.ReadOnly = 1;
-            isGridAdvExColElement35.Symbol = "";
-            isGridAdvExColElement35.SymbolPosition = "";
-            isGridAdvExColElement35.Updatable = 0;
-            isGridAdvExColElement35.Visible = 1;
-            isGridAdvExColElement35.Width = 100;
-            isGridAdvExColElement36.ColumnType = "NumberEdit";
-            isGridAdvExColElement36.DataColumn = "GAP_AMOUNT";
-            isGridAdvExColElement36.DataOrdinal = 5;
-            isGridAdvExColElement36.DataType = "System.Decimal";
-            isGridAdvExColElement36.DateFormat = "yyyy-MM-dd";
-            isGridAdvExColElement36.DecimalDigits = 0;
-            isGridAdvExTLHeaderElement36.Default = "Gap";
-            isGridAdvExTLHeaderElement36.TL1_KR = "차이금액";
-            isGridAdvExTLHeaderElement36.TL2_CN = null;
-            isGridAdvExTLHeaderElement36.TL3_VN = null;
-            isGridAdvExTLHeaderElement36.TL4_JP = null;
-            isGridAdvExTLHeaderElement36.TL5_XAA = null;
-            isGridAdvExColElement36.HeaderElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExTLHeaderElement[] {
-            isGridAdvExTLHeaderElement36});
-            isGridAdvExColElement36.HeaderPrompt = "Gap";
-            isGridAdvExColElement36.Insertable = 0;
-            isGridAdvExColElement36.MergeCell = 0;
-            isGridAdvExColElement36.Nullable = 1;
-            isGridAdvExColElement36.Ordinal = 5;
-            isGridAdvExColElement36.ReadOnly = 1;
-            isGridAdvExColElement36.Symbol = "";
-            isGridAdvExColElement36.SymbolPosition = "";
-            isGridAdvExColElement36.Updatable = 0;
-            isGridAdvExColElement36.Visible = 1;
-            isGridAdvExColElement36.Width = 100;
-            this.IGR_SALARY_TOTAL_DETAIL.GridAdvExColElement.AddRange(new InfoSummit.Win.ControlAdv.ISGridAdvExColElement[] {
-            isGridAdvExColElement31,
-            isGridAdvExColElement32,
-            isGridAdvExColElement33,
-            isGridAdvExColElement34,
-            isGridAdvExColElement35,
-            isGridAdvExColElement36});
-            this.IGR_SALARY_TOTAL_DETAIL.Location = new System.Drawing.Point(0, 22);
-            this.IGR_SALARY_TOTAL_DETAIL.Name = "IGR_SALARY_TOTAL_DETAIL";
-            this.IGR_SALARY_TOTAL_DETAIL.Size = new System.Drawing.Size(558, 382);
-            this.IGR_SALARY_TOTAL_DETAIL.TabIndex = 0;
-            this.IGR_SALARY_TOTAL_DETAIL.Text = "isGridAdvEx1";
-            // 
-            // IDA_SALARY_TOTAL_AMOUNT
-            // 
-            isOraBindingElement29.LastValue = null;
-            isOraBindingElement29.MappingColumn = "PERSON_ID";
-            isOraBindingElement29.MemberControl = this.IGR_SALARY_TOTAL_AMOUNT;
-            isOraBindingElement29.MemberValue = "PERSON_ID";
-            isOraBindingElement29.Ordinal = 1;
-            isOraBindingElement30.LastValue = null;
-            isOraBindingElement30.MappingColumn = "PERSON_NUM";
-            isOraBindingElement30.MemberControl = this.IGR_SALARY_TOTAL_AMOUNT;
-            isOraBindingElement30.MemberValue = "PERSON_NUM";
-            isOraBindingElement30.Ordinal = 2;
-            isOraBindingElement31.LastValue = null;
-            isOraBindingElement31.MappingColumn = "NAME";
-            isOraBindingElement31.MemberControl = this.IGR_SALARY_TOTAL_AMOUNT;
-            isOraBindingElement31.MemberValue = "NAME";
-            isOraBindingElement31.Ordinal = 3;
-            isOraBindingElement32.LastValue = null;
-            isOraBindingElement32.MappingColumn = "AMOUNT";
-            isOraBindingElement32.MemberControl = this.IGR_SALARY_TOTAL_AMOUNT;
-            isOraBindingElement32.MemberValue = "AMOUNT";
-            isOraBindingElement32.Ordinal = 4;
-            this.IDA_SALARY_TOTAL_AMOUNT.BindingElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraBindingElement[] {
-            isOraBindingElement29,
-            isOraBindingElement30,
-            isOraBindingElement31,
-            isOraBindingElement32});
-            this.IDA_SALARY_TOTAL_AMOUNT.CancelMember.Cancel = false;
-            this.IDA_SALARY_TOTAL_AMOUNT.CancelMember.Member = null;
-            this.IDA_SALARY_TOTAL_AMOUNT.CancelMember.Prompt = null;
-            this.IDA_SALARY_TOTAL_AMOUNT.CancelMember.TabIndex = -1;
-            this.IDA_SALARY_TOTAL_AMOUNT.CancelMember.ValueItem = null;
-            this.IDA_SALARY_TOTAL_AMOUNT.CancelUpdateFilterString = null;
-            this.IDA_SALARY_TOTAL_AMOUNT.CancelUpdateRow = null;
-            this.IDA_SALARY_TOTAL_AMOUNT.DataTransaction = null;
-            this.IDA_SALARY_TOTAL_AMOUNT.FocusedControl = null;
-            this.IDA_SALARY_TOTAL_AMOUNT.MasterAdapter = null;
-            this.IDA_SALARY_TOTAL_AMOUNT.OraConnection = this.isOraConnection1;
-            this.IDA_SALARY_TOTAL_AMOUNT.OraDelete = null;
-            this.IDA_SALARY_TOTAL_AMOUNT.OraInsert = null;
-            this.IDA_SALARY_TOTAL_AMOUNT.OraOwner = "APPS";
-            this.IDA_SALARY_TOTAL_AMOUNT.OraPackage = "HRP_SALARY_CLOSED_CHECK_G";
-            this.IDA_SALARY_TOTAL_AMOUNT.OraSelect = "SELECT_SALARY_TOTAL_AMOUNT";
-            this.IDA_SALARY_TOTAL_AMOUNT.OraSelectData = null;
-            this.IDA_SALARY_TOTAL_AMOUNT.OraUpdate = null;
-            isOraColElement30.DataColumn = "PERSON_ID";
-            isOraColElement30.DataOrdinal = 0;
-            isOraColElement30.DataType = "System.Decimal";
-            isOraColElement30.HeaderPrompt = "PERSON_ID";
-            isOraColElement30.LastValue = null;
-            isOraColElement30.MemberControl = null;
-            isOraColElement30.MemberValue = null;
-            isOraColElement30.Nullable = 0;
-            isOraColElement30.Ordinal = 0;
-            isOraColElement30.RelationKeyColumn = null;
-            isOraColElement30.ReturnParameter = null;
-            isOraColElement30.TL1_KR = null;
-            isOraColElement30.TL2_CN = null;
-            isOraColElement30.TL3_VN = null;
-            isOraColElement30.TL4_JP = null;
-            isOraColElement30.TL5_XAA = null;
-            isOraColElement30.Visible = null;
-            isOraColElement30.Width = null;
-            isOraColElement31.DataColumn = "PERSON_NUM";
-            isOraColElement31.DataOrdinal = 1;
-            isOraColElement31.DataType = "System.String";
-            isOraColElement31.HeaderPrompt = "PERSON_NUM";
-            isOraColElement31.LastValue = null;
-            isOraColElement31.MemberControl = null;
-            isOraColElement31.MemberValue = null;
-            isOraColElement31.Nullable = 0;
-            isOraColElement31.Ordinal = 1;
-            isOraColElement31.RelationKeyColumn = null;
-            isOraColElement31.ReturnParameter = null;
-            isOraColElement31.TL1_KR = null;
-            isOraColElement31.TL2_CN = null;
-            isOraColElement31.TL3_VN = null;
-            isOraColElement31.TL4_JP = null;
-            isOraColElement31.TL5_XAA = null;
-            isOraColElement31.Visible = null;
-            isOraColElement31.Width = null;
-            isOraColElement32.DataColumn = "NAME";
-            isOraColElement32.DataOrdinal = 2;
-            isOraColElement32.DataType = "System.String";
-            isOraColElement32.HeaderPrompt = "NAME";
-            isOraColElement32.LastValue = null;
-            isOraColElement32.MemberControl = null;
-            isOraColElement32.MemberValue = null;
-            isOraColElement32.Nullable = 0;
-            isOraColElement32.Ordinal = 2;
-            isOraColElement32.RelationKeyColumn = null;
-            isOraColElement32.ReturnParameter = null;
-            isOraColElement32.TL1_KR = null;
-            isOraColElement32.TL2_CN = null;
-            isOraColElement32.TL3_VN = null;
-            isOraColElement32.TL4_JP = null;
-            isOraColElement32.TL5_XAA = null;
-            isOraColElement32.Visible = null;
-            isOraColElement32.Width = null;
-            isOraColElement33.DataColumn = "AMOUNT";
-            isOraColElement33.DataOrdinal = 3;
-            isOraColElement33.DataType = "System.Decimal";
-            isOraColElement33.HeaderPrompt = "AMOUNT";
-            isOraColElement33.LastValue = null;
-            isOraColElement33.MemberControl = null;
-            isOraColElement33.MemberValue = null;
-            isOraColElement33.Nullable = 1;
-            isOraColElement33.Ordinal = 3;
-            isOraColElement33.RelationKeyColumn = null;
-            isOraColElement33.ReturnParameter = null;
-            isOraColElement33.TL1_KR = null;
-            isOraColElement33.TL2_CN = null;
-            isOraColElement33.TL3_VN = null;
-            isOraColElement33.TL4_JP = null;
-            isOraColElement33.TL5_XAA = null;
-            isOraColElement33.Visible = null;
-            isOraColElement33.Width = null;
-            this.IDA_SALARY_TOTAL_AMOUNT.SelectColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
-            isOraColElement30,
-            isOraColElement31,
-            isOraColElement32,
-            isOraColElement33});
-            isOraParamElement38.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement38.MemberControl = null;
-            isOraParamElement38.MemberValue = null;
-            isOraParamElement38.OraDbTypeString = "REF CURSOR";
-            isOraParamElement38.OraType = System.Data.OracleClient.OracleType.Cursor;
-            isOraParamElement38.ParamName = "P_CURSOR2";
-            isOraParamElement38.Size = 0;
-            isOraParamElement38.SourceColumn = null;
-            isOraParamElement39.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement39.MemberControl = this.W_CORP_ID;
-            isOraParamElement39.MemberValue = "EditValue";
-            isOraParamElement39.OraDbTypeString = "NUMBER";
-            isOraParamElement39.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement39.ParamName = "W_CORP_ID";
-            isOraParamElement39.Size = 22;
-            isOraParamElement39.SourceColumn = null;
-            isOraParamElement40.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement40.MemberControl = this.W_PERIOD_NAME;
-            isOraParamElement40.MemberValue = "EditValue";
-            isOraParamElement40.OraDbTypeString = "VARCHAR2";
-            isOraParamElement40.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement40.ParamName = "W_PERIOD_NAME";
-            isOraParamElement40.Size = 0;
-            isOraParamElement40.SourceColumn = null;
-            isOraParamElement41.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement41.MemberControl = this.W_WAGE_TYPE;
-            isOraParamElement41.MemberValue = "EditValue";
-            isOraParamElement41.OraDbTypeString = "VARCHAR2";
-            isOraParamElement41.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement41.ParamName = "W_WAGE_TYPE";
-            isOraParamElement41.Size = 0;
-            isOraParamElement41.SourceColumn = null;
-            isOraParamElement42.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement42.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement42.MemberValue = "SOB_ID";
-            isOraParamElement42.OraDbTypeString = "NUMBER";
-            isOraParamElement42.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement42.ParamName = "W_SOB_ID";
-            isOraParamElement42.Size = 22;
-            isOraParamElement42.SourceColumn = null;
-            isOraParamElement43.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement43.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement43.MemberValue = "ORG_ID";
-            isOraParamElement43.OraDbTypeString = "NUMBER";
-            isOraParamElement43.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement43.ParamName = "W_ORG_ID";
-            isOraParamElement43.Size = 22;
-            isOraParamElement43.SourceColumn = null;
-            isOraParamElement44.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement44.MemberControl = this.W2_ALLOWANCE_TYPE;
-            isOraParamElement44.MemberValue = "EditValue";
-            isOraParamElement44.OraDbTypeString = "VARCHAR2";
-            isOraParamElement44.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement44.ParamName = "W_ALLOWANCE_TYPE";
-            isOraParamElement44.Size = 0;
-            isOraParamElement44.SourceColumn = null;
-            isOraParamElement45.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement45.MemberControl = this.W2_AMOUNT_FR;
-            isOraParamElement45.MemberValue = "EditValue";
-            isOraParamElement45.OraDbTypeString = "NUMBER";
-            isOraParamElement45.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement45.ParamName = "W_AMOUNT_FR";
-            isOraParamElement45.Size = 22;
-            isOraParamElement45.SourceColumn = null;
-            isOraParamElement46.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement46.MemberControl = this.W2_AMOUNT_TO;
-            isOraParamElement46.MemberValue = "EditValue";
-            isOraParamElement46.OraDbTypeString = "NUMBER";
-            isOraParamElement46.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement46.ParamName = "W_AMOUNT_TO";
-            isOraParamElement46.Size = 22;
-            isOraParamElement46.SourceColumn = null;
-            this.IDA_SALARY_TOTAL_AMOUNT.SelectParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement38,
-            isOraParamElement39,
-            isOraParamElement40,
-            isOraParamElement41,
-            isOraParamElement42,
-            isOraParamElement43,
-            isOraParamElement44,
-            isOraParamElement45,
-            isOraParamElement46});
-            this.IDA_SALARY_TOTAL_AMOUNT.WizardOwner = "";
-            this.IDA_SALARY_TOTAL_AMOUNT.WizardProcedure = "";
-            this.IDA_SALARY_TOTAL_AMOUNT.WizardTableName = "";
-            this.IDA_SALARY_TOTAL_AMOUNT.NewRowMoved += new InfoSummit.Win.ControlAdv.ISDataAdapter.MoveHandler(this.IDA_SALARY_TOTAL_AMOUNT_NewRowMoved);
-            // 
-            // IDA_SALARY_TOTAL_DETAIL
-            // 
-            isOraBindingElement33.LastValue = null;
-            isOraBindingElement33.MappingColumn = "PERSON_ID";
-            isOraBindingElement33.MemberControl = this.IGR_SALARY_TOTAL_DETAIL;
-            isOraBindingElement33.MemberValue = "PERSON_ID";
-            isOraBindingElement33.Ordinal = 1;
-            isOraBindingElement34.LastValue = null;
-            isOraBindingElement34.MappingColumn = "ITEM_CODE";
-            isOraBindingElement34.MemberControl = this.IGR_SALARY_TOTAL_DETAIL;
-            isOraBindingElement34.MemberValue = "ITEM_CODE";
-            isOraBindingElement34.Ordinal = 2;
-            isOraBindingElement35.LastValue = null;
-            isOraBindingElement35.MappingColumn = "ITEM_NAME";
-            isOraBindingElement35.MemberControl = this.IGR_SALARY_TOTAL_DETAIL;
-            isOraBindingElement35.MemberValue = "ITEM_NAME";
-            isOraBindingElement35.Ordinal = 3;
-            isOraBindingElement36.LastValue = null;
-            isOraBindingElement36.MappingColumn = "PRE_AMOUNT";
-            isOraBindingElement36.MemberControl = this.IGR_SALARY_TOTAL_DETAIL;
-            isOraBindingElement36.MemberValue = "PRE_AMOUNT";
-            isOraBindingElement36.Ordinal = 4;
-            isOraBindingElement37.LastValue = null;
-            isOraBindingElement37.MappingColumn = "THIS_AMOUNT";
-            isOraBindingElement37.MemberControl = this.IGR_SALARY_TOTAL_DETAIL;
-            isOraBindingElement37.MemberValue = "THIS_AMOUNT";
-            isOraBindingElement37.Ordinal = 5;
-            isOraBindingElement38.LastValue = null;
-            isOraBindingElement38.MappingColumn = "GAP_AMOUNT";
-            isOraBindingElement38.MemberControl = this.IGR_SALARY_TOTAL_DETAIL;
-            isOraBindingElement38.MemberValue = "GAP_AMOUNT";
-            isOraBindingElement38.Ordinal = 6;
-            this.IDA_SALARY_TOTAL_DETAIL.BindingElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraBindingElement[] {
-            isOraBindingElement33,
-            isOraBindingElement34,
-            isOraBindingElement35,
-            isOraBindingElement36,
-            isOraBindingElement37,
-            isOraBindingElement38});
-            this.IDA_SALARY_TOTAL_DETAIL.CancelMember.Cancel = false;
-            this.IDA_SALARY_TOTAL_DETAIL.CancelMember.Member = null;
-            this.IDA_SALARY_TOTAL_DETAIL.CancelMember.Prompt = null;
-            this.IDA_SALARY_TOTAL_DETAIL.CancelMember.TabIndex = -1;
-            this.IDA_SALARY_TOTAL_DETAIL.CancelMember.ValueItem = null;
-            this.IDA_SALARY_TOTAL_DETAIL.CancelUpdateFilterString = null;
-            this.IDA_SALARY_TOTAL_DETAIL.CancelUpdateRow = null;
-            this.IDA_SALARY_TOTAL_DETAIL.DataTransaction = null;
-            this.IDA_SALARY_TOTAL_DETAIL.FocusedControl = null;
-            this.IDA_SALARY_TOTAL_DETAIL.MasterAdapter = null;
-            this.IDA_SALARY_TOTAL_DETAIL.OraConnection = this.isOraConnection1;
-            this.IDA_SALARY_TOTAL_DETAIL.OraDelete = null;
-            this.IDA_SALARY_TOTAL_DETAIL.OraInsert = null;
-            this.IDA_SALARY_TOTAL_DETAIL.OraOwner = "APPS";
-            this.IDA_SALARY_TOTAL_DETAIL.OraPackage = "HRP_SALARY_CLOSED_CHECK_G";
-            this.IDA_SALARY_TOTAL_DETAIL.OraSelect = "SELECT_SALARY_TOTAL_DETAIL";
-            this.IDA_SALARY_TOTAL_DETAIL.OraSelectData = null;
-            this.IDA_SALARY_TOTAL_DETAIL.OraUpdate = null;
-            isOraColElement34.DataColumn = "PERSON_ID";
-            isOraColElement34.DataOrdinal = 0;
-            isOraColElement34.DataType = "System.Decimal";
-            isOraColElement34.HeaderPrompt = "PERSON_ID";
-            isOraColElement34.LastValue = null;
-            isOraColElement34.MemberControl = null;
-            isOraColElement34.MemberValue = null;
-            isOraColElement34.Nullable = 1;
-            isOraColElement34.Ordinal = 0;
-            isOraColElement34.RelationKeyColumn = null;
-            isOraColElement34.ReturnParameter = null;
-            isOraColElement34.TL1_KR = null;
-            isOraColElement34.TL2_CN = null;
-            isOraColElement34.TL3_VN = null;
-            isOraColElement34.TL4_JP = null;
-            isOraColElement34.TL5_XAA = null;
-            isOraColElement34.Visible = null;
-            isOraColElement34.Width = null;
-            isOraColElement35.DataColumn = "ITEM_CODE";
-            isOraColElement35.DataOrdinal = 1;
-            isOraColElement35.DataType = "System.String";
-            isOraColElement35.HeaderPrompt = "ITEM_CODE";
-            isOraColElement35.LastValue = null;
-            isOraColElement35.MemberControl = null;
-            isOraColElement35.MemberValue = null;
-            isOraColElement35.Nullable = 1;
-            isOraColElement35.Ordinal = 1;
-            isOraColElement35.RelationKeyColumn = null;
-            isOraColElement35.ReturnParameter = null;
-            isOraColElement35.TL1_KR = null;
-            isOraColElement35.TL2_CN = null;
-            isOraColElement35.TL3_VN = null;
-            isOraColElement35.TL4_JP = null;
-            isOraColElement35.TL5_XAA = null;
-            isOraColElement35.Visible = null;
-            isOraColElement35.Width = null;
-            isOraColElement36.DataColumn = "ITEM_NAME";
-            isOraColElement36.DataOrdinal = 2;
-            isOraColElement36.DataType = "System.String";
-            isOraColElement36.HeaderPrompt = "ITEM_NAME";
-            isOraColElement36.LastValue = null;
-            isOraColElement36.MemberControl = null;
-            isOraColElement36.MemberValue = null;
-            isOraColElement36.Nullable = 1;
-            isOraColElement36.Ordinal = 2;
-            isOraColElement36.RelationKeyColumn = null;
-            isOraColElement36.ReturnParameter = null;
-            isOraColElement36.TL1_KR = null;
-            isOraColElement36.TL2_CN = null;
-            isOraColElement36.TL3_VN = null;
-            isOraColElement36.TL4_JP = null;
-            isOraColElement36.TL5_XAA = null;
-            isOraColElement36.Visible = null;
-            isOraColElement36.Width = null;
-            isOraColElement37.DataColumn = "PRE_AMOUNT";
-            isOraColElement37.DataOrdinal = 3;
-            isOraColElement37.DataType = "System.Decimal";
-            isOraColElement37.HeaderPrompt = "PRE_AMOUNT";
-            isOraColElement37.LastValue = null;
-            isOraColElement37.MemberControl = null;
-            isOraColElement37.MemberValue = null;
-            isOraColElement37.Nullable = 1;
-            isOraColElement37.Ordinal = 3;
-            isOraColElement37.RelationKeyColumn = null;
-            isOraColElement37.ReturnParameter = null;
-            isOraColElement37.TL1_KR = null;
-            isOraColElement37.TL2_CN = null;
-            isOraColElement37.TL3_VN = null;
-            isOraColElement37.TL4_JP = null;
-            isOraColElement37.TL5_XAA = null;
-            isOraColElement37.Visible = null;
-            isOraColElement37.Width = null;
-            isOraColElement38.DataColumn = "THIS_AMOUNT";
-            isOraColElement38.DataOrdinal = 4;
-            isOraColElement38.DataType = "System.Decimal";
-            isOraColElement38.HeaderPrompt = "THIS_AMOUNT";
-            isOraColElement38.LastValue = null;
-            isOraColElement38.MemberControl = null;
-            isOraColElement38.MemberValue = null;
-            isOraColElement38.Nullable = 1;
-            isOraColElement38.Ordinal = 4;
-            isOraColElement38.RelationKeyColumn = null;
-            isOraColElement38.ReturnParameter = null;
-            isOraColElement38.TL1_KR = null;
-            isOraColElement38.TL2_CN = null;
-            isOraColElement38.TL3_VN = null;
-            isOraColElement38.TL4_JP = null;
-            isOraColElement38.TL5_XAA = null;
-            isOraColElement38.Visible = null;
-            isOraColElement38.Width = null;
-            isOraColElement39.DataColumn = "GAP_AMOUNT";
-            isOraColElement39.DataOrdinal = 5;
-            isOraColElement39.DataType = "System.Decimal";
-            isOraColElement39.HeaderPrompt = "GAP_AMOUNT";
-            isOraColElement39.LastValue = null;
-            isOraColElement39.MemberControl = null;
-            isOraColElement39.MemberValue = null;
-            isOraColElement39.Nullable = 1;
-            isOraColElement39.Ordinal = 5;
-            isOraColElement39.RelationKeyColumn = null;
-            isOraColElement39.ReturnParameter = null;
-            isOraColElement39.TL1_KR = null;
-            isOraColElement39.TL2_CN = null;
-            isOraColElement39.TL3_VN = null;
-            isOraColElement39.TL4_JP = null;
-            isOraColElement39.TL5_XAA = null;
-            isOraColElement39.Visible = null;
-            isOraColElement39.Width = null;
-            this.IDA_SALARY_TOTAL_DETAIL.SelectColElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraColElement[] {
-            isOraColElement34,
-            isOraColElement35,
-            isOraColElement36,
-            isOraColElement37,
-            isOraColElement38,
-            isOraColElement39});
-            isOraParamElement47.Direction = System.Data.ParameterDirection.Output;
-            isOraParamElement47.MemberControl = null;
-            isOraParamElement47.MemberValue = null;
-            isOraParamElement47.OraDbTypeString = "REF CURSOR";
-            isOraParamElement47.OraType = System.Data.OracleClient.OracleType.Cursor;
-            isOraParamElement47.ParamName = "P_CURSOR2";
-            isOraParamElement47.Size = 0;
-            isOraParamElement47.SourceColumn = null;
-            isOraParamElement48.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement48.MemberControl = this.W_CORP_ID;
-            isOraParamElement48.MemberValue = "EditValue";
-            isOraParamElement48.OraDbTypeString = "NUMBER";
-            isOraParamElement48.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement48.ParamName = "W_CORP_ID";
-            isOraParamElement48.Size = 22;
-            isOraParamElement48.SourceColumn = null;
-            isOraParamElement49.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement49.MemberControl = this.W_PERIOD_NAME;
-            isOraParamElement49.MemberValue = "EditValue";
-            isOraParamElement49.OraDbTypeString = "VARCHAR2";
-            isOraParamElement49.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement49.ParamName = "W_PERIOD_NAME";
-            isOraParamElement49.Size = 0;
-            isOraParamElement49.SourceColumn = null;
-            isOraParamElement50.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement50.MemberControl = this.W_WAGE_TYPE;
-            isOraParamElement50.MemberValue = "EditValue";
-            isOraParamElement50.OraDbTypeString = "VARCHAR2";
-            isOraParamElement50.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement50.ParamName = "W_WAGE_TYPE";
-            isOraParamElement50.Size = 0;
-            isOraParamElement50.SourceColumn = null;
-            isOraParamElement51.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement51.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement51.MemberValue = "SOB_ID";
-            isOraParamElement51.OraDbTypeString = "NUMBER";
-            isOraParamElement51.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement51.ParamName = "W_SOB_ID";
-            isOraParamElement51.Size = 22;
-            isOraParamElement51.SourceColumn = null;
-            isOraParamElement52.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement52.MemberControl = this.isAppInterfaceAdv1;
-            isOraParamElement52.MemberValue = "ORG_ID";
-            isOraParamElement52.OraDbTypeString = "NUMBER";
-            isOraParamElement52.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement52.ParamName = "W_ORG_ID";
-            isOraParamElement52.Size = 22;
-            isOraParamElement52.SourceColumn = null;
-            isOraParamElement53.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement53.MemberControl = this.W2_ALLOWANCE_TYPE;
-            isOraParamElement53.MemberValue = "EditValue";
-            isOraParamElement53.OraDbTypeString = "VARCHAR2";
-            isOraParamElement53.OraType = System.Data.OracleClient.OracleType.VarChar;
-            isOraParamElement53.ParamName = "W_ALLOWANCE_TYPE";
-            isOraParamElement53.Size = 0;
-            isOraParamElement53.SourceColumn = null;
-            isOraParamElement54.Direction = System.Data.ParameterDirection.Input;
-            isOraParamElement54.MemberControl = null;
-            isOraParamElement54.MemberValue = null;
-            isOraParamElement54.OraDbTypeString = "NUMBER";
-            isOraParamElement54.OraType = System.Data.OracleClient.OracleType.Number;
-            isOraParamElement54.ParamName = "W_PERSON_ID";
-            isOraParamElement54.Size = 22;
-            isOraParamElement54.SourceColumn = null;
-            this.IDA_SALARY_TOTAL_DETAIL.SelectParamElement.AddRange(new InfoSummit.Win.ControlAdv.ISOraParamElement[] {
-            isOraParamElement47,
-            isOraParamElement48,
-            isOraParamElement49,
-            isOraParamElement50,
-            isOraParamElement51,
-            isOraParamElement52,
-            isOraParamElement53,
-            isOraParamElement54});
-            this.IDA_SALARY_TOTAL_DETAIL.WizardOwner = "";
-            this.IDA_SALARY_TOTAL_DETAIL.WizardProcedure = "";
-            this.IDA_SALARY_TOTAL_DETAIL.WizardTableName = "";
-            // 
-            // W2_RB_ALLOWANCE_A
-            // 
-            this.W2_RB_ALLOWANCE_A.AppInterfaceAdv = this.isAppInterfaceAdv1;
-            this.W2_RB_ALLOWANCE_A.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.W2_RB_ALLOWANCE_A.Checked = true;
-            this.W2_RB_ALLOWANCE_A.CheckedState = InfoSummit.Win.ControlAdv.ISUtil.Enum.CheckedState.Checked;
-            this.W2_RB_ALLOWANCE_A.DataAdapter = null;
-            this.W2_RB_ALLOWANCE_A.DataColumn = null;
-            this.W2_RB_ALLOWANCE_A.GradientEnd = System.Drawing.SystemColors.ControlDark;
-            this.W2_RB_ALLOWANCE_A.GradientStart = System.Drawing.SystemColors.Control;
-            this.W2_RB_ALLOWANCE_A.HotBorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.W2_RB_ALLOWANCE_A.ImageCheckBoxSize = new System.Drawing.Size(13, 13);
-            this.W2_RB_ALLOWANCE_A.Location = new System.Drawing.Point(163, 9);
-            this.W2_RB_ALLOWANCE_A.Name = "W2_RB_ALLOWANCE_A";
-            this.W2_RB_ALLOWANCE_A.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-            this.W2_RB_ALLOWANCE_A.PromptText = "Allowance";
-            isLanguageElement43.Default = "Allowance";
-            isLanguageElement43.SiteName = null;
-            isLanguageElement43.TL1_KR = "지급";
-            isLanguageElement43.TL2_CN = null;
-            isLanguageElement43.TL3_VN = null;
-            isLanguageElement43.TL4_JP = null;
-            isLanguageElement43.TL5_XAA = null;
-            this.W2_RB_ALLOWANCE_A.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement43});
-            this.W2_RB_ALLOWANCE_A.RadioButtonValue = "A";
-            this.W2_RB_ALLOWANCE_A.RadioCheckedString = "A";
-            this.W2_RB_ALLOWANCE_A.ShadowColor = System.Drawing.Color.Black;
-            this.W2_RB_ALLOWANCE_A.ShadowOffset = new System.Drawing.Point(2, 2);
-            this.W2_RB_ALLOWANCE_A.Size = new System.Drawing.Size(130, 17);
-            this.W2_RB_ALLOWANCE_A.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007;
-            this.W2_RB_ALLOWANCE_A.TabIndex = 0;
-            this.W2_RB_ALLOWANCE_A.Text = "Allowance";
-            this.W2_RB_ALLOWANCE_A.ThemesEnabled = false;
-            this.W2_RB_ALLOWANCE_A.CheckChanged += new System.EventHandler(this.W2_RB_ALLOWANCE_A_CheckChanged);
-            // 
-            // W2_RB_ALLOWANCE_D
-            // 
-            this.W2_RB_ALLOWANCE_D.AppInterfaceAdv = this.isAppInterfaceAdv1;
-            this.W2_RB_ALLOWANCE_D.BorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.W2_RB_ALLOWANCE_D.DataAdapter = null;
-            this.W2_RB_ALLOWANCE_D.DataColumn = null;
-            this.W2_RB_ALLOWANCE_D.GradientEnd = System.Drawing.SystemColors.ControlDark;
-            this.W2_RB_ALLOWANCE_D.GradientStart = System.Drawing.SystemColors.Control;
-            this.W2_RB_ALLOWANCE_D.HotBorderColor = System.Drawing.SystemColors.WindowFrame;
-            this.W2_RB_ALLOWANCE_D.ImageCheckBoxSize = new System.Drawing.Size(13, 13);
-            this.W2_RB_ALLOWANCE_D.Location = new System.Drawing.Point(299, 9);
-            this.W2_RB_ALLOWANCE_D.Name = "W2_RB_ALLOWANCE_D";
-            this.W2_RB_ALLOWANCE_D.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
-            this.W2_RB_ALLOWANCE_D.PromptText = "Deduction";
-            isLanguageElement42.Default = "Deduction";
-            isLanguageElement42.SiteName = null;
-            isLanguageElement42.TL1_KR = "공제";
-            isLanguageElement42.TL2_CN = null;
-            isLanguageElement42.TL3_VN = null;
-            isLanguageElement42.TL4_JP = null;
-            isLanguageElement42.TL5_XAA = null;
-            this.W2_RB_ALLOWANCE_D.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement42});
-            this.W2_RB_ALLOWANCE_D.RadioButtonValue = null;
-            this.W2_RB_ALLOWANCE_D.RadioCheckedString = "D";
-            this.W2_RB_ALLOWANCE_D.ShadowColor = System.Drawing.Color.Black;
-            this.W2_RB_ALLOWANCE_D.ShadowOffset = new System.Drawing.Point(2, 2);
-            this.W2_RB_ALLOWANCE_D.Size = new System.Drawing.Size(130, 17);
-            this.W2_RB_ALLOWANCE_D.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007;
-            this.W2_RB_ALLOWANCE_D.TabIndex = 1;
-            this.W2_RB_ALLOWANCE_D.Text = "Deduction";
-            this.W2_RB_ALLOWANCE_D.ThemesEnabled = false;
-            this.W2_RB_ALLOWANCE_D.CheckChanged += new System.EventHandler(this.W2_RB_ALLOWANCE_D_CheckChanged);
-            // 
-            // W2_ALLOWANCE_TYPE
-            // 
-            this.W2_ALLOWANCE_TYPE.AppInterfaceAdv = this.isAppInterfaceAdv1;
-            this.W2_ALLOWANCE_TYPE.ComboBoxValue = "";
-            this.W2_ALLOWANCE_TYPE.ComboData = null;
-            this.W2_ALLOWANCE_TYPE.CurrencyValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.W2_ALLOWANCE_TYPE.DataAdapter = null;
-            this.W2_ALLOWANCE_TYPE.DataColumn = null;
-            this.W2_ALLOWANCE_TYPE.DateTimeValue = new System.DateTime(2010, 3, 17, 19, 7, 59, 703);
-            this.W2_ALLOWANCE_TYPE.DoubleValue = 0;
-            this.W2_ALLOWANCE_TYPE.EditValue = "";
-            this.W2_ALLOWANCE_TYPE.Location = new System.Drawing.Point(392, 5);
-            this.W2_ALLOWANCE_TYPE.LookupAdapter = null;
-            this.W2_ALLOWANCE_TYPE.Name = "W2_ALLOWANCE_TYPE";
-            this.W2_ALLOWANCE_TYPE.Nullable = true;
-            this.W2_ALLOWANCE_TYPE.NumberValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.W2_ALLOWANCE_TYPE.PercentValue = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.W2_ALLOWANCE_TYPE.PromptText = "";
-            isLanguageElement35.Default = "";
-            isLanguageElement35.SiteName = null;
-            isLanguageElement35.TL1_KR = "";
-            isLanguageElement35.TL2_CN = "";
-            isLanguageElement35.TL3_VN = "";
-            isLanguageElement35.TL4_JP = "";
-            isLanguageElement35.TL5_XAA = "";
-            this.W2_ALLOWANCE_TYPE.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
-            isLanguageElement35});
-            this.W2_ALLOWANCE_TYPE.PromptVisible = false;
-            this.W2_ALLOWANCE_TYPE.PromptWidth = 80;
-            this.W2_ALLOWANCE_TYPE.ReadOnly = true;
-            this.W2_ALLOWANCE_TYPE.Size = new System.Drawing.Size(37, 21);
-            this.W2_ALLOWANCE_TYPE.TabIndex = 159;
-            this.W2_ALLOWANCE_TYPE.TextValue = "";
-            this.W2_ALLOWANCE_TYPE.Visible = false;
             // 
             // isPrompt2
             // 
@@ -6634,31 +7211,69 @@
             this.isPrompt2.TabIndex = 160;
             this.isPrompt2.TabStop = false;
             // 
-            // splitContainerAdv2
+            // W2_RB_ALLOWANCE_D
             // 
-            this.splitContainerAdv2.Location = new System.Drawing.Point(1, 29);
-            this.splitContainerAdv2.Name = "splitContainerAdv2";
+            this.W2_RB_ALLOWANCE_D.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.W2_RB_ALLOWANCE_D.DataAdapter = null;
+            this.W2_RB_ALLOWANCE_D.DataColumn = null;
+            this.W2_RB_ALLOWANCE_D.Location = new System.Drawing.Point(299, 9);
+            this.W2_RB_ALLOWANCE_D.MetroColor = System.Drawing.Color.Empty;
+            this.W2_RB_ALLOWANCE_D.Name = "W2_RB_ALLOWANCE_D";
+            this.W2_RB_ALLOWANCE_D.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+            this.W2_RB_ALLOWANCE_D.PromptText = "Deduction";
+            isLanguageElement42.Default = "Deduction";
+            isLanguageElement42.SiteName = null;
+            isLanguageElement42.TL1_KR = "공제";
+            isLanguageElement42.TL2_CN = null;
+            isLanguageElement42.TL3_VN = null;
+            isLanguageElement42.TL4_JP = null;
+            isLanguageElement42.TL5_XAA = null;
+            this.W2_RB_ALLOWANCE_D.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement42});
+            this.W2_RB_ALLOWANCE_D.RadioButtonValue = null;
+            this.W2_RB_ALLOWANCE_D.RadioCheckedString = "D";
+            this.W2_RB_ALLOWANCE_D.Size = new System.Drawing.Size(130, 17);
+            this.W2_RB_ALLOWANCE_D.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007;
+            this.W2_RB_ALLOWANCE_D.TabIndex = 1;
+            this.W2_RB_ALLOWANCE_D.Text = "Deduction";
+            this.W2_RB_ALLOWANCE_D.ThemesEnabled = false;
+            this.W2_RB_ALLOWANCE_D.CheckChanged += new System.EventHandler(this.W2_RB_ALLOWANCE_D_CheckChanged);
             // 
-            // splitContainerAdv2.Panel1
+            // W2_RB_ALLOWANCE_A
             // 
-            this.splitContainerAdv2.Panel1.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(209)))), ((int)(((byte)(252))))), System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(255))))));
-            this.splitContainerAdv2.Panel1.Controls.Add(this.isGroupBox5);
-            // 
-            // splitContainerAdv2.Panel2
-            // 
-            this.splitContainerAdv2.Panel2.BackgroundColor = new Syncfusion.Drawing.BrushInfo(Syncfusion.Drawing.GradientStyle.Vertical, System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(209)))), ((int)(((byte)(252))))), System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(255))))));
-            this.splitContainerAdv2.Panel2.Controls.Add(this.PT_TITLE_2);
-            this.splitContainerAdv2.Panel2.Controls.Add(this.isGroupBox6);
-            this.splitContainerAdv2.Size = new System.Drawing.Size(943, 426);
-            this.splitContainerAdv2.SplitterDistance = 379;
-            this.splitContainerAdv2.SplitterWidth = 4;
-            this.splitContainerAdv2.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Office2007Blue;
-            this.splitContainerAdv2.TabIndex = 4;
-            this.splitContainerAdv2.Text = "splitContainerAdv2";
+            this.W2_RB_ALLOWANCE_A.AppInterfaceAdv = this.isAppInterfaceAdv1;
+            this.W2_RB_ALLOWANCE_A.DataAdapter = null;
+            this.W2_RB_ALLOWANCE_A.DataColumn = null;
+            this.W2_RB_ALLOWANCE_A.Location = new System.Drawing.Point(163, 9);
+            this.W2_RB_ALLOWANCE_A.MetroColor = System.Drawing.Color.Empty;
+            this.W2_RB_ALLOWANCE_A.Name = "W2_RB_ALLOWANCE_A";
+            this.W2_RB_ALLOWANCE_A.Office2007ColorScheme = Syncfusion.Windows.Forms.Office2007Theme.Managed;
+            this.W2_RB_ALLOWANCE_A.PromptText = "Allowance";
+            isLanguageElement43.Default = "Allowance";
+            isLanguageElement43.SiteName = null;
+            isLanguageElement43.TL1_KR = "지급";
+            isLanguageElement43.TL2_CN = null;
+            isLanguageElement43.TL3_VN = null;
+            isLanguageElement43.TL4_JP = null;
+            isLanguageElement43.TL5_XAA = null;
+            this.W2_RB_ALLOWANCE_A.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
+            isLanguageElement43});
+            this.W2_RB_ALLOWANCE_A.RadioButtonValue = null;
+            this.W2_RB_ALLOWANCE_A.RadioCheckedString = "A";
+            this.W2_RB_ALLOWANCE_A.Size = new System.Drawing.Size(130, 17);
+            this.W2_RB_ALLOWANCE_A.Style = Syncfusion.Windows.Forms.Tools.RadioButtonAdvStyle.Office2007;
+            this.W2_RB_ALLOWANCE_A.TabIndex = 0;
+            this.W2_RB_ALLOWANCE_A.Text = "Allowance";
+            this.W2_RB_ALLOWANCE_A.ThemesEnabled = false;
+            this.W2_RB_ALLOWANCE_A.CheckChanged += new System.EventHandler(this.W2_RB_ALLOWANCE_A_CheckChanged);
             this.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ilaYYYYMM_0.PropSourceDataTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ilaCORP_0.PropSourceDataTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ilaWAGE_TYPE_0.PropSourceDataTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_SALARY_ITEM_AMOUNT.BaseGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_SALARY_ITEM_DETAIL.BaseGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_SALARY_TOTAL_AMOUNT.BaseGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_SALARY_TOTAL_DETAIL.BaseGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.igbCONDITION)).EndInit();
             this.igbCONDITION.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TB_MAIN)).EndInit();
@@ -6666,6 +7281,7 @@
             this.TP_CHECK.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GB_DETAIL)).EndInit();
             this.GB_DETAIL.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_PREVIOUS_DETAIL.BaseGrid)).EndInit();
             this.splitContainerAdv1.Panel1.ResumeLayout(false);
             this.splitContainerAdv1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerAdv1)).EndInit();
@@ -6674,22 +7290,23 @@
             this.isGroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.isGroupBox2)).EndInit();
             this.isGroupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.IGR_SALARY_ITEM.BaseGrid)).EndInit();
             this.TP_ITEM_VALIDATE.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.isGroupBox3)).EndInit();
             this.isGroupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.isGroupBox4)).EndInit();
             this.isGroupBox4.ResumeLayout(false);
             this.TP_TOTAL_VALIDATE.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.isGroupBox5)).EndInit();
-            this.isGroupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.isGroupBox6)).EndInit();
-            this.isGroupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.W2_RB_ALLOWANCE_A)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.W2_RB_ALLOWANCE_D)).EndInit();
             this.splitContainerAdv2.Panel1.ResumeLayout(false);
             this.splitContainerAdv2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerAdv2)).EndInit();
             this.splitContainerAdv2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.isGroupBox5)).EndInit();
+            this.isGroupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.isGroupBox6)).EndInit();
+            this.isGroupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.W2_RB_ALLOWANCE_D)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.W2_RB_ALLOWANCE_A)).EndInit();
 
         }
 

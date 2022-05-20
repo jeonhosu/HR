@@ -426,20 +426,16 @@ namespace HRMF0603
 
         private void ibtCLOSED_YN_ButtonClick(object pSender, EventArgs pEventArgs)
         {
-            if (iString.ISNull(CLOSED_DATE.EditValue) == string.Empty)
-            {
-                MessageBoxAdv.Show("[입금/마감 일자]는 필수입니다. 확인하세요", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                CLOSED_DATE.Focus();
-                return;
-            }
-
+            //지급설정
+            idaADJUSTMENT_CLOSED.SetUpdateParamValue("P_CLOSED_DATE", CLOSED_DATE.EditValue);
             idaADJUSTMENT_CLOSED.Update();
         }
 
-        private void BTN_CLOSED_NO_ButtonClick(object pSender, EventArgs pEventArgs)
+        private void ibtCLOSED_N_ButtonClick(object pSender, EventArgs pEventArgs)
         {
-            CLOSED_DATE.EditValue = DBNull.Value;
-            idaADJUSTMENT_CLOSED.Update(); 
+            //지급취소 
+            idaADJUSTMENT_CLOSED.SetUpdateParamValue("P_CLOSED_DATE", null);
+            idaADJUSTMENT_CLOSED.Update();
         }
 
         private void btnPAYMENT_PERIOD_ButtonClick(object pSender, EventArgs pEventArgs)
@@ -637,12 +633,8 @@ namespace HRMF0603
             }
         }
 
-        private void idaADJUSTMENT_CLOSED_UpdateCompleted(object pSender)
-        {
-            idaADJUSTMENT_CLOSED.Fill();
-        }
-
         #endregion
 
+        
     }
 }

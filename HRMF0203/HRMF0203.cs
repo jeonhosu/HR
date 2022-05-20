@@ -59,22 +59,22 @@ namespace HRMF0203
                 CORP_NAME_0.Focus();
                 return;
             }
-            if (iedSTART_DATE_0.EditValue == null)
+            if (START_DATE_0.EditValue == null)
             {// 적용년월
                 MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10010"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                iedSTART_DATE_0.Focus();
+                START_DATE_0.Focus();
                 return;
             }
-            if (iedEND_DATE_0.EditValue == null)
+            if (END_DATE_0.EditValue == null)
             {// 적용년월
                 MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10011"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                iedEND_DATE_0.Focus();
+                END_DATE_0.Focus();
                 return;
             }
-            if (Convert.ToDateTime(iedSTART_DATE_0.EditValue) > Convert.ToDateTime(iedEND_DATE_0.EditValue))
+            if (Convert.ToDateTime(START_DATE_0.EditValue) > Convert.ToDateTime(END_DATE_0.EditValue))
             {
                 MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10012"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                iedSTART_DATE_0.Focus();
+                START_DATE_0.Focus();
                 return;
             }
             idaHISTORY_HEADER.SetSelectParamValue("W_SOB_ID", isAppInterfaceAdv1.SOB_ID);
@@ -100,10 +100,10 @@ namespace HRMF0203
 
         private void History_Info()
         {
-            iedHISTORY_NUM.EditValue = igrHEADER.GetCellValue("HISTORY_NUM");
-            iedCHARGE_DATE.EditValue = igrHEADER.GetCellValue("CHARGE_DATE");
-            iedCHARGE_NAME.EditValue = igrHEADER.GetCellValue("CHARGE_NAME");
-            iedDESCRIPTION.EditValue = igrHEADER.GetCellValue("DESCRIPTION");
+            HISTORY_NUM.EditValue = igrHEADER.GetCellValue("HISTORY_NUM");
+            CHARGE_DATE.EditValue = igrHEADER.GetCellValue("CHARGE_DATE");
+            CHARGE_NAME.EditValue = igrHEADER.GetCellValue("CHARGE_NAME");
+            DESCRIPTION.EditValue = igrHEADER.GetCellValue("DESCRIPTION");
         }
 
         private bool iNewcomer_Check()
@@ -272,8 +272,8 @@ namespace HRMF0203
             idaHISTORY_HEADER.FillSchema();
             idaHISTORY_LINE.FillSchema();
 
-            iedSTART_DATE_0.EditValue = pStart_Date;
-            iedEND_DATE_0.EditValue = pEnd_Date;
+            START_DATE_0.EditValue = pStart_Date;
+            END_DATE_0.EditValue = pEnd_Date;
 
             DefaultCorporation();
             //DefaultSetFormReSize();		//[Child Form, Mdi Form에 맞게 ReSize]
@@ -286,13 +286,13 @@ namespace HRMF0203
         {
             if (e.Row["CHARGE_DATE"] == DBNull.Value)
             {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(iedCHARGE_DATE))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(CHARGE_DATE))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Cancel = true;
                 return;
             }
             if (e.Row["CHARGE_ID"] == DBNull.Value)
             {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(iedCHARGE_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(CHARGE_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Cancel = true;
                 return;
             }
@@ -315,7 +315,7 @@ namespace HRMF0203
         {                        
             if (e.Row["PERSON_ID"] == DBNull.Value)
             {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(iedNAME_0))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(NAME_0))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Cancel = true;
                 return;
             }
@@ -325,7 +325,7 @@ namespace HRMF0203
                 {
                     if (e.Row["RETIRE_ID"] == DBNull.Value)
                     {
-                        MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(iedNAME_0))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(NAME_0))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10037", "&&VALUE:=Retire Reason(퇴직발령시 퇴직사유)"), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         e.Cancel = true;
                         return;
@@ -345,19 +345,19 @@ namespace HRMF0203
             // 발령후 정보
             if (e.Row["OPERATING_UNIT_ID"] == DBNull.Value)
             {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(iedOPERATING_UNIT_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);                
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(OPERATING_UNIT_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);                
                 e.Cancel = true;
                 return;
             }
             if (e.Row["DEPT_ID"] == DBNull.Value)
             {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(iedDEPT_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(DEPT_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Cancel = true;
                 return;
             }
             if (e.Row["JOB_CLASS_ID"] == DBNull.Value)
             {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(iedJOB_CLASS_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(JOB_CLASS_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Cancel = true;
                 return;
             }
@@ -369,37 +369,37 @@ namespace HRMF0203
             //}
             if (e.Row["POST_ID"] == DBNull.Value)
             {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(iedPOST_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(POST_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Cancel = true;
                 return;
             }
             if (e.Row["OCPT_ID"] == DBNull.Value)
             {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(iedOCPT_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(OCPT_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Cancel = true;
                 return;
             }
             if (e.Row["ABIL_ID"] == DBNull.Value)
             {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(iedABIL_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(ABIL_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Cancel = true;
                 return;
             }
             if (e.Row["PAY_GRADE_ID"] == DBNull.Value)
             {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(iedPAY_GRADE_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(PAY_GRADE_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Cancel = true;
                 return;
             }
             if (e.Row["JOB_CATEGORY_ID"] == DBNull.Value)
             {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(iedJOB_CATEGORY_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(JOB_CATEGORY_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Cancel = true;
                 return;
             }
             if (e.Row["FLOOR_ID"] == DBNull.Value)
             {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(iedFLOOR_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(FLOOR_NAME))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 e.Cancel = true;
                 return;
             }            
@@ -456,7 +456,7 @@ namespace HRMF0203
 
         private void ilaPERSON_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
-            ildPERSON.SetLookupParamValue("W_END_DATE", iedCHARGE_DATE.EditValue);
+            ildPERSON.SetLookupParamValue("W_CHARGE_DATE", CHARGE_DATE.EditValue);
         }
                 
         private void ilaCHARGE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
@@ -540,8 +540,12 @@ namespace HRMF0203
             ildDEPT_2.SetLookupParamValue("W_USABLE_CHECK_YN", "Y");
         }
 
-        #endregion
+        private void ilaPERSON_SelectedRowData(object pSender)
+        {
+            IDC_GET_PERSON_P.ExecuteNonQuery();
+        }
 
+        #endregion
 
     }
 }

@@ -272,13 +272,17 @@ namespace HRMF0161
                         IDA_ALLOWANCE_ACCOUNT_9.Cancel();
                         IDA_ALLOWANCE.Cancel();
                     }
-                    else if(IDA_ALLOWANCE_ACCOUNT_1.IsFocused)
+                    else if (IDA_ALLOWANCE_ACCOUNT_1.IsFocused)
                     {
-                        IDA_ALLOWANCE_ACCOUNT_1.Cancel(); 
+                        IDA_ALLOWANCE_ACCOUNT_1.Cancel();
                     }
-                    else if(IDA_ALLOWANCE_ACCOUNT_9.IsFocused)
+                    else if (IDA_ALLOWANCE_ACCOUNT_9.IsFocused)
                     {
                         IDA_ALLOWANCE_ACCOUNT_9.Cancel();
+                    }
+                    else if (IDA_ALLOWANCE_CAL_METHOD.IsFocused)
+                    {
+                        IDA_ALLOWANCE_CAL_METHOD.Cancel();
                     }
                     else if (IDA_DEDUCTION.IsFocused)
                     {
@@ -288,11 +292,15 @@ namespace HRMF0161
                     }
                     else if (IDA_DEDUCTION_ACCOUNT_1.IsFocused)
                     {
-                        IDA_DEDUCTION_ACCOUNT_1.Cancel(); 
+                        IDA_DEDUCTION_ACCOUNT_1.Cancel();
                     }
                     else if (IDA_DEDUCTION_ACCOUNT_9.IsFocused)
                     {
                         IDA_DEDUCTION_ACCOUNT_9.Cancel();
+                    }
+                    else if(IDA_DEDUCTION_CAL_METHOD.IsFocused)
+                    {
+                        IDA_DEDUCTION_CAL_METHOD.Cancel();
                     }
                 }
                 else if (e.AppMainButtonType == ISUtil.Enum.AppMainButtonType.Delete)
@@ -312,6 +320,10 @@ namespace HRMF0161
                     {
                         IDA_ALLOWANCE_ACCOUNT_9.Delete();
                     }
+                    else if(IDA_ALLOWANCE_CAL_METHOD.IsFocused)
+                    {
+                        IDA_DEDUCTION_CAL_METHOD.Delete();
+                    }
                     else if (IDA_DEDUCTION.IsFocused)
                     {
                         if (IDA_DEDUCTION.CurrentRow.RowState == DataRowState.Added)
@@ -326,6 +338,10 @@ namespace HRMF0161
                     else if (IDA_DEDUCTION_ACCOUNT_9.IsFocused)
                     {
                         IDA_DEDUCTION_ACCOUNT_9.Delete();
+                    }
+                    else if(IDA_DEDUCTION_CAL_METHOD.IsFocused)
+                    {
+                        IDA_DEDUCTION_CAL_METHOD.Delete();
                     }
                 }
             }
@@ -391,9 +407,21 @@ namespace HRMF0161
             ILD_ACCOUNT_CONTROL.SetLookupParamValue("W_ENABLED_YN", "Y");
         }
 
+        private void ILA_RETIRE_SALARY_ITEM_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ILD_COMMON.SetLookupParamValue("W_GROUP_CODE", "RETIRE_SALARY_ITEM");
+            ILD_COMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y"); 
+        }
+
         private void ILA_ALLOWANCE_ITEM_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
         {
             ILD_COMMON.SetLookupParamValue("W_GROUP_CODE", "ALLOWANCE_ITEM_TYPE");
+            ILD_COMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
+        }
+
+        private void ILA_ALLOWANCE_EXP_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ILD_COMMON.SetLookupParamValue("W_GROUP_CODE", "ALLOWANCE_EXP_TYPE");
             ILD_COMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
         }
 
@@ -446,6 +474,30 @@ namespace HRMF0161
             ILD_FI_COMMON.SetLookupParamValue("W_ENABLED_YN", "Y");
         }
 
+        private void ILA_ALLOWANCE_GROUP_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ILD_COMMON.SetLookupParamValue("W_GROUP_CODE", "ALLOWANCE");
+            ILD_COMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y"); 
+        }
+
+        private void ILA_DEDUCTION_GROUP_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ILD_COMMON.SetLookupParamValue("W_GROUP_CODE", "DEDUCTION");
+            ILD_COMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
+        }
+
+        private void ILA_ALLOWANCE_CAL_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ILD_COMMON.SetLookupParamValue("W_GROUP_CODE", "ALLOWANCE_ETC");
+            ILD_COMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
+        }
+
+        private void ILA_DEDUCTION_CAL_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ILD_COMMON.SetLookupParamValue("W_GROUP_CODE", "DEDUCTION_ETC");
+            ILD_COMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
+        }
+
         #endregion
 
         #region ----- Adapter Event -----
@@ -469,7 +521,19 @@ namespace HRMF0161
                 e.Cancel = true;
                 MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", String.Format("&&FIELD_NAME:={0}", Get_Grid_Prompt(IGR_ALLOWANCE, IGR_ALLOWANCE.GetColumnToIndex("EFFECTIVE_DATE_FR")))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-            } 
+            }
+            //if (iConv.ISNull(e.Row["ALLOWANCE_VIEW_CODE"]) == string.Empty)
+            //{
+            //    e.Cancel = true;
+            //    MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", String.Format("&&FIELD_NAME:={0}", Get_Grid_Prompt(IGR_ALLOWANCE, IGR_ALLOWANCE.GetColumnToIndex("ALLOWANCE_VIEW_CODE")))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
+            //if (iConv.ISNull(e.Row["ALLOWANCE_PRINT_CODE"]) == string.Empty)
+            //{
+            //    e.Cancel = true;
+            //    MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", String.Format("&&FIELD_NAME:={0}", Get_Grid_Prompt(IGR_ALLOWANCE, IGR_ALLOWANCE.GetColumnToIndex("ALLOWANCE_PRINT_CODE")))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
         }
 
         private void IDA_ALLOWANCE_ACCOUNT_1_PreRowUpdate(ISPreRowUpdateEventArgs e)
@@ -503,6 +567,18 @@ namespace HRMF0161
                 MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", String.Format("&&FIELD_NAME:={0}", Get_Grid_Prompt(IGR_DEDUCTION, IGR_DEDUCTION.GetColumnToIndex("EFFECTIVE_DATE_FR")))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            //if (iConv.ISNull(e.Row["DEDUCTION_VIEW_CODE"]) == string.Empty)
+            //{
+            //    e.Cancel = true;
+            //    MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", String.Format("&&FIELD_NAME:={0}", Get_Grid_Prompt(IGR_DEDUCTION, IGR_DEDUCTION.GetColumnToIndex("DEDUCTION_VIEW_CODE")))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
+            //if (iConv.ISNull(e.Row["DEDUCTION_PRINT_CODE"]) == string.Empty)
+            //{
+            //    e.Cancel = true;
+            //    MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", String.Format("&&FIELD_NAME:={0}", Get_Grid_Prompt(IGR_DEDUCTION, IGR_DEDUCTION.GetColumnToIndex("DEDUCTION_PRINT_CODE")))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    return;
+            //}
         }
 
         private void IDA_DEDUCTION_ACCOUNT_1_PreRowUpdate(ISPreRowUpdateEventArgs e)

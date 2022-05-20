@@ -163,8 +163,8 @@
             // 
             // HRMF0315_DUTY
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(323, 458);
             this.Controls.Add(this.EXECUTE_TYPE);
@@ -188,7 +188,7 @@
             this.MinimizeBox = false;
             this.Name = "HRMF0315_DUTY";
             this.Padding = new System.Windows.Forms.Padding(5);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "휴가사항 집계";
             this.Load += new System.EventHandler(this.HRMF0315_DUTY_Load);
             this.Shown += new System.EventHandler(this.HRMF0315_DUTY_Shown);
@@ -1121,7 +1121,7 @@
             0});
             this.STD_DATE.DataAdapter = null;
             this.STD_DATE.DataColumn = null;
-            this.STD_DATE.DateTimeValue = new System.DateTime(2020, 7, 13, 0, 0, 0, 0);
+            this.STD_DATE.DateTimeValue = new System.DateTime(2022, 2, 5, 0, 0, 0, 0);
             this.STD_DATE.DoubleValue = 0D;
             this.STD_DATE.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.DateTimeEdit;
             this.STD_DATE.EditValue = null;

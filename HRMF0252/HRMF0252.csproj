@@ -183,12 +183,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HRMF0240\HRMF0240.csproj">
-      <Project>{7ffbfafc-83cf-4b68-9d45-75f3d6eef2d9}</Project>
-      <Name>HRMF0240</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

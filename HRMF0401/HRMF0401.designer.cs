@@ -1342,7 +1342,7 @@
             0});
             this.STD_DATE_0.DataAdapter = null;
             this.STD_DATE_0.DataColumn = null;
-            this.STD_DATE_0.DateTimeValue = new System.DateTime(2019, 10, 5, 0, 0, 0, 0);
+            this.STD_DATE_0.DateTimeValue = new System.DateTime(2022, 4, 25, 0, 0, 0, 0);
             this.STD_DATE_0.DoubleValue = 0D;
             this.STD_DATE_0.EditAdvType = InfoSummit.Win.ControlAdv.ISUtil.Enum.EditAdvType.DateTimeEdit;
             this.STD_DATE_0.EditValue = null;
@@ -1379,10 +1379,10 @@
             // 
             this.isOraConnection1.AppInterfaceAdv = this.isAppInterfaceAdv1;
             this.isOraConnection1.OraConnectionInfo = oraConnectionInfo1;
-            this.isOraConnection1.OraHost = "192.168.1.7";
+            this.isOraConnection1.OraHost = "106.251.238.98";
             this.isOraConnection1.OraPassword = "infoflex";
             this.isOraConnection1.OraPort = "1521";
-            this.isOraConnection1.OraServiceName = "sikprod";
+            this.isOraConnection1.OraServiceName = "hten_prod";
             this.isOraConnection1.OraUserId = "apps";
             // 
             // CORP_NAME_0
@@ -2292,7 +2292,7 @@
             new Syncfusion.Windows.Forms.Grid.GridRowHeight(0, 22),
             new Syncfusion.Windows.Forms.Grid.GridRowHeight(1, 22)});
             this.IGR_NATIONAL_PENSION.BaseGrid.SerializeCellsBehavior = Syncfusion.Windows.Forms.Grid.GridSerializeCellsBehavior.SerializeAsRangeStylesIntoCode;
-            this.IGR_NATIONAL_PENSION.BaseGrid.Size = new System.Drawing.Size(941, 422);
+            this.IGR_NATIONAL_PENSION.BaseGrid.Size = new System.Drawing.Size(941, 439);
             this.IGR_NATIONAL_PENSION.BaseGrid.SmartSizeBox = false;
             this.IGR_NATIONAL_PENSION.BaseGrid.TabIndex = 0;
             this.IGR_NATIONAL_PENSION.BaseGrid.ThemesEnabled = true;
@@ -3153,7 +3153,7 @@
             isGridAdvExColElement48});
             this.IGR_NATIONAL_PENSION.Location = new System.Drawing.Point(0, 0);
             this.IGR_NATIONAL_PENSION.Name = "IGR_NATIONAL_PENSION";
-            this.IGR_NATIONAL_PENSION.Size = new System.Drawing.Size(944, 425);
+            this.IGR_NATIONAL_PENSION.Size = new System.Drawing.Size(944, 442);
             this.IGR_NATIONAL_PENSION.TabIndex = 1;
             this.IGR_NATIONAL_PENSION.TabStop = false;
             this.IGR_NATIONAL_PENSION.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
@@ -4704,7 +4704,7 @@
             new Syncfusion.Windows.Forms.Grid.GridRowHeight(0, 22),
             new Syncfusion.Windows.Forms.Grid.GridRowHeight(1, 22)});
             this.IGR_HEALTH_INSUR.BaseGrid.SerializeCellsBehavior = Syncfusion.Windows.Forms.Grid.GridSerializeCellsBehavior.SerializeAsRangeStylesIntoCode;
-            this.IGR_HEALTH_INSUR.BaseGrid.Size = new System.Drawing.Size(941, 422);
+            this.IGR_HEALTH_INSUR.BaseGrid.Size = new System.Drawing.Size(941, 439);
             this.IGR_HEALTH_INSUR.BaseGrid.SmartSizeBox = false;
             this.IGR_HEALTH_INSUR.BaseGrid.TabIndex = 0;
             this.IGR_HEALTH_INSUR.BaseGrid.ThemesEnabled = true;
@@ -5677,7 +5677,7 @@
             isGridAdvExColElement26});
             this.IGR_HEALTH_INSUR.Location = new System.Drawing.Point(0, 0);
             this.IGR_HEALTH_INSUR.Name = "IGR_HEALTH_INSUR";
-            this.IGR_HEALTH_INSUR.Size = new System.Drawing.Size(944, 425);
+            this.IGR_HEALTH_INSUR.Size = new System.Drawing.Size(944, 442);
             this.IGR_HEALTH_INSUR.TabIndex = 2;
             this.IGR_HEALTH_INSUR.TabStop = false;
             this.IGR_HEALTH_INSUR.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
@@ -7028,9 +7028,8 @@
             this.isGroupBox1.Controls.Add(this.V_FILE_PATH_P);
             this.isGroupBox1.Controls.Add(this.BTN_FILE_SELECT_P);
             this.isGroupBox1.Controls.Add(this.BTN_UPLOAD_EXEC_P);
-            this.isGroupBox1.Location = new System.Drawing.Point(0, 426);
+            this.isGroupBox1.Location = new System.Drawing.Point(0, 444);
             this.isGroupBox1.Name = "isGroupBox1";
-            this.isGroupBox1.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.isGroupBox1.PromptText = "Data Upload";
             isLanguageElement4.Default = "Data Upload";
             isLanguageElement4.SiteName = null;
@@ -7041,7 +7040,8 @@
             isLanguageElement4.TL5_XAA = null;
             this.isGroupBox1.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
             isLanguageElement4});
-            this.isGroupBox1.Size = new System.Drawing.Size(944, 54);
+            this.isGroupBox1.PromptVisible = false;
+            this.isGroupBox1.Size = new System.Drawing.Size(944, 36);
             this.isGroupBox1.TabIndex = 3;
             // 
             // V_FILE_PATH_P
@@ -7060,7 +7060,7 @@
             this.V_FILE_PATH_P.DateTimeValue = new System.DateTime(2010, 3, 17, 0, 0, 0, 0);
             this.V_FILE_PATH_P.DoubleValue = 0D;
             this.V_FILE_PATH_P.EditValue = "";
-            this.V_FILE_PATH_P.Location = new System.Drawing.Point(5, 27);
+            this.V_FILE_PATH_P.Location = new System.Drawing.Point(5, 7);
             this.V_FILE_PATH_P.LookupAdapter = null;
             this.V_FILE_PATH_P.Name = "V_FILE_PATH_P";
             this.V_FILE_PATH_P.Nullable = true;
@@ -7091,6 +7091,7 @@
             this.V_FILE_PATH_P.TabStop = false;
             this.V_FILE_PATH_P.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
             this.V_FILE_PATH_P.TextValue = "";
+            this.V_FILE_PATH_P.Visible = false;
             // 
             // BTN_FILE_SELECT_P
             // 
@@ -7105,10 +7106,11 @@
             isLanguageElement2.TL5_XAA = null;
             this.BTN_FILE_SELECT_P.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
             isLanguageElement2});
-            this.BTN_FILE_SELECT_P.Location = new System.Drawing.Point(675, 27);
+            this.BTN_FILE_SELECT_P.Location = new System.Drawing.Point(675, 7);
             this.BTN_FILE_SELECT_P.Name = "BTN_FILE_SELECT_P";
             this.BTN_FILE_SELECT_P.Size = new System.Drawing.Size(125, 21);
             this.BTN_FILE_SELECT_P.TabIndex = 190;
+            this.BTN_FILE_SELECT_P.Visible = false;
             this.BTN_FILE_SELECT_P.ButtonClick += new InfoSummit.Win.ControlAdv.ISButton.ClickEventHandler(this.BTN_FILE_SELECT_P_ButtonClick);
             // 
             // BTN_UPLOAD_EXEC_P
@@ -7124,7 +7126,7 @@
             isLanguageElement3.TL5_XAA = null;
             this.BTN_UPLOAD_EXEC_P.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
             isLanguageElement3});
-            this.BTN_UPLOAD_EXEC_P.Location = new System.Drawing.Point(809, 27);
+            this.BTN_UPLOAD_EXEC_P.Location = new System.Drawing.Point(809, 7);
             this.BTN_UPLOAD_EXEC_P.Name = "BTN_UPLOAD_EXEC_P";
             this.BTN_UPLOAD_EXEC_P.Size = new System.Drawing.Size(125, 21);
             this.BTN_UPLOAD_EXEC_P.TabIndex = 191;
@@ -7155,9 +7157,8 @@
             this.isGroupBox2.Controls.Add(this.V_FILE_PATH_M);
             this.isGroupBox2.Controls.Add(this.BTN_FILE_SELECT_M);
             this.isGroupBox2.Controls.Add(this.BTN_UPLOAD_EXEC_M);
-            this.isGroupBox2.Location = new System.Drawing.Point(0, 426);
+            this.isGroupBox2.Location = new System.Drawing.Point(0, 444);
             this.isGroupBox2.Name = "isGroupBox2";
-            this.isGroupBox2.Padding = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.isGroupBox2.PromptText = "Data Upload";
             isLanguageElement12.Default = "Data Upload";
             isLanguageElement12.SiteName = null;
@@ -7168,7 +7169,8 @@
             isLanguageElement12.TL5_XAA = null;
             this.isGroupBox2.PromptTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
             isLanguageElement12});
-            this.isGroupBox2.Size = new System.Drawing.Size(944, 54);
+            this.isGroupBox2.PromptVisible = false;
+            this.isGroupBox2.Size = new System.Drawing.Size(944, 36);
             this.isGroupBox2.TabIndex = 4;
             // 
             // V_FILE_PATH_M
@@ -7187,7 +7189,7 @@
             this.V_FILE_PATH_M.DateTimeValue = new System.DateTime(2010, 3, 17, 0, 0, 0, 0);
             this.V_FILE_PATH_M.DoubleValue = 0D;
             this.V_FILE_PATH_M.EditValue = "";
-            this.V_FILE_PATH_M.Location = new System.Drawing.Point(5, 27);
+            this.V_FILE_PATH_M.Location = new System.Drawing.Point(5, 8);
             this.V_FILE_PATH_M.LookupAdapter = null;
             this.V_FILE_PATH_M.Name = "V_FILE_PATH_M";
             this.V_FILE_PATH_M.Nullable = true;
@@ -7218,6 +7220,7 @@
             this.V_FILE_PATH_M.TabStop = false;
             this.V_FILE_PATH_M.TerritoryLanguage = InfoSummit.Win.ControlAdv.ISUtil.Enum.TerritoryLanguage.TL1_KR;
             this.V_FILE_PATH_M.TextValue = "";
+            this.V_FILE_PATH_M.Visible = false;
             // 
             // BTN_FILE_SELECT_M
             // 
@@ -7232,10 +7235,11 @@
             isLanguageElement10.TL5_XAA = null;
             this.BTN_FILE_SELECT_M.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
             isLanguageElement10});
-            this.BTN_FILE_SELECT_M.Location = new System.Drawing.Point(675, 27);
+            this.BTN_FILE_SELECT_M.Location = new System.Drawing.Point(675, 8);
             this.BTN_FILE_SELECT_M.Name = "BTN_FILE_SELECT_M";
             this.BTN_FILE_SELECT_M.Size = new System.Drawing.Size(125, 21);
             this.BTN_FILE_SELECT_M.TabIndex = 190;
+            this.BTN_FILE_SELECT_M.Visible = false;
             this.BTN_FILE_SELECT_M.ButtonClick += new InfoSummit.Win.ControlAdv.ISButton.ClickEventHandler(this.BTN_FILE_SELECT_M_ButtonClick);
             // 
             // BTN_UPLOAD_EXEC_M
@@ -7251,7 +7255,7 @@
             isLanguageElement11.TL5_XAA = null;
             this.BTN_UPLOAD_EXEC_M.ButtonTextElement.AddRange(new InfoSummit.Win.ControlAdv.ISLanguageElement[] {
             isLanguageElement11});
-            this.BTN_UPLOAD_EXEC_M.Location = new System.Drawing.Point(809, 27);
+            this.BTN_UPLOAD_EXEC_M.Location = new System.Drawing.Point(809, 8);
             this.BTN_UPLOAD_EXEC_M.Name = "BTN_UPLOAD_EXEC_M";
             this.BTN_UPLOAD_EXEC_M.Size = new System.Drawing.Size(125, 21);
             this.BTN_UPLOAD_EXEC_M.TabIndex = 191;

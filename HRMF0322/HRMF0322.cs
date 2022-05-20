@@ -241,7 +241,7 @@ namespace HRMF0322
             }
 
             Application.UseWaitCursor = true;
-            this.Cursor = Cursors.WaitCursor;
+            System.Windows.Forms.Cursor.Current = Cursors.WaitCursor;
             Application.DoEvents();
 
             string mSTATUS = "F";
@@ -251,7 +251,7 @@ namespace HRMF0322
             mSTATUS = idcCANCEL_TRANSFER.GetCommandParamValue("O_STATUS").ToString();
             mMessage = iString.ISNull(idcCANCEL_TRANSFER.GetCommandParamValue("O_MESSAGE"));
             Application.UseWaitCursor = false;
-            this.Cursor = Cursors.Default;
+            System.Windows.Forms.Cursor.Current = Cursors.Default;
             Application.DoEvents();
 
             if (idcCANCEL_TRANSFER.ExcuteError || mSTATUS == "F")
@@ -281,11 +281,11 @@ namespace HRMF0322
             }
 
             Application.UseWaitCursor = true;
-            this.Cursor = Cursors.WaitCursor;
+            System.Windows.Forms.Cursor.Current = Cursors.WaitCursor; 
             Application.DoEvents();
 
             string mSTATUS = "F";
-            string mMessage = null;
+            string mMessage = null; 
             idcDAY_INTERFACE_TRANS.SetCommandParamValue("W_CONNECT_LEVEL", "C");
             idcDAY_INTERFACE_TRANS.SetCommandParamValue("W_CAP_CHECK_YN", "N");
             idcDAY_INTERFACE_TRANS.ExecuteNonQuery();
@@ -293,15 +293,33 @@ namespace HRMF0322
             mMessage = iString.ISNull(idcDAY_INTERFACE_TRANS.GetCommandParamValue("O_MESSAGE"));
 
             Application.UseWaitCursor = false;
-            this.Cursor = Cursors.Default;
+            System.Windows.Forms.Cursor.Current = Cursors.Default;
             Application.DoEvents();
 
-            if (idcDAY_INTERFACE_TRANS.ExcuteError || mSTATUS == "F")
+            if (idcDAY_INTERFACE_TRANS.ExcuteError)
             {
-                MessageBoxAdv.Show(mMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBoxAdv.Show(idcDAY_INTERFACE_TRANS.ExcuteErrorMsg, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);            
                 return;
             }
-
+            else if(mSTATUS == "F")
+            {
+                if (!string.IsNullOrEmpty(mMessage))
+                {
+                    MessageBoxAdv.Show(mMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                return;
+            }
+            
+            if (mSTATUS == "W")
+            {
+                if (!string.IsNullOrEmpty(mMessage))
+                {
+                    MessageBoxAdv.Show(mMessage, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("FCM_10390"), "Infomation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
             // refill.
             Search_DB();
         }

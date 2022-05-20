@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1D9019D3-93E9-4CBE-84BE-785E776B6DF3}</ProjectGuid>
+    <ProjectGuid>{FE5EDADA-79AD-4A44-86DE-1F8DD6735589}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HRMF0603</RootNamespace>

@@ -285,7 +285,8 @@ namespace HRMF0504
                                                 , DEPT_ID_0.EditValue, DEPT_CODE_0.EditValue, DEPT_NAME_0.EditValue
                                                 , FLOOR_ID_0.EditValue, FLOOR_NAME_0.EditValue
                                                 , PERSON_ID_0.EditValue, PERSON_NUM_0.EditValue,PERSON_NAME_0.EditValue
-                                                , CORP_TYPE.EditValue);
+                                                , CORP_TYPE.EditValue
+                                                , W_EMPLOYE_DESC.EditValue, W_EMPLOYE_TYPE.EditValue);
             mEAPF1102.SetProperties(EAPF1102.INIT_TYPE.None, vHRMF0504_SET, isAppInterfaceAdv1.AppInterface);
             vdlgResult = vHRMF0504_SET.ShowDialog();
             vHRMF0504_SET.Dispose();
@@ -331,7 +332,8 @@ namespace HRMF0504
                                                 , DEPT_ID_0.EditValue, DEPT_CODE_0.EditValue, DEPT_NAME_0.EditValue
                                                 , FLOOR_ID_0.EditValue, FLOOR_NAME_0.EditValue
                                                 , PERSON_ID_0.EditValue, PERSON_NUM_0.EditValue, PERSON_NAME_0.EditValue
-                                                , CORP_TYPE.EditValue);
+                                                , CORP_TYPE.EditValue
+                                                , W_EMPLOYE_DESC.EditValue, W_EMPLOYE_TYPE.EditValue);
             mEAPF1102.SetProperties(EAPF1102.INIT_TYPE.None, vHRMF0504_SET, isAppInterfaceAdv1.AppInterface);
             vdlgResult = vHRMF0504_SET.ShowDialog();
             vHRMF0504_SET.Dispose();
@@ -377,7 +379,8 @@ namespace HRMF0504
                                                 , DEPT_ID_0.EditValue, DEPT_CODE_0.EditValue, DEPT_NAME_0.EditValue
                                                 , FLOOR_ID_0.EditValue, FLOOR_NAME_0.EditValue
                                                 , PERSON_ID_0.EditValue, PERSON_NUM_0.EditValue, PERSON_NAME_0.EditValue
-                                                , CORP_TYPE.EditValue);
+                                                , CORP_TYPE.EditValue 
+                                                , W_EMPLOYE_DESC.EditValue, W_EMPLOYE_TYPE.EditValue);
             mEAPF1102.SetProperties(EAPF1102.INIT_TYPE.None, vHRMF0504_SET, isAppInterfaceAdv1.AppInterface);
             vdlgResult = vHRMF0504_SET.ShowDialog();
             vHRMF0504_SET.Dispose();
@@ -689,6 +692,12 @@ namespace HRMF0504
         {
             ISRadioButtonAdv RB_STATUS = sender as ISRadioButtonAdv;
             CORP_TYPE.EditValue = RB_STATUS.RadioCheckedString;
+        }
+
+        private void ILA_EMPLOYEE_TYPE_PrePopupShow(object pSender, ISLookupPopupShowEventArgs e)
+        {
+            ildCOMMON.SetLookupParamValue("W_GROUP_CODE", "YEAR_EMPLOYE_TYPE");
+            ildCOMMON.SetLookupParamValue("W_ENABLED_FLAG_YN", "Y");
         }
     }
 }

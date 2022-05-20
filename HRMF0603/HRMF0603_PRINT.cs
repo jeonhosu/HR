@@ -81,9 +81,11 @@ namespace HRMF0603
             }
 
             idaRETIRE_LIST.Fill();
+            
             idaRETIRE_WITHHOLDING_TAX.Fill();
             idaETC_ALLOWANCE.Fill();
             idaPRINT_2013.Fill();
+            IDA_RETIRE_PRINT1.Fill();
 
 
             if (RETIRE_ADJUSTMENT_YN.CheckBoxString == "Y")
@@ -181,6 +183,13 @@ namespace HRMF0603
                 }
             }
 
+
+            IDC_GET_REPORT_SET.SetCommandParamValue("P_ASSEMBLY_ID", "HRMF0603");
+            IDC_GET_REPORT_SET.ExecuteNonQuery();
+            string vREPORT_TYPE = iString.ISNull(IDC_GET_REPORT_SET.GetCommandParamValue("O_REPORT_TYPE"));
+            string vREPORT_FILE_NAME = iString.ISNull(IDC_GET_REPORT_SET.GetCommandParamValue("O_REPORT_FILE_NAME"));
+
+
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             //iedPRINT_DATE.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             System.Windows.Forms.Application.DoEvents();
@@ -196,7 +205,18 @@ namespace HRMF0603
             try
             {
                 //-------------------------------------------------------------------------------------
-                xlPrinting.OpenFileNameExcel = "HRMF0603_001.xlsx";
+                if(vREPORT_TYPE.ToUpper() == "NFK")
+                {
+                    vREPORT_FILE_NAME = "HRMF0603_005.xlsx";
+                    xlPrinting.OpenFileNameExcel = vREPORT_FILE_NAME;                    
+
+                }
+                else
+                {
+                    xlPrinting.OpenFileNameExcel = "HRMF0603_001.xlsx";
+                }
+
+
                 //-------------------------------------------------------------------------------------
 
                 //-------------------------------------------------------------------------------------
@@ -205,7 +225,15 @@ namespace HRMF0603
                 // 퇴직금 정산 내역
                 if (RETIRE_ADJUSTMENT_YN.CheckBoxString == "Y")
                 {
-                    vPageNumber = xlPrinting.WriteRetireAdjustment(pPrint_Type, vSaveFileName, girdRETIRE_ADJUSTMENT, gridETC_ALLOWANCE);
+                    if(vREPORT_TYPE.ToUpper() == "NFK")
+                    {
+                        vPageNumber = xlPrinting.WriteRetireAdjustment_NFK(pPrint_Type, vSaveFileName, girdRETIRE_ADJUSTMENT, gridPRINT_ALLOWANCE);
+                    }
+                    else
+                    {
+                        vPageNumber = xlPrinting.WriteRetireAdjustment(pPrint_Type, vSaveFileName, girdRETIRE_ADJUSTMENT, gridETC_ALLOWANCE);
+                    }
+                    
                     //vPageNumber = 0; 
                 }
 
@@ -336,12 +364,19 @@ namespace HRMF0603
                     xlPrinting.OpenFileNameExcel = "HRMF0603_004.xlsx";
                     //-------------------------------------------------------------------------------------
                 }
-                else
+                else if(iString.ISNumtoZero(vRetire_Year) < 2020)
                 {
                     //-------------------------------------------------------------------------------------
                     xlPrinting.OpenFileNameExcel = "HRMF0603_006.xlsx";
                     //-------------------------------------------------------------------------------------
-                    
+
+                }
+                else
+                {
+                    //-------------------------------------------------------------------------------------
+                    xlPrinting.OpenFileNameExcel = "HRMF0603_007.xlsx";
+                    //-------------------------------------------------------------------------------------
+
                 }
 
                 // 퇴직소득원천징수영수증/지급조서

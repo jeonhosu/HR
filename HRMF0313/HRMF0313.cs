@@ -213,7 +213,8 @@ namespace HRMF0313
                     mCheck_Value = true;
                 }
             }
-            else if ((pHoly_Type.ToString() == "3".ToString() || pHoly_Type.ToString() == "N".ToString() || pHoly_Type.ToString() == "G".ToString())
+            else if ((pHoly_Type.ToString() == "3".ToString() || pHoly_Type.ToString() == "N".ToString() || pHoly_Type.ToString() == "G".ToString()
+                  || pHoly_Type.ToString() == "Y".ToString())
                 && IO_Flag.ToString() == "IN".ToString())
             {// 주간, 야간, 무휴, 유휴, DAY, NIGHT --> 같은 날짜.
                 if (Convert.ToDateTime(pWork_Date).Date <= Convert.ToDateTime(pNew_Work_Date).Date
@@ -232,7 +233,8 @@ namespace HRMF0313
                     mCheck_Value = true;
                 }
             }
-            else if ((pHoly_Type.ToString() == "3".ToString() || pHoly_Type.ToString() == "N".ToString() || pHoly_Type.ToString() == "G".ToString())
+            else if ((pHoly_Type.ToString() == "3".ToString() || pHoly_Type.ToString() == "N".ToString() || pHoly_Type.ToString() == "G".ToString()
+                  || pHoly_Type.ToString() == "Y".ToString())
            && IO_Flag.ToString() == "OUT".ToString())
             {// 주간, 야간, 무휴, 유휴, DAY, NIGHT --> 같은 날짜.
                 if (Convert.ToDateTime(pWork_Date).Date <= Convert.ToDateTime(pNew_Work_Date).Date

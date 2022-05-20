@@ -19,6 +19,7 @@ namespace HRMF0401
     {
         ISCommonUtil.ISFunction.ISConvert iString = new ISFunction.ISConvert();
         ISCommonUtil.ISFunction.ISDateTime iDate = new ISFunction.ISDateTime();
+        EAPF1102.EAPF1102 mEAPF1102 = new EAPF1102.EAPF1102();
 
         #region ----- Constructor -----
         public HRMF0401(Form pMainForm, ISAppInterface pAppInterface)
@@ -185,257 +186,257 @@ namespace HRMF0401
             }
         }
 
-        private void Excel_Upload_P()
-        {
-            string vSTATUS = string.Empty;
-            string vMESSAGE = string.Empty;
-            bool vXL_Load_OK = false;
+        //private void Excel_Upload_P()
+        //{
+        //    string vSTATUS = string.Empty;
+        //    string vMESSAGE = string.Empty;
+        //    bool vXL_Load_OK = false;
 
-            if (iString.ISNull(V_FILE_PATH_P.EditValue) == string.Empty)
-            {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(V_FILE_PATH_P))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            Application.UseWaitCursor = true;
-            this.Cursor = Cursors.WaitCursor;
-            Application.DoEvents();
+        //    if (iString.ISNull(V_FILE_PATH_P.EditValue) == string.Empty)
+        //    {
+        //        MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(V_FILE_PATH_P))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //        return;
+        //    }
+        //    Application.UseWaitCursor = true;
+        //    this.Cursor = Cursors.WaitCursor;
+        //    Application.DoEvents();
 
-            string vOPenFileName = V_FILE_PATH_P.EditValue.ToString();
-            XL_Upload vXL_Upload = new XL_Upload(isAppInterfaceAdv1, isMessageAdapter1);
+        //    string vOPenFileName = V_FILE_PATH_P.EditValue.ToString();
+        //    XL_Upload vXL_Upload = new XL_Upload(isAppInterfaceAdv1, isMessageAdapter1);
 
-            try
-            {
-                vXL_Upload.OpenFileName = vOPenFileName;
-                vXL_Load_OK = vXL_Upload.OpenXL();
-            }
-            catch (Exception ex)
-            {
-                isAppInterfaceAdv1.OnAppMessage(ex.Message);
+        //    try
+        //    {
+        //        vXL_Upload.OpenFileName = vOPenFileName;
+        //        vXL_Load_OK = vXL_Upload.OpenXL();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        isAppInterfaceAdv1.OnAppMessage(ex.Message);
 
-                Application.UseWaitCursor = false;
-                this.Cursor = Cursors.Default;
-                Application.DoEvents();
-                return;
-            }
-
-
-            ////기존자료 삭제.
-            //vSTATUS = "F";
-            //vMESSAGE = string.Empty;
-
-            //IDC_DELETE_ASSET_MASTER_TEMP.ExecuteNonQuery();
-            //vSTATUS = iString.ISNull(IDC_DELETE_ASSET_MASTER_TEMP.GetCommandParamValue("O_STATUS"));
-            //vMESSAGE = iString.ISNull(IDC_DELETE_ASSET_MASTER_TEMP.GetCommandParamValue("O_MESSAGE"));
-            //if (IDC_SET_TRANS_ASSET_MASTER.ExcuteError || vSTATUS == "F")
-            //{
-            //    Application.UseWaitCursor = false;
-            //    this.Cursor = Cursors.Default;
-            //    Application.DoEvents();
-
-            //    if (vMESSAGE != string.Empty)
-            //    {
-            //        MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //    return;
-
-            //}
-
-            // 업로드 아답터 fill //
-            IDA_UPLOAD_PENSION.Cancel();
-            IDA_UPLOAD_PENSION.Fill();   
-            try
-            {
-                if (vXL_Load_OK == true)
-                {
-                    vXL_Load_OK = vXL_Upload.LoadXL_P(IDA_UPLOAD_PENSION, 2);
-                    if (vXL_Load_OK == false)
-                    {
-                        IDA_UPLOAD_PENSION.Cancel();
-                    }
-                    else
-                    {
-                        IDA_UPLOAD_PENSION.Update();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                IDA_UPLOAD_PENSION.Cancel();
-
-                isAppInterfaceAdv1.OnAppMessage(ex.Message);
-
-                vXL_Upload.DisposeXL();
-
-                Application.UseWaitCursor = false;
-                this.Cursor = Cursors.Default;
-                Application.DoEvents();
-                return;
-            }
-            vXL_Upload.DisposeXL();
+        //        Application.UseWaitCursor = false;
+        //        this.Cursor = Cursors.Default;
+        //        Application.DoEvents();
+        //        return;
+        //    }
 
 
-            if (IDA_UPLOAD_PENSION.IsUpdateCompleted == true)
-            {
-                vSTATUS = "F";
-                vMESSAGE = string.Empty;
+        //    ////기존자료 삭제.
+        //    //vSTATUS = "F";
+        //    //vMESSAGE = string.Empty;
 
-                IDC_INTERFACE_INSUR_CHARGE.SetCommandParamValue("P_INSUR_TYPE", "P");
-                IDC_INTERFACE_INSUR_CHARGE.ExecuteNonQuery();
-                vSTATUS = iString.ISNull(IDC_INTERFACE_INSUR_CHARGE.GetCommandParamValue("O_STATUS"));
-                vMESSAGE = iString.ISNull(IDC_INTERFACE_INSUR_CHARGE.GetCommandParamValue("O_MESSAGE"));
+        //    //IDC_DELETE_ASSET_MASTER_TEMP.ExecuteNonQuery();
+        //    //vSTATUS = iString.ISNull(IDC_DELETE_ASSET_MASTER_TEMP.GetCommandParamValue("O_STATUS"));
+        //    //vMESSAGE = iString.ISNull(IDC_DELETE_ASSET_MASTER_TEMP.GetCommandParamValue("O_MESSAGE"));
+        //    //if (IDC_SET_TRANS_ASSET_MASTER.ExcuteError || vSTATUS == "F")
+        //    //{
+        //    //    Application.UseWaitCursor = false;
+        //    //    this.Cursor = Cursors.Default;
+        //    //    Application.DoEvents();
 
-                Application.UseWaitCursor = false;
-                this.Cursor = Cursors.Default;
-                Application.DoEvents();
-                if (IDC_INTERFACE_INSUR_CHARGE.ExcuteError || vSTATUS == "F")
-                {
-                    if (vMESSAGE != string.Empty)
-                    {
-                        MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    return;
-                }
+        //    //    if (vMESSAGE != string.Empty)
+        //    //    {
+        //    //        MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    //    }
+        //    //    return;
 
+        //    //}
 
-                if (vSTATUS == "S")
-                {
-                    if (vMESSAGE != string.Empty)
-                    {
-                        MessageBoxAdv.Show(vMESSAGE, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                }
-            }
+        //    // 업로드 아답터 fill //
+        //    IDA_UPLOAD_PENSION.Cancel();
+        //    IDA_UPLOAD_PENSION.Fill();   
+        //    try
+        //    {
+        //        if (vXL_Load_OK == true)
+        //        {
+        //            vXL_Load_OK = vXL_Upload.LoadXL_P(IDA_UPLOAD_PENSION, 2);
+        //            if (vXL_Load_OK == false)
+        //            {
+        //                IDA_UPLOAD_PENSION.Cancel();
+        //            }
+        //            else
+        //            {
+        //                IDA_UPLOAD_PENSION.Update();
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        IDA_UPLOAD_PENSION.Cancel();
 
-            V_FILE_PATH_P.EditValue = string.Empty;
-            Application.UseWaitCursor = false;
-            this.Cursor = Cursors.Default;
-            Application.DoEvents();
-        }
+        //        isAppInterfaceAdv1.OnAppMessage(ex.Message);
 
-        private void Excel_Upload_M()
-        {
-            string vSTATUS = string.Empty;
-            string vMESSAGE = string.Empty;
-            bool vXL_Load_OK = false;
+        //        vXL_Upload.DisposeXL();
 
-            if (iString.ISNull(V_FILE_PATH_M.EditValue) == string.Empty)
-            {
-                MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(V_FILE_PATH_M))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            Application.UseWaitCursor = true;
-            this.Cursor = Cursors.WaitCursor;
-            Application.DoEvents();
-
-            string vOPenFileName = V_FILE_PATH_M.EditValue.ToString();
-            XL_Upload vXL_Upload = new XL_Upload(isAppInterfaceAdv1, isMessageAdapter1);
-
-            try
-            {
-                vXL_Upload.OpenFileName = vOPenFileName;
-                vXL_Load_OK = vXL_Upload.OpenXL();
-            }
-            catch (Exception ex)
-            {
-                isAppInterfaceAdv1.OnAppMessage(ex.Message);
-
-                Application.UseWaitCursor = false;
-                this.Cursor = Cursors.Default;
-                Application.DoEvents();
-                return;
-            }
+        //        Application.UseWaitCursor = false;
+        //        this.Cursor = Cursors.Default;
+        //        Application.DoEvents();
+        //        return;
+        //    }
+        //    vXL_Upload.DisposeXL();
 
 
-            ////기존자료 삭제.
-            //vSTATUS = "F";
-            //vMESSAGE = string.Empty;
+        //    if (IDA_UPLOAD_PENSION.IsUpdateCompleted == true)
+        //    {
+        //        vSTATUS = "F";
+        //        vMESSAGE = string.Empty;
 
-            //IDC_DELETE_ASSET_MASTER_TEMP.ExecuteNonQuery();
-            //vSTATUS = iString.ISNull(IDC_DELETE_ASSET_MASTER_TEMP.GetCommandParamValue("O_STATUS"));
-            //vMESSAGE = iString.ISNull(IDC_DELETE_ASSET_MASTER_TEMP.GetCommandParamValue("O_MESSAGE"));
-            //if (IDC_SET_TRANS_ASSET_MASTER.ExcuteError || vSTATUS == "F")
-            //{
-            //    Application.UseWaitCursor = false;
-            //    this.Cursor = Cursors.Default;
-            //    Application.DoEvents();
+        //        IDC_INTERFACE_INSUR_CHARGE.SetCommandParamValue("P_INSUR_TYPE", "P");
+        //        IDC_INTERFACE_INSUR_CHARGE.ExecuteNonQuery();
+        //        vSTATUS = iString.ISNull(IDC_INTERFACE_INSUR_CHARGE.GetCommandParamValue("O_STATUS"));
+        //        vMESSAGE = iString.ISNull(IDC_INTERFACE_INSUR_CHARGE.GetCommandParamValue("O_MESSAGE"));
 
-            //    if (vMESSAGE != string.Empty)
-            //    {
-            //        MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    }
-            //    return;
+        //        Application.UseWaitCursor = false;
+        //        this.Cursor = Cursors.Default;
+        //        Application.DoEvents();
+        //        if (IDC_INTERFACE_INSUR_CHARGE.ExcuteError || vSTATUS == "F")
+        //        {
+        //            if (vMESSAGE != string.Empty)
+        //            {
+        //                MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //            }
+        //            return;
+        //        }
 
-            //}
+
+        //        if (vSTATUS == "S")
+        //        {
+        //            if (vMESSAGE != string.Empty)
+        //            {
+        //                MessageBoxAdv.Show(vMESSAGE, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //            }
+        //        }
+        //    }
+
+        //    V_FILE_PATH_P.EditValue = string.Empty;
+        //    Application.UseWaitCursor = false;
+        //    this.Cursor = Cursors.Default;
+        //    Application.DoEvents();
+        //}
+
+        //private void Excel_Upload_M()
+        //{
+        //    string vSTATUS = string.Empty;
+        //    string vMESSAGE = string.Empty;
+        //    bool vXL_Load_OK = false;
+
+        //    if (iString.ISNull(V_FILE_PATH_M.EditValue) == string.Empty)
+        //    {
+        //        MessageBoxAdv.Show(isMessageAdapter1.ReturnText("EAPP_90004", string.Format("&&FIELD_NAME:={0}", Get_Edit_Prompt(V_FILE_PATH_M))), "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        //        return;
+        //    }
+        //    Application.UseWaitCursor = true;
+        //    this.Cursor = Cursors.WaitCursor;
+        //    Application.DoEvents();
+
+        //    string vOPenFileName = V_FILE_PATH_M.EditValue.ToString();
+        //    XL_Upload vXL_Upload = new XL_Upload(isAppInterfaceAdv1, isMessageAdapter1);
+
+        //    try
+        //    {
+        //        vXL_Upload.OpenFileName = vOPenFileName;
+        //        vXL_Load_OK = vXL_Upload.OpenXL();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        isAppInterfaceAdv1.OnAppMessage(ex.Message);
+
+        //        Application.UseWaitCursor = false;
+        //        this.Cursor = Cursors.Default;
+        //        Application.DoEvents();
+        //        return;
+        //    }
+
+
+        //    ////기존자료 삭제.
+        //    //vSTATUS = "F";
+        //    //vMESSAGE = string.Empty;
+
+        //    //IDC_DELETE_ASSET_MASTER_TEMP.ExecuteNonQuery();
+        //    //vSTATUS = iString.ISNull(IDC_DELETE_ASSET_MASTER_TEMP.GetCommandParamValue("O_STATUS"));
+        //    //vMESSAGE = iString.ISNull(IDC_DELETE_ASSET_MASTER_TEMP.GetCommandParamValue("O_MESSAGE"));
+        //    //if (IDC_SET_TRANS_ASSET_MASTER.ExcuteError || vSTATUS == "F")
+        //    //{
+        //    //    Application.UseWaitCursor = false;
+        //    //    this.Cursor = Cursors.Default;
+        //    //    Application.DoEvents();
+
+        //    //    if (vMESSAGE != string.Empty)
+        //    //    {
+        //    //        MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    //    }
+        //    //    return;
+
+        //    //}
             
-            // 업로드 아답터 fill //
-            IDA_UPLOAD_HEALTH.Cancel();
-            IDA_UPLOAD_HEALTH.Fill();
-            try
-            {
-                if (vXL_Load_OK == true)
-                {
-                    vXL_Load_OK = vXL_Upload.LoadXL_M(IDA_UPLOAD_HEALTH, 2);
-                    if (vXL_Load_OK == false)
-                    {
-                        IDA_UPLOAD_HEALTH.Cancel();
-                    }
-                    else
-                    {
-                        IDA_UPLOAD_HEALTH.Update();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                IDA_UPLOAD_HEALTH.Cancel();
+        //    // 업로드 아답터 fill //
+        //    IDA_UPLOAD_HEALTH.Cancel();
+        //    IDA_UPLOAD_HEALTH.Fill();
+        //    try
+        //    {
+        //        if (vXL_Load_OK == true)
+        //        {
+        //            vXL_Load_OK = vXL_Upload.LoadXL_M(IDA_UPLOAD_HEALTH, 2);
+        //            if (vXL_Load_OK == false)
+        //            {
+        //                IDA_UPLOAD_HEALTH.Cancel();
+        //            }
+        //            else
+        //            {
+        //                IDA_UPLOAD_HEALTH.Update();
+        //            }
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        IDA_UPLOAD_HEALTH.Cancel();
 
-                isAppInterfaceAdv1.OnAppMessage(ex.Message);
+        //        isAppInterfaceAdv1.OnAppMessage(ex.Message);
 
-                vXL_Upload.DisposeXL();
+        //        vXL_Upload.DisposeXL();
 
-                Application.UseWaitCursor = false;
-                this.Cursor = Cursors.Default;
-                Application.DoEvents();
-                return;
-            }
-            vXL_Upload.DisposeXL();
+        //        Application.UseWaitCursor = false;
+        //        this.Cursor = Cursors.Default;
+        //        Application.DoEvents();
+        //        return;
+        //    }
+        //    vXL_Upload.DisposeXL();
 
 
-            if (IDA_UPLOAD_HEALTH.IsUpdateCompleted == true)
-            {
-                vSTATUS = "F";
-                vMESSAGE = string.Empty;
+        //    if (IDA_UPLOAD_HEALTH.IsUpdateCompleted == true)
+        //    {
+        //        vSTATUS = "F";
+        //        vMESSAGE = string.Empty;
 
-                IDC_INTERFACE_INSUR_CHARGE.SetCommandParamValue("P_INSUR_TYPE", "M");
-                IDC_INTERFACE_INSUR_CHARGE.ExecuteNonQuery();
-                vSTATUS = iString.ISNull(IDC_INTERFACE_INSUR_CHARGE.GetCommandParamValue("O_STATUS"));
-                vMESSAGE = iString.ISNull(IDC_INTERFACE_INSUR_CHARGE.GetCommandParamValue("O_MESSAGE"));
+        //        IDC_INTERFACE_INSUR_CHARGE.SetCommandParamValue("P_INSUR_TYPE", "M");
+        //        IDC_INTERFACE_INSUR_CHARGE.ExecuteNonQuery();
+        //        vSTATUS = iString.ISNull(IDC_INTERFACE_INSUR_CHARGE.GetCommandParamValue("O_STATUS"));
+        //        vMESSAGE = iString.ISNull(IDC_INTERFACE_INSUR_CHARGE.GetCommandParamValue("O_MESSAGE"));
 
-                Application.UseWaitCursor = false;
-                this.Cursor = Cursors.Default;
-                Application.DoEvents();
-                if (IDC_INTERFACE_INSUR_CHARGE.ExcuteError || vSTATUS == "F")
-                {
-                    if (vMESSAGE != string.Empty)
-                    {
-                        MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    return;
-                }
+        //        Application.UseWaitCursor = false;
+        //        this.Cursor = Cursors.Default;
+        //        Application.DoEvents();
+        //        if (IDC_INTERFACE_INSUR_CHARGE.ExcuteError || vSTATUS == "F")
+        //        {
+        //            if (vMESSAGE != string.Empty)
+        //            {
+        //                MessageBoxAdv.Show(vMESSAGE, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //            }
+        //            return;
+        //        }
 
-                if (vSTATUS == "S")
-                {
-                    if (vMESSAGE != string.Empty)
-                    {
-                        MessageBoxAdv.Show(vMESSAGE, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                }
-            }
-            V_FILE_PATH_M.EditValue = string.Empty;
-            Application.UseWaitCursor = false;
-            this.Cursor = Cursors.Default;
-            Application.DoEvents();
-        }
+        //        if (vSTATUS == "S")
+        //        {
+        //            if (vMESSAGE != string.Empty)
+        //            {
+        //                MessageBoxAdv.Show(vMESSAGE, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //            }
+        //        }
+        //    }
+        //    V_FILE_PATH_M.EditValue = string.Empty;
+        //    Application.UseWaitCursor = false;
+        //    this.Cursor = Cursors.Default;
+        //    Application.DoEvents();
+        //}
 
         #endregion
 
@@ -504,7 +505,17 @@ namespace HRMF0401
 
         private void BTN_UPLOAD_EXEC_P_ButtonClick(object pSender, EventArgs pEventArgs)
         {
-            Excel_Upload_P();   
+            DialogResult vdlgResult;
+            HRMF0401_IMPORT vHRMF0401_IMPORT = new HRMF0401_IMPORT(this.MdiParent, isAppInterfaceAdv1.AppInterface, CORP_ID_0.EditValue, "P");
+            mEAPF1102.SetProperties(EAPF1102.INIT_TYPE.None, vHRMF0401_IMPORT, isAppInterfaceAdv1.AppInterface);
+            vdlgResult = vHRMF0401_IMPORT.ShowDialog();
+            vHRMF0401_IMPORT.Dispose();
+            if (vdlgResult == DialogResult.OK)
+            {
+                SEARCH_DB(); 
+            }
+
+            //Excel_Upload_P();   
         }
 
         private void BTN_FILE_SELECT_M_ButtonClick(object pSender, EventArgs pEventArgs)
@@ -514,7 +525,15 @@ namespace HRMF0401
 
         private void BTN_UPLOAD_EXEC_M_ButtonClick(object pSender, EventArgs pEventArgs)
         {
-            Excel_Upload_M(); 
+            DialogResult vdlgResult;
+            HRMF0401_IMPORT vHRMF0401_IMPORT = new HRMF0401_IMPORT(this.MdiParent, isAppInterfaceAdv1.AppInterface, CORP_ID_0.EditValue, "M");
+            mEAPF1102.SetProperties(EAPF1102.INIT_TYPE.None, vHRMF0401_IMPORT, isAppInterfaceAdv1.AppInterface);
+            vdlgResult = vHRMF0401_IMPORT.ShowDialog();
+            vHRMF0401_IMPORT.Dispose();
+            if (vdlgResult == DialogResult.OK)
+            {
+                SEARCH_DB();
+            }
         }
 
         #endregion
