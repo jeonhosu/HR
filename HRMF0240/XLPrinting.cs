@@ -640,7 +640,7 @@ namespace HRMF0240
         }
 
         private void XLContentWrite(string pActiveSheet, InfoSummit.Win.ControlAdv.ISDataAdapter pCert
-                                    , string pHISTORY_FLAG, InfoSummit.Win.ControlAdv.ISDataAdapter pHistory)
+                                    , string pREPRE_FLAG, string pHISTORY_FLAG, InfoSummit.Win.ControlAdv.ISDataAdapter pHistory)
         {
             //object vObject = null;
 
@@ -662,7 +662,16 @@ namespace HRMF0240
                 //mPrinting.XLSetCell(15, 13, pGrid.GetCellValue(pIndexRow, vIndexDataColumn4));
 
                 //주민번호
-                mPrinting.XLSetCell(14, 27, pCert.CurrentRow["REPRE_NUM"]);
+                string vREPRE_NUM = "";
+                if (pREPRE_FLAG.Equals("Y"))
+                    vREPRE_NUM = string.Format("{0}", Convert.ToString(pCert.CurrentRow["REPRE_NUM"]));
+                else
+                {
+                    vREPRE_NUM = string.Format("{0}", Convert.ToString(pCert.CurrentRow["REPRE_NUM"]));
+                    vREPRE_NUM = vREPRE_NUM.Substring(0, 6) + "-*******";
+                }
+                mPrinting.XLSetCell(14, 27, vREPRE_NUM);
+
 
                 //주소
                 mPrinting.XLSetCell(17, 9, pCert.CurrentRow["PERSON_ADDRESS"]);
@@ -891,7 +900,8 @@ namespace HRMF0240
 
         public int XLWirte(InfoSummit.Win.ControlAdv.ISDataAdapter pCert, InfoSummit.Win.ControlAdv.ISDataAdapter pHistory
                         , int nPrintTotalCnt, string pPeriodFrom
-                        , string pUserName, string pPRINT_TYPE, string pREPRE_FLAG, string pHISTORY_FLAG, string pSTAMP_FLAG)
+                        , string pUserName, string pPRINT_TYPE, string pREPRE_FLAG, string pHISTORY_FLAG
+                        , string pSTAMP_FLAG, string pClientFile, float pSIZE_W, float pSIZE_H, float pLOC_X, float pLOC_Y)
         {
             string vMessageText = string.Empty;
             string vSheet_Source = string.Empty;
@@ -906,10 +916,11 @@ namespace HRMF0240
                 {
                     vSheet_Source = m_SheetSource1; 
                 }
-                XLContentWrite(vSheet_Source, pCert, pHISTORY_FLAG, pHistory);
+                XLContentWrite(vSheet_Source, pCert, pREPRE_FLAG, pHISTORY_FLAG, pHistory);
                 for (int nPrintCnt = 0; nPrintCnt < nPrintTotalCnt; nPrintCnt++)
                 {
-                    m_Current_Row = CopyAndPaste(mPrinting, m_Current_Row, vSheet_Source, pSTAMP_FLAG); 
+                    m_Current_Row = CopyAndPaste(mPrinting, m_Current_Row, vSheet_Source
+                                                , pSTAMP_FLAG, pClientFile, pSIZE_W, pSIZE_H, pLOC_X, pLOC_Y); 
                 }
             }
             catch
@@ -974,7 +985,61 @@ namespace HRMF0240
 
             return pCurrentRow + m_Copy_EndRow;
         }
-         
+
+        //첫번째 페이지 복사
+        private int CopyAndPaste(XL.XLPrint pPrinting, int pCurrentRow, string pSourceSheet
+                                , string pSeal_Stamp, string pImageFile
+                                , float pSize_W, float pSize_H, float pLoc_X, float pLoc_Y)
+        {
+            pPrinting.XLActiveSheet(pSourceSheet);
+            if (pSeal_Stamp == "Y")
+            {
+                //----------------------------------------[ 증명사진 출력 부분 ]------------------------------------------
+                try
+                {
+                    int vIndexImage = mPrinting.CountBarCodeImage;
+                    int vCountImage = mPrinting.CountBarCodeImage;
+                    for (int r = 0; r < vCountImage; r++)
+                    {
+                        mPrinting.XLDeleteBarCode(vIndexImage);
+                        vIndexImage--;
+                    }
+                    mPrinting.CountBarCodeImage = 0;
+                }
+                catch
+                {
+                    //
+                }
+
+                try
+                {
+                    System.Drawing.SizeF vSize = new System.Drawing.SizeF(pSize_W, pSize_H);
+                    System.Drawing.PointF vPoint = new System.Drawing.PointF(pLoc_X, pLoc_Y);
+                    mPrinting.XLBarCode(pImageFile, vSize, vPoint);
+                    //--------------------------------------------------------------------------------------------------------
+                }
+                catch
+                {
+                    //
+                }
+
+            }
+            //[원본], [Sheet2.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
+            object vRangeSource = pPrinting.XLGetRange(m_Copy_StartRow, m_Copy_StartCol, m_Copy_EndRow, m_Copy_EndCol);
+
+            //[대상], [Sheet1.Cell("A1:AS67")], 엑셀 쉬트에서 복사 시작할 행번호, 엑셀 쉬트에서 복사 시작할 열번호, 엑셀 쉬트에서 복사 종료할 행번호, 엑셀 쉬트에서 복사 종료할 열번호
+            pPrinting.XLActiveSheet(m_SheetPrint);
+            object vRangeDestination = pPrinting.XLGetRange(pCurrentRow, m_Copy_StartCol, pCurrentRow + m_Copy_EndRow, m_Copy_EndCol);
+            pPrinting.XLCopyRange(vRangeSource, vRangeDestination);
+
+            int vCopy_EndRow = pCurrentRow + m_Copy_EndRow;
+            mPrinting.XLHPageBreaks_Add(mPrinting.XLGetRange("A" + vCopy_EndRow));
+
+            m_PageNumber++; //페이지 번호
+
+            return pCurrentRow + m_Copy_EndRow;
+        }
+
         #endregion;
 
         #region ----- Printing Methods ----

@@ -409,7 +409,7 @@ namespace HRMF0522
             return isGet;
         } 
 
-#endregion;
+        #endregion;
          
 
         // 인쇄 부분

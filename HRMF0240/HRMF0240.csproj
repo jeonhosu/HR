@@ -38,7 +38,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <Reference Include="InfoSummitWinControlAdv">
+    <Reference Include="InfoSummitWinControlAdv, Version=16.1.7.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\dllCommon_2008\InfoSummitWinControlAdv.dll</HintPath>
     </Reference>
     <Reference Include="ISCommonUtil">

@@ -173,17 +173,17 @@ namespace FX_Main
 
 
             ////////// Test
-            //vSplit[0] = "106.251.238.98";                   //Oracle_Host
-            //vSplit[1] = "1521";                           //Oracle_Port           
-            //vSplit[2] = "HETN_PROD";                          //Oracle_ServiceName 
-            //vSplit[3] = "APPS";                           //Oracle_UserId
-            //vSplit[4] = "infoflex";                       //Oracle_Password          
-            //vSplit[11] = "3"; //LoginId;
-            //vSplit[19] = "100937"; //LoginNo                        
-            //vSplit[20] = "500020"; //이성의 // "20125"; //김종구  // "22783"; //김유진   // PersonID
-            //vSplit[21] = "100937"; //PersonNumber
-            //vSplit[9] = "80";   //SOB_ID
-            //vSplit[10] = "801"; //ORG_ID
+            vSplit[0] = "106.251.238.98";                   //Oracle_Host
+            vSplit[1] = "1521";                           //Oracle_Port           
+            vSplit[2] = "HETN_PROD";                          //Oracle_ServiceName 
+            vSplit[3] = "APPS";                           //Oracle_UserId
+            vSplit[4] = "infoflex";                       //Oracle_Password          
+            vSplit[11] = "3"; //LoginId;
+            vSplit[19] = "100937"; //LoginNo                        
+            vSplit[20] = "500020"; //이성의 // "20125"; //김종구  // "22783"; //김유진   // PersonID
+            vSplit[21] = "100937"; //PersonNumber
+            vSplit[9] = "80";   //SOB_ID
+            vSplit[10] = "801"; //ORG_ID
 
             ////// Test
             //vSplit[0] = "146.56.184.66";  //"192.168.1.7"; //"1.241.249.174";                   //Oracle_Host
